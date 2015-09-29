@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Non-deterministic Turing machine - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Non-deterministic_Turing_machine","wgTitle":"Non-deterministic Turing machine","wgCurRevisionId":677323513,"wgRevisionId":677323513,"wgArticleId":21935,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Turing machine"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Non-deterministic_Turing_machine","wgRelevantArticleId":21935,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,
+"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/1/1d/BQP_complexity_class_diagram.svg/100px-BQP_complexity_class_diagram.svg.png","wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1190223","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Non-deterministic_Turing_machine" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Non-deterministic_Turing_machine" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Non-deterministic_Turing_machine skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Non-deterministic Turing machine</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%">
+<tr>
+<th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em"><a href="/wiki/Turing_machine" title="Turing machine">Turing machines</a></th>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em">Machine</th>
+</tr>
+<tr>
+<td class="plainlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Universal_Turing_machine" title="Universal Turing machine">Universal Turing machine</a></li>
+<li><a href="/wiki/Alternating_Turing_machine" title="Alternating Turing machine">Alternating Turing machine</a></li>
+<li><a href="/wiki/Quantum_Turing_machine" title="Quantum Turing machine">Quantum Turing machine</a></li>
+<li><strong class="selflink">Non-deterministic Turing machine</strong></li>
+<li><a href="/wiki/Read-only_Turing_machine" title="Read-only Turing machine">Read-only Turing machine</a></li>
+<li><a href="/wiki/Read-only_right_moving_Turing_machines" title="Read-only right moving Turing machines">Read-only right moving Turing machines</a></li>
+<li><a href="/wiki/Probabilistic_Turing_machine" title="Probabilistic Turing machine">Probabilistic Turing machine</a></li>
+<li><a href="/wiki/Multitape_Turing_machine" title="Multitape Turing machine">Multitape Turing machine</a></li>
+<li><a href="/wiki/Multi-track_Turing_machine" title="Multi-track Turing machine">Multi-track Turing machine</a></li>
+<li><a href="/wiki/Turing_machine_equivalents" title="Turing machine equivalents">Turing machine equivalents</a></li>
+<li><a href="/wiki/Turing_machine_examples" title="Turing machine examples">Turing machine examples</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em">Science</th>
+</tr>
+<tr>
+<td class="plainlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a></li>
+<li><a href="/wiki/Category:Turing_machine" title="Category:Turing machine">Category:Turing machine</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Turing" title="Template:Turing"><span title="View this template">v</span></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:Turing&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Turing (page does not exist)"><span title="Discuss this template">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Turing&amp;action=edit"><span title="Edit this template">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>In <a href="/wiki/Theoretical_computer_science" title="Theoretical computer science">theoretical computer science</a>, a <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a> is a theoretical machine that is used in <a href="/wiki/Thought_experiment" title="Thought experiment">thought experiments</a> to examine the abilities and limitations of computers.</p>
+<p>In essence, <i>a Turing machine is imagined to be a simple computer that reads and writes symbols one at a time on an endless tape by strictly following a set of rules.</i> It determines what action it should perform next according to its internal <i>state</i> and <i>what symbol it currently sees</i>. An example of one of a Turing Machine's rules might thus be: "If you are in state 2 and you see an 'A', change it to 'B' and move left."</p>
+<p>In a <b>deterministic Turing machine</b>, the set of rules prescribes at most one action to be performed for any given situation. By contrast, <i>a <b>non-deterministic Turing machine</b> (<b>NTM</b>) may have a set of rules that prescribes more than one action for a given situation.</i> For example, a non-deterministic Turing machine may have both "If you are in state 2 and you see an 'A', change it to a 'B' and move left" and "If you are in state 2 and you see an 'A', change it to a 'C' and move right" in its rule set.</p>
+<p>A deterministic Turing machine (DTM) has a <i>transition function</i> that, for a given state and symbol under the tape head, specifies three things:</p>
+<ul>
+<li>the symbol to be written to the tape,</li>
+<li>the direction (left, right or neither) in which the head should move, and</li>
+<li>the subsequent state of the finite control.</li>
+</ul>
+<p>For example, an X on the tape in state 3 might make the DTM write a Y on the tape, move the head one position to the right, and switch to state 5.</p>
+<p>A non-deterministic Turing machine (NTM) differs in that the state and tape symbol no longer <i>uniquely</i> specify these things; rather, <i>many different actions may apply for the same combination of state and symbol.</i> For example, an X on the tape in state 3 might now allow the NTM to write a Y, move right, and switch to state 5, <i>or</i> to write an X, move left, and stay in state 3.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Resolution_of_multiple_rules"><span class="tocnumber">1.1</span> <span class="toctext">Resolution of multiple rules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Equivalence_with_DTMs"><span class="tocnumber">2</span> <span class="toctext">Equivalence with DTMs</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Bounded_non-determinism"><span class="tocnumber">3</span> <span class="toctext">Bounded non-determinism</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Comparison_with_quantum_computers"><span class="tocnumber">4</span> <span class="toctext">Comparison with quantum computers</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A non-deterministic Turing machine can be formally defined as a 6-tuple <img class="mwe-math-fallback-image-inline tex" alt="M=(Q, \Sigma, \iota, \sqcup, A, \delta)" src="//upload.wikimedia.org/math/5/1/8/518ee1c77ab9d7d22b49270087b65a2f.png" />, where</p>
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="Q" src="//upload.wikimedia.org/math/f/0/9/f09564c9ca56850d4cd6b3319e541aee.png" /> is a finite set of states</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\Sigma" src="//upload.wikimedia.org/math/a/6/4/a643a0ef5974b64678111d03125054fc.png" /> is a finite set of symbols (the tape alphabet)</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\iota \in Q" src="//upload.wikimedia.org/math/a/9/a/a9ab784ef832c68239dc6834fa18157d.png" /> is the initial state</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\sqcup \in \Sigma" src="//upload.wikimedia.org/math/f/e/7/fe7918585d550ca89c26f185a2cdafd2.png" /> is the blank symbol</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="A \subseteq Q" src="//upload.wikimedia.org/math/5/a/9/5a92684ddafbf401ea206f4e706eb95a.png" /> is the set of accepting (final) states</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\delta \subseteq \left(Q \backslash A \times \Sigma\right) \times \left( Q \times \Sigma \times \{L,R\} \right)" src="//upload.wikimedia.org/math/a/1/f/a1f0d84dbb1183a277fd7e380703576f.png" /> is a relation on states and symbols called the <i>transition relation</i>. <img class="mwe-math-fallback-image-inline tex" alt="L" src="//upload.wikimedia.org/math/d/2/0/d20caec3b48a1eef164cb4ca81ba2587.png" /> is the movement to the left, and <img class="mwe-math-fallback-image-inline tex" alt="R" src="//upload.wikimedia.org/math/e/1/e/e1e1d3d40573127e9ee0480caf1283d6.png" /> is to the right.</li>
+</ul>
+<p>The difference with a standard (deterministic) <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a> is that for those, the transition relation is a function (the transition function).</p>
+<p>Configurations and the <i>yields</i> relation on configurations, which describes the possible actions of the Turing machine given any possible contents of the tape, are as for standard Turing machines, except that the <i>yields</i> relation is no longer single-valued. The notion of string acceptance is unchanged: a non-deterministic Turing machine accepts a string if, when the machine is started on the configuration in which the tape head is on the first character of the string (if any), and the tape is all blank otherwise, at least one of the machine's possible computations from that configuration puts the machine into a state in <img class="mwe-math-fallback-image-inline tex" alt="A" src="//upload.wikimedia.org/math/7/f/c/7fc56270e7a70fa81a5935b72eacbe29.png" />. (If the machine is deterministic, the possible computations are the prefixes of a single, possibly infinite, path.)</p>
+<h3><span class="mw-headline" id="Resolution_of_multiple_rules">Resolution of multiple rules</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit&amp;section=2" title="Edit section: Resolution of multiple rules">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>How does the NTM "know" which of these actions it should take? There are two ways of looking at it. One is to say that the machine is the "luckiest possible guesser"; it always picks a transition that eventually leads to an accepting state, if there is such a transition. The other is to imagine that the machine "<a href="/wiki/Many-worlds_theory" title="Many-worlds theory" class="mw-redirect">branches</a>" into many copies, each of which follows one of the possible transitions. Whereas a DTM has a single "computation path" that it follows, an NTM has a "computation tree". If at least one branch of the tree halts with an "accept" condition, we say that the NTM accepts the input.</p>
+<h2><span class="mw-headline" id="Equivalence_with_DTMs">Equivalence with DTMs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit&amp;section=3" title="Edit section: Equivalence with DTMs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In particular, nondeterministic Turing machines are equivalent with deterministic Turing machines. This equivalency refers to what can be computed, as opposed to how quickly.</p>
+<p>NTMs effectively include DTMs as special cases, so it is immediately clear that DTMs are not more powerful. It might seem that NTMs are more powerful than DTMs, since they can allow trees of possible computations arising from the same initial configuration, accepting a string if any one branch in the tree accepts it.</p>
+<p>However, it is possible to simulate NTMs with DTMs: One approach is to use a DTM of which the configurations represent multiple configurations of the NTM, and the DTM's operation consists of visiting each of them in turn, executing a single step at each visit, and spawning new configurations whenever the transition relation defines multiple continuations.</p>
+<p>Another construction<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> simulates NTMs with 3-tape DTMs, of which the first tape always holds the original input string, the second is used to simulate a particular computation of the NTM, and the third encodes a path in the NTM's computation tree. The 3-tape DTMs are easily simulated with a normal single-tape DTM.</p>
+<p>In this construction, the resulting DTM effectively performs a <a href="/wiki/Breadth-first_search" title="Breadth-first search">breadth-first search</a> of the NTM's computation tree, visiting all possible computations of the NTM in order of increasing length until it finds an accepting one. Therefore, the length of an accepting computation of the DTM is, in general, exponential in the length of the shortest accepting computation of the NTM. This is considered to be a general property of simulations of NTMs by DTMs; the most famous unresolved question in computer science, the <a href="/wiki/P_%3D_NP_problem" title="P = NP problem" class="mw-redirect">P = NP problem</a>, is related to this issue.</p>
+<h2><span class="mw-headline" id="Bounded_non-determinism">Bounded non-determinism</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit&amp;section=4" title="Edit section: Bounded non-determinism">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An NTM has the property of bounded non-determinism, <i>i.e.</i>, if an NTM always halts on a given input tape <i>T</i> then it halts in a bounded number of steps, and therefore can only have a bounded number of possible configurations.</p>
+<h2><span class="mw-headline" id="Comparison_with_quantum_computers">Comparison with quantum computers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit&amp;section=5" title="Edit section: Comparison with quantum computers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:BQP_complexity_class_diagram.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1d/BQP_complexity_class_diagram.svg/220px-BQP_complexity_class_diagram.svg.png" width="220" height="176" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1d/BQP_complexity_class_diagram.svg/330px-BQP_complexity_class_diagram.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1d/BQP_complexity_class_diagram.svg/440px-BQP_complexity_class_diagram.svg.png 2x" data-file-width="518" data-file-height="414" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:BQP_complexity_class_diagram.svg" class="internal" title="Enlarge"></a></div>
+The suspected shape of the range of problems <a href="/wiki/BQP" title="BQP">solvable by quantum computers in polynomial time</a> (BQP). Note that the figure suggests <img class="mwe-math-fallback-image-inline tex" alt="\mathbf P \neq \mathbf{NP}" src="//upload.wikimedia.org/math/a/a/4/aa46ad1815065ee7ce46d1f95cef04b4.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\mathbf{NP} \neq \mathbf{PSPACE}" src="//upload.wikimedia.org/math/6/2/8/628c9613b9097ee9d79409002a83ae2e.png" />. If this is not true then the figure should look different.</div>
+</div>
+</div>
+<p>It is a common misconception that <a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">quantum computers</a> are NTMs.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> It is believed but has not been proven that the power of quantum computers is incomparable to that of NTMs.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup> That is, problems likely exist that an NTM could efficiently solve that a quantum computer cannot. A likely example of problems solvable by NTMs but not by quantum computers in polynomial time are <a href="/wiki/NP-complete" title="NP-complete" class="mw-redirect">NP-complete</a> problems.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Probabilistic_Turing_machine" title="Probabilistic Turing machine">Probabilistic Turing machine</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit&amp;section=7" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><i>Elements of the Theory of Computation</i>, by Harry R. Lewis and Christos H. Papadimitriou, Prentice-Hall, Englewood Cliffs, New Jersey, 1981, <a href="/wiki/Special:BookSources/0132734176" class="internal mw-magiclink-isbn">ISBN 0-13-273417-6</a>, pp. 206-211</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.scottaaronson.com/blog/?p=198">The Orion Quantum Computer Anti-Hype FAQ</a>, <a href="/wiki/Scott_Aaronson" title="Scott Aaronson">Scott Aaronson</a>.</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation arxiv">Tušarová, Tereza (2004). "Quantum complexity classes". <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/cs/0409051">cs/0409051</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-deterministic+Turing+machine&amp;rft.atitle=Quantum+complexity+classes&amp;rft.aufirst=Tereza&amp;rft.aulast=Tu%C5%A1arov%C3%A1&amp;rft.au=Tu%C5%A1arov%C3%A1%2C+Tereza&amp;rft.date=2004&amp;rft.genre=preprint&amp;rft_id=info%3Aarxiv%2Fcs%2F0409051&amp;rft.jtitle=arXiv&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span>.</span></li>
+</ol>
+</div>
+<ul>
+<li><span class="citation book"><a href="/wiki/Harry_R._Lewis" title="Harry R. Lewis">Harry R. Lewis</a>, <a href="/wiki/Christos_Papadimitriou" title="Christos Papadimitriou">Christos Papadimitriou</a> (1981). <i>Elements of the Theory of Computation</i> (1st ed.). Prentice-Hall. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-273417-6" title="Special:BookSources/0-13-273417-6">0-13-273417-6</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-deterministic+Turing+machine&amp;rft.au=Harry+R.+Lewis%2C+Christos+Papadimitriou&amp;rft.aulast=Harry+R.+Lewis%2C+Christos+Papadimitriou&amp;rft.btitle=Elements+of+the+Theory+of+Computation&amp;rft.date=1981&amp;rft.edition=1st&amp;rft.genre=book&amp;rft.isbn=0-13-273417-6&amp;rft.pub=Prentice-Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> Section 4.6: Nondeterministic Turing machines, pp.&#160;204–211.</li>
+<li><span class="citation book"><a href="/w/index.php?title=John_C._Martin_(Computer_scientist)&amp;action=edit&amp;redlink=1" class="new" title="John C. Martin (Computer scientist) (page does not exist)">John C. Martin</a> (1997). <i>Introduction to Languages and the Theory of Computation</i> (2nd ed.). McGraw-Hill. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-040845-9" title="Special:BookSources/0-07-040845-9">0-07-040845-9</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-deterministic+Turing+machine&amp;rft.au=John+C.+Martin&amp;rft.aulast=John+C.+Martin&amp;rft.btitle=Introduction+to+Languages+and+the+Theory+of+Computation&amp;rft.date=1997&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=0-07-040845-9&amp;rft.pub=McGraw-Hill&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> Section 9.6: Nondeterministic Turing machines, pp.&#160;277–281.</li>
+<li><span class="citation book"><a href="/wiki/Christos_Papadimitriou" title="Christos Papadimitriou">Christos Papadimitriou</a> (1993). <i>Computational Complexity</i> (1st ed.). Addison-Wesley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-53082-1" title="Special:BookSources/0-201-53082-1">0-201-53082-1</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANon-deterministic+Turing+machine&amp;rft.au=Christos+Papadimitriou&amp;rft.aulast=Christos+Papadimitriou&amp;rft.btitle=Computational+Complexity&amp;rft.date=1993&amp;rft.edition=1st&amp;rft.genre=book&amp;rft.isbn=0-201-53082-1&amp;rft.pub=Addison-Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> Section 2.7: Nondeterministic machines, pp.&#160;45–50.</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit&amp;section=8" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://web.archive.org/web/20080515023814/http://semillon.wpi.edu/~aofa/AofA/msg00020.html">C++ Simulator of a Nondeterministic Multitape Turing Machine</a> (free software).</li>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/turing-machine/">C++ Simulator of a Nondeterministic Multitape Turing Machine download link from sourceforge.net</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1245
+Cached time: 20150919121928
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.112 seconds
+Real time usage: 0.583 seconds
+Preprocessor visited node count: 347/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 10399/2097152 bytes
+Template argument size: 36/2097152 bytes
+Highest expansion depth: 5/40
+Expensive parser function count: 0/500
+Lua time usage: 0.026/10.000 seconds
+Lua memory usage: 1.56 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  544.038      1 - -total
+  5.53%   30.093      1 - Template:Turing
+  5.51%   29.988      1 - Template:Reflist
+  5.10%   27.751      1 - Template:Sidebar
+  4.42%   24.053      1 - Template:Cite_arxiv
+  1.85%   10.054      3 - Template:Cite_book
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:21935-0!*!0!!en!4!*!math=0 and timestamp 20150919121927 and revision id 677323513
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Non-deterministic_Turing_machine&amp;oldid=677323513">https://en.wikipedia.org/w/index.php?title=Non-deterministic_Turing_machine&amp;oldid=677323513</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Turing_machine" title="Category:Turing machine">Turing machine</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Non-deterministic+Turing+machine&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Non-deterministic+Turing+machine" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Non-deterministic_Turing_machine"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Non-deterministic_Turing_machine"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Non-deterministic_Turing_machine" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Non-deterministic_Turing_machine" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Non-deterministic_Turing_machine" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;oldid=677323513" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q1190223" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Non-deterministic_Turing_machine&amp;id=677323513" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Non-deterministic+Turing+machine">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Non-deterministic+Turing+machine&amp;oldid=677323513&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Non-deterministic_Turing_machine&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/M%C3%A0quina_de_Turing_no_determinista" title="Màquina de Turing no determinista – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Nichtdeterministische_Turingmaschine" title="Nichtdeterministische Turingmaschine – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-eo"><a href="//eo.wikipedia.org/wiki/Nedeterminisma_ma%C5%9Dino_de_Turing" title="Nedeterminisma maŝino de Turing – Esperanto" lang="eo" hreflang="eo">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D9%85%D8%A7%D8%B4%DB%8C%D9%86_%D8%AA%D9%88%D8%B1%DB%8C%D9%86%DA%AF_%D8%BA%DB%8C%D8%B1%D9%82%D8%B7%D8%B9%DB%8C" title="ماشین تورینگ غیرقطعی – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Machine_de_Turing_non_d%C3%A9terministe" title="Machine de Turing non déterministe – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="//ko.wikipedia.org/wiki/%EB%B9%84%EA%B2%B0%EC%A0%95%EB%A1%A0%EC%A0%81_%ED%8A%9C%EB%A7%81_%EA%B8%B0%EA%B3%84" title="비결정론적 튜링 기계 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-hr"><a href="//hr.wikipedia.org/wiki/Nedeterministi%C4%8Dki_Turingov_stroj" title="Nedeterministički Turingov stroj – Croatian" lang="hr" hreflang="hr">Hrvatski</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%9E%D7%9B%D7%95%D7%A0%D7%AA_%D7%98%D7%99%D7%95%D7%A8%D7%99%D7%A0%D7%92_%D7%9C%D7%90-%D7%93%D7%98%D7%A8%D7%9E%D7%99%D7%A0%D7%99%D7%A1%D7%98%D7%99%D7%AA" title="מכונת טיורינג לא-דטרמיניסטית – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E9%9D%9E%E6%B1%BA%E5%AE%9A%E6%80%A7%E3%83%81%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%9E%E3%82%B7%E3%83%B3" title="非決定性チューリングマシン – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/M%C3%A1quina_de_Turing_n%C3%A3o_determin%C3%ADstica" title="Máquina de Turing não determinística – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%B4%D0%B5%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0" title="Недетерминированная машина Тьюринга – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="//simple.wikipedia.org/wiki/Non-deterministic_turing_machine" title="Non-deterministic turing machine – Simple English" lang="simple" hreflang="simple">Simple English</a></li><li class="interlanguage-link interwiki-tr"><a href="//tr.wikipedia.org/wiki/Belirlenimsiz_Turing_makinesi" title="Belirlenimsiz Turing makinesi – Turkish" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%9D%D0%B5%D0%B4%D0%B5%D1%82%D0%B5%D1%80%D0%BC%D1%96%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B0_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D0%A2%D1%8E%D1%80%D1%96%D0%BD%D0%B3%D0%B0" title="Недетермінована машина Тюрінга – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E9%9D%9E%E7%A1%AE%E5%AE%9A%E5%9E%8B%E5%9B%BE%E7%81%B5%E6%9C%BA" title="非确定型图灵机 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q1190223#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 22 August 2015, at 13:41.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Non-deterministic_Turing_machine&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":106,"wgHostname":"mw1040"});
+} );</script>
+	</body>
+</html>

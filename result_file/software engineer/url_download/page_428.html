@@ -1,0 +1,1886 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="ctl00_m_htmlHeader"><title>
+	PayScale Index - National Compensation Trends for The United States
+</title><meta http-equiv="x-ua-compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c6be3e8463","applicationID":"7165898","transactionName":"b1RQZ0BQD0FWWkFQClYec2BiHlUCAxdUShVA","queueTime":0,"applicationTime":1072,"ttGuid":"7A15F2F4444BE0A4","agent":"js-agent.newrelic.com/nr-686.min.js"}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAcGVlBTGwQBUlRaDgk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta property="fb:app_id" content="237709899768126"/>
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="apple-touch-icon" sizes="57x57" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="//cdn-payscale.com/resources/150825/images/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//cdn-payscale.com/resources/150825/images/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="//cdn-payscale.com/resources/150825/images/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//cdn-payscale.com/resources/150825/images/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="//cdn-payscale.com/resources/150825/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#c53b31">
+<meta name="msapplication-TileImage" content="//cdn-payscale.com/resources/150825/images/favicon/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-config" content="//cdn-payscale.com/resources/150825/images/favicon/browserconfig.xml">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style>
+        body, td, div, p {
+            color: #333333;
+            font-family: Verdana,Arial,Tahoma,Helvetica,sans-serif;
+            font-size: 11px;
+        }
+
+        ul li {
+            list-style-image: none;
+            margin: 0;
+        }
+
+        A:link, span.link {
+            color: #0066CC;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .navbar-inner, .btn-navbar {
+            background-color: #eaeaea;
+            background-image: -webkit-linear-gradient(top, #eaeaea, #f2f2f2);
+            background-image: -o-linear-gradient(top, #eaeaea, #f2f2f2);
+            background-image: linear-gradient(top, #eaeaea, #f2f2f2);
+            background-image: -moz-linear-gradient(center top, #eaeaea, #f2f2f2);
+        }
+
+            .btn-navbar:hover,
+            .btn-navbar:active,
+            .btn-navbar.active,
+            .btn-navbar.disabled,
+            .btn-navbar[disabled] {
+                background-color: #eaeaea;
+            }
+    </style>
+
+<meta name="description" content="See national compensation trends for the United States. Free compensation and salary reports." /><meta name="keywords" content="salary,salary calculator,salary survey,salary comparison,job salary,salary wizard,worker compensation,wages,pay,compensation,wage surveys,pay rates,compensation,salaries,wages,executive compensation,job transfer,resume,career planning,negotiation,employee benefits,career information,relocation,payscale report,payscale,payscale.com,career" /><link rel="shortcut icon" href="/favicon.ico" /><link rel="icon" href="/favicon.ico" /><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/dist/consumer/header-footer.min.css"/><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/dist/consumer/payscale-consumer.min.css"/><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/dist/consumer/font-awesome.min.css"/><meta property="og:image" content="http://www.payscale.com/content/ps_indexicon01.png" />
+    <meta property="fb:app_id" content="237709899768126" /><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/jquery/jquery-2.1.3.min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/jquery/jquery-migrate-1.2.1.js"></script><link rel='search' type='application/opensearchdescription+xml' title='PayScale Salary Search' href='/opensearch.xml' />
+<script>
+var dataLayer = [{"cacheControl":"public"}];
+</script>
+<script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/dist/consumer/header-footer.min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/textInput-min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/hoverTooltip-min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/countrystate-min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/countrystate_array.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/fg-location-min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/fgvalidatefuncs-min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/eventmanager-min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/dist/consumer/payscale-consumer.min.js"></script>
+                    <script>
+                    var startTime = new Date();
+                    function GetClientUTC()
+                    {
+                        var now = new Date();
+                        var offset = (now.getTimezoneOffset() / 60) * -1;
+                        return offset;
+                    }
+
+                    // Get our elapsed Time
+                    function checkLoadTime(){
+                        var endTime = new Date();
+                        var jsElapsedTime = endTime.getTime() - startTime.getTime();
+                        var url="/PerformanceLogger.aspx?clientTime=" + jsElapsedTime + "&serverTime=0&pageName=/404.aspx";
+                        $.ajax(url);
+                    }
+                    </script><script>var g_suppressJsErrors = false;</script></head>
+<body style="padding: 0;">
+    
+<!-- Google Tag Manager -->
+<noscript><iframe src='//www.googletagmanager.com/ns.html?id=GTM-P3CVWR'
+height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+<script>    (function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({ 'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-P3CVWR');</script>
+<!-- End Google Tag Manager -->
+
+
+    
+
+
+    <span id="pageTop"></span>
+    
+    
+<span class="dynamicContentBegin hidden" data-content="/header-footer/header"></span><div id="psHeaderCon">
+  <div id="psHeader" class="menuStart">
+    <a href="/" class="ps-logo"><img src="//cdn-payscale.com/resources/150825/images/header/PS_logo_180x61.png" /></a>
+    <div class="menuToggle rightSideNav psMobile">
+      <img src="//cdn-payscale.com/resources/150825/images/header/hamburger.png" class="hamburger">
+      <img src="//cdn-payscale.com/resources/150825/images/header/x-black-16x16.png" class="xburger">
+    </div>
+    <ul class="psHeaderMenu">
+      <li id="personal" class="menuTop">
+        <a href="/mypayscale.aspx" class="menuLink">
+          <span id="psHeaderPersonal" class="menuItem">
+            PERSONAL
+            <span class="menuItemBlurb">What am I worth?</span>
+          </span>
+        </a>
+        <div class="flyout">
+          <div class="flyoutBody">
+            <div id="menuAdLeft" class="menuColumn whatsYourWorthAd">
+              <h3 class="whatsYourWorthHeadline">What are you worth?</h3>
+                <div class="whatsYourWorthText">
+                Find out what you
+                <br>
+                should be paid.
+              </div>
+              <a href="/startwizard.aspx?starttype=Header">
+                <span class="primaryButton">
+                  Get a Free <br>Salary Report
+                </span>
+              </a> 
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/mypayscale.aspx">Salary Reports</a>
+              </div>
+              <div class="navItem">
+                <a href="/mypayscale.aspx">Your Salary</a>
+              </div>
+              <div class="navItem">
+                <a href="/startwizard.aspx?startType=Header">Start New Survey</a>
+              </div>
+              <div class="navItem">
+                <a href="/linkedin">Import LinkedIn Profile</a>
+              </div>
+              <div class="navCategory">
+                <a href="/research/US/Country=United_States/Salary">Career Research</a>
+              </div>
+              <div class="navItem">
+                <a href="/research/US/Country=United_States/Salary">Employer &amp; Job Salaries</a>
+              </div>
+              <div class="navItem">
+                <a href="/gigzig.aspx">Career Path Explorer</a>
+              </div>
+              <div class="navItem">
+                <a href="/cost-of-living-calculator">Cost of Living Calculator</a>
+              </div>
+              <div class="navItem">
+                <a href="/career-goals">Career Goal Tracker</a>
+              </div>
+              <div class="navCategory">
+                <a href="/career-news">Career News Blog</a>
+              </div>
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/resources.aspx">Special Reports</a>
+              </div>
+              <div class="navItem">
+                <a href="/salary-negotiation-guide">Salary Negotiation Guide</a>
+              </div>
+              <div class="navItem">
+                <a href="/payscale-index/">The PayScale Index</a>
+              </div>
+              <div class="navItem">
+                <a href="/data-packages">Data Packages</a>
+              </div>
+              <div class="navItem">
+                <a href="/data-visualizations">Data Visualizations</a>
+              </div>
+
+              <div class="navCategory">
+                <a href="/education">Education</a>
+              </div>
+              <div class="navItem">
+                <a href="/college-roi/">College ROI Report</a>
+              </div>
+              <div class="navItem">
+                <a href="/college-salary-report">College Salary Report</a>
+              </div>
+              <div class="navCategory">
+                <a href="/Job-Search-Engine">Find Jobs</a>
+              </div>
+            </div>
+            <div id="menuAdRight" class="menuColumn whatsYourWorthAd">              
+                <h3 class="whatsYourWorthHeadline">What are you worth?</h3>
+                <div class="whatsYourWorthText">
+                  Find out what you
+                  <br>
+                  should be paid.
+                </div>
+                <a href="/startwizard.aspx?starttype=Header">
+                  <span class="primaryButton">
+                    Get a Free <br>Salary Report
+                  </span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="business" class="menuTop">
+        <a href="/hr" class="menuLink">
+          <span id="psHeaderBusiness" class="menuItem">
+            BUSINESS<span class="menuItemBlurb">What should I pay?</span>
+          </span>
+        </a>
+        <div class="flyout">
+          <div class="flyoutBody">
+            <div id="menuAdLeft" class="menuColumn latestCompTrendsAd">
+              <a href="http://resources.payscale.com/hr-2014-compensation-practices-report.html">
+                <img width="237" height="303" alt="Download the Compensation Best Practices Report and make sure to keep your top employees" src="//www.payscale.com/content/header-footer/comp-trends-ad-grey.jpg">
+              </a>
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/hr">Compensation Software</a>
+              </div>
+              <div class="navItem">
+                <a href="/hr/videos">Tour</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/product-insight-expert">Products</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/customers">Customers</a>
+              </div>
+              <div class="navCategory">
+                <a href="/industries">Industries</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/partners">Partners</a>
+              </div>
+               <div class="navCategory">
+                <a href="/hr/services">Services</a>
+              </div>
+
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/hr/resources">Resources</a>
+              </div>
+              <div class="navItem">
+                <a href="/hr/resources">Compensation Resources</a>
+              </div>
+              <div class="navItem">
+                <a href="/hr/product-how-it-works">Methodology</a>
+              </div>
+              <div class="navItem">
+                <a href="/cbpr">Best Practices Research</a>
+              </div>
+
+              <div class="navCategory">
+                <a href="/compensation-today">Blog</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/startwizard?starttype=Header">Price a Job</a>
+              </div>
+              <div class="navCategory">
+                <a href="http://resources.payscale.com/hr-request-a-demo.html">Demo</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/whypayscale/support">Support</a>
+              </div>
+            </div>
+            <div id="menuAdRight" class="menuColumn latestCompTrendsAd">
+              <a href="http://www.payscale.com/cbpr">
+                <img width="237" height="303" alt="Download 2015 Compensation Best Practices Report" src="//cdn-payscale.com/cms-images/default-source/b2b/img_2015cbpr_navigation_ad.jpg?sfvrsn=2">
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="about" class="menuTop">
+        <a href="/about" class="menuLink">
+          <span id="psHeaderAbout" class="menuItem">
+            ABOUT<span class="menuItemBlurb">Who we are.</span>
+          </span>
+        </a>
+        <div class="flyout">
+          <div class="flyoutBody">
+            <div id="menuAdLeft" class="menuColumn compVideoAd">
+              <a href="/hr/videos">
+                <img alt="Take a tour of PayScale!" width="243" height="135" src="//cdn-payscale.com/cms-images/default-source/b2b/img_video.png?sfvrsn=2">
+              </a>
+                <p class="compVideoAdBlurb">
+                  Got a minute?
+                </p>
+              </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/about">Who We Are</a>
+              </div>
+              <div class="navItem">
+                <a href="/about/management-team">Executive Team</a>
+              </div>
+              <div class="navItem">
+                <a href="/about/board-of-directors">Board of Directors</a>
+              </div>
+              <div class="navItem">
+                <a href="/about/board-of-advisors">Economic Advisors</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/methodology">Methodology</a>
+              </div>
+              <div class="navCategory linkJobListing">
+                <a href="/about/jobs">Work For Us</a>
+              </div>
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/about/latest-news">PayScale in the News</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/press-releases">Press Releases</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/press-kit">Press Kit</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/use-our-data">Use Our Data</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/contact">Contact</a>
+              </div>
+            </div>
+            <div id="menuAdRight" class="menuColumn whatsYourWorthAd">
+              <a href="/hr/videos">
+                <img alt="Take a tour of PayScale!" width="243" height="135" src="//cdn-payscale.com/cms-images/default-source/b2b/img_video.png?sfvrsn=2">
+              </a>
+              <p class="compVideoAdBlurb">
+                Got a minute?
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li id="phone" class="rightSideNav menuTop">
+        <a href="tel:+1-888-219-0327" style="display:block; width=100%;">
+          <span id="psHeaderPhoneCon" class="menuItemStatic">
+            <div class="telephone"></div>
+            <span>1.888.219.0327</span>
+          </span>
+        </a>
+      </li>
+      <li id="loggedin" class="rightSideNav menuTop loginOption out">
+        <span id="loginContainer" class="menuItemStatic" >
+          <a href="/login.aspx" class="menuLink allowNav">
+            <span>LOGIN</span>
+          </a>
+        </span>
+      </li>
+        <li id="loggedout" class="rightSideNav menuTop loginOption in">
+        <span id="loggedInContainer" class="menuItemStatic menuLink">
+          <div class="star"></div>
+          <span id="loggedInUsername"></span>
+        </span>
+            <div class="smallMenu" style="width: 150px">
+                <div class="smallMenuBody" id="loginMenuBusiness">
+                    <div>
+                        <a href="/redir.aspx?site=insight&url=/dashboard.aspx">My Dashboard</a>
+                    </div>
+                    <div style="min-height: 10px;">
+                    </div>
+                    <div>
+                        <a href="/mypayscale.aspx">My Salary Reports</a>
+                    </div>
+                    <div>
+                        <a href="/myaccount.aspx">My Account</a>
+                    </div>
+
+                    <div>
+                        <a href="/logout.aspx">Log Out</a>
+                    </div>
+                </div>
+
+                <div class="smallMenuBody" id="loginMenuPersonal">
+                    <div>
+                        <a href="/mypayscale.aspx">My Salary Reports</a>
+                    </div>
+                    <div>
+                        <a href="/myaccount.aspx">My Account</a>
+                    </div>
+                    <div>
+                        <a href="/logout.aspx">Log Out</a>
+                    </div>
+                </div>
+
+                <div class="smallMenuBody" id="loginMenuAbout">
+                    <div>
+                        <a href="/mypayscale.aspx">My Salary Reports</a>
+                    </div>
+                    <div>
+                        <a href="/myaccount.aspx">My Account</a>
+                    </div>
+                    <div>
+                        <a href="/logout.aspx">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+  <div class="headerBottomBorder"></div>
+</div>
+<span class="dynamicContentEnd hidden" data-content="/header-footer/header"></span>
+<script>
+    window.pageType = 1;
+</script>
+
+
+    
+    
+
+    <div style="max-width: 1000px; margin: 0 auto 0 auto;">
+        <span class="dynamicContentBegin hidden" data-content="ConsumerBrowserSunsetWarning"></span><!--[if LTE 8]>
+<style>
+ .alert.alert-danger h4 {
+   font-size: 20px;
+ }
+</style>
+<div class="alert alert-danger">
+    <h4>Support for your browser is ending</h4>
+    <p>You are using an outdated browser: <span class="bold">Internet Explorer 8 or older</span>. Please download <a target="_blank" class="alert-link" href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a>, <a class="alert-link" target="_blank" href="https://www.mozilla.org/firefox">Firefox</a>, or the latest version of <a class="alert-link" target="_blank" href="http://windows.microsoft.com/ie">Internet Explorer</a>.</p>
+    <p>For more details, refer to our <a target="_blank" class="alert-link" href="http://www.payscale.com/hr/whypayscale/support#browserPolicy">Browser Policy</a>.</p>
+</div>
+<![endif]--><span class="dynamicContentEnd hidden" data-content="ConsumerBrowserSunsetWarning"></span>
+        
+
+   
+
+
+
+
+<div id='fb-root'></div><script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId                 : '355988364493140',
+            status                : true,
+            cookie                : true,
+            xfbml                 : true,
+            oauth                 : true,
+            frictionlessRequests  : true,
+            version               : 'v2.0'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b8702536ee5fa2c"></script>      
+<script type="text/javascript">
+    function ShowChartView() {
+        jQuery('#yearOverYearChartDiv').show();
+        jQuery('#yearOverYearChartSyndicatedBox').show();
+        jQuery('#quarterlyChartDiv').show();
+        jQuery('#quarterlyChartSyndicatedBox').show();
+		jQuery('#yearOverYearTableDiv').hide();
+        jQuery('#yearOverYearTableSyndicatedBox').hide();
+        jQuery('#quarterlyTableDiv').hide();
+        jQuery('#quarterlyTableSyndicatedBox').hide();
+
+    }
+
+    function ShowTableView() {
+        jQuery('#quarterlyTableDiv').show();
+        jQuery('#quarterlyTableSyndicatedBox').show();
+        jQuery('#yearOverYearTableDiv').show();
+        jQuery('#yearOverYearTableSyndicatedBox').show();
+        jQuery('#quarterlyChartDiv').hide();
+        jQuery('#quarterlyChartSyndicatedBox').hide();
+        jQuery('#yearOverYearChartDiv').hide();
+        jQuery('#yearOverYearChartSyndicatedBox').hide();
+    }
+
+    function AddTrend(basePageUrl, trend) {
+		AddTrendYearOverYearChart(basePageUrl, trend); 
+	}
+
+
+	function AddTrendYearOverYearChart(basePageUrl, trend) {
+        jQuery.ajax({
+            url: basePageUrl + "?part=true&type=YearOverYearChart&addtrend=" + trend + "&interactive=true&width=854&height=504",
+            success: function(data) {
+                jQuery('#yearOverYearChartDiv').html(data);
+            }
+        });
+
+        jQuery.ajax({
+            url: basePageUrl + "?part=true&type=YearOverYearChartSyndicated&addtrend=" + trend + "&width=854&height=504",
+            success: function(data) {
+                jQuery('#syndicateYearOverYearChart').attr('value', data);
+            }
+        });
+
+        jQuery.ajax({
+            url: basePageUrl + "?part=true&type=QuarterlyChart&addtrend=" + trend + "&interactive=false&legend=true&width=602&height=215",
+            success: function(data) {
+                jQuery('#quarterlyChartDiv').html(data);
+            }
+        });
+
+        jQuery.ajax({
+            url: basePageUrl + "?part=true&type=QuarterlyChartSyndicated&addtrend=" + trend + "&legend=true&width=602&height=215",
+            success: function(data) {
+                jQuery('#syndicateQuarterlyChart').attr('value', data);
+            }
+        });
+
+        jQuery.ajax({
+            url: basePageUrl + "?part=true&type=YearOverYearTable&addtrend=" + trend,
+            success: function(data) {
+                jQuery('#yearOverYearTableDiv').html(data);
+            }
+        });
+
+        jQuery.ajax({
+            url: basePageUrl + "?part=true&type=YearOverYearTableSyndicated&addtrend=" + trend,
+            success: function(data) {
+                jQuery('#syndicateYearOverYearTable').attr('value', data);
+            }
+        });
+
+        jQuery.ajax({
+            url: basePageUrl + "?part=true&type=QuarterlyTable&addtrend=" + trend,
+            success: function(data) {
+                jQuery('#quarterlyTableDiv').html(data);
+            }
+        });
+
+        jQuery.ajax({
+            url: basePageUrl + "?part=true&type=QuarterlyTableSyndicated&addtrend=" + trend,
+            success: function(data) {
+                jQuery('#syndicateQuarterlyTable').attr('value', data);
+            }
+        });
+    }
+    
+    function AddTrendEventHandler(event) {
+
+        var basePageUrl = window.location.href;
+
+        if (window.location.hash) {
+            var hashIndex = window.location.href.indexOf('#');
+            basePageUrl = window.location.href.substring(0, hashIndex);
+            window.location.hash = event.target.value;
+        }
+        else {
+            window.location.hash = event.target.value;
+        }
+        
+        AddTrend(basePageUrl, event.target.value);
+    }
+
+
+    jQuery(document).ready(function() {
+        if (window.location.hash) {
+            var hashIndex = window.location.href.indexOf('#');
+            var basePageUrl = window.location.href.substring(0, hashIndex);
+            var hash = window.location.href.substring(hashIndex + 1, window.location.href.length)
+            AddTrend(basePageUrl, hash);
+        }
+    });   
+</script>
+
+
+
+<div class="container">
+     <div class="row">
+    <div class="col-sm-10">
+    <a id="ctl00_mainContent_ctl00_breadCrumbs_topLink" href="/payscale-index/">The PayScale Index </a>  
+    </div>
+    <div class="col-sm-2 small text-left"><a href="/payscale-index-uk">
+		    <img src="http://cdn-payscale.com/content/index_flagicon_uk01.jpg" alt="The PayScale Index UK" width="24" height="24" border="0" /></a>
+		  <a href="/payscale-index-uk">UK</a>
+		    <img src="http://cdn-payscale.com/content/index_flagicon_ca01.jpg" alt="The PayScale Index Canada" width="24" height="24" border="0" /></a>
+		  <a href="/payscale-index-canada">CA</a></div>
+  </div>
+
+	
+
+<style type="text/css">
+.subNavTextLineOne {
+  padding-left: 20px;
+  color: #b32f24;
+  font-size: 38px;
+  position: absolute;
+  top: 30px;
+  left: 45px;
+}
+
+.subNavTextLineTwo {
+  padding-left: 15px;
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Roboto Slab';
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+
+.dropdown a {
+    color: #fff;
+}
+
+
+.btn-nav {
+  color: #ffffff;
+  background-color: #b32f24;
+  border-color: #b32f24;
+  border-radius: 0;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.btn-nav:hover,
+.btn-nav:focus,
+.btn-nav.focus,
+.btn-nav:active,
+.btn-nav.active,
+.open > .dropdown-toggle {
+  color: #fff;
+  background-color: #565656;
+  border-color: #565656;
+}
+
+.caret { 
+    position: absolute;
+    right: 5px;
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+	.col-sm-3 {
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+
+	.navBarButtons .col-sm-3:nth-child(1) {
+	padding-right: 2px;
+	}
+
+	.navBarButtons .col-sm-3:nth-child(2) {
+	padding-right: 2px;
+	padding-left: 2px;
+	}
+
+	.navBarButtons .col-sm-3:nth-child(3) {
+	padding-left: 2px;
+	}
+	
+	.navBarButtons {
+	    padding: 0px 13px;
+	}
+}
+</style>
+
+<div class="row margin-top-md">  
+<div class="col-md-12">
+
+
+<!-- Content Navigation -->
+
+<div class="row">
+    <div class="col-xs-12">
+        <!-- Desktop Image -->
+        <div class="row hidden-sm hidden-xs">
+            <div class="col-xs-12">
+                <a href="/payscale-index">
+                    <img src="//cdn-payscale.com/content/index/ps-index-header-970x110.png" class="img-responsive col-xs-12 margin-bottom-xs" />
+                    <span class="subNavTextLineOne">The PayScale Index (US): Trends in Compensation</span>
+                    <span class="subNavTextLineTwo"></span>
+                </a>
+            </div>
+        </div>
+        <!-- Tablet Image -->
+        <div class="row visible-sm-block">
+            <div class="col-xs-12">
+                <a href="/payscale-index">
+                    <img src="//cdn-payscale.com/content/index/ps-index-header-715x120.png" class="img-responsive col-xs-12 margin-bottom-xs" />
+                </a>
+            </div>
+        </div>
+        <!-- Mobile Image -->
+        <div class="row visible-xs-block">
+            <div class="col-xs-12">
+                <a href="/payscale-index">
+                    <img src="//cdn-payscale.com/content/index/ps-index-header-532x124.png" class="img-responsive col-xs-12 margin-bottom-xs" />
+                </a>
+            </div>
+        </div>
+        <!-- Sub Navigation Buttons -->
+        <div class="row navBarButtons">
+            
+                <div class="col-sm-3"><div class="dropdown"><a href="#" class="btn btn-block dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-expanded="false" id="trends"><span class="text-center"><strong>Trends by City</strong></span><span class="caret"></span></a><ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities">Metro Area Rankings</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-atlanta-metro-area">Atlanta Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-baltimore-metro-area">Baltimore Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-boston-metro-area">Boston Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-chicago-metro-area">Chicago Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-dallas-metro-area">Dallas Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-detroit-metro-area">Detroit Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-houston-metro-area">Houston Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-los-angeles-metro-area">Los Angeles Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-miami-metro-area">Miami Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-minneapolis-metro-area">Minneapolis Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-new-york-metro-area">New York Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-philadelphia-metro-area">Philadelphia Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-phoenix-metro-area">Phoenix Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-riverside-ca-metro-area">Riverside, CA Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-san-diego-metro-area">San Diego Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-san-francisco-metro-area">San Francisco Metro Area</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-seattle-metro-area">Seattle Metro Area</a></li>
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-st-louis-metro-area">St. Louis Metro Area</a></li>
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-tampa-metro-area">Tampa Metro Area</a></li>
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/cities/compensation-trends-washington-dc-metro-area">Washington DC Metro Area</a></li>     
+                </ul></div></div>
+                
+                
+                <div class="col-sm-3"><div class="dropdown"><a href="#" class="btn btn-block dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-expanded="false" id="industry"><span class="text-center"><strong>Trends by Industry</strong></span><span class="caret"></span></a><ul class="dropdown-menu" role="menu">
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries">Industry Rankings</a></li>
+                     <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-arts-entertainment-and-recreation-industry">Arts, Entertainment & Recreation</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-business-operation-support-services-industry">Business Operation Support Services</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-construction-industry">Construction</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-finance-and-insurance-industry">Finance & Insurance</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-food-services-and-accommodation-industry">Food Services & Accommodation</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-healthcare-and-social-assistance-industry">Healthcare & Social Assistance</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-information-media-and-telecommunications-industry">Information, Media & Telecommunications</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-manufacturing-industry">Manufacturing</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-mining-industry">Mining, Oil & Gas Exploration</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-professional-scientific-and-tech-services-industry">Professional, Scientific & Tech Services</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-real-estate-industry">Real Estate & Rental Services</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-retail-industry">Retail Industry</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-transportation-and-warehousing-storage-industry">Transportation & Warehousing/Storage</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-utilities-industry">Utilities</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/industries/compensation-trends-wholesale-trade-industry">Wholesale Trade</a></li>
+                </ul></div></div>
+                
+                <div class="col-sm-3"><div class="dropdown"><a href="#" class="btn btn-block dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-expanded="false" id="companysize"><span class="text-center"><strong>Trends by Company Size</strong></span><span class="caret"></span></a><ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/company-sizes">Company Size Rankings</a></li>
+                     <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/company-sizes/compensation-trends-small-companies">Small Companies</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/company-sizes/compensation-trends-medium-companies">Medium Companies</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/company-sizes/compensation-trends-large-companies">Large Companies</a></li>
+                </ul></div></div>
+                
+                 <div class="col-sm-3"><div class="dropdown"><a href="#" class="btn btn-block dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-expanded="false" id="jobcategory"><span class="text-center"><strong>Trends by Job Category</strong></span><span class="caret"></span></a><ul class="dropdown-menu" role="menu">
+                   <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories">Job Category Rankings</a></li>
+                     <li role="presentation" class="divider"></li>
+                   <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/accounting-and-finance-jobs">Accounting & Finance</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/administrative-and-clerical-jobs">Administrative & Clerical</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/architecture-and-engineering-jobs">Architecture & Engineering</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/art-and-design-jobs">Art & Design</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/construction-jobs">Construction</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/food-service-and-restaurant-jobs">Food Service & Restaurant</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/healthcare-practitioners-and-technical-healthcare-jobs">Healthcare Practitioners & Technical Healthcare</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/human-resources-jobs">Human Resources</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/information-technology-jobs">Information Technology</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/installation-maintenance-and-repair-jobs">Installation, Maintenance & Repair</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/legal-jobs">Legal</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/manufacturing-and-production-jobs">Manufacturing & Production</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/marketing-and-advertising-jobs">Marketing & Advertising</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/media-and-publishing-jobs">Media & Publishing</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/retail-jobs">Retail</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/sales-jobs">Sales</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/science-and-biotech-jobs">Science & Biotech</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/social-service-jobs">Social Services</a></li>
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="/payscale-index/job-categories/transportation-jobs">Transportation</a></li>
+                </ul></div></div>
+            
+        </div>
+    </div>
+</div>
+  </div>
+  </div>
+  
+
+<script>
+    if($("#activeSubNavLink").length > 0) {
+        $("#activeSubNavLink").parent().parent().find('a').addClass('active');
+    }
+</script>
+
+    
+<div class="row margin-top-sm">
+   <div class="col-md-4 margin-bottom-sm">
+   <a href="/payscale-index/compensation-trends-methodology">Methodology</a> | <a href="/payscale-index/compensation-trends-faq">FAQ</a> | <a href="/payscale-index/news">In the News</a>
+   </div>
+   
+   <div class="col-md-4 margin-bottom-sm">
+   <a href="/payscale-index/real-wage-index"><img src="http://cdn-payscale.com/content/index/real_wage_button01.png" alt="real wage index" style="float:right; margin:3px 0 0 5px" class="hidden-xs hidden-sm"></a><a href="/payscale-index/real-wage-index">The PayScale Real Wage Index</a>
+   </div>
+   
+      <div class="col-md-4 margin-bottom-sm">
+   <a href="/payscale-index/highlights-us"><img src="http://cdn-payscale.com/content/index_highlights_promo01.png" alt="highlights" style="float:right; margin:3px 0 0 5px" class="hidden-xs hidden-sm"></a><a href="/payscale-index/highlights-us">See Highlights from the Q2 Index</a>
+   </div>
+   
+   </div>
+
+	<div class="row margin-top-md">
+	<div class="col-md-8">
+	    <h1 class="margin-top-none">National (US) Pay Trends</h1>
+		   <p class="small">Updated July 8, 2015</p>
+	</div>
+    
+    <div class="col-md-4 text-center"><a href="/hr/compensation-trends?src=index_button"><button type="button" class="btn btn-success">Get Your Business Trend Report</button></a></div>
+	 </div>
+	
+	<div class="row margin-top-md">
+	    <div class="col-md-12">
+	         The PayScale Index follows the change in wages of employed U.S. workers, revealing trends in compensation for jobs over time. It specifically measures the quarterly change in the total cash compensation of full-time private industry employees nationally, with additional detail on the 20 largest metropolitan areas, 15 industries, 19 job categories and three company sizes.     
+       </div>
+       </div>
+       
+       <div class="row">
+       <div class="col-md-12">
+             
+
+    
+            <div style="background-color: #EFF4E3; border: 1px solid #eeeeee; max-width:320px; margin-top: 20px; padding:0 0 0 12px">
+            <img src="//cdn-payscale.com/resources/150825/images/new.png" alt="New Feature" style="float: left; margin-top: -10px;
+                    margin-right: 10px; margin-left: 5px;  margin-bottom:64px" />
+            <div style="font-size: 18px; color: #333333; margin-top: 6px;">
+                    Wage Forecast:
+            </div>
+            <div>
+                    <div style="font-size: 36px; color: #9BBC5B;">
+                        <i class="fa fa-arrow-up"></i>
+                        0.4%
+                    </div>
+                    <div style="font-size: 15px; color: #333333; padding-bottom:12px">
+                        Year Over Year in Q3 2015</div>
+                </div>
+                </div>
+     
+
+                <div style="padding:16px 0">
+                    PayScale anticipates U.S. wage growth of 0.4 percent year over year in Q3 2015 based on a predictive model that incorporates the Consumer Price Index and U.S. unemployment rates over time. <a href="/payscale-index/compensation-trends-faq#Index_Forecast">How do we calculate The PayScale Index Forecast?</a>
+                </div>
+        
+
+
+
+
+
+ 
+	    </div>
+	</div>
+		  
+	<div class="row margin-top-sm">
+	 <div class="col-xs-8">
+	        </div>
+            <div class="col-xs-2">
+	        <a href="javascript:ShowChartView()"><img src="http://cdn-payscale.com/content/index_charticon01.jpg" alt="chart view" width="20" height="20" border="0" />Chart View</a>
+	        </div>
+	        <div class="col-xs-2">
+	        <a href="javascript:ShowTableView()"><img src="http://cdn-payscale.com/content/index_tableicon01.jpg" alt="chart view" width="20" height="20" border="0" />Table View</a>
+	    </div>
+	</div>	
+	
+	   
+<div class="row">	 
+
+	     <div class="col-md-12">
+           <div id="yearOverYearChartDiv">
+             
+<script type="text/javascript">
+    var baseUrl = 'http://www.payscale.com/payscale-index-chart.aspx?type=YearOverYearChart&series0=National&width=854&height=504';
+
+    function YearOverYearChartClickEventHandler(eventData) {
+        eventData = (eventData) ? eventData : event;
+
+        if (typeof (eventData.offsetX) != 'undefined') {
+            var x = eventData.offsetX;
+            var y = eventData.offsetY;
+        }
+        else {
+            var x = eventData.clientX - jQuery(this).position().left;
+            var y = eventData.clientY - jQuery(this).position().top;
+        }
+
+        jQuery(this).attr('src', baseUrl + '&click=' + Math.round(x) + ',' + Math.round(y));
+    }
+
+    jQuery(document).ready(function () {
+        jQuery('#addTrend').bind('change', AddTrendEventHandler);
+    });
+</script>
+
+
+<style>
+.PayScaleIndexYearChart { background-color: White; font-family: Verdana, Arial, Tahoma; font-size: 11px; }
+
+.PayScaleIndexYearChart a { color: #06c; text-decoration: none; }
+.PayScaleIndexYearChart a:hover { text-decoration: underline; }
+.PayScaleIndexYearChart div.title { font-weight: bold; font-size: 14px; text-align: left; margin-left: 32px; margin-top: 20px; margin-bottom: 10px; overflow: hidden;}
+.PayScaleIndexYearChart div.logo { float: right; margin: 0px 10px 10px 20px; }
+.PayScaleIndexYearChart div.copyright { float: right; margin: 0px 10px 10px 10px; }
+.PayScaleIndexYearChart .legend { font-size: 13px }
+@media (max-width: 768px) 
+{
+    .PayScaleIndexYearChart div.title { margin-left: 0px; }
+}
+</style>
+
+<div class="PayScaleIndexYearChart">
+<div class="title">
+    <div class="logo"><img src="http://www.payscale.com/images/payscale_logo_102_34.png" width="102" height="34" alt="" /></div>
+    National (US) Year-Over-Year Percentage Change in Pay by Quarter
+</div>
+
+<img id="yearOverYearChartImg" src="http://www.payscale.com/payscale-index-chart.aspx?type=YearOverYearChart&series0=National&width=854&height=504" alt="Annual Trends in Compensation for National (US)" width="100%" height="100%" border="0" usemap="#dnc_map_54325" /> 
+<map name="dnc_map_54325" id="dnc_map_54325"> 
+<area shape="poly" coords="559,146,577,146,577,275,559,275" alt="" title="" OnMouseOver="createPopup('59cca217-1913-401e-a415-4fae89863fac','2012 3rd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('59cca217-1913-401e-a415-4fae89863fac');" />
+<area shape="poly" coords="536,178,554,178,554,275,536,275" alt="" title="" OnMouseOver="createPopup('a77fa1ba-1abe-47f3-92f9-59fb04fd7c29','2012 2nd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 1.5%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('a77fa1ba-1abe-47f3-92f9-59fb04fd7c29');" />
+<area shape="poly" coords="603,146,621,146,621,275,603,275" alt="" title="" OnMouseOver="createPopup('41d1cf45-b1af-4b01-a2a3-fd52142aa11e','2013 1st Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('41d1cf45-b1af-4b01-a2a3-fd52142aa11e');" />
+<area shape="poly" coords="581,139,599,139,599,275,581,275" alt="" title="" OnMouseOver="createPopup('3f689708-c41d-4e63-84f7-184a234d7dbf','2012 4th Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2.1%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('3f689708-c41d-4e63-84f7-184a234d7dbf');" />
+<area shape="poly" coords="470,249,488,249,488,275,470,275" alt="" title="" OnMouseOver="createPopup('76a86316-e855-4f9f-90f0-11c4b27f2f5e','2011 3rd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0.4%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('76a86316-e855-4f9f-90f0-11c4b27f2f5e');" />
+<area shape="poly" coords="448,275,466,275,466,276,448,276" alt="" title="" OnMouseOver="createPopup('67cb8d00-77ec-464a-b26f-0d33aea95b5f','2011 2nd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('67cb8d00-77ec-464a-b26f-0d33aea95b5f');" />
+<area shape="poly" coords="515,255,533,255,533,275,515,275" alt="" title="" OnMouseOver="createPopup('30822ade-368a-4f43-bd89-7875eeeb5346','2012 1st Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0.3%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('30822ade-368a-4f43-bd89-7875eeeb5346');" />
+<area shape="poly" coords="492,242,511,242,511,275,492,275" alt="" title="" OnMouseOver="createPopup('897757c7-c78b-4f3a-b9f9-cb974a83cf62','2011 4th Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0.5%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('897757c7-c78b-4f3a-b9f9-cb974a83cf62');" />
+<area shape="poly" coords="624,230,642,230,642,275,624,275" alt="" title="" OnMouseOver="createPopup('18b1452f-eaba-49f2-a10d-342b424b68ea','2013 2nd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0.7%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('18b1452f-eaba-49f2-a10d-342b424b68ea');" />
+<area shape="poly" coords="757,146,775,146,775,275,757,275" alt="" title="" OnMouseOver="createPopup('2f8edfda-a474-4365-a203-7619a94d86f4','2014 4th Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('2f8edfda-a474-4365-a203-7619a94d86f4');" />
+<area shape="poly" coords="735,165,753,165,753,275,735,275" alt="" title="" OnMouseOver="createPopup('48cf1b43-c6f0-447a-a1eb-9add475bac26','2014 3rd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 1.7%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('48cf1b43-c6f0-447a-a1eb-9add475bac26');" />
+<area shape="poly" coords="800,255,818,255,818,275,800,275" alt="" title="" OnMouseOver="createPopup('6c65b089-988e-4746-b4fa-29d14eced1ee','2015 2nd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0.3%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('6c65b089-988e-4746-b4fa-29d14eced1ee');" />
+<area shape="poly" coords="779,165,797,165,797,275,779,275" alt="" title="" OnMouseOver="createPopup('9655830e-6798-44df-852d-b9910a38e3d0','2015 1st Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 1.7%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('9655830e-6798-44df-852d-b9910a38e3d0');" />
+<area shape="poly" coords="669,275,687,275,687,300,669,300" alt="" title="" OnMouseOver="createPopup('70b80dc0-9ae0-4e47-bbe9-759007d0b408','2013 4th Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: -0.4%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('70b80dc0-9ae0-4e47-bbe9-759007d0b408');" />
+<area shape="poly" coords="647,275,665,275,665,294,647,294" alt="" title="" OnMouseOver="createPopup('42fa89e7-921e-41cd-b9a1-c8b5751f7c3c','2013 3rd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: -0.3%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('42fa89e7-921e-41cd-b9a1-c8b5751f7c3c');" />
+<area shape="poly" coords="712,172,730,172,730,275,712,275" alt="" title="" OnMouseOver="createPopup('15a09310-0d8e-4538-98bd-2b3c3fb55f7c','2014 2nd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 1.6%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('15a09310-0d8e-4538-98bd-2b3c3fb55f7c');" />
+<area shape="poly" coords="691,255,709,255,709,275,691,275" alt="" title="" OnMouseOver="createPopup('d7f844e2-f0a5-4dcc-9240-e655446bd6ae','2014 1st Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0.3%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('d7f844e2-f0a5-4dcc-9240-e655446bd6ae');" />
+<area shape="poly" coords="184,146,202,146,202,275,184,275" alt="" title="" OnMouseOver="createPopup('0578a3dc-87c3-4dee-b0bf-f95429c7d09d','2008 2nd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('0578a3dc-87c3-4dee-b0bf-f95429c7d09d');" />
+<area shape="poly" coords="162,114,180,114,180,275,162,275" alt="" title="" OnMouseOver="createPopup('840af83e-1533-4799-89cc-c816377fd59b','2008 1st Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2.5%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('840af83e-1533-4799-89cc-c816377fd59b');" />
+<area shape="poly" coords="228,159,247,159,247,275,228,275" alt="" title="" OnMouseOver="createPopup('dcc3d93b-06e0-449e-985f-6743f4437ce7','2008 4th Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 1.8%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('dcc3d93b-06e0-449e-985f-6743f4437ce7');" />
+<area shape="poly" coords="206,133,224,133,224,275,206,275" alt="" title="" OnMouseOver="createPopup('7fc6c98c-0e34-4191-9ac8-7e87a7d00da5','2008 3rd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2.2%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('7fc6c98c-0e34-4191-9ac8-7e87a7d00da5');" />
+<area shape="poly" coords="96,139,114,139,114,275,96,275" alt="" title="" OnMouseOver="createPopup('7c75f5da-1fc3-4a92-9278-11a5c0fc1474','2007 2nd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2.1%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('7c75f5da-1fc3-4a92-9278-11a5c0fc1474');" />
+<area shape="poly" coords="74,152,92,152,92,275,74,275" alt="" title="" OnMouseOver="createPopup('feda50e4-95d2-40b7-82e2-26abb7346a13','2007 1st Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 1.9%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('feda50e4-95d2-40b7-82e2-26abb7346a13');" />
+<area shape="poly" coords="140,88,158,88,158,275,140,275" alt="" title="" OnMouseOver="createPopup('5d596514-154b-4d9a-b522-a64584900c91','2007 4th Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2.9%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('5d596514-154b-4d9a-b522-a64584900c91');" />
+<area shape="poly" coords="118,101,136,101,136,275,118,275" alt="" title="" OnMouseOver="createPopup('ba8b2dd9-8846-4a34-923f-4b6cb8a8f0c1','2007 3rd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 2.7%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('ba8b2dd9-8846-4a34-923f-4b6cb8a8f0c1');" />
+<area shape="poly" coords="251,204,269,204,269,275,251,275" alt="" title="" OnMouseOver="createPopup('60fbe5a8-22ae-48a8-a90b-2ed96666f2a5','2009 1st Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 1.1%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('60fbe5a8-22ae-48a8-a90b-2ed96666f2a5');" />
+<area shape="poly" coords="382,268,400,268,400,275,382,275" alt="" title="" OnMouseOver="createPopup('43a31ad3-fe98-4ab8-9195-f10f64fe47f2','2010 3rd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0.1%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('43a31ad3-fe98-4ab8-9195-f10f64fe47f2');" />
+<area shape="poly" coords="360,275,378,275,378,288,360,288" alt="" title="" OnMouseOver="createPopup('c96e0f88-a7a1-4142-b9f5-c2b3798dd402','2010 2nd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: -0.2%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('c96e0f88-a7a1-4142-b9f5-c2b3798dd402');" />
+<area shape="poly" coords="427,255,445,255,445,275,427,275" alt="" title="" OnMouseOver="createPopup('5f4a5f30-b013-438e-87ba-b05dc34a26f5','2011 1st Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0.3%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('5f4a5f30-b013-438e-87ba-b05dc34a26f5');" />
+<area shape="poly" coords="404,268,423,268,423,275,404,275" alt="" title="" OnMouseOver="createPopup('bdd7ca72-bfd1-4b67-8b1d-60fde373c653','2010 4th Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: 0.1%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('bdd7ca72-bfd1-4b67-8b1d-60fde373c653');" />
+<area shape="poly" coords="294,275,312,275,312,358,294,358" alt="" title="" OnMouseOver="createPopup('d8605871-94f6-4697-bf11-aa567c05f32e','2009 3rd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: -1.3%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('d8605871-94f6-4697-bf11-aa567c05f32e');" />
+<area shape="poly" coords="272,275,290,275,290,300,272,300" alt="" title="" OnMouseOver="createPopup('a69c2956-9e5e-4d76-ae43-229ad3654c81','2009 2nd Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: -0.4%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('a69c2956-9e5e-4d76-ae43-229ad3654c81');" />
+<area shape="poly" coords="339,275,357,275,357,365,339,365" alt="" title="" OnMouseOver="createPopup('a8e8ab2f-a5c9-4b96-aa0f-f7c59c4c528b','2010 1st Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: -1.4%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('a8e8ab2f-a5c9-4b96-aa0f-f7c59c4c528b');" />
+<area shape="poly" coords="316,275,335,275,335,378,316,378" alt="" title="" OnMouseOver="createPopup('7cc0d96b-7ecc-4d28-a1ee-c68e298861fe','2009 4th Quarter&lt;br/&gt;National (US)&lt;br/&gt;Year-Over-Year Change: -1.6%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('7cc0d96b-7ecc-4d28-a1ee-c68e298861fe');" />
+<area shape="poly" coords="823,249,841,249,841,275,823,275" alt="" title="" OnMouseOver="createPopup('503af457-1bf9-42bd-adec-c4b3bfd594eb','2015 3rd Quarter&lt;br/&gt;National (US) Forecast&lt;br/&gt;Year-Over-Year Change: 0.4%','auto','cccccc','ffffff');" OnMouseOut="hidePopup('503af457-1bf9-42bd-adec-c4b3bfd594eb');" />
+</map>
+
+<div class="copyright">&copy; 2015 PayScale, Inc.</div>
+
+<table style="width: 100%;">
+    <tr>
+        <td>
+            <table class="legend" cellpadding="3" cellspacing="0" border="0">
+                <tr>
+                    <td width="30px" valign="middle" align="center">
+                        <div style="border: 1px solid #333; width: 20px; height: 15px; background-color: #2D8EC1"></div>
+                    </td>
+                    <td valign="middle" align="left" style="padding-right: 5px">
+                         National (US)
+                    </td>
+                </tr>
+            </table>
+        </td>
+        
+          <td>
+            <table class="legend" cellpadding="3" cellspacing="0" border="0">
+                <tr>
+                    <td width="30px" valign="middle" align="center">
+                        <div style="border: 1px solid #333; width: 20px; height: 15px; background-color: #ECF5FA"></div>
+                    </td>
+                    <td valign="middle" align="left" style="padding-right: 5px">
+                         National (US) Forecast
+                    </td>
+                </tr>
+            </table>
+          </td>
+        
+        <td>
+            <table class="legend" cellpadding="3" cellspacing="0" border="0">
+            <tr>        
+                <td width="30px" valign="middle" align="center">
+                    <div style="border: 1px solid #333; width: 20px; height: 15px; background-color: #999999"></div>
+                </td>           
+                <td valign="middle" align="left" >
+                    <select name="addTrend" style="width:100%" id="addTrend">
+                        
+                            <option>Add a pay trend</option>
+                        
+                            <optgroup label="Trends by City">
+                            
+                                <option value="Atlanta Metro Area" >Atlanta Metro Area</option>
+                            
+                                <option value="Baltimore Metro Area" >Baltimore Metro Area</option>
+                            
+                                <option value="Boston Metro Area" >Boston Metro Area</option>
+                            
+                                <option value="Chicago Metro Area" >Chicago Metro Area</option>
+                            
+                                <option value="Dallas Metro Area" >Dallas Metro Area</option>
+                            
+                                <option value="Detroit Metro Area" >Detroit Metro Area</option>
+                            
+                                <option value="Houston Metro Area" >Houston Metro Area</option>
+                            
+                                <option value="Los Angeles Metro Area" >Los Angeles Metro Area</option>
+                            
+                                <option value="Miami Metro Area" >Miami Metro Area</option>
+                            
+                                <option value="Minneapolis Metro Area" >Minneapolis Metro Area</option>
+                            
+                                <option value="New York Metro Area" >New York Metro Area</option>
+                            
+                                <option value="Philadelphia Metro Area" >Philadelphia Metro Area</option>
+                            
+                                <option value="Phoenix Metro Area" >Phoenix Metro Area</option>
+                            
+                                <option value="Riverside, CA Metro Area" >Riverside, Calif. Metro Area</option>
+                            
+                                <option value="San Diego Metro Area" >San Diego Metro Area</option>
+                            
+                                <option value="San Francisco Metro Area" >San Francisco Metro Area</option>
+                            
+                                <option value="Seattle Metro Area" >Seattle Metro Area</option>
+                            
+                                <option value="St. Louis Metro Area" >St. Louis Metro Area</option>
+                            
+                                <option value="Tampa Metro Area" >Tampa Metro Area</option>
+                            
+                                <option value="Washington, DC Metro Area" >Washington, DC Metro Area</option>
+                            
+                            </optgroup>
+                        
+                            <optgroup label="Trends by Industry">
+                            
+                                <option value="Arts, Entertainment and Recreation" >Arts, Entertainment & Recreation Industry</option>
+                            
+                                <option value="Business Operation Support Services" >Business Operation Support Services Industry</option>
+                            
+                                <option value="Construction" >Construction Industry</option>
+                            
+                                <option value="Finance and Insurance" >Finance & Insurance Industry</option>
+                            
+                                <option value="Food Services and Accommodation" >Food Services & Accommodation Industry</option>
+                            
+                                <option value="Healthcare and Social Assistance" >Healthcare & Social Assistance Industry</option>
+                            
+                                <option value="Information, Media and Telecommunications" >Information, Media & Telecommunications Industry</option>
+                            
+                                <option value="Manufacturing" >Manufacturing Industry</option>
+                            
+                                <option value="Mining" >Mining, Oil & Gas Exploration Industry</option>
+                            
+                                <option value="Professional, Scientific and Tech Services" >Professional, Scientific & Tech Services Industry</option>
+                            
+                                <option value="Real Estate" >Real Estate & Rental Services Industry</option>
+                            
+                                <option value="Retail" >Retail Industry</option>
+                            
+                                <option value="Transportation and Warehousing/Storage" >Transportation & Warehousing/Storage Industry</option>
+                            
+                                <option value="Utilities" >Utilities Industry</option>
+                            
+                                <option value="Wholesale Trade" >Wholesale Trade Industry</option>
+                            
+                            </optgroup>
+                        
+                            <optgroup label="Trends by Company Size">
+                            
+                                <option value="Small Companies" >Small Companies (0-99 employees)</option>
+                            
+                                <option value="Medium Companies" >Medium Companies (100-1,500 employees)</option>
+                            
+                                <option value="Large Companies" >Large Companies (1,500+ employees)</option>
+                            
+                            </optgroup>
+                        
+                            <optgroup label="Trends by Job Category">
+                            
+                                <option value="Accounting and Finance Jobs" >Accounting & Finance Jobs </option>
+                            
+                                <option value="Administrative and Clerical Jobs" >Administrative & Clerical Jobs </option>
+                            
+                                <option value="Architecture and Engineering Jobs" >Architecture & Engineering Jobs </option>
+                            
+                                <option value="Art and Design Jobs" >Art & Design Jobs </option>
+                            
+                                <option value="Construction Jobs" >Construction Jobs</option>
+                            
+                                <option value="Food Service and Restaurant Jobs" >Food Service & Restaurant Jobs </option>
+                            
+                                <option value="Healthcare Practitioners and Technical Healthcare Jobs" >Healthcare Practitioners & Technical Healthcare Jobs</option>
+                            
+                                <option value="Human Resources Jobs" >Human Resources Jobs </option>
+                            
+                                <option value="Information Technology Jobs" >Information Technology Jobs</option>
+                            
+                                <option value="Installation, Maintenance and Repair Jobs" >Installation, Maintenance & Repair Jobs </option>
+                            
+                                <option value="Legal Jobs" >Legal Jobs </option>
+                            
+                                <option value="Manufacturing and Production Jobs" >Manufacturing & Production Jobs</option>
+                            
+                                <option value="Marketing and Advertising Jobs" >Marketing & Advertising Jobs</option>
+                            
+                                <option value="Media and Publishing Jobs" >Media & Publishing Jobs </option>
+                            
+                                <option value="Retail Jobs" >Retail Jobs </option>
+                            
+                                <option value="Sales Jobs" >Sales Jobs </option>
+                            
+                                <option value="Science and Biotech Jobs" >Science & Biotech Jobs </option>
+                            
+                                <option value="Social Service Jobs" >Social Service Jobs </option>
+                            
+                                <option value="Transportation Jobs" >Transportation Jobs </option>
+                            
+                            </optgroup>
+                        
+                    </select>
+                </td>
+            </tr>
+            </table>
+        </td>                  
+        
+
+    </tr>
+</table>
+
+
+
+
+</div>
+           </div>
+           <div id="yearOverYearTableDiv" style="display: none">
+             
+
+<style>
+.PayScaleIndexTable { background-color: White; font-family: Verdana, Arial, Tahoma; font-size: 11px; overflow: hidden; }
+.PayScaleIndexTable h2 { font-size: 11px; margin: 0px 0px; }
+.PayScaleIndexTable a { color: #06c; text-decoration: none; }
+.PayScaleIndexTable a:hover { text-decoration: underline; }
+.PayScaleIndexTable .title { font-weight: bold; font-size: 14px; padding: 5px; }
+.PayScaleIndexTable .logo { float: right; margin: 0px 10px 10px 20px; }
+.PayScaleIndexTable table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.PayScaleIndexTable td { padding: 5px; text-align: center; border: 1px solid #e3e3d3; font-size: 11px }
+.PayScaleIndexTable thead { color: #900; }
+.PayScaleIndexTable th { padding: 5px; font-size: 14px; text-align: center; border: 1px solid #e3e3d3; }
+.PayScaleIndexTable tr.gr { background-color: #f2f2f2 }
+.PayScaleIndexTable .copyright { float: right; margin: 0px 10px 10px 10px; }
+</style><div class="PayScaleIndexTable"><div class="title"><div class="logo"><img src="http://www.payscale.com/images/payscale_logo_102_34.png" width="102" height="34" alt="" /></div>
+    National&nbsp;(US) Year-Over-Year Percentage Change in Pay
+</div><table cellspacing="0"><thead><tr><th class="y">Year</th><th class="q">Quarter</th><th>National (US)</th></tr></thead><tr class="gr"><td>2015</td><td>Q3 Forecast</td><td>0.4 %</td></tr><tr><td></td><td>Q2</td><td>0.3 %</td></tr><tr class="gr"><td></td><td>Q1</td><td>1.7 %</td></tr><tr><td>2014</td><td>Q4</td><td>2.0 %</td></tr><tr class="gr"><td></td><td>Q3</td><td>1.7 %</td></tr><tr><td></td><td>Q2</td><td>1.6 %</td></tr><tr class="gr"><td></td><td>Q1</td><td>0.3 %</td></tr><tr><td>2013</td><td>Q4</td><td>-0.4 %</td></tr><tr class="gr"><td></td><td>Q3</td><td>-0.3 %</td></tr><tr><td></td><td>Q2</td><td>0.7 %</td></tr><tr class="gr"><td></td><td>Q1</td><td>2.0 %</td></tr><tr><td>2012</td><td>Q4</td><td>2.1 %</td></tr><tr class="gr"><td></td><td>Q3</td><td>2.0 %</td></tr><tr><td></td><td>Q2</td><td>1.5 %</td></tr><tr class="gr"><td></td><td>Q1</td><td>0.3 %</td></tr><tr><td>2011</td><td>Q4</td><td>0.5 %</td></tr><tr class="gr"><td></td><td>Q3</td><td>0.4 %</td></tr><tr><td></td><td>Q2</td><td>0.0 %</td></tr><tr class="gr"><td></td><td>Q1</td><td>0.3 %</td></tr><tr><td>2010</td><td>Q4</td><td>0.1 %</td></tr><tr class="gr"><td></td><td>Q3</td><td>0.1 %</td></tr><tr><td></td><td>Q2</td><td>-0.2 %</td></tr><tr class="gr"><td></td><td>Q1</td><td>-1.4 %</td></tr><tr><td>2009</td><td>Q4</td><td>-1.6 %</td></tr><tr class="gr"><td></td><td>Q3</td><td>-1.3 %</td></tr><tr><td></td><td>Q2</td><td>-0.4 %</td></tr><tr class="gr"><td></td><td>Q1</td><td>1.1 %</td></tr><tr><td>2008</td><td>Q4</td><td>1.8 %</td></tr><tr class="gr"><td></td><td>Q3</td><td>2.2 %</td></tr><tr><td></td><td>Q2</td><td>2.0 %</td></tr><tr class="gr"><td></td><td>Q1</td><td>2.5 %</td></tr><tr><td>2007</td><td>Q4</td><td>2.9 %</td></tr><tr class="gr"><td></td><td>Q3</td><td>2.7 %</td></tr><tr><td></td><td>Q2</td><td>2.1 %</td></tr><tr class="gr"><td></td><td>Q1</td><td>1.9 %</td></tr></table><div class="copyright">&copy; 2015 PayScale, Inc.</div></div>
+
+
+           </div>
+           
+           <div id="index_embed" class="margin-top-md">
+	       <strong>Add this chart to your site</strong> (Copy and paste this HTML)<br />
+               <div id="yearOverYearChartSyndicatedBox" style="margin-top:4px">
+                    
+                    
+	
+	<script type="text/javascript"> 
+		function selectIt(element)
+		{
+			element.focus();
+			element.select();
+		}
+	</script> 
+	
+<input id="syndicateYearOverYearChart" type="text" style="width: 95%; border: 1px solid rgb(150, 185, 215)" onclick="javascript:selectIt(this)" value="&lt;style&gt; .PayScaleIndexYearChart { background-color: White; font-family: Verdana, Arial, Tahoma; font-size: 11px; }  .PayScaleIndexYearChart { max-width: 602px; } .PayScaleIndexYearChart img { height: auto; width: 100%; }  .PayScaleIndexYearChart a { color: #06c; text-decoration: none; } .PayScaleIndexYearChart a:hover { text-decoration: underline; } .PayScaleIndexYearChart div.title { font-weight: bold; font-size: 14px; text-align: left; margin-left: 32px; margin-top: 20px; margin-bottom: 10px; overflow: hidden;} .PayScaleIndexYearChart div.logo { float: right; margin: 0px 10px 10px 20px; } .PayScaleIndexYearChart div.copyright { float: right; margin: 0px 10px 10px 10px; } .PayScaleIndexYearChart .legend { font-size: 13px } @media (max-width: 768px)  {     .PayScaleIndexYearChart div.title { margin-left: 0px; } } &lt;/style&gt;  &lt;div class=&quot;PayScaleIndexYearChart&quot;&gt; &lt;div class=&quot;title&quot;&gt;     &lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/payscale_logo_102_34.png&quot; width=&quot;102&quot; height=&quot;34&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;     &lt;a href=&quot;http://www.payscale.com/payscale-index/&quot;&gt;National (US) Year-Over-Year Percentage Change in Pay by Quarter&lt;/a&gt; &lt;/div&gt;  &lt;a href=&quot;http://www.payscale.com/payscale-index/&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://www.payscale.com/payscale-index-chart.aspx?type=YearOverYearChart&amp;series0=National&amp;width=602&amp;height=356&quot; alt=&quot;Annual Trends in Compensation for National (US)&quot; /&gt;&lt;/a&gt;  &lt;div class=&quot;copyright&quot;&gt;&amp;copy; 2015 PayScale, Inc.&lt;/div&gt;  &lt;table style=&quot;width: 100%;&quot;&gt;     &lt;tr&gt;         &lt;td&gt;             &lt;table class=&quot;legend&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;                 &lt;tr&gt;                     &lt;td width=&quot;30px&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;                         &lt;div style=&quot;border: 1px solid #333; width: 20px; height: 15px; background-color: #2D8EC1&quot;&gt;&lt;/div&gt;                     &lt;/td&gt;                     &lt;td valign=&quot;middle&quot; align=&quot;left&quot; style=&quot;padding-right: 5px&quot;&gt;                          National (US)                     &lt;/td&gt;                 &lt;/tr&gt;             &lt;/table&gt;         &lt;/td&gt;                    &lt;td&gt;             &lt;table class=&quot;legend&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;                 &lt;tr&gt;                     &lt;td width=&quot;30px&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;                         &lt;div style=&quot;border: 1px solid #333; width: 20px; height: 15px; background-color: #ECF5FA&quot;&gt;&lt;/div&gt;                     &lt;/td&gt;                     &lt;td valign=&quot;middle&quot; align=&quot;left&quot; style=&quot;padding-right: 5px&quot;&gt;                          National (US) Forecast                     &lt;/td&gt;                 &lt;/tr&gt;             &lt;/table&gt;           &lt;/td&gt;               &lt;/tr&gt; &lt;/table&gt;     &lt;/div&gt;" /> 
+               </div>
+                <div id="yearOverYearTableSyndicatedBox" style="display: none;">
+                    
+                    
+	
+	<script type="text/javascript"> 
+		function selectIt(element)
+		{
+			element.focus();
+			element.select();
+		}
+	</script> 
+	
+<input id="syndicateYearOverYearTable" type="text" style="width: 95%; border: 1px solid rgb(150, 185, 215)" onclick="javascript:selectIt(this)" value="&lt;style&gt; .PayScaleIndexTable { background-color: White; font-family: Verdana, Arial, Tahoma; font-size: 11px; overflow: hidden; } .PayScaleIndexTable h2 { font-size: 11px; margin: 0px 0px; } .PayScaleIndexTable a { color: #06c; text-decoration: none; } .PayScaleIndexTable a:hover { text-decoration: underline; } .PayScaleIndexTable .title { font-weight: bold; font-size: 14px; padding: 5px; } .PayScaleIndexTable .logo { float: right; margin: 0px 10px 10px 20px; } .PayScaleIndexTable table { width: 100%; border-collapse: collapse; table-layout: fixed; } .PayScaleIndexTable td { padding: 5px; text-align: center; border: 1px solid #e3e3d3; font-size: 11px } .PayScaleIndexTable thead { color: #900; } .PayScaleIndexTable th { padding: 5px; font-size: 14px; text-align: center; border: 1px solid #e3e3d3; } .PayScaleIndexTable tr.gr { background-color: #f2f2f2 } .PayScaleIndexTable .copyright { float: right; margin: 0px 10px 10px 10px; } &lt;/style&gt;&lt;div class=&quot;PayScaleIndexTable&quot;&gt;&lt;div class=&quot;title&quot;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/payscale_logo_102_34.png&quot; width=&quot;102&quot; height=&quot;34&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;a href=&quot;http://www.payscale.com/payscale-index/&quot;&gt;National&amp;nbsp;(US) Year-Over-Year Percentage Change in Pay&lt;/a&gt;&lt;/div&gt;&lt;table cellspacing=&quot;0&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th class=&quot;y&quot;&gt;Year&lt;/th&gt;&lt;th class=&quot;q&quot;&gt;Quarter&lt;/th&gt;&lt;th&gt;National (US)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;2015&lt;/td&gt;&lt;td&gt;Q3 Forecast&lt;/td&gt;&lt;td&gt;0.4 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;0.3 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;1.7 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2014&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;2.0 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;1.7 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;1.6 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;0.3 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2013&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;-0.4 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;-0.3 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;0.7 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;2.0 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2012&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;2.1 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;2.0 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;1.5 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;0.3 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2011&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;0.5 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;0.4 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;0.0 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;0.3 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2010&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;0.1 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;0.1 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;-0.2 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;-1.4 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2009&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;-1.6 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;-1.3 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;-0.4 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;1.1 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2008&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;1.8 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;2.2 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;2.0 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;2.5 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2007&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;2.9 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;2.7 %&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;2.1 %&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;1.9 %&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;copyright&quot;&gt;&amp;copy; 2015 PayScale, Inc.&lt;/div&gt;&lt;/div&gt;" /> 
+                </div></div>           
+		   
+		   <div class="index_next_prev_links" style="margin:20px 0 0 20px">
+          
+            <div style="float:right"><a href="/payscale-index/cities/compensation-trends-atlanta-metro-area">Atlanta Metro Area &raquo;</a></div>
+          
+          </div>
+		                 
+         </div>
+	   </div>
+
+    <div class="row margin-bottom-md">
+    <div class="col-md-12" style="border-bottom:solid 1px #D6D6D6; padding-bottom:12px;">
+	    
+
+    
+            <div style="background-color: #EFF4E3; border: 1px solid #eeeeee; max-width:320px; margin-top: 20px; padding:0 0 0 12px">
+            <img src="//cdn-payscale.com/resources/150825/images/new.png" alt="New Feature" style="float: left; margin-top: -10px;
+                    margin-right: 10px; margin-left: 5px;  margin-bottom:64px" />
+            <div style="font-size: 18px; color: #333333; margin-top: 6px;">
+                    Wage Forecast:
+            </div>
+            <div>
+                    <div style="font-size: 36px; color: #9BBC5B;">
+                        <i class="fa fa-arrow-up"></i>
+                        0.2%
+                    </div>
+                    <div style="font-size: 15px; color: #333333; padding-bottom:12px">
+                        in Q3 2015</div>
+                </div>
+                </div>
+     
+
+                <div style="padding:16px 0">
+                    PayScale predicts a 0.2 percent increase in U.S. wages for Q3 2015 compared to the previous quarter, based on a predictive model that incorporates the Consumer Price Index and U.S. unemployment rates over time. <a href="/payscale-index/compensation-trends-faq#Index_Forecast">How do we calculate The PayScale Index Forecast?</a>
+                </div>
+        
+
+
+
+
+
+ 
+     </div>
+     </div>
+     
+     <div class="row">
+    <div class="col-md-8">
+		<div id="quarterlyChartDiv">
+		  
+
+<style>
+.PayScaleIndexChart { background-color: White; font-family: Verdana, Arial, Tahoma; font-size: 11px; }
+
+.PayScaleIndexChart h2 { font-size: 11px; margin: 0px 0px; }
+.PayScaleIndexChart a { color: #06c; text-decoration: none; }
+.PayScaleIndexChart a:hover { text-decoration: underline; }
+.PayScaleIndexChart td, .PayScaleIndexChart select { font-size: 11px }
+.PayScaleIndexChart .title { font-weight: bold; font-size: 14px; text-align: left; margin-left: 32px; margin-top: 20px; margin-bottom: 10px; overflow: hidden;}
+.PayScaleIndexChart .logo { float: right; margin: 0px 10px 10px 20px; }
+.PayScaleIndexChart .copyright { float: right; margin: 0px 10px 10px 10px; }
+.PayScaleIndexChart table.legend { padding: 5px; margin-right: 10px; min-height: 36px; text-align: left }
+@media (max-width: 768px) 
+{
+    .PayScaleIndexChart .title { margin-left: 0px; }
+}
+</style>
+
+<div class="PayScaleIndexChart">
+<div class="title">
+    <div class="logo"><img src="http://www.payscale.com/images/payscale_logo_102_34.png" width="102" height="34" alt="" /></div>
+    The PayScale Index: National (US) by Quarter
+</div>
+
+<img id="quarterlyChartImg" border="0" src="http://www.payscale.com/payscale-index-chart.aspx?type=QuarterlyChart&series0=National&width=602&height=215" alt="Quarterly Compensation Trends for National (US)" width="100%" height="100%" usemap="#dnc_map_54327" /> 
+<map name="dnc_map_54327" id="dnc_map_54327"> 
+<area shape="circle" coords="587,35,2" alt="" title="" OnMouseOver="createPopup('704e80bb-5264-4868-89cf-df3667db3520','2015 3rd Quarter&lt;br/&gt;National (US) Forecast: &lt;br/&gt;108.0','auto','cccccc','ffffff');" OnMouseOut="hidePopup('704e80bb-5264-4868-89cf-df3667db3520');" />
+<area shape="circle" coords="571,38,2" alt="" title="" OnMouseOver="createPopup('440277a3-737a-4c74-90be-ec647b23a75c','2015 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;107.8','auto','cccccc','ffffff');" OnMouseOut="hidePopup('440277a3-737a-4c74-90be-ec647b23a75c');" />
+<area shape="circle" coords="405,69,2" alt="" title="" OnMouseOver="createPopup('ca548963-c7ff-4863-bd86-0f7707f945af','2012 3rd Quarter&lt;br/&gt;National (US): &lt;br/&gt;106.1','auto','cccccc','ffffff');" OnMouseOut="hidePopup('ca548963-c7ff-4863-bd86-0f7707f945af');" />
+<area shape="circle" coords="390,87,2" alt="" title="" OnMouseOver="createPopup('88afc298-420a-4a4d-8086-f02a4f65293f','2012 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;105.1','auto','cccccc','ffffff');" OnMouseOut="hidePopup('88afc298-420a-4a4d-8086-f02a4f65293f');" />
+<area shape="circle" coords="435,69,2" alt="" title="" OnMouseOver="createPopup('d3ac8b23-635a-4536-9f75-6cbfba46934a','2013 1st Quarter&lt;br/&gt;National (US): &lt;br/&gt;106.1','auto','cccccc','ffffff');" OnMouseOut="hidePopup('d3ac8b23-635a-4536-9f75-6cbfba46934a');" />
+<area shape="circle" coords="420,62,2" alt="" title="" OnMouseOver="createPopup('ecbe6e01-ac9a-48eb-9836-8d85447b7f61','2012 4th Quarter&lt;br/&gt;National (US): &lt;br/&gt;106.5','auto','cccccc','ffffff');" OnMouseOut="hidePopup('ecbe6e01-ac9a-48eb-9836-8d85447b7f61');" />
+<area shape="circle" coords="344,105,2" alt="" title="" OnMouseOver="createPopup('7b69be7f-71c7-4c96-86d9-c29a72c1ca60','2011 3rd Quarter&lt;br/&gt;National (US): &lt;br/&gt;104.1','auto','cccccc','ffffff');" OnMouseOut="hidePopup('7b69be7f-71c7-4c96-86d9-c29a72c1ca60');" />
+<area shape="circle" coords="329,114,2" alt="" title="" OnMouseOver="createPopup('6a4407b8-667f-43c6-b766-202ae313f308','2011 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.6','auto','cccccc','ffffff');" OnMouseOut="hidePopup('6a4407b8-667f-43c6-b766-202ae313f308');" />
+<area shape="circle" coords="375,105,2" alt="" title="" OnMouseOver="createPopup('cb4f2dfe-c4b2-4914-9ba7-6785fd9b5c32','2012 1st Quarter&lt;br/&gt;National (US): &lt;br/&gt;104.1','auto','cccccc','ffffff');" OnMouseOut="hidePopup('cb4f2dfe-c4b2-4914-9ba7-6785fd9b5c32');" />
+<area shape="circle" coords="359,101,2" alt="" title="" OnMouseOver="createPopup('12511946-e617-493e-8b09-38b2707e9356','2011 4th Quarter&lt;br/&gt;National (US): &lt;br/&gt;104.3','auto','cccccc','ffffff');" OnMouseOut="hidePopup('12511946-e617-493e-8b09-38b2707e9356');" />
+<area shape="circle" coords="450,72,2" alt="" title="" OnMouseOver="createPopup('b9282381-548a-4a63-9650-7252876c0118','2013 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;105.9','auto','cccccc','ffffff');" OnMouseOut="hidePopup('b9282381-548a-4a63-9650-7252876c0118');" />
+<area shape="circle" coords="541,31,2" alt="" title="" OnMouseOver="createPopup('a415a3cf-86aa-4e7d-b433-62e89b816846','2014 4th Quarter&lt;br/&gt;National (US): &lt;br/&gt;108.2','auto','cccccc','ffffff');" OnMouseOut="hidePopup('a415a3cf-86aa-4e7d-b433-62e89b816846');" />
+<area shape="circle" coords="526,42,2" alt="" title="" OnMouseOver="createPopup('5dce24fd-5410-4bf5-b137-b090837691bb','2014 3rd Quarter&lt;br/&gt;National (US): &lt;br/&gt;107.6','auto','cccccc','ffffff');" OnMouseOut="hidePopup('5dce24fd-5410-4bf5-b137-b090837691bb');" />
+<area shape="circle" coords="571,38,2" alt="" title="" OnMouseOver="createPopup('440277a3-737a-4c74-90be-ec647b23a75c','2015 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;107.8','auto','cccccc','ffffff');" OnMouseOut="hidePopup('440277a3-737a-4c74-90be-ec647b23a75c');" />
+<area shape="circle" coords="556,29,2" alt="" title="" OnMouseOver="createPopup('5e269698-2a74-4665-9322-0a5bcd62e873','2015 1st Quarter&lt;br/&gt;National (US): &lt;br/&gt;108.3','auto','cccccc','ffffff');" OnMouseOut="hidePopup('5e269698-2a74-4665-9322-0a5bcd62e873');" />
+<area shape="circle" coords="481,69,2" alt="" title="" OnMouseOver="createPopup('b65527ad-f163-4785-b3ac-8dc8b2fc1fec','2013 4th Quarter&lt;br/&gt;National (US): &lt;br/&gt;106.1','auto','cccccc','ffffff');" OnMouseOut="hidePopup('b65527ad-f163-4785-b3ac-8dc8b2fc1fec');" />
+<area shape="circle" coords="465,74,2" alt="" title="" OnMouseOver="createPopup('2de77e0c-6273-4556-85ea-05e4c02dae4a','2013 3rd Quarter&lt;br/&gt;National (US): &lt;br/&gt;105.8','auto','cccccc','ffffff');" OnMouseOut="hidePopup('2de77e0c-6273-4556-85ea-05e4c02dae4a');" />
+<area shape="circle" coords="511,44,2" alt="" title="" OnMouseOver="createPopup('6bc01824-9d91-4022-9f19-e0a04d01fa67','2014 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;107.5','auto','cccccc','ffffff');" OnMouseOut="hidePopup('6bc01824-9d91-4022-9f19-e0a04d01fa67');" />
+<area shape="circle" coords="496,63,2" alt="" title="" OnMouseOver="createPopup('960ca74f-df75-422d-93e0-f96ff317e120','2014 1st Quarter&lt;br/&gt;National (US): &lt;br/&gt;106.4','auto','cccccc','ffffff');" OnMouseOut="hidePopup('960ca74f-df75-422d-93e0-f96ff317e120');" />
+<area shape="circle" coords="147,103,2" alt="" title="" OnMouseOver="createPopup('aedd3731-2b1c-40fd-a2f5-085156b00ce3','2008 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;104.2','auto','cccccc','ffffff');" OnMouseOut="hidePopup('aedd3731-2b1c-40fd-a2f5-085156b00ce3');" />
+<area shape="circle" coords="132,112,2" alt="" title="" OnMouseOver="createPopup('9b839360-378e-4f0f-89f9-1dc948041c26','2008 1st Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.7','auto','cccccc','ffffff');" OnMouseOut="hidePopup('9b839360-378e-4f0f-89f9-1dc948041c26');" />
+<area shape="circle" coords="178,81,2" alt="" title="" OnMouseOver="createPopup('93d01000-b19c-400c-a69a-434db4326405','2008 4th Quarter&lt;br/&gt;National (US): &lt;br/&gt;105.4','auto','cccccc','ffffff');" OnMouseOut="hidePopup('93d01000-b19c-400c-a69a-434db4326405');" />
+<area shape="circle" coords="162,90,2" alt="" title="" OnMouseOver="createPopup('73979b32-5985-4d99-bdea-32952bbe6ac6','2008 3rd Quarter&lt;br/&gt;National (US): &lt;br/&gt;104.9','auto','cccccc','ffffff');" OnMouseOut="hidePopup('73979b32-5985-4d99-bdea-32952bbe6ac6');" />
+<area shape="circle" coords="86,139,2" alt="" title="" OnMouseOver="createPopup('35962282-85ea-454e-a2e5-d38c9a3716d1','2007 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;102.2','auto','cccccc','ffffff');" OnMouseOut="hidePopup('35962282-85ea-454e-a2e5-d38c9a3716d1');" />
+<area shape="circle" coords="71,157,2" alt="" title="" OnMouseOver="createPopup('c8540dae-2b9e-43a5-b716-3e7d76360045','2007 1st Quarter&lt;br/&gt;National (US): &lt;br/&gt;101.2','auto','cccccc','ffffff');" OnMouseOut="hidePopup('c8540dae-2b9e-43a5-b716-3e7d76360045');" />
+<area shape="circle" coords="117,116,2" alt="" title="" OnMouseOver="createPopup('3c0b47ed-33f9-4659-82cf-87cdfa12eac7','2007 4th Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.5','auto','cccccc','ffffff');" OnMouseOut="hidePopup('3c0b47ed-33f9-4659-82cf-87cdfa12eac7');" />
+<area shape="circle" coords="102,130,2" alt="" title="" OnMouseOver="createPopup('1112eadb-fe47-4c8b-b196-e6c1057268c2','2007 3rd Quarter&lt;br/&gt;National (US): &lt;br/&gt;102.7','auto','cccccc','ffffff');" OnMouseOut="hidePopup('1112eadb-fe47-4c8b-b196-e6c1057268c2');" />
+<area shape="circle" coords="193,90,2" alt="" title="" OnMouseOver="createPopup('7897d508-0998-4574-8064-c64a19ce91e0','2009 1st Quarter&lt;br/&gt;National (US): &lt;br/&gt;104.9','auto','cccccc','ffffff');" OnMouseOut="hidePopup('7897d508-0998-4574-8064-c64a19ce91e0');" />
+<area shape="circle" coords="283,114,2" alt="" title="" OnMouseOver="createPopup('71a5822d-6d1e-4593-94ed-c205381a1a23','2010 3rd Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.6','auto','cccccc','ffffff');" OnMouseOut="hidePopup('71a5822d-6d1e-4593-94ed-c205381a1a23');" />
+<area shape="circle" coords="268,114,2" alt="" title="" OnMouseOver="createPopup('02fb55eb-8aa2-4b28-90e3-b76619caad40','2010 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.6','auto','cccccc','ffffff');" OnMouseOut="hidePopup('02fb55eb-8aa2-4b28-90e3-b76619caad40');" />
+<area shape="circle" coords="314,110,2" alt="" title="" OnMouseOver="createPopup('cbc5d445-166d-484c-8bfe-085da382c57b','2011 1st Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.8','auto','cccccc','ffffff');" OnMouseOut="hidePopup('cbc5d445-166d-484c-8bfe-085da382c57b');" />
+<area shape="circle" coords="299,110,2" alt="" title="" OnMouseOver="createPopup('fe697f0c-16f0-4524-97a8-6a9953122a6f','2010 4th Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.8','auto','cccccc','ffffff');" OnMouseOut="hidePopup('fe697f0c-16f0-4524-97a8-6a9953122a6f');" />
+<area shape="circle" coords="223,114,2" alt="" title="" OnMouseOver="createPopup('bef3ea8a-2ca6-441f-b7bb-fcc34d4caddf','2009 3rd Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.6','auto','cccccc','ffffff');" OnMouseOut="hidePopup('bef3ea8a-2ca6-441f-b7bb-fcc34d4caddf');" />
+<area shape="circle" coords="208,110,2" alt="" title="" OnMouseOver="createPopup('533c1039-bfb4-44c6-9d29-7d5fbe3c0be2','2009 2nd Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.8','auto','cccccc','ffffff');" OnMouseOut="hidePopup('533c1039-bfb4-44c6-9d29-7d5fbe3c0be2');" />
+<area shape="circle" coords="253,117,2" alt="" title="" OnMouseOver="createPopup('81400c81-f9a4-4b86-98ea-1d7277a82748','2010 1st Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.4','auto','cccccc','ffffff');" OnMouseOut="hidePopup('81400c81-f9a4-4b86-98ea-1d7277a82748');" />
+<area shape="circle" coords="238,112,2" alt="" title="" OnMouseOver="createPopup('4171d745-897e-410b-b90e-8b66bcd35329','2009 4th Quarter&lt;br/&gt;National (US): &lt;br/&gt;103.7','auto','cccccc','ffffff');" OnMouseOut="hidePopup('4171d745-897e-410b-b90e-8b66bcd35329');" />
+</map>
+
+<div class="copyright">&copy; 2015 PayScale, Inc.</div>
+
+
+
+<table style="width: 100%">
+    <tr>
+        <td valign="middle" style="padding: 5px; margin-left: 18px; width: 225px; font-style: italic" >
+        The PayScale Index uses 2006 average total cash compensation as a baseline. 
+        </td>
+        <td align="right">
+            <table class="legend" cellpadding="3" cellspacing="0" border="0">
+                <tr>
+                    <td width="30px" valign="middle" align="center">
+                        <img src="http://www.payscale.com/images/psindex_chart_key_1.png" width="20" height="15" alt=""/>
+                    </td>
+                    <td valign="middle" style="padding-right: 5px">
+                         National (US)
+                    </td>
+                </tr>
+                
+                    <tr>
+                        <td width="30px" valign="middle" align="center">
+                            <img src="http://www.payscale.com/images/psindex_chart_key_forecast.png" width="20" height="15" alt=""/>
+                        </td>
+                        <td valign="middle" style="padding-right: 5px">
+                             National (US) Forecast
+                        </td>
+                    </tr>
+                
+                
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+
+</div>
+		</div>
+	    <div id="quarterlyTableDiv" style="display: none">
+		  
+
+<style>
+.PayScaleIndexTable { background-color: White; font-family: Verdana, Arial, Tahoma; font-size: 11px; overflow: hidden; }
+.PayScaleIndexTable h2 { font-size: 11px; margin: 0px 0px; }
+.PayScaleIndexTable a { color: #06c; text-decoration: none; }
+.PayScaleIndexTable a:hover { text-decoration: underline; }
+.PayScaleIndexTable .title { font-weight: bold; font-size: 14px; padding: 5px; }
+.PayScaleIndexTable .logo { float: right; margin: 0px 10px 10px 20px; }
+.PayScaleIndexTable table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.PayScaleIndexTable td { padding: 5px; text-align: center; border: 1px solid #e3e3d3; font-size: 11px }
+.PayScaleIndexTable thead { color: #900; }
+.PayScaleIndexTable th { padding: 5px; font-size: 14px; text-align: center; border: 1px solid #e3e3d3; }
+.PayScaleIndexTable tr.gr { background-color: #f2f2f2 }
+.PayScaleIndexTable .copyright { float: right; margin: 0px 10px 10px 10px; }
+</style><div class="PayScaleIndexTable"><div class="title"><div class="logo"><img src="http://www.payscale.com/images/payscale_logo_102_34.png" width="102" height="34" alt="" /></div>
+    The PayScale Index: National&nbsp;(US)
+</div><table cellspacing="0"><thead><tr><th class="y">Year</th><th class="q">Quarter</th><th>National (US)</th></tr></thead><tr class="gr"><td>2015</td><td>Q3 Forecast</td><td>108.0</td></tr><tr><td></td><td>Q2</td><td>107.8</td></tr><tr class="gr"><td></td><td>Q1</td><td>108.3</td></tr><tr><td>2014</td><td>Q4</td><td>108.2</td></tr><tr class="gr"><td></td><td>Q3</td><td>107.6</td></tr><tr><td></td><td>Q2</td><td>107.5</td></tr><tr class="gr"><td></td><td>Q1</td><td>106.4</td></tr><tr><td>2013</td><td>Q4</td><td>106.1</td></tr><tr class="gr"><td></td><td>Q3</td><td>105.8</td></tr><tr><td></td><td>Q2</td><td>105.9</td></tr><tr class="gr"><td></td><td>Q1</td><td>106.1</td></tr><tr><td>2012</td><td>Q4</td><td>106.5</td></tr><tr class="gr"><td></td><td>Q3</td><td>106.1</td></tr><tr><td></td><td>Q2</td><td>105.1</td></tr><tr class="gr"><td></td><td>Q1</td><td>104.1</td></tr><tr><td>2011</td><td>Q4</td><td>104.3</td></tr><tr class="gr"><td></td><td>Q3</td><td>104.1</td></tr><tr><td></td><td>Q2</td><td>103.6</td></tr><tr class="gr"><td></td><td>Q1</td><td>103.8</td></tr><tr><td>2010</td><td>Q4</td><td>103.8</td></tr><tr class="gr"><td></td><td>Q3</td><td>103.6</td></tr><tr><td></td><td>Q2</td><td>103.6</td></tr><tr class="gr"><td></td><td>Q1</td><td>103.4</td></tr><tr><td>2009</td><td>Q4</td><td>103.7</td></tr><tr class="gr"><td></td><td>Q3</td><td>103.6</td></tr><tr><td></td><td>Q2</td><td>103.8</td></tr><tr class="gr"><td></td><td>Q1</td><td>104.9</td></tr><tr><td>2008</td><td>Q4</td><td>105.4</td></tr><tr class="gr"><td></td><td>Q3</td><td>104.9</td></tr><tr><td></td><td>Q2</td><td>104.2</td></tr><tr class="gr"><td></td><td>Q1</td><td>103.7</td></tr><tr><td>2007</td><td>Q4</td><td>103.5</td></tr><tr class="gr"><td></td><td>Q3</td><td>102.7</td></tr><tr><td></td><td>Q2</td><td>102.2</td></tr><tr class="gr"><td></td><td>Q1</td><td>101.2</td></tr></table><div class="copyright">&copy; 2015 PayScale, Inc.</div></div>
+
+
+		</div>
+
+		<div class="index_embed2">
+            <strong>Add this chart to your site</strong> (Copy and paste this HTML)<br />
+            <div id="quarterlyChartSyndicatedBox" style="margin-top:6px">
+                
+                
+	
+	<script type="text/javascript"> 
+		function selectIt(element)
+		{
+			element.focus();
+			element.select();
+		}
+	</script> 
+	
+<input id="syndicateQuarterlyChart" type="text" style="width: 95%; border: 1px solid rgb(150, 185, 215)" onclick="javascript:selectIt(this)" value="&lt;style&gt; .PayScaleIndexChart { background-color: White; font-family: Verdana, Arial, Tahoma; font-size: 11px; }  .PayScaleIndexChart { max-width: 602px; } .PayScaleIndexChart img { height: auto; width: 100%; }  .PayScaleIndexChart h2 { font-size: 11px; margin: 0px 0px; } .PayScaleIndexChart a { color: #06c; text-decoration: none; } .PayScaleIndexChart a:hover { text-decoration: underline; } .PayScaleIndexChart td, .PayScaleIndexChart select { font-size: 11px } .PayScaleIndexChart .title { font-weight: bold; font-size: 14px; text-align: left; margin-left: 32px; margin-top: 20px; margin-bottom: 10px; overflow: hidden;} .PayScaleIndexChart .logo { float: right; margin: 0px 10px 10px 20px; } .PayScaleIndexChart .copyright { float: right; margin: 0px 10px 10px 10px; } .PayScaleIndexChart table.legend { padding: 5px; margin-right: 10px; min-height: 36px; text-align: left } @media (max-width: 768px)  {     .PayScaleIndexChart .title { margin-left: 0px; } } &lt;/style&gt;  &lt;div class=&quot;PayScaleIndexChart&quot;&gt; &lt;div class=&quot;title&quot;&gt;     &lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/payscale_logo_102_34.png&quot; width=&quot;102&quot; height=&quot;34&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;     &lt;a href=&quot;http://www.payscale.com/payscale-index/&quot;&gt;The PayScale Index: National (US) by Quarter&lt;/a&gt; &lt;/div&gt;  &lt;a href=&quot;http://www.payscale.com/payscale-index/&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://www.payscale.com/payscale-index-chart.aspx?type=QuarterlyChart&amp;series0=National&amp;width=602&amp;height=215&quot; alt=&quot;Quarterly Compensation Trends for National (US)&quot; /&gt;&lt;/a&gt;  &lt;div class=&quot;copyright&quot;&gt;&amp;copy; 2015 PayScale, Inc.&lt;/div&gt;    &lt;table style=&quot;width: 100%&quot;&gt;     &lt;tr&gt;         &lt;td valign=&quot;middle&quot; style=&quot;padding: 5px; margin-left: 18px; width: 225px; font-style: italic&quot; &gt;         The PayScale Index uses 2006 average total cash compensation as a baseline.          &lt;/td&gt;         &lt;td align=&quot;right&quot;&gt;             &lt;table class=&quot;legend&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;                 &lt;tr&gt;                     &lt;td width=&quot;30px&quot; valign=&quot;middle&quot; align=&quot;center&quot;&gt;                         &lt;img src=&quot;http://www.payscale.com/images/psindex_chart_key_1.png&quot; width=&quot;20&quot; height=&quot;15&quot; alt=&quot;&quot;/&gt;                     &lt;/td&gt;                     &lt;td valign=&quot;middle&quot; style=&quot;padding-right: 5px&quot;&gt;                          National (US)                     &lt;/td&gt;                 &lt;/tr&gt;                                               &lt;/table&gt;         &lt;/td&gt;     &lt;/tr&gt; &lt;/table&gt;    &lt;/div&gt;" /> 
+            </div>
+            <div id="quarterlyTableSyndicatedBox" style="margin-top:6px; display: none">
+                
+                
+	
+	<script type="text/javascript"> 
+		function selectIt(element)
+		{
+			element.focus();
+			element.select();
+		}
+	</script> 
+	
+<input id="syndicateQuarterlyTable" type="text" style="width: 95%; border: 1px solid rgb(150, 185, 215)" onclick="javascript:selectIt(this)" value="&lt;style&gt; .PayScaleIndexTable { background-color: White; font-family: Verdana, Arial, Tahoma; font-size: 11px; overflow: hidden; } .PayScaleIndexTable h2 { font-size: 11px; margin: 0px 0px; } .PayScaleIndexTable a { color: #06c; text-decoration: none; } .PayScaleIndexTable a:hover { text-decoration: underline; } .PayScaleIndexTable .title { font-weight: bold; font-size: 14px; padding: 5px; } .PayScaleIndexTable .logo { float: right; margin: 0px 10px 10px 20px; } .PayScaleIndexTable table { width: 100%; border-collapse: collapse; table-layout: fixed; } .PayScaleIndexTable td { padding: 5px; text-align: center; border: 1px solid #e3e3d3; font-size: 11px } .PayScaleIndexTable thead { color: #900; } .PayScaleIndexTable th { padding: 5px; font-size: 14px; text-align: center; border: 1px solid #e3e3d3; } .PayScaleIndexTable tr.gr { background-color: #f2f2f2 } .PayScaleIndexTable .copyright { float: right; margin: 0px 10px 10px 10px; } &lt;/style&gt;&lt;div class=&quot;PayScaleIndexTable&quot;&gt;&lt;div class=&quot;title&quot;&gt;&lt;div class=&quot;logo&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/payscale_logo_102_34.png&quot; width=&quot;102&quot; height=&quot;34&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;a href=&quot;http://www.payscale.com/payscale-index/&quot;&gt;The PayScale Index: National&amp;nbsp;(US)&lt;/a&gt;&lt;/div&gt;&lt;table cellspacing=&quot;0&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th class=&quot;y&quot;&gt;Year&lt;/th&gt;&lt;th class=&quot;q&quot;&gt;Quarter&lt;/th&gt;&lt;th&gt;National (US)&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;2015&lt;/td&gt;&lt;td&gt;Q3 Forecast&lt;/td&gt;&lt;td&gt;108.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;107.8&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;108.3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2014&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;108.2&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;107.6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;107.5&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;106.4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2013&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;106.1&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;105.8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;105.9&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;106.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2012&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;106.5&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;106.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;105.1&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;104.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2011&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;104.3&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;104.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;103.6&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;103.8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2010&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;103.8&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;103.6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;103.6&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;103.4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2009&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;103.7&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;103.6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;103.8&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;104.9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2008&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;105.4&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;104.9&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;104.2&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;103.7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2007&lt;/td&gt;&lt;td&gt;Q4&lt;/td&gt;&lt;td&gt;103.5&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q3&lt;/td&gt;&lt;td&gt;102.7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q2&lt;/td&gt;&lt;td&gt;102.2&lt;/td&gt;&lt;/tr&gt;&lt;tr class=&quot;gr&quot;&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Q1&lt;/td&gt;&lt;td&gt;101.2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;copyright&quot;&gt;&amp;copy; 2015 PayScale, Inc.&lt;/div&gt;&lt;/div&gt;" /> 
+            </div>
+        </div>
+       
+
+        <span class="dynamicContentBegin hidden" data-content="payscale-index/footnote"></span><style type="text/css">
+  .index_subnav_button2 div {
+	text-align: center;
+	margin:6px 12px 0 0;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-image:url(http://www.payscale.com/content/index/but_index_green_reg.png);
+	background-repeat:no-repeat;
+	width:274px;
+	height:27px;
+	padding-top:4px;
+}
+.b2b_green_button2 {
+	margin:8px 8px 0 0;
+	text-align: center;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-image:url(http://www.payscale.com/content/index/but_index_green_reg.png);
+	background-repeat:no-repeat;
+	width:274px;
+	height:27px;
+	padding-top:4px;
+}
+.b2b_green_button2 a:link{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.b2b_green_button2 a:visited{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+	.index_subnav_button div {
+	text-align: center;
+	margin:6px 12px 0 0;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-image:url(http://www.payscale.com/content/index/but_index_green_reg.png);
+	background-repeat:no-repeat;
+	width:274px;
+	height:27px;
+	padding-top:4px;
+	float:right;
+}
+.b2b_green_button {
+	margin:8px 8px 0 0;
+	text-align: center;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-image:url(http://www.payscale.com/content/index/but_index_green_reg.png);
+	background-repeat:no-repeat;
+	width:274px;
+	height:27px;
+	padding-top:4px;
+	float:right;
+}
+.b2b_green_button a:link{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.b2b_green_button a:visited{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+</style>
+<div style="font-size:13px; margin:24px 0 24px 0; padding-right:36px">
+<div style="margin:0 0 2px 0; font-size:18px;"><strong>Businesses: View all the latest trends in compensation that are 
+  relevant to your market.</strong></div>
+<div style="margin:0 0 3px 0; font-size:13px;"> Sign up to receive your market report.</div>
+<div style="margin:0 0 18px 0"><a href="/hr/compensation-trends?src=index_button"><button type="button" class="btn btn-success">Get Your Business Trend Report</button></a></div>
+
+<div style="margin:0 0 6px 0; padding:0 0 0 0; font-weight: bold; font-size:13px;">Methodology for The PayScale Index: Trends in Compensation</div>
+<div style="margin:0 0 0 0; font-size:13px;">The PayScale Index tracks quarterly changes in total cash compensation   for full-time, private industry employees in the United States. In   addition to a national index, it includes separate indices for specific   industries, metropolitan areas, job categories, and company sizes. The   PayScale Index uses 2006 average total cash compensation as a baseline.<br />
+<br />
+See <a href="/payscale-index/compensation-trends-methodology ">full methodology for compensation trend reports</a>.</div></div>
+<span class="dynamicContentEnd hidden" data-content="payscale-index/footnote"></span>
+    
+     
+		
+
+
+
+<style type="text/css">
+.fb-comments, .fb-comments iframe[style], .fb-comments span {
+	width: 100% !important;
+}
+</style>
+
+<div style="width:100%; padding: 30px 0 0 0;">
+<div class="fb-comments" data-href="http://www.payscale.com/payscale-index/" data-num-posts="10"  data-width="100%"></div></div></div>
+
+	  
+	  <div class="col-md-4 margin-top-lg">
+		
+
+<div style="width:300px;"> 
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/1063747/PS_Data_Packages', [300, 250], 'div-gpt-ad-1424302381518-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+  
+
+<script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/jquery/jquery-ui-1.8.24.min.js"></script> <link rel="stylesheet" type="text/css" href="http://www.payscale.com/css/jquery/jquery-ui-1.8.24.css"> <script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/locationAutocomplete.js"></script>
+
+
+ 
+ 
+<link href="//cdn-payscale.com/resources/150825/css/rc_popup/rc_surveystart2014.css?BaseVersion" rel="stylesheet" type="text/css">
+<link href="//cdn-payscale.com/resources/150825/css/buttonLinkedIn.css?BaseVersion" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/dist/consumer/font-awesome.min.css">
+
+<form onsubmit="surveyStartTNG.onSubmit(this)" method="post" action="/wizards/choose.aspx?TK=SurveyStart_Content_RightRail">
+    <div class="panel panel-default pinnedSurveyStart sidebar">
+        <div class="panel-heading"></div>
+        <div class="panel-body fieldHolder">
+            <h2 class="text-center"><strong>Find Out Exactly What You Should Be Paid</strong></h2>
+            <div class="form-group">
+                <label>Job Title:</label>
+                <input type="text" class="form-control" category="job\job" id="popupJob" maxlength="250" name="job" />
+            </div>
+            <div class="form-group">
+                <label>Years in Field/Career:</label>
+                <input type="number" class="form-control" category="job\job" id="popupYearsExperience" maxlength="250" name="yearsexp" />
+            </div>
+            <div class="form-group">
+                <label>Location:</label>
+                <input name="cityState" class="form-control" type="text" onclick="surveyStartTNG.showAutoComplete(this);"
+                    onfocus="surveyStartTNG.showAutoComplete(this);" category="location\citystatecountry" maxlength="250" />
+                <input name="city" id="hiddenCity" type="hidden" value="" />
+                <input name="state" id="hiddenState" type="hidden" value="" />
+            </div>
+            <div class="form-group fieldHolder">
+                <span class="countryLabel">United States</span> <a href="javascript:void(0)" onclick="surveyStartTNG.showAutoCompleteCountry(this);">(change)</a>
+                <input class="form-control" style="display: none;" name="confCountry" type="text" id="m_countryInput" onblur="surveyStartTNG.onBlurCountryInput(this);" value="United States" category="location\country" />
+            </div>
+            <p>
+                          <input type="submit" class="btn btn-primary btn-block" value="Submit" name="m_nextButton"></p>
+            <hr/>
+                <a class="btn btn-warning btn-block" href="/hr/default?src=RC_SurveyStart_CompManagers" style="color:#ffffff">Comp Managers: Start Here &raquo;
+                    </a>
+
+            </p>
+                
+        </div>
+        <div class="panel-footer"></div>
+    </div>
+</form>
+ 
+     
+  <div style="clear:both; height:32px"></div>
+   
+    <!-- PS_Data_Packages -->
+<div id='div-gpt-ad-1424302381518-0' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1424302381518-0'); });
+</script>
+</div>
+      <div style="text-align:center; font-family:Verdana, Geneva, sans-serif; font-size:10px; color:#999; margin:3px 0 24px 0; width:300px">Advertisement</div>
+    
+  
+  <div class="page-section">
+  <div style="max-width: 300px;">
+  <span class="dynamicContentBegin hidden" data-content="csr2015_b2b_marketing"></span><div style="width:300px; height:250px; margin:12px 0">
+  <script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/1063747/B2B_Data_Packages_300x250', [300, 250], 'div-gpt-ad-1410461365174-0').addService(googletag.pubads());
+});
+</script>
+    
+<!-- B2B_Data_Packages_300x250 -->
+<div id='div-gpt-ad-1410461365174-0' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1410461365174-0'); });
+</script>
+</div>
+    
+</div>
+<span class="dynamicContentEnd hidden" data-content="csr2015_b2b_marketing"></span>
+  </div>
+  </div>
+
+            
+</div>
+
+		</div>
+		</div>
+
+	
+</div>
+
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    <script type="text/javascript" src="/jslib.aspx?singleFile=hoverTooltip-min.js&version=120306"></script>
+
+    </div>
+
+    <div class="Payscale_Footer">
+        
+        
+<span class="dynamicContentBegin hidden" data-content="/header-footer/footer"></span>  <div id="psFooterCon">
+    <div id="psFooter">
+      <div id="psFooterBody">
+      <div id="psFooterLinks">
+        <div class="psFooterCol">
+          <div class="takeSurveyAd">
+            <a href="/wizards/choose.aspx">
+              <img alt="Take the survey and earn more money" src="//cdn-payscale.com/content/header-footer/take_survey_ad.png">
+					  </a>
+          </div>
+          <div class="viewProductsAd">
+            <a href="/hr/product-insight-expert">
+              <img alt="Explore PayScale's cloud compensation software" src="//cdn-payscale.com/content/header-footer/product_footer_ad.png">
+					  </a>
+          </div>
+          
+        </div>
+        <div class="psFooterCol">
+          <div class="navCategory">
+            BUSINESS
+          </div>
+          <div class="navItem">
+            <a href="/hr/product-insight-expert">Compensation Software</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/whitepapers">Whitepapers</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/webinars">Webinars</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/customers">Customers</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/whypayscale/support">Support</a>
+          </div>
+          <div class="navItem">
+            <a href="http://resources.payscale.com/hr-request-a-demo.html">Request a Demo</a>
+          </div>
+          <div class="navCategory">
+            PERSONAL
+          </div>
+          <div class="navItem">
+            <a href="/mypayscale.aspx">Get Your Salary Report</a>
+          </div>
+          <div class="navItem">
+            <a href="/Job-Search-Engine">Find a Job</a>
+          </div>
+          <div class="navItem">
+            <a href="/research/US/Country=United_States/Salary">Research Careers</a>
+          </div>
+          <div class="navItem">
+            <a href="/college-salary-report">College Salary Report</a>
+          </div>
+          <div class="navCategory">
+            SCHOOLS
+          </div>
+          <div class="navItem">
+            <a href="/about/education-data/">Alumni Analytics</a>
+          </div>
+        </div>
+        <div class="psFooterCol">
+          <div class="navCategory">
+            PRESS
+          </div>
+          <div class="navItem">
+            <a href="/about/press-releases">Press Releases</a>
+          </div>
+          <div class="navItem">
+            <a href="/about/latest-news">PayScale in the News</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/partners">Partners</a>
+          </div>
+          <div class="navCategory">
+            BLOGS
+          </div>
+          <div class="navItem">
+            <a href="/career-news">Career News</a>
+          </div>
+          <div class="navItem">
+            <a href="/compensation-today">Compensation Today</a>
+          </div>
+          <div class="navCategory linkJobListing">
+            JOBS
+          </div>
+          <div class="navItem linkJobListing">
+            <a href="/about/jobs">Hiring in Seattle, WA</a>
+          </div>
+        </div>
+        <div class="psFooterCol">
+          <div class="navCategory">
+            CONTACT
+          </div>
+          <div>
+            PayScale, Inc.
+            <br>
+            1000 1st Ave South
+            <br>
+            Suite 500<br>
+			Seattle, WA 98134
+			</div>
+          <div class="socialMediaLinks">
+            <a href="http://www.facebook.com/PayScale">
+              <img src="//cdn-payscale.com/resources/150825/images/footer/facebook_26x26.png">
+					</a>
+            <a href="http://twitter.com/payscale">
+              <img src="//cdn-payscale.com/resources/150825/images/footer/twitter_26x26.png">
+					</a>
+            <a href="http://www.linkedin.com/company/47199">
+              <img src="//cdn-payscale.com/resources/150825/images/footer/linkedin_26x26.png">
+					</a>
+            <a href="https://plus.google.com/+payscale">
+              <img src="//cdn-payscale.com/resources/150825/images/footer/gplus_26x26.png">
+					</a>
+          </div>
+          <div class="navCategory">
+            ABOUT
+          </div>
+          <div class="navItem">
+            <a href="/about">About PayScale</a>
+          </div>
+          <div class="navItem linkJobListing">
+            <a href="/about/jobs">Work for Us</a>
+          </div>
+          <div class="navItem">
+            <a href="/about/use-our-data">Use Our Data</a>
+          </div>
+		  <div class="navItem">
+            <a href="/about/management-team">Management Team</a>
+          </div>
+          <div class="navItem">
+            <a href="/about/board-of-directors">Board of Directors</a>
+          </div>
+          <div class="navItem">
+            <a href="/about/board-of-advisors">Board of Advisors</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/product-how-it-works">Methodology</a>
+          </div>
+        </div>
+        
+        <div class="clear"></div>
+</div>
+      <div class="privacyCon">
+        
+          <div class="privacyNotice">
+            <img src="//cdn-payscale.com/content/header-footer/lock-icon.png">
+            Privacy Notice: PayScale takes your privacy seriously and is sensitive to the nature of information collected on this site.
+          </div>
+        <div class="privacyLinks" style="margin-top:16px">
+          <a href="/license">Terms of Use</a>
+          <span class="privacyLinkDivider">|</span>
+          <a href="/privacy.aspx">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+          &copy; 2015 PayScale, Inc. All rights reserved
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="backToTopCon">
+      <a href="#pageTop">
+        <span id="backToTopButton">Back to Top</span>
+      </a>
+    </div>
+  </div>
+
+    <div class="psFooterBottom"></div>
+  </div><span class="dynamicContentEnd hidden" data-content="/header-footer/footer"></span>
+
+    </div>
+
+    <script>
+    document.write(unescape("%3Cscript src='" + document.location.protocol + "//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>
+(function () {
+    function containsItem(itemToFind, allItems) {
+        var isFound = false;
+
+        for (var i = 0; i < allItems.length && !isFound; i++) {
+            isFound = (itemToFind.substr(0, allItems[i].length) === allItems[i]); // match prefixes
+        }
+
+        return isFound;
+    }
+
+    function initializeMarketo()
+    {
+        if (typeof Munchkin !== 'undefined') { // Might be undefined if munchkin.js script hasn't finished loading
+            var marketoAccountId = '417-NLK-080'; // '417-NLK-080';
+            var pagePath = window.location.pathname.toLowerCase();
+            var pagesToTrack = [
+                '/hr',
+                '/biz/',
+                '/compensation',
+                '/payscale-index',
+                '/createaccount.aspx'
+                ];
+
+            if (window.location.hostname.toLowerCase() === 'marketrate.payscale.com' || (window.location.pathname === '/') || containsItem(pagePath, pagesToTrack)) {
+                Munchkin.init(marketoAccountId);
+            } else {
+                // Workaround for Marketo not being able to handle all of our traffic
+                Munchkin.init(marketoAccountId, {cookieAnon: false});
+            }
+        }
+    }
+
+    initializeMarketo();
+})();
+</script>
+
+
+<script type="text/javascript">checkLoadTime()</script>
+
+    
+
+    <div id="pageBottom"></div>
+    
+</body>
+</html>

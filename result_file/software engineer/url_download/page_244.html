@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Signal processing - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Signal_processing","wgTitle":"Signal processing","wgCurRevisionId":679265871,"wgRevisionId":679265871,"wgArticleId":29324,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using citations with accessdate and no URL","CS1 errors: dates","Wikipedia articles with GND identifiers","Media technology","Signal processing","Telecommunication theory"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Signal_processing","wgRelevantArticleId":
+29324,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cosine_Series_Plus_Noise.png/100px-Cosine_Series_Plus_Noise.png","wgULSAcceptLanguageList":["zh-cn","zh","en","zh-tw"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q208163","wgVisualEditorToolbarScrollOffset":
+0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.shared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint&amp;only=styles&amp;skin=vector" media="print" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf22" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Signal_processing" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Signal_processing&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Signal_processing&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Signal_processing" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf22/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Signal_processing skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Signal processing</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="hatnote">"Signal theory" redirects here. It is not to be confused with <a href="/wiki/Signalling_theory" title="Signalling theory">Signalling theory</a>&#160;or <a href="/wiki/Signalling_(economics)" title="Signalling (economics)">Signalling (economics)</a>.</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a href="/wiki/File:Signal_processing_system.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/46/Signal_processing_system.png/400px-Signal_processing_system.png" width="400" height="129" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/46/Signal_processing_system.png/600px-Signal_processing_system.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/46/Signal_processing_system.png/800px-Signal_processing_system.png 2x" data-file-width="1204" data-file-height="387" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Signal_processing_system.png" class="internal" title="Enlarge"></a></div>
+Signal transmission using electronic signal processing. <a href="/wiki/Transducer" title="Transducer">Transducers</a> convert signals from other physical <a href="/wiki/Waveform" title="Waveform">waveforms</a> to electric <a href="/wiki/Electric_current" title="Electric current">current</a> or <a href="/wiki/Voltage" title="Voltage">voltage</a> waveforms, which then are processed, transmitted as <a href="/wiki/Electromagnetic_wave" title="Electromagnetic wave" class="mw-redirect">electromagnetic waves</a>, received and converted by another transducer to final form.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a href="/wiki/File:Cosine_Series_Plus_Noise.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cosine_Series_Plus_Noise.png/400px-Cosine_Series_Plus_Noise.png" width="400" height="300" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cosine_Series_Plus_Noise.png/600px-Cosine_Series_Plus_Noise.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cosine_Series_Plus_Noise.png/800px-Cosine_Series_Plus_Noise.png 2x" data-file-width="1200" data-file-height="900" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Cosine_Series_Plus_Noise.png" class="internal" title="Enlarge"></a></div>
+This signal looks like noise, but the signal processing technique known as the Fourier transform (below), shows that it contains five well defined frequency components.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a href="/wiki/File:Cosine_Series_Plus_Noise_TFM.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Cosine_Series_Plus_Noise_TFM.png/400px-Cosine_Series_Plus_Noise_TFM.png" width="400" height="300" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Cosine_Series_Plus_Noise_TFM.png/600px-Cosine_Series_Plus_Noise_TFM.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Cosine_Series_Plus_Noise_TFM.png/800px-Cosine_Series_Plus_Noise_TFM.png 2x" data-file-width="1200" data-file-height="900" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Cosine_Series_Plus_Noise_TFM.png" class="internal" title="Enlarge"></a></div>
+Fourier transform of time domain signal shown above computed with <a rel="nofollow" class="external free" href="https://sourceforge.net/projects/amoreaccuratefouriertransform/">https://sourceforge.net/projects/amoreaccuratefouriertransform/</a></div>
+</div>
+</div>
+<p><b>Signal processing</b> is an enabling technology that encompasses the fundamental theory, applications, <a href="/wiki/Algorithms" title="Algorithms" class="mw-redirect">algorithms</a>, and implementations of processing or transferring information contained in many different physical, symbolic, or abstract formats broadly designated as <i>signals</i>.<sup id="cite_ref-What_1-0" class="reference"><a href="#cite_note-What-1"><span>[</span>1<span>]</span></a></sup> It uses mathematical, statistical, computational, heuristic, and linguistic representations, formalisms, and techniques for representation, modelling, analysis, synthesis, discovery, recovery, sensing, acquisition, extraction, learning, security, or forensics.<sup id="cite_ref-What_1-1" class="reference"><a href="#cite_note-What-1"><span>[</span>1<span>]</span></a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Application_fields_of_signal_processing"><span class="tocnumber">2</span> <span class="toctext">Application fields of signal processing</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Typical_devices"><span class="tocnumber">3</span> <span class="toctext">Typical devices</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Mathematical_methods_applied_in_signal_processing"><span class="tocnumber">4</span> <span class="toctext">Mathematical methods applied in signal processing</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Categories_of_signal_processing"><span class="tocnumber">5</span> <span class="toctext">Categories of signal processing</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Analog_signal_processing"><span class="tocnumber">5.1</span> <span class="toctext">Analog signal processing</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Continuous-time_signal_processing"><span class="tocnumber">5.2</span> <span class="toctext">Continuous-time signal processing</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Discrete-time_signal_processing"><span class="tocnumber">5.3</span> <span class="toctext">Discrete-time signal processing</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Digital_signal_processing"><span class="tocnumber">5.4</span> <span class="toctext">Digital signal processing</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Nonlinear_signal_processing"><span class="tocnumber">5.5</span> <span class="toctext">Nonlinear signal processing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Notes_and_references"><span class="tocnumber">7</span> <span class="toctext">Notes and references</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>According to <a href="/wiki/Alan_V._Oppenheim" title="Alan V. Oppenheim">Alan V. Oppenheim</a> and <a href="/wiki/Ronald_W._Schafer" title="Ronald W. Schafer">Ronald W. Schafer</a>, the principles of signal processing can be found in the classical <a href="/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a> techniques of the 17th century. Oppenheim and Schafer further state that the "digitalization" or digital refinement of these techniques can be found in the digital <a href="/wiki/Control_system" title="Control system">control systems</a> of the 1940s and 1950s.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Application_fields_of_signal_processing">Application fields of signal processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=2" title="Edit section: Application fields of signal processing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Audio_signal_processing" title="Audio signal processing">Audio signal processing</a>&#160;–  for electrical signals representing sound, such as speech or music</li>
+<li><a href="/wiki/Speech_signal_processing" title="Speech signal processing" class="mw-redirect">Speech signal processing</a>&#160;–  for processing and interpreting spoken words</li>
+<li><a href="/wiki/Image_processing" title="Image processing">Image processing</a>&#160;–  in digital cameras, computers and various imaging systems</li>
+<li><a href="/wiki/Video_processing" title="Video processing">Video processing</a>&#160;–  for interpreting moving pictures</li>
+<li><a href="/wiki/Wireless_communication" title="Wireless communication" class="mw-redirect">Wireless communication</a> - waveform generations, demodulation, filtering, equalization</li>
+<li><a href="/wiki/Control_systems" title="Control systems" class="mw-redirect">Control systems</a></li>
+<li><a href="/wiki/Array_processing" title="Array processing">Array processing</a>&#160;–  for processing signals from arrays of sensors</li>
+<li><a href="/wiki/Seismology" title="Seismology">Seismology</a></li>
+<li><a href="/wiki/Financial_signal_processing" title="Financial signal processing">Financial signal processing</a>&#160;–  analyzing financial data using signal processing techniques, especially for prediction purposes.</li>
+<li><a href="/wiki/Feature_extraction" title="Feature extraction">Feature extraction</a>, such as <a href="/wiki/Image_understanding" title="Image understanding" class="mw-redirect">image understanding</a> and <a href="/wiki/Speech_recognition" title="Speech recognition">speech recognition</a>.</li>
+<li>Quality improvement, such as <a href="/wiki/Noise_reduction" title="Noise reduction">noise reduction</a>, <a href="/wiki/Image_enhancement" title="Image enhancement" class="mw-redirect">image enhancement</a>, and <a href="/wiki/Echo_cancellation" title="Echo cancellation" class="mw-redirect">echo cancellation</a>.</li>
+<li>(<a href="/wiki/Source_coding" title="Source coding" class="mw-redirect">Source coding</a>), including <a href="/wiki/Audio_compression_(data)" title="Audio compression (data)" class="mw-redirect">audio compression</a>, <a href="/wiki/Image_compression" title="Image compression">image compression</a>, and <a href="/wiki/Video_compression" title="Video compression" class="mw-redirect">video compression</a>.</li>
+</ul>
+<p>In communication systems, signal processing may occur at:</p>
+<ul>
+<li><a href="/wiki/OSI_model" title="OSI model">OSI layer</a> 1 in the seven layer OSI model, the <a href="/wiki/Physical_Layer" title="Physical Layer" class="mw-redirect">Physical Layer</a> (<a href="/wiki/Modulation" title="Modulation">modulation</a>, <a href="/wiki/Equalization_(communications)" title="Equalization (communications)">equalization</a>, <a href="/wiki/Multiplexing" title="Multiplexing">multiplexing</a>, etc.);</li>
+<li>Osi layer 2, the <a href="/wiki/Data_Link_Layer" title="Data Link Layer" class="mw-redirect">Data Link Layer</a> (<a href="/wiki/Forward_Error_Correction" title="Forward Error Correction" class="mw-redirect">Forward Error Correction</a>);</li>
+<li>OSI layer 6, the <a href="/wiki/Presentation_Layer" title="Presentation Layer" class="mw-redirect">Presentation Layer</a> (source coding, including <a href="/wiki/Analog-to-digital_converter" title="Analog-to-digital converter">analog-to-digital conversion</a> and <a href="/wiki/Data_compression" title="Data compression">signal compression</a>).</li>
+</ul>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Seismic_Data_Processing.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Seismic_Data_Processing.jpg/220px-Seismic_Data_Processing.jpg" width="220" height="148" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Seismic_Data_Processing.jpg/330px-Seismic_Data_Processing.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Seismic_Data_Processing.jpg/440px-Seismic_Data_Processing.jpg 2x" data-file-width="662" data-file-height="446" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Seismic_Data_Processing.jpg" class="internal" title="Enlarge"></a></div>
+Seismic signal processing</div>
+</div>
+</div>
+<h2><span class="mw-headline" id="Typical_devices">Typical devices</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=3" title="Edit section: Typical devices">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Filter_(signal_processing)" title="Filter (signal processing)">Filters</a>&#160;–  - for example analog (passive or active) or digital (<a href="/wiki/FIR_filter" title="FIR filter" class="mw-redirect">FIR</a>, <a href="/wiki/IIR_filter" title="IIR filter" class="mw-redirect">IIR</a>, frequency domain or <a href="/w/index.php?title=Stochastic_filter&amp;action=edit&amp;redlink=1" class="new" title="Stochastic filter (page does not exist)">stochastic filters</a>, etc.)</li>
+<li><a href="/wiki/Sampling_(signal_processing)" title="Sampling (signal processing)">Samplers</a> and <a href="/wiki/Analog-to-digital_converter" title="Analog-to-digital converter">Analog-to-digital converters</a> for <a href="/wiki/Data_acquisition" title="Data acquisition">Signal acquisition</a> and reconstruction, which involves measuring a physical signal, storing or transferring it as digital signal, and possibly later rebuilding the original signal or an approximation thereof.</li>
+<li><a href="/wiki/Data_compression" title="Data compression">Signal compressors</a></li>
+<li><a href="/wiki/Digital_signal_processor" title="Digital signal processor">Digital signal processors</a> (DSPs)</li>
+</ul>
+<h2><span class="mw-headline" id="Mathematical_methods_applied_in_signal_processing">Mathematical methods applied in signal processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=4" title="Edit section: Mathematical methods applied in signal processing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Differential_equations" title="Differential equations" class="mw-redirect">Differential equations</a></li>
+<li><a href="/wiki/Difference_equations" title="Difference equations" class="mw-redirect">Difference equations</a></li>
+<li><a href="/wiki/Transform_theory" title="Transform theory">Transform theory</a></li>
+<li><a href="/wiki/Time-frequency_analysis" title="Time-frequency analysis" class="mw-redirect">Time-frequency analysis</a>&#160;–  for processing non-stationary signals<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></li>
+<li><a href="/wiki/Spectral_estimation" title="Spectral estimation" class="mw-redirect">Spectral estimation</a>&#160;–  for determining the spectral content (i.e., the distribution of power over frequency) of a time series<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup></li>
+<li><a href="/wiki/Statistical_signal_processing" title="Statistical signal processing">Statistical signal processing</a>&#160;–  analyzing and extracting information from signals and noise based on their stochastic properties</li>
+<li><a href="/wiki/Linear_time-invariant_system" title="Linear time-invariant system" class="mw-redirect">Linear time-invariant system</a> theory, and <a href="/wiki/Transform_theory" title="Transform theory">transform theory</a></li>
+<li><a href="/wiki/System_identification" title="System identification">System identification</a> and classification</li>
+<li><a href="/wiki/Calculus" title="Calculus">Calculus</a></li>
+<li><a href="/wiki/Vector_spaces" title="Vector spaces" class="mw-redirect">Vector spaces</a> and <a href="/wiki/Linear_algebra" title="Linear algebra">Linear algebra</a></li>
+<li><a href="/wiki/Functional_analysis" title="Functional analysis">Functional analysis</a></li>
+<li><a href="/wiki/Probability" title="Probability">Probability</a> and <a href="/wiki/Stochastic_processes" title="Stochastic processes" class="mw-redirect">stochastic processes</a></li>
+<li><a href="/wiki/Detection_theory" title="Detection theory">Detection theory</a></li>
+<li><a href="/wiki/Estimation_theory" title="Estimation theory">Estimation theory</a></li>
+<li><a href="/wiki/Mathematical_optimization" title="Mathematical optimization">Optimization</a></li>
+<li>Numerical methods</li>
+<li><a href="/wiki/Time_series" title="Time series">Time series</a></li>
+<li><a href="/wiki/Data_mining" title="Data mining">Data mining</a>&#160;–  for statistical analysis of relations between large quantities of variables (in this context representing many physical signals), to extract previously unknown interesting patterns</li>
+</ul>
+<h2><span class="mw-headline" id="Categories_of_signal_processing">Categories of signal processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=5" title="Edit section: Categories of signal processing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Analog_signal_processing">Analog signal processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=6" title="Edit section: Analog signal processing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Analog_signal_processing" title="Analog signal processing">Analog signal processing</a></div>
+<p>Analog signal processing is for signals that have not been digitized, as in legacy radio, telephone, radar, and television systems. This involves linear electronic circuits as well as non-linear ones. The former are, for instance, <a href="/wiki/Passive_filter" title="Passive filter" class="mw-redirect">passive filters</a>, <a href="/wiki/Active_filter" title="Active filter">active filters</a>, <a href="/wiki/Electronic_mixer" title="Electronic mixer">additive mixers</a>, <a href="/wiki/Integrator" title="Integrator">integrators</a> and <a href="/wiki/Analog_delay_line" title="Analog delay line">delay lines</a>. Non-linear circuits include <a href="/wiki/Compandor" title="Compandor" class="mw-redirect">compandors</a>, multiplicators (<a href="/wiki/Frequency_mixer" title="Frequency mixer">frequency mixers</a> and <a href="/wiki/Voltage-controlled_amplifier" title="Voltage-controlled amplifier" class="mw-redirect">voltage-controlled amplifiers</a>), <a href="/wiki/Voltage-controlled_filter" title="Voltage-controlled filter">voltage-controlled filters</a>, <a href="/wiki/Voltage-controlled_oscillator" title="Voltage-controlled oscillator">voltage-controlled oscillators</a> and <a href="/wiki/Phase-locked_loop" title="Phase-locked loop">phase-locked loops</a>.</p>
+<h3><span class="mw-headline" id="Continuous-time_signal_processing">Continuous-time signal processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=7" title="Edit section: Continuous-time signal processing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Continuous_signal" title="Continuous signal">Continuous-time signal processing</a> is for signals that vary with the change of continuous domain(without considering some individual interrupted points).</p>
+<p>The methods of signal processing include: <a href="/wiki/Time_domain" title="Time domain">Time domain</a>, <a href="/wiki/Frequency_domain" title="Frequency domain">Frequency domain</a>, <a href="/wiki/Complex_frequency" title="Complex frequency" class="mw-redirect">Complex frequency domain</a>. This technology mainly discusses the modeling of linear time-invariant continuous system, integral of system's zero-state response, setting up system function and the continuous time filtering of deterministic signals.</p>
+<h3><span class="mw-headline" id="Discrete-time_signal_processing">Discrete-time signal processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=8" title="Edit section: Discrete-time signal processing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Discrete-time_signal" title="Discrete-time signal">Discrete-time signal processing</a> is for sampled signals, defined only at discrete points in time, and as such are quantized in time, but not in magnitude.</p>
+<p><i>Analog discrete-time signal processing</i> is a technology based on electronic devices such as <a href="/wiki/Sample_and_hold" title="Sample and hold">sample and hold</a> circuits, analog time-division <a href="/wiki/Multiplexer" title="Multiplexer">multiplexers</a>, <a href="/wiki/Analog_delay_line" title="Analog delay line">analog delay lines</a> and <a href="/wiki/Analog_feedback_shift_register" title="Analog feedback shift register">analog feedback shift registers</a>. This technology was a predecessor of digital signal processing (see below), and is still used in advanced processing of gigahertz signals.</p>
+<p>The concept of discrete-time signal processing also refers to a theoretical discipline that establishes a mathematical basis for digital signal processing, without taking <a href="/wiki/Quantization_error" title="Quantization error" class="mw-redirect">quantization error</a> into consideration.</p>
+<h3><span class="mw-headline" id="Digital_signal_processing">Digital signal processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=9" title="Edit section: Digital signal processing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Digital_signal_processing" title="Digital signal processing">Digital signal processing</a></div>
+<p>Digital signal processing is the processing of digitized discrete-time sampled signals. Processing is done by general-purpose <a href="/wiki/Computer" title="Computer">computers</a> or by digital circuits such as <a href="/wiki/Application-specific_integrated_circuit" title="Application-specific integrated circuit">ASICs</a>, <a href="/wiki/Field-programmable_gate_array" title="Field-programmable gate array">field-programmable gate arrays</a> or specialized <a href="/wiki/Digital_signal_processor" title="Digital signal processor">digital signal processors</a> (DSP chips). Typical arithmetical operations include <a href="/wiki/Fixed-point_arithmetic" title="Fixed-point arithmetic">fixed-point</a> and <a href="/wiki/Floating-point" title="Floating-point" class="mw-redirect">floating-point</a>, real-valued and complex-valued, multiplication and addition. Other typical operations supported by the hardware are <a href="/wiki/Circular_buffer" title="Circular buffer">circular buffers</a> and <a href="/wiki/Look-up_table" title="Look-up table" class="mw-redirect">look-up tables</a>. Examples of algorithms are the <a href="/wiki/Fast_Fourier_transform" title="Fast Fourier transform">Fast Fourier transform</a> (FFT), <a href="/wiki/Finite_impulse_response" title="Finite impulse response">finite impulse response</a> (FIR) filter, <a href="/wiki/Infinite_impulse_response" title="Infinite impulse response">Infinite impulse response</a> (IIR) filter, and <a href="/wiki/Adaptive_filter" title="Adaptive filter">adaptive filters</a> such as the <a href="/wiki/Wiener_filter" title="Wiener filter">Wiener</a> and <a href="/wiki/Kalman_filter" title="Kalman filter">Kalman filters</a>.</p>
+<h3><span class="mw-headline" id="Nonlinear_signal_processing">Nonlinear signal processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=10" title="Edit section: Nonlinear signal processing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Nonlinear signal processing involves the analysis and processing of signals produced from nonlinear systems and can be in the time, frequency, or spatio-temporal domains.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup> Nonlinear systems can produce highly complex behaviors including <a href="/wiki/Bifurcation_theory" title="Bifurcation theory">bifurcations</a>, <a href="/wiki/Chaos_theory" title="Chaos theory">chaos</a>, <a href="/wiki/Harmonics" title="Harmonics" class="mw-redirect">harmonics</a>, and <a href="/wiki/Subharmonics" title="Subharmonics" class="mw-redirect">subharmonics</a> which cannot be produced or analyzed using linear methods.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=11" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Audio_filter" title="Audio filter">Audio filter</a></li>
+<li><a href="/wiki/Delay_(audio_effect)" title="Delay (audio effect)">Delay (audio effect)</a></li>
+<li><a href="/wiki/Dynamic_range_compression" title="Dynamic range compression">Dynamic range compression</a>, <a href="/wiki/Companding" title="Companding">companding</a>, <a href="/wiki/Limiting" title="Limiting">limiting</a>, and <a href="/wiki/Noise_gating" title="Noise gating" class="mw-redirect">noise gating</a></li>
+<li><a href="/wiki/Information_theory" title="Information theory">Information theory</a></li>
+<li><a href="/wiki/Reverberation" title="Reverberation">Reverberation</a></li>
+<li><a href="/wiki/List_of_music_software#Music_mining_software" title="List of music software">List of music software#Music mining software</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes_and_references">Notes and references</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=12" title="Edit section: Notes and references">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-What-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-What_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-What_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation journal">Moura, J.M.F. (2009). "What is signal processing?, President’s Message". <i><a href="/w/index.php?title=IEEE_Signal_Processing_Magazine&amp;action=edit&amp;redlink=1" class="new" title="IEEE Signal Processing Magazine (page does not exist)">IEEE Signal Processing Magazine</a></i> <b>26</b> (6). <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1109%2FMSP.2009.934636">10.1109/MSP.2009.934636</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASignal+processing&amp;rft.atitle=What+is+signal+processing%3F%2C+President%E2%80%99s+Message&amp;rft.aufirst=J.M.F.&amp;rft.aulast=Moura&amp;rft.au=Moura%2C+J.M.F.&amp;rft.date=2009&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1109%2FMSP.2009.934636&amp;rft.issue=6&amp;rft.jtitle=IEEE+Signal+Processing+Magazine&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=26" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="display:none;font-size:100%" class="error citation-comment"><code style="color:inherit; border:inherit; padding:inherit;">|accessdate=</code> requires <code style="color:inherit; border:inherit; padding:inherit;">|url=</code> (<a href="/wiki/Help:CS1_errors#accessdate_missing_url" title="Help:CS1 errors">help</a>)</span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation book">Oppenheim, Alan V.; Schafer, Ronald W. (1975). <i>Digital Signal Processing</i>. <a href="/wiki/Prentice_Hall" title="Prentice Hall">Prentice Hall</a>. p.&#160;5. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-214635-5" title="Special:BookSources/0-13-214635-5">0-13-214635-5</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASignal+processing&amp;rft.aulast=Oppenheim%2C+Alan+V.&amp;rft.au=Oppenheim%2C+Alan+V.&amp;rft.au=Schafer%2C+Ronald+W.&amp;rft.btitle=Digital+Signal+Processing&amp;rft.date=1975&amp;rft.genre=book&amp;rft.isbn=0-13-214635-5&amp;rft.pages=5&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation book">Boashash, Boualem, ed. (2003). <i>Time frequency signal analysis and processing a comprehensive reference</i> (1 ed.). Amsterdam: Elsevier. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-08-044335-4" title="Special:BookSources/0-08-044335-4">0-08-044335-4</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASignal+processing&amp;rft.btitle=Time+frequency+signal+analysis+and+processing+a+comprehensive+reference&amp;rft.date=2003&amp;rft.edition=1&amp;rft.genre=book&amp;rft.isbn=0-08-044335-4&amp;rft.place=Amsterdam&amp;rft.pub=Elsevier&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation book">P Stoica, R Moses (2005; Chinese Edition, 2007). <a rel="nofollow" class="external text" href="http://user.it.uu.se/%7Eps/SAS-new.pdf"><i>SPECTRAL ANALYSIS OF SIGNALS</i></a> <span style="font-size:85%;">(PDF)</span>. NJ: Prentice Hall.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASignal+processing&amp;rft.aufirst=R+Moses&amp;rft.aulast=P+Stoica&amp;rft.au=P+Stoica%2C+R+Moses&amp;rft.btitle=SPECTRAL+ANALYSIS+OF+SIGNALS&amp;rft.date=2005%3B+Chinese+Edition%2C+2007&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fuser.it.uu.se%2F%257Eps%2FSAS-new.pdf&amp;rft.place=NJ&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="font-size:100%" class="error citation-comment">Check date values in: <code style="color:inherit; border:inherit; padding:inherit;">|date=</code> (<a href="/wiki/Help:CS1_errors#bad_date" title="Help:CS1 errors">help</a>)</span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation book">Billings, S. A. (2013). <i>Nonlinear System Identification: NARMAX Methods in the Time, Frequency, and Spatio-Temporal Domains</i>. Wiley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1119943590" title="Special:BookSources/1119943590">1119943590</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASignal+processing&amp;rft.au=Billings%2C+S.+A.&amp;rft.aufirst=S.+A.&amp;rft.aulast=Billings&amp;rft.btitle=Nonlinear+System+Identification%3A+NARMAX+Methods+in+the+Time%2C+Frequency%2C+and+Spatio-Temporal+Domains&amp;rft.date=2013&amp;rft.genre=book&amp;rft.isbn=1119943590&amp;rft.pub=Wiley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Signal_processing&amp;action=edit&amp;section=13" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.sp4comm.org/">Signal Processing for Communications</a> – free online textbook by Paolo Prandoni and Martin Vetterli (2008)</li>
+<li><a rel="nofollow" class="external text" href="http://www.dspguide.com">Scientists and Engineers Guide to Digital Signal Processing</a> – free online textbook by Stephen Smith</li>
+<li><a rel="nofollow" class="external text" href="http://www.usbr.gov/research/projects/detail.cfm?id=9962">Signal Processing Techniques for Determining Powerplant Characteristics</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.signalprocessingsociety.org/">The IEEE Signal Processing Society</a></li>
+</ul>
+<p><a rel="nofollow" class="external text" href="http://siliconmentor.blogspot.in/2015/03/bio-medical-signal-processing-at-glance.html">Bio-Medical Signal processing at a Glance</a></p>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Sub-disciplines_of_computing" title="Template:Sub-disciplines of computing"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Sub-disciplines_of_computing" title="Template talk:Sub-disciplines of computing"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Sub-disciplines_of_computing&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%">Sub-disciplines of <a href="/wiki/Computing" title="Computing">computing</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Computer_hardware" title="Computer hardware">Hardware</a></li>
+<li><a href="/wiki/Software" title="Software">Software</a></li>
+<li><a href="/wiki/Firmware" title="Firmware">Firmware</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Information_system" title="Information system">Information system</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Information_security" title="Information security">Information security</a></li>
+<li><a href="/wiki/Multimedia_database" title="Multimedia database">Multimedia database</a></li>
+<li><a href="/wiki/Intelligent_database" title="Intelligent database">Intelligent database</a></li>
+<li><a href="/wiki/Big_data" title="Big data">Big data</a></li>
+<li><a href="/wiki/Knowledge-based_systems" title="Knowledge-based systems">Knowledge-based systems</a></li>
+<li><a href="/wiki/Recommender_System" title="Recommender System" class="mw-redirect">Recommender System</a></li>
+<li><a href="/wiki/Geographic_information_systems" title="Geographic information systems" class="mw-redirect">Geographic information systems</a></li>
+<li><a href="/wiki/Decision_support_system" title="Decision support system">Decision support system</a></li>
+<li><a href="/wiki/Data_engineering" title="Data engineering" class="mw-redirect">Data engineering</a></li>
+<li><a href="/wiki/Knowledge_engineering" title="Knowledge engineering">Knowledge engineering</a></li>
+<li><a href="/wiki/Fuzzy_logic" title="Fuzzy logic">Fuzzy logic</a></li>
+<li><a href="/wiki/Data_analysis" title="Data analysis">Data analysis</a></li>
+<li>System <a href="/wiki/Systems_analysis" title="Systems analysis">analysis</a> and <a href="/wiki/Systems_design" title="Systems design">design</a></li>
+<li><a href="/wiki/Project_management" title="Project management">Project management</a></li>
+<li><a href="/wiki/Knowledge_management" title="Knowledge management">Knowledge management</a></li>
+<li><a href="/wiki/Data_integration" title="Data integration">Data integration</a></li>
+<li><a href="/wiki/High-performance_computing" title="High-performance computing" class="mw-redirect">High-performance computing</a></li>
+<li><a href="/wiki/Semantic_web" title="Semantic web" class="mw-redirect">Semantic web</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Computer_science" title="Computer science">Computer science</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Database_management_system" title="Database management system" class="mw-redirect">Database management system</a></li>
+<li><a href="/wiki/Communications_system" title="Communications system">Communications system</a></li>
+<li><a href="/wiki/Computational_geometry" title="Computational geometry">Computational geometry</a></li>
+<li><a href="/wiki/Machine_learning" title="Machine learning">Machine learning</a></li>
+<li><a href="/wiki/Data_mining" title="Data mining">Data mining</a></li>
+<li><a href="/wiki/Parallel_programming" title="Parallel programming" class="mw-redirect">Parallel programming</a></li>
+<li><a href="/wiki/Coding_theory" title="Coding theory">Coding theory</a></li>
+<li><a href="/wiki/Theory_of_computation" title="Theory of computation">Theory of computation</a></li>
+<li><a href="/wiki/Constraint_programming" title="Constraint programming">Constraint programming</a></li>
+<li><a href="/wiki/Computational_biology" title="Computational biology">Computational biology</a> (<a href="/wiki/Bioinformatics" title="Bioinformatics">Bioinformatics</a>)</li>
+<li><a href="/wiki/Design_and_analysis_of_algorithms" title="Design and analysis of algorithms" class="mw-redirect">Design and analysis of algorithms</a></li>
+<li><a href="/wiki/Information_retrieval" title="Information retrieval">Information retrieval</a></li>
+<li><a href="/wiki/Computational_science" title="Computational science">Computational science</a></li>
+<li><a href="/wiki/Symbolic_computation" title="Symbolic computation">Symbolic computation</a></li>
+<li><a href="/wiki/Distributed_computing" title="Distributed computing">Distributed computing</a></li>
+<li><a href="/wiki/Evolutionary_computation" title="Evolutionary computation">Evolutionary computation</a></li>
+<li><a href="/wiki/Natural_computation" title="Natural computation" class="mw-redirect">Natural computation</a></li>
+<li><a href="/wiki/Combinatorial_optimization" title="Combinatorial optimization">Combinatorial optimization</a></li>
+<li><a href="/wiki/Parallel_processing" title="Parallel processing">Parallel processing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Computer_engineering" title="Computer engineering">Computer engineering</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Multimedia" title="Multimedia">Multimedia</a></li>
+<li><a href="/wiki/Satellite_navigation" title="Satellite navigation">Satellite navigation</a> (<a href="/wiki/GNSS" title="GNSS" class="mw-redirect">GNSS</a>)</li>
+<li><a href="/wiki/Embedded_systems" title="Embedded systems" class="mw-redirect">Embedded systems</a></li>
+<li><a href="/wiki/Real-time_computing" title="Real-time computing">Real-time computing</a></li>
+<li><a href="/wiki/Computer_architecture" title="Computer architecture">Computer architecture</a></li>
+<li><a href="/wiki/Pair_programming" title="Pair programming">Pair programming</a></li>
+<li><a href="/wiki/System_programming" title="System programming">System programming</a></li>
+<li><a href="/wiki/Neural_networks" title="Neural networks" class="mw-redirect">Neural networks</a></li>
+<li><a href="/wiki/Speech_recognition" title="Speech recognition">Speech recognition</a></li>
+<li><a href="/wiki/Signal_analysis" title="Signal analysis" class="mw-redirect">Signal analysis</a></li>
+<li><a href="/wiki/Computer_vision" title="Computer vision">Computer vision</a> (<a href="/wiki/Visual_computing" title="Visual computing">Visual computing</a>)</li>
+<li><a href="/wiki/IC_Design" title="IC Design" class="mw-redirect">IC Design</a></li>
+<li><a href="/wiki/Voice_over_IP" title="Voice over IP">Voice over IP</a></li>
+<li><a href="/wiki/Speech_synthesis" title="Speech synthesis">Speech synthesis</a></li>
+<li><a href="/wiki/Human-Computer_Interaction" title="Human-Computer Interaction" class="mw-redirect">Human-Computer Interaction</a></li>
+<li><a href="/wiki/Microprocessor" title="Microprocessor">Microprocessor</a></li>
+<li><a href="/wiki/Image_processing" title="Image processing">Image processing</a></li>
+<li><a href="/wiki/Natural_language_processing" title="Natural language processing">Natural language processing</a></li>
+<li><a href="/wiki/Speech_processing" title="Speech processing">Speech processing</a></li>
+<li><a href="/wiki/Digital_signal_processing" title="Digital signal processing">Digital signal processing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Software_engineering" title="Software engineering">Software engineering</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Software_maintenance" title="Software maintenance">Software maintenance</a></li>
+<li><a href="/wiki/Formal_methods" title="Formal methods">Formal methods</a></li>
+<li><a href="/wiki/Software_quality" title="Software quality">Software quality</a></li>
+<li><a href="/wiki/Software_quality_assurance" title="Software quality assurance">Software quality assurance</a></li>
+<li><a href="/wiki/Measurement_Software" title="Measurement Software" class="mw-redirect">Measurement Software</a></li>
+<li><a href="/wiki/Fault-tolerant_software" title="Fault-tolerant software">Fault-tolerant software</a></li>
+<li><a href="/wiki/Software_testing" title="Software testing">Software testing</a></li>
+<li><a href="/wiki/Enterprise_architecture" title="Enterprise architecture">Enterprise architecture</a></li>
+<li><a href="/wiki/Software_architecture" title="Software architecture">Software architecture</a></li>
+<li><a href="/wiki/Software_engineering_economics" title="Software engineering economics" class="mw-redirect">Software engineering economics</a></li>
+<li><a href="/wiki/Agile_software_development" title="Agile software development">Agile software development</a></li>
+<li><a href="/wiki/Software_design_pattern" title="Software design pattern">Software design pattern</a></li>
+<li><a href="/wiki/Software_modelling" title="Software modelling" class="mw-redirect">Software modelling</a></li>
+<li><a href="/wiki/Systems_analyst" title="Systems analyst">Systems analyst</a></li>
+<li><a href="/wiki/Object-oriented_analysis_and_design" title="Object-oriented analysis and design">Object-oriented analysis and design</a> (<a href="/wiki/Unified_Modeling_Language" title="Unified Modeling Language">UML</a>)</li>
+<li><a href="/wiki/Requirements_analysis" title="Requirements analysis">Requirements analysis</a></li>
+<li><a href="/wiki/Software_development" title="Software development">Software development</a></li>
+<li><a href="/wiki/Software_configuration_management" title="Software configuration management">Software configuration management</a></li>
+<li><a href="/wiki/Software_project_management" title="Software project management">Software project management</a></li>
+<li><a href="/wiki/Software_engineering_management" title="Software engineering management" class="mw-redirect">Software engineering management</a></li>
+<li><a href="/wiki/Software_development_process" title="Software development process">Software development process</a> (<a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Software release life cycle</a>)</li>
+<li><a href="/wiki/Software_design" title="Software design">Software design</a></li>
+<li><a href="/wiki/Software_deployment" title="Software deployment">Software deployment</a></li>
+<li><a href="/wiki/Software_enhancement" title="Software enhancement" class="mw-redirect">Software enhancement</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Computer_network" title="Computer network">Computer network</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Network_security" title="Network security">Network security</a></li>
+<li><a href="/wiki/Secure_electronic_transaction" title="Secure electronic transaction" class="mw-redirect">Secure electronic transaction</a></li>
+<li><a href="/wiki/Network_Performance_Evaluation" title="Network Performance Evaluation" class="mw-redirect">Network Performance Evaluation</a> (<a href="/wiki/Quality_of_service" title="Quality of service">QoS</a>)</li>
+<li><a href="/wiki/Cloud_computing" title="Cloud computing">Cloud computing</a></li>
+<li><a href="/wiki/Routing" title="Routing">Routing</a></li>
+<li><a href="/wiki/Distributed_systems" title="Distributed systems" class="mw-redirect">Distributed systems</a> (<a href="/wiki/Distributed_database" title="Distributed database">Distributed database</a>)</li>
+<li><a href="/wiki/Information_theory" title="Information theory">Information theory</a></li>
+<li><a href="/wiki/Wireless_network" title="Wireless network">Wireless network</a></li>
+<li><a href="/wiki/Next-generation_network" title="Next-generation network">Next-generation network</a></li>
+<li><a href="/wiki/Cellular_network" title="Cellular network">Cellular network</a></li>
+<li><a href="/wiki/Optical_transport_network" title="Optical transport network" class="mw-redirect">Optical transport network</a> (<a href="/wiki/Optical_networking" title="Optical networking">Optical networking</a>)</li>
+<li><a href="/wiki/Cryptography" title="Cryptography">Cryptography</a></li>
+<li><a href="/wiki/Network_simulation" title="Network simulation">Network simulation</a></li>
+<li><a href="/wiki/Pattern_recognition" title="Pattern recognition">Pattern recognition</a></li>
+<li><a href="/wiki/Network_administrators" title="Network administrators" class="mw-redirect">Network administrators</a></li>
+<li><a href="/wiki/Network_equipment" title="Network equipment" class="mw-redirect">Network equipment</a></li>
+<li><a href="/wiki/Network_design" title="Network design" class="mw-redirect">Network design</a></li>
+<li><a href="/wiki/Ubiquitous_computing" title="Ubiquitous computing">Ubiquitous</a> and <a href="/wiki/Mobile_computing" title="Mobile computing">Mobile computing</a></li>
+<li><a href="/wiki/Data_center" title="Data center">Data center</a></li>
+<li><a href="/wiki/Mobile_communications" title="Mobile communications" class="mw-redirect">Mobile communications</a></li>
+<li><a href="/wiki/Digital_communication" title="Digital communication" class="mw-redirect">Digital communication</a></li>
+<li><a href="/wiki/Communications_satellite" title="Communications satellite">Communications satellite</a></li>
+<li><a href="/wiki/Telecommunication" title="Telecommunication">Telecommunication</a> (<a href="/wiki/Telecommunications_network" title="Telecommunications network">Telecommunications network</a>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Business_informatics" title="Business informatics">Business informatics</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/ITIL" title="ITIL">ITIL</a></li>
+<li><a href="/wiki/ITSM" title="ITSM" class="mw-redirect">ITSM</a></li>
+<li><a href="/wiki/Enterprise_resource_planning" title="Enterprise resource planning">Enterprise resource planning</a></li>
+<li><a href="/wiki/Electronic_business" title="Electronic business">Electronic business</a></li>
+<li><a href="/wiki/Business_intelligence" title="Business intelligence">Business intelligence</a></li>
+<li><a href="/wiki/Human_Resources_Development" title="Human Resources Development" class="mw-redirect">Human Resources Development</a></li>
+<li><a href="/wiki/Security_management" title="Security management">Security management</a></li>
+<li><a href="/wiki/Configuration_management" title="Configuration management">Configuration management</a></li>
+<li><a href="/wiki/Technology_management" title="Technology management">Technology management</a></li>
+<li><a href="/wiki/Power_management" title="Power management">Power management</a></li>
+<li><a href="/wiki/Service_management" title="Service management">Service management</a></li>
+<li><a href="/wiki/Project_management" title="Project management">Project management</a></li>
+<li><a href="/wiki/Systems_management" title="Systems management">Systems management</a></li>
+<li><a href="/wiki/Network_management" title="Network management">Network management</a></li>
+<li><a href="/wiki/Content_management" title="Content management">Content management</a></li>
+<li><a href="/wiki/Customer_relationship_management" title="Customer relationship management">Customer relationship management</a></li>
+<li><a href="/wiki/Incident_management" title="Incident management">Incident management</a></li>
+<li><a href="/wiki/Asset_management" title="Asset management">Asset management</a></li>
+<li><a href="/wiki/Integrated_management" title="Integrated management">Integrated management</a></li>
+<li><a href="/wiki/Communications_management" title="Communications management">Communications management</a></li>
+<li><a href="/wiki/System_administrator" title="System administrator">System administrator</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Integrated_Authority_File" title="Integrated Authority File">GND</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://d-nb.info/gnd/4054947-1">4054947-1</a></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1249
+Cached time: 20150907132407
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.153 seconds
+Real time usage: 0.192 seconds
+Preprocessor visited node count: 749/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 30236/2097152 bytes
+Template argument size: 100/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 1/500
+Lua time usage: 0.042/10.000 seconds
+Lua memory usage: 2.23 MB/50 MB
+Number of Wikibase entities loaded: 1-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  114.865      1 - -total
+ 37.35%   42.901      1 - Template:Reflist
+ 18.92%   21.738      1 - Template:Authority_control
+ 18.04%   20.727      1 - Template:Cite_journal
+ 17.43%   20.020      1 - Template:Redirect-distinguish
+ 14.88%   17.092      1 - Template:Hatnote
+ 12.17%   13.981      1 - Template:Sub-disciplines_of_computing
+ 10.15%   11.662      1 - Template:Navbox
+  9.66%   11.092      4 - Template:Cite_book
+  6.03%    6.925      2 - Template:Main
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:29324-0!*!0!!en!4!* and timestamp 20150907132406 and revision id 679265871
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Signal_processing&amp;oldid=679265871">https://en.wikipedia.org/w/index.php?title=Signal_processing&amp;oldid=679265871</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Media_technology" title="Category:Media technology">Media technology</a></li><li><a href="/wiki/Category:Signal_processing" title="Category:Signal processing">Signal processing</a></li><li><a href="/wiki/Category:Telecommunication_theory" title="Category:Telecommunication theory">Telecommunication theory</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_citations_with_accessdate_and_no_URL" title="Category:Pages using citations with accessdate and no URL">Pages using citations with accessdate and no URL</a></li><li><a href="/wiki/Category:CS1_errors:_dates" title="Category:CS1 errors: dates">CS1 errors: dates</a></li><li><a href="/wiki/Category:Wikipedia_articles_with_GND_identifiers" title="Category:Wikipedia articles with GND identifiers">Wikipedia articles with GND identifiers</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Signal+processing&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Signal+processing" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Signal_processing"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Signal_processing"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Signal_processing" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Signal_processing&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Signal_processing&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Signal_processing" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Signal_processing" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Signal_processing&amp;oldid=679265871" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Signal_processing&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q208163" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Signal_processing&amp;id=679265871" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Signal+processing">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Signal+processing&amp;oldid=679265871&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Signal_processing&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-af"><a href="//af.wikipedia.org/wiki/Seinverwerking" title="Seinverwerking – Afrikaans" lang="af" hreflang="af">Afrikaans</a></li><li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D9%85%D8%B9%D8%A7%D9%84%D8%AC%D8%A9_%D8%A7%D9%84%D8%A5%D8%B4%D8%A7%D8%B1%D8%A9" title="معالجة الإشارة – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-bg"><a href="//bg.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D0%BD%D0%B0_%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%B8" title="Обработка на сигнали – Bulgarian" lang="bg" hreflang="bg">Български</a></li><li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/Processament_de_senyals" title="Processament de senyals – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/Zpracov%C3%A1n%C3%AD_sign%C3%A1lu" title="Zpracování signálu – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="//da.wikipedia.org/wiki/Signalbehandling" title="Signalbehandling – Danish" lang="da" hreflang="da">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Signalverarbeitung" title="Signalverarbeitung – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="//et.wikipedia.org/wiki/Signaalit%C3%B6%C3%B6tlus" title="Signaalitöötlus – Estonian" lang="et" hreflang="et">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="//el.wikipedia.org/wiki/%CE%95%CF%80%CE%B5%CE%BE%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1_%CF%83%CE%AE%CE%BC%CE%B1%CF%84%CE%BF%CF%82" title="Επεξεργασία σήματος – Greek" lang="el" hreflang="el">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Procesamiento_de_se%C3%B1ales" title="Procesamiento de señales – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="//eo.wikipedia.org/wiki/Signal-prilaborado" title="Signal-prilaborado – Esperanto" lang="eo" hreflang="eo">Esperanto</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D9%BE%D8%B1%D8%AF%D8%A7%D8%B2%D8%B4_%D8%B3%DB%8C%DA%AF%D9%86%D8%A7%D9%84" title="پردازش سیگنال – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Traitement_du_signal" title="Traitement du signal – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="//ko.wikipedia.org/wiki/%EC%8B%A0%ED%98%B8_%EC%B2%98%EB%A6%AC" title="신호 처리 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-hi"><a href="//hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%82%E0%A4%95%E0%A5%87%E0%A4%A4_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%B0%E0%A4%A3" title="संकेत प्रसंस्करण – Hindi" lang="hi" hreflang="hi">हिन्दी</a></li><li class="interlanguage-link interwiki-id"><a href="//id.wikipedia.org/wiki/Pengolahan_isyarat" title="Pengolahan isyarat – Indonesian" lang="id" hreflang="id">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Teoria_dei_segnali" title="Teoria dei segnali – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%A2%D7%99%D7%91%D7%95%D7%93_%D7%90%D7%95%D7%AA%D7%95%D7%AA" title="עיבוד אותות – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-ms"><a href="//ms.wikipedia.org/wiki/Pemprosesan_isyarat" title="Pemprosesan isyarat – Malay" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-my"><a href="//my.wikipedia.org/wiki/%E1%80%86%E1%80%85%E1%80%BA%E1%80%82%E1%80%94%E1%80%9A%E1%80%BA%E1%80%9E%E1%80%81%E1%80%BC%E1%80%84%E1%80%BA%E1%80%B8" title="ဆစ်ဂနယ်သခြင်း – Burmese" lang="my" hreflang="my">မြန်မာဘာသာ</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Signaalverwerking" title="Signaalverwerking – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E4%BF%A1%E5%8F%B7%E5%87%A6%E7%90%86" title="信号処理 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-nn"><a href="//nn.wikipedia.org/wiki/Signalhandsaming" title="Signalhandsaming – Norwegian Nynorsk" lang="nn" hreflang="nn">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Przetwarzanie_sygna%C5%82%C3%B3w" title="Przetwarzanie sygnałów – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-ro"><a href="//ro.wikipedia.org/wiki/Procesarea_semnalelor" title="Procesarea semnalelor – Romanian" lang="ro" hreflang="ro">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2" title="Обработка сигналов – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-si"><a href="//si.wikipedia.org/wiki/%E0%B7%83%E0%B6%82%E0%B6%A5%E0%B7%8F_%E0%B7%83%E0%B7%90%E0%B6%9A%E0%B7%83%E0%B7%94%E0%B6%B8" title="සංඥා සැකසුම – Sinhala" lang="si" hreflang="si">සිංහල</a></li><li class="interlanguage-link interwiki-simple"><a href="//simple.wikipedia.org/wiki/Signal_processing" title="Signal processing – Simple English" lang="simple" hreflang="simple">Simple English</a></li><li class="interlanguage-link interwiki-sr"><a href="//sr.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D0%B4%D0%B0_%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%B0" title="Обрада сигнала – Serbian" lang="sr" hreflang="sr">Српски / srpski</a></li><li class="interlanguage-link interwiki-su"><a href="//su.wikipedia.org/wiki/Pamros%C3%A9san_sinyal" title="Pamrosésan sinyal – Sundanese" lang="su" hreflang="su">Basa Sunda</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Signalbehandling" title="Signalbehandling – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-ta"><a href="//ta.wikipedia.org/wiki/%E0%AE%95%E0%AF%81%E0%AE%B1%E0%AE%BF%E0%AE%95%E0%AF%88%E0%AE%9A%E0%AF%8D_%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AE%B2%E0%AE%BE%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D" title="குறிகைச் செயலாக்கம் – Tamil" lang="ta" hreflang="ta">தமிழ்</a></li><li class="interlanguage-link interwiki-th"><a href="//th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A1%E0%B8%A7%E0%B8%A5%E0%B8%9C%E0%B8%A5%E0%B8%AA%E0%B8%B1%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%93" title="การประมวลผลสัญญาณ – Thai" lang="th" hreflang="th">ไทย</a></li><li class="interlanguage-link interwiki-tr"><a href="//tr.wikipedia.org/wiki/Sinyal_i%C5%9Fleme" title="Sinyal işleme – Turkish" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D1%96%D0%B2" title="Обробка сигналів – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86" title="信号处理 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q208163#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 3 September 2015, at 14:10.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Signal_processing&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf22/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf22/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf22/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.statsd","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":107,"wgHostname":"mw1095"});
+} );</script>
+	</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Sharpe ratio - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Sharpe_ratio","wgTitle":"Sharpe ratio","wgCurRevisionId":678344815,"wgRevisionId":678344815,"wgArticleId":934837,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Vague or ambiguous time from July 2015","All articles with unsourced statements","Articles with unsourced statements from June 2015","Financial ratios","Statistical ratios","Portfolio theories"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Sharpe_ratio","wgRelevantArticleId":
+934837,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgULSAcceptLanguageList":["en-au"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1501898","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.shared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint&amp;only=styles&amp;skin=vector" media="print" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf22" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Sharpe_ratio" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Sharpe_ratio&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Sharpe_ratio&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Sharpe_ratio" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf22/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Sharpe_ratio skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Sharpe ratio</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>In <a href="/wiki/Finance" title="Finance">finance</a>, the <b>Sharpe ratio</b> (also known as the <b>Sharpe index</b>, the <b>Sharpe measure</b>, and the <b>reward-to-variability ratio</b>) is a way to examine the performance of an investment by adjusting for its <a href="/wiki/Financial_risk" title="Financial risk">risk</a>. The ratio measures the <a href="/wiki/Excess_return" title="Excess return" class="mw-redirect">excess return</a> (or <a href="/wiki/Risk_premium" title="Risk premium">risk premium</a>) per unit of deviation in an investment asset or a trading strategy, typically referred to as risk (and is a <a href="/wiki/Deviation_risk_measure" title="Deviation risk measure">deviation risk measure</a>), named after <a href="/wiki/William_F._Sharpe" title="William F. Sharpe">William F. Sharpe</a>.<sup id="cite_ref-sharpe1966_1-0" class="reference"><a href="#cite_note-sharpe1966-1"><span>[</span>1<span>]</span></a></sup> To this day,<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period mentioned near this tag is ambiguous. (July 2015)">when?</span></a></i>]</sup> the Sharpe ratio is still found as a prime metric for any alternative investment.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (June 2015)">citation needed</span></a></i>]</sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Use_in_finance"><span class="tocnumber">2</span> <span class="toctext">Use in finance</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Tests"><span class="tocnumber">3</span> <span class="toctext">Tests</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Strengths_and_weaknesses"><span class="tocnumber">6</span> <span class="toctext">Strengths and weaknesses</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Further_reading"><span class="tocnumber">9</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Since its revision by the original author, William Sharpe, in 1994,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> the <i><a href="/wiki/Ex-ante" title="Ex-ante">ex-ante</a></i> Sharpe ratio is defined as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="S_a = \frac{E[R_a-R_b]}{\sigma_a} = \frac{E[R_a-R_b]}{\sqrt{\mathrm{var}[R_a-R_b]}}," src="//upload.wikimedia.org/math/f/c/6/fc6bd1d34d60a92136b7995c758ee231.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="R_a" src="//upload.wikimedia.org/math/6/e/c/6ec8b16cf211b6b2a579efbf3c9758aa.png" /> is the asset return, <img class="mwe-math-fallback-image-inline tex" alt="R_b" src="//upload.wikimedia.org/math/c/0/f/c0ffb0f0725ef6203065801aeaefe019.png" /> is the return on a benchmark asset, such as the <a href="/wiki/Risk_free_rate" title="Risk free rate" class="mw-redirect">risk free rate</a> of return or an index such as the S&amp;P 500. <img class="mwe-math-fallback-image-inline tex" alt="E[R_a-R_b]" src="//upload.wikimedia.org/math/d/2/2/d2228bcea25d0dfbc28be3cb12dd9ead.png" /> is the <a href="/wiki/Expected_value" title="Expected value">expected value</a> of the excess of the asset return over the benchmark return, and <img class="mwe-math-fallback-image-inline tex" alt="{\sigma}" src="//upload.wikimedia.org/math/f/f/e/ffe5b46fc10da3c3dfaf04b2b7b10f5b.png" /> is the <a href="/wiki/Standard_deviation" title="Standard deviation">standard deviation</a> of this excess return. This is often confused with the <a href="/wiki/Information_ratio" title="Information ratio">information ratio</a>, in part because the newer definition of the Sharpe ratio matches the definition of information ratio <i>within the field of finance</i>. Outside of this field, information ratio is simply mean over the standard deviation of a series of measurements.</p>
+<p>The <i>ex-post</i> Sharpe ratio uses the same equation as the one above but with realized returns of the asset and benchmark rather than expected returns - see the second example below.</p>
+<h2><span class="mw-headline" id="Use_in_finance">Use in finance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=2" title="Edit section: Use in finance">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Sharpe ratio characterizes how well the return of an asset compensates the investor for the risk taken. When comparing two assets versus a common benchmark, the one with a higher Sharpe ratio provides better return for the same risk (or, equivalently, the same return for lower risk). However, like any other mathematical model, it relies on the data being correct. <a href="/wiki/Pyramid_schemes" title="Pyramid schemes" class="mw-redirect">Pyramid schemes</a> with a long duration of operation would typically provide a high Sharpe ratio when derived from reported returns, but the inputs are false. When examining the investment performance of assets with smoothing of returns (such as <a href="/wiki/With-profits" title="With-profits" class="mw-redirect">with-profits</a> funds) the Sharpe ratio should be derived from the performance of the underlying assets rather than the fund returns.</p>
+<p>Sharpe ratios, along with <a href="/wiki/Treynor_ratio" title="Treynor ratio">Treynor ratios</a> and <a href="/wiki/Jensen%27s_alpha" title="Jensen's alpha">Jensen's alphas</a>, are often used to rank the performance of portfolio or <a href="/wiki/Mutual_fund" title="Mutual fund">mutual fund</a> managers.</p>
+<h2><span class="mw-headline" id="Tests">Tests</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=3" title="Edit section: Tests">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Several statistical tests of the Sharpe ratio have been proposed. These include those proposed by Jobson &amp; Korkie<sup id="cite_ref-Jobson1981_3-0" class="reference"><a href="#cite_note-Jobson1981-3"><span>[</span>3<span>]</span></a></sup> and Gibbons, Ross &amp; Shanken.<sup id="cite_ref-Gibbons1989_4-0" class="reference"><a href="#cite_note-Gibbons1989-4"><span>[</span>4<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=4" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In 1952, Arthur D. Roy suggested maximizing the ratio "(m-d)/σ", where m is expected gross return, d is some "disaster level" (a.k.a., minimum acceptable return) and σ is standard deviation of returns.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup> This ratio is just the Sharpe ratio, only using minimum acceptable return instead of the risk-free rate in the numerator, and using standard deviation of returns instead of standard deviation of excess returns in the denominator.</p>
+<p>In 1966, <a href="/wiki/William_F._Sharpe" title="William F. Sharpe">William F. Sharpe</a> developed what is now known as the Sharpe ratio.<sup id="cite_ref-sharpe1966_1-1" class="reference"><a href="#cite_note-sharpe1966-1"><span>[</span>1<span>]</span></a></sup> Sharpe originally called it the "reward-to-variability" ratio before it began being called the Sharpe ratio by later academics and financial operators. The definition was:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="S = \frac{E[R-R_f]}{\sqrt{\mathrm{var}[R]}}." src="//upload.wikimedia.org/math/5/8/3/583446302148e78cc82374d6d386a3f1.png" /></dd>
+</dl>
+<p>Sharpe's 1994 revision acknowledged that the basis of comparison should be an applicable benchmark, which changes with time. After this revision, the definition is:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="S = \frac{E[R-R_b]}{\sqrt{\mathrm{var}[R-R_b]}}." src="//upload.wikimedia.org/math/0/2/f/02fa724305dffecb916ac24e334e4d9c.png" /></dd>
+</dl>
+<p>Note, if <i>R</i><sub>f</sub> is a constant risk-free return throughout the period,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sqrt{\mathrm{var}[R-R_f]}=\sqrt{\mathrm{var}[R]}." src="//upload.wikimedia.org/math/4/1/3/413f3457d48fd921f4d9f7ee54f8744f.png" /></dd>
+</dl>
+<p>Recently, the (original) Sharpe ratio has often been challenged with regard to its appropriateness as a fund performance measure during evaluation periods of declining markets.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=5" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Suppose the asset has an expected return of 15% in excess of the risk free rate. We typically do not know if the asset will have this return; suppose we assess the risk of the asset, defined as standard deviation of the asset's excess return, as 10%. The risk-free return is constant. Then the Sharpe ratio (using the old definition) will be 1.5 (<img class="mwe-math-fallback-image-inline tex" alt="R - R_f = 0.15 " src="//upload.wikimedia.org/math/8/6/6/8664f2010758a08975fd8920bdf587a4.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\sigma = 0.10 " src="//upload.wikimedia.org/math/f/e/3/fe37eefe262462ceba1c0a8943cb09a8.png" />).</p>
+<p>For an example of calculating the more commonly used <i>ex-post</i> Sharpe ratio - which uses <i>realized</i> rather than <i>expected returns</i> - based on the contemporary definition, consider the following table of weekly returns.</p>
+<table class="wikitable">
+<tr>
+<th>Date</th>
+<th>Asset Return</th>
+<th>S&amp;P 500 total return</th>
+<th>Excess Return</th>
+</tr>
+<tr>
+<td>7/6/2012</td>
+<td>-0.0050000</td>
+<td>-0.0048419</td>
+<td>-0.0001581</td>
+</tr>
+<tr>
+<td>7/13/2012</td>
+<td>0.0010000</td>
+<td>0.0017234</td>
+<td>-0.0007234</td>
+</tr>
+<tr>
+<td>7/20/2012</td>
+<td>0.0050000</td>
+<td>0.0046110</td>
+<td>0.0003890</td>
+</tr>
+</table>
+<p>We assume that the asset is something like a large-cap U.S. equity fund which would logically be benchmarked against the S&amp;P 500. The mean of the excess returns is -0.0001642 and the (population) standard deviation is 0.0005562248, so the Sharpe ratio is -0.0001642/0.0005562248, or -0.2951444.</p>
+<h2><span class="mw-headline" id="Strengths_and_weaknesses">Strengths and weaknesses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=6" title="Edit section: Strengths and weaknesses">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The main complaint is this ratio relies on the notions that risk equals volatility and that volatility is bad. Simple logic will tell you that the more you reduce volatility, the less likely you are to be able to capture higher returns. But the bigger problem for the Sharpe is that it treats all volatility the same. Basically, the ratio penalizes strategies that have upside volatility (i.e., big positive returns), but those that developed other risk adjusted ratios just don’t think big positive returns should be viewed as a negative thing. The Sharpe ratio has as its principal advantage that it is directly computable from any observed series of returns without need for additional information surrounding the source of profitability. Other ratios such as the <a href="/wiki/Bias_ratio_(finance)" title="Bias ratio (finance)" class="mw-redirect">bias ratio</a> have recently been introduced into the literature to handle cases where the observed volatility may be an especially poor proxy for the risk inherent in a time-series of observed returns.</p>
+<p>While the <a href="/wiki/Treynor_ratio" title="Treynor ratio">Treynor ratio</a> works only with <a href="/wiki/Systematic_risk" title="Systematic risk">systematic risk</a> of a portfolio, the Sharpe ratio observes both systematic and <a href="/wiki/Idiosyncratic_risk" title="Idiosyncratic risk" class="mw-redirect">idiosyncratic risks</a>.</p>
+<blockquote>
+<p>The returns measured can be of any frequency (i.e. daily, weekly, monthly or annually), as long as they are <a href="/wiki/Normal_distribution" title="Normal distribution">normally distributed</a>, as the returns can always be annualized. Herein lies the underlying weakness of the ratio - not all asset returns are normally distributed. Abnormalities like <a href="/wiki/Kurtosis_risk" title="Kurtosis risk">kurtosis</a>, <a href="/wiki/Fat_tail" title="Fat tail" class="mw-redirect">fatter tails</a> and higher peaks, or <a href="/wiki/Skewness_risk" title="Skewness risk">skewness</a> on the <a href="/wiki/Probability_distribution" title="Probability distribution">distribution</a> can be problematic for the ratio, as standard deviation doesn't have the same effectiveness when these problems exist. Sometimes it can be downright dangerous to use this formula when returns are not normally distributed.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+</blockquote>
+<p>Bailey and López de Prado (2012)<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup> show that Sharpe ratios tend to be overstated in the case of hedge funds with short track records. These authors propose a probabilistic version of the Sharpe ratio that takes into account the asymmetry and fat-tails of the returns' distribution. With regards to the selection of portfolio managers on the basis of their Sharpe ratios, these authors have proposed a <i>Sharpe ratio indifference curve</i><sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup> This curve illustrates the fact that it is efficient to hire portfolio managers with low and even negative Sharpe ratios, as long as their correlation to the other portfolio managers is sufficiently low.</p>
+<p>Because it is a dimensionless ratio, laypeople find it difficult to interpret Sharpe ratios of different investments. For example, how much better is an investment with a Sharpe ratio of 0.5 than one with a Sharpe ratio of -0.2? This weakness was well addressed by the development of the <a href="/wiki/Modigliani_risk-adjusted_performance" title="Modigliani risk-adjusted performance">Modigliani risk-adjusted performance</a> measure, which is in units of percent return – universally understandable by virtually all investors. In some settings, the <a href="/wiki/Kelly_criterion" title="Kelly criterion">Kelly criterion</a> can be used to convert the Sharpe ratio into a rate of return. (The Kelly criterion gives the ideal size of the investment, which when adjusted by the period and expected rate of return per unit, gives a rate of return.)<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<p>The accuracy of Sharpe ratio estimators hinges on the statistical properties of returns, and these properties can vary considerably among strategies, portfolios, and over time.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>11<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Bias_ratio_(finance)" title="Bias ratio (finance)" class="mw-redirect">Bias ratio (finance)</a></li>
+<li><a href="/wiki/Calmar_ratio" title="Calmar ratio">Calmar ratio</a></li>
+<li><a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">Capital asset pricing model</a></li>
+<li><a href="/wiki/Coefficient_of_variation" title="Coefficient of variation">Coefficient of variation</a></li>
+<li><a href="/wiki/Hansen%E2%80%93Jagannathan_bound" title="Hansen–Jagannathan bound">Hansen–Jagannathan bound</a></li>
+<li><a href="/wiki/Information_ratio" title="Information ratio">Information ratio</a></li>
+<li><a href="/wiki/Jensen%27s_alpha" title="Jensen's alpha">Jensen's alpha</a></li>
+<li><a href="/wiki/List_of_financial_performance_measures" title="List of financial performance measures">List of financial performance measures</a></li>
+<li><a href="/wiki/Modern_portfolio_theory" title="Modern portfolio theory">Modern portfolio theory</a></li>
+<li><a href="/wiki/Omega_ratio" title="Omega ratio">Omega ratio</a></li>
+<li><a href="/wiki/Risk_adjusted_return_on_capital" title="Risk adjusted return on capital" class="mw-redirect">Risk adjusted return on capital</a></li>
+<li><a href="/wiki/Roy%27s_safety-first_criterion" title="Roy's safety-first criterion">Roy's safety-first criterion</a></li>
+<li><a href="/wiki/Sortino_ratio" title="Sortino ratio">Sortino ratio</a></li>
+<li><a href="/wiki/Treynor_ratio" title="Treynor ratio">Treynor ratio</a></li>
+<li><a href="/wiki/Upside_potential_ratio" title="Upside potential ratio">Upside potential ratio</a></li>
+<li><a href="/wiki/V2_ratio" title="V2 ratio">V2 ratio</a></li>
+<li><a href="/wiki/Z_score" title="Z score" class="mw-redirect">Z score</a></li>
+<li><a href="/wiki/Signal-to-noise_ratio#Alternative_definition" title="Signal-to-noise ratio">Signal-to-noise ratio</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-sharpe1966-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-sharpe1966_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-sharpe1966_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation journal">Sharpe, W. F. (1966). "Mutual Fund Performance". <i>Journal of Business</i> <b>39</b> (S1): 119–138. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1086%2F294846">10.1086/294846</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.atitle=Mutual+Fund+Performance&amp;rft.aufirst=W.+F.&amp;rft.aulast=Sharpe&amp;rft.au=Sharpe%2C+W.+F.&amp;rft.date=1966&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1086%2F294846&amp;rft.issue=S1&amp;rft.jtitle=Journal+of+Business&amp;rft.pages=119-138&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=39" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation journal">Sharpe, William F. (1994). <a rel="nofollow" class="external text" href="http://www.stanford.edu/~wfsharpe/art/sr/sr.htm">"The Sharpe Ratio"</a>. <i>The Journal of Portfolio Management</i> <b>21</b> (1): 49–58. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.3905%2Fjpm.1994.409501">10.3905/jpm.1994.409501</a><span class="reference-accessdate">. Retrieved <span class="nowrap">June 12,</span> 2012</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.atitle=The+Sharpe+Ratio&amp;rft.aufirst=William+F.&amp;rft.aulast=Sharpe&amp;rft.au=Sharpe%2C+William+F.&amp;rft.date=1994&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.stanford.edu%2F~wfsharpe%2Fart%2Fsr%2Fsr.htm&amp;rft_id=info%3Adoi%2F10.3905%2Fjpm.1994.409501&amp;rft.issue=1&amp;rft.jtitle=The+Journal+of+Portfolio+Management&amp;rft.pages=49-58&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=21" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Jobson1981-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-Jobson1981_3-0">^</a></b></span> <span class="reference-text"><span class="citation journal">Jobson JD; Korkie B (September 1981). "Performance hypothesis testing with the Sharpe and Treynor measures". <i>The Journal of Finance</i> <b>36</b> (4): 888–908. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2327554">2327554</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.atitle=Performance+hypothesis+testing+with+the+Sharpe+and+Treynor+measures&amp;rft.au=Jobson+JD&amp;rft.au=Korkie+B&amp;rft.aulast=Jobson+JD&amp;rft.date=September+1981&amp;rft.genre=article&amp;rft.issue=4&amp;rft.jstor=2327554&amp;rft.jtitle=The+Journal+of+Finance&amp;rft.pages=888-908&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=36" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Gibbons1989-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-Gibbons1989_4-0">^</a></b></span> <span class="reference-text"><span class="citation journal">Gibbons M; Ross S; Shanken J (September 1989). "A test of the efficiency of a given portfolio". <i>Econometrica</i> <b>57</b> (5): 1121–1152. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/1913625">1913625</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.atitle=A+test+of+the+efficiency+of+a+given+portfolio&amp;rft.au=Gibbons+M&amp;rft.aulast=Gibbons+M&amp;rft.au=Ross+S&amp;rft.au=Shanken+J&amp;rft.date=September+1989&amp;rft.genre=article&amp;rft.issue=5&amp;rft.jstor=1913625&amp;rft.jtitle=Econometrica&amp;rft.pages=1121-1152&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=57" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation journal">Roy, Arthur D. (July 1952). "Safety First and the Holding of Assets". <i>Econometrica</i> <b>20</b> (3): 431–450. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/1907413">1907413</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.atitle=Safety+First+and+the+Holding+of+Assets&amp;rft.aufirst=Arthur+D.&amp;rft.aulast=Roy&amp;rft.au=Roy%2C+Arthur+D.&amp;rft.date=July+1952&amp;rft.genre=article&amp;rft.issue=3&amp;rft.jstor=1907413&amp;rft.jtitle=Econometrica&amp;rft.pages=431-450&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=20" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation journal">Scholz, Hendrik (2007). "Refinements to the Sharpe ratio: Comparing alternatives for bear markets". <i>Journal of Asset Management</i> <b>7</b> (5): 347–357. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1057%2Fpalgrave.jam.2250040">10.1057/palgrave.jam.2250040</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.atitle=Refinements+to+the+Sharpe+ratio%3A+Comparing+alternatives+for+bear+markets&amp;rft.aufirst=Hendrik&amp;rft.aulast=Scholz&amp;rft.au=Scholz%2C+Hendrik&amp;rft.date=2007&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1057%2Fpalgrave.jam.2250040&amp;rft.issue=5&amp;rft.jtitle=Journal+of+Asset+Management&amp;rft.pages=347-357&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=7" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.investopedia.com/articles/07/sharpe_ratio.asp">"Understanding The Sharpe Ratio"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">March 14,</span> 2011</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.btitle=Understanding+The+Sharpe+Ratio&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.investopedia.com%2Farticles%2F07%2Fsharpe_ratio.asp&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">Bayley, D. and M. López de Prado (2012): "The Sharpe Ratio Efficient Frontier", Journal of Risk, 15(2), pp.3-44. Available at <a rel="nofollow" class="external free" href="http://ssrn.com/abstract=1821643">http://ssrn.com/abstract=1821643</a></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Bailey, D. and M. Lopez de Prado (2013): "The Strategy Approval Decision: A Sharpe Ratio Indifference Curve approach", Algorithmic Finance 2(1), pp. 99-109 Available at <a rel="nofollow" class="external free" href="http://ssrn.com/abstract=2003638">http://ssrn.com/abstract=2003638</a></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation book">Wilmott, Paul (2007). <i>Paul Wilmott introduces Quantitative Finance</i> (Second ed.). Wiley. pp.&#160;429–432. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-470-31958-1" title="Special:BookSources/978-0-470-31958-1">978-0-470-31958-1</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.aufirst=Paul&amp;rft.aulast=Wilmott&amp;rft.au=Wilmott%2C+Paul&amp;rft.btitle=Paul+Wilmott+introduces+Quantitative+Finance&amp;rft.date=2007&amp;rft.edition=Second&amp;rft.genre=book&amp;rft.isbn=978-0-470-31958-1&amp;rft.pages=429-432&amp;rft.pub=Wiley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation journal">Lo, Andrew W. (July–August 2002). "The Statistics of Sharpe Ratios". <i>Financial Analysts Journal</i> <b>58</b> (4).</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.atitle=The+Statistics+of+Sharpe+Ratios&amp;rft.aufirst=Andrew+W.&amp;rft.aulast=Lo&amp;rft.au=Lo%2C+Andrew+W.&amp;rft.date=July-August+2002&amp;rft.genre=article&amp;rft.issue=4&amp;rft.jtitle=Financial+Analysts+Journal&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=58" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=9" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Bacon <i>Practical Portfolio Performance Measurement and Attribution 2nd Ed</i>: Wiley, 2008. <a href="/wiki/Special:BookSources/9780470059289" class="internal mw-magiclink-isbn">ISBN 978-0-470-05928-9</a></li>
+<li>Bruce J. Feibel. <i>Investment Performance Measurement</i>. New York: Wiley, 2003. <a href="/wiki/Special:BookSources/0471268496" class="internal mw-magiclink-isbn">ISBN 0-471-26849-6</a></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.stanford.edu/~wfsharpe/art/sr/sr.htm">The Sharpe ratio</a></li>
+<li><a rel="nofollow" class="external text" href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1028715">Generalized Sharpe Ratio</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ilukacg.com/articles/All%20Hail%20the%20Sharpe%20Ratio.pdf">All Hail the Sharpe Ratio</a> - Uses and abuses of the Sharpe Ratio</li>
+<li><a rel="nofollow" class="external text" href="http://www.win-vector.com/blog/2015/06/what-is-a-good-sharpe-ratio/">What is a good Sharpe Ratio?</a> - Some example calculations of Sharpe ratios</li>
+<li><span class="citation web"><a rel="nofollow" class="external text" href="http://www.turingfinance.com/computational-investing-with-python-week-one/">"A Comparison of Different Measures of Risk-adjusted Return"</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASharpe+ratio&amp;rft.btitle=A+Comparison+of+Different+Measures+of+Risk-adjusted+Return&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.turingfinance.com%2Fcomputational-investing-with-python-week-one%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Financial_risk" title="Template:Financial risk"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Financial_risk" title="Template talk:Financial risk"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Financial_risk&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Financial_risk" title="Financial risk">Financial risk</a> and <a href="/wiki/Financial_risk_management" title="Financial risk management">financial risk management</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Categories</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Credit_risk" title="Credit risk">Credit risk</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Concentration_risk" title="Concentration risk">Concentration risk</a></li>
+<li><a href="/wiki/Consumer_credit_risk" title="Consumer credit risk">Consumer credit risk</a></li>
+<li><a href="/wiki/Credit_derivative" title="Credit derivative">Credit derivative</a></li>
+<li><a href="/wiki/Securitization" title="Securitization">Securitization</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Market_risk" title="Market risk">Market risk</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Commodity_risk" title="Commodity risk">Commodity risk</a></li>
+<li><a href="/wiki/Equity_risk" title="Equity risk">Equity risk</a></li>
+<li><a href="/wiki/Foreign_exchange_risk" title="Foreign exchange risk">Foreign exchange risk</a></li>
+<li><a href="/wiki/Interest_rate_risk" title="Interest rate risk">Interest rate risk</a></li>
+<li><a href="/wiki/Volatility_risk" title="Volatility risk">Volatility risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Liquidity_risk" title="Liquidity risk">Liquidity risk</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Refinancing_risk" title="Refinancing risk">Refinancing risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Operational_risk" title="Operational risk">Operational risk</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Operational_risk_management" title="Operational risk management">Operational risk management</a></li>
+<li><a href="/wiki/Legal_risk" title="Legal risk">Legal risk</a></li>
+<li><a href="/wiki/Political_risk" title="Political risk">Political risk</a></li>
+<li><a href="/wiki/Reputational_risk" title="Reputational risk">Reputational risk</a></li>
+<li><a href="/wiki/Settlement_risk" title="Settlement risk">Settlement risk</a></li>
+<li><a href="/wiki/Valuation_risk" title="Valuation risk">Valuation risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Profit_risk" title="Profit risk">Profit risk</a></li>
+<li><a href="/wiki/Systemic_risk" title="Systemic risk">Systemic risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Financial_risk_modeling" title="Financial risk modeling">Modeling</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Market_portfolio" title="Market portfolio">Market portfolio</a></li>
+<li><a href="/wiki/Modern_portfolio_theory" title="Modern portfolio theory">Modern portfolio theory</a></li>
+<li><a href="/wiki/Risk-adjusted_return_on_capital" title="Risk-adjusted return on capital">RAROC</a></li>
+<li><a href="/wiki/Risk-free_interest_rate" title="Risk-free interest rate">Risk-free rate</a></li>
+<li><a href="/wiki/Risk_parity" title="Risk parity">Risk parity</a></li>
+<li><strong class="selflink">Sharpe ratio</strong></li>
+<li><a href="/wiki/Value_at_risk" title="Value at risk">Value at risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Basic concepts</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Diversification_(finance)" title="Diversification (finance)">Diversification</a></li>
+<li><a href="/wiki/Expected_return" title="Expected return">Expected return</a></li>
+<li><a href="/wiki/Hazard" title="Hazard">Hazard</a></li>
+<li><a href="/wiki/Hedge_(finance)" title="Hedge (finance)">Hedge</a></li>
+<li><a href="/wiki/Risk" title="Risk">Risk</a></li>
+<li><a href="/wiki/Risk_pool" title="Risk pool">Risk pool</a></li>
+<li><a href="/wiki/Systematic_risk" title="Systematic risk">Systematic risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Financial_economics" title="Financial economics">Financial economics</a></li>
+<li><a href="/wiki/Investment_management" title="Investment management">Investment management</a></li>
+<li><a href="/wiki/Mathematical_finance" title="Mathematical finance">Mathematical finance</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Financial_ratios" title="Template:Financial ratios"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Financial_ratios" title="Template talk:Financial ratios"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Financial_ratios&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Financial_ratio" title="Financial ratio">Financial ratios</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cyclically_adjusted_price-to-earnings_ratio" title="Cyclically adjusted price-to-earnings ratio">Cyclically adjusted price-to-earnings</a> (CAPE)</li>
+<li><a href="/wiki/Capitalization_rate" title="Capitalization rate">Capitalization rate</a> (Cap Rate)</li>
+<li><a href="/wiki/CROCI" title="CROCI">Cash return on cash invested</a> (CROCI)</li>
+<li><a href="/wiki/Debt-to-equity_ratio" title="Debt-to-equity ratio">Debt-to-equity</a> (D/E)</li>
+<li><a href="/wiki/Dividend_cover" title="Dividend cover">Dividend cover</a></li>
+<li><a href="/wiki/Dividend_payout_ratio" title="Dividend payout ratio">Dividend payout</a></li>
+<li><a href="/wiki/EV/EBITDA" title="EV/EBITDA">Enterprise value/EBITDA</a> (EV/EBITDA)</li>
+<li><a href="/wiki/EV/GCI" title="EV/GCI">Enterprise value/gross cash invested</a> (EV/GCI)</li>
+<li><a href="/wiki/EV/Sales" title="EV/Sales">Enterprise value/sales</a> (EV/Sales)</li>
+<li><a href="/wiki/Loan-to-value_ratio" title="Loan-to-value ratio">Loan-to-value</a> (LTV)</li>
+<li><a href="/wiki/Omega_ratio" title="Omega ratio">Omega</a></li>
+<li><a href="/wiki/P/B_ratio" title="P/B ratio">Price-to-book</a> (P/B)</li>
+<li><a href="/wiki/Price/cash_flow_ratio" title="Price/cash flow ratio">Price/cash flow</a> (P/CF)</li>
+<li><a href="/wiki/Price%E2%80%93earnings_ratio" title="Price–earnings ratio">Price-earnings</a> (P/E)</li>
+<li><a href="/wiki/PEG_ratio" title="PEG ratio">Price-earnings to growth</a> (PEG)</li>
+<li><a href="/wiki/Price%E2%80%93sales_ratio" title="Price–sales ratio">Price-sales</a> (P/S)</li>
+<li><a href="/wiki/Return_on_assets" title="Return on assets">Return on assets</a> (ROA)</li>
+<li><a href="/wiki/Return_on_net_assets" title="Return on net assets">Return on net assets</a> (RONA)</li>
+<li><a href="/wiki/Return_on_capital" title="Return on capital">Return on capital</a> (ROC)</li>
+<li><a href="/wiki/Return_on_capital_employed" title="Return on capital employed">Return on capital employed</a> (ROCE)</li>
+<li><a href="/wiki/Return_on_equity" title="Return on equity">Return on equity</a> (ROE)</li>
+<li><a href="/wiki/Return_on_tangible_equity" title="Return on tangible equity">Return on tangible equity</a> (ROTE)</li>
+<li><a href="/wiki/Risk-adjusted_return_on_capital" title="Risk-adjusted return on capital">Risk-adjusted return on capital</a> (RAROC)</li>
+<li><a href="/wiki/Risk_return_ratio" title="Risk return ratio">Risk return</a> (RRR)</li>
+<li><strong class="selflink">Sharpe</strong></li>
+<li><a href="/wiki/Short_interest_ratio" title="Short interest ratio">Short interest</a> (SIR)</li>
+<li><a href="/wiki/Sortino_ratio" title="Sortino ratio">Sortino</a></li>
+<li><a href="/wiki/Sustainable_growth_rate" title="Sustainable growth rate">Sustainable growth</a> (SGR)</li>
+<li><a href="/wiki/Treynor_ratio" title="Treynor ratio">Treynor</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1090
+Cached time: 20150907132838
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.243 seconds
+Real time usage: 0.858 seconds
+Preprocessor visited node count: 1030/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 40047/2097152 bytes
+Template argument size: 808/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 2/500
+Lua time usage: 0.088/10.000 seconds
+Lua memory usage: 3.09 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  803.311      1 - -total
+ 11.09%   89.061      1 - Template:Reflist
+  7.27%   58.421      1 - Template:When
+  6.80%   54.629      7 - Template:Cite_journal
+  5.31%   42.678      2 - Template:Fix
+  4.71%   37.837      3 - Template:Category_handler
+  4.06%   32.624      3 - Template:Navbox
+  3.11%   24.980      1 - Template:Financial_risk
+  1.72%   13.854      1 - Template:Cn
+  1.14%    9.170      2 - Template:Cite_web
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:934837-0!*!0!!en!*!*!math=0 and timestamp 20150907132838 and revision id 678344815
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Sharpe_ratio&amp;oldid=678344815">https://en.wikipedia.org/w/index.php?title=Sharpe_ratio&amp;oldid=678344815</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Financial_ratios" title="Category:Financial ratios">Financial ratios</a></li><li><a href="/wiki/Category:Statistical_ratios" title="Category:Statistical ratios">Statistical ratios</a></li><li><a href="/wiki/Category:Portfolio_theories" title="Category:Portfolio theories">Portfolio theories</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Vague_or_ambiguous_time_from_July_2015" title="Category:Vague or ambiguous time from July 2015">Vague or ambiguous time from July 2015</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_June_2015" title="Category:Articles with unsourced statements from June 2015">Articles with unsourced statements from June 2015</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Sharpe+ratio&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Sharpe+ratio" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Sharpe_ratio"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Sharpe_ratio"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Sharpe_ratio" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Sharpe_ratio&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Sharpe_ratio&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Sharpe_ratio" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Sharpe_ratio" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Sharpe_ratio&amp;oldid=678344815" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Sharpe_ratio&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q1501898" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Sharpe_ratio&amp;id=678344815" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Sharpe+ratio">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Sharpe+ratio&amp;oldid=678344815&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Sharpe_ratio&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D9%86%D8%B3%D8%A8%D8%A9_%D8%B4%D8%A7%D8%B1%D8%A8" title="نسبة شارب – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/R%C3%A0tio_de_Sharpe" title="Ràtio de Sharpe – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Sharpe-Ratio" title="Sharpe-Ratio – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Ratio_de_Sharpe" title="Ratio de Sharpe – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D9%86%D8%B3%D8%A8%D8%AA_%D8%B4%D8%A7%D8%B1%D9%BE" title="نسبت شارپ – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Ratio_de_Sharpe" title="Ratio de Sharpe – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Indice_di_Sharpe" title="Indice di Sharpe – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%9E%D7%93%D7%93_%D7%A9%D7%90%D7%A8%D7%A4" title="מדד שארפ – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Sharpe-ratio" title="Sharpe-ratio – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%97%E3%83%BB%E3%83%AC%E3%82%B7%E3%82%AA" title="シャープ・レシオ – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Wska%C5%BAnik_Sharpe%27a" title="Wskaźnik Sharpe'a – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82_%D0%A8%D0%B0%D1%80%D0%BF%D0%B0" title="Коэффициент Шарпа – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/Sharpen_luku" title="Sharpen luku – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-vi"><a href="//vi.wikipedia.org/wiki/H%E1%BB%87_s%E1%BB%91_Sharpe" title="Hệ số Sharpe – Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q1501898#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 28 August 2015, at 20:19.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Sharpe_ratio&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf22/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf22/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf22/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.statsd","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":85,"wgHostname":"mw1166"});
+} );</script>
+	</body>
+</html>

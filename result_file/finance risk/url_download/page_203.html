@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Arbitrage pricing theory - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Arbitrage_pricing_theory","wgTitle":"Arbitrage pricing theory","wgCurRevisionId":674753401,"wgRevisionId":674753401,"wgArticleId":793367,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Finance theories","Mathematical finance","Portfolio theories","Pricing","Financial economics"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Arbitrage_pricing_theory","wgRelevantArticleId":793367,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgULSAcceptLanguageList":["en-us"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q629941","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Arbitrage_pricing_theory" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Arbitrage_pricing_theory" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Arbitrage_pricing_theory skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Arbitrage pricing theory</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>In <a href="/wiki/Finance" title="Finance">finance</a>, <b>arbitrage pricing theory</b> (<b>APT</b>) is a general <a href="/wiki/Theory" title="Theory">theory</a> of <a href="/wiki/Asset_pricing" title="Asset pricing" class="mw-redirect">asset pricing</a> that holds that the <a href="/wiki/Expected_return" title="Expected return">expected return</a> of a financial asset can be modeled as a linear function of various macro-economic factors or theoretical market indices, where sensitivity to changes in each factor is represented by a factor-specific <a href="/wiki/Beta_coefficient" title="Beta coefficient" class="mw-redirect">beta coefficient</a>. The model-derived rate of return will then be used to price the asset correctly - the asset price should equal the expected end of period price <a href="/wiki/Discounting" title="Discounting">discounted</a> at the rate implied by the model. If the price diverges, <a href="/wiki/Arbitrage" title="Arbitrage">arbitrage</a> should bring it back into line.</p>
+<p>The <a href="/wiki/Theory" title="Theory">theory</a> was proposed by the <a href="/wiki/Economist" title="Economist">economist</a> <a href="/wiki/Stephen_Ross_(economist)" title="Stephen Ross (economist)">Stephen Ross</a> in 1976.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Model"><span class="tocnumber">1</span> <span class="toctext">Model</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Arbitrage"><span class="tocnumber">2</span> <span class="toctext">Arbitrage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Mechanics"><span class="tocnumber">2.1</span> <span class="toctext">Mechanics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Relationship_with_the_capital_asset_pricing_model"><span class="tocnumber">3</span> <span class="toctext">Relationship with the capital asset pricing model</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Implementation"><span class="tocnumber">4</span> <span class="toctext">Implementation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Factors"><span class="tocnumber">4.1</span> <span class="toctext">Factors</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Asset_management"><span class="tocnumber">4.2</span> <span class="toctext">Asset management</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Model">Model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=1" title="Edit section: Model">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Risky asset returns are said to follow a <i>factor intensity structure</i> if they can be expressed as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="r_j = a_j + b_{j1}F_1 + b_{j2}F_2 + \cdots + b_{jn}F_n + \epsilon_j" src="//upload.wikimedia.org/math/4/8/1/4817f6c26ac9f91cd1c40a6a4badfefd.png" /></dd>
+</dl>
+<dl>
+<dd>where
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="a_j" src="//upload.wikimedia.org/math/c/d/2/cd2d31f4876de2ca5afbffde34d0dade.png" /> is a constant for asset <img class="mwe-math-fallback-image-inline tex" alt="j" src="//upload.wikimedia.org/math/3/6/3/363b122c528f54df4a0446b6bab05515.png" /></li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="F_k" src="//upload.wikimedia.org/math/7/c/3/7c30a07c6f8c3d2ba69de4aa83f90ac8.png" /> is a systematic factor</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="b_{jk}" src="//upload.wikimedia.org/math/3/a/3/3a385191c03da414bab53b08e51f2509.png" /> is the sensitivity of the <img class="mwe-math-fallback-image-inline tex" alt="j" src="//upload.wikimedia.org/math/3/6/3/363b122c528f54df4a0446b6bab05515.png" />th asset to factor <img class="mwe-math-fallback-image-inline tex" alt="k" src="//upload.wikimedia.org/math/8/c/e/8ce4b16b22b58894aa86c421e8759df3.png" />, also called factor loading,</li>
+<li>and <img class="mwe-math-fallback-image-inline tex" alt="\epsilon_j" src="//upload.wikimedia.org/math/c/d/e/cde905e7b1cabde3d893157941186f98.png" /> is the risky asset's idiosyncratic random shock with mean zero.</li>
+</ul>
+</dd>
+</dl>
+<p>Idiosyncratic shocks are assumed to be uncorrelated across assets and uncorrelated with the factors.</p>
+<p>The APT states that if asset returns follow a factor structure then the following relation exists between expected returns and the factor sensitivities:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="E\left(r_j\right) = r_f + b_{j1}RP_1 + b_{j2}RP_2 + \cdots + b_{jn}RP_n" src="//upload.wikimedia.org/math/9/8/8/9887027872bdeeeaf1cf049b5c0aba06.png" /></dd>
+</dl>
+<dl>
+<dd>where
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="RP_k" src="//upload.wikimedia.org/math/d/f/f/dff3bd0fbe4eb0a90f576821c7c46256.png" /> is the <a href="/wiki/Risk_premium" title="Risk premium">risk premium</a> of the factor,</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="r_f" src="//upload.wikimedia.org/math/a/f/6/af6c3ff4c6e9b4d62b155afe2a7e5c0a.png" /> is the <a href="/wiki/Risk-free_rate" title="Risk-free rate" class="mw-redirect">risk-free rate</a>,</li>
+</ul>
+</dd>
+</dl>
+<p>That is, the expected return of an asset <i>j</i> is a <a href="/wiki/Linear" title="Linear" class="mw-redirect">linear</a> function of the asset's sensitivities to the <i>n</i> factors.</p>
+<p>Note that there are some assumptions and requirements that have to be fulfilled for the latter to be correct: There must be <a href="/wiki/Perfect_competition" title="Perfect competition">perfect competition</a> in the market, and the total number of factors may never surpass the total number of assets (in order to avoid the problem of <a href="/wiki/Matrix_singularity" title="Matrix singularity" class="mw-redirect">matrix singularity</a>).</p>
+<h2><span class="mw-headline" id="Arbitrage">Arbitrage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=2" title="Edit section: Arbitrage">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Arbitrage" title="Arbitrage">Arbitrage</a> is the practice of taking positive expected return from overvalued or undervalued securities in the inefficient market without any incremental risk and zero additional investments.</p>
+<h3><span class="mw-headline" id="Mechanics">Mechanics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=3" title="Edit section: Mechanics">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the APT context, arbitrage consists of trading in two assets – with at least one being mispriced. The arbitrageur sells the asset which is relatively too expensive and uses the proceeds to buy one which is relatively too cheap.</p>
+<p>Under the APT, an asset is mispriced if its current price diverges from the price predicted by the model. The asset price today should equal the sum of all future cash flows <a href="//en.wiktionary.org/wiki/Special:Search/discount" class="extiw" title="wikt:Special:Search/discount">discounted</a> at the APT rate, where the expected return of the asset is a linear function of various factors, and sensitivity to changes in each factor is represented by a factor-specific <a href="/wiki/Beta_coefficient" title="Beta coefficient" class="mw-redirect">beta coefficient</a>.</p>
+<p>A correctly priced asset here may be in fact a <i>synthetic</i> asset - a <i>portfolio</i> consisting of other correctly priced assets. This portfolio has the same exposure to each of the macroeconomic factors as the mispriced asset. The arbitrageur creates the portfolio by identifying x correctly priced assets (one per factor plus one) and then weighting the assets such that portfolio beta per factor is the same as for the mispriced asset.</p>
+<p>When the investor is <a href="/wiki/Long_(finance)" title="Long (finance)">long</a> the asset and <a href="/wiki/Short_(finance)" title="Short (finance)">short</a> the portfolio (or vice versa) he has created a position which has a positive expected return (the difference between asset return and portfolio return) and which has a net-zero exposure to any macroeconomic factor and is therefore risk free (other than for firm specific risk). The arbitrageur is thus in a position to make a risk-free profit:</p>
+<blockquote style="background: 1; border: 1px solid black; padding: 1em;">
+<p>Where today's price is too low:</p>
+<dl>
+<dd>The implication is that at the end of the period the <i>portfolio</i> would have appreciated at the rate implied by the APT, whereas the mispriced asset would have appreciated at <i>more</i> than this rate. The arbitrageur could therefore:
+<dl>
+<dd>Today:
+<dl>
+<dd>1 <a href="/wiki/Short_selling" title="Short selling" class="mw-redirect">short sell</a> the <i>portfolio</i></dd>
+<dd>2 buy the mispriced asset with the proceeds.</dd>
+</dl>
+</dd>
+<dd>At the end of the period:
+<dl>
+<dd>1 sell the mispriced asset</dd>
+<dd>2 use the proceeds to buy back the <i>portfolio</i></dd>
+<dd>3 pocket the difference.</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</blockquote>
+<blockquote style="background: 1; border: 1px solid black; padding: 1em;">
+<p>Where today's price is too high:</p>
+<dl>
+<dd>The implication is that at the end of the period the <i>portfolio</i> would have appreciated at the rate implied by the APT, whereas the mispriced asset would have appreciated at <i>less</i> than this rate. The arbitrageur could therefore:
+<dl>
+<dd>Today:
+<dl>
+<dd>1 <a href="/wiki/Short_selling" title="Short selling" class="mw-redirect">short sell</a> the mispriced asset</dd>
+<dd>2 buy the <i>portfolio</i> with the proceeds.</dd>
+</dl>
+</dd>
+<dd>At the end of the period:
+<dl>
+<dd>1 sell the <i>portfolio</i></dd>
+<dd>2 use the proceeds to buy back the mispriced asset</dd>
+<dd>3 pocket the difference.</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</blockquote>
+<h2><span class="mw-headline" id="Relationship_with_the_capital_asset_pricing_model">Relationship with the capital asset pricing model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=4" title="Edit section: Relationship with the capital asset pricing model">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The APT along with the <a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">capital asset pricing model</a> (CAPM) is one of two influential theories on asset pricing. The APT differs from the CAPM in that it is less restrictive in its assumptions. It allows for an explanatory (as opposed to statistical) model of asset returns. It assumes that each investor will hold a unique portfolio with its own particular array of betas, as opposed to the identical "market portfolio". In some ways, the CAPM can be considered a "special case" of the APT in that the <a href="/wiki/Modern_portfolio_theory#Securities_Market_Line" title="Modern portfolio theory">securities market line</a> represents a single-factor model of the asset price, where beta is exposed to changes in value of the market.</p>
+<p>Additionally, the APT can be seen as a "supply-side" model, since its beta coefficients reflect the sensitivity of the underlying asset to economic factors. Thus, factor shocks would cause structural changes in assets' expected returns, or in the case of stocks, in firms' profitabilities.</p>
+<p>On the other side, the <a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">capital asset pricing model</a> is considered a "demand side" model. Its results, although similar to those of the APT, arise from a maximization problem of each investor's utility function, and from the resulting market equilibrium (investors are considered to be the "consumers" of the assets).</p>
+<h2><span class="mw-headline" id="Implementation">Implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=5" title="Edit section: Implementation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Factors">Factors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=6" title="Edit section: Factors">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As with the CAPM, the factor-specific betas are found via a <a href="/wiki/Linear_regression" title="Linear regression">linear regression</a> of historical security returns on the factor in question. Unlike the CAPM, the APT, however, does not itself reveal the identity of its priced factors - the number and nature of these factors is likely to change over time and between economies. As a result, this issue is essentially <a href="/wiki/Empirical_evidence" title="Empirical evidence">empirical</a> in nature. Several <i><a href="/wiki/A_priori_and_a_posteriori" title="A priori and a posteriori">a priori</a></i> guidelines as to the characteristics required of potential factors are, however, suggested:</p>
+<ol>
+<li>their impact on asset prices manifests in their <i>unexpected</i> movements</li>
+<li>they should represent <i>undiversifiable</i> influences (these are, clearly, more likely to be macroeconomic rather than firm-specific in nature)</li>
+<li>timely and accurate information on these variables is required</li>
+<li>the relationship should be theoretically justifiable on economic grounds</li>
+</ol>
+<p>Chen, <a href="/wiki/Richard_Roll" title="Richard Roll">Roll</a> and <a href="/wiki/Stephen_Ross_(economist)" title="Stephen Ross (economist)">Ross</a> (1986) identified the following macro-economic factors as significant in explaining security returns:</p>
+<ul>
+<li>surprises in <a href="/wiki/Inflation" title="Inflation">inflation</a>;</li>
+<li>surprises in <a href="/wiki/GNP" title="GNP" class="mw-redirect">GNP</a> as indicated by an industrial production index;</li>
+<li>surprises in investor confidence due to changes in default premium in corporate bonds;</li>
+<li>surprise shifts in the <a href="/wiki/Yield_curve" title="Yield curve">yield curve</a>.</li>
+</ul>
+<p>As a practical matter, indices or spot or futures market prices may be used in place of macro-economic factors, which are reported at low frequency (e.g. monthly) and often with significant estimation errors. Market indices are sometimes derived by means of <a href="/wiki/Factor_analysis" title="Factor analysis">factor analysis</a>. More direct "indices" that might be used are:</p>
+<ul>
+<li>short-term interest rates;</li>
+<li>the difference in long-term and short-term interest rates;</li>
+<li>a diversified stock index such as the <a href="/wiki/S%26P_500" title="S&amp;P 500" class="mw-redirect">S&amp;P 500</a> or <a href="/wiki/NYSE_Composite" title="NYSE Composite">NYSE Composite</a>;</li>
+<li>oil prices</li>
+<li>gold or other precious metal prices</li>
+<li>Currency <a href="/wiki/Exchange_rate" title="Exchange rate">exchange rates</a></li>
+</ul>
+<h3><span class="mw-headline" id="Asset_management">Asset management</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=7" title="Edit section: Asset management">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The linear factor model structure of the APT is used as the basis for many of the commercial risk systems employed by asset managers.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Beta_coefficient" title="Beta coefficient" class="mw-redirect">Beta coefficient</a></li>
+<li><a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">Capital asset pricing model</a></li>
+<li><a href="/wiki/Cost_of_capital" title="Cost of capital">Cost of capital</a></li>
+<li><a href="/wiki/Earnings_response_coefficient" title="Earnings response coefficient">Earnings response coefficient</a></li>
+<li><a href="/wiki/Efficient-market_hypothesis" title="Efficient-market hypothesis">Efficient-market hypothesis</a></li>
+<li><a href="/wiki/Fundamental_theorem_of_arbitrage-free_pricing" title="Fundamental theorem of arbitrage-free pricing" class="mw-redirect">Fundamental theorem of arbitrage-free pricing</a></li>
+<li><a href="/wiki/Investment_theory" title="Investment theory">Investment theory</a></li>
+<li><a href="/wiki/Roll%27s_critique" title="Roll's critique">Roll's critique</a></li>
+<li><a href="/wiki/Rational_pricing" title="Rational pricing">Rational pricing</a></li>
+<li><a href="/wiki/Modern_portfolio_theory" title="Modern portfolio theory">Modern portfolio theory</a></li>
+<li><a href="/wiki/Post-modern_portfolio_theory" title="Post-modern portfolio theory">Post-modern portfolio theory</a></li>
+<li><a href="/wiki/Value_investing" title="Value investing">Value investing</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="citation journal">Burmeister, Edwin; Wall, Kent D. (1986). "The arbitrage pricing theory and macroeconomic factor measures". <i>Financial Review</i> <b>21</b> (1): 1–20. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1111%2Fj.1540-6288.1986.tb01103.x">10.1111/j.1540-6288.1986.tb01103.x</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArbitrage+pricing+theory&amp;rft.atitle=The+arbitrage+pricing+theory+and+macroeconomic+factor+measures&amp;rft.au=Burmeister%2C+Edwin&amp;rft.aufirst=Edwin&amp;rft.aulast=Burmeister&amp;rft.au=Wall%2C+Kent+D.&amp;rft.date=1986&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1111%2Fj.1540-6288.1986.tb01103.x&amp;rft.issue=1&amp;rft.jtitle=Financial+Review&amp;rft.pages=1-20&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=21" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation journal">Chen, N. F.; Ingersoll, E. (1983). "Exact Pricing in Linear Factor Models with Finitely Many Assets: A Note". <i>Journal of Finance</i> <b>38</b> (3): 985–988. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.2307%2F2328092">10.2307/2328092</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2328092">2328092</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArbitrage+pricing+theory&amp;rft.atitle=Exact+Pricing+in+Linear+Factor+Models+with+Finitely+Many+Assets%3A+A+Note&amp;rft.au=Chen%2C+N.+F.&amp;rft.aufirst=N.+F.&amp;rft.au=Ingersoll%2C+E.&amp;rft.aulast=Chen&amp;rft.date=1983&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2328092&amp;rft.issue=3&amp;rft.jstor=2328092&amp;rft.jtitle=Journal+of+Finance&amp;rft.pages=985-988&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=38" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation journal">Roll, Richard; Ross, Stephen (1980). "An empirical investigation of the arbitrage pricing theory". <i>Journal of Finance</i> <b>35</b> (5): 1073–1103. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.2307%2F2327087">10.2307/2327087</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2327087">2327087</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArbitrage+pricing+theory&amp;rft.atitle=An+empirical+investigation+of+the+arbitrage+pricing+theory&amp;rft.aufirst=Richard&amp;rft.aulast=Roll&amp;rft.au=Roll%2C+Richard&amp;rft.au=Ross%2C+Stephen&amp;rft.date=1980&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2327087&amp;rft.issue=5&amp;rft.jstor=2327087&amp;rft.jtitle=Journal+of+Finance&amp;rft.pages=1073-1103&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=35" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation journal">Ross, Stephen (1976). "The arbitrage theory of capital asset pricing". <i>Journal of Economic Theory</i> <b>13</b> (3): 341–360. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2F0022-0531%2876%2990046-6">10.1016/0022-0531(76)90046-6</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArbitrage+pricing+theory&amp;rft.atitle=The+arbitrage+theory+of+capital+asset+pricing&amp;rft.aufirst=Stephen&amp;rft.aulast=Ross&amp;rft.au=Ross%2C+Stephen&amp;rft.date=1976&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2F0022-0531%2876%2990046-6&amp;rft.issue=3&amp;rft.jtitle=Journal+of+Economic+Theory&amp;rft.pages=341-360&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=13" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation journal">Chen, Nai-Fu; <a href="/wiki/Richard_Roll" title="Richard Roll">Roll, Richard</a>; Ross, Stephen (1986). <a rel="nofollow" class="external text" href="http://dipeco.economia.unimib.it/finarm/2004/material/tirelli/dyn_econom/chenrollross.pdf">"Economic Forces and the Stock Market"</a> <span style="font-size:85%;">(PDF)</span>. <i>Journal of Business</i> <b>59</b> (3): 383–403. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1086%2F296344">10.1086/296344</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2008-12-01</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AArbitrage+pricing+theory&amp;rft.atitle=Economic+Forces+and+the+Stock+Market&amp;rft.au=Chen%2C+Nai-Fu&amp;rft.aufirst=Nai-Fu&amp;rft.aulast=Chen&amp;rft.au=Roll%2C+Richard&amp;rft.au=Ross%2C+Stephen&amp;rft.date=1986&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fdipeco.economia.unimib.it%2Ffinarm%2F2004%2Fmaterial%2Ftirelli%2Fdyn_econom%2Fchenrollross.pdf&amp;rft_id=info%3Adoi%2F10.1086%2F296344&amp;rft.issue=3&amp;rft.jtitle=Journal+of+Business&amp;rft.pages=383-403&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=59" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://viking.som.yale.edu/will/finman540/classnotes/class6.html">The Arbitrage Pricing Theory</a> Prof. William N. Goetzmann, <a href="/wiki/Yale_School_of_Management" title="Yale School of Management">Yale School of Management</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cfapubs.org/doi/pdf/10.2469/faj.v51.n1.1868">The Arbitrage Pricing Theory Approach to Strategic Portfolio Planning</a> (<a href="/wiki/Portable_document_format" title="Portable document format" class="mw-redirect">PDF</a>), Richard Roll and <a href="/wiki/Stephen_Ross_(economist)" title="Stephen Ross (economist)">Stephen A. Ross</a></li>
+<li><a rel="nofollow" class="external text" href="http://www-personal.umich.edu/~shumway/courses.dir/ba855.dir/apt.pdf">The APT</a>, Prof. Tyler Shumway, <a href="/wiki/University_of_Michigan_Business_School" title="University of Michigan Business School" class="mw-redirect">University of Michigan Business School</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.iassa.co.za/images/file/indexmain.htm">The arbitrage pricing theory</a> <a href="/wiki/Investment_Analysts_Society_of_South_Africa" title="Investment Analysts Society of South Africa" class="mw-redirect">Investment Analysts Society of South Africa</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.kellogg.northwestern.edu/faculty/korajczy/htm/aptlist.htm">References on the Arbitrage Pricing Theory</a>, Prof. Robert A. Korajczyk, <a href="/wiki/Kellogg_School_of_Management" title="Kellogg School of Management">Kellogg School of Management</a></li>
+<li><a rel="nofollow" class="external text" href="http://web.mit.edu/15.407/file/Ch12.pdf">Chapter 12: Arbitrage Pricing Theory (APT)</a>, Prof. Jiang Wang, <a href="/wiki/Massachusetts_Institute_of_Technology" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>.</li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Financial_markets_navigation" title="Template:Financial markets navigation"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Financial_markets_navigation" title="Template talk:Financial markets navigation"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Financial_markets_navigation&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Financial_market" title="Financial market">Financial markets</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Types of <a href="/wiki/Capital_market" title="Capital market">markets</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Primary_market" title="Primary market">Primary market</a></li>
+<li><a href="/wiki/Secondary_market" title="Secondary market">Secondary market</a></li>
+<li><a href="/wiki/Third_market" title="Third market">Third market</a></li>
+<li><a href="/wiki/Fourth_market" title="Fourth market">Fourth market</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Types of <a href="/wiki/Stock" title="Stock">stocks</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Common_stock" title="Common stock">Common stock</a></li>
+<li><a href="/wiki/Golden_share" title="Golden share">Golden share</a></li>
+<li><a href="/wiki/Preferred_stock" title="Preferred stock">Preferred stock</a></li>
+<li><a href="/wiki/Restricted_stock" title="Restricted stock">Restricted stock</a></li>
+<li><a href="/wiki/Tracking_stock" title="Tracking stock">Tracking stock</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Share_capital" title="Share capital">Share capital</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Authorised_capital" title="Authorised capital">Authorised capital</a></li>
+<li><a href="/wiki/Issued_shares" title="Issued shares">Issued shares</a></li>
+<li><a href="/wiki/Shares_outstanding" title="Shares outstanding">Shares outstanding</a></li>
+<li><a href="/wiki/Treasury_stock" title="Treasury stock">Treasury stock</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Participants</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Broker-dealer" title="Broker-dealer">Broker-dealer</a></li>
+<li><a href="/wiki/Day_trader" title="Day trader">Day trader</a></li>
+<li><a href="/wiki/Floor_broker" title="Floor broker">Floor broker</a></li>
+<li><a href="/wiki/Floor_trader" title="Floor trader">Floor trader</a></li>
+<li><a href="/wiki/Investor" title="Investor">Investor</a></li>
+<li><a href="/wiki/Market_maker" title="Market maker">Market maker</a></li>
+<li><a href="/wiki/Proprietary_trading" title="Proprietary trading">Proprietary trader</a></li>
+<li><a href="/wiki/Quantitative_analyst" title="Quantitative analyst">Quantitative analyst</a></li>
+<li><a href="/wiki/Financial_regulation" title="Financial regulation">Regulator</a></li>
+<li><a href="/wiki/Stock_trader" title="Stock trader">Stock trader</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Stock_exchange" title="Stock exchange">Exchanges</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Electronic_communication_network" title="Electronic communication network">Electronic communication network</a></li>
+<li><a href="/wiki/List_of_stock_exchanges" title="List of stock exchanges">List of stock exchanges</a>
+<ul>
+<li><a href="/wiki/List_of_stock_exchange_opening_times" title="List of stock exchange opening times">Opening times</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Multilateral_trading_facility" title="Multilateral trading facility">Multilateral trading facility</a></li>
+<li><a href="/wiki/Over-the-counter_(finance)" title="Over-the-counter (finance)">Over-the-counter</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Stock_valuation" title="Stock valuation">Stock valuation</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Alpha_(investment)" title="Alpha (investment)" class="mw-redirect">Alpha</a></li>
+<li><strong class="selflink">Arbitrage pricing theory</strong></li>
+<li><a href="/wiki/Beta_(finance)" title="Beta (finance)">Beta</a></li>
+<li><a href="/wiki/Bid%E2%80%93ask_spread" title="Bid–ask spread">Bid–ask spread</a></li>
+<li><a href="/wiki/Book_value" title="Book value">Book value</a></li>
+<li><a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">Capital asset pricing model</a></li>
+<li><a href="/wiki/Dividend_discount_model" title="Dividend discount model">Dividend discount model</a></li>
+<li><a href="/wiki/Dividend_yield" title="Dividend yield">Dividend yield</a></li>
+<li><a href="/wiki/Earnings_per_share" title="Earnings per share">Earnings per share</a></li>
+<li><a href="/wiki/Earnings_yield" title="Earnings yield">Earnings yield</a></li>
+<li><a href="/wiki/Net_asset_value" title="Net asset value">Net asset value</a></li>
+<li><a href="/wiki/Security_characteristic_line" title="Security characteristic line">Security characteristic line</a></li>
+<li><a href="/wiki/Security_market_line" title="Security market line">Security market line</a></li>
+<li><a href="/wiki/T-model" title="T-model">T-model</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Trading theories<br />
+and <a href="/wiki/Trading_strategy" title="Trading strategy">strategies</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Algorithmic_trading" title="Algorithmic trading">Algorithmic trading</a></li>
+<li><a href="/wiki/Buy_and_hold" title="Buy and hold">Buy and hold</a></li>
+<li><a href="/wiki/Concentrated_stock" title="Concentrated stock">Concentrated stock</a></li>
+<li><a href="/wiki/Contrarian_investing" title="Contrarian investing">Contrarian investing</a></li>
+<li><a href="/wiki/Day_trading" title="Day trading">Day trading</a></li>
+<li><a href="/wiki/Dollar_cost_averaging" title="Dollar cost averaging">Dollar cost averaging</a></li>
+<li><a href="/wiki/Efficient-market_hypothesis" title="Efficient-market hypothesis">Efficient-market hypothesis</a></li>
+<li><a href="/wiki/Fundamental_analysis" title="Fundamental analysis">Fundamental analysis</a></li>
+<li><a href="/wiki/Growth_stock" title="Growth stock">Growth stock</a></li>
+<li><a href="/wiki/Market_timing" title="Market timing">Market timing</a></li>
+<li><a href="/wiki/Modern_portfolio_theory" title="Modern portfolio theory">Modern portfolio theory</a></li>
+<li><a href="/wiki/Momentum_investing" title="Momentum investing">Momentum investing</a></li>
+<li><a href="/wiki/Mosaic_theory_(investments)" title="Mosaic theory (investments)">Mosaic theory</a></li>
+<li><a href="/wiki/Pairs_trade" title="Pairs trade">Pairs trade</a></li>
+<li><a href="/wiki/Post-modern_portfolio_theory" title="Post-modern portfolio theory">Post-modern portfolio theory</a></li>
+<li><a href="/wiki/Random_walk_hypothesis" title="Random walk hypothesis">Random walk hypothesis</a></li>
+<li><a href="/wiki/Sector_rotation" title="Sector rotation">Sector rotation</a></li>
+<li><a href="/wiki/Style_investing" title="Style investing">Style investing</a></li>
+<li><a href="/wiki/Swing_trading" title="Swing trading">Swing trading</a></li>
+<li><a href="/wiki/Technical_analysis" title="Technical analysis">Technical analysis</a></li>
+<li><a href="/wiki/Trend_following" title="Trend following">Trend following</a></li>
+<li><a href="/wiki/Value_investing" title="Value investing">Value investing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related terms</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Block_trade" title="Block trade">Block trade</a></li>
+<li><a href="/wiki/Cross_listing" title="Cross listing">Cross listing</a></li>
+<li><a href="/wiki/Dark_liquidity" title="Dark liquidity">Dark liquidity</a></li>
+<li><a href="/wiki/Dividend" title="Dividend">Dividend</a></li>
+<li><a href="/wiki/Dual-listed_company" title="Dual-listed company">Dual-listed company</a></li>
+<li><a href="/wiki/DuPont_analysis" title="DuPont analysis">DuPont analysis</a></li>
+<li><a href="/wiki/Efficient_frontier" title="Efficient frontier">Efficient frontier</a></li>
+<li><a href="/wiki/Flight-to-quality" title="Flight-to-quality">Flight-to-quality</a></li>
+<li><a href="/wiki/Haircut_(finance)" title="Haircut (finance)">Haircut</a></li>
+<li><a href="/wiki/Initial_public_offering" title="Initial public offering">Initial public offering</a></li>
+<li><a href="/wiki/Margin_(finance)" title="Margin (finance)">Margin</a></li>
+<li><a href="/wiki/Market_anomaly" title="Market anomaly">Market anomaly</a></li>
+<li><a href="/wiki/Market_capitalization" title="Market capitalization">Market capitalization</a></li>
+<li><a href="/wiki/Market_depth" title="Market depth">Market depth</a></li>
+<li><a href="/wiki/Market_manipulation" title="Market manipulation">Market manipulation</a></li>
+<li><a href="/wiki/Market_trend" title="Market trend">Market trend</a></li>
+<li><a href="/wiki/Mean_reversion_(finance)" title="Mean reversion (finance)">Mean reversion</a></li>
+<li><a href="/wiki/Momentum_(finance)" title="Momentum (finance)">Momentum</a></li>
+<li><a href="/wiki/Open_outcry" title="Open outcry">Open outcry</a></li>
+<li><a href="/wiki/Public_float" title="Public float">Public float</a></li>
+<li><a href="/wiki/Public_offering" title="Public offering">Public offering</a></li>
+<li><a href="/wiki/Rally_(stock_market)" title="Rally (stock market)">Rally</a></li>
+<li><a href="/wiki/Returns-based_style_analysis" title="Returns-based style analysis">Returns-based style analysis</a></li>
+<li><a href="/wiki/Reverse_stock_split" title="Reverse stock split">Reverse stock split</a></li>
+<li><a href="/wiki/Share_repurchase" title="Share repurchase">Share repurchase</a></li>
+<li><a href="/wiki/Short_(finance)" title="Short (finance)">Short selling</a></li>
+<li><a href="/wiki/Slippage_(finance)" title="Slippage (finance)">Slippage</a></li>
+<li><a href="/wiki/Speculation" title="Speculation">Speculation</a></li>
+<li><a href="/wiki/Stock_dilution" title="Stock dilution">Stock dilution</a></li>
+<li><a href="/wiki/Stock_market_index" title="Stock market index">Stock market index</a></li>
+<li><a href="/wiki/Stock_split" title="Stock split">Stock split</a></li>
+<li><a href="/wiki/Trade_(financial_instrument)" title="Trade (financial instrument)">Trade</a></li>
+<li><a href="/wiki/Uptick_rule" title="Uptick rule">Uptick rule</a></li>
+<li><a href="/wiki/Volatility_(finance)" title="Volatility (finance)">Volatility</a></li>
+<li><a href="/wiki/Voting_interest" title="Voting interest">Voting interest</a></li>
+<li><a href="/wiki/Yield_(finance)" title="Yield (finance)">Yield</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Hedge_funds" title="Template:Hedge funds"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Hedge_funds" title="Template talk:Hedge funds"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Hedge_funds&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Hedge_fund" title="Hedge fund">Hedge funds</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Investment<br />
+strategy</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width:7em;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Arbitrage" title="Arbitrage">Arbitrage</a> /<br />
+<a href="/wiki/Relative_value_(economics)" title="Relative value (economics)">Relative value</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Capital_structure#Arbitrage" title="Capital structure">Capital structure arbitrage</a></li>
+<li><a href="/wiki/Convertible_arbitrage" title="Convertible arbitrage">Convertible arbitrage</a></li>
+<li><a href="/wiki/Market_neutral#Equity-market-neutral" title="Market neutral">Equity market neutral</a></li>
+<li><a href="/wiki/Fixed_income_arbitrage" title="Fixed income arbitrage">Fixed income arbitrage</a> / <a href="/wiki/Fixed-income_relative-value_investing" title="Fixed-income relative-value investing">Fixed-income relative-value investing</a></li>
+<li><a href="/wiki/Statistical_arbitrage" title="Statistical arbitrage">Statistical arbitrage</a></li>
+<li><a href="/wiki/Volatility_arbitrage" title="Volatility arbitrage">Volatility arbitrage</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width:7em;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Event-driven_investing" title="Event-driven investing">Event-driven</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Activist_shareholder" title="Activist shareholder">Activist shareholder</a></li>
+<li><a href="/wiki/Distressed_securities" title="Distressed securities">Distressed securities</a></li>
+<li><a href="/wiki/Risk_arbitrage" title="Risk arbitrage">Risk arbitrage</a></li>
+<li><a href="/wiki/Special_situation" title="Special situation">Special situation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width:7em;">
+<div style="padding:0em 0.75em;">Directional</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Convergence_trade" title="Convergence trade">Convergence trade</a></li>
+<li><a href="/wiki/Commodity_trading_advisor" title="Commodity trading advisor">Commodity trading advisors</a> / <a href="/wiki/Managed_futures_account" title="Managed futures account">Managed futures account</a></li>
+<li><a href="/wiki/Short_(finance)" title="Short (finance)">Dedicated short</a></li>
+<li><a href="/wiki/Global_macro" title="Global macro">Global macro</a></li>
+<li><a href="/wiki/Long/short_equity" title="Long/short equity">Long/short equity</a></li>
+<li><a href="/wiki/Trend_following" title="Trend following">Trend following</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width:7em;">
+<div style="padding:0em 0.75em;">Other</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Fund_of_funds#Fund_of_hedge_funds" title="Fund of funds">Fund of hedge funds</a> / <a href="/wiki/Multi-manager_investment" title="Multi-manager investment">Multi-manager</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td class="navbox-image" rowspan="9" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Chicklet-currency.jpg" class="image"><img alt="Chicklet-currency.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Chicklet-currency.jpg/60px-Chicklet-currency.jpg" width="60" height="54" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Chicklet-currency.jpg/90px-Chicklet-currency.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Chicklet-currency.jpg/120px-Chicklet-currency.jpg 2x" data-file-width="279" data-file-height="250" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Trading</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Algorithmic_trading" title="Algorithmic trading">Algorithmic trading</a></li>
+<li><a href="/wiki/Day_trading" title="Day trading">Day trading</a></li>
+<li><a href="/wiki/High-frequency_trading" title="High-frequency trading">High-frequency trading</a></li>
+<li><a href="/wiki/Prime_brokerage" title="Prime brokerage">Prime brokerage</a></li>
+<li><a href="/wiki/Program_trading" title="Program trading">Program trading</a></li>
+<li><a href="/wiki/Proprietary_trading" title="Proprietary trading">Proprietary trading</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related<br />
+terms</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width:7em;">
+<div style="padding:0em 0.75em;">Markets</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Commodity_market" title="Commodity market">Commodities</a></li>
+<li><a href="/wiki/Derivative_(finance)" title="Derivative (finance)">Derivatives</a></li>
+<li><a href="/wiki/Stock_market" title="Stock market">Equity</a></li>
+<li><a href="/wiki/Bond_market" title="Bond market">Fixed income</a></li>
+<li><a href="/wiki/Foreign_exchange_market" title="Foreign exchange market">Foreign exchange</a></li>
+<li><a href="/wiki/Money_market" title="Money market">Money markets</a></li>
+<li><a href="/wiki/Structured_finance" title="Structured finance">Structured securities</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;width:7em;">
+<div style="padding:0em 0.75em;">Misc</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Arbitrage pricing theory</strong></li>
+<li><a href="/wiki/Assets_under_management" title="Assets under management">Assets under management</a></li>
+<li><a href="/wiki/Black%E2%80%93Scholes_model" title="Black–Scholes model">Black–Scholes model</a> (<a href="/wiki/Greeks_(finance)" title="Greeks (finance)">Greeks (finance)</a>: <a href="/wiki/Delta_neutral" title="Delta neutral">Delta neutral</a>)</li>
+<li><a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">Capital asset pricing model</a> (<a href="/wiki/Alpha_(investment)" title="Alpha (investment)" class="mw-redirect">Alpha</a> / <a href="/wiki/Beta_(finance)" title="Beta (finance)">Beta</a> / <a href="/wiki/Security_characteristic_line" title="Security characteristic line">Security characteristic line</a>)</li>
+<li><a href="/wiki/Fundamental_analysis" title="Fundamental analysis">Fundamental analysis</a></li>
+<li><a href="/wiki/Hedge_(finance)" title="Hedge (finance)">Hedge</a></li>
+<li><a href="/wiki/Securitization" title="Securitization">Securitization</a></li>
+<li><a href="/wiki/Short_(finance)" title="Short (finance)">Short</a></li>
+<li><a href="/wiki/Taxation_of_private_equity_and_hedge_funds" title="Taxation of private equity and hedge funds">Taxation of private equity and hedge funds</a></li>
+<li><a href="/wiki/Technical_analysis" title="Technical analysis">Technical analysis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Investors</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Distressed_securities_fund" title="Distressed securities fund">Distressed securities funds</a></li>
+<li><a href="/wiki/Family_office" title="Family office">Family offices</a></li>
+<li><a href="/wiki/Financial_endowment" title="Financial endowment">Financial endowments</a></li>
+<li><a href="/wiki/Fund_of_funds#Fund_of_hedge_funds" title="Fund of funds">Fund of hedge funds</a></li>
+<li><a href="/wiki/High-net-worth_individual" title="High-net-worth individual">High-net-worth individual</a></li>
+<li><a href="/wiki/Institutional_investor" title="Institutional investor">Institutional investors</a></li>
+<li><a href="/wiki/Insurance#Insurance_companies" title="Insurance">Insurance companies</a></li>
+<li><a href="/wiki/Investment_banking" title="Investment banking">Investment banks</a></li>
+<li><a href="/wiki/Merchant_bank" title="Merchant bank">Merchant banks</a></li>
+<li><a href="/wiki/Pension_fund" title="Pension fund">Pension funds</a></li>
+<li><a href="/wiki/Sovereign_wealth_fund" title="Sovereign wealth fund">Sovereign wealth funds</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Regulatory</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Fund_governance" title="Fund governance">Fund governance</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="3">
+<div>
+<ul>
+<li><a href="/wiki/Category:Alternative_investment_management_companies" title="Category:Alternative investment management companies">Alternative investment management companies</a></li>
+<li><a href="/wiki/Category:Hedge_funds" title="Category:Hedge funds">Hedge funds</a></li>
+<li><a href="/wiki/Category:Hedge_fund_managers" title="Category:Hedge fund managers">Hedge fund managers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1166
+Cached time: 20150912210853
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.212 seconds
+Real time usage: 0.744 seconds
+Preprocessor visited node count: 1361/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 59322/2097152 bytes
+Template argument size: 1640/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+Lua time usage: 0.057/10.000 seconds
+Lua memory usage: 2.09 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  123.165      1 - -total
+ 58.50%   72.055      4 - Template:Navbox
+ 45.06%   55.499      5 - Template:Cite_journal
+ 30.36%   37.398      1 - Template:Hedge_funds
+ 23.85%   29.370      1 - Template:Stock_market
+ 20.88%   25.720      2 - Template:Navbox_subgroup
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:793367-0!*!0!!en!4!*!math=0 and timestamp 20150912210853 and revision id 674753401
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Arbitrage_pricing_theory&amp;oldid=674753401">https://en.wikipedia.org/w/index.php?title=Arbitrage_pricing_theory&amp;oldid=674753401</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Finance_theories" title="Category:Finance theories">Finance theories</a></li><li><a href="/wiki/Category:Mathematical_finance" title="Category:Mathematical finance">Mathematical finance</a></li><li><a href="/wiki/Category:Portfolio_theories" title="Category:Portfolio theories">Portfolio theories</a></li><li><a href="/wiki/Category:Pricing" title="Category:Pricing">Pricing</a></li><li><a href="/wiki/Category:Financial_economics" title="Category:Financial economics">Financial economics</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Arbitrage+pricing+theory&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Arbitrage+pricing+theory" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Arbitrage_pricing_theory"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Arbitrage_pricing_theory"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Arbitrage_pricing_theory" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Arbitrage_pricing_theory" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Arbitrage_pricing_theory" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;oldid=674753401" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q629941" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Arbitrage_pricing_theory&amp;id=674753401" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Arbitrage+pricing+theory">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Arbitrage+pricing+theory&amp;oldid=674753401&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Arbitrage_pricing_theory&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Arbitragepreistheorie" title="Arbitragepreistheorie – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Teor%C3%ADa_del_arbitraje_(econom%C3%ADa)" title="Teoría del arbitraje (economía) – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%DB%8C%D9%87_%D9%82%DB%8C%D9%85%D8%AA%E2%80%8C%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C_%D8%A2%D8%B1%D8%A8%DB%8C%D8%AA%D8%B1%D8%A7%DA%98" title="نظریه قیمت‌گذاری آربیتراژ – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Mod%C3%A8le_d%27%C3%A9valuation_par_arbitrage" title="Modèle d'évaluation par arbitrage – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-hr"><a href="//hr.wikipedia.org/wiki/Arbitra%C5%BEna_teorija_procjenjivanja_(APT)" title="Arbitražna teorija procjenjivanja (APT) – Croatian" lang="hr" hreflang="hr">Hrvatski</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Arbitrage_pricing_theory" title="Arbitrage pricing theory – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E8%A3%81%E5%AE%9A%E4%BE%A1%E6%A0%BC%E7%90%86%E8%AB%96" title="裁定価格理論 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Teoria_arbitra%C5%BCu_cenowego" title="Teoria arbitrażu cenowego – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q629941#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 5 August 2015, at 22:46.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Arbitrage_pricing_theory&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":90,"wgHostname":"mw1219"});
+} );</script>
+	</body>
+</html>

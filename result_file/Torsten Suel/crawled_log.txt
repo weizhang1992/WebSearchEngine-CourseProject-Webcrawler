@@ -1,0 +1,38 @@
+ID: 1 , Time: 10:32AM Sep23 2015 , score: 792 , Depth: 0 , Access: True , Code: 200 , Size 455KB , url: http://dblp.uni-trier.de/pers/hd/s/Suel:Torsten
+ID: 2 , Time: 10:32AM Sep23 2015 , score: 840 , Depth: 1 , Access: True , Code: 200 , Size 727KB , url: http://dblp2.uni-trier.de/pers/hd/s/Suel:Torsten
+ID: 3 , Time: 10:32AM Sep23 2015 , score: 788 , Depth: 1 , Access: True , Code: 200 , Size 55KB , url: http://dblp.uni-trier.de/pers/xx/s/Suel:Torsten.xml
+ID: 4 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 16KB , url: http://dblp.uni-trier.de/pers/xr/s/Suel:Torsten.rdf
+ID: 5 , Time: 10:32AM Sep23 2015 , score: 832 , Depth: 1 , Access: True , Code: 200 , Size 132KB , url: http://dblp.uni-trier.de/pers/xs/s/Suel:Torsten.rss
+ID: 6 , Time: 10:32AM Sep23 2015 , score: 776 , Depth: 1 , Access: True , Code: 200 , Size 37KB , url: http://dblp.uni-trier.de/pers/te/s/Suel:Torsten.ris
+ID: 7 , Time: 10:32AM Sep23 2015 , score: 792 , Depth: 1 , Access: True , Code: 200 , Size 456KB , url: http://dblp.uni-trier.de/pers/ht/s/Suel:Torsten
+ID: 8 , Time: 10:32AM Sep23 2015 , score: 72 , Depth: 1 , Access: True , Code: 200 , Size 13KB , url: http://dblp.uni-trier.de/pers/hk/s/Suel:Torsten
+ID: 9 , Time: 10:32AM Sep23 2015 , score: 744 , Depth: 1 , Access: True , Code: 200 , Size 214KB , url: http://dblp.uni-trier.de/pers/hc/s/Suel:Torsten
+ID: 10 , Time: 10:32AM Sep23 2015 , score: 844 , Depth: 1 , Access: True , Code: 200 , Size 117KB , url: http://dblp.uni-trier.de/pers/hb/s/Suel:Torsten
+ID: 11 , Time: 10:32AM Sep23 2015 , score: 840 , Depth: 1 , Access: True , Code: 200 , Size 720KB , url: http://dblp.dagstuhl.de/pers/hd/s/Suel:Torsten
+ID: 12 , Time: 10:32AM Sep23 2015 , score: 96 , Depth: 1 , Access: True , Code: 200 , Size 77KB , url: http://academic.research.microsoft.com/search?query=Torsten+Suel
+ID: 13 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 0KB , url: http://dblp.uni-trier.de/rec/xml/conf/recsys/LiuSM14.xml
+ID: 14 , Time: 10:32AM Sep23 2015 , score: 16 , Depth: 0 , Access: True , Code: 200 , Size 17KB , url: http://www2003.org/cdrom/papers/poster/p221/p221-suel/p221-suel.htm
+ID: 15 , Time: 10:32AM Sep23 2015 , score: 28 , Depth: 0 , Access: True , Code: 200 , Size 14KB , url: http://videolectures.net/torsten_suel/
+ID: 16 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 12KB , url: http://pubzone.org/dblp/conf/recsys/LiuSM14
+ID: 17 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 12KB , url: http://pubzone.org/dblp/conf/bigdataconf/ChristoforakiS14
+ID: 18 , Time: 10:32AM Sep23 2015 , score: 3 , Depth: 1 , Access: True , Code: 200 , Size 69KB , url: http://dx.doi.org/10.1109/BigData.2014.7004250
+ID: 19 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 12KB , url: http://dblp.uni-trier.de/rec/bibtex/conf/recsys/LiuSM14
+ID: 20 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 0KB , url: http://dblp.uni-trier.de/rec/ris/conf/cikm/2014.ris
+ID: 21 , Time: 10:32AM Sep23 2015 , score: 72 , Depth: 0 , Access: True , Code: 200 , Size 14KB , url: http://cis.poly.edu/suel/
+ID: 22 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 0KB , url: http://dblp.uni-trier.de/rec/xml/conf/cikm/2014.xml
+ID: 23 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 0KB , url: http://dblp.uni-trier.de/rec/xml/conf/bigdataconf/ChristoforakiS14.xml
+ID: 24 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 0KB , url: http://dblp.uni-trier.de/rec/ris/conf/recsys/LiuSM14.ris
+ID: 25 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 0KB , url: http://dblp.uni-trier.de/rec/ris/conf/bigdataconf/ChristoforakiS14.ris
+ID: 26 , Time: 10:32AM Sep23 2015 , score: 56 , Depth: 0 , Access: True , Code: 200 , Size 14KB , url: http://www.jinruhe.com/
+ID: 27 , Time: 10:32AM Sep23 2015 , score: 80 , Depth: 0 , Access: True , Code: 200 , Size 22KB , url: http://engineering.nyu.edu/people/torsten-suel
+ID: 28 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 11KB , url: http://dblp.uni-trier.de/rec/bibtex/conf/cikm/2014
+ID: 29 , Time: 10:32AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 12KB , url: http://dblp.uni-trier.de/rec/bibtex/conf/bigdataconf/ChristoforakiS14
+ID: 30 , Time: 10:33AM Sep23 2015 , score: 40 , Depth: 1 , Access: True , Code: 200 , Size 771KB , url: http://dblp.uni-trier.de/pers/hd/m/Memon:Nasir_D=
+##############################################################################################################
+The total number of crawled pages:  30
+##############################################################################################################
+The total number of successful pages:  20 MB
+##############################################################################################################
+The total size of successful pages:  3
+##############################################################################################################
+The total time:  54.7156310081

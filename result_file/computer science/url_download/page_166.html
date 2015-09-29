@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>NP-completeness - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"NP-completeness","wgTitle":"NP-completeness","wgCurRevisionId":681771025,"wgRevisionId":681771025,"wgArticleId":23385892,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with inconsistent citation formats","Wikipedia articles needing clarification from July 2012","All Wikipedia articles needing clarification","Pages containing cite templates with deprecated parameters","All articles with dead external links","Articles with dead external links from October 2010","1971 in computer science","NP-complete problems","Complexity classes","Mathematical optimization"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June",
+"July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"NP-completeness","wgRelevantArticleId":23385892,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"NP-complete","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/a/a0/P_np_np-complete_np-hard.svg/100px-P_np_np-complete_np-hard.svg.png","wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status"
+:{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/NP-completeness","wgWikibaseItemId":"Q215206","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/NP-completeness" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=NP-completeness&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=NP-completeness&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/NP-completeness" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-NP-completeness skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">NP-completeness</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=NP-complete&amp;redirect=no" title="NP-complete">NP-complete</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:P_np_np-complete_np-hard.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a0/P_np_np-complete_np-hard.svg/300px-P_np_np-complete_np-hard.svg.png" width="300" height="188" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a0/P_np_np-complete_np-hard.svg/450px-P_np_np-complete_np-hard.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a0/P_np_np-complete_np-hard.svg/600px-P_np_np-complete_np-hard.svg.png 2x" data-file-width="800" data-file-height="500" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:P_np_np-complete_np-hard.svg" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Euler_diagram" title="Euler diagram">Euler diagram</a> for <a href="/wiki/P_(complexity)" title="P (complexity)">P</a>, <a href="/wiki/NP_(complexity)" title="NP (complexity)">NP</a>, NP-complete, and <a href="/wiki/NP-hard" title="NP-hard" class="mw-redirect">NP-hard</a> set of problems. The left side is valid under the assumption that <a href="/wiki/P_versus_NP_problem" title="P versus NP problem">P≠NP</a>, while the right side is valid under the assumption that P=NP (except that the empty language and its complement are never NP-complete)</div>
+</div>
+</div>
+<table class="metadata plainlinks ambox ambox-style ambox-confusing" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>may be <a href="/wiki/Wikipedia:Vagueness" title="Wikipedia:Vagueness">confusing or unclear</a> to readers</b>. <span class="hide-when-compact">Please help us <a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify">clarify the article</a>; suggestions may be found on the <a href="/wiki/Talk:NP-completeness" title="Talk:NP-completeness">talk page</a>.</span> <small><i>(July 2012)</i></small></span></td>
+</tr>
+</table>
+<p>In <a href="/wiki/Computational_complexity_theory" title="Computational complexity theory">computational complexity theory</a>, a <a href="/wiki/Decision_problem" title="Decision problem">decision problem</a> is <b>NP-complete</b> when it is both in <a href="/wiki/NP_(complexity)" title="NP (complexity)">NP</a> and <a href="/wiki/NP-hard" title="NP-hard" class="mw-redirect">NP-hard</a>. The set of NP-complete problems is often denoted by <b>NP-C</b> or <b>NPC</b>. The abbreviation <b>NP</b> refers to "<a href="/wiki/Nondeterministic_algorithm" title="Nondeterministic algorithm">nondeterministic</a> <a href="/wiki/Polynomial_time" title="Polynomial time" class="mw-redirect">polynomial time</a>".</p>
+<p>Although any given solution to an NP-complete problem can be verified quickly (in polynomial time), there is no known efficient way to locate a solution in the first place; indeed, the most notable characteristic of NP-complete problems is that no fast solution to them is known. That is, the time required to solve the problem using any currently known <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> increases very quickly as the size of the problem grows. As a consequence, determining whether or not it is possible to solve these problems quickly, called the <a href="/wiki/P_versus_NP_problem" title="P versus NP problem">P versus NP problem</a>, is one of the principal <a href="/wiki/List_of_open_problems_in_computer_science" title="List of open problems in computer science" class="mw-redirect">unsolved problems in computer science</a> today.</p>
+<p>While a method for computing the solutions to NP-complete problems using a reasonable amount of time remains undiscovered, <a href="/wiki/Computer_scientist" title="Computer scientist">computer scientists</a> and <a href="/wiki/Computer_programmer" title="Computer programmer" class="mw-redirect">programmers</a> still frequently encounter NP-complete problems. NP-complete problems are often addressed by using <a href="/wiki/Heuristic_(computer_science)" title="Heuristic (computer science)">heuristic</a> methods and <a href="/wiki/Approximation_algorithm" title="Approximation algorithm">approximation algorithms</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Formal_definition_of_NP-completeness"><span class="tocnumber">2</span> <span class="toctext">Formal definition of NP-completeness</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Background"><span class="tocnumber">3</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#NP-complete_problems"><span class="tocnumber">4</span> <span class="toctext">NP-complete problems</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Solving_NP-complete_problems"><span class="tocnumber">5</span> <span class="toctext">Solving NP-complete problems</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Completeness_under_different_types_of_reduction"><span class="tocnumber">6</span> <span class="toctext">Completeness under different types of reduction</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Naming"><span class="tocnumber">7</span> <span class="toctext">Naming</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Common_misconceptions"><span class="tocnumber">8</span> <span class="toctext">Common misconceptions</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Properties"><span class="tocnumber">9</span> <span class="toctext">Properties</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Notes"><span class="tocnumber">11</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">12</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Further_reading"><span class="tocnumber">13</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>NP-complete problems are in <a href="/wiki/NP_(complexity)" title="NP (complexity)">NP</a>, the set of all <a href="/wiki/Decision_problem" title="Decision problem">decision problems</a> whose solutions can be verified in polynomial time; <i>NP</i> may be equivalently defined as the set of decision problems that can be solved in polynomial time on a <a href="/wiki/Non-deterministic_Turing_machine" title="Non-deterministic Turing machine">non-deterministic Turing machine</a>. A problem <i>p</i> in NP is NP-complete if every other problem in NP can be transformed (or reduced) into <i>p</i> in polynomial time.</p>
+<p>NP-complete problems are studied because the ability to quickly verify solutions to a problem (NP) seems to correlate with the ability to quickly solve that problem (<a href="/wiki/P_(complexity)" title="P (complexity)">P</a>). It is not known whether every problem in NP can be quickly solved—this is called the <a href="/wiki/P_versus_NP_problem" title="P versus NP problem">P versus NP problem</a>. But if <i>any NP-complete problem</i> can be solved quickly, then <i>every problem in NP</i> can, because the definition of an NP-complete problem states that every problem in NP must be quickly reducible to every NP-complete problem (that is, it can be reduced in polynomial time). Because of this, it is often said that NP-complete problems are <i>harder</i> or <i>more difficult</i> than NP problems in general.</p>
+<h2><span class="mw-headline" id="Formal_definition_of_NP-completeness">Formal definition of NP-completeness</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=2" title="Edit section: Formal definition of NP-completeness">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/P_%3D_NP_problem#NP-completeness" title="P = NP problem" class="mw-redirect">formal definition for NP-completeness (article <i>P = NP</i>)</a></div>
+<p>A decision problem <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle C" src="//upload.wikimedia.org/math/f/c/7/fc783207375c0abb99cfb79841b1708d.png" /> is NP-complete if:</p>
+<ol>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle C" src="//upload.wikimedia.org/math/f/c/7/fc783207375c0abb99cfb79841b1708d.png" /> is in NP, and</li>
+<li>Every problem in NP is <a href="/wiki/Many-one_reduction" title="Many-one reduction">reducible</a> to <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle C" src="//upload.wikimedia.org/math/f/c/7/fc783207375c0abb99cfb79841b1708d.png" /> in polynomial time.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup></li>
+</ol>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle C" src="//upload.wikimedia.org/math/f/c/7/fc783207375c0abb99cfb79841b1708d.png" /> can be shown to be in NP by demonstrating that a candidate solution to <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle C" src="//upload.wikimedia.org/math/f/c/7/fc783207375c0abb99cfb79841b1708d.png" /> can be verified in polynomial time.</p>
+<p>Note that a problem satisfying condition 2 is said to be <a href="/wiki/NP-hard" title="NP-hard" class="mw-redirect">NP-hard</a>, whether or not it satisfies condition 1.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>A consequence of this definition is that if we had a polynomial time algorithm (on a <a href="/wiki/Universal_Turing_machine" title="Universal Turing machine">UTM</a>, or any other <a href="/wiki/Turing_completeness" title="Turing completeness">Turing-equivalent</a> <a href="/wiki/Abstract_machine" title="Abstract machine">abstract machine</a>) for <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle C" src="//upload.wikimedia.org/math/f/c/7/fc783207375c0abb99cfb79841b1708d.png" />, we could solve all problems in NP in polynomial time.</p>
+<h2><span class="mw-headline" id="Background">Background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=3" title="Edit section: Background">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The concept of NP-completeness was introduced in 1971 by <a href="/wiki/Stephen_Cook" title="Stephen Cook">Stephen Cook</a> in a paper entitled <i>The complexity of theorem-proving procedures</i> on pages 151–158 of the <i>Proceedings of the 3rd Annual ACM Symposium on Theory of Computing</i>, though the term <i>NP-complete</i> did not appear anywhere in his paper. At that <a href="/wiki/Computer_science" title="Computer science">computer science</a> conference, there was a fierce debate among the computer scientists about whether NP-complete problems could be solved in polynomial time on a <a href="/wiki/Deterministic" title="Deterministic" class="mw-redirect">deterministic</a> <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a>. <a href="/wiki/John_Hopcroft" title="John Hopcroft">John Hopcroft</a> brought everyone at the conference to a consensus that the question of whether NP-complete problems are solvable in polynomial time should be put off to be solved at some later date, since nobody had any formal proofs for their claims one way or the other. This is known as the question of whether P=NP.</p>
+<p>Nobody has yet been able to determine conclusively whether NP-complete problems are in fact solvable in polynomial time, making this one of the great <a href="/wiki/Unsolved_problems_of_mathematics" title="Unsolved problems of mathematics" class="mw-redirect">unsolved problems of mathematics</a>. The <a href="/wiki/Clay_Mathematics_Institute" title="Clay Mathematics Institute">Clay Mathematics Institute</a> is offering a US $1 million reward to anyone who has a formal proof that P=NP or that P≠NP.</p>
+<p>In <a href="/wiki/Cook%27s_theorem" title="Cook's theorem" class="mw-redirect">Cook's theorem</a>, Cook proved that the <a href="/wiki/Boolean_satisfiability_problem" title="Boolean satisfiability problem">Boolean satisfiability problem</a> is NP-complete (a simpler, but still highly technical <a href="/wiki/Proof_that_Boolean_satisfiability_problem_is_NP-complete" title="Proof that Boolean satisfiability problem is NP-complete" class="mw-redirect">proof of this</a> is available). In 1972, <a href="/wiki/Richard_Karp" title="Richard Karp" class="mw-redirect">Richard Karp</a> proved that several other problems were also NP-complete (see <a href="/wiki/Karp%27s_21_NP-complete_problems" title="Karp's 21 NP-complete problems">Karp's 21 NP-complete problems</a>); thus there is a class of NP-complete problems (besides the Boolean satisfiability problem). Since Cook's original results, thousands of other problems have been shown to be NP-complete by reductions from other problems previously shown to be NP-complete; many of these problems are collected in <a href="/wiki/Michael_Garey" title="Michael Garey">Garey</a> and <a href="/wiki/David_S._Johnson" title="David S. Johnson">Johnson's</a> 1979 book <i><a href="/wiki/Computers_and_Intractability:_A_Guide_to_the_Theory_of_NP-Completeness" title="Computers and Intractability: A Guide to the Theory of NP-Completeness" class="mw-redirect">Computers and Intractability: A Guide to the Theory of NP-Completeness</a></i>.<sup id="cite_ref-GareyJohnson_3-0" class="reference"><a href="#cite_note-GareyJohnson-3"><span>[</span>3<span>]</span></a></sup> For more details refer to <i>Introduction to the Design and Analysis of Algorithms</i> by Anany Levitin.</p>
+<h2><span class="mw-headline" id="NP-complete_problems">NP-complete problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=4" title="Edit section: NP-complete problems">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/List_of_NP-complete_problems" title="List of NP-complete problems">List of NP-complete problems</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Relative_NPC_chart.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Relative_NPC_chart.svg/220px-Relative_NPC_chart.svg.png" width="220" height="242" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Relative_NPC_chart.svg/330px-Relative_NPC_chart.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Relative_NPC_chart.svg/440px-Relative_NPC_chart.svg.png 2x" data-file-width="500" data-file-height="550" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Relative_NPC_chart.svg" class="internal" title="Enlarge"></a></div>
+Some NP-complete problems, indicating the <a href="/wiki/Reduction_(complexity)" title="Reduction (complexity)">reductions</a> typically used to prove their NP-completeness</div>
+</div>
+</div>
+<p>An interesting example is the <a href="/wiki/Graph_isomorphism_problem" title="Graph isomorphism problem">graph isomorphism problem</a>, the <a href="/wiki/Graph_theory" title="Graph theory">graph theory</a> problem of determining whether a <a href="/wiki/Graph_isomorphism" title="Graph isomorphism">graph isomorphism</a> exists between two graphs. Two graphs are <a href="/wiki/Isomorphic" title="Isomorphic" class="mw-redirect">isomorphic</a> if one can be <a href="/wiki/Isomorphism" title="Isomorphism">transformed</a> into the other simply by renaming <a href="/wiki/Vertex_(graph_theory)" title="Vertex (graph theory)">vertices</a>. Consider these two problems:</p>
+<ul>
+<li>Graph Isomorphism: Is graph G<sub>1</sub> isomorphic to graph G<sub>2</sub>?</li>
+<li>Subgraph Isomorphism: Is graph G<sub>1</sub> isomorphic to a subgraph of graph G<sub>2</sub>?</li>
+</ul>
+<p>The Subgraph Isomorphism problem is NP-complete. The graph isomorphism problem is suspected to be neither in P nor NP-complete, though it is in NP. This is an example of a problem that is thought to be <b>hard</b>, but is not thought to be NP-complete.</p>
+<p>The easiest way to prove that some new problem is NP-complete is first to prove that it is in NP, and then to reduce some known NP-complete problem to it. Therefore, it is useful to know a variety of NP-complete problems. The list below contains some well-known problems that are NP-complete when expressed as decision problems.</p>
+<div class="div-col columns column-width" style="-moz-column-width: 25em; -webkit-column-width: 25em; column-width: 25em;">
+<ul>
+<li><a href="/wiki/Boolean_satisfiability_problem" title="Boolean satisfiability problem">Boolean satisfiability problem (SAT)</a></li>
+<li><a href="/wiki/Knapsack_problem" title="Knapsack problem">Knapsack problem</a></li>
+<li><a href="/wiki/Hamiltonian_path_problem" title="Hamiltonian path problem">Hamiltonian path problem</a></li>
+<li><a href="/wiki/Travelling_salesman_problem" title="Travelling salesman problem">Travelling salesman problem</a> (decision version)</li>
+<li><a href="/wiki/Subgraph_isomorphism_problem" title="Subgraph isomorphism problem">Subgraph isomorphism problem</a></li>
+<li><a href="/wiki/Subset_sum_problem" title="Subset sum problem">Subset sum problem</a></li>
+<li><a href="/wiki/Clique_problem" title="Clique problem">Clique problem</a></li>
+<li><a href="/wiki/Vertex_cover_problem" title="Vertex cover problem" class="mw-redirect">Vertex cover problem</a></li>
+<li><a href="/wiki/Independent_set_problem" title="Independent set problem" class="mw-redirect">Independent set problem</a></li>
+<li><a href="/wiki/Dominating_set_problem" title="Dominating set problem" class="mw-redirect">Dominating set problem</a></li>
+<li><a href="/wiki/Graph_coloring_problem" title="Graph coloring problem" class="mw-redirect">Graph coloring problem</a></li>
+</ul>
+</div>
+<p>To the right is a diagram of some of the problems and the <a href="/wiki/Reduction_(complexity)" title="Reduction (complexity)">reductions</a> typically used to prove their NP-completeness. In this diagram, an arrow from one problem to another indicates the direction of the reduction. Note that this diagram is misleading as a description of the mathematical relationship between these problems, as there exists a <a href="/wiki/Polynomial-time_reduction" title="Polynomial-time reduction">polynomial-time reduction</a> between any two NP-complete problems; but it indicates where demonstrating this polynomial-time reduction has been easiest.</p>
+<p>There is often only a small difference between a problem in P and an NP-complete problem. For example, the <a href="/wiki/3-satisfiability" title="3-satisfiability" class="mw-redirect">3-satisfiability</a> problem, a restriction of the boolean satisfiability problem, remains NP-complete, whereas the slightly more restricted <a href="/wiki/2-satisfiability" title="2-satisfiability">2-satisfiability</a> problem is in P (specifically, <a href="/wiki/NL-complete" title="NL-complete">NL-complete</a>), and the slightly more general max. 2-sat. problem is again NP-complete. Determining whether a graph can be colored with 2 colors is in P, but with 3 colors is NP-complete, even when restricted to <a href="/wiki/Planar_graph" title="Planar graph">planar graphs</a>. Determining if a graph is a <a href="/wiki/Cycle_graph" title="Cycle graph">cycle</a> or is <a href="/wiki/Bipartite_graph" title="Bipartite graph">bipartite</a> is very easy (in <a href="/wiki/L_(complexity)" title="L (complexity)">L</a>), but finding a maximum bipartite or a maximum cycle subgraph is NP-complete. A solution of the <a href="/wiki/Knapsack_problem" title="Knapsack problem">knapsack problem</a> within any fixed percentage of the optimal solution can be computed in polynomial time, but finding the optimal solution is NP-complete.</p>
+<h2><span class="mw-headline" id="Solving_NP-complete_problems">Solving NP-complete problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=5" title="Edit section: Solving NP-complete problems">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>At present, all known algorithms for NP-complete problems require time that is <a href="/wiki/Superpolynomial" title="Superpolynomial" class="mw-redirect">superpolynomial</a> in the input size, and it is unknown whether there are any faster algorithms.</p>
+<p>The following techniques can be applied to solve computational problems in general, and they often give rise to substantially faster algorithms:</p>
+<ul>
+<li><a href="/wiki/Approximation_algorithm" title="Approximation algorithm">Approximation</a>: Instead of searching for an optimal solution, search for an "almost" optimal one.</li>
+<li><a href="/wiki/Randomized_algorithm" title="Randomized algorithm">Randomization</a>: Use randomness to get a faster average <a href="/wiki/Running_time" title="Running time" class="mw-redirect">running time</a>, and allow the algorithm to fail with some small probability. Note: The <a href="/wiki/Monte_Carlo_method" title="Monte Carlo method">Monte Carlo method</a> is not an example of an efficient algorithm, although evolutionary approaches like <a href="/wiki/Genetic_algorithm" title="Genetic algorithm">Genetic algorithms</a> may be.</li>
+<li>Restriction: By restricting the structure of the input (e.g., to planar graphs), faster algorithms are usually possible.</li>
+<li><a href="/wiki/Parameterized_complexity" title="Parameterized complexity">Parameterization</a>: Often there are fast algorithms if certain parameters of the input are fixed.</li>
+<li><a href="/wiki/Heuristic_(computer_science)" title="Heuristic (computer science)">Heuristic</a>: An algorithm that works "reasonably well" in many cases, but for which there is no proof that it is both always fast and always produces a good result. <a href="/wiki/Metaheuristic" title="Metaheuristic">Metaheuristic</a> approaches are often used.</li>
+</ul>
+<p>One example of a heuristic algorithm is a suboptimal <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle O(n\log n)" src="//upload.wikimedia.org/math/8/5/4/85475fa30b59d8b8f76fb930224a694d.png" /> <a href="/wiki/Greedy_coloring" title="Greedy coloring">greedy coloring algorithm</a> used for <a href="/wiki/Graph_coloring_problem" title="Graph coloring problem" class="mw-redirect">graph coloring</a> during the <a href="/wiki/Register_allocation" title="Register allocation">register allocation</a> phase of some compilers, a technique called <a href="/w/index.php?title=Graph-coloring_global_register_allocation&amp;action=edit&amp;redlink=1" class="new" title="Graph-coloring global register allocation (page does not exist)">graph-coloring global register allocation</a>. Each vertex is a variable, edges are drawn between variables which are being used at the same time, and colors indicate the register assigned to each variable. Because most <a href="/wiki/RISC" title="RISC" class="mw-redirect">RISC</a> machines have a fairly large number of general-purpose registers, even a heuristic approach is effective for this application.</p>
+<h2><span class="mw-headline" id="Completeness_under_different_types_of_reduction">Completeness under different types of reduction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=6" title="Edit section: Completeness under different types of reduction">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In the definition of NP-complete given above, the term <i>reduction</i> was used in the technical meaning of a polynomial-time many-one reduction.</p>
+<p>Another type of reduction is polynomial-time Turing reduction. A problem <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle X" src="//upload.wikimedia.org/math/5/1/c/51cea10940d0755e9c5b34dff3c328fd.png" /> is polynomial-time Turing-reducible to a problem <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle Y" src="//upload.wikimedia.org/math/f/6/2/f622e012a22e65b1660aaff8a2fcbf21.png" /> if, given a subroutine that solves <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle Y" src="//upload.wikimedia.org/math/f/6/2/f622e012a22e65b1660aaff8a2fcbf21.png" /> in polynomial time, one could write a program that calls this subroutine and solves <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle X" src="//upload.wikimedia.org/math/5/1/c/51cea10940d0755e9c5b34dff3c328fd.png" /> in polynomial time. This contrasts with many-one reducibility, which has the restriction that the program can only call the subroutine once, and the return value of the subroutine must be the return value of the program.</p>
+<p>If one defines the analogue to NP-complete with Turing reductions instead of many-one reductions, the resulting set of problems won't be smaller than NP-complete; it is an open question whether it will be any larger.</p>
+<p>Another type of reduction that is also often used to define NP-completeness is the <a href="/wiki/Logarithmic-space_many-one_reduction" title="Logarithmic-space many-one reduction" class="mw-redirect">logarithmic-space many-one reduction</a> which is a many-one reduction that can be computed with only a logarithmic amount of space. Since every computation that can be done in <a href="/wiki/Logarithmic_space" title="Logarithmic space" class="mw-redirect">logarithmic space</a> can also be done in polynomial time it follows that if there is a logarithmic-space many-one reduction then there is also a polynomial-time many-one reduction. This type of reduction is more refined than the more usual polynomial-time many-one reductions and it allows us to distinguish more classes such as <a href="/wiki/P-complete" title="P-complete">P-complete</a>. Whether under these types of reductions the definition of NP-complete changes is still an open problem. All currently known NP-complete problems are NP-complete under log space reductions. Indeed, all currently known NP-complete problems remain NP-complete even under much weaker reductions.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> It is known, however, that <a href="/wiki/AC0" title="AC0">AC<sup>0</sup></a> reductions define a strictly smaller class than polynomial-time reductions.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Naming">Naming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=7" title="Edit section: Naming">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>According to <a href="/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a>, the name "NP-complete" was popularized by <a href="/wiki/Alfred_Aho" title="Alfred Aho">Alfred Aho</a>, <a href="/wiki/John_Hopcroft" title="John Hopcroft">John Hopcroft</a> and <a href="/wiki/Jeffrey_Ullman" title="Jeffrey Ullman">Jeffrey Ullman</a> in their celebrated textbook "The Design and Analysis of Computer Algorithms". He reports that they introduced the change in the <a href="/wiki/Galley_proofs" title="Galley proofs" class="mw-redirect">galley proofs</a> for the book (from "polynomially-complete"), in accordance with the results of a poll he had conducted of the <a href="/wiki/Theoretical_computer_science" title="Theoretical computer science">theoretical computer science</a> community.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup> Other suggestions made in the poll<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup> included "<a href="/wiki/Labours_of_Hercules" title="Labours of Hercules">Herculean</a>", "formidable", <a href="/wiki/Kenneth_Steiglitz" title="Kenneth Steiglitz">Steiglitz</a>'s "hard-boiled" in honor of Cook, and Shen Lin's acronym "PET", which stood for "probably exponential time", but depending on which way the <a href="/wiki/P_versus_NP_problem" title="P versus NP problem">P versus NP problem</a> went, could stand for "provably exponential time" or "previously exponential time".<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Common_misconceptions">Common misconceptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=8" title="Edit section: Common misconceptions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following misconceptions are frequent.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup></p>
+<ul>
+<li><i>"NP-complete problems are the most difficult known problems."</i> Since NP-complete problems are in NP, their running time is at most exponential. However, some problems provably require more time, for example <a href="/wiki/Presburger_arithmetic" title="Presburger arithmetic">Presburger arithmetic</a>.</li>
+<li><i>"NP-complete problems are difficult because there are so many different solutions."</i> On the one hand, there are many problems that have a solution space just as large, but can be solved in polynomial time (for example <a href="/wiki/Minimum_spanning_tree" title="Minimum spanning tree">minimum spanning tree</a>). On the other hand, there are NP-problems with at most one solution that are NP-hard under randomized polynomial-time reduction (see <a href="/wiki/Valiant%E2%80%93Vazirani_theorem" title="Valiant–Vazirani theorem">Valiant–Vazirani theorem</a>).</li>
+<li><i>"Solving NP-complete problems requires exponential time."</i> First, this would imply P ≠ NP, which is still an unsolved question. Further, some NP-complete problems actually have algorithms running in superpolynomial, but subexponential time. For example, the <a href="/wiki/Independent_set_problem" title="Independent set problem" class="mw-redirect">Independent set</a> and <a href="/wiki/Dominating_set_problem" title="Dominating set problem" class="mw-redirect">Dominating set</a> problems are NP-complete when restricted to <a href="/wiki/Planar_graph" title="Planar graph">planar graphs</a>, but can be solved in subexponential time on <a href="/wiki/Planar_graph" title="Planar graph">planar graphs</a> using the <a href="/wiki/Planar_separator_theorem" title="Planar separator theorem">planar separator theorem</a>.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>10<span>]</span></a></sup></li>
+<li><i>"All instances of an NP-complete problem are difficult."</i> Often some instances, or even most instances, may be easy to solve within polynomial time. However, unless P=NP, any polynomial-time algorithm must asymptotically be wrong on more than polynomially many of the exponentially many inputs of a certain size.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>11<span>]</span></a></sup></li>
+<li><i>"If P=NP, all cryptographic ciphers can be broken."</i> A polynomial-time problem can be very difficult to solve in practice if the polynomial's degree or constants are large enough. For example, ciphers with a fixed key length, such as <a href="/wiki/Advanced_Encryption_Standard" title="Advanced Encryption Standard">Advanced Encryption Standard</a>, can all be broken in constant time (and are thus already in P), though with current technology that constant may exceed the age of the universe.</li>
+</ul>
+<h2><span class="mw-headline" id="Properties">Properties</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=9" title="Edit section: Properties">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Viewing a <a href="/wiki/Decision_problem#Definition" title="Decision problem">decision problem</a> as a formal language in some fixed encoding, the set NPC of all NP-complete problems is <b>not closed</b> under:</p>
+<ul>
+<li><a href="/wiki/Union_(set_theory)" title="Union (set theory)">union</a></li>
+<li><a href="/wiki/Intersection" title="Intersection">intersection</a></li>
+<li><a href="/wiki/Concatenation" title="Concatenation">concatenation</a></li>
+<li><a href="/wiki/Kleene_star" title="Kleene star">Kleene star</a></li>
+</ul>
+<p>It is not known whether NPC is closed under <a href="/wiki/Complement_(complexity)" title="Complement (complexity)">complementation</a>, since NPC=<a href="/wiki/Co-NP-complete" title="Co-NP-complete">co-NPC</a> if and only if NP=<a href="/wiki/Co-NP" title="Co-NP">co-NP</a>, and whether NP=co-NP is an <a href="/wiki/Open_question" title="Open question" class="mw-redirect">open question</a>.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=10" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Almost_complete" title="Almost complete" class="mw-redirect">Almost complete</a></li>
+<li><a href="/wiki/Gadget_(computer_science)" title="Gadget (computer science)">Gadget (computer science)</a></li>
+<li><a href="/wiki/Ladner%27s_theorem" title="Ladner's theorem" class="mw-redirect">Ladner's theorem</a></li>
+<li><a href="/wiki/List_of_NP-complete_problems" title="List of NP-complete problems">List of NP-complete problems</a></li>
+<li><a href="/wiki/NP-hard" title="NP-hard" class="mw-redirect">NP-hard</a></li>
+<li><a href="/wiki/P_%3D_NP_problem" title="P = NP problem" class="mw-redirect">P = NP problem</a></li>
+<li><a href="/wiki/Strongly_NP-complete" title="Strongly NP-complete">Strongly NP-complete</a></li>
+<li><a href="/wiki/Wicked_problem" title="Wicked problem">Wicked problem</a></li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=11" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation book">J. van Leeuwen (1998). <i>Handbook of Theoretical Computer Science</i>. Elsevier. p.&#160;84. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-262-72014-0" title="Special:BookSources/0-262-72014-0">0-262-72014-0</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.au=J.+van+Leeuwen&amp;rft.aulast=J.+van+Leeuwen&amp;rft.btitle=Handbook+of+Theoretical+Computer+Science&amp;rft.date=1998&amp;rft.genre=book&amp;rft.isbn=0-262-72014-0&amp;rft.pages=84&amp;rft.pub=Elsevier&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation book">J. van Leeuwen (1998). <i>Handbook of Theoretical Computer Science</i>. Elsevier. p.&#160;80. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-262-72014-0" title="Special:BookSources/0-262-72014-0">0-262-72014-0</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.au=J.+van+Leeuwen&amp;rft.aulast=J.+van+Leeuwen&amp;rft.btitle=Handbook+of+Theoretical+Computer+Science&amp;rft.date=1998&amp;rft.genre=book&amp;rft.isbn=0-262-72014-0&amp;rft.pages=80&amp;rft.pub=Elsevier&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-GareyJohnson-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-GareyJohnson_3-0">^</a></b></span> <span class="reference-text"><span id="CITEREFGareyJohnson1979" class="citation book"><a href="/wiki/Michael_R._Garey" title="Michael R. Garey" class="mw-redirect">Garey, Michael&#160;R.</a>; <a href="/wiki/David_S._Johnson" title="David S. Johnson">Johnson, D.&#160;S.</a> (1979). <a href="/wiki/Victor_Klee" title="Victor Klee">Victor Klee</a>, ed. <i><a href="/wiki/Computers_and_Intractability:_A_Guide_to_the_Theory_of_NP-Completeness" title="Computers and Intractability: A Guide to the Theory of NP-Completeness" class="mw-redirect">Computers and Intractability: A Guide to the Theory of NP-Completeness</a></i>. A Series of Books in the Mathematical Sciences. San Francisco, Calif.: W.&#160;H.&#160;Freeman and Co. pp.&#160;x+338. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7167-1045-5" title="Special:BookSources/0-7167-1045-5">0-7167-1045-5</a>. <a href="/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a>&#160;<a rel="nofollow" class="external text" href="//www.ams.org/mathscinet-getitem?mr=519066">519066</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.aufirst=Michael%26nbsp%3BR.&amp;rft.au=Garey%2C+Michael%26nbsp%3BR.&amp;rft.au=Johnson%2C+D.%26nbsp%3BS.&amp;rft.aulast=Garey&amp;rft.btitle=Computers+and+Intractability%3A+A+Guide+to+the+Theory+of+NP-Completeness&amp;rft.date=1979&amp;rft.genre=book&amp;rft.isbn=0-7167-1045-5&amp;rft.mr=519066&amp;rft.pages=x%2B338&amp;rft.place=San+Francisco%2C+Calif.&amp;rft.pub=W.%26nbsp%3BH.%26nbsp%3BFreeman+and+Co.&amp;rft.series=A+Series+of+Books+in+the+Mathematical+Sciences&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><span id="CITEREFAgrawalAllenderRudich1998" class="citation journal"><a href="/wiki/Manindra_Agrawal" title="Manindra Agrawal">Agrawal, M.</a>; Allender, E.; <a href="/wiki/Steven_Rudich" title="Steven Rudich">Rudich, Steven</a> (1998). "Reductions in Circuit Complexity: An Isomorphism Theorem and a Gap Theorem". <i>Journal of Computer and System Sciences</i> (<a href="/wiki/Academic_Press" title="Academic Press">Academic Press</a>) <b>57</b> (2): 127–143. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1006%2Fjcss.1998.1583">10.1006/jcss.1998.1583</a>. <a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/1090-2724">1090-2724</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=Reductions+in+Circuit+Complexity%3A+An+Isomorphism+Theorem+and+a+Gap+Theorem&amp;rft.au=Agrawal%2C+M.&amp;rft.au=Allender%2C+E.&amp;rft.aufirst=M.&amp;rft.aulast=Agrawal&amp;rft.au=Rudich%2C+Steven&amp;rft.date=1998&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1006%2Fjcss.1998.1583&amp;rft.issn=1090-2724&amp;rft.issue=2&amp;rft.jtitle=Journal+of+Computer+and+System+Sciences&amp;rft.pages=127-143&amp;rft.pub=Academic+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=57" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span id="CITEREFAgrawalAllenderImpagliazzoPitassi2001" class="citation journal"><a href="/wiki/Manindra_Agrawal" title="Manindra Agrawal">Agrawal, M.</a>; Allender, E.; Impagliazzo, R.; <a href="/wiki/Toniann_Pitassi" title="Toniann Pitassi">Pitassi, T.</a>; <a href="/wiki/Steven_Rudich" title="Steven Rudich">Rudich, Steven</a> (2001). "Reducing the complexity of reductions". <i>Computational Complexity</i> (Birkhäuser Basel) <b>10</b> (2): 117–138. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1007%2Fs00037-001-8191-1">10.1007/s00037-001-8191-1</a>. <a href="/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/1016-3328">1016-3328</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=Reducing+the+complexity+of+reductions&amp;rft.au=Agrawal%2C+M.&amp;rft.au=Allender%2C+E.&amp;rft.aufirst=M.&amp;rft.au=Impagliazzo%2C+R.&amp;rft.aulast=Agrawal&amp;rft.au=Pitassi%2C+T.&amp;rft.au=Rudich%2C+Steven&amp;rft.date=2001&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1007%2Fs00037-001-8191-1&amp;rft.issn=1016-3328&amp;rft.issue=2&amp;rft.jtitle=Computational+Complexity&amp;rft.pages=117-138&amp;rft.pub=Birkh%C3%A4user+Basel&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=10" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a href="/wiki/Don_Knuth" title="Don Knuth" class="mw-redirect">Don Knuth</a>, Tracy Larrabee, and Paul M. Roberts, <i><a rel="nofollow" class="external text" href="http://tex.loria.fr/typographie/mathwriting.pdf">Mathematical Writing</a></i> § 25, <i>MAA Notes No. 14</i>, MAA, 1989 (also <a href="/wiki/Stanford_University" title="Stanford University">Stanford</a> Technical Report, 1987).</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><span id="CITEREFKnuth1974" class="citation journal">Knuth, D. F. (1974). <a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=1811130">"A terminological proposal"</a>. <i>SIGACT News</i> <b>6</b> (1): 12–18. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F1811129.1811130">10.1145/1811129.1811130</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2010-08-28</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=A+terminological+proposal&amp;rft.aufirst=D.+F.&amp;rft.au=Knuth%2C+D.+F.&amp;rft.aulast=Knuth&amp;rft.date=1974&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D1811130&amp;rft_id=info%3Adoi%2F10.1145%2F1811129.1811130&amp;rft.issue=1&amp;rft.jtitle=SIGACT+News&amp;rft.pages=12-18&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=6" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">See the poll, or <a rel="nofollow" class="external autonumber" href="http://www.cs.princeton.edu/~wayne/kleinberg-tardos/08np-complete-2x2.pdf">[1]</a>.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation news">Ball, Philip. <a rel="nofollow" class="external text" href="http://www.nature.com/news/2000/000113/full/news000113-10.html">"DNA computer helps travelling salesman"</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1038%2Fnews000113-10">10.1038/news000113-10</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.au=Ball%2C+Philip&amp;rft.aufirst=Philip&amp;rft.aulast=Ball&amp;rft.btitle=DNA+computer+helps+travelling+salesman&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.nature.com%2Fnews%2F2000%2F000113%2Ffull%2Fnews000113-10.html&amp;rft_id=info%3Adoi%2F10.1038%2Fnews000113-10&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a href="#CITEREFBern1990">Bern (1990</a>); <a href="#CITEREFDe.C4.ADnekoKlinzWoeginger2006">Deĭneko, Klinz &amp; Woeginger (2006</a>); <a href="#CITEREFDornPenninksBodlaenderFomin2005">Dorn et al. (2005</a>); <a href="#CITEREFLiptonTarjan1980">Lipton &amp; Tarjan (1980</a>).</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation journal">Hemaspaandra, L. A.; Williams, R. (2012). "SIGACT News Complexity Theory Column 76". <i>ACM SIGACT News</i> <b>43</b> (4): 70. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F2421119.2421135">10.1145/2421119.2421135</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=SIGACT+News+Complexity+Theory+Column+76&amp;rft.aufirst=L.+A.&amp;rft.au=Hemaspaandra%2C+L.+A.&amp;rft.aulast=Hemaspaandra&amp;rft.au=Williams%2C+R.&amp;rft.date=2012&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F2421119.2421135&amp;rft.issue=4&amp;rft.jtitle=ACM+SIGACT+News&amp;rft.pages=70&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=43" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><span id="CITEREFTalbotWelsh2006" class="citation">Talbot, John; <a href="/wiki/Dominic_Welsh" title="Dominic Welsh">Welsh, D. J. A.</a> (2006), <a rel="nofollow" class="external text" href="https://books.google.com/books?id=y_ZwupY8pzUC&amp;pg=PA57"><i>Complexity and Cryptography: An Introduction</i></a>, Cambridge University Press, p.&#160;57, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9780521617710" title="Special:BookSources/9780521617710">9780521617710</a>, <q>The question of whether NP and co-NP are equal is probably the second most important open problem in complexity theory, after the P versus NP question.</q></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.aufirst=John&amp;rft.aulast=Talbot&amp;rft.au=Talbot%2C+John&amp;rft.au=Welsh%2C+D.+J.+A.&amp;rft.btitle=Complexity+and+Cryptography%3A+An+Introduction&amp;rft.date=2006&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Dy_ZwupY8pzUC%26pg%3DPA57&amp;rft.isbn=9780521617710&amp;rft.pages=57&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=12" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="refbegin references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em;">
+<ul>
+<li><span class="citation book"><a href="/wiki/Michael_Garey" title="Michael Garey">Garey, M.R.</a>; <a href="/wiki/David_S._Johnson" title="David S. Johnson">Johnson, D.S.</a> (1979). <i><a href="/wiki/Computers_and_Intractability:_A_Guide_to_the_Theory_of_NP-Completeness" title="Computers and Intractability: A Guide to the Theory of NP-Completeness" class="mw-redirect">Computers and Intractability: A Guide to the Theory of NP-Completeness</a></i>. New York: W.H. Freeman. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-7167-1045-5" title="Special:BookSources/0-7167-1045-5">0-7167-1045-5</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.aufirst=M.R.&amp;rft.au=Garey%2C+M.R.&amp;rft.au=Johnson%2C+D.S.&amp;rft.aulast=Garey&amp;rft.btitle=Computers+and+Intractability%3A+A+Guide+to+the+Theory+of+NP-Completeness&amp;rft.date=1979&amp;rft.genre=book&amp;rft.isbn=0-7167-1045-5&amp;rft.place=New+York&amp;rft.pub=W.H.+Freeman&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> This book is a classic, developing the theory, then cataloguing <i>many</i> NP-Complete problems.</li>
+<li><span class="citation conference"><a href="/wiki/Stephen_A._Cook" title="Stephen A. Cook" class="mw-redirect">Cook, S.A.</a> (1971). "The complexity of theorem proving procedures". <i>Proceedings, Third Annual ACM Symposium on the Theory of Computing, ACM, New York</i>. pp.&#160;151–158. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F800157.805047">10.1145/800157.805047</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=The+complexity+of+theorem+proving+procedures&amp;rft.au=Cook%2C+S.A.&amp;rft.aufirst=S.A.&amp;rft.aulast=Cook&amp;rft.btitle=Proceedings%2C+Third+Annual+ACM+Symposium+on+the+Theory+of+Computing%2C+ACM%2C+New+York&amp;rft.date=1971&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1145%2F800157.805047&amp;rft.pages=151-158&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation web">Dunne, P.E. <a rel="nofollow" class="external text" href="http://www.csc.liv.ac.uk/~ped/teachadmin/COMP202/annotated_np.html">"An annotated list of selected NP-complete problems"</a>. COMP202, Dept. of Computer Science, <a href="/wiki/University_of_Liverpool" title="University of Liverpool">University of Liverpool</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2008-06-21</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.au=Dunne%2C+P.E&amp;rft.aufirst=P.E&amp;rft.aulast=Dunne&amp;rft.btitle=An+annotated+list+of+selected+NP-complete+problems&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.csc.liv.ac.uk%2F~ped%2Fteachadmin%2FCOMP202%2Fannotated_np.html&amp;rft.pub=COMP202%2C+Dept.+of+Computer+Science%2C+University+of+Liverpool&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation web">Crescenzi, P.; Kann, V.; Halldórsson, M.; <a href="/wiki/Marek_Karpinski" title="Marek Karpinski">Karpinski, M.</a>; <a href="/wiki/Gerhard_J._Woeginger" title="Gerhard J. Woeginger">Woeginger, G</a>. <a rel="nofollow" class="external text" href="http://www.nada.kth.se/~viggo/problemlist/compendium.html">"A compendium of NP optimization problems"</a>. KTH NADA, Stockholm<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-06-21</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.au=Crescenzi%2C+P.&amp;rft.aufirst=P.&amp;rft.aulast=Crescenzi&amp;rft.btitle=A+compendium+of+NP+optimization+problems&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.nada.kth.se%2F~viggo%2Fproblemlist%2Fcompendium.html&amp;rft.pub=KTH+NADA%2C+Stockholm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="display:none;font-size:100%" class="error citation-comment">Cite uses deprecated parameter <code style="color:inherit; border:inherit; padding:inherit;">|coauthors=</code> (<a href="/wiki/Help:CS1_errors#deprecated_params" title="Help:CS1 errors">help</a>)</span></li>
+<li><span class="citation web">Dahlke, K. <a rel="nofollow" class="external text" href="http://www.mathreference.com/lan-cx-np,intro.html">"NP-complete problems"</a>. <i>Math Reference Project</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2008-06-21</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=NP-complete+problems&amp;rft.au=Dahlke%2C+K&amp;rft.aufirst=K&amp;rft.aulast=Dahlke&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.mathreference.com%2Flan-cx-np%2Cintro.html&amp;rft.jtitle=Math+Reference+Project&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation web">Karlsson, R. <a rel="nofollow" class="external text" href="http://www.cs.lth.se/home/Rolf_Karlsson/bk/lect8.pdf">"Lecture 8: NP-complete problems"</a> <span style="font-size:85%;">(PDF)</span>. Dept. of Computer Science, Lund University, Sweden<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-06-21</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.aufirst=R&amp;rft.au=Karlsson%2C+R&amp;rft.aulast=Karlsson&amp;rft.btitle=Lecture+8%3A+NP-complete+problems&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.cs.lth.se%2Fhome%2FRolf_Karlsson%2Fbk%2Flect8.pdf&amp;rft.pub=Dept.+of+Computer+Science%2C+Lund+University%2C+Sweden&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template"><span style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot"><span title="&#160;since October 2010">dead link</span></a></i>]</span></sup></li>
+<li><span class="citation web">Sun, H.M. <a rel="nofollow" class="external text" href="http://is.cs.nthu.edu.tw/course/2008Spring/cs431102/hmsunCh08.ppt">"The theory of NP-completeness"</a> <span style="font-size:85%;">(PPT)</span>. Information Security Laboratory, Dept. of Computer Science, <a href="/wiki/National_Tsing_Hua_University" title="National Tsing Hua University">National Tsing Hua University</a>, Hsinchu City, Taiwan<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-06-21</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.aufirst=H.M&amp;rft.aulast=Sun&amp;rft.au=Sun%2C+H.M&amp;rft.btitle=The+theory+of+NP-completeness&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fis.cs.nthu.edu.tw%2Fcourse%2F2008Spring%2Fcs431102%2FhmsunCh08.ppt&amp;rft.pub=Information+Security+Laboratory%2C+Dept.+of+Computer+Science%2C+National+Tsing+Hua+University%2C+Hsinchu+City%2C+Taiwan&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation web">Jiang, J.R. <a rel="nofollow" class="external text" href="http://www.csie.ncu.edu.tw/%7Ejrjiang/alg2006/NPC-3.ppt">"The theory of NP-completeness"</a> <span style="font-size:85%;">(PPT)</span>. Dept. of Computer Science and Information Engineering, <a href="/wiki/National_Central_University" title="National Central University">National Central University</a>, Jhongli City, Taiwan<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-06-21</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.aufirst=J.R&amp;rft.au=Jiang%2C+J.R&amp;rft.aulast=Jiang&amp;rft.btitle=The+theory+of+NP-completeness&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.csie.ncu.edu.tw%2F%257Ejrjiang%2Falg2006%2FNPC-3.ppt&amp;rft.pub=Dept.+of+Computer+Science+and+Information+Engineering%2C+National+Central+University%2C+Jhongli+City%2C+Taiwan&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation book"><a href="/wiki/Thomas_H._Cormen" title="Thomas H. Cormen">Cormen, T.H.</a>; <a href="/wiki/Charles_E._Leiserson" title="Charles E. Leiserson">Leiserson, C.E.</a>, <a href="/wiki/Ronald_L._Rivest" title="Ronald L. Rivest" class="mw-redirect">Rivest, R.L.</a>; <a href="/wiki/Clifford_Stein" title="Clifford Stein">Stein, C.</a> (2001). <i><a href="/wiki/Introduction_to_Algorithms" title="Introduction to Algorithms">Introduction to Algorithms</a></i> (2nd ed.). MIT Press and McGraw-Hill. Chapter 34: NP–Completeness, pp. 966–1021. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-262-03293-7" title="Special:BookSources/0-262-03293-7">0-262-03293-7</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.au=Cormen%2C+T.H.&amp;rft.aufirst=T.H.&amp;rft.aulast=Cormen&amp;rft.btitle=Introduction+to+Algorithms&amp;rft.date=2001&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=0-262-03293-7&amp;rft.pages=Chapter+34%3A+NP-Completeness%2C+pp.+966-1021&amp;rft.pub=MIT+Press+and+McGraw-Hill&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="display:none;font-size:100%" class="error citation-comment">Cite uses deprecated parameter <code style="color:inherit; border:inherit; padding:inherit;">|coauthors=</code> (<a href="/wiki/Help:CS1_errors#deprecated_params" title="Help:CS1 errors">help</a>)</span></li>
+<li><span class="citation book"><a href="/wiki/Michael_Sipser" title="Michael Sipser">Sipser, M.</a> (1997). <i>Introduction to the Theory of Computation</i>. PWS Publishing. Sections 7.4–7.5 (NP–completeness, Additional NP–complete Problems), pp. 248–271. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-534-94728-X" title="Special:BookSources/0-534-94728-X">0-534-94728-X</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.aufirst=M.&amp;rft.aulast=Sipser&amp;rft.au=Sipser%2C+M.&amp;rft.btitle=Introduction+to+the+Theory+of+Computation&amp;rft.date=1997&amp;rft.genre=book&amp;rft.isbn=0-534-94728-X&amp;rft.pages=Sections+7.4-7.5+%28NP-completeness%2C+Additional+NP-complete+Problems%29%2C+pp.+248-271&amp;rft.pub=PWS+Publishing&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation book"><a href="/wiki/Christos_Papadimitriou" title="Christos Papadimitriou">Papadimitriou, C.</a> (1994). <i>Computational Complexity</i> (1st ed.). Addison Wesley. Chapter 9 (NP–complete problems), pp. 181–218. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-53082-1" title="Special:BookSources/0-201-53082-1">0-201-53082-1</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.aufirst=C.&amp;rft.aulast=Papadimitriou&amp;rft.au=Papadimitriou%2C+C.&amp;rft.btitle=Computational+Complexity&amp;rft.date=1994&amp;rft.edition=1st&amp;rft.genre=book&amp;rft.isbn=0-201-53082-1&amp;rft.pages=Chapter+9+%28NP-complete+problems%29%2C+pp.+181-218&amp;rft.pub=Addison+Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.ics.uci.edu/~eppstein/cgt/hard.html">Computational Complexity of Games and Puzzles</a></li>
+<li><a rel="nofollow" class="external text" href="http://arxiv.org/abs/cs.CC/0210020">Tetris is Hard, Even to Approximate</a></li>
+<li><a rel="nofollow" class="external text" href="http://for.mat.bham.ac.uk/R.W.Kaye/minesw/ordmsw.htm">Minesweeper is NP-complete!</a></li>
+<li><span id="CITEREFBern1990" class="citation journal">Bern, Marshall (1990). "Faster exact algorithms for Steiner trees in planar networks". <i>Networks</i> <b>20</b> (1): 109–120. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1002%2Fnet.3230200110">10.1002/net.3230200110</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=Faster+exact+algorithms+for+Steiner+trees+in+planar+networks&amp;rft.au=Bern%2C+Marshall&amp;rft.aufirst=Marshall&amp;rft.aulast=Bern&amp;rft.date=1990&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1002%2Fnet.3230200110&amp;rft.issue=1&amp;rft.jtitle=Networks&amp;rft.pages=109-120&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=20" class="Z3988"><span style="display:none;">&#160;</span></span>.</li>
+<li><span id="CITEREFDe.C4.ADnekoKlinzWoeginger2006" class="citation journal">Deĭneko, Vladimir G.; Klinz, Bettina; <a href="/wiki/Gerhard_J._Woeginger" title="Gerhard J. Woeginger">Woeginger, Gerhard J.</a> (2006). "Exact algorithms for the Hamiltonian cycle problem in planar graphs". <i>Operations Research Letters</i> <b>34</b> (3): 269–274. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2Fj.orl.2005.04.013">10.1016/j.orl.2005.04.013</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=Exact+algorithms+for+the+Hamiltonian+cycle+problem+in+planar+graphs&amp;rft.au=De%C4%ADneko%2C+Vladimir+G.&amp;rft.aufirst=Vladimir+G.&amp;rft.au=Klinz%2C+Bettina&amp;rft.aulast=De%C4%ADneko&amp;rft.au=Woeginger%2C+Gerhard+J.&amp;rft.date=2006&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2Fj.orl.2005.04.013&amp;rft.issue=3&amp;rft.jtitle=Operations+Research+Letters&amp;rft.pages=269-274&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=34" class="Z3988"><span style="display:none;">&#160;</span></span>.</li>
+<li><span id="CITEREFDornPenninkxBodlaenderFomin2005" class="citation book">Dorn, Frederic; Penninkx, Eelko; <a href="/wiki/Hans_L._Bodlaender" title="Hans L. Bodlaender">Bodlaender, Hans L.</a>; Fomin, Fedor V. (2005). "Efficient Exact Algorithms on Planar Graphs: Exploiting Sphere Cut Branch Decompositions". <i>Proc. 13th European Symposium on Algorithms (ESA '05)</i>. Lecture Notes in Computer Science <b>3669</b>. Springer-Verlag. pp.&#160;95–106. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1007%2F11561071_11">10.1007/11561071_11</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-540-29118-3" title="Special:BookSources/978-3-540-29118-3">978-3-540-29118-3</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=Efficient+Exact+Algorithms+on+Planar+Graphs%3A+Exploiting+Sphere+Cut+Branch+Decompositions&amp;rft.au=Bodlaender%2C+Hans+L.&amp;rft.au=Dorn%2C+Frederic&amp;rft.aufirst=Frederic&amp;rft.au=Fomin%2C+Fedor+V.&amp;rft.aulast=Dorn&amp;rft.au=Penninkx%2C+Eelko&amp;rft.btitle=Proc.+13th+European+Symposium+on+Algorithms+%28ESA+%2705%29&amp;rft.date=2005&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1007%2F11561071_11&amp;rft.isbn=978-3-540-29118-3&amp;rft.pages=95-106&amp;rft.pub=Springer-Verlag&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.volume=3669" class="Z3988"><span style="display:none;">&#160;</span></span>.</li>
+<li><span id="CITEREFLiptonTarjan1980" class="citation journal"><a href="/wiki/Richard_J._Lipton" title="Richard J. Lipton">Lipton, Richard J.</a>; <a href="/wiki/Robert_Tarjan" title="Robert Tarjan">Tarjan, Robert E.</a> (1980). "Applications of a planar separator theorem". <i><a href="/wiki/SIAM_Journal_on_Computing" title="SIAM Journal on Computing">SIAM Journal on Computing</a></i> <b>9</b> (3): 615–627. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1137%2F0209046">10.1137/0209046</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ANP-completeness&amp;rft.atitle=Applications+of+a+planar+separator+theorem&amp;rft.aufirst=Richard+J.&amp;rft.aulast=Lipton&amp;rft.au=Lipton%2C+Richard+J.&amp;rft.au=Tarjan%2C+Robert+E.&amp;rft.date=1980&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1137%2F0209046&amp;rft.issue=3&amp;rft.jtitle=SIAM+Journal+on+Computing&amp;rft.pages=615-627&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=9" class="Z3988"><span style="display:none;">&#160;</span></span>.</li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=NP-completeness&amp;action=edit&amp;section=13" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="refbegin" style="">
+<ul>
+<li><a href="/wiki/Scott_Aaronson" title="Scott Aaronson">Scott Aaronson</a>, <i><a rel="nofollow" class="external text" href="http://arxiv.org/abs/quant-ph/0502072">NP-complete Problems and Physical Reality</a></i>, ACM <a href="/wiki/SIGACT" title="SIGACT" class="mw-redirect">SIGACT</a> News, Vol. 36, No. 1. (March 2005), pp.&#160;30–52.</li>
+<li><a href="/wiki/Lance_Fortnow" title="Lance Fortnow">Lance Fortnow</a>, <i><a rel="nofollow" class="external text" href="http://people.cs.uchicago.edu/~fortnow/papers/pnp-cacm.pdf">The status of the P versus NP problem</a></i>, <a href="/wiki/Commun._ACM" title="Commun. ACM" class="mw-redirect">Commun. ACM</a>, Vol. 52, No. 9. (2009), pp.&#160;78–86.</li>
+</ul>
+</div>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:ComplexityClasses" title="Template:ComplexityClasses"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:ComplexityClasses" title="Template talk:ComplexityClasses"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:ComplexityClasses&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%">Important <a href="/wiki/Complexity_class" title="Complexity class">complexity classes</a> (<a href="/wiki/List_of_complexity_classes" title="List of complexity classes">more</a>)</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Considered feasible</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/DLOGTIME" title="DLOGTIME">DLOGTIME</a></li>
+<li><a href="/wiki/AC0" title="AC0">AC<sup>0</sup></a></li>
+<li><a href="/wiki/ACC0" title="ACC0">ACC<sup>0</sup></a></li>
+<li><a href="/wiki/TC0" title="TC0">TC<sup>0</sup></a></li>
+<li><a href="/wiki/L_(complexity)" title="L (complexity)">L</a></li>
+<li><a href="/wiki/SL_(complexity)" title="SL (complexity)">SL</a></li>
+<li><a href="/wiki/RL_(complexity)" title="RL (complexity)">RL</a></li>
+<li><a href="/wiki/NL_(complexity)" title="NL (complexity)">NL</a></li>
+<li><a href="/wiki/NC_(complexity)" title="NC (complexity)">NC</a></li>
+<li><a href="/wiki/SC_(complexity)" title="SC (complexity)">SC</a></li>
+<li><a href="/wiki/CC_(complexity)" title="CC (complexity)">CC</a></li>
+<li><a href="/wiki/P_(complexity)" title="P (complexity)">P</a>
+<ul>
+<li><a href="/wiki/P-complete" title="P-complete">P-complete</a></li>
+</ul>
+</li>
+<li><a href="/wiki/ZPP_(complexity)" title="ZPP (complexity)">ZPP</a></li>
+<li><a href="/wiki/RP_(complexity)" title="RP (complexity)">RP</a></li>
+<li><a href="/wiki/BPP_(complexity)" title="BPP (complexity)">BPP</a></li>
+<li><a href="/wiki/BQP" title="BQP">BQP</a></li>
+<li><a href="/wiki/APX" title="APX">APX</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Suspected infeasible</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/UP_(complexity)" title="UP (complexity)">UP</a></li>
+<li><a href="/wiki/NP_(complexity)" title="NP (complexity)">NP</a>
+<ul>
+<li><a href="/wiki/NP-complete" title="NP-complete" class="mw-redirect">NP-complete</a></li>
+<li><a href="/wiki/NP-hard" title="NP-hard" class="mw-redirect">NP-hard</a></li>
+<li><a href="/wiki/Co-NP" title="Co-NP">co-NP</a></li>
+<li><a href="/wiki/Co-NP-complete" title="Co-NP-complete">co-NP-complete</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Arthur%E2%80%93Merlin_protocol" title="Arthur–Merlin protocol">AM</a></li>
+<li><a href="/wiki/PH_(complexity)" title="PH (complexity)">PH</a></li>
+<li><a href="/wiki/Parity_P" title="Parity P">⊕P</a></li>
+<li><a href="/wiki/PP_(complexity)" title="PP (complexity)">PP</a></li>
+<li><a href="/wiki/Sharp-P" title="Sharp-P">#P</a>
+<ul>
+<li><a href="/wiki/Sharp-P-complete" title="Sharp-P-complete">#P-complete</a></li>
+</ul>
+</li>
+<li><a href="/wiki/IP_(complexity)" title="IP (complexity)">IP</a></li>
+<li><a href="/wiki/PSPACE" title="PSPACE">PSPACE</a>
+<ul>
+<li><a href="/wiki/PSPACE-complete" title="PSPACE-complete">PSPACE-complete</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Considered infeasible</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/EXPTIME" title="EXPTIME">EXPTIME</a></li>
+<li><a href="/wiki/NEXPTIME" title="NEXPTIME">NEXPTIME</a></li>
+<li><a href="/wiki/EXPSPACE" title="EXPSPACE">EXPSPACE</a></li>
+<li><a href="/wiki/ELEMENTARY" title="ELEMENTARY">ELEMENTARY</a></li>
+<li><a href="/wiki/PR_(complexity)" title="PR (complexity)">PR</a></li>
+<li><a href="/wiki/R_(complexity)" title="R (complexity)">R</a></li>
+<li><a href="/wiki/RE_(complexity)" title="RE (complexity)">RE</a></li>
+<li><a href="/wiki/ALL_(complexity)" title="ALL (complexity)">ALL</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Class hierarchies</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Polynomial_hierarchy" title="Polynomial hierarchy">Polynomial hierarchy</a></li>
+<li><a href="/wiki/Exponential_hierarchy" title="Exponential hierarchy">Exponential hierarchy</a></li>
+<li><a href="/wiki/Grzegorczyk_hierarchy" title="Grzegorczyk hierarchy">Grzegorczyk hierarchy</a></li>
+<li><a href="/wiki/Arithmetical_hierarchy" title="Arithmetical hierarchy">Arithmetical hierarchy</a></li>
+<li><a href="/wiki/Boolean_hierarchy" title="Boolean hierarchy">Boolean hierarchy</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Families of classes</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/DTIME" title="DTIME">DTIME</a></li>
+<li><a href="/wiki/NTIME" title="NTIME">NTIME</a></li>
+<li><a href="/wiki/DSPACE" title="DSPACE">DSPACE</a></li>
+<li><a href="/wiki/NSPACE" title="NSPACE">NSPACE</a></li>
+<li><a href="/wiki/Probabilistically_checkable_proof" title="Probabilistically checkable proof">Probabilistically checkable proof</a></li>
+<li><a href="/wiki/Interactive_proof_system" title="Interactive proof system">Interactive proof system</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1099
+Cached time: 20150919120342
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.393 seconds
+Real time usage: 0.551 seconds
+Preprocessor visited node count: 1976/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 62408/2097152 bytes
+Template argument size: 691/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 2/500
+Lua time usage: 0.147/10.000 seconds
+Lua memory usage: 3.72 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  421.337      1 - -total
+ 29.03%  122.317      1 - Template:Reflist
+ 14.70%   61.946      1 - Template:Confusing
+ 13.98%   58.921      8 - Template:Cite_book
+  9.52%   40.107      1 - Template:Ambox
+  8.55%   36.012      7 - Template:Cite_journal
+  6.04%   25.444      6 - Template:Cite_web
+  5.17%   21.777      1 - Template:Dead_link
+  4.53%   19.083      4 - Template:Harvtxt
+  4.33%   18.247      1 - Template:ComplexityClasses
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:23385892-0!*!0!!en!4!*!math=0 and timestamp 20150919120341 and revision id 681771025
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=NP-completeness&amp;oldid=681771025">https://en.wikipedia.org/w/index.php?title=NP-completeness&amp;oldid=681771025</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:1971_in_computer_science" title="Category:1971 in computer science">1971 in computer science</a></li><li><a href="/wiki/Category:NP-complete_problems" title="Category:NP-complete problems">NP-complete problems</a></li><li><a href="/wiki/Category:Complexity_classes" title="Category:Complexity classes">Complexity classes</a></li><li><a href="/wiki/Category:Mathematical_optimization" title="Category:Mathematical optimization">Mathematical optimization</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_inconsistent_citation_formats" title="Category:Articles with inconsistent citation formats">Articles with inconsistent citation formats</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_July_2012" title="Category:Wikipedia articles needing clarification from July 2012">Wikipedia articles needing clarification from July 2012</a></li><li><a href="/wiki/Category:All_Wikipedia_articles_needing_clarification" title="Category:All Wikipedia articles needing clarification">All Wikipedia articles needing clarification</a></li><li><a href="/wiki/Category:Pages_containing_cite_templates_with_deprecated_parameters" title="Category:Pages containing cite templates with deprecated parameters">Pages containing cite templates with deprecated parameters</a></li><li><a href="/wiki/Category:All_articles_with_dead_external_links" title="Category:All articles with dead external links">All articles with dead external links</a></li><li><a href="/wiki/Category:Articles_with_dead_external_links_from_October_2010" title="Category:Articles with dead external links from October 2010">Articles with dead external links from October 2010</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=NP-completeness&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=NP-completeness" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/NP-completeness"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:NP-completeness"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/NP-completeness" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=NP-completeness&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=NP-completeness&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/NP-completeness" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/NP-completeness" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=NP-completeness&amp;oldid=681771025" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=NP-completeness&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q215206" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=NP-completeness&amp;id=681771025" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=NP-completeness">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=NP-completeness&amp;oldid=681771025&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=NP-completeness&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D9%85%D8%B3%D8%A3%D9%84%D8%A9_%D9%83%D8%AB%D9%8A%D8%B1%D8%A9_%D8%AD%D8%AF%D9%88%D8%AF_%D8%BA%D9%8A%D8%B1_%D9%82%D8%B7%D8%B9%D9%8A%D8%A9_%D9%83%D8%A7%D9%85%D9%84%D8%A9" title="مسألة كثيرة حدود غير قطعية كاملة – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/NP-complet" title="NP-complet – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/NP-%C3%BAplnost" title="NP-úplnost – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="//da.wikipedia.org/wiki/NP-komplet" title="NP-komplet – Danish" lang="da" hreflang="da">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/NP-Vollst%C3%A4ndigkeit" title="NP-Vollständigkeit – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/NP-completo" title="NP-completo – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D8%A7%D9%86%E2%80%8C%D9%BE%DB%8C_%DA%A9%D8%A7%D9%85%D9%84" title="ان‌پی کامل – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Probl%C3%A8me_NP-complet" title="Problème NP-complet – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="//ko.wikipedia.org/wiki/NP-%EC%99%84%EC%A0%84" title="NP-완전 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/NP-completo" title="NP-completo – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/NP-volledig" title="NP-volledig – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/NP%E5%AE%8C%E5%85%A8%E5%95%8F%E9%A1%8C" title="NP完全問題 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="//no.wikipedia.org/wiki/NP-komplett" title="NP-komplett – Norwegian" lang="no" hreflang="no">Norsk bokmål</a></li><li class="interlanguage-link interwiki-nn"><a href="//nn.wikipedia.org/wiki/NP-komplett" title="NP-komplett – Norwegian Nynorsk" lang="nn" hreflang="nn">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Problem_NP-zupe%C5%82ny" title="Problem NP-zupełny – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/NP-completo" title="NP-completo – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/NP-%D0%BF%D0%BE%D0%BB%D0%BD%D0%B0%D1%8F_%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" title="NP-полная задача – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="//simple.wikipedia.org/wiki/NP-complete" title="NP-complete – Simple English" lang="simple" hreflang="simple">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="//sk.wikipedia.org/wiki/NP-%C3%BApln%C3%BD_probl%C3%A9m" title="NP-úplný problém – Slovak" lang="sk" hreflang="sk">Slovenčina</a></li><li class="interlanguage-link interwiki-sr"><a href="//sr.wikipedia.org/wiki/%D0%9D%D0%9F-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D1%82%D0%BD%D0%B8_%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D0%B8" title="НП-комплетни проблеми – Serbian" lang="sr" hreflang="sr">Српски / srpski</a></li><li class="interlanguage-link interwiki-sh"><a href="//sh.wikipedia.org/wiki/NP-kompletni_problemi" title="NP-kompletni problemi – Serbo-Croatian" lang="sh" hreflang="sh">Srpskohrvatski / српскохрватски</a></li><li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/NP-t%C3%A4ydellisyys" title="NP-täydellisyys – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/NP-fullst%C3%A4ndig" title="NP-fullständig – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-th"><a href="//th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B8%9E%E0%B8%B5%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%9A%E0%B8%B9%E0%B8%A3%E0%B8%93%E0%B9%8C" title="เอ็นพีบริบูรณ์ – Thai" lang="th" hreflang="th">ไทย</a></li><li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/NP-%D0%BF%D0%BE%D0%B2%D0%BD%D0%B0_%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0" title="NP-повна задача – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="//vi.wikipedia.org/wiki/NP-%C4%91%E1%BA%A7y_%C4%91%E1%BB%A7" title="NP-đầy đủ – Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/NP%E5%AE%8C%E5%85%A8" title="NP完全 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q215206#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 19 September 2015, at 11:53.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=NP-completeness&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":109,"wgHostname":"mw1043"});
+} );</script>
+	</body>
+</html>

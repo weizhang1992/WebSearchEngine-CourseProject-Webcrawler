@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Acceptance test-driven development - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Acceptance_test-driven_development","wgTitle":"Acceptance test-driven development","wgCurRevisionId":677147053,"wgRevisionId":677147053,"wgArticleId":41969386,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Software development philosophies","Software testing","Business analysis"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Acceptance_test-driven_development","wgRelevantArticleId":41969386,"wgIsProbablyEditable":!0,
+"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"ATDD","wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgInternalRedirectTargetUrl":"/wiki/Acceptance_test-driven_development","wgWikibaseItemId":"Q16001539","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.action.view.redirect","mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Acceptance_test-driven_development" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Acceptance_test-driven_development" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Acceptance_test-driven_development skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Acceptance test-driven development</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from <a href="/w/index.php?title=ATDD&amp;redirect=no" title="ATDD">ATDD</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="vertical-navbox" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%">
+<tr>
+<th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em"><a href="/wiki/Software_development_process" title="Software development process">Software development process</a></th>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: #e7c6a5">Core activities</th>
+</tr>
+<tr>
+<td class="hlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Requirements_analysis" title="Requirements analysis">Requirements</a></li>
+<li><a href="/wiki/Software_design" title="Software design">Design</a></li>
+<li><a href="/wiki/Software_construction" title="Software construction">Construction</a></li>
+<li><a href="/wiki/Software_testing" title="Software testing">Testing</a></li>
+<li><a href="/wiki/Debugging" title="Debugging">Debugging</a></li>
+<li><a href="/wiki/Software_deployment" title="Software deployment">Deployment</a></li>
+<li><a href="/wiki/Software_maintenance" title="Software maintenance">Maintenance</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: #e7c6a5">Paradigms and models</th>
+</tr>
+<tr>
+<td class="hlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Software_engineering" title="Software engineering">Software engineering</a></li>
+<li><a href="/wiki/Waterfall_model" title="Waterfall model">Waterfall</a></li>
+<li><a href="/wiki/Software_prototyping" title="Software prototyping">Prototyping</a></li>
+<li><a href="/wiki/Incremental_build_model" title="Incremental build model">Incremental</a></li>
+<li><a href="/wiki/V-Model_(software_development)" title="V-Model (software development)">V-Model</a></li>
+<li><a href="/wiki/Dual_Vee_Model" title="Dual Vee Model">Dual Vee Model</a></li>
+<li><a href="/wiki/Spiral_model" title="Spiral model">Spiral</a></li>
+<li><a href="/wiki/Iterative_and_incremental_development" title="Iterative and incremental development">IID</a></li>
+<li><a href="/wiki/Agile_software_development" title="Agile software development">Agile</a></li>
+<li><a href="/wiki/Lean_software_development" title="Lean software development">Lean</a></li>
+<li><a href="/wiki/DevOps" title="DevOps">DevOps</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: #e7c6a5"><a href="/wiki/Software_development_methodology" title="Software development methodology" class="mw-redirect">Methodologies</a> and frameworks</th>
+</tr>
+<tr>
+<td class="hlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Cleanroom_software_engineering" title="Cleanroom software engineering">Cleanroom</a></li>
+<li><a href="/wiki/Team_software_process" title="Team software process">TSP</a></li>
+<li><a href="/wiki/Personal_software_process" title="Personal software process">PSP</a></li>
+<li><a href="/wiki/Rapid_application_development" title="Rapid application development">RAD</a></li>
+<li><a href="/wiki/Dynamic_systems_development_method" title="Dynamic systems development method">DSDM</a></li>
+<li><a href="/wiki/Microsoft_Solutions_Framework" title="Microsoft Solutions Framework">MSF</a></li>
+<li><a href="/wiki/Scrum_(software_development)" title="Scrum (software development)">Scrum</a></li>
+<li><a href="/wiki/Kanban_(development)" title="Kanban (development)">Kanban</a></li>
+<li><a href="/wiki/Unified_Process" title="Unified Process">UP</a></li>
+<li><a href="/wiki/Extreme_programming" title="Extreme programming">XP</a></li>
+<li><a href="/wiki/Test-driven_development" title="Test-driven development">TDD</a></li>
+<li><a href="/wiki/ATDD" title="ATDD" class="mw-redirect">ATDD</a></li>
+<li><a href="/wiki/Behavior-driven_development" title="Behavior-driven development">BDD</a></li>
+<li><a href="/wiki/Feature-driven_development" title="Feature-driven development">FDD</a></li>
+<li><a href="/wiki/Domain-driven_design" title="Domain-driven design">DDD</a></li>
+<li><a href="/wiki/Model-driven_development" title="Model-driven development" class="mw-redirect">MDD</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: #e7c6a5">Supporting disciplines</th>
+</tr>
+<tr>
+<td class="hlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Software_configuration_management" title="Software configuration management">Configuration management</a></li>
+<li><a href="/wiki/Software_documentation" title="Software documentation">Documentation</a></li>
+<li><a href="/wiki/Software_quality_assurance" title="Software quality assurance">Software Quality assurance (SQA)</a></li>
+<li><a href="/wiki/Software_project_management" title="Software project management">Project management</a></li>
+<li><a href="/wiki/User_experience" title="User experience">User experience</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: #e7c6a5"><a href="/wiki/Programming_tool" title="Programming tool">Tools</a></th>
+</tr>
+<tr>
+<td class="hlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Compiler" title="Compiler">Compiler</a></li>
+<li><a href="/wiki/Debugger" title="Debugger">Debugger</a></li>
+<li><a href="/wiki/Profiling_(computer_programming)" title="Profiling (computer programming)">Profiler</a></li>
+<li><a href="/wiki/Graphical_user_interface_builder" title="Graphical user interface builder">GUI designer</a></li>
+<li><a href="/wiki/UML_tools" title="UML tools" class="mw-redirect">Modeling</a></li>
+<li><a href="/wiki/Integrated_development_environment" title="Integrated development environment">IDE</a></li>
+<li><a href="/wiki/Build_automation" title="Build automation">Build automation</a></li>
+<li><a href="/wiki/Category:Software_testing_tools" title="Category:Software testing tools">Testing</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: #e7c6a5">Standards and BOKs</th>
+</tr>
+<tr>
+<td class="hlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/CMMI" title="CMMI" class="mw-redirect">CMMI</a></li>
+<li><a href="/wiki/IEEE_Standards_Association" title="IEEE Standards Association">IEEE standards</a></li>
+<li><a href="/wiki/ISO_9001" title="ISO 9001" class="mw-redirect">ISO 9001</a></li>
+<li><a href="/wiki/ISO/IEC_JTC_1/SC_7" title="ISO/IEC JTC 1/SC 7">ISO/IEC standards</a></li>
+<li><a href="/wiki/SWEBOK" title="SWEBOK" class="mw-redirect">SWEBOK</a></li>
+<li><a href="/wiki/PMBOK" title="PMBOK" class="mw-redirect">PMBOK</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Software_development_process" title="Template:Software development process"><span title="View this template">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Software_development_process" title="Template talk:Software development process"><span title="Discuss this template">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Software_development_process&amp;action=edit"><span title="Edit this template">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p><b>Acceptance Test-Driven Development (ATDD)</b> is a development methodology based on communication between the business customers, the developers, and the testers.<sup id="cite_ref-Pugh11_1-0" class="reference"><a href="#cite_note-Pugh11-1"><span>[</span>1<span>]</span></a></sup> ATDD encompasses many of the same practices as <a href="/wiki/Specification_by_example" title="Specification by example">Specification by Example</a>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup> <a href="/wiki/Behavior-driven_development" title="Behavior-driven development">Behavior Driven Development</a> (BDD),<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> Example-Driven Development (EDD),<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup> and Story Test-Driven Development (SDD).<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup> All these processes aid developers and testers in understanding the customer’s needs prior to implementation and allow customers to be able to converse in their own domain language.</p>
+<p>ATDD is closely related to <a href="/wiki/Test-driven_development" title="Test-driven development">Test-Driven Development</a>[TDD].<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup> It differs by the emphasis on developer-tester-business customer collaboration. ATDD encompasses <a href="/wiki/Acceptance_testing" title="Acceptance testing">acceptance testing</a>, but highlights writing acceptance tests before developers begin coding.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Creation"><span class="tocnumber">1.1</span> <span class="toctext">Creation</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Testing_Strategy"><span class="tocnumber">1.2</span> <span class="toctext">Testing Strategy</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Acceptance_criteria_and_tests"><span class="tocnumber">2</span> <span class="toctext">Acceptance criteria and tests</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Test_format"><span class="tocnumber">2.1</span> <span class="toctext">Test format</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Complete_test"><span class="tocnumber">2.2</span> <span class="toctext">Complete test</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Test_examination"><span class="tocnumber">2.3</span> <span class="toctext">Test examination</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Another_test_example"><span class="tocnumber">2.4</span> <span class="toctext">Another test example</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Project_acceptance_tests"><span class="tocnumber">2.5</span> <span class="toctext">Project acceptance tests</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Acceptance tests are from the user’s point of view – the external view of the system.<sup id="cite_ref-Pugh11_1-1" class="reference"><a href="#cite_note-Pugh11-1"><span>[</span>1<span>]</span></a></sup> They examine externally visible effects, such as specifying the correct output of a system given a particular input. Acceptance tests can verify how the state of something changes, such as an order that goes from “paid” to “shipped”. They also can check the interactions with interfaces of other systems, such as shared databases or web services. In general, they are implementation independent, although automation of them may not be.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Creation">Creation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=2" title="Edit section: Creation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Acceptance tests are created when the requirements are analyzed and prior to coding.<sup id="cite_ref-Pugh11_1-2" class="reference"><a href="#cite_note-Pugh11-1"><span>[</span>1<span>]</span></a></sup> They can be developed collaboratively by requirement requester (product owner, business analyst, customer representative, etc.), developer, and tester. Developers implement the system using the acceptance tests. Failing tests provide quick feedback that the requirements are not being met. The tests are specified in business domain terms. The terms then form a ubiquitous language that is shared between the customers, developers, and testers.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>10<span>]</span></a></sup> Tests and requirements are interrelated. <sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>11<span>]</span></a></sup> A requirement that lacks a test may not be implemented properly. A test that does not refer to a requirement is an unneeded test. An acceptance test that is developed after implementation begins represents a new requirement.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Testing_Strategy">Testing Strategy</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=3" title="Edit section: Testing Strategy">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Acceptance tests are a part of an overall testing strategy. They are the customer tests that demonstrate the business intent of a system. Component tests are technical acceptance tests developed by an architect that specify the behavior of large modules. Unit tests are created by the developer to drive easy-to-maintain code.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>13<span>]</span></a></sup> They are often derived from acceptance tests and unit tests. Cross-functional test include usability,<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>14<span>]</span></a></sup> exploratory,<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>15<span>]</span></a></sup> and property (scaling and security).<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>16<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Acceptance_criteria_and_tests">Acceptance criteria and tests</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=4" title="Edit section: Acceptance criteria and tests">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Acceptance criteria are a description of what would be checked by a test. Given a requirement such as “As a user, I want to check out a book from the library”, an acceptance criterion might be “Verify the book is marked as checked out." An acceptance test for this requirement gives the details so that the test can be run with the same effect each time.</p>
+<h3><span class="mw-headline" id="Test_format">Test format</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=5" title="Edit section: Test format">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Acceptance tests usually follow this form:<sup id="cite_ref-Pugh11_1-3" class="reference"><a href="#cite_note-Pugh11-1"><span>[</span>1<span>]</span></a></sup></p>
+<p><b>Given (setup)</b></p>
+<dl>
+<dd>A specified state of a system</dd>
+</dl>
+<p><b>When (trigger)</b></p>
+<dl>
+<dd>An action or event occurs</dd>
+</dl>
+<p><b>Then (verification)</b></p>
+<dl>
+<dd>The state of the system has changed or an output has been produced</dd>
+</dl>
+<p>For the example requirement, the steps could be listed as:</p>
+<p><b>Given:</b></p>
+<dl>
+<dd>Book that has not been checked out</dd>
+<dd>User who is registered on the system</dd>
+</dl>
+<p><b>When:</b></p>
+<dl>
+<dd>User checks out a book</dd>
+</dl>
+<p><b>Then:</b></p>
+<dl>
+<dd>Book is marked as checked out</dd>
+</dl>
+<h3><span class="mw-headline" id="Complete_test">Complete test</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=6" title="Edit section: Complete test">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The previous steps do not include any specific example data, so that is added to complete the test:</p>
+<p><b>Given:</b></p>
+<dl>
+<dd>Book that has not been checked out</dd>
+</dl>
+<table class="wikitable">
+<tr>
+<th>Books</th>
+</tr>
+<tr>
+<td>Title</td>
+<td>Checked out</td>
+</tr>
+<tr>
+<td>Great book</td>
+<td>No</td>
+</tr>
+</table>
+<dl>
+<dd>User who is registered on the system</dd>
+</dl>
+<table class="wikitable">
+<tr>
+<th>Users</th>
+</tr>
+<tr>
+<td>Name</td>
+</tr>
+<tr>
+<td>Sam</td>
+</tr>
+</table>
+<p><b>When:</b></p>
+<dl>
+<dd>User checks out a book</dd>
+</dl>
+<table class="wikitable">
+<tr>
+<th>Checkout action</th>
+</tr>
+<tr>
+<td>User</td>
+<td>Sam</td>
+<td>Checks out</td>
+<td>Great book</td>
+</tr>
+</table>
+<p><b>Then:</b></p>
+<dl>
+<dd>Book is marked as checked out</dd>
+</dl>
+<table class="wikitable">
+<tr>
+<th>Books</th>
+</tr>
+<tr>
+<td>Title</td>
+<td>Checked out</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Great book</td>
+<td>Yes</td>
+<td>Sam</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Test_examination">Test examination</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=7" title="Edit section: Test examination">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Examination of the test with specific data usually leads to many questions. For the sample, these might be:</p>
+<ul>
+<li>What if the book is already checked out?</li>
+<li>What if the book does not exist?</li>
+<li>What if the user is not registered on the system?</li>
+<li>Is there a date that the book is due to be checked-in?</li>
+<li>How many books can a user check out?</li>
+</ul>
+<p>These questions help illuminate missing or ambiguous requirements. Additional details such as a due-date can be added to the expected result. Other acceptance tests can check that conditions such as attempting to check out a book that is already checked out produces the expected error.</p>
+<h3><span class="mw-headline" id="Another_test_example">Another test example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=8" title="Edit section: Another test example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Suppose the business customer wanted a business rule that a user could only check out one book at a time. The following test would demonstrate that:</p>
+<p><b>Scenario:</b></p>
+<p>Check that checkout business rule is enforced</p>
+<p><b>Given:</b></p>
+<dl>
+<dd>Book that has been checked out</dd>
+</dl>
+<table class="wikitable">
+<tr>
+<th>Books</th>
+</tr>
+<tr>
+<td>Title</td>
+<td>Checked out</td>
+<td>User</td>
+</tr>
+<tr>
+<td>Great book</td>
+<td>Yes</td>
+<td>Sam</td>
+</tr>
+<tr>
+<td>Another great book</td>
+<td>No</td>
+</tr>
+</table>
+<table class="wikitable">
+<tr>
+<th>Users</th>
+</tr>
+<tr>
+<td>Name</td>
+</tr>
+<tr>
+<td>Sam</td>
+</tr>
+</table>
+<p><b>When:</b></p>
+<dl>
+<dd>User checks out another book</dd>
+</dl>
+<table class="wikitable">
+<tr>
+<th>Checkout action</th>
+</tr>
+<tr>
+<td>User</td>
+<td>Sam</td>
+<td>Checks out</td>
+<td>Another great book</td>
+</tr>
+</table>
+<p><b>Then:</b></p>
+<dl>
+<dd>Error occurs</dd>
+</dl>
+<table class="wikitable">
+<tr>
+<th>Error occurred</th>
+</tr>
+<tr>
+<td>Description</td>
+</tr>
+<tr>
+<td>Violation of checkout business rule</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Project_acceptance_tests">Project acceptance tests</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=9" title="Edit section: Project acceptance tests">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In addition to acceptance tests for requirements, acceptance tests can be used on a project as a whole.<sup id="cite_ref-Pugh11_1-4" class="reference"><a href="#cite_note-Pugh11-1"><span>[</span>1<span>]</span></a></sup> For example, if this requirement was part of a library book checkout project, there could be acceptance tests for the whole project. These are often termed <a href="/wiki/SMART_criteria" title="SMART criteria">SMART objectives</a>. An example test is "When the new library system is in production, the users will be able to check books in and out three times as fast as they do today".</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=10" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Concordion" title="Concordion">Concordion</a></li>
+<li><a href="/wiki/FitNesse" title="FitNesse">FitNesse</a></li>
+<li><a href="/wiki/Robot_Framework" title="Robot Framework">Robot Framework</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=11" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Pugh11-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-Pugh11_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Pugh11_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Pugh11_1-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Pugh11_1-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-Pugh11_1-4"><sup><i><b>e</b></i></sup></a></span> <span class="reference-text"><span class="citation book">Pugh, Ken (2011). <i>Lean-Agile Acceptance Test-Driven Development: Better Software Through Collaboration</i>. Addison-Wesley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0321714084" title="Special:BookSources/978-0321714084">978-0321714084</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAcceptance+test-driven+development&amp;rft.aufirst=Ken&amp;rft.aulast=Pugh&amp;rft.au=Pugh%2C+Ken&amp;rft.btitle=Lean-Agile+Acceptance+Test-Driven+Development%3A+Better+Software+Through+Collaboration&amp;rft.date=2011&amp;rft.genre=book&amp;rft.isbn=978-0321714084&amp;rft.pub=Addison-Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Adzic, Gojko. (2009) <i>Bridging the Communication Gap: Specification by Example and Agile Acceptance Testing</i>, Neuri Limited,</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="/wiki/Gojko_Adzic" title="Gojko Adzic">Adzic, Gojko</a> (2011). <i>Specification by example: How successful teams deliver the right software</i>. Manning. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-321-27865-4" title="Special:BookSources/978-0-321-27865-4">978-0-321-27865-4</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAcceptance+test-driven+development&amp;rft.au=Adzic%2C+Gojko&amp;rft.aufirst=Gojko&amp;rft.aulast=Adzic&amp;rft.btitle=Specification+by+example%3A+How+successful+teams+deliver+the+right+software&amp;rft.date=2011&amp;rft.genre=book&amp;rft.isbn=978-0-321-27865-4&amp;rft.pub=Manning&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Chelimsky, David, Dave Astels, Zach Dennis, Aslak Hellesøy, Bryan Helmkamp, and Dan North. <i>The RSpec Book: Behaviour Driven Development with RSpec, Cucumber, and Friends.</i> The Pragmatic Bookshelf.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.exampler.com/">"Example Driven Design"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-15</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAcceptance+test-driven+development&amp;rft.btitle=Example+Driven+Design&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.exampler.com%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://industriallogic.com/papers/storytest.pdf">"Story Test-Driven Development"</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-15</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAcceptance+test-driven+development&amp;rft.btitle=Story+Test-Driven+Development&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Findustriallogic.com%2Fpapers%2Fstorytest.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">Beck, Kent. Test Driven Development: By Example. Addison-Wesley Professional, 2002.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">Melnik, Grigori, and Frank Maurer. <span class="citation web"><a rel="nofollow" class="external text" href="http://www.springerlink.com/content/34w2q2561k471175/">"Multiple Perspectives on Executable Acceptance Test-Driven Development"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-15</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAcceptance+test-driven+development&amp;rft.btitle=Multiple+Perspectives+on+Executable+Acceptance+Test-Driven+Development&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.springerlink.com%2Fcontent%2F34w2q2561k471175%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">Koskela, Lasse. (2007) Test Driven: TDD and Acceptance TDD for Java Developers. Manning Publications</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text">Evans, Eric. (2003) <i>Domain-Driven Design: Tackling Complexity in the Heart of Software</i>. Addison-Wesley Professional.</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="/wiki/Gerald_Weinberg" title="Gerald Weinberg">Weinberg, Gerald</a>; Gause, Donald (1989). <i>Exploring Requirements: Quality Before Design</i>. Dorset House. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-932633-13-7" title="Special:BookSources/0-932633-13-7">0-932633-13-7</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAcceptance+test-driven+development&amp;rft.aufirst=Gerald&amp;rft.au=Gause%2C+Donald&amp;rft.aulast=Weinberg&amp;rft.au=Weinberg%2C+Gerald&amp;rft.btitle=Exploring+Requirements%3A+Quality+Before+Design&amp;rft.date=1989&amp;rft.genre=book&amp;rft.isbn=0-932633-13-7&amp;rft.pub=Dorset+House&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text">Martin, Robert C., and Grigori Melnik.<span class="citation web"><a rel="nofollow" class="external text" href="http://www.gmelnik.com/papers/IEEE_Software_Moebius_GMelnik_RMartin.pdf">"Tests and Requirements, Requirements and Tests: A Möbius Strip"</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-04-15</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAcceptance+test-driven+development&amp;rft.btitle=Tests+and+Requirements%2C+Requirements+and+Tests%3A+A+M%C3%B6bius+Strip&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.gmelnik.com%2Fpapers%2FIEEE_Software_Moebius_GMelnik_RMartin.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">[Test-driven_development]</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text">Meszaros, Gerard, and Janice Aston. (2006) "Adding Usability Testing to an Agile Project."Agile Conference</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.satisfice.com/articles/et-article.pdf">"Exploratory Testing Explained"</a> <span style="font-size:85%;">(PDF)</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAcceptance+test-driven+development&amp;rft.btitle=Exploratory+Testing+Explained&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.satisfice.com%2Farticles%2Fet-article.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text">Meszaros, Gerard.(2007) <i>xUnit Test Patterns: Refactoring Test Code</i>. Addison-Wesley.</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit&amp;section=12" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://acceptancetestdrivendevelopment.com">Example of automation frameworks</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1036
+Cached time: 20150831231144
+Cache expiry: 2592000
+Dyanmic content: false
+CPU time usage: 0.152 seconds
+Real time usage: 0.173 seconds
+Preprocessor visited node count: 627/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 17427/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/500
+Lua time usage: 0.048/10.000 seconds
+Lua memory usage: 2.44 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  137.769      1 - -total
+ 59.65%   82.179      1 - Template:Reflist
+ 27.32%   37.643      3 - Template:Cite_book
+ 25.15%   34.651      1 - Template:Software_development_process
+ 13.63%   18.781      5 - Template:Cite_web
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:41969386-0!*!0!!en!*!* and timestamp 20150831231144 and revision id 677147053
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Acceptance_test-driven_development&amp;oldid=677147053">https://en.wikipedia.org/w/index.php?title=Acceptance_test-driven_development&amp;oldid=677147053</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Software_development_philosophies" title="Category:Software development philosophies">Software development philosophies</a></li><li><a href="/wiki/Category:Software_testing" title="Category:Software testing">Software testing</a></li><li><a href="/wiki/Category:Business_analysis" title="Category:Business analysis">Business analysis</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Acceptance+test-driven+development&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Acceptance+test-driven+development" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Acceptance_test-driven_development"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Acceptance_test-driven_development"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Acceptance_test-driven_development" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Acceptance_test-driven_development" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Acceptance_test-driven_development" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Acceptance_test-driven_development&amp;oldid=677147053" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Acceptance_test-driven_development&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q16001539" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Acceptance_test-driven_development&amp;id=677147053" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Acceptance+test-driven+development">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Acceptance+test-driven+development&amp;oldid=677147053&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Acceptance_test-driven_development&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q16001539#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 21 August 2015, at 12:32.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Acceptance_test-driven_development&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":91,"wgHostname":"mw1085"});
+} );</script>
+	</body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Quantum Turing machine - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Quantum_Turing_machine","wgTitle":"Quantum Turing machine","wgCurRevisionId":680338168,"wgRevisionId":680338168,"wgArticleId":4786555,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: Extra text","Turing machine","Quantum complexity theory"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Quantum_Turing_machine","wgRelevantArticleId":4786555,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],
+"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q765620","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Quantum_Turing_machine" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Quantum_Turing_machine&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Quantum_Turing_machine&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Quantum_Turing_machine" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Quantum_Turing_machine skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Quantum Turing machine</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="wikitable" style="float:right; width:30%; margin:0em 1em 1em 1em;">
+<caption><a href="/wiki/List_of_unsolved_problems_in_physics" title="List of unsolved problems in physics">List of unsolved problems in physics</a></caption>
+<tr>
+<td>
+<div style="padding:5px;"><i>Is a <a href="/wiki/Universal_quantum_computer" title="Universal quantum computer" class="mw-redirect">universal quantum computer</a> sufficient to <a href="/wiki/Algorithmic_efficiency" title="Algorithmic efficiency">efficiently</a> <a href="/wiki/Dynamical_simulation" title="Dynamical simulation">simulate</a> an arbitrary physical system?</i></div>
+</td>
+</tr>
+</table>
+<table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%">
+<tr>
+<th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em"><a href="/wiki/Turing_machine" title="Turing machine">Turing machines</a></th>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em">Machine</th>
+</tr>
+<tr>
+<td class="plainlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Universal_Turing_machine" title="Universal Turing machine">Universal Turing machine</a></li>
+<li><a href="/wiki/Alternating_Turing_machine" title="Alternating Turing machine">Alternating Turing machine</a></li>
+<li><strong class="selflink">Quantum Turing machine</strong></li>
+<li><a href="/wiki/Non-deterministic_Turing_machine" title="Non-deterministic Turing machine">Non-deterministic Turing machine</a></li>
+<li><a href="/wiki/Read-only_Turing_machine" title="Read-only Turing machine">Read-only Turing machine</a></li>
+<li><a href="/wiki/Read-only_right_moving_Turing_machines" title="Read-only right moving Turing machines">Read-only right moving Turing machines</a></li>
+<li><a href="/wiki/Probabilistic_Turing_machine" title="Probabilistic Turing machine">Probabilistic Turing machine</a></li>
+<li><a href="/wiki/Multitape_Turing_machine" title="Multitape Turing machine">Multitape Turing machine</a></li>
+<li><a href="/wiki/Multi-track_Turing_machine" title="Multi-track Turing machine">Multi-track Turing machine</a></li>
+<li><a href="/wiki/Turing_machine_equivalents" title="Turing machine equivalents">Turing machine equivalents</a></li>
+<li><a href="/wiki/Turing_machine_examples" title="Turing machine examples">Turing machine examples</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="navbox-abovebelow" style="padding:0.1em">Science</th>
+</tr>
+<tr>
+<td class="plainlist" style="padding:0 0.1em 0.4em">
+<ul>
+<li><a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a></li>
+<li><a href="/wiki/Category:Turing_machine" title="Category:Turing machine">Category:Turing machine</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Turing" title="Template:Turing"><span title="View this template">v</span></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:Turing&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Turing (page does not exist)"><span title="Discuss this template">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Turing&amp;action=edit"><span title="Edit this template">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>A <b>quantum Turing machine</b> (<b>QTM</b>), also a <b>universal quantum computer</b>, is an <a href="/wiki/Abstract_machine" title="Abstract machine">abstract machine</a> used to model the effect of a <a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">quantum computer</a>. It provides a very simple model which captures all of the power of quantum computation. Any <a href="/wiki/Quantum_algorithm" title="Quantum algorithm">quantum algorithm</a> can be expressed formally as a particular quantum Turing machine. Such <a href="/wiki/Turing_machines" title="Turing machines" class="mw-redirect">Turing machines</a> were first proposed in a 1985 paper written by <a href="/wiki/Oxford_University" title="Oxford University" class="mw-redirect">Oxford University</a> physicist <a href="/wiki/David_Deutsch" title="David Deutsch">David Deutsch</a> suggesting <a href="/wiki/Quantum_gate" title="Quantum gate">quantum gates</a> could function in a similar fashion to traditional digital computing <a href="/wiki/Binary_numeral_system" title="Binary numeral system" class="mw-redirect">binary</a> <a href="/wiki/Logic_gates" title="Logic gates" class="mw-redirect">logic gates</a>.<sup id="cite_ref-Deutsch1985_1-0" class="reference"><a href="#cite_note-Deutsch1985-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>Quantum Turing machines are not always used for analyzing quantum computation; the <a href="/wiki/Quantum_circuit" title="Quantum circuit">quantum circuit</a> is a more common model. These models are computationally equivalent.<sup id="cite_ref-equivalence_2-0" class="reference"><a href="#cite_note-equivalence-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>Quantum Turing machines can be related to classical and probabilistic Turing machines in a framework based on <a href="/wiki/Transition_matrix" title="Transition matrix" class="mw-redirect">transition matrices</a>, shown by <a href="/wiki/Lance_Fortnow" title="Lance Fortnow">Lance Fortnow</a>.<sup id="cite_ref-transition_3-0" class="reference"><a href="#cite_note-transition-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>Iriyama, <a href="/wiki/Masanori_Ohya" title="Masanori Ohya">Ohya</a>, and Volovich have developed a model of a Linear Quantum Turing Machine (LQTM). This is a generalization of a classical QTM that has mixed states and that allows irreversible transition functions. These allow the representation of quantum measurements without classical outcomes.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>A quantum Turing machine with <a href="/wiki/Postselection" title="Postselection">postselection</a> was defined by <a href="/wiki/Scott_Aaronson" title="Scott Aaronson">Scott Aaronson</a>, who showed that the class of polynomial time on such a machine (<a href="/wiki/PostBQP" title="PostBQP">PostBQP</a>) is equal to the classical complexity class <a href="/wiki/PP_(complexity)" title="PP (complexity)">PP</a>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Informal_sketch">Informal sketch</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Turing_machine&amp;action=edit&amp;section=1" title="Edit section: Informal sketch">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An easy way of understanding the quantum Turing machine (QTM) is that it generalizes the classical <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a> (TM) in the same way that the <a href="/wiki/Quantum_finite_automaton" title="Quantum finite automaton" class="mw-redirect">quantum finite automaton</a> (QFA) generalizes the <a href="/wiki/Deterministic_finite_automaton" title="Deterministic finite automaton">deterministic finite automaton</a> (DFA). In essence, the internal states of a classical TM are replaced by <a href="/wiki/Pure_state" title="Pure state" class="mw-redirect">pure</a> or <a href="/wiki/Mixed_state" title="Mixed state" class="mw-disambig">mixed states</a> in a Hilbert space; the transition function is replaced by a collection of <a href="/wiki/Unitary_matrix" title="Unitary matrix">unitary matricies</a> that map the Hilbert space to itself.</p>
+<p>That is, a classical Turing machine is described by a 7-<a href="/wiki/Tuple" title="Tuple">tuple</a> <img class="mwe-math-fallback-image-inline tex" alt="M = \langle Q, \Gamma, b, \Sigma, \delta, q_0, F \rangle" src="//upload.wikimedia.org/math/4/1/6/4162f55252213c9c8549b771fe5f9aa4.png" />. For a three-tape quantum Turing machine (one tape holding the input, a second tape holding intermediate calculation results, and a third tape holding output),</p>
+<ul>
+<li>The set of states <img class="mwe-math-fallback-image-inline tex" alt="Q" src="//upload.wikimedia.org/math/f/0/9/f09564c9ca56850d4cd6b3319e541aee.png" /> is replaced by a <a href="/wiki/Hilbert_space" title="Hilbert space">Hilbert space</a>.</li>
+<li>The tape alphabet symbols <img class="mwe-math-fallback-image-inline tex" alt="\Gamma" src="//upload.wikimedia.org/math/1/6/2/162d4c413f99ae2763b1ced17ed1a14b.png" /> are likewise replaced by a Hilbert space (usually a different Hilbert space than the set of states).</li>
+<li>The blank symbol <img class="mwe-math-fallback-image-inline tex" alt="b \in \Gamma" src="//upload.wikimedia.org/math/a/e/e/aee1e6755ef0919d2408c5409e9ddd2e.png" /> corresponds to the zero-vector.</li>
+<li>The input and output symbols <img class="mwe-math-fallback-image-inline tex" alt="\Sigma" src="//upload.wikimedia.org/math/a/6/4/a643a0ef5974b64678111d03125054fc.png" /> are usually taken as a discrete set, as in the classical system; thus, neither the input nor output to a quantum machine need be a quantum system itself.</li>
+<li>The <a href="/wiki/Transition_function" title="Transition function" class="mw-disambig">transition function</a> <img class="mwe-math-fallback-image-inline tex" alt="\delta : \Sigma \times Q  \otimes \Gamma \rightarrow \Sigma \times Q \otimes \Gamma \times \{L,R\}" src="//upload.wikimedia.org/math/b/1/4/b1433687a98d7b84908ede2b5e9ae2e6.png" /> is a generalization of a <a href="/wiki/Transition_monoid" title="Transition monoid" class="mw-redirect">transition monoid</a>, and is understood to be a collection of <a href="/wiki/Unitary_matrix" title="Unitary matrix">unitary matricies</a> that are <a href="/wiki/Automorphism" title="Automorphism">automorphisms</a> of the Hilbert space <img class="mwe-math-fallback-image-inline tex" alt="Q" src="//upload.wikimedia.org/math/f/0/9/f09564c9ca56850d4cd6b3319e541aee.png" />.</li>
+<li>The initial state <img class="mwe-math-fallback-image-inline tex" alt="q_0 \in Q" src="//upload.wikimedia.org/math/9/8/5/985a2a128ebf9e30b78e9273a1ada4d5.png" /> may be either a <a href="/wiki/Mixed_state" title="Mixed state" class="mw-disambig">mixed state</a> or a <a href="/wiki/Pure_state" title="Pure state" class="mw-redirect">pure state</a>.</li>
+<li>The set <img class="mwe-math-fallback-image-inline tex" alt="F" src="//upload.wikimedia.org/math/8/0/0/800618943025315f869e4e1f09471012.png" /> of <i>final</i> or <i>accepting states</i> is a subspace of the Hilbert space <img class="mwe-math-fallback-image-inline tex" alt="Q" src="//upload.wikimedia.org/math/f/0/9/f09564c9ca56850d4cd6b3319e541aee.png" />.</li>
+</ul>
+<p>The above is merely a sketch of a quantum Turing machine, rather than it's formal definition, as it leaves vague several important details: for example, how often a <a href="/wiki/Quantum_measurement" title="Quantum measurement" class="mw-redirect">measurement</a> is performed; see for example, the difference between a measure-once and a measure-many QFA. This question of measurement affects the way in which writes to the output tape are defined.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Turing_machine&amp;action=edit&amp;section=2" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Deutsch1985-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-Deutsch1985_1-0">^</a></b></span> <span class="reference-text"><span class="citation journal">Deutsch, David (July 1985). <a rel="nofollow" class="external text" href="http://www.ceid.upatras.gr/tech_news/papers/quantum_theory.pdf">"Quantum theory, the Church-Turing principle and the universal quantum computer"</a> <span style="font-size:85%;">(PDF)</span>. <i><a href="/wiki/Proceedings_of_the_Royal_Society_A" title="Proceedings of the Royal Society A" class="mw-redirect">Proceedings of the Royal Society A</a></i> <b>400</b> (1818): pp. 97–117. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/1985RSPSA.400...97D">1985RSPSA.400...97D</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1098%2Frspa.1985.0070">10.1098/rspa.1985.0070</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+Turing+machine&amp;rft.atitle=Quantum+theory%2C+the+Church-Turing+principle+and+the+universal+quantum+computer&amp;rft.au=Deutsch%2C+David&amp;rft.aufirst=David&amp;rft.aulast=Deutsch&amp;rft.date=July+1985&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.ceid.upatras.gr%2Ftech_news%2Fpapers%2Fquantum_theory.pdf&amp;rft_id=info%3Abibcode%2F1985RSPSA.400...97D&amp;rft_id=info%3Adoi%2F10.1098%2Frspa.1985.0070&amp;rft.issue=1818&amp;rft.jtitle=Proceedings+of+the+Royal+Society+A&amp;rft.pages=pp.+97-117&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=400" class="Z3988"><span style="display:none;">&#160;</span></span> <span class="citation-comment" style="display:none; color:#33aa33">CS1 maint: Extra text (<a href="/wiki/Category:CS1_maint:_Extra_text" title="Category:CS1 maint: Extra text">link</a>)</span></span></li>
+<li id="cite_note-equivalence-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-equivalence_2-0">^</a></b></span> <span class="reference-text"><span class="citation conference"><a href="/wiki/Andrew_Yao" title="Andrew Yao">Andrew Yao</a> (1993). <i>Quantum circuit complexity</i>. 34th Annual Symposium on Foundations of Computer Science. pp.&#160;352–361.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+Turing+machine&amp;rft.au=Andrew+Yao&amp;rft.aulast=Andrew+Yao&amp;rft.btitle=Quantum+circuit+complexity&amp;rft.date=1993&amp;rft.genre=book&amp;rft.pages=352-361&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-transition-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-transition_3-0">^</a></b></span> <span class="reference-text"><span class="citation journal">Lance Fortnow (2003). "One Complexity Theorist's View of Quantum Computing". <i>Theoretical Computer Science</i> <b>292</b> (3): 597–610. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2FS0304-3975%2801%2900377-2">10.1016/S0304-3975(01)00377-2</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+Turing+machine&amp;rft.atitle=One+Complexity+Theorist%27s+View+of+Quantum+Computing&amp;rft.au=Lance+Fortnow&amp;rft.aulast=Lance+Fortnow&amp;rft.date=2003&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2FS0304-3975%2801%2900377-2&amp;rft.issue=3&amp;rft.jtitle=Theoretical+Computer+Science&amp;rft.pages=597-610&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=292" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation journal">Simon Perdrix; Philippe Jorrand (2007-04-04). "Classically-Controlled Quantum Computation". <i>Math. Struct. In Comp. Science</i> <b>16</b> (4): 601–620. <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/quant-ph/0407008">quant-ph/0407008</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1017%2FS096012950600538X">10.1017/S096012950600538X</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+Turing+machine&amp;rft.atitle=Classically-Controlled+Quantum+Computation&amp;rft.aulast=Simon+Perdrix&amp;rft.au=Philippe+Jorrand&amp;rft.au=Simon+Perdrix&amp;rft.date=2007-04-04&amp;rft.genre=article&amp;rft_id=info%3Aarxiv%2Fquant-ph%2F0407008&amp;rft_id=info%3Adoi%2F10.1017%2FS096012950600538X&amp;rft.issue=4&amp;rft.jtitle=Math.+Struct.+In+Comp.+Science&amp;rft.pages=601-620&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=16" class="Z3988"><span style="display:none;">&#160;</span></span> also <span class="citation journal">Simon Perdrix and Philippe Jorrand (2006). <a rel="nofollow" class="external text" href="http://dcm-workshop.org.uk./2005/dcm-draft-proceedings.pdf">"Classically-Controlled Quantum Computation"</a> <span style="font-size:85%;">(PDF)</span>. <i>Math. Struct. In Comp. Science</i> <b>16</b> (4): 601–620. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1017%2FS096012950600538X">10.1017/S096012950600538X</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+Turing+machine&amp;rft.atitle=Classically-Controlled+Quantum+Computation&amp;rft.aulast=Simon+Perdrix+and+Philippe+Jorrand&amp;rft.au=Simon+Perdrix+and+Philippe+Jorrand&amp;rft.date=2006&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fdcm-workshop.org.uk.%2F2005%2Fdcm-draft-proceedings.pdf&amp;rft_id=info%3Adoi%2F10.1017%2FS096012950600538X&amp;rft.issue=4&amp;rft.jtitle=Math.+Struct.+In+Comp.+Science&amp;rft.pages=601-620&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=16" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation journal">Aaronson, Scott (2005). "Quantum computing, postselection, and probabilistic polynomial-time". <i><a href="/wiki/Proceedings_of_the_Royal_Society_A" title="Proceedings of the Royal Society A" class="mw-redirect">Proceedings of the Royal Society A</a></i> <b>461</b> (2063): 3473–3482. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2005RSPSA.461.3473A">2005RSPSA.461.3473A</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1098%2Frspa.2005.1546">10.1098/rspa.2005.1546</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+Turing+machine&amp;rft.atitle=Quantum+computing%2C+postselection%2C+and+probabilistic+polynomial-time&amp;rft.au=Aaronson%2C+Scott&amp;rft.aufirst=Scott&amp;rft.aulast=Aaronson&amp;rft.date=2005&amp;rft.genre=article&amp;rft_id=info%3Abibcode%2F2005RSPSA.461.3473A&amp;rft_id=info%3Adoi%2F10.1098%2Frspa.2005.1546&amp;rft.issue=2063&amp;rft.jtitle=Proceedings+of+the+Royal+Society+A&amp;rft.pages=3473-3482&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=461" class="Z3988"><span style="display:none;">&#160;</span></span> Preprint available at <a rel="nofollow" class="external autonumber" href="http://arxiv.org/abs/quant-ph/0412187">[1]</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Turing_machine&amp;action=edit&amp;section=3" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="citation arxiv">Satoshi Iriyama; Masanori Ohya; Igor Volovich (2004). "Generalized Quantum Turing Machine and its Application to the SAT Chaos Algorithm". <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/quant-ph/0405191">quant-ph/0405191</a> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/quant-ph">quant-ph</a>].</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+Turing+machine&amp;rft.atitle=Generalized+Quantum+Turing+Machine+and+its+Application+to+the+SAT+Chaos+Algorithm&amp;rft.au=Igor+Volovich&amp;rft.aulast=Satoshi+Iriyama&amp;rft.au=Masanori+Ohya&amp;rft.au=Satoshi+Iriyama&amp;rft.date=2004&amp;rft.genre=preprint&amp;rft_id=info%3Aarxiv%2Fquant-ph%2F0405191&amp;rft.jtitle=arXiv&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><a rel="nofollow" class="external text" href="http://links.jstor.org/sici?sici=0080-4630(19850708)400%3A1818%3C97%3AQTTCPA%3E2.0.CO%3B2-A#abstract">Abstract of Deutsch's paper</a></li>
+<li><a rel="nofollow" class="external text" href="http://ffden-2.phys.uaf.edu/211.web.stuff/Almeida/history.html">The quantum computer – history</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Quantum_information" title="Template:Quantum information"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Quantum_information" title="Template talk:Quantum information"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Quantum_information&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Quantum_information_science" title="Quantum information science">Quantum information science</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">General</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">Quantum computer</a></li>
+<li><a href="/wiki/Qubit" title="Qubit">Qubit</a></li>
+<li><a href="/wiki/Quantum_information" title="Quantum information">Quantum information</a></li>
+<li><a href="/wiki/Quantum_programming" title="Quantum programming">Quantum programming</a></li>
+<li><a href="/wiki/Timeline_of_quantum_computing" title="Timeline of quantum computing">Timeline of quantum computing</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="13" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Bloch_Sphere.svg" class="image"><img alt="Bloch Sphere.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/80px-Bloch_Sphere.svg.png" width="80" height="91" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/120px-Bloch_Sphere.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/160px-Bloch_Sphere.svg.png 2x" data-file-width="163" data-file-height="185" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum communication</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_capacity" title="Quantum capacity">Quantum capacity</a></li>
+<li><a href="/wiki/Classical_capacity" title="Classical capacity">Classical capacity</a></li>
+<li><a href="/wiki/Entanglement-assisted_classical_capacity" title="Entanglement-assisted classical capacity">Entanglement-assisted classical capacity</a></li>
+<li><a href="/wiki/Quantum_channel" title="Quantum channel">Quantum channel</a>
+<ul>
+<li><a href="/wiki/Quantum_network" title="Quantum network">Quantum network</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_cryptography" title="Quantum cryptography">Quantum cryptography</a>
+<ul>
+<li><a href="/wiki/Quantum_key_distribution" title="Quantum key distribution">Quantum key distribution</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_energy_teleportation" title="Quantum energy teleportation">Quantum energy teleportation</a></li>
+<li><a href="/wiki/Quantum_teleportation" title="Quantum teleportation">Quantum teleportation</a></li>
+<li><a href="/wiki/Superdense_coding" title="Superdense coding">Superdense coding</a></li>
+<li><a href="/wiki/LOCC" title="LOCC">LOCC</a></li>
+<li><a href="/wiki/Entanglement_distillation" title="Entanglement distillation">Entanglement distillation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_algorithm" title="Quantum algorithm">Quantum algorithms</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Universal_quantum_simulator" title="Universal quantum simulator" class="mw-redirect">Universal quantum simulator</a></li>
+<li><a href="/wiki/Deutsch%E2%80%93Jozsa_algorithm" title="Deutsch–Jozsa algorithm">Deutsch–Jozsa algorithm</a></li>
+<li><a href="/wiki/Grover%27s_algorithm" title="Grover's algorithm">Grover's algorithm</a></li>
+<li><a href="/wiki/Quantum_Fourier_transform" title="Quantum Fourier transform">Quantum Fourier transform</a></li>
+<li><a href="/wiki/Shor%27s_algorithm" title="Shor's algorithm">Shor's algorithm</a></li>
+<li><a href="/wiki/Simon%27s_problem" title="Simon's problem">Simon's problem</a></li>
+<li><a href="/wiki/Quantum_phase_estimation_algorithm" title="Quantum phase estimation algorithm">Quantum phase estimation algorithm</a></li>
+<li><a href="/wiki/Quantum_annealing" title="Quantum annealing">Quantum annealing</a></li>
+<li><a href="/wiki/Algorithmic_cooling" title="Algorithmic cooling">Algorithmic cooling</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_complexity_theory" title="Quantum complexity theory">Quantum complexity theory</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Quantum Turing machine</strong></li>
+<li><a href="/wiki/BQP" title="BQP">BQP</a></li>
+<li><a href="/wiki/QMA" title="QMA">QMA</a></li>
+<li><a href="/wiki/PostBQP" title="PostBQP">PostBQP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum computing models</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_circuit" title="Quantum circuit">Quantum circuit</a>
+<ul>
+<li><a href="/wiki/Quantum_gate" title="Quantum gate">Quantum gate</a></li>
+</ul>
+</li>
+<li><a href="/wiki/One-way_quantum_computer" title="One-way quantum computer">One-way quantum computer</a>
+<ul>
+<li><a href="/wiki/Cluster_state" title="Cluster state">cluster state</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Adiabatic_quantum_computation" title="Adiabatic quantum computation">Adiabatic quantum computation</a></li>
+<li><a href="/wiki/Topological_quantum_computer" title="Topological quantum computer">Topological quantum computer</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_decoherence" title="Quantum decoherence">Decoherence</a> prevention</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_error_correction" title="Quantum error correction">Quantum error correction</a></li>
+<li><a href="/wiki/Stabilizer_code" title="Stabilizer code">Stabilizer codes</a></li>
+<li><a href="/wiki/Entanglement-assisted_stabilizer_formalism" title="Entanglement-assisted stabilizer formalism">Entanglement-Assisted Quantum Error Correction</a></li>
+<li><a href="/wiki/Quantum_convolutional_code" title="Quantum convolutional code">Quantum convolutional codes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Physical implementations</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Quantum_optics" title="Quantum optics">Quantum optics</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cavity_quantum_electrodynamics" title="Cavity quantum electrodynamics">Cavity QED</a></li>
+<li><a href="/wiki/Circuit_quantum_electrodynamics" title="Circuit quantum electrodynamics">Circuit QED</a></li>
+<li><a href="/wiki/Linear_optical_quantum_computing" title="Linear optical quantum computing">Linear optical quantum computing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Ultracold_atom" title="Ultracold atom">Ultracold atoms</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Trapped_ion_quantum_computer" title="Trapped ion quantum computer">Trapped ion quantum computer</a></li>
+<li><a href="/wiki/Optical_lattice" title="Optical lattice">Optical lattice</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Spin_(physics)" title="Spin (physics)">Spin</a>-based</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Nuclear_magnetic_resonance_quantum_computer" title="Nuclear magnetic resonance quantum computer">Nuclear magnetic resonance QC</a></li>
+<li><a href="/wiki/Kane_quantum_computer" title="Kane quantum computer">Kane QC</a></li>
+<li><a href="/wiki/Loss%E2%80%93DiVincenzo_quantum_computer" title="Loss–DiVincenzo quantum computer">Loss–DiVincenzo QC</a></li>
+<li><a href="/wiki/Nitrogen-vacancy_center" title="Nitrogen-vacancy center">Nitrogen-vacancy center</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Superconducting_quantum_computing" title="Superconducting quantum computing">Superconducting quantum computing</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Charge_qubit" title="Charge qubit">Charge qubit</a></li>
+<li><a href="/wiki/Flux_qubit" title="Flux qubit">Flux qubit</a></li>
+<li><a href="/wiki/Phase_qubit" title="Phase qubit">Phase qubit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1205
+Cached time: 20150910065802
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.198 seconds
+Real time usage: 0.683 seconds
+Preprocessor visited node count: 989/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 43209/2097152 bytes
+Template argument size: 901/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+Lua time usage: 0.052/10.000 seconds
+Lua memory usage: 2.64 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  613.285      1 - -total
+ 10.12%   62.092      1 - Template:Reflist
+  6.55%   40.163      2 - Template:Navbox
+  6.38%   39.107      5 - Template:Cite_journal
+  5.87%   35.976      1 - Template:Turing
+  5.72%   35.079      1 - Template:Quantum_computing
+  5.45%   33.417      1 - Template:Sidebar
+  2.80%   17.145      1 - Template:Navbox_subgroup
+  1.13%    6.938      1 - Template:Cite_arXiv
+  0.82%    5.025      1 - Template:Cite_conference
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:4786555-0!*!0!!*!4!*!math=0 and timestamp 20150910065802 and revision id 680338168
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Quantum_Turing_machine&amp;oldid=680338168">https://en.wikipedia.org/w/index.php?title=Quantum_Turing_machine&amp;oldid=680338168</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Turing_machine" title="Category:Turing machine">Turing machine</a></li><li><a href="/wiki/Category:Quantum_complexity_theory" title="Category:Quantum complexity theory">Quantum complexity theory</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_Extra_text" title="Category:CS1 maint: Extra text">CS1 maint: Extra text</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantum+Turing+machine&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantum+Turing+machine" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Quantum_Turing_machine"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Quantum_Turing_machine"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Quantum_Turing_machine" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Quantum_Turing_machine&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Quantum_Turing_machine&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Quantum_Turing_machine" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Quantum_Turing_machine" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Quantum_Turing_machine&amp;oldid=680338168" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Quantum_Turing_machine&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q765620" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Quantum_Turing_machine&amp;id=680338168" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Quantum+Turing+machine">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Quantum+Turing+machine&amp;oldid=680338168&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Quantum_Turing_machine&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D8%A2%D9%84%D8%A9_%D8%AA%D9%88%D8%B1%D9%86%D8%AC_%D8%A7%D9%84%D9%83%D9%85%D9%88%D9%85%D9%8A%D8%A9" title="آلة تورنج الكمومية – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D9%85%D8%A7%D8%B4%DB%8C%D9%86_%D8%AA%D9%88%D8%B1%DB%8C%D9%86%DA%AF_%DA%A9%D9%88%D8%A7%D9%86%D8%AA%D9%88%D9%85%DB%8C" title="ماشین تورینگ کوانتومی – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-ko"><a href="//ko.wikipedia.org/wiki/%EC%96%91%EC%9E%90_%ED%8A%9C%EB%A7%81_%EA%B8%B0%EA%B3%84" title="양자 튜링 기계 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Macchina_di_Turing_quantistica" title="Macchina di Turing quantistica – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/M%C3%A1quina_de_Turing_qu%C3%A2ntica" title="Máquina de Turing quântica – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0" title="Квантовая машина Тьюринга – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/Turingin_kvanttitietokone" title="Turingin kvanttitietokone – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D0%B0_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D0%A2%D1%8E%D1%80%D1%96%D0%BD%D0%B3%D0%B0" title="Квантова машина Тюрінга – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E5%9C%96%E9%9D%88%E6%A9%9F" title="量子圖靈機 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q765620#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 10 September 2015, at 06:58.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Quantum_Turing_machine&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":75,"wgHostname":"mw1176"});
+} );</script>
+	</body>
+</html>

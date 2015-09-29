@@ -1,0 +1,29 @@
+HW1  Basic Web Crawler
+
+Algorithm:
+(a). connect google ajax api to get top 10 result based on the query
+(b). use heap to store the score of pages. score this 10 base result and insert into heap.
+(c). get the first result of heap. print the information about this result. download it.
+(d). get all links from the result, check and score all links and insert into heap.
+(e). repeat (c)(d) until we get n pages.
+
+Score algorithm:
+split the query into words. for each word, count the numbers of word in the content of page. score=(sum of count)*(numbers of word showed in content)^2
+for example, query=“nyu poly”. In a page count 25 nyu and 50 poly. score=(25+50)*(2^2)=300
+for example, query=“nyu poly”. In a page count 100 nyu and 0 poly. score=(100+0)*(1^2)=100
+
+Function implemented:
+1. get a certain number of google url results using google ajax api
+2. get HTTPError and URLError when connection is not available,
+3. and skip failure or password-protected pages
+4. comply with Robots Exclusion Protocol, and check if URLs can be fetched.
+5. filter CGI scripts and pages of unwanted MIME types
+7. download the pages and do a statistic about total time, total size, total number of pages 8. set max_depth and max_pages in the program
+
+File function explain:
+1. urlscore.py: score the page based on content-based strategy
+2. urlrobot.py: check if the url is allowed at the robots.txt
+3. urllinks.py: get all links at the given page
+4. urlinitials.py: get 10 based result by google ajax api based on given query 5. urlfilter.py: filter the page with unwanted types
+6. urlcheck.py: check the if the url contain cgi-bin or in wrong format(not contain http or https).
+￼￼￼￼7. urlCrawler.py: main function.

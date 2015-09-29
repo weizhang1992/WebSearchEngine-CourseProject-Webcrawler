@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Von Neumann architecture - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Von_Neumann_architecture","wgTitle":"Von Neumann architecture","wgCurRevisionId":679300163,"wgRevisionId":679300163,"wgArticleId":478091,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using citations with accessdate and no URL","Use mdy dates from September 2012","All articles with unsourced statements","Articles with unsourced statements from December 2010","Commons category template with no category set","Commons category with page title same as on Wikidata","Computer architecture","Flynn's taxonomy","Reference models","Classes of computers","School of Computer Science, University of Manchester","Open problems","1945 introductions"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat"
+:"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Von_Neumann_architecture","wgRelevantArticleId":478091,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Von_Neumann_Architecture.svg/100px-Von_Neumann_Architecture.svg.png","wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym"
+:"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q189088","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Von_Neumann_architecture" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Von_Neumann_architecture" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Von_Neumann_architecture skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Von Neumann architecture</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="hatnote">See also: <a href="/wiki/Stored-program_computer" title="Stored-program computer">Stored-program computer</a> and <a href="/wiki/Universal_Turing_machine#Stored-program_computer" title="Universal Turing machine">Universal Turing machine § Stored-program computer</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:332px;"><a href="/wiki/File:Von_Neumann_Architecture.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Von_Neumann_Architecture.svg/330px-Von_Neumann_Architecture.svg.png" width="330" height="191" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Von_Neumann_Architecture.svg/495px-Von_Neumann_Architecture.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Von_Neumann_Architecture.svg/660px-Von_Neumann_Architecture.svg.png 2x" data-file-width="510" data-file-height="295" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Von_Neumann_Architecture.svg" class="internal" title="Enlarge"></a></div>
+Von Neumann architecture scheme</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:332px;"><a href="/wiki/File:Von_Neumann_architecture.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/84/Von_Neumann_architecture.svg/330px-Von_Neumann_architecture.svg.png" width="330" height="314" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/84/Von_Neumann_architecture.svg/495px-Von_Neumann_architecture.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/84/Von_Neumann_architecture.svg/660px-Von_Neumann_architecture.svg.png 2x" data-file-width="420" data-file-height="400" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Von_Neumann_architecture.svg" class="internal" title="Enlarge"></a></div>
+Von Neumann architecture scheme</div>
+</div>
+</div>
+<p>The <b>Von Neumann architecture</b>, also known as the <b>Von Neumann model</b> and <b>Princeton architecture</b>, is a <a href="/wiki/Computer_architecture" title="Computer architecture">computer architecture</a> based on that described in 1945 by the mathematician and physicist <a href="/wiki/John_von_Neumann" title="John von Neumann">John von Neumann</a> and others in the <i><a href="/wiki/First_Draft_of_a_Report_on_the_EDVAC" title="First Draft of a Report on the EDVAC">First Draft of a Report on the EDVAC</a></i>.<sup id="cite_ref-FirstDraftReport_1-0" class="reference"><a href="#cite_note-FirstDraftReport-1"><span>[</span>1<span>]</span></a></sup> This describes a design architecture for an electronic <a href="/wiki/Digital_computer" title="Digital computer" class="mw-redirect">digital computer</a> with parts consisting of a processing unit containing an <a href="/wiki/Arithmetic_logic_unit" title="Arithmetic logic unit">arithmetic logic unit</a> and <a href="/wiki/Processor_register" title="Processor register">processor registers</a>, a <a href="/wiki/Control_unit" title="Control unit">control unit</a> containing an <a href="/wiki/Instruction_register" title="Instruction register">instruction register</a> and <a href="/wiki/Program_counter" title="Program counter">program counter</a>, a <a href="/wiki/Computer_memory" title="Computer memory">memory</a> to store both <a href="/wiki/Data_(computing)" title="Data (computing)">data</a> and <a href="/wiki/Instruction_set" title="Instruction set">instructions</a>, external <a href="/wiki/Mass_storage" title="Mass storage">mass storage</a>, and <a href="/wiki/Input_and_output" title="Input and output" class="mw-redirect">input and output</a> mechanisms.<sup id="cite_ref-FirstDraftReport_1-1" class="reference"><a href="#cite_note-FirstDraftReport-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-GanesanCh4_2-0" class="reference"><a href="#cite_note-GanesanCh4-2"><span>[</span>2<span>]</span></a></sup> The meaning has evolved to be any <a href="/wiki/Stored-program_computer" title="Stored-program computer">stored-program computer</a> in which an instruction fetch and a data operation cannot occur at the same time because they share a common <a href="/wiki/Bus_(computing)" title="Bus (computing)">bus</a>. This is referred to as the <a href="#Von_Neumann_bottleneck">Von Neumann bottleneck</a> and often limits the performance of the system.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>The design of a Von Neumann architecture is simpler than the more modern <a href="/wiki/Harvard_architecture" title="Harvard architecture">Harvard architecture</a> which is also a stored-program system but has one dedicated set of address and data buses for reading data from and writing data to memory, and another set of address and data buses for fetching instructions.</p>
+<p>A stored-program digital computer is one that keeps its <a href="/wiki/Computer_program" title="Computer program">program instructions</a>, as well as its data, in <a href="/wiki/Read-write_memory" title="Read-write memory">read-write</a>, <a href="/wiki/Random-access_memory" title="Random-access memory">random-access memory</a> (RAM). Stored-program computers were an advancement over the program-controlled computers of the 1940s, such as the <a href="/wiki/Colossus_computer" title="Colossus computer">Colossus</a> and the <a href="/wiki/ENIAC" title="ENIAC">ENIAC</a>, which were programmed by setting switches and inserting patch leads to route data and to control signals between various functional units. In the vast majority of modern computers, the same memory is used for both data and program instructions, and the Von Neumann vs. Harvard distinction applies to the <a href="/wiki/CPU_cache" title="CPU cache">cache</a> architecture, not the main memory.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Development_of_the_stored-program_concept"><span class="tocnumber">2</span> <span class="toctext">Development of the stored-program concept</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Early_von_Neumann-architecture_computers"><span class="tocnumber">3</span> <span class="toctext">Early von Neumann-architecture computers</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Early_stored-program_computers"><span class="tocnumber">4</span> <span class="toctext">Early stored-program computers</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Evolution"><span class="tocnumber">5</span> <span class="toctext">Evolution</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Von_Neumann_bottleneck"><span class="tocnumber">6</span> <span class="toctext">Von Neumann bottleneck</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Non.E2.80.93von_Neumann_processors"><span class="tocnumber">7</span> <span class="toctext">Non–von Neumann processors</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Inline"><span class="tocnumber">9.1</span> <span class="toctext">Inline</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#General"><span class="tocnumber">9.2</span> <span class="toctext">General</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The earliest computing machines had fixed programs. Some very simple computers still use this design, either for simplicity or training purposes. For example, a desk <a href="/wiki/Calculator" title="Calculator">calculator</a> (in principle) is a fixed program computer. It can do basic <a href="/wiki/Mathematics" title="Mathematics">mathematics</a>, but it cannot be used as a <a href="/wiki/Word_processor" title="Word processor">word processor</a> or a gaming console. Changing the program of a fixed-program machine requires rewiring, restructuring, or redesigning the machine. The earliest computers were not so much "programmed" as they were "designed". "Reprogramming", when it was possible at all, was a laborious process, starting with <a href="/wiki/Flowchart" title="Flowchart">flowcharts</a> and paper notes, followed by detailed engineering designs, and then the often-arduous process of physically rewiring and rebuilding the machine. It could take three weeks to set up a program on <a href="/wiki/ENIAC" title="ENIAC">ENIAC</a> and get it working.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>With the proposal of the stored-program computer this changed. A stored-program computer includes by design an <a href="/wiki/Instruction_set" title="Instruction set">instruction set</a> and can store in memory a set of instructions (a <a href="/wiki/Computer_program" title="Computer program">program</a>) that details the <a href="/wiki/Computation" title="Computation">computation</a>.</p>
+<p>A stored-program design also allows for <a href="/wiki/Self-modifying_code" title="Self-modifying code">self-modifying code</a>. One early motivation for such a facility was the need for a program to increment or otherwise modify the address portion of instructions, which had to be done manually in early designs. This became less important when <a href="/wiki/Index_register" title="Index register">index registers</a> and <a href="/wiki/Addressing_mode" title="Addressing mode">indirect addressing</a> became usual features of machine architecture. Another use was to embed frequently used data in the instruction stream using <a href="/wiki/Addressing_mode" title="Addressing mode">immediate addressing</a>. Self-modifying code has largely fallen out of favor, since it is usually hard to understand and <a href="/wiki/Debugging" title="Debugging">debug</a>, as well as being inefficient under modern processor pipelining and caching schemes.</p>
+<p>On a large scale, the ability to treat instructions as data is what makes <a href="/wiki/Assembly_language#Assembler" title="Assembly language">assemblers</a>, <a href="/wiki/Compiler" title="Compiler">compilers</a>, <a href="/wiki/Linker_(computing)" title="Linker (computing)">linkers</a>, <a href="/wiki/Loader_(computing)" title="Loader (computing)">loaders</a>, and other automated programming tools possible. One can "write programs which write programs".<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup> On a smaller scale, repetitive I/O-intensive operations such as the <a href="/wiki/Bit_blit" title="Bit blit">BITBLT</a> image manipulation primitive or <a href="/wiki/High-level_shader_language" title="High-level shader language" class="mw-redirect">pixel &amp; vertex shaders</a> in modern 3D graphics, were considered inefficient to run without custom hardware. These operations could be accelerated on general purpose processors with "on the fly compilation" ("<a href="/wiki/Just-in-time_compilation" title="Just-in-time compilation">just-in-time compilation</a>") technology, e.g., code-generating programs—one form of self-modifying code that has remained popular.</p>
+<p>There are drawbacks to the Von Neumann design. Aside from the Von Neumann bottleneck described below, program modifications can be quite harmful, either by accident or design. In some simple stored-program computer designs, a malfunctioning program can damage itself, other programs, or the <a href="/wiki/Operating_system" title="Operating system">operating system</a>, possibly leading to a computer <a href="/wiki/Crash_(computing)" title="Crash (computing)">crash</a>. <a href="/wiki/Memory_protection" title="Memory protection">Memory protection</a> and other forms of <a href="/wiki/Access_control" title="Access control">access control</a> can usually protect against both accidental and malicious program modification.</p>
+<h2><span class="mw-headline" id="Development_of_the_stored-program_concept">Development of the stored-program concept</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=2" title="Edit section: Development of the stored-program concept">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The mathematician <a href="/wiki/Alan_Turing" title="Alan Turing">Alan Turing</a>, who had been alerted to a problem of mathematical logic by the lectures of <a href="/wiki/Max_Newman" title="Max Newman">Max Newman</a> at the <a href="/wiki/University_of_Cambridge" title="University of Cambridge">University of Cambridge</a>, wrote a paper in 1936 entitled <i>On Computable Numbers, with an Application to the <a href="/wiki/Entscheidungsproblem" title="Entscheidungsproblem">Entscheidungsproblem</a></i>, which was published in the <i>Proceedings of the London Mathematical Society</i>.<sup id="cite_ref-Turing1936_6-0" class="reference"><a href="#cite_note-Turing1936-6"><span>[</span>6<span>]</span></a></sup> In it he described a hypothetical machine which he called a "universal computing machine", and which is now known as the "<a href="/wiki/Universal_Turing_machine" title="Universal Turing machine">Universal Turing machine</a>". The hypothetical machine had an infinite store (memory in today's terminology) that contained both instructions and data. <a href="/wiki/John_von_Neumann" title="John von Neumann">John von Neumann</a> became acquainted with Turing while he was a visiting professor at Cambridge in 1935, and also during Turing's PhD year at the <a href="/wiki/Institute_for_Advanced_Study" title="Institute for Advanced Study">Institute for Advanced Study</a> in <a href="/wiki/Princeton,_New_Jersey" title="Princeton, New Jersey">Princeton, New Jersey</a> during 1936 – 37. Whether he knew of Turing's paper of 1936 at that time is not clear.</p>
+<p>In 1936, <a href="/wiki/Konrad_Zuse" title="Konrad Zuse">Konrad Zuse</a> also anticipated in two patent applications that machine instructions could be stored in the same storage used for data.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>Independently, <a href="/wiki/J._Presper_Eckert" title="J. Presper Eckert">J. Presper Eckert</a> and <a href="/wiki/John_Mauchly" title="John Mauchly">John Mauchly</a>, who were developing the <a href="/wiki/ENIAC" title="ENIAC">ENIAC</a> at the <a href="/wiki/Moore_School_of_Electrical_Engineering" title="Moore School of Electrical Engineering">Moore School of Electrical Engineering</a>, at the <a href="/wiki/University_of_Pennsylvania" title="University of Pennsylvania">University of Pennsylvania</a>, wrote about the stored-program concept in December 1943.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup> In planning a new machine, <a href="/wiki/EDVAC" title="EDVAC">EDVAC</a>, Eckert wrote in January 1944 that they would store data and programs in a new addressable memory device, a mercury metal <a href="/wiki/Delay_line_memory" title="Delay line memory">delay line memory</a>. This was the first time the construction of a practical stored-program machine was proposed. At that time, he and Mauchly were not aware of Turing's work.</p>
+<p>Von Neumann was involved in the <a href="/wiki/Manhattan_Project" title="Manhattan Project">Manhattan Project</a> at the <a href="/wiki/Los_Alamos_National_Laboratory" title="Los Alamos National Laboratory">Los Alamos National Laboratory</a>, which required huge amounts of calculation. This drew him to the ENIAC project, during the summer of 1944. There he joined into the ongoing discussions on the design of this stored-program computer, the EDVAC. As part of that group, he wrote up a description titled <i>First Draft of a Report on the EDVAC</i><sup id="cite_ref-FirstDraftReport_1-2" class="reference"><a href="#cite_note-FirstDraftReport-1"><span>[</span>1<span>]</span></a></sup> based on the work of Eckert and Mauchly. It was unfinished when his colleague <a href="/wiki/Herman_Goldstine" title="Herman Goldstine">Herman Goldstine</a> circulated it with only von Neumann's name on it, to the consternation of Eckert and Mauchly.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>10<span>]</span></a></sup> The paper was read by dozens of von Neumann's colleagues in America and Europe, and influenced the next round of computer designs.</p>
+<p><a href="/wiki/Jack_Copeland" title="Jack Copeland">Jack Copeland</a> considers that it is "historically inappropriate, to refer to electronic stored-program digital computers as 'von Neumann machines'".<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>11<span>]</span></a></sup> His Los Alamos colleague <a href="/wiki/Stan_Frankel" title="Stan Frankel">Stan Frankel</a> said of von Neumann's regard for Turing's ideas:</p>
+<blockquote class="templatequote">
+<p><i>I know that in or about 1943 or '44 von Neumann was well aware of the fundamental importance of Turing's paper of 1936 ... Von Neumann introduced me to that paper and at his urging I studied it with care. Many people have acclaimed von Neumann as the "father of the computer" (in a modern sense of the term) but I am sure that he would never have made that mistake himself. He might well be called the midwife, perhaps, but he firmly emphasized to me, and to others I am sure, that the fundamental conception is owing to Turing— in so far as not anticipated by Babbage ... Both Turing and von Neumann, of course, also made substantial contributions to the "reduction to practice" of these concepts but I would not regard these as comparable in importance with the introduction and explication of the concept of a computer able to store in its memory its program of activities and of modifying that program in the course of these activities.</i> <sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+</blockquote>
+<p>At the time that the "First Draft" report was circulated, Turing was producing a report entitled <i>Proposed Electronic Calculator</i> which described in engineering and programming detail, his idea of a machine that was called the <a href="/wiki/Automatic_Computing_Engine" title="Automatic Computing Engine">Automatic Computing Engine (ACE)</a>.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>13<span>]</span></a></sup> He presented this to the Executive Committee of the British <a href="/wiki/National_Physical_Laboratory,_UK" title="National Physical Laboratory, UK" class="mw-redirect">National Physical Laboratory</a> on February 19, 1946. Although Turing knew from his wartime experience at Bletchley Park that what he proposed was feasible, the secrecy surrounding <a href="/wiki/Colossus_computer" title="Colossus computer">Colossus</a>, that was subsequently maintained for several decades, prevented him from saying so. Various successful implementations of the ACE design were produced.</p>
+<p>Both von Neumann's and Turing's papers described stored-program computers, but von Neumann's earlier paper achieved greater circulation and the computer architecture it outlined became known as the "von Neumann architecture". In the 1953 publication <i>Faster than Thought: A Symposium on Digital Computing Machines</i> (edited by B.V. Bowden), a section in the chapter on <i>Computers in America</i> reads as follows:<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>14<span>]</span></a></sup></p>
+<blockquote>
+<p><i><b>The Machine of the Institute For Advanced Studies, Princeton</b></i></p>
+</blockquote>
+<blockquote>
+<p><i>In 1945, Professor J. von Neumann, who was then working at the Moore School of Engineering in Philadelphia, where the E.N.I.A.C. had been built, issued on behalf of a group of his co-workers a report on the logical design of digital computers. The report contained a fairly detailed proposal for the design of the machine which has since become known as the E.D.V.A.C. (electronic discrete variable automatic computer). This machine has only recently been completed in America, but the von Neumann report inspired the construction of the E.D.S.A.C. (electronic delay-storage automatic calculator) in Cambridge (see page 130).</i></p>
+</blockquote>
+<blockquote>
+<p><i>In 1947, Burks, Goldstine and von Neumann published another report which outlined the design of another type of machine (a parallel machine this time) which should be exceedingly fast, capable perhaps of 20,000 operations per second. They pointed out that the outstanding problem in constructing such a machine was in the development of a suitable memory, all the contents of which were instantaneously accessible, and at first they suggested the use of a special <a href="/wiki/Vacuum_tube" title="Vacuum tube">vacuum tube</a> — called the "<a href="/wiki/Selectron_tube" title="Selectron tube">Selectron</a>" – which had been invented by the Princeton Laboratories of the R.C.A. These tubes were expensive and difficult to make, so von Neumann subsequently decided to build a machine based on the <a href="/wiki/Williams_tube" title="Williams tube">Williams memory</a>. This machine, which was completed in June, 1952 in Princeton has become popularly known as the Maniac. The design of this machine has inspired that of half a dozen or more machines which are now being built in America, all of which are known affectionately as "Johniacs."'</i></p>
+</blockquote>
+<p>In the same book, the first two paragraphs of a chapter on ACE read as follows:<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>15<span>]</span></a></sup></p>
+<blockquote>
+<p><i><b>Automatic Computation at the National Physical Laboratory</b></i></p>
+</blockquote>
+<blockquote>
+<p><i>One of the most modern digital computers which embodies developments and improvements in the technique of automatic electronic computing was recently demonstrated at the National Physical Laboratory, Teddington, where it has been designed and built by a small team of mathematicians and electronics research engineers on the staff of the Laboratory, assisted by a number of production engineers from the English Electric Company, Limited. The equipment so far erected at the Laboratory is only the pilot model of a much larger installation which will be known as the Automatic Computing Engine, but although comparatively small in bulk and containing only about 800 thermionic valves, as can be judged from Plates XII, XIII and XIV, it is an extremely rapid and versatile calculating machine.</i></p>
+</blockquote>
+<blockquote>
+<p><i>The basic concepts and abstract principles of computation by a machine were formulated by Dr. A. M. Turing, F.R.S., in a paper<sup>1</sup>. read before the London Mathematical Society in 1936, but work on such machines in Britain was delayed by the war. In 1945, however, an examination of the problems was made at the National Physical Laboratory by Mr. J. R. Womersley, then superintendent of the Mathematics Division of the Laboratory. He was joined by Dr. Turing and a small staff of specialists, and, by 1947, the preliminary planning was sufficiently advanced to warrant the establishment of the special group already mentioned. In April, 1948, the latter became the Electronics Section of the Laboratory, under the charge of Mr. F. M. Colebrook.</i></p>
+</blockquote>
+<h2><span class="mw-headline" id="Early_von_Neumann-architecture_computers">Early von Neumann-architecture computers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=3" title="Edit section: Early von Neumann-architecture computers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <i>First Draft</i> described a design that was used by many universities and corporations to construct their computers.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>16<span>]</span></a></sup> Among these various computers, only ILLIAC and ORDVAC had compatible instruction sets.</p>
+<ul>
+<li><a href="/wiki/Manchester_Small-Scale_Experimental_Machine" title="Manchester Small-Scale Experimental Machine">Manchester Small-Scale Experimental Machine</a> (SSEM), nicknamed "Baby" (University of Manchester, England) made its first successful run of a stored-program on June 21, 1948.</li>
+<li><a href="/wiki/EDSAC" title="EDSAC" class="mw-redirect">EDSAC</a> (University of Cambridge, England) was the first practical stored-program electronic computer (May 1949)</li>
+<li><a href="/wiki/Manchester_Mark_1" title="Manchester Mark 1">Manchester Mark 1</a> (University of Manchester, England) Developed from the SSEM (June 1949)</li>
+<li><a href="/wiki/CSIRAC" title="CSIRAC">CSIRAC</a> (<a href="/wiki/Commonwealth_Scientific_and_Industrial_Research_Organisation" title="Commonwealth Scientific and Industrial Research Organisation">Council for Scientific and Industrial Research</a>) Australia (November 1949)</li>
+<li><a href="/wiki/EDVAC" title="EDVAC">EDVAC</a> (<a href="/wiki/Ballistic_Research_Laboratory" title="Ballistic Research Laboratory">Ballistic Research Laboratory</a>, Computing Laboratory at <a href="/wiki/Aberdeen_Proving_Ground" title="Aberdeen Proving Ground">Aberdeen Proving Ground</a> 1951)</li>
+<li><a href="/wiki/ORDVAC" title="ORDVAC">ORDVAC</a> (U-Illinois) at Aberdeen Proving Ground, Maryland (completed November 1951)<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span>[</span>17<span>]</span></a></sup></li>
+<li><a href="/wiki/IAS_machine" title="IAS machine">IAS machine</a> at Princeton University (January 1952)</li>
+<li><a href="/wiki/MANIAC_I" title="MANIAC I">MANIAC I</a> at Los Alamos Scientific Laboratory (March 1952)</li>
+<li><a href="/wiki/ILLIAC" title="ILLIAC">ILLIAC</a> at the University of Illinois, (September 1952)</li>
+<li><a href="/wiki/BESM" title="BESM">BESM-1</a> in Moscow (1952)</li>
+<li><a href="/wiki/AVIDAC" title="AVIDAC">AVIDAC</a> at Argonne National Laboratory (1953)</li>
+<li><a href="/wiki/ORACLE_(computer)" title="ORACLE (computer)">ORACLE</a> at Oak Ridge National Laboratory (June 1953)</li>
+<li><a href="/wiki/BESK" title="BESK">BESK</a> in Stockholm (1953)</li>
+<li><a href="/wiki/JOHNNIAC" title="JOHNNIAC">JOHNNIAC</a> at RAND Corporation (January 1954)</li>
+<li><a href="/wiki/DASK" title="DASK">DASK</a> in Denmark (1955)</li>
+<li><a href="/wiki/WEIZAC" title="WEIZAC">WEIZAC</a> in Rehovoth (1955)</li>
+<li><a href="/wiki/PERM_(computer)" title="PERM (computer)">PERM</a> in Munich (1956?)</li>
+<li><a href="/wiki/SILLIAC" title="SILLIAC">SILLIAC</a> in Sydney (1956)</li>
+</ul>
+<h2><span class="mw-headline" id="Early_stored-program_computers">Early stored-program computers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=4" title="Edit section: Early stored-program computers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The date information in the following chronology is difficult to put into proper order. Some dates are for first running a test program, some dates are the first time the computer was demonstrated or completed, and some dates are for the first delivery or installation.</p>
+<ul>
+<li>The <a href="/wiki/IBM_SSEC" title="IBM SSEC">IBM SSEC</a> had the ability to treat instructions as data, and was publicly demonstrated on January 27, 1948. This ability was claimed in a US patent.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span>[</span>18<span>]</span></a></sup> However it was partially electromechanical, not fully electronic. In practice, instructions were read from paper tape due to its limited memory.<sup id="cite_ref-herb_19-0" class="reference"><a href="#cite_note-herb-19"><span>[</span>19<span>]</span></a></sup></li>
+<li>The <a href="/wiki/Victoria_University_of_Manchester" title="Victoria University of Manchester">Manchester</a> <a href="/wiki/Manchester_Small-Scale_Experimental_Machine" title="Manchester Small-Scale Experimental Machine">SSEM</a> (the <i>Baby</i>) was the first fully electronic computer to run a stored program. It ran a factoring program for 52 minutes on June 21, 1948, after running a simple division program and a program to show that two numbers were <a href="/wiki/Coprime_integers" title="Coprime integers">relatively prime</a>.</li>
+<li>The <a href="/wiki/ENIAC" title="ENIAC">ENIAC</a> was modified to run as a primitive read-only stored-program computer (using the Function Tables for program <a href="/wiki/Read-only_memory" title="Read-only memory">ROM</a>) and was demonstrated as such on September 16, 1948, running a program by <a href="/wiki/Adele_Goldstine" title="Adele Goldstine">Adele Goldstine</a> for von Neumann.</li>
+<li>The <a href="/wiki/BINAC" title="BINAC">BINAC</a> ran some test programs in February, March, and April 1949, although was not completed until September 1949.</li>
+<li>The <a href="/wiki/Manchester_Mark_1" title="Manchester Mark 1">Manchester Mark 1</a> developed from the SSEM project. An intermediate version of the Mark 1 was available to run programs in April 1949, but was not completed until October 1949.</li>
+<li>The <a href="/wiki/Electronic_Delay_Storage_Automatic_Calculator" title="Electronic Delay Storage Automatic Calculator">EDSAC</a> ran its first program on May 6, 1949.</li>
+<li>The <a href="/wiki/EDVAC" title="EDVAC">EDVAC</a> was delivered in August 1949, but it had problems that kept it from being put into regular operation until 1951.</li>
+<li>The <a href="/wiki/CSIRAC" title="CSIRAC">CSIR Mk I</a> ran its first program in November 1949.</li>
+<li>The <a href="/wiki/SEAC_(computer)" title="SEAC (computer)">SEAC</a> was demonstrated in April 1950.</li>
+<li>The <a href="/wiki/Pilot_ACE" title="Pilot ACE">Pilot ACE</a> ran its first program on May 10, 1950 and was demonstrated in December 1950.</li>
+<li>The <a href="/wiki/SWAC_(computer)" title="SWAC (computer)">SWAC</a> was completed in July 1950.</li>
+<li>The <a href="/wiki/Whirlwind_(computer)" title="Whirlwind (computer)" class="mw-redirect">Whirlwind</a> was completed in December 1950 and was in actual use in April 1951.</li>
+<li>The first <a href="/wiki/UNIVAC_1101" title="UNIVAC 1101">ERA Atlas</a> (later the commercial ERA 1101/UNIVAC 1101) was installed in December 1950.</li>
+</ul>
+<h2><span class="mw-headline" id="Evolution">Evolution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=5" title="Edit section: Evolution">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Computer_system_bus.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Computer_system_bus.svg/220px-Computer_system_bus.svg.png" width="220" height="161" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Computer_system_bus.svg/330px-Computer_system_bus.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/68/Computer_system_bus.svg/440px-Computer_system_bus.svg.png 2x" data-file-width="744" data-file-height="545" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Computer_system_bus.svg" class="internal" title="Enlarge"></a></div>
+Single <a href="/wiki/System_bus" title="System bus">system bus</a> evolution of the architecture</div>
+</div>
+</div>
+<p>Through the decades of the 1960s and 1970s computers generally became both smaller and faster, which led to some evolutions in their architecture. For example, <a href="/wiki/Memory-mapped_I/O" title="Memory-mapped I/O">memory-mapped I/O</a> allows input and output devices to be treated the same as memory.<sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span>[</span>20<span>]</span></a></sup> A single <a href="/wiki/System_bus" title="System bus">system bus</a> could be used to provide a modular system with lower cost. This is sometimes called a "streamlining" of the architecture.<sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span>[</span>21<span>]</span></a></sup> In subsequent decades, simple <a href="/wiki/Microcontrollers" title="Microcontrollers" class="mw-redirect">microcontrollers</a> would sometimes omit features of the model to lower cost and size. Larger computers added features for higher performance.</p>
+<h2><span class="mw-headline" id="Von_Neumann_bottleneck">Von Neumann bottleneck</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=6" title="Edit section: Von Neumann bottleneck">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The shared bus between the program memory and data memory leads to the <i>Von Neumann bottleneck</i>, the limited <a href="/wiki/Throughput" title="Throughput">throughput</a> (data transfer rate) between the CPU and memory compared to the amount of memory. Because program memory and data memory cannot be accessed at the same time, throughput is much smaller than the rate at which the CPU can work. This seriously limits the effective processing speed when the CPU is required to perform minimal processing on large amounts of data. The CPU is continually <a href="/wiki/Wait_state" title="Wait state">forced to wait</a> for needed data to be transferred to or from memory. Since CPU speed and memory size have increased much faster than the throughput between them, the bottleneck has become more of a problem, a problem whose severity increases with every newer generation of CPU.</p>
+<p>The von Neumann bottleneck was described by <a href="/wiki/John_Backus" title="John Backus">John Backus</a> in his 1977 ACM <a href="/wiki/Turing_Award" title="Turing Award">Turing Award</a> lecture. According to Backus:</p>
+<blockquote>
+<p>Surely there must be a less primitive way of making big changes in the store than by pushing vast numbers of <a href="/wiki/Word_(data_type)" title="Word (data type)" class="mw-redirect">words</a> back and forth through the von Neumann bottleneck. Not only is this tube a literal bottleneck for the data traffic of a problem, but, more importantly, it is an intellectual bottleneck that has kept us tied to word-at-a-time thinking instead of encouraging us to think in terms of the larger conceptual units of the task at hand. Thus programming is basically planning and detailing the enormous traffic of words through the von Neumann bottleneck, and much of that traffic concerns not significant data itself, but where to find it.<sup id="cite_ref-backus_22-0" class="reference"><a href="#cite_note-backus-22"><span>[</span>22<span>]</span></a></sup><sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span>[</span>23<span>]</span></a></sup></p>
+</blockquote>
+<p>The performance problem can be alleviated (to some extent) by several mechanisms. Providing a <a href="/wiki/CPU_cache" title="CPU cache">cache</a> between the CPU and the main memory, providing separate caches or separate access paths for data and instructions (the so-called <a href="/wiki/Modified_Harvard_architecture" title="Modified Harvard architecture">Modified Harvard architecture</a>), using <a href="/wiki/Branch_predictor" title="Branch predictor">branch predictor</a> algorithms and logic, and providing a limited CPU stack or other on-chip <a href="/wiki/Scratchpad_memory" title="Scratchpad memory">scratchpad memory</a> to reduce memory access are four of the ways performance is increased. The problem can also be sidestepped somewhat by using <a href="/wiki/Parallel_computing" title="Parallel computing">parallel computing</a>, using for example the <a href="/wiki/Non-Uniform_Memory_Access" title="Non-Uniform Memory Access" class="mw-redirect">Non-Uniform Memory Access</a> (NUMA) architecture—this approach is commonly employed by supercomputers. It is less clear whether the <i>intellectual bottleneck</i> that Backus criticized has changed much since 1977. Backus's proposed solution has not had a major influence.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (December 2010)">citation needed</span></a></i>]</sup> Modern <a href="/wiki/Functional_programming" title="Functional programming">functional programming</a> and <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> are much less geared towards "pushing vast numbers of words back and forth" than earlier languages like <a href="/wiki/Fortran" title="Fortran">Fortran</a> were, but internally, that is still what computers spend much of their time doing, even highly parallel supercomputers.</p>
+<p>As of 1996, a database benchmark study found that three out of four CPU cycles were spent waiting for memory. Researchers expect that increasing the number of simultaneous instruction streams with <a href="/wiki/Multithreading_(computer_architecture)" title="Multithreading (computer architecture)">multithreading</a> or single-chip <a href="/wiki/Multiprocessing" title="Multiprocessing">multiprocessing</a> will make this bottleneck even worse. <sup id="cite_ref-24" class="reference"><a href="#cite_note-24"><span>[</span>24<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Non.E2.80.93von_Neumann_processors">Non–von Neumann processors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=7" title="Edit section: Non–von Neumann processors">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/National_Semiconductor" title="National Semiconductor">National Semiconductor</a> <a href="/wiki/COP8" title="COP8">COP8</a> was introduced in 1986; it has a <a href="/wiki/Modified_Harvard_architecture" title="Modified Harvard architecture">Modified Harvard architecture</a>.<sup id="cite_ref-25" class="reference"><a href="#cite_note-25"><span>[</span>25<span>]</span></a></sup><sup id="cite_ref-26" class="reference"><a href="#cite_note-26"><span>[</span>26<span>]</span></a></sup></p>
+<p><a rel="nofollow" class="external text" href="https://www.doc.ic.ac.uk/~wl/icprojects/papers/reduceron08.pdf">Reduceron</a> is an attempt to create a processor for direct <a href="/wiki/Functional_Programming" title="Functional Programming" class="mw-redirect">Functional Program</a> execution.</p>
+<p>Perhaps the most common kind of non–von Neumann structure used in modern computers is <a href="/wiki/Content-addressable_memory" title="Content-addressable memory">content-addressable memory</a> (CAM).</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="noprint portal tright" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 1em">
+<table style="background:#f9f9f9;font-size:85%;line-height:110%;max-width:175px">
+<tr style="vertical-align:middle">
+<td style="text-align:center"><a href="/wiki/File:Internet_map_1024.jpg" class="image"><img alt="Portal icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/42px-Internet_map_1024.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/56px-Internet_map_1024.jpg 2x" data-file-width="1280" data-file-height="1280" /></a></td>
+<td style="padding:0 0.2em;vertical-align:middle;font-style:italic;font-weight:bold"><a href="/wiki/Portal:Computer_science" title="Portal:Computer science">Computer science portal</a></td>
+</tr>
+</table>
+</div>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="//commons.wikimedia.org/wiki/Category:Von_Neumann_architecture" class="extiw" title="commons:Category:Von Neumann architecture">Von Neumann architecture</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><a href="/wiki/CARDboard_Illustrative_Aid_to_Computation" title="CARDboard Illustrative Aid to Computation">CARDboard Illustrative Aid to Computation</a></li>
+<li><a href="/wiki/Central_processing_unit" title="Central processing unit">Central processing unit</a></li>
+<li><a href="/wiki/Harvard_architecture" title="Harvard architecture">Harvard architecture</a></li>
+<li><a href="/wiki/Interconnect_bottleneck" title="Interconnect bottleneck">Interconnect bottleneck</a></li>
+<li><a href="/wiki/Little_man_computer" title="Little man computer">Little man computer</a></li>
+<li><a href="/wiki/Modified_Harvard_architecture" title="Modified Harvard architecture">Modified Harvard architecture</a></li>
+<li><a href="/wiki/Random-access_machine" title="Random-access machine">Random-access machine</a></li>
+<li><a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Inline">Inline</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=10" title="Edit section: Inline">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-FirstDraftReport-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-FirstDraftReport_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-FirstDraftReport_1-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-FirstDraftReport_1-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span id="CITEREFvon_Neumann1945" class="citation"><a href="/wiki/John_von_Neumann" title="John von Neumann">von Neumann, John</a> (1945), <a rel="nofollow" class="external text" href="https://web.archive.org/web/20130314123032/http://qss.stanford.edu/~godfrey/vonNeumann/vnedvac.pdf"><i>First Draft of a Report on the EDVAC</i></a> <span style="font-size:85%;">(PDF)</span>, archived from <a rel="nofollow" class="external text" href="https://sites.google.com/site/michaeldgodfrey/vonneumann/vnedvac.pdf">the original</a> <span style="font-size:85%;">(PDF)</span> on March 14, 2013<span class="reference-accessdate">, retrieved <span class="nowrap">August 24,</span> 2011</span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.aufirst=John&amp;rft.aulast=von+Neumann&amp;rft.au=von+Neumann%2C+John&amp;rft.btitle=First+Draft+of+a+Report+on+the+EDVAC&amp;rft.date=1945&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fsites.google.com%2Fsite%2Fmichaeldgodfrey%2Fvonneumann%2Fvnedvac.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-GanesanCh4-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-GanesanCh4_2-0">^</a></b></span> <span class="reference-text"><a href="#CITEREFGanesan2009">Ganesan 2009</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span id="CITEREFMarkgraf2007" class="citation">Markgraf, Joey D. (2007), <a rel="nofollow" class="external text" href="http://aws.linnbenton.edu/cs271c/markgrj/"><i>The Von Neumann bottleneck</i></a><span class="reference-accessdate">, retrieved <span class="nowrap">August 24,</span> 2011</span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.aufirst=Joey+D.&amp;rft.aulast=Markgraf&amp;rft.au=Markgraf%2C+Joey+D.&amp;rft.btitle=The+Von+Neumann+bottleneck&amp;rft.date=2007&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Faws.linnbenton.edu%2Fcs271c%2Fmarkgrj%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a href="#CITEREFCopeland2006">Copeland 2006</a>, p.&#160;104</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://catb.org/~esr/jargon/html/M/MFTL.html">MFTL <i>(My Favorite Toy Language) entry Jargon File 4.4.7</i></a><span class="reference-accessdate">, retrieved <span class="nowrap">2008-07-11</span></span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.btitle=MFTL+%28My+Favorite+Toy+Language%29+entry+Jargon+File+4.4.7&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fcatb.org%2F~esr%2Fjargon%2Fhtml%2FM%2FMFTL.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Turing1936-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-Turing1936_6-0">^</a></b></span> <span class="reference-text"><span id="CITEREFTuring1936" class="citation">Turing, A.M. (1936), "On Computable Numbers, with an Application to the Entscheidungsproblem", <i>Proceedings of the London Mathematical Society</i>, 2 (1937) <b>42</b>: 230–65, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1112%2Fplms%2Fs2-42.1.230">10.1112/plms/s2-42.1.230</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.atitle=On+Computable+Numbers%2C+with+an+Application+to+the+Entscheidungsproblem&amp;rft.aufirst=A.M.&amp;rft.aulast=Turing&amp;rft.au=Turing%2C+A.M.&amp;rft.date=1936&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1112%2Fplms%2Fs2-42.1.230&amp;rft.jtitle=Proceedings+of+the+London+Mathematical+Society&amp;rft.pages=230-65&amp;rft.series=2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=42" class="Z3988"><span style="display:none;">&#160;</span></span> (and <span id="CITEREFTuring1938" class="citation">Turing, A.M. (1938), "On Computable Numbers, with an Application to the Entscheidungsproblem. A correction", <i>Proceedings of the London Mathematical Society</i>, 2 (1937) <b>43</b> (6): 544–6, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1112%2Fplms%2Fs2-43.6.544">10.1112/plms/s2-43.6.544</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.atitle=On+Computable+Numbers%2C+with+an+Application+to+the+Entscheidungsproblem.+A+correction&amp;rft.aufirst=A.M.&amp;rft.aulast=Turing&amp;rft.au=Turing%2C+A.M.&amp;rft.date=1938&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1112%2Fplms%2Fs2-43.6.544&amp;rft.issue=6&amp;rft.jtitle=Proceedings+of+the+London+Mathematical+Society&amp;rft.pages=544-6&amp;rft.series=2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=43" class="Z3988"><span style="display:none;">&#160;</span></span>)</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><span id="CITEREF1948" class="citation"><a rel="nofollow" class="external text" href="http://www.computer50.org/kgill/mark1/natletter.html">"Electronic Digital Computers"</a>, <i>Nature</i> <b>162</b>, September 25, 1948: 487, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1038%2F162487a0">10.1038/162487a0</a><span class="reference-accessdate">, retrieved <span class="nowrap">2009-04-10</span></span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.atitle=Electronic+Digital+Computers&amp;rft.date=September+25%2C+1948&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.computer50.org%2Fkgill%2Fmark1%2Fnatletter.html&amp;rft_id=info%3Adoi%2F10.1038%2F162487a0&amp;rft.jtitle=Nature&amp;rft.pages=487&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=162" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><span id="CITEREFLukoff1979" class="citation">Lukoff, Herman (1979), <i>From Dits to Bits...: A Personal History of the Electronic Computer</i>, Robotics Press, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-89661-002-6" title="Special:BookSources/978-0-89661-002-6">978-0-89661-002-6</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.aufirst=Herman&amp;rft.aulast=Lukoff&amp;rft.au=Lukoff%2C+Herman&amp;rft.btitle=From+Dits+to+Bits...%3A+A+Personal+History+of+the+Electronic+Computer&amp;rft.date=1979&amp;rft.genre=book&amp;rft.isbn=978-0-89661-002-6&amp;rft.pub=Robotics+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text">ENIAC project administrator Grist Brainerd's December 1943 progress report for the first period of the ENIAC's development implicitly proposed the stored program concept (while simultaneously rejecting its implementation in the ENIAC) by stating that "in order to have the simplest project and not to complicate matters" the ENIAC would be constructed without any "automatic regulation".</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a href="#CITEREFCopeland2006">Copeland 2006</a>, p.&#160;113</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><span id="CITEREFCopeland2000" class="citation"><a href="/wiki/Jack_Copeland" title="Jack Copeland">Copeland, Jack</a> (2000), <a rel="nofollow" class="external text" href="http://www.alanturing.net/turing_archive/pages/Reference%20Articles/BriefHistofComp.html#ACE"><i>A Brief History of Computing: ENIAC and EDVAC</i></a><span class="reference-accessdate">, retrieved <span class="nowrap">January 27,</span> 2010</span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.au=Copeland%2C+Jack&amp;rft.aufirst=Jack&amp;rft.aulast=Copeland&amp;rft.btitle=A+Brief+History+of+Computing%3A+ENIAC+and+EDVAC&amp;rft.date=2000&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.alanturing.net%2Fturing_archive%2Fpages%2FReference%2520Articles%2FBriefHistofComp.html%23ACE&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><span id="CITEREFCopeland2000" class="citation"><a href="/wiki/Jack_Copeland" title="Jack Copeland">Copeland, Jack</a> (2000), <a rel="nofollow" class="external text" href="http://www.alanturing.net/turing_archive/pages/Reference%20Articles/BriefHistofComp.html#ACE"><i>A Brief History of Computing: ENIAC and EDVAC</i></a><span class="reference-accessdate">, retrieved <span class="nowrap">27 January</span> 2010</span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.au=Copeland%2C+Jack&amp;rft.aufirst=Jack&amp;rft.aulast=Copeland&amp;rft.btitle=A+Brief+History+of+Computing%3A+ENIAC+and+EDVAC&amp;rft.date=2000&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.alanturing.net%2Fturing_archive%2Fpages%2FReference%2520Articles%2FBriefHistofComp.html%23ACE&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> which cites <span id="CITEREFRandell1972" class="citation"><a href="/wiki/Brian_Randell" title="Brian Randell">Randell, B.</a> (1972), Meltzer, B.; Michie, D., eds., "On Alan Turing and the Origins of Digital Computers", <i>Machine Intelligence</i> (Edinburgh: Edinburgh University Press) <b>7</b>: 10, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-902383-26-4" title="Special:BookSources/0-902383-26-4">0-902383-26-4</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.atitle=On+Alan+Turing+and+the+Origins+of+Digital+Computers&amp;rft.aufirst=B.&amp;rft.aulast=Randell&amp;rft.au=Randell%2C+B.&amp;rft.date=1972&amp;rft.genre=article&amp;rft.isbn=0-902383-26-4&amp;rft.jtitle=Machine+Intelligence&amp;rft.pages=10&amp;rft.place=Edinburgh&amp;rft.pub=Edinburgh+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=7" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><a href="#CITEREFCopeland2006">Copeland 2006</a>, pp.&#160;108–111</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><a href="#CITEREFBowden1953">Bowden 1953</a>, pp.&#160;176,177</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><a href="#CITEREFBowden1953">Bowden 1953</a>, p.&#160;135</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.ias.edu/people/vonneumann/ecp/">"Electronic Computer Project"</a>. <a href="/wiki/Institute_for_Advanced_Study" title="Institute for Advanced Study">Institute for Advanced Study</a><span class="reference-accessdate">. Retrieved <span class="nowrap">May 26,</span> 2011</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.btitle=Electronic+Computer+Project&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.ias.edu%2Fpeople%2Fvonneumann%2Fecp%2F&amp;rft.pub=Institute+for+Advanced+Study&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><span id="CITEREFJames_E._Robertson1955" class="citation">James E. Robertson (1955), <i>Illiac Design Techniques</i>, report number UIUCDCS-R-1955-146, Digital Computer Laboratory, University of Illinois at Urbana-Champaign</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.au=James+E.+Robertson&amp;rft.aulast=James+E.+Robertson&amp;rft.btitle=Illiac+Design+Techniques&amp;rft.date=1955&amp;rft.genre=book&amp;rft.pub=report+number+UIUCDCS-R-1955-146%2C+Digital+Computer+Laboratory%2C+University+of+Illinois+at+Urbana-Champaign&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><span class="citation web">F.E. Hamilton, R.R. Seeber, R.A. Rowley, and E.S. Hughes (January 19, 1949). <a rel="nofollow" class="external text" href="http://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=2636672.PN.&amp;OS=PN/2636672&amp;RS=PN/2636672">"Selective Sequence Electronic Calculator"</a>. <i>US Patent 2,636,672</i><span class="reference-accessdate">. Retrieved <span class="nowrap">April 28,</span> 2011</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.atitle=Selective+Sequence+Electronic+Calculator&amp;rft.au=F.E.+Hamilton%2C+R.R.+Seeber%2C+R.A.+Rowley%2C+and+E.S.+Hughes&amp;rft.aulast=F.E.+Hamilton%2C+R.R.+Seeber%2C+R.A.+Rowley%2C+and+E.S.+Hughes&amp;rft.date=January+19%2C+1949&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fpatft1.uspto.gov%2Fnetacgi%2Fnph-Parser%3FSect1%3DPTO1%26Sect2%3DHITOFF%26d%3DPALL%26p%3D1%26u%3D%252Fnetahtml%252FPTO%252Fsrchnum.htm%26r%3D1%26f%3DG%26l%3D50%26s1%3D2636672.PN.%26OS%3DPN%2F2636672%26RS%3DPN%2F2636672&amp;rft.jtitle=US+Patent+2%2C636%2C672&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span> Issued April 28, 1953.</span></li>
+<li id="cite_note-herb-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-herb_19-0">^</a></b></span> <span class="reference-text"><span id="CITEREFHerbert_R.J._Grosch1991" class="citation"><a href="/wiki/Herb_Grosch" title="Herb Grosch">Herbert R.J. Grosch</a> (1991), <a rel="nofollow" class="external text" href="http://www.columbia.edu/acis/history/computer.html"><i>Computer: Bit Slices From a Life</i></a>, Third Millennium Books, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-88733-085-1" title="Special:BookSources/0-88733-085-1">0-88733-085-1</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.au=Herbert+R.J.+Grosch&amp;rft.aulast=Herbert+R.J.+Grosch&amp;rft.btitle=Computer%3A+Bit+Slices+From+a+Life&amp;rft.date=1991&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.columbia.edu%2Facis%2Fhistory%2Fcomputer.html&amp;rft.isbn=0-88733-085-1&amp;rft.pub=Third+Millennium+Books&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><span id="CITEREFC._Gordon_BellR._CadyH._McFarlandJ._O.27Laughlin1970" class="citation"><a href="/wiki/Gordon_Bell" title="Gordon Bell">C. Gordon Bell</a>; R. Cady; H. McFarland; J. O'Laughlin; R. Noonan; W. Wulf (1970), <a rel="nofollow" class="external text" href="http://research.microsoft.com/en-us/um/people/gbell/CGB%20Files/New%20Architecture%20PDP11%20SJCC%201970%20c.pdf">"A New Architecture for Mini-Computers—The DEC PDP-11"</a> <span style="font-size:85%;">(PDF)</span>, <i>Spring Joint Computer Conference</i>: 657–675.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.atitle=A+New+Architecture+for+Mini-Computers%E2%80%94The+DEC+PDP-11&amp;rft.au=C.+Gordon+Bell&amp;rft.au=H.+McFarland&amp;rft.au=J.+O%27Laughlin&amp;rft.aulast=C.+Gordon+Bell&amp;rft.au=R.+Cady&amp;rft.au=R.+Noonan&amp;rft.au=W.+Wulf&amp;rft.date=1970&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fgbell%2FCGB%2520Files%2FNew%2520Architecture%2520PDP11%2520SJCC%25201970%2520c.pdf&amp;rft.jtitle=Spring+Joint+Computer+Conference&amp;rft.pages=657-675&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text"><span id="CITEREFLinda_NullJulia_Lobur2010" class="citation">Linda Null; Julia Lobur (2010), <a rel="nofollow" class="external text" href="http://books.google.com/books?id=f83XxoBC_8MC&amp;pg=PA36"><i>The essentials of computer organization and architecture</i></a> (3rd ed.), Jones &amp; Bartlett Learning, pp.&#160;36,199–203, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4496-0006-8" title="Special:BookSources/978-1-4496-0006-8">978-1-4496-0006-8</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.au=Julia+Lobur&amp;rft.aulast=Linda+Null&amp;rft.au=Linda+Null&amp;rft.btitle=The+essentials+of+computer+organization+and+architecture&amp;rft.date=2010&amp;rft.edition=3rd&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Df83XxoBC_8MC%26pg%3DPA36&amp;rft.isbn=978-1-4496-0006-8&amp;rft.pages=36%2C199-203&amp;rft.pub=Jones+%26+Bartlett+Learning&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-backus-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-backus_22-0">^</a></b></span> <span class="reference-text"><span class="citation journal"><a href="/wiki/John_Backus" title="John Backus">Backus, John W.</a>. "Can Programming Be Liberated from the von Neumann Style? A Functional Style and Its Algebra of Programs". <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F359576.359579">10.1145/359576.359579</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.au=Backus%2C+John+W.&amp;rft.aufirst=John+W.&amp;rft.aulast=Backus&amp;rft.btitle=Can+Programming+Be+Liberated+from+the+von+Neumann+Style%3F+A+Functional+Style+and+Its+Algebra+of+Programs&amp;rft.genre=book&amp;rft_id=info%3Adoi%2F10.1145%2F359576.359579&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="display:none;font-size:100%" class="error citation-comment"><code style="color:inherit; border:inherit; padding:inherit;">|accessdate=</code> requires <code style="color:inherit; border:inherit; padding:inherit;">|url=</code> (<a href="/wiki/Help:CS1_errors#accessdate_missing_url" title="Help:CS1 errors">help</a>)</span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><span class="citation web"><a href="/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra, Edsger W.</a>. <a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD692.html">"E. W. Dijkstra Archive: A review of the 1977 Turing Award Lecture"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2008-07-11</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.au=Dijkstra%2C+Edsger+W.&amp;rft.aufirst=Edsger+W.&amp;rft.aulast=Dijkstra&amp;rft.btitle=E.+W.+Dijkstra+Archive%3A+A+review+of+the+1977+Turing+Award+Lecture&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.cs.utexas.edu%2F~EWD%2Ftranscriptions%2FEWD06xx%2FEWD692.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text">Richard L. Sites, Yale Patt. <a rel="nofollow" class="external text" href="http://cva.stanford.edu/classes/cs99s/papers/architects_look_to_future.pdf">"Architects Look to Processors of Future"</a>. Microprocessor report. 1996.</span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.national.com/appinfo/mcu/files/Basic_user1.pdf">"COP8 Basic Family User’s Manual"</a> <span style="font-size:85%;">(PDF)</span>. <a href="/wiki/National_Semiconductor" title="National Semiconductor">National Semiconductor</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-01-20</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.btitle=COP8+Basic+Family+User%E2%80%99s+Manual&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.national.com%2Fappinfo%2Fmcu%2Ffiles%2FBasic_user1.pdf&amp;rft.pub=National+Semiconductor&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.national.com/appinfo/mcu/files/Feature_user.pdf">"COP888 Feature Family User’s Manual"</a> <span style="font-size:85%;">(PDF)</span>. National Semiconductor<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-01-20</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.btitle=COP888+Feature+Family+User%E2%80%99s+Manual&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.national.com%2Fappinfo%2Fmcu%2Ffiles%2FFeature_user.pdf&amp;rft.pub=National+Semiconductor&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h3><span class="mw-headline" id="General">General</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=11" title="Edit section: General">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="refbegin" style="">
+<ul>
+<li><span id="CITEREFBowden1953" class="citation">Bowden, B.V., ed. (1953), <i>Faster Than Thought: A Symposium on Digital Computing Machines</i>, London: Sir Isaac Pitman and Sons Ltd.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.btitle=Faster+Than+Thought%3A+A+Symposium+on+Digital+Computing+Machines&amp;rft.date=1953&amp;rft.genre=book&amp;rft.place=London&amp;rft.pub=Sir+Isaac+Pitman+and+Sons+Ltd.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span id="CITEREFRojasHashagen2000" class="citation">Rojas, Raúl; Hashagen, Ulf, eds. (2000), <i>The First Computers: History and Architectures</i>, MIT Press, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-262-18197-5" title="Special:BookSources/0-262-18197-5">0-262-18197-5</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.btitle=The+First+Computers%3A+History+and+Architectures&amp;rft.date=2000&amp;rft.genre=book&amp;rft.isbn=0-262-18197-5&amp;rft.pub=MIT+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span id="CITEREFDavis2000" class="citation"><a href="/wiki/Martin_Davis" title="Martin Davis">Davis, Martin</a> (2000), <i>The universal computer: the road from Leibniz to Turing</i>, New York: W W Norton &amp; Company Inc., <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-393-04785-7" title="Special:BookSources/0-393-04785-7">0-393-04785-7</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.au=Davis%2C+Martin&amp;rft.aufirst=Martin&amp;rft.aulast=Davis&amp;rft.btitle=The+universal+computer%3A+the+road+from+Leibniz+to+Turing&amp;rft.date=2000&amp;rft.genre=book&amp;rft.isbn=0-393-04785-7&amp;rft.place=New+York&amp;rft.pub=W+W+Norton+%26+Company+Inc.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> republished as: <span id="CITEREFDavis2001" class="citation"><a href="/wiki/Martin_Davis" title="Martin Davis">Davis, Martin</a> (2001), <i>Engines of Logic: Mathematicians and the Origin of the Computer</i>, New York: W. W. Norton &amp; Company, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-393-32229-3" title="Special:BookSources/978-0-393-32229-3">978-0-393-32229-3</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.au=Davis%2C+Martin&amp;rft.aufirst=Martin&amp;rft.aulast=Davis&amp;rft.btitle=Engines+of+Logic%3A+Mathematicians+and+the+Origin+of+the+Computer&amp;rft.date=2001&amp;rft.genre=book&amp;rft.isbn=978-0-393-32229-3&amp;rft.place=New+York&amp;rft.pub=W.+W.+Norton+%26+Company&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><i>Can Programming be Liberated from the von Neumann Style?</i>, John Backus, 1977 ACM Turing Award Lecture. Communications of the ACM, August 1978, Volume 21, Number 8 <a rel="nofollow" class="external text" href="http://www.stanford.edu/class/cs242/readings/backus.pdf">Online PDF</a> see details at <a rel="nofollow" class="external free" href="http://www.cs.tufts.edu/~nr/backus-lecture.html">http://www.cs.tufts.edu/~nr/backus-lecture.html</a></li>
+<li>C. Gordon Bell and Allen Newell (1971), <i>Computer Structures: Readings and Examples</i>, McGraw-Hill Book Company, New York. Massive (668 pages)</li>
+<li><span id="CITEREFCopeland2006" class="citation">Copeland, Jack (2006), "Colossus and the Rise of the Modern Computer", in Copeland, B. Jack, <i>Colossus: The Secrets of Bletchley Park's Codebreaking Computers</i>, Oxford: Oxford University Press, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-19-284055-4" title="Special:BookSources/978-0-19-284055-4">978-0-19-284055-4</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.atitle=Colossus+and+the+Rise+of+the+Modern+Computer&amp;rft.au=Copeland%2C+Jack&amp;rft.aufirst=Jack&amp;rft.aulast=Copeland&amp;rft.btitle=Colossus%3A+The+Secrets+of+Bletchley+Park%27s+Codebreaking+Computers&amp;rft.date=2006&amp;rft.genre=bookitem&amp;rft.isbn=978-0-19-284055-4&amp;rft.place=Oxford&amp;rft.pub=Oxford+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span id="CITEREFGanesan2009" class="citation">Ganesan, Deepak (2009), <a rel="nofollow" class="external text" href="http://none.cs.umass.edu/~dganesan/courses/fall09/handouts/Chapter4.pdf"><i>The Von Neumann Model</i></a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">, retrieved <span class="nowrap">October 22,</span> 2011</span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.aufirst=Deepak&amp;rft.au=Ganesan%2C+Deepak&amp;rft.aulast=Ganesan&amp;rft.btitle=The+Von+Neumann+Model&amp;rft.date=2009&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fnone.cs.umass.edu%2F~dganesan%2Fcourses%2Ffall09%2Fhandouts%2FChapter4.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<ul>
+<li><span id="SCOTT" class="citation book">McCartney, Scott (1999). <i>ENIAC: The Triumphs and Tragedies of the World's First Computer</i>. Walker &amp; Co. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-8027-1348-3" title="Special:BookSources/0-8027-1348-3">0-8027-1348-3</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.aufirst=Scott&amp;rft.aulast=McCartney&amp;rft.au=McCartney%2C+Scott&amp;rft.btitle=ENIAC%3A+The+Triumphs+and+Tragedies+of+the+World%27s+First+Computer&amp;rft.date=1999&amp;rft.genre=book&amp;rft.isbn=0-8027-1348-3&amp;rft.pub=Walker+%26+Co&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span id="HHG" class="citation book">Goldstine, Herman H. (1972). <i>The Computer from Pascal to von Neumann</i>. Princeton University press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-691-08104-2" title="Special:BookSources/0-691-08104-2">0-691-08104-2</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.aufirst=Herman+H.&amp;rft.au=Goldstine%2C+Herman+H.&amp;rft.aulast=Goldstine&amp;rft.btitle=The+Computer+from+Pascal+to+von+Neumann&amp;rft.date=1972&amp;rft.genre=book&amp;rft.isbn=0-691-08104-2&amp;rft.pub=Princeton+University+press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span id="JOEL" class="citation book">Shurkin, Joel (1984). <i>Engines of the Mind - a history of the computer</i>. New York, London: W.W. Norton &amp; Company. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-393-01804-0" title="Special:BookSources/0-393-01804-0">0-393-01804-0</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AVon+Neumann+architecture&amp;rft.aufirst=Joel&amp;rft.aulast=Shurkin&amp;rft.au=Shurkin%2C+Joel&amp;rft.btitle=Engines+of+the+Mind+-+a+history+of+the+computer&amp;rft.date=1984&amp;rft.genre=book&amp;rft.isbn=0-393-01804-0&amp;rft.place=New+York%2C+London&amp;rft.pub=W.W.+Norton+%26+Company&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit&amp;section=12" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.faqs/ka11516.html">Harvard vs von Neumann</a></li>
+<li><a rel="nofollow" class="external text" href="http://home.gna.org/vov/">A tool that emulates the behavior of a von Neumann machine</a></li>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/johnnysimulator/">JOHNNY – A simple Open Source simulator of a von Neumann machine for educational purposes</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:CPU_technologies" title="Template:CPU technologies"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:CPU_technologies" title="Template talk:CPU technologies"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:CPU_technologies&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Central_processing_unit" title="Central processing unit">CPU technologies</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Computer_architecture" title="Computer architecture">Architecture</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Harvard_architecture" title="Harvard architecture">Harvard</a> (<a href="/wiki/Modified_Harvard_architecture" title="Modified Harvard architecture">Modified Harvard</a>)</li>
+<li><strong class="selflink">von Neumann</strong></li>
+<li><a href="/wiki/Dataflow_architecture" title="Dataflow architecture">Dataflow</a></li>
+<li><a href="/wiki/Transport_triggered_architecture" title="Transport triggered architecture">TTA</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Instruction_set" title="Instruction set">Instruction set</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Application-specific_instruction-set_processor" title="Application-specific instruction-set processor" class="mw-redirect">ASIP</a></li>
+<li><a href="/wiki/Complex_instruction_set_computing" title="Complex instruction set computing">CISC</a></li>
+<li><a href="/wiki/Explicit_Data_Graph_Execution" title="Explicit Data Graph Execution">EDGE</a></li>
+<li><a href="/wiki/Explicitly_parallel_instruction_computing" title="Explicitly parallel instruction computing">EPIC</a></li>
+<li><a href="/wiki/Minimal_instruction_set_computer" title="Minimal instruction set computer">MISC</a></li>
+<li><a href="/wiki/One_instruction_set_computer" title="One instruction set computer">OISC</a></li>
+<li><a href="/wiki/Reduced_instruction_set_computing" title="Reduced instruction set computing">RISC</a></li>
+<li><a href="/wiki/Very_long_instruction_word" title="Very long instruction word">VLIW</a></li>
+<li><a href="/wiki/No_instruction_set_computing" title="No instruction set computing">NISC</a></li>
+<li><a href="/wiki/Zero_instruction_set_computer" title="Zero instruction set computer">ZISC</a></li>
+<li><a href="/wiki/TRIPS_architecture" title="TRIPS architecture">TRIPS</a></li>
+<li><a href="/wiki/Comparison_of_instruction_set_architectures" title="Comparison of instruction set architectures">Comparison</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word size</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/1-bit_architecture" title="1-bit architecture">1-bit</a></li>
+<li><a href="/wiki/4-bit" title="4-bit">4-bit</a></li>
+<li><a href="/wiki/8-bit" title="8-bit">8-bit</a></li>
+<li><a href="/wiki/Word_(computer_architecture)#Table_of_word_sizes" title="Word (computer architecture)">9-bit</a></li>
+<li><a href="/wiki/Ferranti_Mercury" title="Ferranti Mercury">10-bit</a></li>
+<li><a href="/wiki/12-bit" title="12-bit">12-bit</a></li>
+<li><a href="/wiki/Apollo_Guidance_Computer" title="Apollo Guidance Computer">15-bit</a></li>
+<li><a href="/wiki/16-bit" title="16-bit">16-bit</a></li>
+<li><a href="/wiki/18-bit" title="18-bit">18-bit</a></li>
+<li><a href="/wiki/Z3_(computer)" title="Z3 (computer)">22-bit</a></li>
+<li><a href="/wiki/24-bit" title="24-bit">24-bit</a></li>
+<li><a href="/wiki/UNIVAC_III" title="UNIVAC III">25-bit</a></li>
+<li><a href="/wiki/Saturn_Launch_Vehicle_Digital_Computer" title="Saturn Launch Vehicle Digital Computer">26-bit</a></li>
+<li><a href="/wiki/D-17B" title="D-17B">27-bit</a></li>
+<li><a href="/wiki/31-bit" title="31-bit">31-bit</a></li>
+<li><a href="/wiki/32-bit" title="32-bit">32-bit</a></li>
+<li><a href="/wiki/ZEBRA_(computer)" title="ZEBRA (computer)">33-bit</a></li>
+<li><a href="/wiki/Fast_Universal_Digital_Computer_M-2" title="Fast Universal Digital Computer M-2">34-bit</a></li>
+<li><a href="/wiki/36-bit" title="36-bit">36-bit</a></li>
+<li><a href="/wiki/Word_(computer_architecture)#Table_of_word_sizes" title="Word (computer architecture)">39-bit</a></li>
+<li><a href="/wiki/IAS_machine" title="IAS machine">40-bit</a></li>
+<li><a href="/wiki/48-bit" title="48-bit">48-bit</a></li>
+<li><a href="/wiki/Atanasoff%E2%80%93Berry_computer" title="Atanasoff–Berry computer">50-bit</a></li>
+<li><a href="/wiki/60-bit" title="60-bit">60-bit</a></li>
+<li><a href="/wiki/64-bit_computing" title="64-bit computing">64-bit</a></li>
+<li><a href="/wiki/128-bit" title="128-bit">128-bit</a></li>
+<li><a href="/wiki/256-bit" title="256-bit">256-bit</a></li>
+<li><a href="/wiki/512-bit" title="512-bit">512-bit</a></li>
+<li><a href="/wiki/Word_(computer_architecture)#Variable_word_architectures" title="Word (computer architecture)">variable</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Instruction_cycle" title="Instruction cycle">Execution</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Instruction_pipeline" title="Instruction pipeline">Instruction pipelining</a>
+<ul>
+<li><a href="/wiki/Bubble_(computing)" title="Bubble (computing)">Bubble</a></li>
+<li><a href="/wiki/Operand_forwarding" title="Operand forwarding">Operand forwarding</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Out-of-order_execution" title="Out-of-order execution">Out-of-order execution</a>
+<ul>
+<li><a href="/wiki/Register_renaming" title="Register renaming">Register renaming</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Speculative_execution" title="Speculative execution">Speculative execution</a>
+<ul>
+<li><a href="/wiki/Branch_predictor" title="Branch predictor">Branch predictor</a></li>
+<li><a href="/wiki/Memory_dependence_prediction" title="Memory dependence prediction">Memory dependence prediction</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Hazard_(computer_architecture)" title="Hazard (computer architecture)">Hazards</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Parallel_computing" title="Parallel computing">Parallel level</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Bit-level_parallelism" title="Bit-level parallelism">Bit</a>
+<ul>
+<li><a href="/wiki/Bit-serial_architecture" title="Bit-serial architecture">Bit-serial</a></li>
+<li><a href="/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Instruction-level_parallelism" title="Instruction-level parallelism">Instruction</a>
+<ul>
+<li><a href="/wiki/Scalar_processor" title="Scalar processor">Scalar</a></li>
+<li><a href="/wiki/Superscalar" title="Superscalar" class="mw-redirect">Superscalar</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Data_parallelism" title="Data parallelism">Data</a>
+<ul>
+<li><a href="/wiki/Vector_processor" title="Vector processor">Vector</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Memory-level_parallelism" title="Memory-level parallelism">Memory</a></li>
+<li><a href="/wiki/Task_parallelism" title="Task parallelism">Task</a>
+<ul>
+<li><a href="/wiki/Thread_(computing)" title="Thread (computing)">Thread</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Multithreading_(computer_architecture)" title="Multithreading (computer architecture)">Multithreading</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Temporal_multithreading" title="Temporal multithreading">Temporal multithreading</a></li>
+<li><a href="/wiki/Simultaneous_multithreading" title="Simultaneous multithreading">Simultaneous multithreading</a>
+<ul>
+<li><a href="/wiki/Hyper-threading" title="Hyper-threading">Hyper-threading</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Flynn%27s_taxonomy" title="Flynn's taxonomy">Flynn's taxonomy</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/SISD" title="SISD">SISD</a></li>
+<li><a href="/wiki/SIMD" title="SIMD">SIMD</a></li>
+<li><a href="/wiki/MISD" title="MISD">MISD</a></li>
+<li><a href="/wiki/MIMD" title="MIMD">MIMD</a>
+<ul>
+<li><a href="/wiki/SPMD" title="SPMD">SPMD</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Addressing_mode" title="Addressing mode">Addressing mode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Types</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Digital_signal_processor" title="Digital signal processor">Digital signal processor</a> (DSP)</li>
+<li><a href="/wiki/General-purpose_computing_on_graphics_processing_units" title="General-purpose computing on graphics processing units">GPGPU</a></li>
+<li><a href="/wiki/Microcontroller" title="Microcontroller">Microcontroller</a></li>
+<li><a href="/wiki/Physics_processing_unit" title="Physics processing unit">Physics processing unit</a></li>
+<li><a href="/wiki/System_on_a_chip" title="System on a chip">System on a chip</a> (SoC)</li>
+<li><a href="/wiki/Cellular_architecture" title="Cellular architecture">Cellular</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Components</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Address_generation_unit" title="Address generation unit">Address generation unit</a> (AGU)</li>
+<li><a href="/wiki/Arithmetic_logic_unit" title="Arithmetic logic unit">Arithmetic logic unit</a> (ALU)</li>
+<li><a href="/wiki/Barrel_shifter" title="Barrel shifter">Barrel shifter</a></li>
+<li><a href="/wiki/Floating-point_unit" title="Floating-point unit">Floating-point unit</a> (FPU)</li>
+<li><a href="/wiki/Back-side_bus" title="Back-side bus">Back-side bus</a></li>
+<li>(<a href="/wiki/Multiplexer" title="Multiplexer">Multiplexer</a>, <a href="/wiki/Demultiplexer" title="Demultiplexer" class="mw-redirect">Demultiplexer</a>)</li>
+<li><a href="/wiki/Processor_register" title="Processor register">Registers</a></li>
+<li><a href="/wiki/Memory_management_unit" title="Memory management unit">Memory management unit</a> (MMU)</li>
+<li><a href="/wiki/Translation_lookaside_buffer" title="Translation lookaside buffer">Translation lookaside buffer</a> (TLB)</li>
+<li><a href="/wiki/CPU_cache" title="CPU cache">Cache</a></li>
+<li><a href="/wiki/Register_file" title="Register file">Register file</a></li>
+<li><a href="/wiki/Microcode" title="Microcode">Microcode</a></li>
+<li><a href="/wiki/Control_unit" title="Control unit">Control unit</a></li>
+<li><a href="/wiki/Clock_rate" title="Clock rate">Clock rate</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Power_management" title="Power management">Power<br />
+management</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Advanced_Power_Management" title="Advanced Power Management">APM</a></li>
+<li><a href="/wiki/Advanced_Configuration_and_Power_Interface" title="Advanced Configuration and Power Interface">ACPI</a></li>
+<li><a href="/wiki/Dynamic_frequency_scaling" title="Dynamic frequency scaling">Dynamic frequency scaling</a></li>
+<li><a href="/wiki/Dynamic_voltage_scaling" title="Dynamic voltage scaling">Dynamic voltage scaling</a></li>
+<li><a href="/wiki/Clock_gating" title="Clock gating">Clock gating</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">CPU hardware <a href="/wiki/Computer_security" title="Computer security">security</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/NX_bit" title="NX bit">NX bit</a></li>
+<li><a href="/wiki/Hardware_restriction" title="Hardware restriction">Hardware restriction</a> (<a href="/wiki/Firmware" title="Firmware">firmware</a>)</li>
+<li><a href="/wiki/Trusted_Execution_Technology" title="Trusted Execution Technology">Trusted Execution Technology</a></li>
+<li><a href="/wiki/Secure_cryptoprocessor" title="Secure cryptoprocessor">Secure cryptoprocessor</a></li>
+<li><a href="/wiki/Hardware_security_module" title="Hardware security module">Hardware security module</a></li>
+<li><a href="/wiki/Hengzhi_chip" title="Hengzhi chip">Hengzhi chip</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1220
+Cached time: 20150917225714
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.398 seconds
+Real time usage: 0.485 seconds
+Preprocessor visited node count: 2351/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 92835/2097152 bytes
+Template argument size: 1808/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 2/500
+Lua time usage: 0.142/10.000 seconds
+Lua memory usage: 4.33 MB/50 MB
+Number of Wikibase entities loaded: 1-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  365.678      1 - -total
+ 41.13%  150.409      1 - Template:Reflist
+ 25.13%   91.892     20 - Template:Citation
+ 10.82%   39.584      1 - Template:Citation_needed
+  9.84%   35.973      1 - Template:Fix
+  8.78%   32.091      1 - Template:Use_mdy_dates
+  8.76%   32.023      2 - Template:Category_handler
+  6.93%   25.350      1 - Template:Commons_category
+  5.32%   19.443      1 - Template:CPU_technologies
+  4.75%   17.372      5 - Template:Cite_web
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:478091-0!*!0!!en!4!* and timestamp 20150917225714 and revision id 679300163
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Von_Neumann_architecture&amp;oldid=679300163">https://en.wikipedia.org/w/index.php?title=Von_Neumann_architecture&amp;oldid=679300163</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Computer_architecture" title="Category:Computer architecture">Computer architecture</a></li><li><a href="/wiki/Category:Flynn%27s_taxonomy" title="Category:Flynn's taxonomy">Flynn's taxonomy</a></li><li><a href="/wiki/Category:Reference_models" title="Category:Reference models">Reference models</a></li><li><a href="/wiki/Category:Classes_of_computers" title="Category:Classes of computers">Classes of computers</a></li><li><a href="/wiki/Category:School_of_Computer_Science,_University_of_Manchester" title="Category:School of Computer Science, University of Manchester">School of Computer Science, University of Manchester</a></li><li><a href="/wiki/Category:Open_problems" title="Category:Open problems">Open problems</a></li><li><a href="/wiki/Category:1945_introductions" title="Category:1945 introductions">1945 introductions</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_citations_with_accessdate_and_no_URL" title="Category:Pages using citations with accessdate and no URL">Pages using citations with accessdate and no URL</a></li><li><a href="/wiki/Category:Use_mdy_dates_from_September_2012" title="Category:Use mdy dates from September 2012">Use mdy dates from September 2012</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_December_2010" title="Category:Articles with unsourced statements from December 2010">Articles with unsourced statements from December 2010</a></li><li><a href="/wiki/Category:Commons_category_template_with_no_category_set" title="Category:Commons category template with no category set">Commons category template with no category set</a></li><li><a href="/wiki/Category:Commons_category_with_page_title_same_as_on_Wikidata" title="Category:Commons category with page title same as on Wikidata">Commons category with page title same as on Wikidata</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Von+Neumann+architecture&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Von+Neumann+architecture" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Von_Neumann_architecture"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Von_Neumann_architecture"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Von_Neumann_architecture" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Von_Neumann_architecture" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Von_Neumann_architecture" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Von_Neumann_architecture&amp;oldid=679300163" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Von_Neumann_architecture&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q189088" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Von_Neumann_architecture&amp;id=679300163" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Von+Neumann+architecture">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Von+Neumann+architecture&amp;oldid=679300163&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Von_Neumann_architecture&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D9%87%D9%8A%D9%83%D9%84%D8%A9_%D9%81%D9%88%D9%86_%D9%86%D9%8A%D9%88%D9%85%D8%A7%D9%86" title="هيكلة فون نيومان – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-ast"><a href="//ast.wikipedia.org/wiki/Arquiteutura_von_Neumann" title="Arquiteutura von Neumann – Asturian" lang="ast" hreflang="ast">Asturianu</a></li><li class="interlanguage-link interwiki-be"><a href="//be.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D1%96%D1%82%D1%8D%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D1%84%D0%BE%D0%BD_%D0%9D%D1%8D%D0%B9%D0%BC%D0%B0%D0%BD%D0%B0" title="Архітэктура фон Нэймана – Belarusian" lang="be" hreflang="be">Беларуская</a></li><li class="interlanguage-link interwiki-bg"><a href="//bg.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD_%D0%9D%D0%BE%D0%B9%D0%BC%D0%B0%D0%BD" title="Архитектура на фон Нойман – Bulgarian" lang="bg" hreflang="bg">Български</a></li><li class="interlanguage-link interwiki-bs"><a href="//bs.wikipedia.org/wiki/Von_Neumannova_arhitektura" title="Von Neumannova arhitektura – Bosnian" lang="bs" hreflang="bs">Bosanski</a></li><li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/Arquitectura_de_von_Neumann" title="Arquitectura de von Neumann – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/Von_Neumannova_architektura" title="Von Neumannova architektura – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Von-Neumann-Architektur" title="Von-Neumann-Architektur – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="//et.wikipedia.org/wiki/Von_Neumanni_arhitektuur" title="Von Neumanni arhitektuur – Estonian" lang="et" hreflang="et">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="//el.wikipedia.org/wiki/%CE%91%CF%81%CF%87%CE%B9%CF%84%CE%B5%CE%BA%CF%84%CE%BF%CE%BD%CE%B9%CE%BA%CE%AE_%CF%86%CE%BF%CE%BD_%CE%9D%CF%8C%CE%B9%CE%BC%CE%B1%CE%BD" title="Αρχιτεκτονική φον Νόιμαν – Greek" lang="el" hreflang="el">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Arquitectura_de_von_Neumann" title="Arquitectura de von Neumann – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="//eu.wikipedia.org/wiki/Von_Neumannen_arkitektura" title="Von Neumannen arkitektura – Basque" lang="eu" hreflang="eu">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D9%85%D8%B9%D9%85%D8%A7%D8%B1%DB%8C_%D9%81%D9%88%D9%86_%D9%86%D9%88%DB%8C%D9%85%D8%A7%D9%86" title="معماری فون نویمان – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Architecture_de_von_Neumann" title="Architecture de von Neumann – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="//ko.wikipedia.org/wiki/%ED%8F%B0_%EB%85%B8%EC%9D%B4%EB%A7%8C_%EA%B5%AC%EC%A1%B0" title="폰 노이만 구조 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-hr"><a href="//hr.wikipedia.org/wiki/Von_Neumannova_arhitektura" title="Von Neumannova arhitektura – Croatian" lang="hr" hreflang="hr">Hrvatski</a></li><li class="interlanguage-link interwiki-id"><a href="//id.wikipedia.org/wiki/Arsitektur_von_Neumann" title="Arsitektur von Neumann – Indonesian" lang="id" hreflang="id">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-is"><a href="//is.wikipedia.org/wiki/Von_Neumann_arkitekt%C3%BAr" title="Von Neumann arkitektúr – Icelandic" lang="is" hreflang="is">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Architettura_di_von_Neumann" title="Architettura di von Neumann – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%90%D7%A8%D7%9B%D7%99%D7%98%D7%A7%D7%98%D7%95%D7%A8%D7%AA_%D7%A4%D7%95%D7%9F_%D7%A0%D7%95%D7%99%D7%9E%D7%9F" title="ארכיטקטורת פון נוימן – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-la"><a href="//la.wikipedia.org/wiki/Architectura_von_Neumann" title="Architectura von Neumann – Latin" lang="la" hreflang="la">Latina</a></li><li class="interlanguage-link interwiki-lv"><a href="//lv.wikipedia.org/wiki/Fon_Neimana_arhitekt%C5%ABra" title="Fon Neimana arhitektūra – Latvian" lang="lv" hreflang="lv">Latviešu</a></li><li class="interlanguage-link interwiki-hu"><a href="//hu.wikipedia.org/wiki/Neumann-architekt%C3%BAra" title="Neumann-architektúra – Hungarian" lang="hu" hreflang="hu">Magyar</a></li><li class="interlanguage-link interwiki-mn"><a href="//mn.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD_%D0%9D%D0%B5%D0%B9%D0%BC%D0%B0%D0%BD_%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80" title="Фон Нейман архитектур – Mongolian" lang="mn" hreflang="mn">Монгол</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Von_Neumann-architectuur" title="Von Neumann-architectuur – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E3%83%8E%E3%82%A4%E3%83%9E%E3%83%B3%E5%9E%8B" title="ノイマン型 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="//no.wikipedia.org/wiki/Von_Neumann-arkitektur" title="Von Neumann-arkitektur – Norwegian" lang="no" hreflang="no">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Architektura_von_Neumanna" title="Architektura von Neumanna – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Arquitetura_de_von_Neumann" title="Arquitetura de von Neumann – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="//ro.wikipedia.org/wiki/Arhitectur%C4%83_von_Neumann" title="Arhitectură von Neumann – Romanian" lang="ro" hreflang="ro">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D1%84%D0%BE%D0%BD_%D0%9D%D0%B5%D0%B9%D0%BC%D0%B0%D0%BD%D0%B0" title="Архитектура фон Неймана – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sq"><a href="//sq.wikipedia.org/wiki/Arkitektura_e_Von_Neumann" title="Arkitektura e Von Neumann – Albanian" lang="sq" hreflang="sq">Shqip</a></li><li class="interlanguage-link interwiki-simple"><a href="//simple.wikipedia.org/wiki/Von_Neumann_architecture" title="Von Neumann architecture – Simple English" lang="simple" hreflang="simple">Simple English</a></li><li class="interlanguage-link interwiki-sk"><a href="//sk.wikipedia.org/wiki/Koncepcia_Johna_von_Neumanna" title="Koncepcia Johna von Neumanna – Slovak" lang="sk" hreflang="sk">Slovenčina</a></li><li class="interlanguage-link interwiki-sr"><a href="//sr.wikipedia.org/wiki/%D0%A4%D0%BE%D0%BD_%D0%9D%D0%BE%D1%98%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0_%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0" title="Фон Нојманова архитектура – Serbian" lang="sr" hreflang="sr">Српски / srpski</a></li><li class="interlanguage-link interwiki-sh"><a href="//sh.wikipedia.org/wiki/Von_Neumannova_arhitektura" title="Von Neumannova arhitektura – Serbo-Croatian" lang="sh" hreflang="sh">Srpskohrvatski / српскохрватски</a></li><li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/Von_Neumannin_arkkitehtuuri" title="Von Neumannin arkkitehtuuri – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Von_Neumann-arkitekturen" title="Von Neumann-arkitekturen – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-th"><a href="//th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9B%E0%B8%B1%E0%B8%95%E0%B8%A2%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%9F%E0%B8%AD%E0%B8%99%E0%B8%99%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B9%8C" title="สถาปัตยกรรมฟอนนอยมันน์ – Thai" lang="th" hreflang="th">ไทย</a></li><li class="interlanguage-link interwiki-tr"><a href="//tr.wikipedia.org/wiki/Neumann_Mimarisi" title="Neumann Mimarisi – Turkish" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-uk badge-Q17437796 badge-featuredarticle" title="featured article"><a href="//uk.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D1%84%D0%BE%D0%BD_%D0%9D%D0%B5%D0%B9%D0%BC%D0%B0%D0%BD%D0%B0" title="Архітектура фон Неймана – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-war"><a href="//war.wikipedia.org/wiki/Arkitektura_Von_Neumann" title="Arkitektura Von Neumann – Waray" lang="war" hreflang="war">Winaray</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E5%86%AF%C2%B7%E8%AF%BA%E4%BC%8A%E6%9B%BC%E7%BB%93%E6%9E%84" title="冯·诺伊曼结构 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q189088#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 3 September 2015, at 18:37.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Von_Neumann_architecture&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":601,"wgHostname":"mw1220"});
+} );</script>
+	</body>
+</html>

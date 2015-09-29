@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Shor's algorithm - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Shor's_algorithm","wgTitle":"Shor's algorithm","wgCurRevisionId":679970680,"wgRevisionId":679970680,"wgArticleId":42674,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with missing Cite arXiv inputs","Wikipedia articles that are too technical from February 2014","All articles that are too technical","Articles needing expert attention from February 2014","All articles needing expert attention","Articles lacking in-text citations from September 2010","All articles lacking in-text citations","Quantum algorithms","Integer factorization algorithms","Quantum information science","Articles containing proofs","Post-quantum cryptography"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":
+"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Shor's_algorithm","wgRelevantArticleId":42674,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Shor%27s_algorithm.svg/100px-Shor%27s_algorithm.svg.png","wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English",
+"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q940334","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Shor%27s_algorithm" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Shor%27s_algorithm" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Shor_s_algorithm skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Shor's algorithm</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>Shor's algorithm</b>, named after mathematician <a href="/wiki/Peter_Shor" title="Peter Shor">Peter Shor</a>, is a <a href="/wiki/Quantum_algorithm" title="Quantum algorithm">quantum algorithm</a> (an <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> that runs on a <a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">quantum computer</a>) for <a href="/wiki/Integer_factorization" title="Integer factorization">integer factorization</a> formulated in 1994. Informally it solves the following problem: given an integer <i>N</i>, find its <a href="/wiki/Prime_factor" title="Prime factor">prime factors</a>.</p>
+<p>On a quantum computer, to factor an integer <i>N</i>, Shor's algorithm runs in <a href="/wiki/Polynomial_time" title="Polynomial time" class="mw-redirect">polynomial time</a> (the time taken is polynomial in log <i>N</i>, which is the size of the input).<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> Specifically it takes time and quantum gates of order <span class="texhtml"><a href="/wiki/Big_O_notation" title="Big O notation">O</a>((log <i>N</i>)<sup>2</sup>(log log <i>N</i>)(log log log <i>N</i>)</span>) using fast multiplication,<sup id="cite_ref-Beckman_2-0" class="reference"><a href="#cite_note-Beckman-2"><span>[</span>2<span>]</span></a></sup> demonstrating that the integer factorization problem can be efficiently solved on a quantum computer and is thus in the <a href="/wiki/Complexity_class" title="Complexity class">complexity class</a> <b><a href="/wiki/BQP" title="BQP">BQP</a></b>. This is substantially faster than the most efficient known classical factoring algorithm, the <a href="/wiki/General_number_field_sieve" title="General number field sieve">general number field sieve</a>, which works in <a href="/wiki/Sub-exponential_time" title="Sub-exponential time" class="mw-redirect">sub-exponential time</a> — about <span class="texhtml">O(e<sup>1.9 (log N)<sup>1/3</sup> (log log N)<sup>2/3</sup></sup>)</span>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup> The efficiency of Shor's algorithm is due to the efficiency of the <a href="/wiki/Quantum_Fourier_transform" title="Quantum Fourier transform">quantum Fourier transform</a>, and <a href="/wiki/Modular_exponentiation" title="Modular exponentiation">modular exponentiation</a> by <a href="/wiki/Exponentiation_by_squaring" title="Exponentiation by squaring">repeated squarings</a>.</p>
+<p>If a quantum computer with a sufficient number of <a href="/wiki/Qubits" title="Qubits" class="mw-redirect">qubits</a> could operate without succumbing to <a href="/wiki/Noise" title="Noise">noise</a> and other quantum decoherence phenomena, Shor's algorithm could be used to break <a href="/wiki/Public-key_cryptography" title="Public-key cryptography">public-key cryptography</a> schemes such as the widely used <a href="/wiki/RSA_(algorithm)" title="RSA (algorithm)" class="mw-redirect">RSA</a> scheme. RSA is based on the assumption that factoring large numbers is computationally intractable. So far as is known, this assumption is valid for classical (non-quantum) computers; no classical algorithm is known that can factor in polynomial time. However, Shor's algorithm shows that factoring is efficient on an ideal quantum computer, so it may be feasible to defeat RSA by constructing a large quantum computer. It was also a powerful motivator for the design and construction of quantum computers and for the study of new quantum computer algorithms. It has also facilitated research on new cryptosystems that are secure from quantum computers, collectively called <a href="/wiki/Post-quantum_cryptography" title="Post-quantum cryptography">post-quantum cryptography</a>.</p>
+<p>In 2001, Shor's algorithm was demonstrated by a group at IBM, who factored 15 into 3&#160;×&#160;5, using an <a href="/wiki/Nuclear_magnetic_resonance_(NMR)_quantum_computing" title="Nuclear magnetic resonance (NMR) quantum computing" class="mw-redirect">NMR implementation</a> of a quantum computer with 7 <a href="/wiki/Qubits" title="Qubits" class="mw-redirect">qubits</a>.<sup id="cite_ref-VSBYSC01_4-0" class="reference"><a href="#cite_note-VSBYSC01-4"><span>[</span>4<span>]</span></a></sup> After IBM's implementation, two independent groups, one at the <a href="/wiki/University_of_Science_and_Technology_of_China" title="University of Science and Technology of China">University of Science and Technology of China</a>, and the other one at the <a href="/wiki/University_of_Queensland" title="University of Queensland">University of Queensland</a>, have implemented Shor's algorithm using photonic qubits, emphasizing that multi-qubit entanglement was observed when running the Shor's algorithm circuits.<sup id="cite_ref-LBYP07_5-0" class="reference"><a href="#cite_note-LBYP07-5"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-LWLBJGW07_6-0" class="reference"><a href="#cite_note-LWLBJGW07-6"><span>[</span>6<span>]</span></a></sup> In 2012, the factorization of 15 was repeated.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup> Also in 2012, the factorization of 21 was achieved, setting the record for the largest number factored with a quantum computer.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup> In April 2012, the factorization of 143 was achieved, although this used <a href="/wiki/Adiabatic_quantum_computation" title="Adiabatic quantum computation">adiabatic quantum computation</a> rather than Shor's algorithm.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup> It was discovered in November 2014 that this adiabatic quantum computation in 2012 had in fact also factored larger numbers, the largest being 56153, which is currently the record for the largest integer factored on a quantum device.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>11<span>]</span></a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Procedure"><span class="tocnumber">1</span> <span class="toctext">Procedure</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Classical_part"><span class="tocnumber">1.1</span> <span class="toctext">Classical part</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Quantum_part:_Period-finding_subroutine"><span class="tocnumber">1.2</span> <span class="toctext">Quantum part: Period-finding subroutine</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Explanation_of_the_algorithm"><span class="tocnumber">2</span> <span class="toctext">Explanation of the algorithm</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Obtaining_factors_from_period"><span class="tocnumber">2.1</span> <span class="toctext">Obtaining factors from period</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Finding_the_period"><span class="tocnumber">2.2</span> <span class="toctext">Finding the period</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#The_bottleneck"><span class="tocnumber">2.3</span> <span class="toctext">The bottleneck</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Discrete_logarithms"><span class="tocnumber">3</span> <span class="toctext">Discrete logarithms</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#In_popular_culture"><span class="tocnumber">4</span> <span class="toctext">In popular culture</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Procedure">Procedure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=1" title="Edit section: Procedure">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The problem we are trying to solve is: given an odd <a href="/wiki/Composite_number" title="Composite number">composite number</a> <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />, find an integer <img class="mwe-math-fallback-image-inline tex" alt="d" src="//upload.wikimedia.org/math/8/2/7/8277e0910d750195b448797616e091ad.png" />, strictly between <img class="mwe-math-fallback-image-inline tex" alt="1" src="//upload.wikimedia.org/math/c/4/c/c4ca4238a0b923820dcc509a6f75849b.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />, that divides <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />. We are interested in odd values of <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" /> because any even value of <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" /> trivially has the number <img class="mwe-math-fallback-image-inline tex" alt="2" src="//upload.wikimedia.org/math/c/8/1/c81e728d9d4c2f636f067f89cc14862c.png" /> as a prime factor. We can use a <a href="/wiki/Primality_testing" title="Primality testing" class="mw-redirect">primality testing</a> algorithm to make sure that <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" /> is indeed composite.</p>
+<p>Moreover, for the algorithm to work, we need <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" /> not to be the power of a prime. This can be tested by taking square, cubic, ..., <img class="mwe-math-fallback-image-inline tex" alt="k" src="//upload.wikimedia.org/math/8/c/e/8ce4b16b22b58894aa86c421e8759df3.png" />-roots of <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />, for <img class="mwe-math-fallback-image-inline tex" alt="k \le \log_{2}(N)" src="//upload.wikimedia.org/math/b/0/0/b00f21610c8e45f0155d656c304dab36.png" />, and checking that none of these is an integer. (This actually excludes that <img class="mwe-math-fallback-image-inline tex" alt="N = M^{k}" src="//upload.wikimedia.org/math/a/4/e/a4ee3d1ef17ce9d2b0feea05c137d69e.png" /> for some integer <img class="mwe-math-fallback-image-inline tex" alt="M" src="//upload.wikimedia.org/math/6/9/6/69691c7bdcc3ce6d5d8a1361f22d04ac.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="k &gt; 1" src="//upload.wikimedia.org/math/d/3/7/d37c0d918e9117937016dc3dd13c2faa.png" />.)</p>
+<p>Since <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" /> is not a power of a prime, it is the product of two <a href="/wiki/Coprime" title="Coprime" class="mw-redirect">coprime</a> numbers greater than <img class="mwe-math-fallback-image-inline tex" alt="1" src="//upload.wikimedia.org/math/c/4/c/c4ca4238a0b923820dcc509a6f75849b.png" />. As a consequence of the <a href="/wiki/Chinese_remainder_theorem" title="Chinese remainder theorem">Chinese remainder theorem</a>, the number <img class="mwe-math-fallback-image-inline tex" alt="1" src="//upload.wikimedia.org/math/c/4/c/c4ca4238a0b923820dcc509a6f75849b.png" /> has at least four distinct square roots <a href="/wiki/Modular_arithmetic" title="Modular arithmetic">modulo</a> <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />, two of them being <img class="mwe-math-fallback-image-inline tex" alt="1" src="//upload.wikimedia.org/math/c/4/c/c4ca4238a0b923820dcc509a6f75849b.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="-1" src="//upload.wikimedia.org/math/6/b/b/6bb61e3b7bce0931da574d19d1d82c88.png" />. The aim of the algorithm is to find a square root <img class="mwe-math-fallback-image-inline tex" alt="b" src="//upload.wikimedia.org/math/9/2/e/92eb5ffee6ae2fec3ad71c777531578f.png" /> of one, other than <img class="mwe-math-fallback-image-inline tex" alt="1" src="//upload.wikimedia.org/math/c/4/c/c4ca4238a0b923820dcc509a6f75849b.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="-1" src="//upload.wikimedia.org/math/6/b/b/6bb61e3b7bce0931da574d19d1d82c88.png" />; such a <img class="mwe-math-fallback-image-inline tex" alt="b" src="//upload.wikimedia.org/math/9/2/e/92eb5ffee6ae2fec3ad71c777531578f.png" /> will lead to a factorization of <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />, as in other <a href="/wiki/Integer_factorization" title="Integer factorization">factoring algorithms</a> like the <a href="/wiki/Quadratic_sieve" title="Quadratic sieve">quadratic sieve</a>.</p>
+<p>In turn, finding such a <img class="mwe-math-fallback-image-inline tex" alt="b" src="//upload.wikimedia.org/math/9/2/e/92eb5ffee6ae2fec3ad71c777531578f.png" /> is reduced to finding an element <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" /> of even period with a certain additional property (as explained below, it is required that the condition of Step 6 of the classical part does not hold). The quantum algorithm is used for finding the period of randomly chosen elements <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" />, as order-finding is a hard problem on a classical computer.</p>
+<p>Shor's algorithm consists of two parts:</p>
+<ol>
+<li>A reduction, which can be done on a classical computer, of the factoring problem to the problem of <a href="/wiki/Order_(group_theory)" title="Order (group theory)">order</a>-finding.</li>
+<li>A quantum algorithm to solve the order-finding problem.</li>
+</ol>
+<h3><span class="mw-headline" id="Classical_part">Classical part</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=2" title="Edit section: Classical part">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div>
+<ol>
+<li>Pick a random number <i>a</i> &lt; <i>N</i>.</li>
+<li>Compute <a href="/wiki/Greatest_common_divisor" title="Greatest common divisor">gcd</a>(<i>a</i>, <i>N</i>). This may be done using the <a href="/wiki/Euclidean_algorithm" title="Euclidean algorithm">Euclidean algorithm</a>.</li>
+<li>If gcd(<i>a</i>, <i>N</i>) ≠ 1, then it is a <a href="/wiki/Nontrivial" title="Nontrivial" class="mw-redirect">nontrivial</a> factor of <i>N</i>, so we are done.</li>
+<li>Otherwise, use the period-finding subroutine (below) to find <i>r</i>, the <a href="/wiki/Periodic_function" title="Periodic function">period</a> of the following function:
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="f(x) = a^x \bmod N," src="//upload.wikimedia.org/math/d/1/0/d10c684726a618620674d78a1fcd04f3.png" /></dd>
+</dl>
+i.e. the <a href="/wiki/Order_(group_theory)" title="Order (group theory)">order</a> <img class="mwe-math-fallback-image-inline tex" alt="r" src="//upload.wikimedia.org/math/4/b/4/4b43b0aee35624cd95b910189b3dc231.png" /> of <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" /> in <a href="/wiki/Multiplicative_group_of_integers_modulo_n" title="Multiplicative group of integers modulo n"><img class="mwe-math-fallback-image-inline tex" alt="(\mathbb{Z}_N)^\times" src="//upload.wikimedia.org/math/2/9/f/29f03a2feb50109c5d66a94054f15245.png" /></a>, which is the smallest positive integer <i>r</i> for which <img class="mwe-math-fallback-image-inline tex" alt="f(x+r) = f(x)" src="//upload.wikimedia.org/math/e/7/f/e7f750f60375c2fcd683162b16ee5609.png" />, or <img class="mwe-math-fallback-image-inline tex" alt="f(x+r) = a^{x+r} \bmod N = a^x \bmod N." src="//upload.wikimedia.org/math/7/a/b/7ab0c573da884672ce650c15121a0982.png" /></li>
+<li>If <i>r</i> is odd, go back to step 1.</li>
+<li>If <i>a</i> <sup><i>r</i> /2</sup> ≡ −1 (<a href="/wiki/Modular_arithmetic" title="Modular arithmetic">mod</a> <i>N</i>), go back to step 1.</li>
+<li>gcd(<i>a</i><sup><i>r</i>/2</sup> + 1, <i>N</i>) and gcd(<i>a</i><sup><i>r</i>/2</sup> - 1, <i>N</i>) are both nontrivial factors of <i>N</i>. We are done.</li>
+</ol>
+</div>
+<p>For example: <img class="mwe-math-fallback-image-inline tex" alt="N = 15, a = 7, r = 4" src="//upload.wikimedia.org/math/4/d/d/4dd0869f79c5de77dec7fdddc4ed9e55.png" />, <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{gcd}(7^2 \pm 1, 15) = \mathrm{gcd}(49 \pm 1, 15)" src="//upload.wikimedia.org/math/1/0/8/10890a772a9478cd2d57dca7db315202.png" />, where <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{gcd}(48, 15) = 3" src="//upload.wikimedia.org/math/5/8/a/58a9b4eba01a6bc55744986078937504.png" />, and <img class="mwe-math-fallback-image-inline tex" alt="\mathrm{gcd}(50, 15) = 5" src="//upload.wikimedia.org/math/7/9/c/79c78716debc2a6c6313bb79ead78c34.png" />.</p>
+<h3><span class="mw-headline" id="Quantum_part:_Period-finding_subroutine">Quantum part: Period-finding subroutine</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=3" title="Edit section: Quantum part: Period-finding subroutine">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="metadata plainlinks ambox ambox-style ambox-technical" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>may be too <a href="//en.wiktionary.org/wiki/technical#Adjective" class="extiw" title="wikt:technical">technical</a> for most readers to understand</b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Shor%27s_algorithm&amp;action=edit">improve</a> this section to <a href="/wiki/Wikipedia:Make_technical_articles_understandable" title="Wikipedia:Make technical articles understandable">make it understandable to non-experts</a>, without removing the technical details. The <a href="/wiki/Talk:Shor%27s_algorithm" title="Talk:Shor's algorithm">talk page</a> may contain suggestions.</span> <small><i>(February 2014)</i></small></span></td>
+</tr>
+</table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:452px;"><a href="/wiki/File:Shor%27s_algorithm.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Shor%27s_algorithm.svg/450px-Shor%27s_algorithm.svg.png" width="450" height="160" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Shor%27s_algorithm.svg/675px-Shor%27s_algorithm.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Shor%27s_algorithm.svg/900px-Shor%27s_algorithm.svg.png 2x" data-file-width="369" data-file-height="131" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Shor%27s_algorithm.svg" class="internal" title="Enlarge"></a></div>
+Quantum subroutine in Shor's algorithm.</div>
+</div>
+</div>
+<p>The quantum circuits used for this algorithm are custom designed for each choice of <i>N</i> and each choice of the random <i>a</i> used in <i>f</i>(<i>x</i>) = <i>a</i><sup><i>x</i></sup> <a href="/wiki/Modulo_operation" title="Modulo operation">mod</a> <i>N</i>. Given <i>N</i>, find <i>Q</i> = 2<sup><i>q</i></sup> such that <img class="mwe-math-fallback-image-inline tex" alt="N^2 \le Q &lt; 2N^2" src="//upload.wikimedia.org/math/a/6/a/a6ac9025a1924a47d89291e5284bc09e.png" />, which implies <img class="mwe-math-fallback-image-inline tex" alt="Q/r &gt; N" src="//upload.wikimedia.org/math/6/8/1/6815a26e9592eeec8f4e0af72540a9f6.png" />. The input and output <a href="/wiki/Qubit" title="Qubit">qubit</a> registers need to hold superpositions of values from 0 to <i>Q</i> − 1, and so have <i>q</i> qubits each. Using what might appear to be twice as many qubits as necessary guarantees that there are at least <i>N</i> different <i>x</i> which produce the same <i>f</i>(<i>x</i>), even as the period <i>r</i> approaches <i>N</i>/2.</p>
+<p>Proceed as follows:</p>
+<div>
+<ol>
+<li>Initialize the registers to
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q^{-1/2} \sum_{x=0}^{Q-1} \left|x\right\rangle \left|0\right\rangle" src="//upload.wikimedia.org/math/2/1/a/21a8eb00b2d14da47200318b0cec00ec.png" /></dd>
+</dl>
+where <i>x</i> runs from 0 to <i>Q</i> − 1. This initial state is a superposition of <i>Q</i> states.</li>
+<li>Construct <i>f</i>(<i>x</i>) as a quantum function and apply it to the above state, to obtain
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q^{-1/2} \sum_x \left|x, f(x)\right\rangle." src="//upload.wikimedia.org/math/c/0/e/c0e4c250d17ae39dcd020985f0eadfa9.png" /></dd>
+</dl>
+This is still a superposition of <i>Q</i> states.</li>
+<li>Apply the <a href="/wiki/Quantum_Fourier_transform" title="Quantum Fourier transform">quantum Fourier transform</a> to the input register. This transform (operating on a superposition of power-of-two <i>Q</i> = 2<sup><i>q</i></sup> states) uses a <i>Q</i><sup>th</sup> <a href="/wiki/Root_of_unity" title="Root of unity">root of unity</a> <a href="/wiki/Imaginary_unit#i_and_.E2.88.92i" title="Imaginary unit">such as</a> <img class="mwe-math-fallback-image-inline tex" alt="\omega = e^{2 \pi i /Q}" src="//upload.wikimedia.org/math/7/c/8/7c88461b2ff1da7c8ff9f268c041bf7f.png" /> to distribute the amplitude of any given <img class="mwe-math-fallback-image-inline tex" alt="\left|x\right\rangle" src="//upload.wikimedia.org/math/9/5/f/95f07234bf62baa41869086e19d5dc01.png" /> state equally among all <i>Q</i> of the <img class="mwe-math-fallback-image-inline tex" alt="\left|y\right\rangle" src="//upload.wikimedia.org/math/4/3/f/43fedad668764f46ce064b6f7a156fcf.png" /> states, and to do so in a different way for each different <i>x</i>.
+<ul>
+<li>Let <i>y</i> be one of the <i>r</i> possible integers modulo <i>N</i> such that <i>yr/Q</i> is an integer; then</li>
+</ul>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="U_{QFT} \left|x\right\rangle
+= Q^{-1/2} \sum_y \omega^{x y} \left|y\right\rangle." src="//upload.wikimedia.org/math/1/a/6/1a6df9ea41647ea6155810e11e5d6d95.png" /></dd>
+</dl>
+<p>This leads to the final state</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" Q^{-1} \sum_x \sum_y \omega^{x y} \left|y, f(x)\right\rangle." src="//upload.wikimedia.org/math/9/8/9/98957af341be71c6e208bc949c7913e2.png" /></dd>
+</dl>
+<p>Now we reorder this sum as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" Q^{-1} \sum_{z} \sum_y \left|y, z\right\rangle \sum_{x:\, f(x)=z} \omega^{x y}." src="//upload.wikimedia.org/math/b/3/6/b36edf1507fec518bc3b77529ae629f9.png" /></dd>
+</dl>
+<p>This is a superposition of many more than <i>Q</i> states, but many fewer than <i>Q</i><sup>2</sup> states, since there are fewer than <i>Q</i> distinct values of <img class="mwe-math-fallback-image-inline tex" alt="z = f(x)" src="//upload.wikimedia.org/math/1/9/d/19d667c0e346ed1bfa2fc816bfa6c0a3.png" />. Let</p>
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\omega = e^{2 \pi i /Q}" src="//upload.wikimedia.org/math/7/c/8/7c88461b2ff1da7c8ff9f268c041bf7f.png" /> be a <i>Q</i><sup>th</sup> root of unity,</li>
+<li><i>r</i> be the period of <i>f</i>,</li>
+<li><i>x</i><sub>0</sub> be the smallest of the <i>x</i> which have <i>f</i>(<i>x</i>) = <i>z</i> (we have <i>x</i><sub>0</sub> &lt; <i>r</i>), and</li>
+<li><i>b</i> indexes these <i>x</i>, running from 0 to <img class="mwe-math-fallback-image-inline tex" alt="\lfloor(Q-x_0-1)/r\rfloor" src="//upload.wikimedia.org/math/5/4/0/540cb0c5d9c75ce1278672ad5d105150.png" /> so that <img class="mwe-math-fallback-image-inline tex" alt="x_0 + rb &lt; Q." src="//upload.wikimedia.org/math/1/f/3/1f30c68b335f38621524a70307fbb92a.png" /></li>
+</ul>
+<p>Then <img class="mwe-math-fallback-image-inline tex" alt="\omega^{ry}" src="//upload.wikimedia.org/math/5/f/2/5f2c9df1564b4af7b4c67b92bc812c93.png" /> is a unit vector in the complex plane (<img class="mwe-math-fallback-image-inline tex" alt="\omega" src="//upload.wikimedia.org/math/4/d/1/4d1b7b74aba3cfabd624e898d86b4602.png" /> is a root of unity and <i>r</i> and <i>y</i> are integers), and the coefficient of <img class="mwe-math-fallback-image-inline tex" alt="Q^{-1}\left|y, z\right\rangle" src="//upload.wikimedia.org/math/5/5/4/554a18ccc9f5cd52ac213e6b28e7f9a9.png" /> in the final state is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \sum_{x:\, f(x)=z} \omega^{x y} = \sum_{b} \omega^{(x_0 + r b) y} = \omega^{x_0y} \sum_{b} \omega^{r b y}." src="//upload.wikimedia.org/math/4/e/4/4e4fe6fab3e48ce7a4738f8a5a71c26a.png" /></dd>
+</dl>
+Each term in this sum represents a <i>different path to the same result</i>, and quantum <a href="/wiki/Interference_(wave_propagation)" title="Interference (wave propagation)">interference</a> occurs—constructive when the unit vectors <img class="mwe-math-fallback-image-inline tex" alt="\omega^{ryb}" src="//upload.wikimedia.org/math/d/4/6/d46eaad23a4d083c137f17acd0f51702.png" /> point in nearly the same direction in the complex plane, which requires that <img class="mwe-math-fallback-image-inline tex" alt="\omega^{ry}" src="//upload.wikimedia.org/math/5/f/2/5f2c9df1564b4af7b4c67b92bc812c93.png" /> point along the <a href="/wiki/Positive_real_axis" title="Positive real axis" class="mw-redirect">positive real axis</a>.</li>
+<li>Perform a measurement. We obtain some outcome <i>y</i> in the input register and <i>z</i> in the output register. Since <i>f</i> is periodic, the probability of measuring some pair <i>y</i> and <i>z</i> is given by
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \left| Q^{-1} \sum_{x:\, f(x)=z} \omega^{x y} \right|^2
+= Q^{-2} \left| \sum_{b} \omega^{(x_0 + r b) y} \right|^2 = Q^{-2} \left| \sum_{b} \omega^{ b r y} \right|^2.
+" src="//upload.wikimedia.org/math/7/e/d/7ed15e5bed01389daef0dc54ce973757.png" /></dd>
+</dl>
+Analysis now shows that this probability is higher the closer the unit vector <img class="mwe-math-fallback-image-inline tex" alt="\omega^{ry}" src="//upload.wikimedia.org/math/5/f/2/5f2c9df1564b4af7b4c67b92bc812c93.png" /> is to the positive real axis, or the closer <i>yr/Q</i> is to an integer. Unless r is a power of 2, it won't be a factor of Q.</li>
+<li>Since <img class="mwe-math-fallback-image-inline tex" alt="yr/Q" src="//upload.wikimedia.org/math/8/8/1/8817de55b16157356f3c41fe87943cd3.png" /> is close to some integer <i>c</i>, the known value <i>y</i>/<i>Q</i> is close to the unknown value <i>c</i>/<i>r</i>. Performing [classical] <a href="/wiki/Continued_fraction" title="Continued fraction">continued fraction expansion</a> on <i>y/Q</i> allows us to find approximations <i>d/s</i> of it which satisfy two conditions:
+<ul>
+<li>A: s&lt;N</li>
+<li>B: |y/Q - d/s| &lt; 1/2Q.</li>
+</ul>
+Given these conditions (and assuming <i>d</i>/<i>s</i> is <a href="/wiki/Irreducible_fraction" title="Irreducible fraction">irreducible</a>), <i>s</i> is very likely to be the appropriate period <i>r</i>, or at least a factor of it.</li>
+<li>Check [classically] if <img class="mwe-math-fallback-image-inline tex" alt="f(x) = f(x + s) \Leftrightarrow a^r \equiv 1 \pmod{N}" src="//upload.wikimedia.org/math/6/a/7/6a766dd2085ed0ab4e3026cf4c4ccb73.png" /> If so, we are done.</li>
+<li>Otherwise, [classically] obtain more candidates for <i>r</i> by using multiples of <i>s</i>, or by using other <i>s</i> with <i>d/s</i> near <i>y</i>/<i>Q</i>. If any candidate works, we are done.</li>
+<li>Otherwise, try again starting from step 1 of this subroutine.</li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Explanation_of_the_algorithm">Explanation of the algorithm</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=4" title="Edit section: Explanation of the algorithm">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The algorithm is composed of two parts. The first part of the algorithm turns the factoring problem into the problem of finding the period of a function, and may be implemented classically. The second part finds the period using the quantum Fourier transform, and is responsible for the quantum speedup.</p>
+<h3><span class="mw-headline" id="Obtaining_factors_from_period">Obtaining factors from period</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=5" title="Edit section: Obtaining factors from period">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The integers less than <i>N</i> and <a href="/wiki/Coprime" title="Coprime" class="mw-redirect">coprime</a> with <i>N</i> form a finite abelian <a href="/wiki/Group_(mathematics)" title="Group (mathematics)">group</a> <img class="mwe-math-fallback-image-inline tex" alt="G" src="//upload.wikimedia.org/math/d/f/c/dfcf28d0734569a6a693bc8194de62bf.png" /> under multiplication <a href="/wiki/Modular_arithmetic" title="Modular arithmetic">modulo</a> <i>N</i>. The size is given by <a href="/wiki/Euler%27s_totient_function" title="Euler's totient function">Euler's totient function</a> <img class="mwe-math-fallback-image-inline tex" alt="\phi(N)" src="//upload.wikimedia.org/math/1/f/4/1f46c48e97f65fa678d7df2dfaa2cb89.png" />. By the end of step 3, we have an integer <i>a</i> in this group. Since the group is finite, <i>a</i> must have a finite order <i>r</i>, the smallest positive integer such that</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="a^r \equiv 1\ \mbox{mod}\ N.\," src="//upload.wikimedia.org/math/1/1/e/11e4517ba7284dc3dd244a00b884386f.png" /></dd>
+</dl>
+<p>Therefore, <i>N</i> <a href="/wiki/Divides" title="Divides" class="mw-redirect">divides</a> (also written | ) <i>a</i> <sup><i>r</i></sup> − 1 . Suppose we are able to obtain <i>r</i>, and it is even. (If <i>r</i> is odd, see step 5.) Now <img class="mwe-math-fallback-image-inline tex" alt="b \equiv a^{r/2} \pmod{N}" src="//upload.wikimedia.org/math/f/a/7/fa7c40c815b8f4ba9c0555ab0c72f855.png" /> is a square root of 1 modulo <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />, different from 1. This is because <img class="mwe-math-fallback-image-inline tex" alt="r" src="//upload.wikimedia.org/math/4/b/4/4b43b0aee35624cd95b910189b3dc231.png" /> is the order of <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" /> modulo <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />, so <img class="mwe-math-fallback-image-inline tex" alt="a^{r/2} \not\equiv 1 \pmod{N}" src="//upload.wikimedia.org/math/0/0/0/000f26214c3ad96fc36f2626ae322132.png" />, else the order of <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" /> in this group would be <img class="mwe-math-fallback-image-inline tex" alt="r/2" src="//upload.wikimedia.org/math/0/1/a/01af897a5f8a1e5cd17232f87c20c21a.png" />. If <img class="mwe-math-fallback-image-inline tex" alt="a^{r/2} \equiv -1 \pmod{N}" src="//upload.wikimedia.org/math/5/7/6/576deb7e02e549a5fa7977d3f6331aa2.png" />, by step 6 we have to restart the algorithm with a different random number <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" />.</p>
+<p>Eventually, we must hit an <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" />, of order <img class="mwe-math-fallback-image-inline tex" alt="r" src="//upload.wikimedia.org/math/4/b/4/4b43b0aee35624cd95b910189b3dc231.png" /> in <img class="mwe-math-fallback-image-inline tex" alt="G" src="//upload.wikimedia.org/math/d/f/c/dfcf28d0734569a6a693bc8194de62bf.png" />, such that <img class="mwe-math-fallback-image-inline tex" alt="b \equiv a^{r/2} \not\equiv 1, -1 \pmod{N}" src="//upload.wikimedia.org/math/3/3/b/33b39b738e3348acfcaab64bf040c4ba.png" />. This is because such a <img class="mwe-math-fallback-image-inline tex" alt="b" src="//upload.wikimedia.org/math/9/2/e/92eb5ffee6ae2fec3ad71c777531578f.png" /> is a square root of 1 modulo <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />, other than 1 and <img class="mwe-math-fallback-image-inline tex" alt="-1" src="//upload.wikimedia.org/math/6/b/b/6bb61e3b7bce0931da574d19d1d82c88.png" />, whose existence is guaranteed by the Chinese remainder theorem, since <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" /> is not a prime power.</p>
+<p>We claim that <img class="mwe-math-fallback-image-inline tex" alt="d = \operatorname{gcd}(b-1, N)" src="//upload.wikimedia.org/math/8/6/e/86eea3cd200939326792b71d5b7f44bd.png" /> is a proper factor of <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />, that is, <img class="mwe-math-fallback-image-inline tex" alt="d \ne 1, N" src="//upload.wikimedia.org/math/3/5/d/35db32d5e490aa9d15dedbac14b7e371.png" />. In fact if <img class="mwe-math-fallback-image-inline tex" alt="d = N" src="//upload.wikimedia.org/math/b/3/3/b33eae535793295d1badfe1d0cb19d9a.png" />, then <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" /> divides <img class="mwe-math-fallback-image-inline tex" alt="b - 1" src="//upload.wikimedia.org/math/b/1/d/b1d10db2016c2f83c13b25fcb170cdeb.png" />, so that <img class="mwe-math-fallback-image-inline tex" alt="b \equiv 1 \pmod{N}" src="//upload.wikimedia.org/math/6/3/1/631d6f8251d7719c59eb5e285f40e29c.png" />, against the construction of <img class="mwe-math-fallback-image-inline tex" alt="b" src="//upload.wikimedia.org/math/9/2/e/92eb5ffee6ae2fec3ad71c777531578f.png" />. If on the other hand <img class="mwe-math-fallback-image-inline tex" alt="d = \operatorname{gcd}(b-1, N) = 1" src="//upload.wikimedia.org/math/b/b/6/bb6a357e432b3d86ac713cf0188374b4.png" />, then by <a href="/wiki/B%C3%A9zout%27s_identity" title="Bézout's identity">Bézout's identity</a> there are integers <img class="mwe-math-fallback-image-inline tex" alt="u, v" src="//upload.wikimedia.org/math/7/0/3/703f259d2f1a609d112d61c642e0f17d.png" /> such that</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="(b-1) u + N v = 1" src="//upload.wikimedia.org/math/7/6/f/76f4aaf21446cd8f19e4a376d57b7d51.png" />.</dd>
+</dl>
+<p>Multiplying both sides by <img class="mwe-math-fallback-image-inline tex" alt="b+1" src="//upload.wikimedia.org/math/d/a/2/da2be8cd66e7887ab99184eb222fb515.png" /> we obtain</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="(b^{2}-1) u + N(b+1) v = b+1" src="//upload.wikimedia.org/math/9/4/6/946f4d2255f5051b6dab2af92b90b1fb.png" />.</dd>
+</dl>
+<p>Since <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" /> divides <img class="mwe-math-fallback-image-inline tex" alt="b^{2} - 1 \equiv a^{r} - 1 \pmod{N}" src="//upload.wikimedia.org/math/3/e/6/3e6cba646f0967acb92ac3dae39ea456.png" />, we obtain that <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" /> divides <img class="mwe-math-fallback-image-inline tex" alt="b+1" src="//upload.wikimedia.org/math/d/a/2/da2be8cd66e7887ab99184eb222fb515.png" />, so that <img class="mwe-math-fallback-image-inline tex" alt="b \equiv -1 \pmod{N}" src="//upload.wikimedia.org/math/7/3/6/73641e7144ff06c209cd4402d2be3bf3.png" />, again contradicting the construction of <img class="mwe-math-fallback-image-inline tex" alt="b" src="//upload.wikimedia.org/math/9/2/e/92eb5ffee6ae2fec3ad71c777531578f.png" />.</p>
+<p>Thus <img class="mwe-math-fallback-image-inline tex" alt="d" src="//upload.wikimedia.org/math/8/2/7/8277e0910d750195b448797616e091ad.png" /> is the required proper factor of <img class="mwe-math-fallback-image-inline tex" alt="N" src="//upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png" />.</p>
+<h3><span class="mw-headline" id="Finding_the_period">Finding the period</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=6" title="Edit section: Finding the period">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Shor's period-finding algorithm relies heavily on the ability of a <a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">quantum computer</a> to be in many states simultaneously. Physicists call this behavior a "<a href="/wiki/Quantum_superposition" title="Quantum superposition">superposition</a>" of states. To compute the period of a function <i>f</i>, we evaluate the function at all points simultaneously.</p>
+<p>Quantum physics does not allow us to access all this information directly, though. A <a href="/wiki/Measurement_in_quantum_mechanics" title="Measurement in quantum mechanics">measurement</a> will yield only one of all possible values, destroying all others. If not for the <a href="/wiki/No_cloning_theorem" title="No cloning theorem" class="mw-redirect">no cloning theorem</a>, we could first measure <i>f</i>(<i>x</i>) without measuring <i>x</i>, and then make a few copies of the resulting state (which is a superposition of states all having the same <i>f</i>(<i>x</i>)). Measuring <i>x</i> on these states would provide different <i>x</i> values which give the same <i>f</i>(<i>x</i>), leading to the period. Because we cannot <a href="/wiki/Quantum_cloning" title="Quantum cloning">make exact copies of a quantum state</a>, this method does not work. Therefore we have to carefully transform the superposition to another state that will return the correct answer with high probability. This is achieved by the <a href="/wiki/Quantum_Fourier_transform" title="Quantum Fourier transform">quantum Fourier transform</a>.</p>
+<p>Shor thus had to solve three "implementation" problems. All of them had to be implemented "fast", which means that they can be implemented with a number of <a href="/wiki/Quantum_gate" title="Quantum gate">quantum gates</a> that is <a href="/wiki/Polynomial#Complexity" title="Polynomial">polynomial</a> in <img class="mwe-math-fallback-image-inline tex" alt="\log N" src="//upload.wikimedia.org/math/e/2/8/e28e4a7a696eb600b22afb350ee13065.png" />.</p>
+<ol>
+<li>Create a superposition of states. This can be done by applying <a href="/wiki/Hadamard_transform" title="Hadamard transform">Hadamard</a> gates to all qubits in the input register. Another approach would be to use the quantum Fourier transform (see below).</li>
+<li>Implement the function <i>f</i> as a quantum transform. To achieve this, Shor used <a href="/wiki/Exponentiating_by_squaring" title="Exponentiating by squaring" class="mw-redirect">repeated squaring</a> for his modular exponentiation transformation. It is important to note that this step is more difficult to implement than the quantum Fourier transform, in that it requires ancillary qubits and substantially more gates to accomplish.</li>
+<li>Perform a quantum Fourier transform. By using controlled rotation gates and Hadamard gates, Shor designed a circuit for the quantum Fourier transform (with <i>Q</i> = 2<sup><i>q</i></sup>) that uses just <img class="mwe-math-fallback-image-inline tex" alt="q(q-1)/2 = O((\log Q)^2)" src="//upload.wikimedia.org/math/4/a/3/4a361604e9f901d7567ebd15a6e7c609.png" /> gates.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup></li>
+</ol>
+<p>After all these transformations a measurement will yield an approximation to the period <i>r</i>. For simplicity assume that there is a <i>y</i> such that <i>yr/Q</i> is an integer. Then the probability to measure <i>y</i> is 1. To see that we notice that then</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="e^{-2 \pi i b yr/Q} = 1\," src="//upload.wikimedia.org/math/4/a/1/4a1c8e15987ab96ba3f3d36e2af6d94d.png" /></dd>
+</dl>
+<p>for all integers <i>b</i>. Therefore the sum whose square gives us the probability to measure <i>y</i> will be <i>Q/r</i> since <i>b</i> takes roughly <i>Q/r</i> values and thus the probability is <img class="mwe-math-fallback-image-inline tex" alt="1/r^2" src="//upload.wikimedia.org/math/f/9/0/f905d700fc1410610c8b8fe7b5aaa859.png" />. There are <i>r</i> <i>y</i> such that <i>yr/Q</i> is an integer and also <i>r</i> possibilities for <img class="mwe-math-fallback-image-inline tex" alt="f(x_0)" src="//upload.wikimedia.org/math/0/b/b/0bbcaf3f1a7e30c9240b9ed39ee7c78d.png" />, so the probabilities sum to 1.</p>
+<p>Note: another way to explain Shor's algorithm is by noting that it is just the <a href="/wiki/Quantum_phase_estimation_algorithm" title="Quantum phase estimation algorithm">quantum phase estimation algorithm</a> in disguise.</p>
+<h3><span class="mw-headline" id="The_bottleneck">The bottleneck</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=7" title="Edit section: The bottleneck">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The runtime bottleneck of Shor's algorithm is quantum <a href="/wiki/Modular_exponentiation" title="Modular exponentiation">modular exponentiation</a>, which is by far slower than the <a href="/wiki/Quantum_Fourier_transform" title="Quantum Fourier transform">quantum Fourier transform</a> and classical pre-/post-processing. There are several approaches to constructing and optimizing circuits for modular exponentiation. The simplest and (currently) most practical approach is to mimic conventional arithmetic circuits with <a href="/wiki/Reversible_computing" title="Reversible computing">reversible gates</a>, starting with ripple-carry adders. Knowing the base and the modulus of exponentiation facilitates further optimizations.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>13<span>]</span></a></sup><sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>14<span>]</span></a></sup> Reversible circuits typically use on the order of <img class="mwe-math-fallback-image-inline tex" alt="n^3" src="//upload.wikimedia.org/math/e/5/5/e55ad3a069f00d4c8d543e9477467208.png" /> gates for <img class="mwe-math-fallback-image-inline tex" alt="n" src="//upload.wikimedia.org/math/7/b/8/7b8b965ad4bca0e41ab51de7b31363a1.png" /> qubits. Alternative techniques asymptotically improve gate counts by using <a href="/wiki/Quantum_Fourier_transform" title="Quantum Fourier transform">quantum Fourier transforms</a>, but are not competitive with less than 600 qubits due to high constants.</p>
+<h2><span class="mw-headline" id="Discrete_logarithms">Discrete logarithms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=8" title="Edit section: Discrete logarithms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Given prime <img class="mwe-math-fallback-image-inline tex" alt="p" src="//upload.wikimedia.org/math/8/3/8/83878c91171338902e0fe0fb97a8c47a.png" /> with generator <img class="mwe-math-fallback-image-inline tex" alt="g" src="//upload.wikimedia.org/math/b/2/f/b2f5ff47436671b6e533d8dc3614845d.png" /> where <img class="mwe-math-fallback-image-inline tex" alt="1 &lt; g &lt;p-1" src="//upload.wikimedia.org/math/3/7/1/371e9445af7963f0e51bdcd84215abc2.png" />, suppose we know that <img class="mwe-math-fallback-image-inline tex" alt="x = g^r \pmod{p}" src="//upload.wikimedia.org/math/1/3/d/13dd04d7e697f15448a8789d309d24bc.png" />, for some <i>r</i>, and we wish to compute <i>r</i>, which is the <a href="/wiki/Discrete_logarithm" title="Discrete logarithm">discrete logarithm</a>: <img class="mwe-math-fallback-image-inline tex" alt="r = \log_g x \pmod{p}" src="//upload.wikimedia.org/math/7/2/6/7263e88184cadd3f7630b243c0d85484.png" />. Consider the abelian group <img class="mwe-math-fallback-image-inline tex" alt="\left( \mathbb{Z}_{p} \right)^\times \times \left(\mathbb{Z}_p\right)^\times" src="//upload.wikimedia.org/math/e/9/7/e97d5cdfb9b45ae99ce61ace84f32f4f.png" /> where each factor corresponds to modular multiplication of nonzero values, assuming p is prime. Now, consider the function</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="f(a,b) = g^a x^{-b} \pmod{p}." src="//upload.wikimedia.org/math/a/0/9/a099a9084971dc6b443a244eb705a8ab.png" /></dd>
+</dl>
+<p>This gives us an abelian <a href="/wiki/Hidden_subgroup_problem" title="Hidden subgroup problem">hidden subgroup problem</a>, as <i>f</i> corresponds to a <a href="/wiki/Group_homomorphism" title="Group homomorphism">group homomorphism</a>. The kernel corresponds to modular multiples of (<i>r</i>,1). So, if we can find the kernel, we can find&#160;<i>r</i>.</p>
+<h2><span class="mw-headline" id="In_popular_culture">In popular culture</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=9" title="Edit section: In popular culture">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>On the television show <i><a href="/wiki/Stargate_Universe" title="Stargate Universe">Stargate Universe</a></i>, the lead scientist, Dr. <a href="/wiki/Nicholas_Rush" title="Nicholas Rush">Nicholas Rush</a>, hoped to use Shor's algorithm to crack <i>Destiny'</i>s master code. He taught a <a href="/wiki/Quantum_cryptography" title="Quantum cryptography">quantum cryptography</a> class at the <a href="/wiki/University_of_California,_Berkeley" title="University of California, Berkeley">University of California, Berkeley</a>, in which Shor's algorithm was studied.</p>
+<p>Shor's algorithm was also a correct answer to a question in a Physics Bowl competition in the episode "<a href="/wiki/The_Bat_Jar_Conjecture" title="The Bat Jar Conjecture" class="mw-redirect">The Bat Jar Conjecture</a>" of the TV series <i><a href="/wiki/The_Big_Bang_Theory" title="The Big Bang Theory">The Big Bang Theory</a></i>.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">See also <a href="/wiki/Pseudo-polynomial_time" title="Pseudo-polynomial time">Pseudo-polynomial time</a>.</span></li>
+<li id="cite_note-Beckman-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Beckman_2-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://arxiv.org/abs/quant-ph/9602016">http://arxiv.org/abs/quant-ph/9602016</a> - Efficient Networks for Quantum Factoring</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/NumberFieldSieve.html">MathWorld: Number Field Sieve</a></span></li>
+<li id="cite_note-VSBYSC01-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-VSBYSC01_4-0">^</a></b></span> <span class="reference-text"><span id="CITEREFVandersypenSteffenBreytaYannoni2001" class="citation">Vandersypen, Lieven M. K.; Steffen, Matthias; Breyta, Gregory; Yannoni, Costantino S.; Sherwood, Mark H. &amp; <a href="/wiki/Isaac_Chuang" title="Isaac Chuang">Chuang, Isaac L.</a> (2001), <a rel="nofollow" class="external text" href="http://cryptome.org/shor-nature.pdf">"Experimental realization of Shor's quantum factoring algorithm using nuclear magnetic resonance"</a> <span style="font-size:85%;">(PDF)</span>, <i><a href="/wiki/Nature_(journal)" title="Nature (journal)">Nature</a></i> <b>414</b> (6866): 883–887, <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/quant-ph/0112176">quant-ph/0112176</a>, <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2001Natur.414..883V">2001Natur.414..883V</a>, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1038%2F414883a">10.1038/414883a</a>, <a href="/wiki/PubMed_Identifier" title="PubMed Identifier" class="mw-redirect">PMID</a>&#160;<a rel="nofollow" class="external text" href="//www.ncbi.nlm.nih.gov/pubmed/11780055">11780055</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.atitle=Experimental+realization+of+Shor%27s+quantum+factoring+algorithm+using+nuclear+magnetic+resonance&amp;rft.au=Breyta%2C+Gregory&amp;rft.au=Chuang%2C+Isaac+L.&amp;rft.aufirst=Lieven+M.+K.&amp;rft.aulast=Vandersypen&amp;rft.au=Sherwood%2C+Mark+H.&amp;rft.au=Steffen%2C+Matthias&amp;rft.au=Vandersypen%2C+Lieven+M.+K.&amp;rft.au=Yannoni%2C+Costantino+S.&amp;rft.date=2001&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fcryptome.org%2Fshor-nature.pdf&amp;rft_id=info%3Aarxiv%2Fquant-ph%2F0112176&amp;rft_id=info%3Abibcode%2F2001Natur.414..883V&amp;rft_id=info%3Adoi%2F10.1038%2F414883a&amp;rft_id=info%3Apmid%2F11780055&amp;rft.issue=6866&amp;rft.jtitle=Nature&amp;rft.pages=883-887&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=414" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-LBYP07-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-LBYP07_5-0">^</a></b></span> <span class="reference-text"><span id="CITEREFLuBrowneYangPan2007" class="citation">Lu, Chao-Yang; Browne, Daniel E.; Yang, Tao &amp; Pan, Jian-Wei (2007), "Demonstration of a Compiled Version of Shor's Quantum Factoring Algorithm Using Photonic Qubits", <i><a href="/wiki/Physical_Review_Letters" title="Physical Review Letters">Physical Review Letters</a></i> <b>99</b> (25): 250504, <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/0705.1684">0705.1684</a>, <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2007PhRvL..99y0504L">2007PhRvL..99y0504L</a>, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1103%2FPhysRevLett.99.250504">10.1103/PhysRevLett.99.250504</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.atitle=Demonstration+of+a+Compiled+Version+of+Shor%27s+Quantum+Factoring+Algorithm+Using+Photonic+Qubits&amp;rft.au=Browne%2C+Daniel+E.&amp;rft.aufirst=Chao-Yang&amp;rft.aulast=Lu&amp;rft.au=Lu%2C+Chao-Yang&amp;rft.au=Pan%2C+Jian-Wei&amp;rft.au=Yang%2C+Tao&amp;rft.date=2007&amp;rft.genre=article&amp;rft_id=info%3Aarxiv%2F0705.1684&amp;rft_id=info%3Abibcode%2F2007PhRvL..99y0504L&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.99.250504&amp;rft.issue=25&amp;rft.jtitle=Physical+Review+Letters&amp;rft.pages=250504&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=99" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-LWLBJGW07-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-LWLBJGW07_6-0">^</a></b></span> <span class="reference-text"><span id="CITEREFLanyonWeinholdLangfordBarbieri2007" class="citation">Lanyon, B. P.; Weinhold, T. J.; Langford, N. K.; Barbieri, M.; James, D. F. V.; Gilchrist, A. &amp; White, A. G. (2007), "Experimental Demonstration of a Compiled Version of Shor's Algorithm with Quantum Entanglement", <i>Physical Review Letters</i> <b>99</b> (25): 250505, <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/0705.1398">0705.1398</a>, <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2007PhRvL..99y0505L">2007PhRvL..99y0505L</a>, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1103%2FPhysRevLett.99.250505">10.1103/PhysRevLett.99.250505</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.atitle=Experimental+Demonstration+of+a+Compiled+Version+of+Shor%27s+Algorithm+with+Quantum+Entanglement&amp;rft.au=Barbieri%2C+M.&amp;rft.aufirst=B.+P.&amp;rft.au=Gilchrist%2C+A.&amp;rft.au=James%2C+D.+F.+V.&amp;rft.au=Langford%2C+N.+K.&amp;rft.au=Lanyon%2C+B.+P.&amp;rft.aulast=Lanyon&amp;rft.au=Weinhold%2C+T.+J.&amp;rft.au=White%2C+A.+G.&amp;rft.date=2007&amp;rft.genre=article&amp;rft_id=info%3Aarxiv%2F0705.1398&amp;rft_id=info%3Abibcode%2F2007PhRvL..99y0505L&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.99.250505&amp;rft.issue=25&amp;rft.jtitle=Physical+Review+Letters&amp;rft.pages=250505&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=99" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://arxiv.org/pdf/1202.5707v1.pdf">http://arxiv.org/pdf/1202.5707v1.pdf</a> - Computing prime factors with a Josephson phase qubit quantum processor</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation journal">Martín-López, Enrique; Enrique Martín-López; Anthony Laing; Thomas Lawson; Roberto Alvarez; Xiao-Qi Zhou; Jeremy L. O'Brien (12 October 2012). <a rel="nofollow" class="external text" href="http://www.nature.com/nphoton/journal/vaop/ncurrent/full/nphoton.2012.259.html">"Experimental realization of Shor's quantum factoring algorithm using qubit recycling"</a>. <i>Nature Photonics</i>. <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/1111.4147">1111.4147</a>. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2012NaPho...6..773M">2012NaPho...6..773M</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1038%2Fnphoton.2012.259">10.1038/nphoton.2012.259</a><span class="reference-accessdate">. Retrieved <span class="nowrap">October 23,</span> 2012</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.atitle=Experimental+realization+of+Shor%27s+quantum+factoring+algorithm+using+qubit+recycling&amp;rft.au=Anthony+Laing&amp;rft.au=Enrique+Mart%C3%ADn-L%C3%B3pez&amp;rft.aufirst=Enrique&amp;rft.au=Jeremy+L.+O%27Brien&amp;rft.aulast=Mart%C3%ADn-L%C3%B3pez&amp;rft.au=Mart%C3%ADn-L%C3%B3pez%2C+Enrique&amp;rft.au=Roberto+Alvarez&amp;rft.au=Thomas+Lawson&amp;rft.au=Xiao-Qi+Zhou&amp;rft.date=12+October+2012&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.nature.com%2Fnphoton%2Fjournal%2Fvaop%2Fncurrent%2Ffull%2Fnphoton.2012.259.html&amp;rft_id=info%3Aarxiv%2F1111.4147&amp;rft_id=info%3Abibcode%2F2012NaPho...6..773M&amp;rft_id=info%3Adoi%2F10.1038%2Fnphoton.2012.259&amp;rft.jtitle=Nature+Photonics&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation journal">Nanyang Xu; Jing Zhu; Dawei Lu; Xianyi Zhou; Xinhua Peng; Jiangfeng Du (30 March 2012). "Quantum Factorization of 143 on a Dipolar-Coupling Nuclear Magnetic Resonance System". <i>Physical Review Letters</i> (American Physical Society). <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1103%2FPhysRevLett.108.130501">10.1103/PhysRevLett.108.130501</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.atitle=Quantum+Factorization+of+143+on+a+Dipolar-Coupling+Nuclear+Magnetic+Resonance+System&amp;rft.date=30+March+2012&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevLett.108.130501&amp;rft.jtitle=Physical+Review+Letters&amp;rft.pub=American+Physical+Society&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation news">Zyga, Lisa (28 November 2014). <a rel="nofollow" class="external text" href="http://phys.org/news/2014-11-largest-factored-quantum-device.html">"New largest number factored on a quantum device is 56,153"</a>. <i>Phys.org</i> (Science X Network)<span class="reference-accessdate">. Retrieved <span class="nowrap">4 August</span> 2015</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.atitle=New+largest+number+factored+on+a+quantum+device+is+56%2C153&amp;rft.aufirst=Lisa&amp;rft.aulast=Zyga&amp;rft.au=Zyga%2C+Lisa&amp;rft.date=28+November+2014&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fphys.org%2Fnews%2F2014-11-largest-factored-quantum-device.html&amp;rft.jtitle=Phys.org&amp;rft.pub=Science+X+Network&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">A bot will complete this citation soon. <small><a class="external text" href="http://tools.wmflabs.org/citations/doibot.php?page=Shor%27s_algorithm">Click here to jump the queue</a></small> <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/1411.6758">1411.6758</a>.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><a href="#CITEREFShor1999">Shor 1999</a>, p.&#160;14.</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation journal">Markov, Igor L.; Saeedi, Mehdi (2012). "Constant-Optimized Quantum Circuits for Modular Multiplication and Exponentiation". <i>Quantum Information and Computation</i> <b>12</b> (5–6): 361–394. <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/1202.6614">1202.6614</a>. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2012arXiv1202.6614M">2012arXiv1202.6614M</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.atitle=Constant-Optimized+Quantum+Circuits+for+Modular+Multiplication+and+Exponentiation&amp;rft.aufirst=Igor+L.&amp;rft.aulast=Markov&amp;rft.au=Markov%2C+Igor+L.&amp;rft.au=Saeedi%2C+Mehdi&amp;rft.date=2012&amp;rft.genre=article&amp;rft_id=info%3Aarxiv%2F1202.6614&amp;rft_id=info%3Abibcode%2F2012arXiv1202.6614M&amp;rft.issue=5%E2%80%936&amp;rft.jtitle=Quantum+Information+and+Computation&amp;rft.pages=361-394&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=12" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation journal">Markov, Igor L.; Saeedi, Mehdi (2013). "Faster Quantum Number Factoring via Circuit Synthesis". <i>Phys. Rev. A</i> <b>87</b>: 012310. <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/1301.3210">1301.3210</a>. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2013PhRvA..87a2310M">2013PhRvA..87a2310M</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1103%2FPhysRevA.87.012310">10.1103/PhysRevA.87.012310</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.atitle=Faster+Quantum+Number+Factoring+via+Circuit+Synthesis&amp;rft.aufirst=Igor+L.&amp;rft.aulast=Markov&amp;rft.au=Markov%2C+Igor+L.&amp;rft.au=Saeedi%2C+Mehdi&amp;rft.date=2013&amp;rft.genre=article&amp;rft_id=info%3Aarxiv%2F1301.3210&amp;rft_id=info%3Abibcode%2F2013PhRvA..87a2310M&amp;rft_id=info%3Adoi%2F10.1103%2FPhysRevA.87.012310&amp;rft.jtitle=Phys.+Rev.+A&amp;rft.pages=012310&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=87" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit&amp;section=11" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="metadata plainlinks ambox ambox-style ambox-More_footnotes" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article includes a <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, but <b>its sources remain unclear</b> because it has <b>insufficient <a href="/wiki/Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>. <span class="hide-when-compact">Please help to <a href="/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span> <small><i>(September 2010)</i></small></span></td>
+</tr>
+</table>
+<ul>
+<li><span id="CITEREFNielsenChuang2000" class="citation">Nielsen, Michael A. &amp; Chuang, Isaac L. (2000), <i>Quantum Computation and Quantum Information</i>, Cambridge University Press</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.au=Chuang%2C+Isaac+L.&amp;rft.aufirst=Michael+A.&amp;rft.aulast=Nielsen&amp;rft.au=Nielsen%2C+Michael+A.&amp;rft.btitle=Quantum+Computation+and+Quantum+Information&amp;rft.date=2000&amp;rft.genre=book&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span>.</li>
+<li>Phillip Kaye, Raymond Laflamme, Michele Mosca, <i>An introduction to quantum computing</i>, Oxford University Press, 2007, <a href="/wiki/Special:BookSources/019857049X" class="internal mw-magiclink-isbn">ISBN 0-19-857049-X</a></li>
+<li><a rel="nofollow" class="external text" href="http://scottaaronson.com/blog/?p=208">"Explanation for the man in the street"</a> by <a href="/wiki/Scott_Aaronson" title="Scott Aaronson">Scott Aaronson</a>, "<a rel="nofollow" class="external text" href="http://scottaaronson.com/blog/?p=208#comment-9958">approved</a>" by Peter Shor. (Shor wrote "Great article, Scott! That’s the best job of explaining quantum computing to the man on the street that I’ve seen."). An alternate metaphor for the QFT was presented in <a rel="nofollow" class="external text" href="http://www.scottaaronson.com/blog/?p=208#comment-5187">one of the comments</a>. Scott Aaronson suggests the following 12 references as further reading (out of "the 10<sup>10<sup>5000</sup></sup> quantum algorithm tutorials that are already on the web."):</li>
+<li><span id="CITEREFShor1997" class="citation">Shor, Peter W. (1997), "Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer", <i>SIAM J. Comput.</i> <b>26</b> (5): 1484–1509, <a href="/wiki/ArXiv" title="ArXiv">arXiv</a>:<a rel="nofollow" class="external text" href="//arxiv.org/abs/quant-ph/9508027v2">quant-ph/9508027v2</a>, <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/1999SIAMR..41..303S">1999SIAMR..41..303S</a>, <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1137%2FS0036144598347011">10.1137/S0036144598347011</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShor%27s+algorithm&amp;rft.atitle=Polynomial-Time+Algorithms+for+Prime+Factorization+and+Discrete+Logarithms+on+a+Quantum+Computer&amp;rft.aufirst=Peter+W.&amp;rft.aulast=Shor&amp;rft.au=Shor%2C+Peter+W.&amp;rft.date=1997&amp;rft.genre=article&amp;rft_id=info%3Aarxiv%2Fquant-ph%2F9508027v2&amp;rft_id=info%3Abibcode%2F1999SIAMR..41..303S&amp;rft_id=info%3Adoi%2F10.1137%2FS0036144598347011&amp;rft.issue=5&amp;rft.jtitle=SIAM+J.+Comput.&amp;rft.pages=1484-1509&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=26" class="Z3988"><span style="display:none;">&#160;</span></span>. Revised version of the original paper by Peter Shor ("28 pages, LaTeX. This is an expanded version of a paper that appeared in the Proceedings of the 35th Annual Symposium on Foundations of Computer Science, Santa Fe, NM, Nov. 20--22, 1994. Minor revisions made January, 1996").</li>
+<li><a rel="nofollow" class="external text" href="https://quantum-algorithms.herokuapp.com/299/paper/index.html">Quantum Computing and Shor's Algorithm</a>, Matthew Hayward's <a rel="nofollow" class="external text" href="https://quantum-algorithms.herokuapp.com/">Quantum Algorithms Page</a>, 2005-02-17, imsa.edu, LaTeX2HTML version of the original <a rel="nofollow" class="external text" href="https://quantum-algorithms.herokuapp.com/299/paper.tex">LaTeX document</a>, also available as <a rel="nofollow" class="external text" href="https://quantum-algorithms.herokuapp.com/299/paper.pdf">PDF</a> or <a rel="nofollow" class="external text" href="https://quantum-algorithms.herokuapp.com/299/paper.ps">postscript</a> document.</li>
+<li><a rel="nofollow" class="external text" href="http://homepages.cwi.nl/~rdewolf/publ/qc/survey.ps">Quantum Computation and Shor's Factoring Algorithm</a>, Ronald de Wolf, CWI and University of Amsterdam, January 12, 1999, 9 page postscript document.</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~vazirani/f04quantum/notes/lec9.ps">Shor's Factoring Algorithm</a>, Notes from Lecture 9 of Berkeley CS 294-2, dated 4 Oct 2004, 7 page postscript document.</li>
+<li><a rel="nofollow" class="external text" href="http://www.theory.caltech.edu/people/preskill/ph229/notes/chap6.ps">Chapter 6 Quantum Computation</a>, 91 page postscript document, Caltech, Preskill, PH229.</li>
+<li><a rel="nofollow" class="external text" href="http://www-users.cs.york.ac.uk/~schmuel/comp/comp.html">Quantum computation: a tutorial</a> by <a rel="nofollow" class="external text" href="http://www.cs.york.ac.uk/~schmuel/">Samuel L. Braunstein</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.ucr.edu/~neal/1996/cosc185-S96/shor/high-level.html">The Quantum States of Shor's Algorithm</a>, by Neal Young, Last modified: Tue May 21 11:47:38 1996.</li>
+<li><a rel="nofollow" class="external text" href="http://web.archive.org/web/20121115112940/http://people.ccmr.cornell.edu/~mermin/qcomp/chap3.pdf">III. Breaking RSA Encryption with a Quantum Computer: Shor's Factoring Algorithm</a>, Lecture notes on Quantum computation, Cornell University, Physics 481-681, CS 483; Spring, 2006 by N. David Mermin. Last revised 2006-03-28, 30 page PDF document.</li>
+<li><a rel="nofollow" class="external text" href="http://www.arxiv.org/abs/quant-ph/0303175">arXiv quant-ph/0303175 Shor's Algorithm for Factoring Large Integers. C. Lavor, L.R.U. Manssur, R. Portugal</a>. Submitted on 29 Mar 2003. This work is a tutorial on Shor's factoring algorithm by means of a worked out example. Some basic concepts of Quantum Mechanics and quantum circuits are reviewed. It is intended for non-specialists which have basic knowledge on undergraduate Linear Algebra. 25 pages, 14 figures, introductory review.</li>
+<li><a rel="nofollow" class="external text" href="http://www.arxiv.org/abs/quant-ph/0010034">arXiv quant-ph/0010034 Shor's Quantum Factoring Algorithm, Samuel J. Lomonaco, Jr</a>, Submitted October 9, 2000, This paper is a written version of a one hour lecture given on Peter Shor's quantum factoring algorithm. 22 pages.</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.princeton.edu/theory/complexity/quantumchap.pdf">Chapter 20 Quantum Computation</a>, from <i>Computational Complexity: A Modern Approach</i>, Draft of a book: Dated January 2007, Comments welcome!, Sanjeev Arora and Boaz Barak, Princeton University.</li>
+<li><a rel="nofollow" class="external text" href="http://blogs.discovermagazine.com/80beats/2011/01/19/a-step-towards-quantum-computing-entangling-10-billion-particles/">A Step Toward Quantum Computing: Entangling 10 Billion Particles</a>, from "Discover Magazine", Dated January 19, 2011.</li>
+<li><a rel="nofollow" class="external text" href="http://www.fi.muni.cz/usr/gruska/survey1.ps">Josef Gruska - <i>Quantum Computing Challenges</i></a> also in <a rel="nofollow" class="external text" href="http://www.amazon.com/Mathematics-Unlimited-Bj%C3%B6rn-Engquist/dp/3540669132">Mathematics unlimited: 2001 and beyond</a>, Editors Björn Engquist, Wilfried Schmid, Springer, 2001, <a href="/wiki/Special:BookSources/9783540669135" class="internal mw-magiclink-isbn">ISBN 978-3-540-66913-5</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Quantum_information" title="Template:Quantum information"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Quantum_information" title="Template talk:Quantum information"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Quantum_information&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Quantum_information_science" title="Quantum information science">Quantum information science</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">General</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">Quantum computer</a></li>
+<li><a href="/wiki/Qubit" title="Qubit">Qubit</a></li>
+<li><a href="/wiki/Quantum_information" title="Quantum information">Quantum information</a></li>
+<li><a href="/wiki/Quantum_programming" title="Quantum programming">Quantum programming</a></li>
+<li><a href="/wiki/Timeline_of_quantum_computing" title="Timeline of quantum computing">Timeline of quantum computing</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="13" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Bloch_Sphere.svg" class="image"><img alt="Bloch Sphere.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/80px-Bloch_Sphere.svg.png" width="80" height="91" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/120px-Bloch_Sphere.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/160px-Bloch_Sphere.svg.png 2x" data-file-width="163" data-file-height="185" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum communication</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_capacity" title="Quantum capacity">Quantum capacity</a></li>
+<li><a href="/wiki/Classical_capacity" title="Classical capacity">Classical capacity</a></li>
+<li><a href="/wiki/Entanglement-assisted_classical_capacity" title="Entanglement-assisted classical capacity">Entanglement-assisted classical capacity</a></li>
+<li><a href="/wiki/Quantum_channel" title="Quantum channel">Quantum channel</a>
+<ul>
+<li><a href="/wiki/Quantum_network" title="Quantum network">Quantum network</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_cryptography" title="Quantum cryptography">Quantum cryptography</a>
+<ul>
+<li><a href="/wiki/Quantum_key_distribution" title="Quantum key distribution">Quantum key distribution</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_energy_teleportation" title="Quantum energy teleportation">Quantum energy teleportation</a></li>
+<li><a href="/wiki/Quantum_teleportation" title="Quantum teleportation">Quantum teleportation</a></li>
+<li><a href="/wiki/Superdense_coding" title="Superdense coding">Superdense coding</a></li>
+<li><a href="/wiki/LOCC" title="LOCC">LOCC</a></li>
+<li><a href="/wiki/Entanglement_distillation" title="Entanglement distillation">Entanglement distillation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_algorithm" title="Quantum algorithm">Quantum algorithms</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Universal_quantum_simulator" title="Universal quantum simulator" class="mw-redirect">Universal quantum simulator</a></li>
+<li><a href="/wiki/Deutsch%E2%80%93Jozsa_algorithm" title="Deutsch–Jozsa algorithm">Deutsch–Jozsa algorithm</a></li>
+<li><a href="/wiki/Grover%27s_algorithm" title="Grover's algorithm">Grover's algorithm</a></li>
+<li><a href="/wiki/Quantum_Fourier_transform" title="Quantum Fourier transform">Quantum Fourier transform</a></li>
+<li><strong class="selflink">Shor's algorithm</strong></li>
+<li><a href="/wiki/Simon%27s_problem" title="Simon's problem">Simon's problem</a></li>
+<li><a href="/wiki/Quantum_phase_estimation_algorithm" title="Quantum phase estimation algorithm">Quantum phase estimation algorithm</a></li>
+<li><a href="/wiki/Quantum_annealing" title="Quantum annealing">Quantum annealing</a></li>
+<li><a href="/wiki/Algorithmic_cooling" title="Algorithmic cooling">Algorithmic cooling</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_complexity_theory" title="Quantum complexity theory">Quantum complexity theory</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_Turing_machine" title="Quantum Turing machine">Quantum Turing machine</a></li>
+<li><a href="/wiki/BQP" title="BQP">BQP</a></li>
+<li><a href="/wiki/QMA" title="QMA">QMA</a></li>
+<li><a href="/wiki/PostBQP" title="PostBQP">PostBQP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum computing models</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_circuit" title="Quantum circuit">Quantum circuit</a>
+<ul>
+<li><a href="/wiki/Quantum_gate" title="Quantum gate">Quantum gate</a></li>
+</ul>
+</li>
+<li><a href="/wiki/One-way_quantum_computer" title="One-way quantum computer">One-way quantum computer</a>
+<ul>
+<li><a href="/wiki/Cluster_state" title="Cluster state">cluster state</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Adiabatic_quantum_computation" title="Adiabatic quantum computation">Adiabatic quantum computation</a></li>
+<li><a href="/wiki/Topological_quantum_computer" title="Topological quantum computer">Topological quantum computer</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_decoherence" title="Quantum decoherence">Decoherence</a> prevention</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_error_correction" title="Quantum error correction">Quantum error correction</a></li>
+<li><a href="/wiki/Stabilizer_code" title="Stabilizer code">Stabilizer codes</a></li>
+<li><a href="/wiki/Entanglement-assisted_stabilizer_formalism" title="Entanglement-assisted stabilizer formalism">Entanglement-Assisted Quantum Error Correction</a></li>
+<li><a href="/wiki/Quantum_convolutional_code" title="Quantum convolutional code">Quantum convolutional codes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Physical implementations</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Quantum_optics" title="Quantum optics">Quantum optics</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cavity_quantum_electrodynamics" title="Cavity quantum electrodynamics">Cavity QED</a></li>
+<li><a href="/wiki/Circuit_quantum_electrodynamics" title="Circuit quantum electrodynamics">Circuit QED</a></li>
+<li><a href="/wiki/Linear_optical_quantum_computing" title="Linear optical quantum computing">Linear optical quantum computing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Ultracold_atom" title="Ultracold atom">Ultracold atoms</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Trapped_ion_quantum_computer" title="Trapped ion quantum computer">Trapped ion quantum computer</a></li>
+<li><a href="/wiki/Optical_lattice" title="Optical lattice">Optical lattice</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Spin_(physics)" title="Spin (physics)">Spin</a>-based</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Nuclear_magnetic_resonance_quantum_computer" title="Nuclear magnetic resonance quantum computer">Nuclear magnetic resonance QC</a></li>
+<li><a href="/wiki/Kane_quantum_computer" title="Kane quantum computer">Kane QC</a></li>
+<li><a href="/wiki/Loss%E2%80%93DiVincenzo_quantum_computer" title="Loss–DiVincenzo quantum computer">Loss–DiVincenzo QC</a></li>
+<li><a href="/wiki/Nitrogen-vacancy_center" title="Nitrogen-vacancy center">Nitrogen-vacancy center</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Superconducting_quantum_computing" title="Superconducting quantum computing">Superconducting quantum computing</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Charge_qubit" title="Charge qubit">Charge qubit</a></li>
+<li><a href="/wiki/Flux_qubit" title="Flux qubit">Flux qubit</a></li>
+<li><a href="/wiki/Phase_qubit" title="Phase qubit">Phase qubit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Number-theoretic_algorithms" title="Template:Number-theoretic algorithms"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:Number-theoretic_algorithms&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Number-theoretic algorithms (page does not exist)"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Number-theoretic_algorithms&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Number_theory" title="Number theory">Number-theoretic</a> <a href="/wiki/Algorithm" title="Algorithm">algorithms</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Primality_test" title="Primality test">Primality tests</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="smallcaps" style="font-variant:small-caps;"><a href="/wiki/AKS_primality_test" title="AKS primality test">AKS test</a></span></li>
+<li><span class="smallcaps" style="font-variant:small-caps;"><a href="/wiki/Adleman%E2%80%93Pomerance%E2%80%93Rumely_primality_test" title="Adleman–Pomerance–Rumely primality test">APR test</a></span></li>
+<li><a href="/wiki/Baillie%E2%80%93PSW_primality_test" title="Baillie–PSW primality test">Baillie–PSW</a></li>
+<li><span class="smallcaps" style="font-variant:small-caps;"><a href="/wiki/Elliptic_curve_primality_proving" title="Elliptic curve primality proving" class="mw-redirect">ECPP test</a></span></li>
+<li><a href="/wiki/Elliptic_curve_primality" title="Elliptic curve primality">Elliptic curve</a></li>
+<li><a href="/wiki/Pocklington_primality_test" title="Pocklington primality test">Pocklington</a></li>
+<li><a href="/wiki/Fermat_primality_test" title="Fermat primality test">Fermat</a></li>
+<li><a href="/wiki/Lucas_primality_test" title="Lucas primality test">Lucas</a></li>
+<li><span class="smallcaps" style="font-variant:small-caps;"><i><a href="/wiki/Lucas%E2%80%93Lehmer_primality_test" title="Lucas–Lehmer primality test">Lucas–Lehmer</a></i></span></li>
+<li><span class="smallcaps" style="font-variant:small-caps;"><i><a href="/wiki/Lucas%E2%80%93Lehmer%E2%80%93Riesel_test" title="Lucas–Lehmer–Riesel test">Lucas–Lehmer–Riesel</a></i></span></li>
+<li><span class="smallcaps" style="font-variant:small-caps;"><i><a href="/wiki/Proth%27s_theorem" title="Proth's theorem">Proth's theorem</a></i></span></li>
+<li><span class="smallcaps" style="font-variant:small-caps;"><i><a href="/wiki/P%C3%A9pin%27s_test" title="Pépin's test">Pépin's</a></i></span></li>
+<li><a href="/wiki/Quadratic_Frobenius_test" title="Quadratic Frobenius test">Quadratic Frobenius test</a></li>
+<li><a href="/wiki/Solovay%E2%80%93Strassen_primality_test" title="Solovay–Strassen primality test">Solovay–Strassen</a></li>
+<li><a href="/wiki/Miller%E2%80%93Rabin_primality_test" title="Miller–Rabin primality test">Miller–Rabin</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Generating_primes" title="Generating primes">Prime-generating</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Sieve_of_Atkin" title="Sieve of Atkin">Sieve of Atkin</a></li>
+<li><a href="/wiki/Sieve_of_Eratosthenes" title="Sieve of Eratosthenes">Sieve of Eratosthenes</a></li>
+<li><a href="/wiki/Sieve_of_Sundaram" title="Sieve of Sundaram">Sieve of Sundaram</a></li>
+<li><a href="/wiki/Wheel_factorization" title="Wheel factorization">Wheel factorization</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Integer_factorization" title="Integer factorization">Integer factorization</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Continued_fraction_factorization" title="Continued fraction factorization">Continued fraction (CFRAC)</a></li>
+<li><a href="/wiki/Dixon%27s_factorization_method" title="Dixon's factorization method">Dixon's</a></li>
+<li><a href="/wiki/Lenstra_elliptic_curve_factorization" title="Lenstra elliptic curve factorization">Lenstra elliptic curve (ECM)</a></li>
+<li><a href="/wiki/Euler%27s_factorization_method" title="Euler's factorization method">Euler's</a></li>
+<li><a href="/wiki/Pollard%27s_rho_algorithm" title="Pollard's rho algorithm">Pollard's rho</a></li>
+<li><a href="/wiki/Pollard%27s_p_%E2%88%92_1_algorithm" title="Pollard's p − 1 algorithm"><i>p</i> − 1</a></li>
+<li><a href="/wiki/Williams%27_p_%2B_1_algorithm" title="Williams' p + 1 algorithm"><i>p</i> + 1</a></li>
+<li><a href="/wiki/Quadratic_sieve" title="Quadratic sieve">Quadratic sieve (QS)</a></li>
+<li><a href="/wiki/General_number_field_sieve" title="General number field sieve">General number field sieve (GNFS)</a></li>
+<li><i><a href="/wiki/Special_number_field_sieve" title="Special number field sieve">Special number field sieve (SNFS)</a></i></li>
+<li><a href="/wiki/Rational_sieve" title="Rational sieve">Rational sieve</a></li>
+<li><a href="/wiki/Fermat%27s_factorization_method" title="Fermat's factorization method">Fermat's</a></li>
+<li><a href="/wiki/Shanks%27_square_forms_factorization" title="Shanks' square forms factorization">Shanks' square forms</a></li>
+<li><a href="/wiki/Trial_division" title="Trial division">Trial division</a></li>
+<li><strong class="selflink">Shor's</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Multiplication_algorithm" title="Multiplication algorithm">Multiplication</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Ancient_Egyptian_multiplication" title="Ancient Egyptian multiplication">Ancient Egyptian</a></li>
+<li><a href="/wiki/Long_multiplication" title="Long multiplication" class="mw-redirect">Long</a></li>
+<li><a href="/wiki/Karatsuba_algorithm" title="Karatsuba algorithm">Karatsuba</a></li>
+<li><a href="/wiki/Toom%E2%80%93Cook_multiplication" title="Toom–Cook multiplication">Toom–Cook</a></li>
+<li><a href="/wiki/Sch%C3%B6nhage%E2%80%93Strassen_algorithm" title="Schönhage–Strassen algorithm">Schönhage–Strassen</a></li>
+<li><a href="/wiki/F%C3%BCrer%27s_algorithm" title="Fürer's algorithm">Fürer's</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Discrete_logarithm" title="Discrete logarithm">Discrete logarithm</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="smallcaps" style="font-variant:small-caps;"><a href="/wiki/Baby-step_giant-step" title="Baby-step giant-step">Baby-step giant-step</a></span></li>
+<li><a href="/wiki/Pollard%27s_rho_algorithm_for_logarithms" title="Pollard's rho algorithm for logarithms">Pollard rho</a></li>
+<li><a href="/wiki/Pollard%27s_kangaroo_algorithm" title="Pollard's kangaroo algorithm">Pollard kangaroo</a></li>
+<li><span class="smallcaps" style="font-variant:small-caps;"><a href="/wiki/Pohlig%E2%80%93Hellman_algorithm" title="Pohlig–Hellman algorithm">Pohlig–Hellman</a></span></li>
+<li><a href="/wiki/Index_calculus_algorithm" title="Index calculus algorithm">Index calculus</a></li>
+<li><a href="/wiki/Function_field_sieve" title="Function field sieve">Function field sieve</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Greatest_common_divisor" title="Greatest common divisor">Greatest common divisor</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Binary_GCD_algorithm" title="Binary GCD algorithm">Binary</a></li>
+<li><a href="/wiki/Euclidean_algorithm" title="Euclidean algorithm">Euclidean</a></li>
+<li><a href="/wiki/Extended_Euclidean_algorithm" title="Extended Euclidean algorithm">Extended Euclidean</a></li>
+<li><a href="/wiki/Lehmer%27s_GCD_algorithm" title="Lehmer's GCD algorithm">Lehmer's</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quadratic_residue" title="Quadratic residue">Modular square root</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cipolla%27s_algorithm" title="Cipolla's algorithm">Cipolla</a></li>
+<li><a href="/wiki/Pocklington%27s_algorithm" title="Pocklington's algorithm">Pocklington's</a></li>
+<li><a href="/wiki/Tonelli%E2%80%93Shanks_algorithm" title="Tonelli–Shanks algorithm">Tonelli–Shanks</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other algorithms</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Chakravala_method" title="Chakravala method">Chakravala</a></li>
+<li><a href="/wiki/Cornacchia%27s_algorithm" title="Cornacchia's algorithm">Cornacchia</a></li>
+<li><a href="/wiki/Integer_relation_algorithm" title="Integer relation algorithm">Integer relation</a></li>
+<li><a href="/wiki/Integer_square_root" title="Integer square root">Integer square root</a></li>
+<li><a href="/wiki/Modular_exponentiation" title="Modular exponentiation">Modular exponentiation</a></li>
+<li><a href="/wiki/Schoof%27s_algorithm" title="Schoof's algorithm">Schoof's</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" colspan="2">
+<div>
+<ul>
+<li><i>Italics</i> indicate that algorithm is for numbers of special forms</li>
+<li><span class="smallcaps" style="font-variant:small-caps;">Smallcaps</span> indicate a <a href="/wiki/Deterministic_algorithm" title="Deterministic algorithm">deterministic algorithm</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1229
+Cached time: 20150907230049
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.393 seconds
+Real time usage: 4.079 seconds
+Preprocessor visited node count: 2302/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 92502/2097152 bytes
+Template argument size: 1285/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 3/500
+Lua time usage: 0.077/10.000 seconds
+Lua memory usage: 2.95 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 3895.788      1 - -total
+ 22.71%  884.601      2 - Template:Ordered_list
+  1.97%   76.741      1 - Template:Reflist
+  1.06%   41.368      3 - Template:Navbox
+  0.91%   35.606      5 - Template:Citation
+  0.85%   33.054      1 - Template:Technical
+  0.81%   31.661      2 - Template:Ambox
+  0.74%   28.841      1 - Template:Quantum_computing
+  0.39%   15.155      4 - Template:Cite_journal
+  0.37%   14.272      1 - Template:Number_theoretic_algorithms
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:42674-0!*!0!!en!4!*!math=0 and timestamp 20150907230059 and revision id 679970680
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Shor%27s_algorithm&amp;oldid=679970680">https://en.wikipedia.org/w/index.php?title=Shor%27s_algorithm&amp;oldid=679970680</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Quantum_algorithms" title="Category:Quantum algorithms">Quantum algorithms</a></li><li><a href="/wiki/Category:Integer_factorization_algorithms" title="Category:Integer factorization algorithms">Integer factorization algorithms</a></li><li><a href="/wiki/Category:Quantum_information_science" title="Category:Quantum information science">Quantum information science</a></li><li><a href="/wiki/Category:Post-quantum_cryptography" title="Category:Post-quantum cryptography">Post-quantum cryptography</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_missing_Cite_arXiv_inputs" title="Category:Articles with missing Cite arXiv inputs">Articles with missing Cite arXiv inputs</a></li><li><a href="/wiki/Category:Wikipedia_articles_that_are_too_technical_from_February_2014" title="Category:Wikipedia articles that are too technical from February 2014">Wikipedia articles that are too technical from February 2014</a></li><li><a href="/wiki/Category:All_articles_that_are_too_technical" title="Category:All articles that are too technical">All articles that are too technical</a></li><li><a href="/wiki/Category:Articles_needing_expert_attention_from_February_2014" title="Category:Articles needing expert attention from February 2014">Articles needing expert attention from February 2014</a></li><li><a href="/wiki/Category:All_articles_needing_expert_attention" title="Category:All articles needing expert attention">All articles needing expert attention</a></li><li><a href="/wiki/Category:Articles_lacking_in-text_citations_from_September_2010" title="Category:Articles lacking in-text citations from September 2010">Articles lacking in-text citations from September 2010</a></li><li><a href="/wiki/Category:All_articles_lacking_in-text_citations" title="Category:All articles lacking in-text citations">All articles lacking in-text citations</a></li><li><a href="/wiki/Category:Articles_containing_proofs" title="Category:Articles containing proofs">Articles containing proofs</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Shor%27s+algorithm&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Shor%27s+algorithm" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Shor%27s_algorithm"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Shor%27s_algorithm"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Shor%27s_algorithm" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Shor%27s_algorithm" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Shor%27s_algorithm" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Shor%27s_algorithm&amp;oldid=679970680" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Shor%27s_algorithm&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q940334" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Shor%27s_algorithm&amp;id=679970680" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Shor%27s+algorithm">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Shor%27s+algorithm&amp;oldid=679970680&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Shor%27s_algorithm&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%B4%D9%88%D9%88%D8%B1" title="خوارزمية شوور – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="//ca.wikipedia.org/wiki/Algorisme_de_Shor" title="Algorisme de Shor – Catalan" lang="ca" hreflang="ca">Català</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Shor-Algorithmus" title="Shor-Algorithmus – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Algoritmo_de_Shor" title="Algoritmo de Shor – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85_%D8%B4%D8%B1" title="الگوریتم شر – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Algorithme_de_Shor" title="Algorithme de Shor – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="//ko.wikipedia.org/wiki/%EC%87%BC%EC%96%B4_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" title="쇼어 알고리즘 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Algoritmo_di_fattorizzazione_di_Shor" title="Algoritmo di fattorizzazione di Shor – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9D_%D7%A9%D7%95%D7%A8" title="אלגוריתם שור – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-lt"><a href="//lt.wikipedia.org/wiki/%C5%A0oro_algoritmas" title="Šoro algoritmas – Lithuanian" lang="lt" hreflang="lt">Lietuvių</a></li><li class="interlanguage-link interwiki-hu"><a href="//hu.wikipedia.org/wiki/Shor-algoritmus" title="Shor-algoritmus – Hungarian" lang="hu" hreflang="hu">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Algoritme_van_Shor" title="Algoritme van Shor – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Algorytm_faktoryzacji_Shora" title="Algorytm faktoryzacji Shora – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Algoritmo_de_Shor" title="Algoritmo de Shor – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%A8%D0%BE%D1%80%D0%B0" title="Алгоритм Шора – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="//sr.wikipedia.org/wiki/%D0%A8%D0%BE%D1%80%D0%BE%D0%B2_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%B0%D0%BC" title="Шоров алгоритам – Serbian" lang="sr" hreflang="sr">Српски / srpski</a></li><li class="interlanguage-link interwiki-sh"><a href="//sh.wikipedia.org/wiki/%C5%A0orov_algoritam" title="Šorov algoritam – Serbo-Croatian" lang="sh" hreflang="sh">Srpskohrvatski / српскохрватски</a></li><li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/Shorin_algoritmi" title="Shorin algoritmi – Finnish" lang="fi" hreflang="fi">Suomi</a></li><li class="interlanguage-link interwiki-th"><a href="//th.wikipedia.org/wiki/%E0%B8%82%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%8A%E0%B8%AD%E0%B8%A3%E0%B9%8C" title="ขั้นตอนวิธีของชอร์ – Thai" lang="th" hreflang="th">ไทย</a></li><li class="interlanguage-link interwiki-tr"><a href="//tr.wikipedia.org/wiki/Shor_algoritmas%C4%B1" title="Shor algoritması – Turkish" lang="tr" hreflang="tr">Türkçe</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E7%A7%80%E7%88%BE%E6%BC%94%E7%AE%97%E6%B3%95" title="秀爾演算法 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q940334#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 7 September 2015, at 23:00.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Shor%27s_algorithm&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":85,"wgHostname":"mw1253"});
+} );</script>
+	</body>
+</html>

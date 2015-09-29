@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Computability - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Computability","wgTitle":"Computability","wgCurRevisionId":659987704,"wgRevisionId":659987704,"wgArticleId":442136,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing cleanup from April 2009","All articles needing cleanup","Cleanup tagged articles without a reason field from April 2009","Wikipedia pages needing cleanup from April 2009","Computability theory","Theory of computation"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+"wgRelevantPageName":"Computability","wgRelevantArticleId":442136,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q818888","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Computability" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Computability&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Computability&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Computability" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Computability skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Computability</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><dl>
+<dd><i>You might be looking for <a href="/wiki/Computable_function" title="Computable function">Computable function</a>, <a href="/wiki/Computability_theory" title="Computability theory">Computability theory</a>, <a href="/wiki/Computation" title="Computation">Computation</a>, or <a href="/wiki/Theory_of_computation" title="Theory of computation">Theory of computation</a>.</i></dd>
+</dl>
+<p><b>Computability</b> is the ability to solve a problem in an effective manner. It is a key topic of the field of <a href="/wiki/Computability_theory" title="Computability theory">computability theory</a> within <a href="/wiki/Mathematical_logic" title="Mathematical logic">mathematical logic</a> and the <a href="/wiki/Theory_of_computation" title="Theory of computation">theory of computation</a> within <a href="/wiki/Computer_science" title="Computer science">computer science</a>. The computability of a problem is closely linked to the existence of an <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> to solve the problem.</p>
+<p>The most widely-studied models of computability are the <a href="/wiki/Turing-computable_function" title="Turing-computable function" class="mw-redirect">Turing-computable</a> and <a href="/wiki/%CE%9C-recursive_function" title="Μ-recursive function">μ-recursive functions</a>, and the <a href="/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a>, all of which have computationally equivalent power. Other forms of computability are studied as well: computability notions weaker than Turing machines are studied in <a href="/wiki/Automata_theory" title="Automata theory">automata theory</a>, while computability notions stronger than Turing machines are studied in the field of <a href="/wiki/Hypercomputation" title="Hypercomputation">hypercomputation</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Problems"><span class="tocnumber">1</span> <span class="toctext">Problems</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Formal_models_of_computation"><span class="tocnumber">2</span> <span class="toctext">Formal models of computation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Power_of_automata"><span class="tocnumber">3</span> <span class="toctext">Power of automata</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Power_of_finite_state_machines"><span class="tocnumber">3.1</span> <span class="toctext">Power of finite state machines</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Power_of_pushdown_automata"><span class="tocnumber">3.2</span> <span class="toctext">Power of pushdown automata</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Power_of_Turing_machines"><span class="tocnumber">3.3</span> <span class="toctext">Power of Turing machines</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#The_halting_problem"><span class="tocnumber">3.3.1</span> <span class="toctext">The halting problem</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Beyond_recursively_enumerable_languages"><span class="tocnumber">3.3.2</span> <span class="toctext">Beyond recursively enumerable languages</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Concurrency-based_models"><span class="tocnumber">4</span> <span class="toctext">Concurrency-based models</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Stronger_models_of_computation"><span class="tocnumber">5</span> <span class="toctext">Stronger models of computation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Infinite_execution"><span class="tocnumber">5.1</span> <span class="toctext">Infinite execution</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Oracle_machines"><span class="tocnumber">5.2</span> <span class="toctext">Oracle machines</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Limits_of_hyper-computation"><span class="tocnumber">5.3</span> <span class="toctext">Limits of hyper-computation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Problems">Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=1" title="Edit section: Problems">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A central idea in computability is that of a (<b>computational</b>) <b><a href="/wiki/Computational_problem" title="Computational problem">problem</a></b>, which is a task whose computability can be explored.</p>
+<p>There are two key types of problems:</p>
+<ul>
+<li>A <a href="/wiki/Decision_problem" title="Decision problem">decision problem</a> fixes a set <i>S</i>, which may be a set of strings, natural numbers, or other objects taken from some larger set <i>U</i>. A particular <b>instance</b> of the problem is to decide, given an element <i>u</i> of <i>U</i>, whether <i>u</i> is in <i>S</i>. For example, let <i>U</i> be the set of natural numbers and <i>S</i> the set of prime numbers. The corresponding decision problem corresponds to <a href="/wiki/Primality_testing" title="Primality testing" class="mw-redirect">primality testing</a>.</li>
+<li>A <a href="/wiki/Function_problem" title="Function problem">function problem</a> consists of a function <i>f</i> from a set <i>U</i> to a set <i>V</i>. An instance of the problem is to compute, given an element <i>u</i> in <i>U</i>, the corresponding element <i>f</i>(<i>u</i>) in <i>V</i>. For example, <i>U</i> and <i>V</i> may be the set of all finite binary strings, and <i>f</i> may take a string and return the string obtained by reversing the digits of the input (so f(0101) = 1010).</li>
+</ul>
+<p>Other types of problems include <a href="/wiki/Search_problem" title="Search problem">search problems</a> and <a href="/wiki/Optimization_problem" title="Optimization problem">optimization problems</a>.</p>
+<p>One goal of computability theory is to determine which problems, or classes of problems, can be solved in each model of computation.</p>
+<h2><span class="mw-headline" id="Formal_models_of_computation">Formal models of computation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=2" title="Edit section: Formal models of computation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Model_of_computation" title="Model of computation">Model of computation</a></div>
+<p>A <a href="/wiki/Model_of_computation" title="Model of computation">model of computation</a> is a formal description of a particular type of computational process. The description often takes the form of an <a href="/wiki/Abstract_machine" title="Abstract machine">abstract machine</a> that is meant to perform the task at hand. General models of computation equivalent to a <a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a> (See: <a href="/wiki/Church%E2%80%93Turing_thesis" title="Church–Turing thesis">Church–Turing thesis</a>) include:</p>
+<dl>
+<dt><a href="/wiki/Lambda_calculus" title="Lambda calculus">Lambda calculus</a></dt>
+<dd>A computation consists of an initial lambda expression (or two if you want to separate the function and its input) plus a finite sequence of lambda terms, each deduced from the preceding term by one application of <a href="/wiki/Beta_reduction" title="Beta reduction" class="mw-redirect">Beta reduction</a>.</dd>
+</dl>
+<dl>
+<dt><a href="/wiki/Combinatory_logic" title="Combinatory logic">Combinatory logic</a></dt>
+<dd>is a concept which has many similarities to <img class="mwe-math-fallback-image-inline tex" alt="\lambda" src="//upload.wikimedia.org/math/e/0/5/e05a30d96800384dd38b22851322a6b5.png" />-calculus, but also important differences exist (e.g. fixed point combinator <b>Y</b> has normal form in combinatory logic but not in <img class="mwe-math-fallback-image-inline tex" alt="\lambda" src="//upload.wikimedia.org/math/e/0/5/e05a30d96800384dd38b22851322a6b5.png" />-calculus). Combinatory logic was developed with great ambitions: understanding the nature of paradoxes, making foundations of mathematics more economic (conceptually), eliminating the notion of variables (thus clarifying their role in mathematics).</dd>
+</dl>
+<dl>
+<dt><a href="/wiki/%CE%9C-recursive_function" title="Μ-recursive function">μ-recursive functions</a></dt>
+<dd>a computation consists of a μ-recursive function, <i>i.e.</i> its defining sequence, any input value(s) and a sequence of recursive functions appearing in the defining sequence with inputs and outputs. Thus, if in the defining sequence of a recursive function <img class="mwe-math-fallback-image-inline tex" alt="f(x)" src="//upload.wikimedia.org/math/5/0/b/50bbd36e1fd2333108437a2ca378be62.png" /> the functions <img class="mwe-math-fallback-image-inline tex" alt="g(x)" src="//upload.wikimedia.org/math/e/8/4/e84fec1e074026d6fa8e3155482c35c3.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="h(x,y)" src="//upload.wikimedia.org/math/b/f/1/bf1c4d6fd7b356ff9f844ff4275f6691.png" /> appear, then terms of the form 'g(5)=7' or 'h(3,2)=10' might appear. Each entry in this sequence needs to be an application of a basic function or follow from the entries above by using <a href="/wiki/Function_composition_(computer_science)" title="Function composition (computer science)">composition</a>, <a href="/wiki/Primitive_recursion" title="Primitive recursion" class="mw-redirect">primitive recursion</a> or <a href="/wiki/Mu-recursive_function" title="Mu-recursive function" class="mw-redirect">μ-recursion</a>. For instance if <img class="mwe-math-fallback-image-inline tex" alt="f(x)=h(x,g(x))" src="//upload.wikimedia.org/math/a/3/3/a333abbe7d8309724986d279bb886fb0.png" />, then for 'f(5)=3' to appear, terms like 'g(5)=6' and 'h(3,6)=3' must occur above. The computation terminates only if the final term gives the value of the recursive function applied to the inputs.</dd>
+</dl>
+<dl>
+<dt><a href="/wiki/String_rewriting_system" title="String rewriting system" class="mw-redirect">String rewriting systems</a></dt>
+<dd>including <a href="/wiki/Markov_algorithm" title="Markov algorithm">Markov algorithm</a>, that uses <a href="/wiki/Grammar" title="Grammar">grammar</a>-like rules to operate on <a href="/wiki/String_(computer_science)" title="String (computer science)">strings</a> of symbols; also <a href="/wiki/Post_canonical_system" title="Post canonical system">Post canonical system</a>.</dd>
+</dl>
+<dl>
+<dt><a href="/wiki/Register_machine" title="Register machine">Register machine</a></dt>
+<dd>is a theoretically interesting idealization of a computer. There are several variants. In most of them, each register can hold a natural number (of unlimited size), and the instructions are simple (and few in number), e.g. only decrementation (combined with conditional jump) and incrementation exist (and halting). The lack of the infinite (or dynamically growing) external store (seen at Turing machines) can be understood by replacing its role with <a href="/wiki/G%C3%B6del_numbering" title="Gödel numbering">Gödel numbering</a> techniques: the fact that each register holds a natural number allows the possibility of representing a complicated thing (e.g. a sequence, or a matrix etc.) by an appropriate huge natural number — unambiguity of both representation and interpretation can be established by <a href="/wiki/Number_theory" title="Number theory">number theoretical</a> foundations of these techniques.</dd>
+</dl>
+<dl>
+<dt><a href="/wiki/Turing_machine" title="Turing machine">Turing machine</a></dt>
+<dd>Also similar to the finite state machine, except that the input is provided on an execution "tape", which the Turing machine can read from, write to, or move back and forth past its read/write "head". The tape is allowed to grow to arbitrary size. The Turing machine is capable of performing complex calculations which can have arbitrary duration. This model is perhaps the most important model of computation in computer science, as it simulates computation in the absence of predefined resource limits.</dd>
+</dl>
+<dl>
+<dt><a href="/wiki/Multi-tape_Turing_machine" title="Multi-tape Turing machine" class="mw-redirect">Multi-tape Turing machine</a></dt>
+<dd>Here, there may be more than one tape; moreover there may be multiple heads per tape. Surprisingly, any computation that can be performed by this sort of machine can also be performed by an ordinary Turing machine, although the latter may be slower or require a larger total region of its tape.</dd>
+</dl>
+<dl>
+<dt><a href="/wiki/P%E2%80%B2%E2%80%B2" title="P′′">P′′</a></dt>
+<dd>Like Turing machines, P′′ uses an infinite tape of symbols (without random access), and a rather minimalistic set of instructions. But these instructions are very different, thus, unlike Turing machines, P′′ does not need to maintain a distinct state, because all “memory-like” functionality can be provided only by the tape. Instead of rewriting the current symbol, it can perform a <a href="/wiki/Modular_arithmetic" title="Modular arithmetic">modular arithmetic</a> incrementation on it. P′′ has also a pair of instructions for a cycle, inspecting the blank symbol. Despite its minimalistic nature, it has become the parental formal language of an implemented and (for entertainment) used programming language called <a href="/wiki/Brainfuck" title="Brainfuck">Brainfuck</a>.</dd>
+</dl>
+<p>In addition to the general computational models, some simpler computational models are useful for special, restricted applications. <a href="/wiki/Regular_expressions" title="Regular expressions" class="mw-redirect">Regular expressions</a>, for example, specify string patterns in many contexts, from office productivity software to <a href="/wiki/Programming_language" title="Programming language">programming languages</a>. Another formalism mathematically equivalent to regular expressions, <a href="/wiki/Finite_state_machines" title="Finite state machines" class="mw-redirect">Finite automata</a> are used in circuit design and in some kinds of problem-solving. <a href="/wiki/Context-free_grammar" title="Context-free grammar">Context-free grammars</a> specify programming language syntax. Non-deterministic <a href="/wiki/Pushdown_automaton" title="Pushdown automaton">pushdown automata</a> are another formalism equivalent to context-free grammars.</p>
+<p>Different models of computation have the ability to do different tasks. One way to measure the power of a computational model is to study the class of <a href="/wiki/Formal_language" title="Formal language">formal languages</a> that the model can generate; in such a way is the <a href="/wiki/Chomsky_hierarchy" title="Chomsky hierarchy">Chomsky hierarchy</a> of languages is obtained.</p>
+<p>Other restricted models of computation include:</p>
+<dl>
+<dt><a href="/wiki/Deterministic_finite_automaton" title="Deterministic finite automaton">Deterministic finite automaton</a>(DFA)</dt>
+<dd>Also called a finite state machine. All real computing devices in existence today can be modeled as a finite state machine, as all real computers operate on finite resources. Such a machine has a set of states, and a set of state transitions which are affected by the input stream. Certain states are defined to be accepting states. An input stream is fed into the machine one character at a time, and the state transitions for the current state are compared to the input stream, and if there is a matching transition the machine may enter a new state. If at the end of the input stream the machine is in an accepting state, then the whole input stream is accepted.</dd>
+</dl>
+<dl>
+<dt><a href="/wiki/Nondeterministic_finite_automaton" title="Nondeterministic finite automaton">Nondeterministic finite automaton</a>(NFA)</dt>
+<dd>it is another simple model of computation, although its processing sequence is not uniquely determined. It can be interpreted as taking multiple paths of computation simultaneously through a finite number of states. However, it is possible to prove that any NFA is reducible to an equivalent DFA.</dd>
+</dl>
+<dl>
+<dt><a href="/wiki/Pushdown_automaton" title="Pushdown automaton">Pushdown automaton</a></dt>
+<dd>Similar to the finite state machine, except that it has available an execution stack, which is allowed to grow to arbitrary size. The state transitions additionally specify whether to add a symbol to the stack, or to remove a symbol from the stack. It is more powerful than a DFA due to its infinite-memory stack, although only the top element of the stack is accessible at any time.</dd>
+</dl>
+<h2><span class="mw-headline" id="Power_of_automata">Power of automata</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=3" title="Edit section: Power of automata">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>With these computational models in hand, we can determine what their limits are. That is, what classes of <a href="/wiki/Formal_language" title="Formal language">languages</a> can they accept?</p>
+<h3><span class="mw-headline" id="Power_of_finite_state_machines">Power of finite state machines</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=4" title="Edit section: Power of finite state machines">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="metadata plainlinks ambox ambox-style ambox-Cleanup" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>may require <a href="/wiki/Wikipedia:Cleanup" title="Wikipedia:Cleanup">cleanup</a> to meet Wikipedia's <a href="/wiki/Wikipedia:Manual_of_Style" title="Wikipedia:Manual of Style">quality standards</a></b>. <span class="hide-when-compact">No <a href="/wiki/Template:Cleanup/doc" title="Template:Cleanup/doc">cleanup reason</a> has been specified. Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Computability&amp;action=edit">improve this section</a> if you can.</span> <small><i>(April 2009)</i></small></span></td>
+</tr>
+</table>
+<p>Computer scientists call any language that can be accepted by a finite state machine a <b><a href="/wiki/Regular_language" title="Regular language">regular language</a></b>. Because of the restriction that the number of possible states in a finite state machine is finite, we can see that to find a language that is not regular, we must construct a language that would require an infinite number of states.</p>
+<p>An example of such a language is the set of all strings consisting of the letters 'a' and 'b' which contain an equal number of the letter 'a' and 'b'. To see why this language cannot be correctly recognized by a finite state machine, assume first that such a machine <i>M</i> exists. <i>M</i> must have some number of states <i>n</i>. Now consider the string <i>x</i> consisting of <img class="mwe-math-fallback-image-inline tex" alt="(n+1)" src="//upload.wikimedia.org/math/0/6/f/06fc1a78b9aaaee997b0adbfa5992f6c.png" /> 'a's followed by <img class="mwe-math-fallback-image-inline tex" alt="(n+1)" src="//upload.wikimedia.org/math/0/6/f/06fc1a78b9aaaee997b0adbfa5992f6c.png" /> 'b's.</p>
+<p>As <i>M</i> reads in <i>x</i>, there must be some state in the machine that is repeated as it reads in the first series of 'a's, since there are <img class="mwe-math-fallback-image-inline tex" alt="(n+1)" src="//upload.wikimedia.org/math/0/6/f/06fc1a78b9aaaee997b0adbfa5992f6c.png" /> 'a's and only <i>n</i> states by the <a href="/wiki/Pigeonhole_principle" title="Pigeonhole principle">pigeonhole principle</a>. Call this state <i>S</i>, and further let <i>d</i> be the number of 'a's that our machine read in order to get from the first occurrence of <i>S</i> to some subsequent occurrence during the 'a' sequence. We know, then, that at that second occurrence of <i>S</i>, we can add in an additional <i>d</i> (where <img class="mwe-math-fallback-image-inline tex" alt="d &gt; 0" src="//upload.wikimedia.org/math/1/d/1/1d1524e69d13cd77795b6d20f2fc2546.png" />) 'a's and we will be again at state <i>S</i>. This means that we know that a string of <img class="mwe-math-fallback-image-inline tex" alt="(n+d+1)" src="//upload.wikimedia.org/math/d/3/7/d37253afbb5414b18704b69e9ce03f8c.png" /> 'a's must end up in the same state as the string of <img class="mwe-math-fallback-image-inline tex" alt="(n+1)" src="//upload.wikimedia.org/math/0/6/f/06fc1a78b9aaaee997b0adbfa5992f6c.png" /> 'a's. This implies that if our machine accepts <i>x</i>, it must also accept the string of <img class="mwe-math-fallback-image-inline tex" alt="(n+d+1)" src="//upload.wikimedia.org/math/d/3/7/d37253afbb5414b18704b69e9ce03f8c.png" /> 'a's followed by <img class="mwe-math-fallback-image-inline tex" alt="(n+1)" src="//upload.wikimedia.org/math/0/6/f/06fc1a78b9aaaee997b0adbfa5992f6c.png" /> 'b's, which is not in the language of strings containing an equal number of 'a's and 'b's. In other words, <i>M</i> cannot correctly distinguish between a string of equal number of 'a's and 'b's and a string with <img class="mwe-math-fallback-image-inline tex" alt="(n+d+1)" src="//upload.wikimedia.org/math/d/3/7/d37253afbb5414b18704b69e9ce03f8c.png" /> 'a's and <img class="mwe-math-fallback-image-inline tex" alt="n+1" src="//upload.wikimedia.org/math/4/0/b/40b85027598d87611b1c8d5d11e46812.png" /> 'b's.</p>
+<p>We know, therefore, that this language cannot be accepted correctly by any finite state machine, and is thus not a regular language. A more general form of this result is called the <a href="/wiki/Pumping_lemma_for_regular_languages" title="Pumping lemma for regular languages">Pumping lemma for regular languages</a>, which can be used to show that broad classes of languages cannot be recognized by a finite state machine.</p>
+<h3><span class="mw-headline" id="Power_of_pushdown_automata">Power of pushdown automata</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=5" title="Edit section: Power of pushdown automata">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Computer scientists define a language that can be accepted by a <a href="/wiki/Pushdown_automaton" title="Pushdown automaton">pushdown automaton</a> as a <b><a href="/wiki/Context-free_language" title="Context-free language">Context-free language</a></b>, which can be specified as a <b><a href="/wiki/Context-free_grammar" title="Context-free grammar">Context-free grammar</a></b>. The language consisting of strings with equal numbers of 'a's and 'b's, which we showed was not a regular language, can be decided by a push-down automaton. Also, in general, a push-down automaton can behave just like a finite-state machine, so it can decide any language which is regular. This model of computation is thus strictly more powerful than finite state machines.</p>
+<p>However, it turns out there are languages that cannot be decided by push-down automaton either. The result is similar to that for regular expressions, and won't be detailed here. There exists a <a href="/wiki/Pumping_lemma_for_context-free_languages" title="Pumping lemma for context-free languages">Pumping lemma for context-free languages</a>. An example of such a language is the set of prime numbers.</p>
+<h3><span class="mw-headline" id="Power_of_Turing_machines">Power of Turing machines</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=6" title="Edit section: Power of Turing machines">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><a href="/wiki/Turing_machine" title="Turing machine">Turing machines</a> can decide any context-free language, in addition to languages not decidable by a push-down automaton, such as the language consisting of prime numbers. It is therefore a strictly more powerful model of computation.</p>
+<p>Because Turing machines have the ability to "back up" in their input tape, it is possible for a Turing machine to run for a long time in a way that is not possible with the other computation models previously described. It is possible to construct a Turing machine that will never finish running (halt) on some inputs. We say that a Turing machine can decide a language if it eventually will halt on all inputs and give an answer. A language that can be so decided is called a <b><a href="/wiki/Recursive_language" title="Recursive language">recursive language</a></b>. We can further describe Turing machines that will eventually halt and give an answer for any input in a language, but which may run forever for input strings which are not in the language. Such Turing machines could tell us that a given string is in the language, but we may never be sure based on its behavior that a given string is not in a language, since it may run forever in such a case. A language which is accepted by such a Turing machine is called a <b><a href="/wiki/Recursively_enumerable_language" title="Recursively enumerable language">recursively enumerable language</a></b>.</p>
+<p>The Turing machine, it turns out, is an exceedingly powerful model of automata. Attempts to amend the definition of a Turing machine to produce a more powerful machine have surprisingly met with failure. For example, adding an extra tape to the Turing machine, giving it a two-dimensional (or three- or any-dimensional) infinite surface to work with can all be simulated by a Turing machine with the basic one-dimensional tape. These models are thus not more powerful. In fact, a consequence of the <a href="/wiki/Church-Turing_thesis" title="Church-Turing thesis" class="mw-redirect">Church-Turing thesis</a> is that there is no reasonable model of computation which can decide languages that cannot be decided by a Turing machine.</p>
+<p>The question to ask then is: do there exist languages which are recursively enumerable, but not recursive? And, furthermore, are there languages which are not even recursively enumerable?</p>
+<h4><span class="mw-headline" id="The_halting_problem">The halting problem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=7" title="Edit section: The halting problem">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Halting_problem" title="Halting problem">Halting problem</a></div>
+<p>The halting problem is one of the most famous problems in computer science, because it has profound implications on the theory of computability and on how we use computers in everyday practice. The problem can be phrased:</p>
+<dl>
+<dd><i>Given a description of a Turing machine and its initial input, determine whether the program, when executed on this input, ever halts (completes). The alternative is that it runs forever without halting.</i></dd>
+</dl>
+<p>Here we are asking not a simple question about a prime number or a palindrome, but we are instead turning the tables and asking a Turing machine to answer a question about another Turing machine. It can be shown (See main article: <a href="/wiki/Halting_problem" title="Halting problem">Halting problem</a>) that it is not possible to construct a Turing machine that can answer this question in all cases.</p>
+<p>That is, the only general way to know for sure if a given program will halt on a particular input in all cases is simply to run it and see if it halts. If it does halt, then you know it halts. If it doesn't halt, however, you may never know if it will eventually halt. The language consisting of all Turing machine descriptions paired with all possible input streams on which those Turing machines will eventually halt, is not recursive. The halting problem is therefore called non-computable or <b><a href="/wiki/Undecidable_problem" title="Undecidable problem">undecidable</a></b>.</p>
+<p>An extension of the halting problem is called <a href="/wiki/Rice%27s_Theorem" title="Rice's Theorem" class="mw-redirect">Rice's Theorem</a>, which states that it is undecidable (in general) whether a given language possesses any specific nontrivial property.</p>
+<h4><span class="mw-headline" id="Beyond_recursively_enumerable_languages">Beyond recursively enumerable languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=8" title="Edit section: Beyond recursively enumerable languages">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The halting problem is easy to solve, however, if we allow that the Turing machine that decides it may run forever when given input which is a representation of a Turing machine that does not itself halt. The halting language is therefore recursively enumerable. It is possible to construct languages which are not even recursively enumerable, however.</p>
+<p>A simple example of such a language is the complement of the halting language; that is the language consisting of all Turing machines paired with input strings where the Turing machines do <i>not</i> halt on their input. To see that this language is not recursively enumerable, imagine that we construct a Turing machine <i>M</i> which is able to give a definite answer for all such Turing machines, but that it may run forever on any Turing machine that does eventually halt. We can then construct another Turing machine <img class="mwe-math-fallback-image-inline tex" alt="M'" src="//upload.wikimedia.org/math/c/0/c/c0c8156de7a5455113e67f33c15182fb.png" /> that simulates the operation of this machine, along with simulating directly the execution of the machine given in the input as well, by interleaving the execution of the two programs. Since the direct simulation will eventually halt if the program it is simulating halts, and since by assumption the simulation of <i>M</i> will eventually halt if the input program would never halt, we know that <img class="mwe-math-fallback-image-inline tex" alt="M'" src="//upload.wikimedia.org/math/c/0/c/c0c8156de7a5455113e67f33c15182fb.png" /> will eventually have one of its parallel versions halt. <img class="mwe-math-fallback-image-inline tex" alt="M'" src="//upload.wikimedia.org/math/c/0/c/c0c8156de7a5455113e67f33c15182fb.png" /> is thus a decider for the halting problem. We have previously shown, however, that the halting problem is undecidable. We have a contradiction, and we have thus shown that our assumption that <i>M</i> exists is incorrect. The complement of the halting language is therefore not recursively enumerable.</p>
+<h2><span class="mw-headline" id="Concurrency-based_models">Concurrency-based models</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=9" title="Edit section: Concurrency-based models">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A number of computational models based on <a href="/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">concurrency</a> have been developed, including the <a href="/wiki/Parallel_Random_Access_Machine" title="Parallel Random Access Machine" class="mw-redirect">Parallel Random Access Machine</a> and the <a href="/wiki/Petri_net" title="Petri net">Petri net</a>. These models of concurrent computation still do not implement any mathematical functions that cannot be implemented by Turing machines.</p>
+<h2><span class="mw-headline" id="Stronger_models_of_computation">Stronger models of computation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=10" title="Edit section: Stronger models of computation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Church-Turing_thesis" title="Church-Turing thesis" class="mw-redirect">Church-Turing thesis</a> conjectures that there is no effective model of computing that can compute more mathematical functions than a Turing machine. Computer scientists have imagined many varieties of <b><a href="/wiki/Hypercomputer" title="Hypercomputer" class="mw-redirect">hypercomputers</a></b>, models of computation that go beyond Turing computability.</p>
+<h3><span class="mw-headline" id="Infinite_execution">Infinite execution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=11" title="Edit section: Infinite execution">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Zeno_machine" title="Zeno machine">Zeno machine</a></div>
+<p>Imagine a machine where each step of the computation requires half the time of the previous step (and hopefully half the energy of the previous step...). If we normalize to 1/2 time unit the amount of time required for the first step (and to 1/2 energy unit the amount of energy required for the first step...), the execution would require</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="1 = \sum_{n=1}^{\infty} \frac{1}{2^n} = \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \cdots" src="//upload.wikimedia.org/math/f/8/e/f8e7b5924b9b06d5f661f0f7082b107a.png" /></dd>
+</dl>
+<p>time unit (and 1 energy unit...) to run. This infinite series converges to 1, which means that this Zeno machine can execute a countably infinite number of steps in 1 time unit (using 1 energy unit...). This machine is capable of deciding the halting problem by directly simulating the execution of the machine in question. By extension, any convergent infinite [must be provably infinite] series would work. Assuming that the infinite series converges to a value <i>n</i>, the Zeno machine would complete a countably infinite execution in <i>n</i> time units.</p>
+<h3><span class="mw-headline" id="Oracle_machines">Oracle machines</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=12" title="Edit section: Oracle machines">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Oracle_machine" title="Oracle machine">Oracle machine</a></div>
+<p>So-called Oracle machines have access to various "oracles" which provide the solution to specific undecidable problems. For example, the Turing machine may have a "halting oracle" which answers immediately whether a given Turing machine will ever halt on a given input. These machines are a central topic of study in <a href="/wiki/Recursion_theory" title="Recursion theory" class="mw-redirect">recursion theory</a>.</p>
+<h3><span class="mw-headline" id="Limits_of_hyper-computation">Limits of hyper-computation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=13" title="Edit section: Limits of hyper-computation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Even these machines, which seemingly represent the limit of automata that we could imagine, run into their own limitations. While each of them can solve the halting problem for a Turing machine, they cannot solve their own version of the halting problem. For example, an Oracle machine cannot answer the question of whether a given Oracle machine will ever halt.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=14" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Automata_theory" title="Automata theory">Automata theory</a></li>
+<li><a href="/wiki/Abstract_machine" title="Abstract machine">Abstract machine</a></li>
+<li><a href="/wiki/List_of_undecidable_problems" title="List of undecidable problems">List of undecidable problems</a></li>
+<li><a href="/wiki/Computational_complexity_theory" title="Computational complexity theory">Computational complexity theory</a></li>
+<li><a href="/wiki/Computability_logic" title="Computability logic">Computability logic</a></li>
+<li><a href="/wiki/List_of_important_publications_in_theoretical_computer_science#Computability" title="List of important publications in theoretical computer science">Important publications in computability</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Computability&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="citation book"><a href="/wiki/Michael_Sipser" title="Michael Sipser">Michael Sipser</a> (1997). <i>Introduction to the Theory of Computation</i>. PWS Publishing. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-534-94728-X" title="Special:BookSources/0-534-94728-X">0-534-94728-X</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputability&amp;rft.aulast=Michael+Sipser&amp;rft.au=Michael+Sipser&amp;rft.btitle=Introduction+to+the+Theory+of+Computation&amp;rft.date=1997&amp;rft.genre=book&amp;rft.isbn=0-534-94728-X&amp;rft.pub=PWS+Publishing&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> Part Two: Computability Theory, Chapters 3–6, pp.&#160;123–222.</li>
+<li><span class="citation book"><a href="/wiki/Christos_Papadimitriou" title="Christos Papadimitriou">Christos Papadimitriou</a> (1993). <i>Computational Complexity</i> (1st ed.). Addison Wesley. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-53082-1" title="Special:BookSources/0-201-53082-1">0-201-53082-1</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputability&amp;rft.au=Christos+Papadimitriou&amp;rft.aulast=Christos+Papadimitriou&amp;rft.btitle=Computational+Complexity&amp;rft.date=1993&amp;rft.edition=1st&amp;rft.genre=book&amp;rft.isbn=0-201-53082-1&amp;rft.pub=Addison+Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> Chapter 3: Computability, pp.&#160;57–70.</li>
+<li><span class="citation book"><a href="/wiki/S._Barry_Cooper" title="S. Barry Cooper">S. Barry Cooper</a> (2004). <i>Computability Theory</i> (1st ed.). Chapman &amp; Hall/CRC. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-58488-237-4" title="Special:BookSources/978-1-58488-237-4">978-1-58488-237-4</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AComputability&amp;rft.aulast=S.+Barry+Cooper&amp;rft.au=S.+Barry+Cooper&amp;rft.btitle=Computability+Theory&amp;rft.date=2004&amp;rft.edition=1st&amp;rft.genre=book&amp;rft.isbn=978-1-58488-237-4&amp;rft.pub=Chapman+%26+Hall%2FCRC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Computable_knowledge" title="Template:Computable knowledge"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Computable_knowledge" title="Template talk:Computable knowledge"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Computable_knowledge&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%">Computable knowledge</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Topics and<br />
+concepts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Alphabet_of_human_thought" title="Alphabet of human thought">Alphabet of human thought</a></li>
+<li><a href="/wiki/Authority_control" title="Authority control">Authority control</a></li>
+<li><a href="/wiki/Automated_reasoning" title="Automated reasoning">Automated reasoning</a></li>
+<li><a href="/wiki/Commonsense_knowledge_(artificial_intelligence)" title="Commonsense knowledge (artificial intelligence)">Commonsense knowledge</a></li>
+<li><a href="/wiki/Commonsense_reasoning" title="Commonsense reasoning">Commonsense reasoning</a></li>
+<li><strong class="selflink">Computability</strong></li>
+<li><a href="/wiki/Formal_system" title="Formal system">Formal system</a></li>
+<li><a href="/wiki/Inference_engine" title="Inference engine">Inference engine</a></li>
+<li><a href="/wiki/Knowledge_base" title="Knowledge base">Knowledge base</a></li>
+<li><a href="/wiki/Knowledge-based_systems" title="Knowledge-based systems">Knowledge-based systems</a></li>
+<li><a href="/wiki/Knowledge_engineering" title="Knowledge engineering">Knowledge engineering</a></li>
+<li><a href="/wiki/Knowledge_extraction" title="Knowledge extraction">Knowledge extraction</a></li>
+<li><a href="/wiki/Knowledge_representation_and_reasoning" title="Knowledge representation and reasoning">Knowledge representation</a></li>
+<li><a href="/wiki/Knowledge_retrieval" title="Knowledge retrieval">Knowledge retrieval</a></li>
+<li><a href="/wiki/Library_classification" title="Library classification">Library classification</a></li>
+<li><a href="/wiki/Logic_programming" title="Logic programming">Logic programming</a></li>
+<li><a href="/wiki/Ontology_(information_science)" title="Ontology (information science)">Ontology</a></li>
+<li><a href="/wiki/Question_answering" title="Question answering">Question answering</a></li>
+<li><a href="/wiki/Semantic_reasoner" title="Semantic reasoner">Semantic reasoner</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Proposals and<br />
+implementations</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Zairja" title="Zairja">Zairja</a></li>
+<li><i><a href="/wiki/An_Essay_towards_a_Real_Character_and_a_Philosophical_Language" title="An Essay towards a Real Character and a Philosophical Language">An Essay towards a Real Character and a Philosophical Language</a></i></li>
+<li><a href="/wiki/Calculus_ratiocinator" title="Calculus ratiocinator">Calculus ratiocinator</a> &amp; <a href="/wiki/Characteristica_universalis" title="Characteristica universalis">Characteristica universalis</a></li>
+<li><a href="/wiki/Dewey_Decimal_Classification" title="Dewey Decimal Classification">Dewey Decimal Classification</a></li>
+<li><a href="/wiki/Begriffsschrift" title="Begriffsschrift">Begriffsschrift</a></li>
+<li><a href="/wiki/Mundaneum" title="Mundaneum">Mundaneum</a></li>
+<li><a href="/wiki/Logical_atomism" title="Logical atomism">Logical atomism</a></li>
+<li><i><a href="/wiki/Tractatus_Logico-Philosophicus" title="Tractatus Logico-Philosophicus">Tractatus Logico-Philosophicus</a></i></li>
+<li><a href="/wiki/Hilbert%27s_program" title="Hilbert's program">Hilbert's program</a></li>
+<li><a href="/wiki/G%C3%B6del%27s_incompleteness_theorems" title="Gödel's incompleteness theorems">Incompleteness theorem</a></li>
+<li><a href="/wiki/Memex" title="Memex">Memex</a></li>
+<li><a href="/wiki/Prolog" title="Prolog">Prolog</a></li>
+<li><a href="/wiki/Cyc" title="Cyc">Cyc</a></li>
+<li><a href="/wiki/Evi_(software)" title="Evi (software)">Evi</a></li>
+<li><a href="/wiki/Wolfram_Alpha" title="Wolfram Alpha">Wolfram Alpha</a></li>
+<li><a href="/wiki/Watson_(computer)" title="Watson (computer)">Watson</a></li>
+<li><a href="/wiki/Siri" title="Siri">Siri</a></li>
+<li><a href="/wiki/Knowledge_Graph" title="Knowledge Graph">Knowledge Graph</a></li>
+<li><a href="/wiki/Cortana_(intelligent_personal_assistant)" title="Cortana (intelligent personal assistant)" class="mw-redirect">Cortana</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">In fiction</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/The_Engine" title="The Engine">The Engine</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1086
+Cached time: 20150912123456
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.229 seconds
+Real time usage: 0.463 seconds
+Preprocessor visited node count: 747/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 21125/2097152 bytes
+Template argument size: 1162/2097152 bytes
+Highest expansion depth: 15/40
+Expensive parser function count: 4/500
+Lua time usage: 0.067/10.000 seconds
+Lua memory usage: 2.24 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  378.029      1 - -total
+ 19.98%   75.545      1 - Template:Cleanup
+ 10.66%   40.283      1 - Template:Main_other
+ 10.14%   38.324      3 - Template:Cite_book
+  9.89%   37.371      1 - Template:Ambox
+  9.10%   34.405      4 - Template:Main
+  6.76%   25.552      1 - Template:Category_handler
+  6.03%   22.786      1 - Template:Computable_knowledge
+  5.24%   19.793      1 - Template:Navbox
+  3.57%   13.512      1 - Template:DMC
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:442136-0!*!0!!en!4!*!math=0 and timestamp 20150912123456 and revision id 659987704
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Computability&amp;oldid=659987704">https://en.wikipedia.org/w/index.php?title=Computability&amp;oldid=659987704</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Computability_theory" title="Category:Computability theory">Computability theory</a></li><li><a href="/wiki/Category:Theory_of_computation" title="Category:Theory of computation">Theory of computation</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_cleanup_from_April_2009" title="Category:Articles needing cleanup from April 2009">Articles needing cleanup from April 2009</a></li><li><a href="/wiki/Category:All_articles_needing_cleanup" title="Category:All articles needing cleanup">All articles needing cleanup</a></li><li><a href="/wiki/Category:Cleanup_tagged_articles_without_a_reason_field_from_April_2009" title="Category:Cleanup tagged articles without a reason field from April 2009">Cleanup tagged articles without a reason field from April 2009</a></li><li><a href="/wiki/Category:Wikipedia_pages_needing_cleanup_from_April_2009" title="Category:Wikipedia pages needing cleanup from April 2009">Wikipedia pages needing cleanup from April 2009</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Computability&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Computability" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Computability"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Computability"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Computability" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Computability&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Computability&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Computability" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Computability" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Computability&amp;oldid=659987704" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Computability&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q818888" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Computability&amp;id=659987704" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Computability">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Computability&amp;oldid=659987704&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Computability&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-als"><a href="//als.wikipedia.org/wiki/Berechenbarkeit" title="Berechenbarkeit – Alemannisch" lang="als" hreflang="als">Alemannisch</a></li><li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%D9%8A%D8%A9" title="الحاسوبية – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Berechenbarkeit" title="Berechenbarkeit – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%87%E2%80%8C%D9%BE%D8%B0%DB%8C%D8%B1%DB%8C" title="محاسبه‌پذیری – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Calculabilit%C3%A9" title="Calculabilité – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%97%D7%99%D7%A9%D7%95%D7%91%D7%99%D7%95%D7%AA" title="חישוביות – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Berekenbaarheid" title="Berekenbaarheid – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Computabilidade" title="Computabilidade – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q818888#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 30 April 2015, at 02:59.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Computability&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":69,"wgHostname":"mw1239"});
+} );</script>
+	</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Quantile function - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Quantile_function","wgTitle":"Quantile function","wgCurRevisionId":679427736,"wgRevisionId":679427736,"wgArticleId":10167616,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Theory of probability distributions"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Quantile_function","wgRelevantArticleId":10167616,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault"
+:!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Probit_plot.png/100px-Probit_plot.png","wgULSAcceptLanguageList":["en-us","en","zh-cn","zh"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q3489473","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Quantile_function" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Quantile_function&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Quantile_function&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Quantile_function" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Quantile_function skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Quantile function</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Probit_plot.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Probit_plot.png/220px-Probit_plot.png" width="220" height="165" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Probit_plot.png/330px-Probit_plot.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Probit_plot.png/440px-Probit_plot.png 2x" data-file-width="640" data-file-height="480" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Probit_plot.png" class="internal" title="Enlarge"></a></div>
+The <a href="/wiki/Probit" title="Probit">probit</a> is the <b>quantile function</b> of the <a href="/wiki/Normal_distribution" title="Normal distribution">normal distribution</a>.</div>
+</div>
+</div>
+<p>In <a href="/wiki/Probability" title="Probability">probability</a> and <a href="/wiki/Statistics" title="Statistics">statistics</a>, the <b><a href="/wiki/Quantile" title="Quantile">quantile</a> function</b> specifies, for a given probability in the <a href="/wiki/Probability_distribution" title="Probability distribution">probability distribution</a> of a <a href="/wiki/Random_variable" title="Random variable">random variable</a>, the value at which the probability of the random variable being less than or equal to this value is equal to the given probability. It is also called the <b>percent point function</b> or <b>inverse cumulative distribution function</b>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Simple_example"><span class="tocnumber">2</span> <span class="toctext">Simple example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Applications"><span class="tocnumber">3</span> <span class="toctext">Applications</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Calculation"><span class="tocnumber">4</span> <span class="toctext">Calculation</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#The_normal_distribution"><span class="tocnumber">5</span> <span class="toctext">The normal distribution</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Ordinary_differential_equation_for_the_normal_quantile"><span class="tocnumber">5.1</span> <span class="toctext">Ordinary differential equation for the normal quantile</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#The_Student.27s_t-distribution"><span class="tocnumber">6</span> <span class="toctext">The Student's t-distribution</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#.CE.BD_.3D_1_.28Cauchy_distribution.29"><span class="tocnumber">6.1</span> <span class="toctext">ν = 1 (Cauchy distribution)</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#.CE.BD_.3D_2"><span class="tocnumber">6.2</span> <span class="toctext">ν = 2</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#.CE.BD_.3D_4"><span class="tocnumber">6.3</span> <span class="toctext">ν = 4</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Quantile_mixtures"><span class="tocnumber">7</span> <span class="toctext">Quantile mixtures</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Non-linear_differential_equations_for_quantile_functions"><span class="tocnumber">8</span> <span class="toctext">Non-linear differential equations for quantile functions</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>With reference to a continuous and strictly monotonic distribution function, for example the <a href="/wiki/Cumulative_distribution_function" title="Cumulative distribution function">cumulative distribution function</a> <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle F_X\colon R \to [0,1]" src="//upload.wikimedia.org/math/c/7/5/c75eb6823e1b364bf0f674373fc16ceb.png" /> of a <a href="/wiki/Random_variable" title="Random variable">random variable</a> <i>X</i>, the quantile function <i>Q</i> returns a threshold value <i>x</i> below which random draws from the given c.d.f would fall <i>p</i> percent of the time.</p>
+<p>In terms of the distribution function <i>F</i>, the quantile function <i>Q</i> returns the value <i>x</i> such that</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="F_X(x) := \Pr(X \le x) = p.\," src="//upload.wikimedia.org/math/5/e/8/5e81ffd6f4e1c2085c76f730ee3be353.png" /></dd>
+</dl>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Quantile_distribution_function.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/55/Quantile_distribution_function.svg/220px-Quantile_distribution_function.svg.png" width="220" height="173" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/55/Quantile_distribution_function.svg/330px-Quantile_distribution_function.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/55/Quantile_distribution_function.svg/440px-Quantile_distribution_function.svg.png 2x" data-file-width="372" data-file-height="293" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Quantile_distribution_function.svg" class="internal" title="Enlarge"></a></div>
+Quantile function for a general distribution function</div>
+</div>
+</div>
+<p>Another way to express the quantile function is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q(p)\,=\,\inf\left\{ x\in \mathbb{R} : p \le F(x) \right\} " src="//upload.wikimedia.org/math/b/2/5/b2589fad4190b969f1dceeb3a52162c0.png" /></dd>
+</dl>
+<p>for a probability 0&#160;&lt;&#160;<i>p</i>&#160;&lt;&#160;1. Here we capture the fact that the quantile function returns the minimum value of <i>x</i> from amongst all those values whose c.d.f value exceeds <i>p</i>, which is equivalent to the previous probability statement. If the function <i>F</i> is continuous, then the <a href="/wiki/Infimum_and_supremum" title="Infimum and supremum">infimum function</a> can be replaced by the minimum function and</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q = F^{-1}" src="//upload.wikimedia.org/math/0/3/e/03e4903c3348958cee8ed468ae26fb62.png" /></dd>
+</dl>
+<p>Note: if the probability distribution is discrete rather than continuous then there may be gaps between values in the domain of its cdf, while if the cdf is only weakly monotonic there may be "flat spots" in its range.</p>
+<h2><span class="mw-headline" id="Simple_example">Simple example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=2" title="Edit section: Simple example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For example, the cumulative distribution function of <a href="/wiki/Exponential_distribution" title="Exponential distribution">Exponential(<i>λ</i>)</a> (i.e.&#160;intensity <i>λ</i> and <a href="/wiki/Expected_value" title="Expected value">expected value</a> (<a href="/wiki/Mean" title="Mean">mean</a>)&#160;1/<i>λ</i>) is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="F(x;\lambda) = \begin{cases}
+1-e^{-\lambda x} &amp; x \ge 0, \\
+0 &amp; x &lt; 0.
+\end{cases}" src="//upload.wikimedia.org/math/c/b/8/cb8a380a1a96c2146eb951746294dd8e.png" /></dd>
+</dl>
+<p>The quantile function for Exponential(<i>λ</i>) is derived by finding the value of Q for which <img class="mwe-math-fallback-image-inline tex" alt="1-e^{-\lambda Q} =p " src="//upload.wikimedia.org/math/b/b/f/bbfab3d54ddc78fe568b053b046a697d.png" />:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q(p;\lambda) = \frac{-\ln(1-p)}{\lambda}, \!" src="//upload.wikimedia.org/math/7/7/f/77f42068c871486930f711ac3987a1e0.png" /></dd>
+</dl>
+<p>for 0&#160;≤&#160;<i>p</i>&#160;&lt;&#160;1. The <a href="/wiki/Quartile" title="Quartile">quartiles</a> are therefore:</p>
+<dl>
+<dt>first quartile (p = 1/4)</dt>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\ln(4/3)/\lambda\," src="//upload.wikimedia.org/math/1/6/5/1651f2465b5080b9fd4da5a2cf82a2ef.png" /></dd>
+<dt><a href="/wiki/Median" title="Median">median</a> (p = 2/4)&#160;</dt>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\ln(2)/\lambda\," src="//upload.wikimedia.org/math/0/e/a/0ea663cd63760401a3bc603f35146622.png" /></dd>
+<dt>third quartile (p = 3/4)&#160;</dt>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\ln(4)/\lambda.\," src="//upload.wikimedia.org/math/1/8/9/18992e371a7672b4080e319142131e54.png" /></dd>
+</dl>
+<h2><span class="mw-headline" id="Applications">Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=3" title="Edit section: Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Quantile functions are used in both statistical applications and <a href="/wiki/Monte_Carlo_method" title="Monte Carlo method">Monte Carlo methods</a>.</p>
+<p>The quantile function is one way of prescribing a probability distribution, and it is an alternative to the <a href="/wiki/Probability_density_function" title="Probability density function">probability density function</a> (pdf) or <a href="/wiki/Probability_mass_function" title="Probability mass function">probability mass function</a>, the <a href="/wiki/Cumulative_distribution_function" title="Cumulative distribution function">cumulative distribution function</a> (cdf) and the <a href="/wiki/Characteristic_function_(probability_theory)" title="Characteristic function (probability theory)">characteristic function</a>. The quantile function, <i>Q</i>, of a probability distribution is the <a href="/wiki/Inverse_function" title="Inverse function">inverse</a> of its cumulative distribution function <i>F</i>. The derivative of the quantile function, namely the quantile density function, is yet another way of prescribing a probability distribution. It is the reciprocal of the pdf composed with the quantile function.</p>
+<p>For statistical applications, users need to know key percentage points of a given distribution. For example, they require the median and 25% and 75% quartiles as in the example above or 5%, 95%, 2.5%, 97.5% levels for other applications such as assessing the <a href="/wiki/Statistical_significance" title="Statistical significance">statistical significance</a> of an observation whose distribution is known; see the <a href="/wiki/Quantile" title="Quantile">quantile</a> entry. Before the popularization of computers, it was not uncommon for books to have appendices with statistical tables sampling the quantile function (see, e.g., <a rel="nofollow" class="external autonumber" href="http://course.shufe.edu.cn/jpkc/jrjlx/ref/StaTable.pdf">[1]</a>). Statistical applications of quantile functions are discussed extensively by Gilchrist.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>Monte-Carlo simulations employ quantile functions to produce non-uniform random or <a href="/wiki/Pseudorandom_number" title="Pseudorandom number" class="mw-redirect">pseudorandom numbers</a> for use in diverse types of simulation calculations. A sample from a given distribution may be obtained in principle by applying its quantile function to a sample from a uniform distribution. The demands, for example, of simulation methods in modern <a href="/wiki/Computational_finance" title="Computational finance">computational finance</a> are focusing increasing attention on methods based on quantile functions, as they work well with <a href="/wiki/Multivariate_analysis" title="Multivariate analysis">multivariate</a> techniques based on either <a href="/wiki/Copula_(statistics)" title="Copula (statistics)" class="mw-redirect">copula</a> or quasi-Monte-Carlo methods<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> and <a href="/wiki/Monte_Carlo_methods_in_finance" title="Monte Carlo methods in finance">Monte Carlo methods in finance</a>.</p>
+<h2><span class="mw-headline" id="Calculation">Calculation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=4" title="Edit section: Calculation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The evaluation of quantile functions often involves <a href="/wiki/Numerical_methods" title="Numerical methods" class="mw-redirect">numerical methods</a>, as the example of the exponential distribution above is one of the few distributions where a <a href="/wiki/Closed-form_expression" title="Closed-form expression">closed-form expression</a> can be found (others include the <a href="/wiki/Uniform_distribution_(continuous)" title="Uniform distribution (continuous)">uniform</a>, the <a href="/wiki/Weibull_distribution" title="Weibull distribution">Weibull</a>, the <a href="/wiki/Tukey_lambda_distribution" title="Tukey lambda distribution">Tukey lambda</a> (which includes the <a href="/wiki/Logistic_distribution" title="Logistic distribution">logistic</a>) and the <a href="/wiki/Log-logistic_distribution" title="Log-logistic distribution">log-logistic</a>). When the cdf itself has a closed-form expression, one can always use a numerical <a href="/wiki/Root-finding_algorithm" title="Root-finding algorithm">root-finding algorithm</a> such as the <a href="/wiki/Bisection_method" title="Bisection method">bisection method</a> to invert the cdf. Other algorithms to evaluate quantile functions are given in the <a href="/wiki/Numerical_Recipes" title="Numerical Recipes">Numerical Recipes</a> series of books. Algorithms for common distributions are built into many <a href="/wiki/Statistical_software" title="Statistical software" class="mw-redirect">statistical software</a> packages.</p>
+<p>Quantile functions may also be characterized as solutions of non-linear ordinary and partial <a href="/wiki/Differential_equation" title="Differential equation">differential equations</a>. The <a href="/wiki/Ordinary_differential_equation" title="Ordinary differential equation">ordinary differential equations</a> for the cases of the <a href="/wiki/Normal_distribution" title="Normal distribution">normal</a>, <a href="/wiki/Student_t-distribution" title="Student t-distribution" class="mw-redirect">Student</a>, <a href="/wiki/Beta_distribution" title="Beta distribution">beta</a> and <a href="/wiki/Gamma_distribution" title="Gamma distribution">gamma</a> distributions have been given and solved.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="The_normal_distribution">The normal distribution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=5" title="Edit section: The normal distribution">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="/wiki/Normal_distribution" title="Normal distribution">normal distribution</a> is perhaps the most important case. Because the normal distribution is a <a href="/wiki/Location-scale_family" title="Location-scale family">location-scale family</a>, its quantile function for arbitrary parameters can be derived from a simple transformation of the quantile function of the standard normal distribution, known as the <a href="/wiki/Probit" title="Probit">probit</a> function. Unfortunately, this function has no closed-form representation using basic algebraic functions; as a result, approximate representations are usually used. Thorough composite rational and polynomial approximations have been given by Wichura<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> and Acklam (see his web site in External Links). Non-composite rational approximations have been developed by Shaw (see Monte Carlo recycling in External Links).</p>
+<h3><span class="mw-headline" id="Ordinary_differential_equation_for_the_normal_quantile">Ordinary differential equation for the normal quantile</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=6" title="Edit section: Ordinary differential equation for the normal quantile">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A non-linear ordinary differential equation for the normal quantile, <i>w</i>(<i>p</i>), may be given. It is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\frac{d^2 w}{d p^2} = w \left(\frac{d w}{d p}\right)^2 " src="//upload.wikimedia.org/math/f/e/3/fe32fb4b7678cc5c592855be092acaa8.png" /></dd>
+</dl>
+<p>with the centre (boundary) conditions</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="w\left(1/2\right) = 0,\, " src="//upload.wikimedia.org/math/b/2/b/b2bb94e1d517b8ace5a0a557587609d6.png" /></dd>
+</dl>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="w'\left(1/2\right) = \sqrt{2\pi}.\, " src="//upload.wikimedia.org/math/a/2/3/a2362bfbfdaba8c2111babad9a17d0a4.png" /></dd>
+</dl>
+<p>This equation may be solved by several methods, including the classical power series approach. From this solutions of arbitrarily high accuracy may be developed (see Steinbrecher and Shaw, 2008).</p>
+<h2><span class="mw-headline" id="The_Student.27s_t-distribution">The Student's t-distribution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=7" title="Edit section: The Student's t-distribution">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Student%27s_t-distribution" title="Student's t-distribution">Student's t-distribution</a></div>
+<p>This has historically been one of the more intractable cases, as the presence of a parameter, ν, the degrees of freedom, makes the use of rational and other approximations awkward. Simple formulas exist when the ν&#160;=&#160;1,&#160;2,&#160;4 and the problem may be reduced to the solution of a polynomial when ν is even. In other cases the quantile functions may be developed as power series.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup> The simple cases are as follows:</p>
+<h3><span class="mw-headline" id=".CE.BD_.3D_1_.28Cauchy_distribution.29">ν = 1 (Cauchy distribution)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=8" title="Edit section: ν = 1 (Cauchy distribution)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Cauchy_distribution" title="Cauchy distribution">Cauchy distribution</a></div>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q(p) = \tan (\pi(p-1/2)) \!" src="//upload.wikimedia.org/math/a/e/7/ae72f9b1bbe508078e8382386bb3cb44.png" /></dd>
+</dl>
+<h3><span class="mw-headline" id=".CE.BD_.3D_2">ν = 2</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=9" title="Edit section: ν = 2">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q(p) = 2(p-1/2)\sqrt{\frac{2}{\alpha}}\!" src="//upload.wikimedia.org/math/b/c/5/bc5553484e3d5af1273adf6a35fa2cb1.png" /></dd>
+</dl>
+<h3><span class="mw-headline" id=".CE.BD_.3D_4">ν = 4</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=10" title="Edit section: ν = 4">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q(p) = \operatorname{sign}(p-1/2)\,2\,\sqrt{q-1}\!" src="//upload.wikimedia.org/math/3/2/e/32ef41271a88bf733ae8ea6b9d31af9c.png" /></dd>
+</dl>
+<p>where</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="q = \frac{\cos \left( \frac{1}{3} \arccos \left( \sqrt{\alpha} \, \right) \right)}{\sqrt{\alpha}}\!" src="//upload.wikimedia.org/math/0/0/4/004a4c53cf3fa2bfc2f9a103388e6fa2.png" /></dd>
+</dl>
+<p>and</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\alpha = 4p(1-p).\!" src="//upload.wikimedia.org/math/e/6/c/e6c3b2d5b4b8b28a97950ab66bff8425.png" /></dd>
+</dl>
+<p>In the above the "sign" function is +1 for positive arguments, -1 for negative arguments and zero at zero. It should not be confused with the trigonometric sine function.</p>
+<h2><span class="mw-headline" id="Quantile_mixtures">Quantile mixtures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=11" title="Edit section: Quantile mixtures">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Analogously to <a href="/wiki/Mixture_distribution" title="Mixture distribution">the mixtures of densities</a>, distributions can be defined as quantile mixtures</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="Q(p)=\sum_{i=1}^{m}a_i Q_i(p)" src="//upload.wikimedia.org/math/f/e/6/fe6185a3281b790597f4ac18d9c5d9a0.png" />,</dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="Q_i(p)" src="//upload.wikimedia.org/math/4/3/6/4360345bc791a90de051827655604510.png" />, <img class="mwe-math-fallback-image-inline tex" alt="i=1,\ldots,m" src="//upload.wikimedia.org/math/e/9/f/e9fc2bada9d8a674f790a0c58e5312b7.png" /> are quantile functions and <img class="mwe-math-fallback-image-inline tex" alt="a_i" src="//upload.wikimedia.org/math/d/8/d/d8dd7d0f3eb7145ca41c711457b7eb8f.png" />, <img class="mwe-math-fallback-image-inline tex" alt="i=1,\ldots,m" src="//upload.wikimedia.org/math/e/9/f/e9fc2bada9d8a674f790a0c58e5312b7.png" /> are the model parameters. The parameters <img class="mwe-math-fallback-image-inline tex" alt="a_i" src="//upload.wikimedia.org/math/d/8/d/d8dd7d0f3eb7145ca41c711457b7eb8f.png" /> must be selected so that <img class="mwe-math-fallback-image-inline tex" alt="Q(p)" src="//upload.wikimedia.org/math/1/3/6/136b4f8eb8849dc5e87a162e30f1e560.png" /> is a quantile function. Two four-parametric quantile mixtures, the normal-polynomial quantile mixture and the Cauchy-polynomial quantile mixture, are presented by Karvanen.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Non-linear_differential_equations_for_quantile_functions">Non-linear differential equations for quantile functions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=12" title="Edit section: Non-linear differential equations for quantile functions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The non-linear ordinary differential equation given for <a href="/wiki/Normal_distribution" title="Normal distribution">normal distribution</a> is a special case of that available for any quantile function whose second derivative exists. In general the equation for a quantile, <i>Q</i>(<i>p</i>), may be given. It is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\frac{d^2 Q}{d p^2} = H(Q) \left(\frac{d Q}{d p}\right)^2 " src="//upload.wikimedia.org/math/2/a/c/2acedcf6fa55220ddcf430f129f18ea9.png" /></dd>
+</dl>
+<p>augmented by suitable boundary conditions, where</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" H(x) = -\frac{d \log[f(x)]}{dx} " src="//upload.wikimedia.org/math/2/0/3/20387bdc1a8bb8965dcac538de247627.png" /></dd>
+</dl>
+<p>and <i>ƒ</i>(<i>x</i>) is the probability density function. The forms of this equation, and its classical analysis by series and asymptotic solutions, for the cases of the normal, Student, gamma and beta distributions has been elucidated by Steinbrecher and Shaw (2008). Such solutions provide accurate benchmarks, and in the case of the Student, suitable series for live Monte Carlo use.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=13" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Inverse_transform_sampling" title="Inverse transform sampling">Inverse transform sampling</a></li>
+<li><a href="/wiki/Percent_point" title="Percent point" class="mw-redirect">Percent point</a></li>
+<li><a href="/wiki/Rank-size_distribution" title="Rank-size distribution">Rank-size distribution</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=14" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation book">Gilchrist, W. (2000). <i>Statistical Modelling with Quantile Functions</i>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-58488-174-7" title="Special:BookSources/1-58488-174-7">1-58488-174-7</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile+function&amp;rft.au=Gilchrist%2C+W.&amp;rft.aulast=Gilchrist%2C+W.&amp;rft.btitle=Statistical+Modelling+with+Quantile+Functions&amp;rft.date=2000&amp;rft.genre=book&amp;rft.isbn=1-58488-174-7&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation book">Jaeckel, P. (2002). <i>Monte Carlo methods in finance</i>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile+function&amp;rft.au=Jaeckel%2C+P.&amp;rft.aulast=Jaeckel%2C+P.&amp;rft.btitle=Monte+Carlo+methods+in+finance&amp;rft.date=2002&amp;rft.genre=book&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation journal">Steinbrecher, G., Shaw, W.T. (2008). "Quantile mechanics". <i>European Journal of Applied Mathematics</i> <b>19</b> (2): 87–112. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1017%2FS0956792508007341">10.1017/S0956792508007341</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile+function&amp;rft.atitle=Quantile+mechanics&amp;rft.aulast=Steinbrecher%2C+G.%2C+Shaw%2C+W.T.&amp;rft.au=Steinbrecher%2C+G.%2C+Shaw%2C+W.T.&amp;rft.date=2008&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1017%2FS0956792508007341&amp;rft.issue=2&amp;rft.jtitle=European+Journal+of+Applied+Mathematics&amp;rft.pages=87-112&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=19" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation journal">Wichura, M.J. (1988). "Algorithm AS241: The Percentage Points of the Normal Distribution". <i>Applied Statistics</i> (Blackwell Publishing) <b>37</b> (3): 477–484. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.2307%2F2347330">10.2307/2347330</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2347330">2347330</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile+function&amp;rft.atitle=Algorithm+AS241%3A+The+Percentage+Points+of+the+Normal+Distribution&amp;rft.aulast=Wichura%2C+M.J.&amp;rft.au=Wichura%2C+M.J.&amp;rft.date=1988&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2347330&amp;rft.issue=3&amp;rft.jstor=2347330&amp;rft.jtitle=Applied+Statistics&amp;rft.pages=477-484&amp;rft.pub=Blackwell+Publishing&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=37" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation journal">Shaw, W.T. (2006). "Sampling Student’s T distribution – Use of the inverse cumulative distribution function.". <i>Journal of Computational Finance</i> <b>9</b> (4): 37–73.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile+function&amp;rft.atitle=Sampling+Student%E2%80%99s+T+distribution+%E2%80%93+Use+of+the+inverse+cumulative+distribution+function.&amp;rft.aulast=Shaw%2C+W.T.&amp;rft.au=Shaw%2C+W.T.&amp;rft.date=2006&amp;rft.genre=article&amp;rft.issue=4&amp;rft.jtitle=Journal+of+Computational+Finance&amp;rft.pages=37-73&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=9" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation journal">Karvanen, J. (2006). "Estimation of quantile mixtures via L-moments and trimmed L-moments.". <i>Computational Statistics &amp; Data Analysis</i> <b>51</b> (2): 947–956. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2Fj.csda.2005.09.014">10.1016/j.csda.2005.09.014</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantile+function&amp;rft.atitle=Estimation+of+quantile+mixtures+via+L-moments+and+trimmed+L-moments.&amp;rft.au=Karvanen%2C+J.&amp;rft.aulast=Karvanen%2C+J.&amp;rft.date=2006&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2Fj.csda.2005.09.014&amp;rft.issue=2&amp;rft.jtitle=Computational+Statistics+%26+Data+Analysis&amp;rft.pages=947-956&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=51" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<ul>
+<li>Abernathy, Roger W. and Smith, Robert P. (1993) *<a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=168387">"Applying series expansion to the inverse beta distribution to find percentiles of the F-distribution"</a>, <i>ACM Trans. Math. Softw.</i>, 9 (4), 478–480 <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F168173.168387">10.1145/168173.168387</a></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantile_function&amp;action=edit&amp;section=15" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://home.online.no/~pjacklam/notes/invnorm/">An algorithm for computing the inverse normal cumulative distribution function</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mth.kcl.ac.uk/~shaww/web_page/papers/NormalQuantile1.pdf">Refinement of the Normal Quantile</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mth.kcl.ac.uk/~shaww/web_page/papers/Tdistribution06.pdf">New Methods for Managing "Student's" T Distribution</a></li>
+<li><a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=355600">ACM Algorithm 396: Student's t-Quantiles</a></li>
+<li><a rel="nofollow" class="external text" href="http://arxiv.org/abs/0901.0638">Computational Finance: Differential Equations for Monte Carlo Recycling</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Theory_of_probability_distributions" title="Template:Theory of probability distributions"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Theory_of_probability_distributions" title="Template talk:Theory of probability distributions"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Theory_of_probability_distributions&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%">Theory of <a href="/wiki/Probability_distribution" title="Probability distribution">probability distributions</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Probability_mass_function" title="Probability mass function">probability mass function</a> (pmf)</li>
+<li><a href="/wiki/Probability_density_function" title="Probability density function">probability density function</a> (pdf)</li>
+<li><a href="/wiki/Cumulative_distribution_function" title="Cumulative distribution function">cumulative distribution function</a> (cdf)</li>
+<li><strong class="selflink">quantile function</strong></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="5" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Loglogisticpdf_no-labels.svg" class="image"><img alt="Loglogisticpdf no-labels.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Loglogisticpdf_no-labels.svg/90px-Loglogisticpdf_no-labels.svg.png" width="90" height="68" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Loglogisticpdf_no-labels.svg/135px-Loglogisticpdf_no-labels.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Loglogisticpdf_no-labels.svg/180px-Loglogisticpdf_no-labels.svg.png 2x" data-file-width="1300" data-file-height="975" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Raw_moment" title="Raw moment" class="mw-redirect">raw moment</a></li>
+<li><a href="/wiki/Central_moment" title="Central moment">central moment</a></li>
+<li><a href="/wiki/Expected_value" title="Expected value">mean</a></li>
+<li><a href="/wiki/Variance" title="Variance">variance</a></li>
+<li><a href="/wiki/Standard_deviation" title="Standard deviation">standard deviation</a></li>
+<li><a href="/wiki/Skewness" title="Skewness">skewness</a></li>
+<li><a href="/wiki/Kurtosis" title="Kurtosis">kurtosis</a></li>
+<li><a href="/wiki/L-moment" title="L-moment">L-moment</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Moment-generating_function" title="Moment-generating function">moment-generating function</a> (mgf)</li>
+<li><a href="/wiki/Characteristic_function_(probability_theory)" title="Characteristic function (probability theory)">characteristic function</a></li>
+<li><a href="/wiki/Probability-generating_function" title="Probability-generating function">probability-generating function</a> (pgf)</li>
+<li><a href="/wiki/Cumulant" title="Cumulant">cumulant</a></li>
+<li><a href="/wiki/Combinant" title="Combinant">combinant</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1013
+Cached time: 20150909024554
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.279 seconds
+Real time usage: 2.454 seconds
+Preprocessor visited node count: 681/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 15567/2097152 bytes
+Template argument size: 187/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+Lua time usage: 0.051/10.000 seconds
+Lua memory usage: 2.23 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1244.058      1 - -total
+  6.02%   74.855      1 - Template:Reflist
+  3.35%   41.685      2 - Template:Main
+  2.98%   37.059      2 - Template:Cite_book
+  1.45%   18.050      4 - Template:Cite_journal
+  1.38%   17.192      1 - Template:Theory_of_probability_distributions
+  1.15%   14.307      1 - Template:Navbox
+  0.91%   11.323      1 - Template:Doi
+  0.45%    5.648      2 - Template:Hide_in_print
+  0.22%    2.759      1 - Template:Only_in_print
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:10167616-0!*!0!!en!4!*!math=0 and timestamp 20150909024552 and revision id 679427736
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Quantile_function&amp;oldid=679427736">https://en.wikipedia.org/w/index.php?title=Quantile_function&amp;oldid=679427736</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Theory_of_probability_distributions" title="Category:Theory of probability distributions">Theory of probability distributions</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantile+function&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantile+function" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Quantile_function"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Quantile_function"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Quantile_function" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Quantile_function&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Quantile_function&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Quantile_function" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Quantile_function" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Quantile_function&amp;oldid=679427736" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Quantile_function&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q3489473" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Quantile_function&amp;id=679427736" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Quantile+function">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Quantile+function&amp;oldid=679427736&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Quantile_function&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/Inverzn%C3%AD_distribu%C4%8Dn%C3%AD_funkce" title="Inverzní distribuční funkce – Czech" lang="cs" hreflang="cs">Čeština</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Funci%C3%B3n_cuantil" title="Función cuantil – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Odwrotna_dystrybuanta" title="Odwrotna dystrybuanta – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Quantil" title="Quantil – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q3489473#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 4 September 2015, at 14:21.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Quantile_function&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":97,"wgHostname":"mw1048"});
+} );</script>
+	</body>
+</html>

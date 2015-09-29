@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Call option - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Call_option","wgTitle":"Call option","wgCurRevisionId":680045257,"wgRevisionId":680045257,"wgArticleId":204251,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from October 2011","All articles needing additional references","Options (finance)"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Call_option","wgRelevantArticleId":204251,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Long_call_option.svg/100px-Long_call_option.svg.png","wgULSAcceptLanguageList":["zh-cn","zh"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1508707","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Call_option" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Call_option&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Call_option&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Call_option" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Call_option skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Call option</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="hatnote">This article is about financial options.  For call options in general, see <a href="/wiki/Option_(law)" title="Option (law)" class="mw-redirect">Option (law)</a>.</div>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="262" data-file-height="204" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Call_option&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing/1" title="Help:Introduction to referencing/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(October 2011)</i></small></span></td>
+</tr>
+</table>
+<p>A <b>call option</b>, often simply labeled a "call", is a financial contract between two parties, the buyer and the seller of this type of <a href="/wiki/Option_(finance)" title="Option (finance)">option</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> The buyer of the call option has the <i>right, but not the obligation</i> to buy an agreed quantity of a particular <a href="/wiki/Commodity" title="Commodity">commodity</a> or <a href="/wiki/Financial_instrument" title="Financial instrument">financial instrument</a> (the <a href="/wiki/Underlying" title="Underlying">underlying</a>) from the seller of the option at a certain time (the expiration date) for a certain price (the <a href="/wiki/Strike_price" title="Strike price">strike price</a>). The seller (or "writer") is obligated to sell the commodity or financial instrument to the buyer if the buyer so decides. The buyer pays a fee (called a premium) for this right.</p>
+<p>When you buy a call option, you are buying the right to buy a stock at the strike price, regardless of the stock price in the future before the expiration date. Conversely, you can short or "write" the call option, giving the buyer the right to buy that stock from you anytime before the option expires. To compensate you for that risk taken, the buyer pays you a premium, also known as the price of the call. The seller of the call is said to have shorted the call option, and keeps the premium (the amount the buyer pays to buy the option) whether or not the buyer ever exercises the option.</p>
+<p>For example, if a stock trades at $50 right now and you buy its call option with a $50 strike price, you have the right to purchase that stock for $50 regardless of the current stock price as long as it has not expired. Even if the stock rises to $100, you still have the right to buy that stock for $50 as long as the call option has not expired. Since the payoff of purchased call options increases as the stock price rises, buying call options is considered <a href="/wiki/Bullish" title="Bullish" class="mw-redirect">bullish</a>. When the price of the underlying instrument surpasses the strike price, the option is said to be "<a href="/wiki/Moneyness#In_the_money" title="Moneyness">in the money</a>". On the other hand, If the stock falls to below $50, the buyer will never exercise the option, since he would have to pay $50 per share when he can buy the same stock for less. If this occurs, the option expires worthless and the option seller keeps the premium as profit. Since the payoff for sold (or written) call options increases as the stock price falls, selling call options is considered <a href="/wiki/Bearish" title="Bearish" class="mw-redirect">bearish</a>.</p>
+<p>All call options have the following three characteristics:</p>
+<ol>
+<li><b>Strike price:</b> this is the price at which you can buy the stock (if you have bought a call option) or the price at which you must sell your stock (if you have sold a call option).</li>
+<li><b>Expiry date:</b> this is the date on which the option expires, or becomes worthless, if the buyer doesn't exercise it.</li>
+<li><b>Premium:</b> this is the price you pay when you buy an option and the price you receive when you sell an option.</li>
+</ol>
+<p>The initial transaction in this context (buying/selling a call option) is <i>not</i> the supplying of a physical or financial asset (the <a href="/wiki/Underlying_instrument" title="Underlying instrument" class="mw-redirect">underlying instrument</a>). Rather it is the granting of the right to buy the underlying asset, in exchange for a fee&#160;— the option price or <i>premium</i>.</p>
+<p>Exact specifications may differ depending on <a href="/wiki/Option_style" title="Option style">option style</a>. A <a href="/wiki/European_option" title="European option" class="mw-redirect">European call option</a> allows the holder to exercise the option (i.e., to buy) only on the option expiration date. An <a href="/wiki/American_option" title="American option" class="mw-redirect">American call option</a> allows exercise at any time during the life of the option.</p>
+<p>Call options can be purchased on many financial instruments other than stock in a corporation. Options can be purchased on futures or <a href="/wiki/Interest_rate" title="Interest rate">interest rates</a>, for example (see <a href="/wiki/Interest_rate_cap" title="Interest rate cap" class="mw-redirect">interest rate cap</a>), and on commodities like <a href="/wiki/Gold" title="Gold">gold</a> or <a href="/wiki/Crude_oil" title="Crude oil" class="mw-redirect">crude oil</a>. A tradeable call option should not be confused with either <a href="/wiki/Incentive_stock_option" title="Incentive stock option">Incentive stock options</a> or with a <a href="/wiki/Warrant_(finance)" title="Warrant (finance)">warrant</a>. An incentive stock option, the option to buy <a href="/wiki/Stock" title="Stock">stock</a> in a particular company, is a right granted by a corporation to a particular person (typically executives) to purchase <a href="/wiki/Treasury_stock" title="Treasury stock">treasury stock</a>. When an incentive stock option is exercised, new shares are issued. Incentive options are not traded on the open market. In contrast, when a call option is exercised, the underlying asset is transferred from one owner to another.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Example_of_a_call_option_on_a_stock"><span class="tocnumber">1</span> <span class="toctext">Example of a call option on a stock</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Example_of_valuing_a_stock_option"><span class="tocnumber">2</span> <span class="toctext">Example of valuing a stock option</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Value_of_a_call"><span class="tocnumber">3</span> <span class="toctext">Value of a call</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Price_of_options"><span class="tocnumber">4</span> <span class="toctext">Price of options</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Call_Option_Profit_.2F_Loss_Chart"><span class="tocnumber">5</span> <span class="toctext">Call Option Profit / Loss Chart</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Example_of_Call_Option_P.2FL_chart"><span class="tocnumber">5.1</span> <span class="toctext">Example of Call Option P/L chart</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Options"><span class="tocnumber">6</span> <span class="toctext">Options</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Example_of_a_call_option_on_a_stock">Example of a call option on a stock</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Call_option&amp;action=edit&amp;section=1" title="Edit section: Example of a call option on a stock">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:Long_call_option.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Long_call_option.svg/200px-Long_call_option.svg.png" width="200" height="131" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Long_call_option.svg/300px-Long_call_option.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Long_call_option.svg/400px-Long_call_option.svg.png 2x" data-file-width="375" data-file-height="245" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Long_call_option.svg" class="internal" title="Enlarge"></a></div>
+Profits from buying a call.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:Short_call_option.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Short_call_option.svg/200px-Short_call_option.svg.png" width="200" height="131" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Short_call_option.svg/300px-Short_call_option.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Short_call_option.svg/400px-Short_call_option.svg.png 2x" data-file-width="375" data-file-height="245" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Short_call_option.svg" class="internal" title="Enlarge"></a></div>
+Profits from writing a call.</div>
+</div>
+</div>
+<p>An investor typically 'buys a call' when he expects the price of the underlying instrument will go above the call's 'strike price,' hopefully significantly so, before the call expires. The investor pays a non-refundable premium for the legal right to exercise the call at the strike price, meaning he can purchase the underlying instrument at the strike price. Typically, if the price of the underlying instrument has surpassed the strike price, the buyer pays the strike price to actually purchase the underlying instrument, and then sells the instrument and pockets the profit. Of course, the investor can also hold onto the underlying instrument, if he feels it will continue to climb even higher.</p>
+<p>An investor typically 'writes a call' when he expects the price of the underlying instrument to stay below the call's strike price. The writer (seller) receives the premium up front as his or her profit. However, if the call buyer decides to exercise his option to buy, then the writer has the obligation to sell the underlying instrument at the strike price. Often the writer of the call does not actually own the underlying instrument, and must purchase it on the open market in order to be able to sell it to the buyer of the call. The seller of the call will lose the difference between his purchase price of the underlying instrument and the strike price. This risk can be huge if the underlying instrument skyrockets unexpectedly in price.</p>
+<ul>
+<li>The current price of ABC Corp stock is $45 per share, and investor 'Greg R.' expects it will go up significantly. Greg buys a call contract for 100 shares of ABC Corp from 'Terence R.,' who is the call writer/seller. The strike price for the contract is $50 per share, and Greg pays a premium up front of $5 per share, or $500 total. If ABC Corp does not go up, and Greg does not exercise the contract, then Greg has lost $500.</li>
+</ul>
+<ul>
+<li>ABC Corp stock subsequently goes up to $60 per share before the contract expires. Greg exercises the call option by buying 100 shares of ABC from Terence for a total of $5,000. Greg then sells the stock on the market at market price for a total of $6,000. Greg has paid a $500 contract premium plus a stock cost of $5,000, for a total of $5,500. He has earned back $6,000, yielding a net profit of $500.</li>
+</ul>
+<ul>
+<li>If, however, the ABC stock price drops to $40 per share by the time the contract expires, Greg will not exercise the option (i.e., Greg will not buy a stock at $50 per share from Terence when he can buy it on the open market at $40 per share). Greg loses his premium, a total of $500. Terence, however, keeps the premium with no other out-of-pocket expenses, making a profit of $500.</li>
+</ul>
+<ul>
+<li>The break-even stock price for Greg is $55 per share, i.e., the $50 per share for the call option price plus the $5 per share premium he paid for the option. If the stock reaches $55 per share when the option expires, Greg can recover his investment by exercising the option and buying 100 shares of ABC Corp stock from Terence at $50 per share, and then immediately selling those shares at the market price of $55. His total costs are then the $5 per share premium for the call option, plus $50 per share to buy the shares from Greg, for a total of $5,500. His total earnings are $55 per share sold, or $5,500 for 100 shares, yielding him a net $0. (Note that this does not take into account broker fees or other transaction costs.) Note, however, that the $5 per share premium is a sunk cost that he has already paid regardless of whether he chooses to exercise the call. Thus, while he breaks even at $55 per share, actually, he makes a $5 per share profit that covers the earlier expense of $5 per share. Thus it is in his interest to exercise the call if the price goes above $50, even if it does not reach $55, because the profit he makes will reduce his net loss.</li>
+</ul>
+<h2><span class="mw-headline" id="Example_of_valuing_a_stock_option">Example of valuing a stock option</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Call_option&amp;action=edit&amp;section=2" title="Edit section: Example of valuing a stock option">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A company issues an option for the right to buy their stock. An investor buys this option and hopes the stock goes higher so their option will increase in value.</p>
+<dl>
+<dd>Theoretical option price = (current price + theoretical time/volatility premium) – strike price</dd>
+</dl>
+<p>Let's look at an actual example, PNC options for January 2012: <a rel="nofollow" class="external free" href="http://finance.yahoo.com/q/op?s=PNC&amp;m=2012-01">http://finance.yahoo.com/q/op?s=PNC&amp;m=2012-01</a>.</p>
+<ul>
+<li><a href="/wiki/Strike_price" title="Strike price">Strike price</a> – the price the investor can buy the stock at through the option.</li>
+<li>Symbol – like a stock symbol but for options it incorporates the date.</li>
+<li>Last – like the last stock price, it is the last price traded between two parties.</li>
+<li>Change – how much it went up and down today.</li>
+<li>Bid – what a person is bidding for the option.</li>
+<li>Ask – what someone wants to sell the option for.</li>
+<li>Vol – how many options traded today.</li>
+<li>Open Int – how many options are available, i.e. the option float</li>
+</ul>
+<p>Notes:</p>
+<ol>
+<li>The bid/ask price is more relevant in ascertaining the value of the option than the last price since options are not frequently traded. Meaning the value is usually the Ask/Bid Price.</li>
+<li>An option usually covers 100 shares. So the bid/ask price is multiplied by 100 to get the total cost.</li>
+</ol>
+<p>Let's say we bought 3 PNC strike $45, January 2012 call options in August for $11.75. That means we paid $3,525 (11.75 * 3 options for 100 shares each) for the right to buy 300 (3*100) PNC shares for $45 per share between now and January 2012.</p>
+<p>The stock at that time traded at $50.65 meaning the theoretical call premium was $6.1 as shown by our formula: (current price + theoretical time/volatility premium) – strike price, (50.65 + 6.1 – 45 = 11.75).</p>
+<p>Today the stock is trading at $64 making the call option worth $19.45 with a theoretical call premium now of 45 cents above its in-the-money intrinsic value $19 (the $64 market price minus the call option $45 strike price). The call premium tends to go down as the option gets closer to the call date. And it goes down as the option price rises relative to the stock price, i.e. the 19.45 the option is now worth 30% (19.45/ $64) of the price per PNC shares. In August it was 23% (11.75/$50.65). The lower percentage of the option's price is based on the stock's price, the more upside the investor has, therefore the investor will pay a premium for it.</p>
+<p>This option could be used to buy 300 PNC shares today at $45, it can be sold on the option market for $19.45 or for $5,835 (19.45 * 3 options for 100 shares each). Or it can be held as the investor bets that the price will continue to increase. The investor must make a decision by January 2012: he will either have to sell the option or buy the 300 shares. If the stock price drops below the strike price on this date the investor will not exercise his right since it will be worthless.</p>
+<h2><span class="mw-headline" id="Value_of_a_call">Value of a call</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Call_option&amp;action=edit&amp;section=3" title="Edit section: Value of a call">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This example leads to the following formal reasoning. Fix <img class="mwe-math-fallback-image-inline tex" alt="\mathcal{O}" src="//upload.wikimedia.org/math/a/e/b/aeb29ed2e1ec2353da1748944aef3c2f.png" /> an underlying financial instrument. Let <img class="mwe-math-fallback-image-inline tex" alt="\Pi" src="//upload.wikimedia.org/math/2/2/1/221c7fb8e8f49035f169fb9e3b18715f.png" /> be a call option for this instrument, purchased at time <img class="mwe-math-fallback-image-inline tex" alt="0" src="//upload.wikimedia.org/math/c/f/c/cfcd208495d565ef66e7dff9f98764da.png" />, expiring at time <img class="mwe-math-fallback-image-inline tex" alt="T\in\mathbb{R}^{+}" src="//upload.wikimedia.org/math/e/5/2/e5270e94675ee2e3232085a6f4f205c4.png" />, with exercise (strike) price <img class="mwe-math-fallback-image-inline tex" alt="K\in\mathbb{R}" src="//upload.wikimedia.org/math/6/a/6/6a627dbe37d7ae8edfe15f60b4e88190.png" />; and let <img class="mwe-math-fallback-image-inline tex" alt="S:[0,T]\to\mathbb{R}" src="//upload.wikimedia.org/math/8/2/9/829d1dc28b3a4f8826cea2c3668c6639.png" /> be the price of the underlying instrument.</p>
+<p>Assume the owner of the option <img class="mwe-math-fallback-image-inline tex" alt="\Pi" src="//upload.wikimedia.org/math/2/2/1/221c7fb8e8f49035f169fb9e3b18715f.png" />, wants to make no loss, and does not want to actually possess the underlying instrument, <img class="mwe-math-fallback-image-inline tex" alt="\mathcal{O}" src="//upload.wikimedia.org/math/a/e/b/aeb29ed2e1ec2353da1748944aef3c2f.png" />. Then either (i) the person will exercise the option and purchase <img class="mwe-math-fallback-image-inline tex" alt="\mathcal{O}" src="//upload.wikimedia.org/math/a/e/b/aeb29ed2e1ec2353da1748944aef3c2f.png" />, and then immediately sell it; or (ii) the person will not exercise the option (which subsequently becomes worthless). In (i), the pay-off would be <img class="mwe-math-fallback-image-inline tex" alt="-K+S_{T}" src="//upload.wikimedia.org/math/e/2/d/e2dcbc9fe3e44d6445899ec6489aaa61.png" />; in (ii) the pay-off would be <img class="mwe-math-fallback-image-inline tex" alt="0" src="//upload.wikimedia.org/math/c/f/c/cfcd208495d565ef66e7dff9f98764da.png" />. So if <img class="mwe-math-fallback-image-inline tex" alt="S_{T}-K\geq 0" src="//upload.wikimedia.org/math/d/0/d/d0d49ccaef06ffaac41f306e40ab464a.png" /> (i) or (ii) occurs; if <img class="mwe-math-fallback-image-inline tex" alt="S_{T}-K&lt;0" src="//upload.wikimedia.org/math/0/4/c/04cf7c3c1d26b4e2ff064496e579aae1.png" /> then (ii) occurs.</p>
+<p>Hence the pay-off, <i>i.e.</i> the value of the call option at expiry, is</p>
+<dl>
+<dd>
+<table style="border-collapse:collapse; background:none; margin:0; border:none;">
+<tr>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0;"><img class="mwe-math-fallback-image-inline tex" alt="\operatorname{max}\{S_{T} - K,0\}" src="//upload.wikimedia.org/math/2/c/5/2c5b1eb2e148d7a53beb24fd5346325d.png" /></p>
+</td>
+<td style="vertical-align:middle; width:99%; border:none; padding:0.08em;">
+<p style="margin:0;"></p>
+<table style="border-collapse:collapse; background:none; margin:0; border:none; width:99%;">
+<tr>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+<td style="width:100%; border:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+<td style="border:none; padding:0.08em;" rowspan="2">
+<p style="margin:0; font-size:4pt;">&#160;</p>
+</td>
+</tr>
+<tr>
+<td style="border-left:none; border-top:0px none #e5e5e5; border-right:none; border-bottom:none; padding:0.08em;">
+<p style="margin:0; font-size:1pt;">&#160;</p>
+</td>
+</tr>
+</table>
+</td>
+<td style="vertical-align:middle; border:none; padding:0.08em;" class="nowrap">
+<p style="margin:0pt;"></p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+<p>which is also written <img class="mwe-math-fallback-image-inline tex" alt="(S_{T}-K)\vee 0" src="//upload.wikimedia.org/math/9/e/7/9e7ccb7e4ca739f78d3f19b5031a4233.png" /> or <img class="mwe-math-fallback-image-inline tex" alt="(S_{T}-K)^{+}" src="//upload.wikimedia.org/math/3/d/b/3dbf8318132b1854170f91212abc515a.png" />.</p>
+<h2><span class="mw-headline" id="Price_of_options">Price of options</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Call_option&amp;action=edit&amp;section=4" title="Edit section: Price of options">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Option values vary with the value of the underlying instrument over time. The price of the call contract must reflect the "likelihood" or chance of the call finishing <a href="/wiki/In-the-money" title="In-the-money" class="mw-redirect">in-the-money</a>. The call contract price generally will be higher when the contract has more time to expire (except in cases when a significant <a href="/wiki/Dividend" title="Dividend">dividend</a> is present) and when the underlying financial instrument shows more <a href="/wiki/Volatility_(finance)" title="Volatility (finance)">volatility</a>. Determining this value is one of the central functions of <a href="/wiki/Financial_mathematics" title="Financial mathematics" class="mw-redirect">financial mathematics</a>. The most common method used is the <a href="/wiki/Black%E2%80%93Scholes" title="Black–Scholes" class="mw-redirect">Black–Scholes</a> formula. Importantly, the Black-Scholes formula provides an estimate of the price of European-style options.<sup id="cite_ref-Nuno_Fernandes_2-0" class="reference"><a href="#cite_note-Nuno_Fernandes-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>Whatever the formula used, the buyer and seller must agree on the initial value (the premium or price of the call contract), otherwise the exchange (buy/sell) of the call will not take place.</p>
+<p>Adjustment to Call Option: When a call option is <a href="/wiki/In-the-money" title="In-the-money" class="mw-redirect">in-the-money</a> i.e. when the buyer is making profit, he has many options. Some of them are as follows:</p>
+<ol>
+<li>He can sell the call and book his profit</li>
+<li>If he still feels that there is scope of making more money he can continue to hold the position.</li>
+<li>If he is interested in holding the position but at the same time would like to have some protection,he can buy a protective "put" of the strike that suits him.</li>
+<li>He can sell a call of higher strike price and convert the position into "call spread" and thus limiting his loss if the market reverses.</li>
+</ol>
+<p>Similarly if the buyer is making loss on his position i.e. the call is <a href="/wiki/Out-of-the-money" title="Out-of-the-money" class="mw-redirect">out-of-the-money</a>, he can make several adjustments to limit his loss or even make some profit.</p>
+<h2><span class="mw-headline" id="Call_Option_Profit_.2F_Loss_Chart">Call Option Profit / Loss Chart</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Call_option&amp;action=edit&amp;section=5" title="Edit section: Call Option Profit / Loss Chart">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Trading options involves a constant monitoring of the option value, which is affected by the following factors:</p>
+<ul>
+<li>Changes in the <b>base asset price</b> (the higher the price, the more expensive the call option is)</li>
+</ul>
+<ul>
+<li>Changes in the <b>volatility</b> of the base asset (the higher the volatility, the more expensive the call option is)</li>
+</ul>
+<ul>
+<li><b>Time decay</b> – as time goes by, options become cheaper and cheaper.</li>
+</ul>
+<p>Moreover, the dependence of the option value to price, volatility and time is <b>not linear</b> – which makes the analysis even more complex.</p>
+<p>One very useful way to analyze and track the value of an option position is by drawing a <b>Profit / Loss chart</b> that shows how the option value changes with changes in the base asset price and other factors.</p>
+<h3><span class="mw-headline" id="Example_of_Call_Option_P.2FL_chart">Example of Call Option P/L chart</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Call_option&amp;action=edit&amp;section=6" title="Edit section: Example of Call Option P/L chart">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For example, this Profit / Loss chart shows the profit / loss of a call option position (with $100 strike and maturity of 30 days) purchased at a price of $3,5 (blue graph – the day of the purchase of the option; orange graph – at expiry):</p>
+<p><a href="/wiki/File:Long_Call.PNG" class="image" title="Profit / Loss graph of a purchased call option position."><img alt="Profit / Loss graph of a purchased call option position." src="//upload.wikimedia.org/wikipedia/commons/2/26/Long_Call.PNG" width="1044" height="830" data-file-width="1044" data-file-height="830" /></a></p>
+<h2><span class="mw-headline" id="Options">Options</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Call_option&amp;action=edit&amp;section=7" title="Edit section: Options">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Put_option" title="Put option">Put option</a></li>
+<li><a href="/wiki/Binary_option" title="Binary option">Binary option</a></li>
+<li><a href="/wiki/Bond_option" title="Bond option">Bond option</a></li>
+<li><a href="/wiki/Credit_default_option" title="Credit default option">Credit default option</a></li>
+<li><a href="/wiki/Exotic_option" title="Exotic option">Exotic option</a></li>
+<li><a href="/wiki/Foreign_exchange_option" title="Foreign exchange option">Foreign exchange option</a></li>
+<li><a href="/wiki/Interest_rate_cap_and_floor" title="Interest rate cap and floor">Interest rate cap and floor</a></li>
+<li><a href="/wiki/Options_on_futures" title="Options on futures" class="mw-redirect">Options on futures</a></li>
+<li><a href="/wiki/Stock_option" title="Stock option" class="mw-redirect">Stock option</a></li>
+<li><a href="/wiki/Swaption" title="Swaption">Swaption</a></li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Call_option&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;">
+<tr>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="/wiki/Covered_call" title="Covered call">Covered call</a></li>
+<li><a href="/wiki/Moneyness" title="Moneyness">Moneyness</a></li>
+<li><a href="/wiki/Naked_call" title="Naked call">Naked call</a></li>
+<li><a href="/wiki/Naked_put" title="Naked put">Naked put</a></li>
+<li><a href="/wiki/Option_time_value" title="Option time value">Option time value</a></li>
+<li><a href="/wiki/Pre-emption_right" title="Pre-emption right">Pre-emption right</a></li>
+<li><a href="/wiki/Put_option" title="Put option">Put option</a></li>
+<li><a href="/wiki/Put%E2%80%93call_parity" title="Put–call parity">Put–call parity</a></li>
+<li><a href="/wiki/Right_of_first_refusal" title="Right of first refusal">Right of first refusal</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Call_option&amp;action=edit&amp;section=9" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="/wiki/Arthur_O%27_Sullivan" title="Arthur O' Sullivan" class="mw-redirect">Sullivan, arthur</a>; Steven M. Sheffrin (2003). <a rel="nofollow" class="external text" href="http://www.pearsonschool.com/index.cfm?locator=PSZ3R9&amp;PMDbSiteId=2781&amp;PMDbSolutionId=6724&amp;PMDbCategoryId=&amp;PMDbProgramId=12881&amp;level=4"><i>Economics: Principles in action</i></a>. Upper Saddle River, New Jersey 07458: Pearson Prentice Hall. p.&#160;288. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-13-063085-3" title="Special:BookSources/0-13-063085-3">0-13-063085-3</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACall+option&amp;rft.aufirst=arthur&amp;rft.aulast=Sullivan&amp;rft.au=Steven+M.+Sheffrin&amp;rft.au=Sullivan%2C+arthur&amp;rft.btitle=Economics%3A+Principles+in+action&amp;rft.date=2003&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.pearsonschool.com%2Findex.cfm%3Flocator%3DPSZ3R9%26PMDbSiteId%3D2781%26PMDbSolutionId%3D6724%26PMDbCategoryId%3D%26PMDbProgramId%3D12881%26level%3D4&amp;rft.isbn=0-13-063085-3&amp;rft.pages=288&amp;rft.place=Upper+Saddle+River%2C+New+Jersey+07458&amp;rft.pub=Pearson+Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Nuno_Fernandes-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Nuno_Fernandes_2-0">^</a></b></span> <span class="reference-text">Nuno Fernandes, "Finance for Executives: A Practical Guide for Managers", 2014, p. 313.</span></li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2"><span style="float:left;width:6em">&#160;</span>
+<div style="font-size:114%"><a href="/wiki/Derivatives_market" title="Derivatives market">Derivatives market</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div><a href="/wiki/Derivative_(finance)" title="Derivative (finance)">Derivative (finance)</a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Option_(finance)" title="Option (finance)">Options</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;">Terms</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Credit_spread_(options)" title="Credit spread (options)">Credit spread</a></li>
+<li><a href="/wiki/Debit_spread" title="Debit spread">Debit spread</a></li>
+<li><a href="/wiki/Exercise_(options)" title="Exercise (options)">Exercise</a></li>
+<li><a href="/wiki/Expiration_(options)" title="Expiration (options)">Expiration</a></li>
+<li><a href="/wiki/Moneyness" title="Moneyness">Moneyness</a></li>
+<li><a href="/wiki/Open_interest" title="Open interest">Open interest</a></li>
+<li><a href="/wiki/Pin_risk_(options)" title="Pin risk (options)">Pin risk</a></li>
+<li><a href="/wiki/Risk-free_interest_rate" title="Risk-free interest rate">Risk-free interest rate</a></li>
+<li><a href="/wiki/Strike_price" title="Strike price">Strike price</a></li>
+<li><a href="/wiki/Greeks_(finance)" title="Greeks (finance)">the Greeks</a></li>
+<li><a href="/wiki/Volatility_(finance)" title="Volatility (finance)">Volatility</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Vanilla_option" title="Vanilla option" class="mw-redirect">Vanilla options</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Bond_option" title="Bond option">Bond option</a></li>
+<li><strong class="selflink">Call</strong></li>
+<li><a href="/wiki/Employee_stock_option" title="Employee stock option">Employee stock option</a></li>
+<li><a href="/wiki/Fixed_income" title="Fixed income">Fixed income</a></li>
+<li><a href="/wiki/Foreign-exchange_option" title="Foreign-exchange option" class="mw-redirect">FX</a></li>
+<li><a href="/wiki/Option_style" title="Option style">Option styles</a></li>
+<li><a href="/wiki/Put_option" title="Put option">Put</a></li>
+<li><a href="/wiki/Warrant_(finance)" title="Warrant (finance)">Warrants</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Exotic_option" title="Exotic option">Exotic options</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Asian_option" title="Asian option">Asian</a></li>
+<li><a href="/wiki/Barrier_option" title="Barrier option">Barrier</a></li>
+<li><a href="/wiki/Basket_option" title="Basket option">Basket</a></li>
+<li><a href="/wiki/Binary_option" title="Binary option">Binary</a></li>
+<li><a href="/wiki/Chooser_option" title="Chooser option">Chooser</a></li>
+<li><a href="/wiki/Cliquet" title="Cliquet">Cliquet</a></li>
+<li><a href="/wiki/Commodore_option" title="Commodore option">Commodore</a></li>
+<li><a href="/wiki/Compound_option" title="Compound option">Compound</a></li>
+<li><a href="/wiki/Forward_start_option" title="Forward start option">Forward start</a></li>
+<li><a href="/wiki/Interest_rate_option" title="Interest rate option">Interest rate</a></li>
+<li><a href="/wiki/Lookback_option" title="Lookback option">Lookback</a></li>
+<li><a href="/wiki/Mountain_range_(options)" title="Mountain range (options)">Mountain range</a></li>
+<li><a href="/wiki/Rainbow_option" title="Rainbow option">Rainbow</a></li>
+<li><a href="/wiki/Swaption" title="Swaption">Swaption</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Options_strategies" title="Options strategies">Combinations</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Collar_(finance)" title="Collar (finance)">Collar</a></li>
+<li><a href="/wiki/Fence_(finance)" title="Fence (finance)">Fence</a></li>
+<li><a href="/wiki/Iron_butterfly_(options_strategy)" title="Iron butterfly (options strategy)">Iron butterfly</a></li>
+<li><a href="/wiki/Iron_condor" title="Iron condor">Iron condor</a></li>
+<li><a href="/wiki/Straddle" title="Straddle">Straddle</a></li>
+<li><a href="/wiki/Strangle_(options)" title="Strangle (options)">Strangle</a></li>
+<li><a href="/wiki/Covered_call" title="Covered call">Covered call</a></li>
+<li><a href="/wiki/Married_put" title="Married put">Married put</a></li>
+<li><a href="/wiki/Risk_reversal" title="Risk reversal">Risk reversal</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Options_spread" title="Options spread">Spreads</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Backspread" title="Backspread">Back</a></li>
+<li><a href="/wiki/Bear_spread" title="Bear spread">Bear</a></li>
+<li><a href="/wiki/Box_spread" title="Box spread">Box</a></li>
+<li><a href="/wiki/Bull_spread" title="Bull spread">Bull</a></li>
+<li><a href="/wiki/Butterfly_(options)" title="Butterfly (options)">Butterfly</a></li>
+<li><a href="/wiki/Calendar_spread" title="Calendar spread">Calendar</a></li>
+<li><a href="/wiki/Diagonal_spread" title="Diagonal spread">Diagonal</a></li>
+<li><a href="/wiki/Intermarket_Spread" title="Intermarket Spread">Intermarket</a></li>
+<li><a href="/wiki/Ratio_spread" title="Ratio spread">Ratio</a></li>
+<li><a href="/wiki/Vertical_spread" title="Vertical spread">Vertical</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Valuation_of_options" title="Valuation of options">Valuation</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Binomial_options_pricing_model" title="Binomial options pricing model">Binomial</a></li>
+<li><a href="/wiki/Black_model" title="Black model">Black</a></li>
+<li><a href="/wiki/Black%E2%80%93Scholes_model" title="Black–Scholes model">Black–Scholes model</a></li>
+<li><a href="/wiki/Finite_difference_methods_for_option_pricing" title="Finite difference methods for option pricing">Finite difference</a></li>
+<li><a href="/wiki/Foreign-exchange_option#Valuation:_the_Garman.E2.80.93Kohlhagen_model" title="Foreign-exchange option" class="mw-redirect">Garman-Kohlhagen</a></li>
+<li><a href="/wiki/Margrabe%27s_formula" title="Margrabe's formula">Margrabe's formula</a></li>
+<li><a href="/wiki/Put%E2%80%93call_parity" title="Put–call parity">Put–call parity</a></li>
+<li><a href="/wiki/Monte_Carlo_methods_for_option_pricing" title="Monte Carlo methods for option pricing">Simulation</a></li>
+<li><a href="/wiki/Real_options_valuation" title="Real options valuation">Real options valuation</a></li>
+<li><a href="/wiki/Trinomial_tree" title="Trinomial tree">Trinomial</a></li>
+<li><a href="/wiki/Vanna%E2%80%93Volga_pricing" title="Vanna–Volga pricing">Vanna–Volga pricing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Swap_(finance)" title="Swap (finance)">Swaps</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Amortising_swap" title="Amortising swap">Amortising</a></li>
+<li><a href="/wiki/Asset_swap" title="Asset swap">Asset</a></li>
+<li><a href="/wiki/Basis_swap" title="Basis swap">Basis</a></li>
+<li><a href="/wiki/Conditional_variance_swap" title="Conditional variance swap">Conditional variance</a></li>
+<li><a href="/wiki/Constant_maturity_swap" title="Constant maturity swap">Constant maturity</a></li>
+<li><a href="/wiki/Correlation_swap" title="Correlation swap">Correlation</a></li>
+<li><a href="/wiki/Credit_default_swap" title="Credit default swap">Credit default</a></li>
+<li><a href="/wiki/Currency_swap" title="Currency swap">Currency</a></li>
+<li><a href="/wiki/Dividend_swap" title="Dividend swap">Dividend</a></li>
+<li><a href="/wiki/Equity_swap" title="Equity swap">Equity</a></li>
+<li><a href="/wiki/Foreign_exchange_swap" title="Foreign exchange swap">Forex</a></li>
+<li><a href="/wiki/Inflation_swap" title="Inflation swap">Inflation</a></li>
+<li><a href="/wiki/Interest_rate_swap" title="Interest rate swap">Interest rate</a></li>
+<li><a href="/wiki/Overnight_indexed_swap" title="Overnight indexed swap">Overnight indexed</a></li>
+<li><a href="/wiki/Total_return_swap" title="Total return swap">Total return</a></li>
+<li><a href="/wiki/Variance_swap" title="Variance swap">Variance</a></li>
+<li><a href="/wiki/Volatility_swap" title="Volatility swap">Volatility</a></li>
+<li><a href="/wiki/Year-on-Year_Inflation-Indexed_Swap" title="Year-on-Year Inflation-Indexed Swap">Year-on-Year Inflation-Indexed</a></li>
+<li><a href="/wiki/Zero-Coupon_Inflation-Indexed_Swap" title="Zero-Coupon Inflation-Indexed Swap">Zero-Coupon Inflation-Indexed</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">
+<div class="hlist">
+<ul>
+<li><a href="/wiki/Forward_contract" title="Forward contract">Forwards</a></li>
+<li><a href="/wiki/Futures_contract" title="Futures contract">Futures</a></li>
+</ul>
+</div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Contango" title="Contango">Contango</a></li>
+<li><a href="/wiki/Currency_future" title="Currency future">Currency future</a></li>
+<li><a href="/wiki/Dividend_future" title="Dividend future">Dividend future</a></li>
+<li><a href="/wiki/Forward_market" title="Forward market">Forward market</a></li>
+<li><a href="/wiki/Forward_price" title="Forward price">Forward price</a></li>
+<li><a href="/wiki/Forward_contract#Spot.E2.80.93forward_parity" title="Forward contract">Forwards pricing</a></li>
+<li><a href="/wiki/Forward_rate" title="Forward rate">Forward rate</a></li>
+<li><a href="/wiki/Futures_contract#Pricing" title="Futures contract">Futures pricing</a></li>
+<li><a href="/wiki/Interest_rate_future" title="Interest rate future">Interest rate future</a></li>
+<li><a href="/wiki/Margin_(finance)" title="Margin (finance)">Margin</a></li>
+<li><a href="/wiki/Normal_backwardation" title="Normal backwardation">Normal backwardation</a></li>
+<li><a href="/wiki/Single-stock_futures" title="Single-stock futures">Single-stock futures</a></li>
+<li><a href="/wiki/Slippage_(finance)" title="Slippage (finance)">Slippage</a></li>
+<li><a href="/wiki/Stock_market_index_future" title="Stock market index future">Stock market index future</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Exotic_derivative" title="Exotic derivative">Exotic derivatives</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Energy_derivative" title="Energy derivative">Energy derivative</a></li>
+<li><a href="/wiki/Freight_derivative" title="Freight derivative" class="mw-redirect">Freight derivative</a></li>
+<li><a href="/wiki/Inflation_derivative" title="Inflation derivative">Inflation derivative</a></li>
+<li><a href="/wiki/Property_derivatives" title="Property derivatives" class="mw-redirect">Property derivative</a></li>
+<li><a href="/wiki/Weather_derivative" title="Weather derivative">Weather derivative</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Other derivatives</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Collateralized_debt_obligation" title="Collateralized debt obligation">Collateralized debt obligation (CDO)</a></li>
+<li><a href="/wiki/Constant_proportion_portfolio_insurance" title="Constant proportion portfolio insurance">Constant proportion portfolio insurance</a></li>
+<li><a href="/wiki/Contract_for_difference" title="Contract for difference">Contract for difference</a></li>
+<li><a href="/wiki/Credit-linked_note" title="Credit-linked note">Credit-linked note (CLN)</a></li>
+<li><a href="/wiki/Credit_default_option" title="Credit default option">Credit default option</a></li>
+<li><a href="/wiki/Credit_derivative" title="Credit derivative">Credit derivative</a></li>
+<li><a href="/wiki/Equity-linked_note" title="Equity-linked note">Equity-linked note (ELN)</a></li>
+<li><a href="/wiki/Equity_derivative" title="Equity derivative">Equity derivative</a></li>
+<li><a href="/wiki/Foreign_exchange_derivative" title="Foreign exchange derivative">Foreign exchange derivative</a></li>
+<li><a href="/wiki/Fund_derivative" title="Fund derivative">Fund derivative</a></li>
+<li><a href="/wiki/Interest_rate_derivative" title="Interest rate derivative">Interest rate derivative</a></li>
+<li><a href="/wiki/Mortgage-backed_security" title="Mortgage-backed security">Mortgage-backed security</a></li>
+<li><a href="/wiki/Power_reverse_dual-currency_note" title="Power reverse dual-currency note">Power reverse dual-currency note (PRDC)</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Market issues</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Consumer_debt" title="Consumer debt">Consumer debt</a></li>
+<li><a href="/wiki/Corporate_bond" title="Corporate bond">Corporate debt</a></li>
+<li><a href="/wiki/Government_debt" title="Government debt">Government debt</a></li>
+<li><a href="/wiki/Great_Recession" title="Great Recession">Great Recession</a></li>
+<li><a href="/wiki/Municipal_debt" title="Municipal debt" class="mw-redirect">Municipal debt</a></li>
+<li><a href="/wiki/Tax_policy" title="Tax policy">Tax policy</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1205
+Cached time: 20150908104437
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.214 seconds
+Real time usage: 1.078 seconds
+Preprocessor visited node count: 1079/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 46196/2097152 bytes
+Template argument size: 2438/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 1/500
+Lua time usage: 0.052/10.000 seconds
+Lua memory usage: 1.87 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  984.613      1 - -total
+  8.96%   88.216      1 - Template:NumBlk
+  4.42%   43.512      2 - Template:Navbox
+  3.90%   38.351      1 - Template:Refimprove
+  3.85%   37.914      1 - Template:Derivatives_market
+  3.33%   32.836      1 - Template:Ambox
+  3.19%   31.444      1 - Template:Reflist
+  2.70%   26.583      1 - Template:About
+  2.53%   24.898      1 - Template:Cite_book
+  2.11%   20.750      1 - Template:Hatnote
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:204251-0!*!0!!en!4!*!math=0 and timestamp 20150908104437 and revision id 680045257
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Call_option&amp;oldid=680045257">https://en.wikipedia.org/w/index.php?title=Call_option&amp;oldid=680045257</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Options_(finance)" title="Category:Options (finance)">Options (finance)</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_October_2011" title="Category:Articles needing additional references from October 2011">Articles needing additional references from October 2011</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Call+option&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Call+option" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Call_option"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Call_option"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Call_option" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Call_option&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Call_option&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Call_option" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Call_option" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Call_option&amp;oldid=680045257" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Call_option&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q1508707" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Call_option&amp;id=680045257" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Call+option">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Call+option&amp;oldid=680045257&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Call_option&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Kaufoption" title="Kaufoption – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Opci%C3%B3n_de_compra" title="Opción de compra – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AF_%D8%A7%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1_%D9%85%D8%B9%D8%A7%D9%85%D9%84%D9%87" title="قرارداد اختیار معامله – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Call" title="Call – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-hr"><a href="//hr.wikipedia.org/wiki/Call_opcija" title="Call opcija – Croatian" lang="hr" hreflang="hr">Hrvatski</a></li><li class="interlanguage-link interwiki-is"><a href="//is.wikipedia.org/wiki/Kaupr%C3%A9ttarsamningur" title="Kaupréttarsamningur – Icelandic" lang="is" hreflang="is">Íslenska</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Opzione_call" title="Opzione call – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Optie#Call-opties" title="Optie – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-no"><a href="//no.wikipedia.org/wiki/Kj%C3%B8psopsjon" title="Kjøpsopsjon – Norwegian" lang="no" hreflang="no">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Opcja_kupna" title="Opcja kupna – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D0%BB-%D0%BE%D0%BF%D1%86%D0%B8%D0%BE%D0%BD" title="Колл-опцион – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sr"><a href="//sr.wikipedia.org/wiki/%D0%9A%D1%83%D0%BF%D0%BE%D0%B2%D0%BD%D0%B0_%D0%BE%D0%BF%D1%86%D0%B8%D1%98%D0%B0" title="Куповна опција – Serbian" lang="sr" hreflang="sr">Српски / srpski</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/K%C3%B6poption" title="Köpoption – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB-%D0%BE%D0%BF%D1%86%D1%96%D0%BE%D0%BD" title="Кол-опціон – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q1508707#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 8 September 2015, at 10:44.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Call_option&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":106,"wgHostname":"mw1074"});
+} );</script>
+	</body>
+</html>

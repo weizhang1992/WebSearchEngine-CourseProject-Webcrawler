@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="utf-8" />
+	<title>
+		V-Lab: 
+		Real-time Financial Volatility, Correlation, And Risk Measurement, Modeling, And Forecasting	</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<link rel="apple-touch-icon" href="/apple-touch-icon-60x60-precomposed.png" /><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76-precomposed.png" /><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png" /><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" /><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" />
+
+        <link rel="stylesheet" type="text/css" href="http://vlab.stern.nyu.edu/css/common/d31e87d29524ee94a0944529fa9c861f98f93367c1d720806b751aed36038208cd6ffab599c4e404da0394a1c03f6db05c02ec4d63642e94bfb42ca55ae914b7" />
+        <link rel="stylesheet" type="text/css" href="http://vlab.stern.nyu.edu/css/welcome/welcome/009b79c80a6180be5e5bf5c235e4d9baa9f8908ba755ed05bd955b41ac8e3ecec825119d2cbce7e85638fd2464004a7a31f6a4707775a22bacc42b42a3794436" />
+
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssfonts/cssfonts-min.css">
+        <!--[if lt IE 8]>
+            <link rel="stylesheet" type="text/css" href="http://vlab.stern.nyu.edu/public/styles/ie6-2.4.9.min.css" />
+        <![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="http://vlab.stern.nyu.edu/public/scripts/aight.min.js"></script>
+<![endif]-->
+<script type="text/javascript">var vlGlobals = {}, VLAB_HOME="http://vlab.stern.nyu.edu",VLAB_HOME_BASE="http://vlab.stern.nyu.edu",p=true, ph_text="Type ticker or search (Wildcard=%)", lang="en",mar_specs=[["SPX:IND-R","GARCH","527f82b526529b20f23bc324bd1834c7","2","SPX:IND Volatility Graph"],["UKX:IND-R","GARCH","7da82aeb312f7315170cedbd5acaadf4","5","UKX:IND Volatility Graph"],["DAX:IND-R","GARCH","979557319e81dbd9c7a2b5ae83139ffd","7","DAX:IND Volatility Graph"],["CAC:IND-R","GARCH","c812b0346e993e0a6e244aea5c3dcef4","9","CAC:IND Volatility Graph"],["EUR:FOREX-R","GARCH","fec783cac2c7d98ca285c5ee635b6a04","150","EUR:FOREX Volatility Graph"],["JPY:FOREX-R","GARCH","bc841057b3497531bdcf271691a88d34","152","JPY:FOREX Volatility Graph"],["MXWD:IND-R","GARCH","907fbd25a485556272a9162e59bb4b78","35","MXWD:IND Volatility Graph"],["EEM:US-R","GARCH","5ce7a1a7db5978711fd2307e2e603fca","37","EEM:US Volatility Graph"]],hot_specs=[["093230:KS-R","GJR-GARCH","ba6c5011466aba02b10903894b84df33","20972","093230:KS Volatility Graph"],["TPEIR:GA-R","GJR-GARCH","2554249411047de1d584b813ff55002e","71371","TPEIR:GA Volatility Graph"],["092630:KS-R","GJR-GARCH","ba07ca7e937c10483c352ac19af4422b","20686","092630:KS Volatility Graph"],["102280:KS-R","GJR-GARCH","ace70f89d07c97904c98d047871d1108","21115","102280:KS Volatility Graph"]],heat_specs=[["002420:KS-R","GJR-GARCH","682372b51c0131c2f12e589835f79fad","14977","002420:KS Volatility Graph"],["GRT-U:CNN-R","GJR-GARCH","d387725f1bc87d4fc7a63f8ecb5d6181","26593","GRT-U:CN Volatility Graph"],["SGN:AU-R","GJR-GARCH","de0017f987a0cb2a0f4df316298afe16","23469","SGN:AU Volatility Graph"],["FRP:US-R","GJR-GARCH","19ded69e87a47394335005f3ea2fcf9a","6519","FRP:US Volatility Graph"]],cor={"m":"GARCH-DCC","d":"AC-MR","l":756,"q":{"Treasuries \/ S&P 500":["116:114","LUSAG:GOVT\/SPX:IND"],"Gold \/ S&P 500":["122:114","GOLD:COM\/SPX:IND"],"VIX \/ S&P 500":["124:114","VIX:VIND\/SPX:IND"],"US Dollar \/ S&P 500":["118:114","DXY:FOREX\/SPX:IND"]},"dn":"Asset Classes","c":"0ae71e5085ab8e88dcc1d7cf52ea2d8c"},risk={"m":"GMES","d":"WORLDFIN-MR","s":"2013-09-30","e":"2015-09-18","q":"srisk","dn":"World Financials - Total SRISK (US$ billion)","c":"dab85c728ff963fabc8f9be1ca7e7283"},lrvol={"l":504,"dn":"S&P 500 Index Long Run Value at Risk Graph","c":"03c26ecae6751e709d19e07b8a49b907","days":30,"pct":1,"q":[{"m":"LRGJROF","d":"LRSPX:IND-D"},{"m":"LRGJRF","d":"SPX:IND-R"}]},vil="http:\/\/vlab.stern.nyu.edu\/graphs\/volatility_simple?id=",cil="http:\/\/vlab.stern.nyu.edu\/graphs\/correlation_simple?id=2063&amp;last=755&amp;title=0&amp;coronly=1&amp;ccor=114:116,114:122,114:124,114:118&amp;start=&amp;end=&amp;width=990&amp;height=250&amp;cache=0ae71e5085ab8e88dcc1d7cf52ea2d8c",sil="http:\/\/vlab.stern.nyu.edu\/graphs\/risk_simple\/2116?width=657&amp;height=260&amp;volonly=1&amp;start=2013-09-30&amp;end=2015-09-18&amp;cache=dab85c728ff963fabc8f9be1ca7e7283",lril="http:\/\/vlab.stern.nyu.edu\/graphs\/lrvol_simple?id=2072&amp;last=504&amp;model=LRGJRF,LRGJROF&amp;horizon=lr_30_&amp;pct=1&amp;keypos=3&amp;volonly=1&amp;title=0&amp;vollinestyle=1&amp;height=256&amp;width=1000&amp;cache=03c26ecae6751e709d19e07b8a49b907";if (p === true) {var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-12455432-3']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();}
+</script>
+        <script type="text/javascript" src="http://vlab.stern.nyu.edu/public/scripts/d3.min.js" defer="defer"></script>
+        <script type="text/javascript" src="http://vlab.stern.nyu.edu/public/scripts/d3_en.min.js" defer="defer"></script>
+        <script type="text/javascript" src="http://vlab.stern.nyu.edu/jss/common/74fbad6ec17cfac749e784704dc531b1e33f92b815fdcaf03192e22f0867f36add427e0b3a8932b8b1554e36512d25245af4cc1fa93606c6b80eb0b6eff99b9a" defer="defer"></script>
+        <script type="text/javascript" src="http://vlab.stern.nyu.edu/jss/welcome/welcome/03833dcff45881fc7fc3b817c022c0462171dfc0403fc645ac1e70d1e5b143a0fe2433d41a7850778af72a03b82bd6c2d13b3fb10e42455aa3b0725f24d112b8" defer="defer"></script>
+
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header">
+
+<span id="nav_vlab" class><a href="http://vlab.stern.nyu.edu/"><span id="vlab">V-Lab</span><br/><span id="beta">BETA</span></a></span>
+
+<div id="menu">
+
+<ul id="menu_left">
+	<li><a id="vlab_home_link" href="http://vlab.stern.nyu.edu/"></a> &#124;</li>
+        <li><a id="twitter" href="https://twitter.com/NYUVlab" onclick="window.open(this.href,'_blank');return false;"></a> &#124;</li>
+	<li><a href="http://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/centers-of-research/volatility-institute" onclick="window.open(this.href,'_blank');return false;">Volatility Institute</a> &#124;</li>
+	<li><a href="http://www.stern.nyu.edu" onclick="window.open(this.href,'_blank');return false;">NYU Stern</a></li>
+</ul>
+
+<ul id="menu_right">
+	<li>Display: </li>
+	<li id='dropdown'><a href="#">Basic &#x25BC;</a> &#124;
+		<ul id='level_list' style="visibility:hidden;">
+			<li><a href="http://vlab.stern.nyu.edu/users/preferences?lev=1&amp;url=http://vlab.stern.nyu.edu%2F">Basic</a></li>
+			<li><a href="http://vlab.stern.nyu.edu/users/preferences?lev=2&amp;url=http://vlab.stern.nyu.edu%2F">Intermediate</a></li>
+			<li><a href="http://vlab.stern.nyu.edu/users/preferences?lev=3&amp;url=http://vlab.stern.nyu.edu%2F">Experimental</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="http://vlab.stern.nyu.edu/users/login" >Sign In</a> &#124; 
+	</li>
+        <li>
+ 	        <a href='#' id='lang_setting'></a><br />
+		<ul id='lang_list' style="visibility:hidden;">
+		  <li><a href='javascript:setLanguage("zh")'>中文</a></li>		</ul>
+        </li>
+</ul>
+
+</div>
+
+<div id="navigation">
+<div id="nav_docs">
+   <ul>
+      <li><a href="http://vlab.stern.nyu.edu/doc?topic=vlab" >Documentation</a> <span class="sep">&#187;</span></li>
+      <li><a href="http://vlab.stern.nyu.edu/info/search?showall">Analysis List</a> <span class="sep">&#187;</span> </li>
+   </ul>
+</div>
+<div id="nav_stern"><img height="60" width="218" src="http://vlab.stern.nyu.edu/public/images/sternlogo.png" id="sternlogo" alt="NYU Stern Volatility Institute Logo" /></div>
+<div id="nav_search">
+  <form id="f" onsubmit="return submitSearch()">
+    <fieldset>
+    <select id="search-apps" onchange="changeData();">
+      <option value="vol">Volatility Analysis</option>
+<option value="cor">Correlation Analysis</option>
+<option value="mes">Systemic Risk Analysis</option>
+<option value="lrvol">Long Run Value at Risk</option>
+<option value="liq">Liquidity Analysis</option>
+<option value="fia">Fixed Income Analysis</option>
+    </select>
+
+    <select id="search-models" onchange="changeMdlData();">
+      <option value="0">Loading...</option>
+    </select>
+
+    <input type="text" onclick="$('vlab-search').focus().focus().click();" title="Search for: Volatility Analysis, Correlations Analysis, Risk Analysis, Long Run Value at Risk (VaR)" id="vlab-search" name="vlab-search" />
+    <input type="hidden" id="vlab-search-ds" name="vlab-search-ds" />
+
+    <input type="submit" value="Go" />
+
+    <div id="search-examples"></div>
+    </fieldset>
+  </form>
+</div>
+
+</div>
+
+</div>
+
+<div id="contentpane">
+
+	<div id="overview">
+	<div id="overview_lbl"><h3 id="welcome_lbl"><a href="#" id="welcomelink">VOLATILITY OVERVIEW<span id="lnk_marker"> SEE MORE</span></a></h3></div>
+	<div id='ao_help' class='help_page ui-icon ui-icon-info'></div>
+	<div id="tabs" style="display:none">
+		<ul class="tablist">
+			<li><a id="vol_tab" href="#tabs-1">VOLATILITY</a></li>
+			<li><a id="cor_tab" href="#tabs-2">CORRELATION</a></li>
+			<li><a id="rsk_tab" href="#tabs-3">SYSTEMIC RISK</a></li>
+			<li><a id="ltr_tab" href="#tabs-4">LONG RUN VALUE AT RISK</a></li>
+			<li><a id="liq_tab" href="#tabs-5">LIQUIDITY</a></li>
+		</ul>
+
+		<div id="tabs-1">
+			<table id="volsummary">
+				<tr class="nohover">
+				<td>
+				<table id="hotheating_table">
+					<tr class="hothead">
+						<th class="hot">HOT</th>
+						<th>Volatility</th>
+						<th>Change</th>
+						<th></th>
+	          			</tr>
+
+		<tr id='a093230___KS____R_GJR____GARCH' class='hotsum selected'>
+			<td id= 'linkdhcs1' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.093230:KS-R.GJR-GARCH" >093230:KS</a></td>
+			<td class="value">199.39</td>
+			<td class="value"><span class="value vol-down">-7.08</span></td><td></td>
+		</tr>
+		<tr id='TPEIR___GA____R_GJR____GARCH' class='hotsum'>
+			<td id= 'linkdhcs2' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.TPEIR:GA-R.GJR-GARCH" >TPEIR:GA</a></td>
+			<td class="value">180.99</td>
+			<td class="value"><span class="value vol-down">-6.80</span></td><td></td>
+		</tr>
+		<tr id='a092630___KS____R_GJR____GARCH' class='hotsum'>
+			<td id= 'linkdhcs3' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.092630:KS-R.GJR-GARCH" >092630:KS</a></td>
+			<td class="value">179.46</td>
+			<td class="value"><span class="value vol-down">-5.84</span></td><td></td>
+		</tr>
+		<tr id='a102280___KS____R_GJR____GARCH' class='hotsum'>
+			<td id= 'linkdhcs4' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.102280:KS-R.GJR-GARCH" >102280:KS</a></td>
+			<td class="value">178.75</td>
+			<td class="value"><span class="value vol-down">-9.13</span></td><td></td>
+		</tr>						<tr class="heatinghead">
+							<th class="hot">HEATING</th>
+							<th>Volatility</th>
+							<th>Change</th>
+							<th></th>
+						</tr>
+
+		<tr id='a002420___KS____R_GJR____GARCH' class='heatingsum'>
+			<td id= 'linkdhcs5' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.002420:KS-R.GJR-GARCH" >002420:KS</a></td>
+			<td class="value">72.60</td>
+			<td class="value"><span class="value vol-up">+34.68</span></td><td></td>
+		</tr>
+		<tr id='GRT____U___CNN____R_GJR____GARCH' class='heatingsum'>
+			<td id= 'linkdhcs6' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.GRT-U:CNN-R.GJR-GARCH" >GRT-U:CN</a></td>
+			<td class="value">37.10</td>
+			<td class="value"><span class="value vol-up">+19.81</span></td><td></td>
+		</tr>
+		<tr id='SGN___AU____R_GJR____GARCH' class='heatingsum'>
+			<td id= 'linkdhcs7' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.SGN:AU-R.GJR-GARCH" >SGN:AU</a></td>
+			<td class="value">48.48</td>
+			<td class="value"><span class="value vol-up">+16.51</span></td><td></td>
+		</tr>
+		<tr id='FRP___US____R_GJR____GARCH' class='heatingsum'>
+			<td id= 'linkdhcs8' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.FRP:US-R.GJR-GARCH" >FRP:US</a></td>
+			<td class="value">48.50</td>
+			<td class="value"><span class="value vol-up">+16.13</span></td><td></td>
+		</tr>					</table>
+				</td>
+				<td id="hotsum_td">
+<div id="hotsum_div"></div>
+				</td>
+				<td>
+					<table id="marsum_table">
+						<tr class="hothead"><th id="mktsummaryhead" class="hot" colspan="3">MARKET SUMMARY</th><th></th></tr>
+						<tr class="heatinghead"><th>&nbsp;</th><th>Volatility</th><th>Change</th><th></th></tr>
+
+			 <tr id='SPX___IND____R_GARCH' class='marsum  selected'><td id= 'linkms1' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.SPX:IND-R.GARCH" >SPX</a></td><td class="value">22.84</td><td class="value vol-down">-0.41</td><td></td></tr>
+			 <tr id='UKX___IND____R_GARCH' class='marsum '><td id= 'linkms2' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.UKX:IND-R.GARCH" >UKX</a></td><td class="value">23.07</td><td class="value vol-down">-0.73</td><td></td></tr>
+			 <tr id='DAX___IND____R_GARCH' class='marsum '><td id= 'linkms3' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.DAX:IND-R.GARCH" >DAX</a></td><td class="value">24.78</td><td class="value vol-up">+0.88</td><td></td></tr>
+			 <tr id='CAC___IND____R_GARCH' class='marsum '><td id= 'linkms4' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.CAC:IND-R.GARCH" >CAC</a></td><td class="value">25.94</td><td class="value vol-down">-0.14</td><td></td></tr>
+			 <tr id='EUR___FOREX____R_GARCH' class='marsum '><td id= 'linkms5' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.EUR:FOREX-R.GARCH" >EUR</a></td><td class="value">12.43</td><td class="value vol-up">+0.66</td><td></td></tr>
+			 <tr id='JPY___FOREX____R_GARCH' class='marsum '><td id= 'linkms6' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.JPY:FOREX-R.GARCH" >JPY</a></td><td class="value">10.54</td><td class="value vol-down">-0.25</td><td></td></tr>
+			 <tr id='MXWD___IND____R_GARCH' class='marsum '><td id= 'linkms7' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.MXWD:IND-R.GARCH" >MXWD</a></td><td class="value">17.62</td><td class="value vol-down">-0.09</td><td></td></tr>
+			 <tr id='EEM___US____R_GARCH' class='marsum '><td id= 'linkms8' class="title"><a href="http://vlab.stern.nyu.edu/analysis/VOL.EEM:US-R.GARCH" >EEM</a></td><td class="value">28.93</td><td class="value vol-down">-0.92</td><td></td></tr>					</table>
+				</td>
+				<td id="marsum_td">
+
+<div id="marsum_div"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="tabs-2">
+		<div id="cor_div"></div>
+		<div id="cor_legend_div"></div>
+	</div>
+
+	<div id="tabs-3">
+		<table id="risk">
+			<tr class="hothead">
+				<th class="company">US Top 10 SRISK</th>
+				<th>SRISK</th>
+				<th>MES</th>
+				<th>LVG</th>
+			</tr>
+<tr><td class="company">JPMorgan Chase &amp; Co</td><td class="value">64,389</td><td class="value">3.43</td><td class="value">10.75</td></tr><tr><td class="company">Bank of America Corp</td><td class="value">57,508</td><td class="value">2.56</td><td class="value">12.68</td></tr><tr><td class="company">Citigroup Inc</td><td class="value">53,590</td><td class="value">3.42</td><td class="value">11.64</td></tr><tr><td class="company">Prudential Financial Inc</td><td class="value">42,710</td><td class="value">3.70</td><td class="value">22.38</td></tr><tr><td class="company">MetLife Inc</td><td class="value">40,592</td><td class="value">3.45</td><td class="value">16.94</td></tr><tr><td class="company">Morgan Stanley</td><td class="value">30,061</td><td class="value">3.79</td><td class="value">12.64</td></tr><tr><td class="company">Goldman Sachs Group Inc/The</td><td class="value">21,926</td><td class="value">3.41</td><td class="value">10.69</td></tr><tr><td class="company">Lincoln National Corp</td><td class="value">13,206</td><td class="value">3.81</td><td class="value">20.61</td></tr><tr><td class="company">Principal Financial Group Inc</td><td class="value">9,743</td><td class="value">3.25</td><td class="value">16.01</td></tr><tr><td class="company">Hartford Financial Services Group Inc/The</td><td class="value">7,435</td><td class="value">2.84</td><td class="value">12.95</td></tr>
+		</table>
+		<div id="risk_div"></div>
+	</div>
+
+	<div id="tabs-4">
+                <div id="lrvol_div"></div>
+                <div id="lrvol_legend_div"></div>
+	</div>
+
+	<div id="tabs-5">
+		<div id="welcomevol">
+			<table id="vol_table">
+				<tr class="nohover">
+					<th rowspan="2" id="vt_sector_hdr">Sector</th>
+					<th colspan="2" id="vt_avg_hdr">Average</th>
+					<th rowspan="2" id="vt_ud_hdr">% Down/Up Illiq</th>
+				</tr>
+				<tr class="nohover">
+					<th id="th_lvl">Level</th>
+					<th id="th_chg">Change</th>
+				</tr>
+<tr class="nohover"><td>Oil &amp; Gas</td><td class="vt_level">280.61</td><td class="value"><span class="liq-down">-0.81</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:29%"></td><td class="vt_down_gte2" style="width:26%" title="Illiquidity decreased 2% or more for 26% of Oil &amp; Gas companies"></td><td class="vt_down_lt2" style="width:10%" title="Illiquidity decreased between 0% and 2% for 10% of Oil &amp; Gas companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:21%" title="Illiquidity increased between 0% and 2% for 21% of Oil &amp; Gas companies"></td><td class="vt_up_gte2" style="width:43%" title="Illiquidity increased 2% or more for 43% of Oil &amp; Gas companies"></td><td class="vt_pad_right" style="width:12%"></td></tr></table></td></tr></table></td></tr><tr class="nohover"><td>Basic Materials</td><td class="vt_level">425.81</td><td class="value"><span class="liq-down">-14.07</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:22%"></td><td class="vt_down_gte2" style="width:31%" title="Illiquidity decreased 2% or more for 31% of Basic Materials companies"></td><td class="vt_down_lt2" style="width:12%" title="Illiquidity decreased between 0% and 2% for 12% of Basic Materials companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:15%" title="Illiquidity increased between 0% and 2% for 15% of Basic Materials companies"></td><td class="vt_up_gte2" style="width:43%" title="Illiquidity increased 2% or more for 43% of Basic Materials companies"></td><td class="vt_pad_right" style="width:18%"></td></tr></table></td></tr></table></td></tr><tr class="nohover"><td>Industrials</td><td class="vt_level">172.86</td><td class="value"><span class="liq-up">+2.47</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:35%"></td><td class="vt_down_gte2" style="width:13%" title="Illiquidity decreased 2% or more for 13% of Industrials companies"></td><td class="vt_down_lt2" style="width:17%" title="Illiquidity decreased between 0% and 2% for 17% of Industrials companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:23%" title="Illiquidity increased between 0% and 2% for 23% of Industrials companies"></td><td class="vt_up_gte2" style="width:47%" title="Illiquidity increased 2% or more for 47% of Industrials companies"></td><td class="vt_pad_right" style="width:6%"></td></tr></table></td></tr></table></td></tr><tr class="nohover"><td>Consumer Goods</td><td class="vt_level">202.91</td><td class="value"><span class="liq-up">+0.56</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:26%"></td><td class="vt_down_gte2" style="width:15%" title="Illiquidity decreased 2% or more for 15% of Consumer Goods companies"></td><td class="vt_down_lt2" style="width:24%" title="Illiquidity decreased between 0% and 2% for 24% of Consumer Goods companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:31%" title="Illiquidity increased between 0% and 2% for 31% of Consumer Goods companies"></td><td class="vt_up_gte2" style="width:30%" title="Illiquidity increased 2% or more for 30% of Consumer Goods companies"></td><td class="vt_pad_right" style="width:15%"></td></tr></table></td></tr></table></td></tr><tr class="nohover"><td>Health Care</td><td class="vt_level">87.26</td><td class="value"><span class="liq-down">-0.67</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:1%"></td><td class="vt_down_gte2" style="width:22%" title="Illiquidity decreased 2% or more for 22% of Health Care companies"></td><td class="vt_down_lt2" style="width:42%" title="Illiquidity decreased between 0% and 2% for 42% of Health Care companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:21%" title="Illiquidity increased between 0% and 2% for 21% of Health Care companies"></td><td class="vt_up_gte2" style="width:15%" title="Illiquidity increased 2% or more for 15% of Health Care companies"></td><td class="vt_pad_right" style="width:40%"></td></tr></table></td></tr></table></td></tr><tr class="nohover"><td>Consumer Services</td><td class="vt_level">114.50</td><td class="value"><span class="liq-down">-2.11</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:12%"></td><td class="vt_down_gte2" style="width:24%" title="Illiquidity decreased 2% or more for 24% of Consumer Services companies"></td><td class="vt_down_lt2" style="width:29%" title="Illiquidity decreased between 0% and 2% for 29% of Consumer Services companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:29%" title="Illiquidity increased between 0% and 2% for 29% of Consumer Services companies"></td><td class="vt_up_gte2" style="width:18%" title="Illiquidity increased 2% or more for 18% of Consumer Services companies"></td><td class="vt_pad_right" style="width:29%"></td></tr></table></td></tr></table></td></tr><tr class="nohover"><td>Telecommunications</td><td class="vt_level">1,206.18</td><td class="value"><span class="liq-up">+1.55</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:3%"></td><td class="vt_down_gte2" style="width:50%" title="Illiquidity decreased 2% or more for 50% of Telecommunications companies"></td><td class="vt_down_lt2" style="width:12%" title="Illiquidity decreased between 0% and 2% for 12% of Telecommunications companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:12%" title="Illiquidity increased between 0% and 2% for 12% of Telecommunications companies"></td><td class="vt_up_gte2" style="width:25%" title="Illiquidity increased 2% or more for 25% of Telecommunications companies"></td><td class="vt_pad_right" style="width:39%"></td></tr></table></td></tr></table></td></tr><tr class="nohover"><td>Utilities</td><td class="vt_level">231.24</td><td class="value"><span class="liq-down">-3.11</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:4%"></td><td class="vt_down_gte2" style="width:41%" title="Illiquidity decreased 2% or more for 41% of Utilities companies"></td><td class="vt_down_lt2" style="width:20%" title="Illiquidity decreased between 0% and 2% for 20% of Utilities companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:22%" title="Illiquidity increased between 0% and 2% for 22% of Utilities companies"></td><td class="vt_up_gte2" style="width:16%" title="Illiquidity increased 2% or more for 16% of Utilities companies"></td><td class="vt_pad_right" style="width:38%"></td></tr></table></td></tr></table></td></tr><tr class="nohover"><td>Financials</td><td class="vt_level">518.83</td><td class="value"><span class="liq-up">+9.92</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:42%"></td><td class="vt_down_gte2" style="width:19%" title="Illiquidity decreased 2% or more for 19% of Financials companies"></td><td class="vt_down_lt2" style="width:4%" title="Illiquidity decreased between 0% and 2% for 4% of Financials companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:21%" title="Illiquidity increased between 0% and 2% for 21% of Financials companies"></td><td class="vt_up_gte2" style="width:56%" title="Illiquidity increased 2% or more for 56% of Financials companies"></td></tr></table></td></tr></table></td></tr><tr class="nohover"><td>Technology</td><td class="vt_level">279.93</td><td class="value"><span class="liq-up">+1.75</span></td><td style="width:67%"><table style="width:100%"><tr class="nohover"><td style="width:46%"><table style="width:100%"><tr class="nohover"><td class="vt_pad_left" style="width:5%"></td><td class="vt_down_gte2" style="width:22%" title="Illiquidity decreased 2% or more for 22% of Technology companies"></td><td class="vt_down_lt2" style="width:38%" title="Illiquidity decreased between 0% and 2% for 38% of Technology companies"></td></tr></table></td><td style="width:54%"><table style="width:100%"><tr class="nohover"><td class="vt_up_lt2" style="width:19%" title="Illiquidity increased between 0% and 2% for 19% of Technology companies"></td><td class="vt_up_gte2" style="width:22%" title="Illiquidity increased 2% or more for 22% of Technology companies"></td><td class="vt_pad_right" style="width:35%"></td></tr></table></td></tr></table></td></tr>			</table>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="welcomefooter">
+<div id="welcome">
+	<p><span class="vlab">The Volatility Institute (V-Lab)</span>provides real time measurement, modeling and forecasting of financial volatility, correlations and risk for a wide spectrum of assets. V-Lab blends together both classic models as well as some of the latest advances proposed in the financial econometrics literature. The aim of the website is to provide real time evidence on market dynamics for researchers, regulators, and practitioners.</p>
+
+	<p>V-Lab is currently running 83,886 analyses on 16,975 datasets producing a total of 140,800 series each day!</p>
+	<p><a target="_blank" href="http://bfi.uchicago.edu/news/monitoring-risk-v-lab">Monitoring Risk with V-Lab:</a> Professor Rob Engle's video lecture on using V-Lab to monitor riskat the Becker Friedman Institute<br />
+	<a target="_blank" href="https://www.google.com/#q=engle+%22nyu+stern%22+site:video.ft.com">An Introduction to Financial Volatility:</a> Professor Rob Engle's video lectures on the Financial Times</p>
+
+	<p><b>V-Lab Related Documents</b></p>
+	<ul>
+<li><a onclick="window.open(this.href, '_blank'); return false;" href="http://video.foxbusiness.com/v/3849629094001/nobel-prize-winner-in-volatility-most-worried-about-euro-slowdown/#sp=news-clips">Prof. Rob Engle discusses recent market volatility with Fox News</a></li><li><a onclick="window.open(this.href, '_blank'); return false;" href="http://www.elpasotimes.com/business/ci_25825971/nobel-economist-says-us-banks-healthier-but-closer">Prof. Rob Engle is interviewed about the financial services industry</a></li><li><a onclick="window.open(this.href, '_blank'); return false;" href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2404020">Dynamic Conditional Beta</a><br />Engle(2015)</li><li><a onclick="window.open(this.href, '_blank'); return false;" href="http://vlab.stern.nyu.edu/public/static/capital_shortfall-2012.pdf">AEA Paper - Capital Shortfall: A New Approach to Ranking and Regulating Systemic Risks</a><br />Acharya, Engle, and Richardson(2012)</li>	</ul>
+</div>
+
+<div id="assets">
+	<table id="invlab">
+		<tr class="nohover">
+			<th id="wivl" colspan="2">What's in V-Lab?</th>
+		</tr>
+		<tr class="hothead">
+			<th id="ac">Asset Class</th>
+			<th id="noa">Number of Assets</th>
+		</tr>
+		<tr><td class="title">International Equities</td><td class="value">5,218</td></tr><tr><td class="title">Equities</td><td class="value">796</td></tr><tr><td class="title">Credit Default Swaps</td><td class="value">292</td></tr><tr><td class="title">Equity Indices</td><td class="value">175</td></tr><tr><td class="title">Currencies</td><td class="value">103</td></tr><tr><td class="title">Commodities</td><td class="value">59</td></tr><tr><td class="title">Volatility Indices</td><td class="value">37</td></tr><tr><td class="title">Government Bonds</td><td class="value">31</td></tr><tr><td class="title">Equity Sectors</td><td class="value">9</td></tr><tr><td class="title">Corporate Bonds</td><td class="value">6</td></tr><tr><td class="title">Real Estate</td><td class="value">3</td></tr>	</table>
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+Share your insights:<br />
+<div class='share-buttons'>
+  <ul>
+    <li><a href='javascript:shareThis("fb")' class='fb-button'></a></li>
+    <li><a href='javascript:shareThis("gp")' class='gp-button'></a></li>
+    <li><a href='javascript:shareThis("tw")' class='tw-button'></a></li>
+    <li><a href='javascript:shareThis("li")' class='li-button'></a></li>
+    <li><a href='javascript:shareThis("en")' class='en-button'></a></li>
+    <li><a href='javascript:shareThis("em")' class='em-button'></a></li>
+  </ul>
+</div>
+<p><a href="http://vlab.stern.nyu.edu/sendComments" onclick="return loadCommentForm(this)">  Send Comments to V-Lab  </a><br /></p>
+<p>Information is provided 'as is' and solely for informational purposes, not for trading purposes or advice. <a href="javascript:helpPage('legal_provisions_en');">Additional Provisions</a></p>
+</div>
+
+</div>
+
+</body>
+
+</html>

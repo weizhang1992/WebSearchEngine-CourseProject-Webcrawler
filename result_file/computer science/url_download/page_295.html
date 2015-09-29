@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Quantum error correction - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Quantum_error_correction","wgTitle":"Quantum error correction","wgCurRevisionId":673894034,"wgRevisionId":673894034,"wgArticleId":892803,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Quantum information science","Quantum computing","Fault-tolerant computer systems"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Quantum_error_correction","wgRelevantArticleId":892803,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove"
+:[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Shore_code.svg/100px-Shore_code.svg.png","wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1536431","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Quantum_error_correction" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Quantum_error_correction&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Quantum_error_correction&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Quantum_error_correction" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Quantum_error_correction skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Quantum error correction</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>Quantum error correction</b> is used in <a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">quantum computing</a> to protect <a href="/wiki/Quantum_information" title="Quantum information">quantum information</a> from errors due to <a href="/wiki/Decoherence" title="Decoherence" class="mw-redirect">decoherence</a> and other <a href="/wiki/Quantum_noise" title="Quantum noise">quantum noise</a>. Quantum error correction is essential if one is to achieve fault-tolerant quantum computation that can deal not only with noise on stored quantum information, but also with faulty quantum gates, faulty quantum preparation, and faulty measurements.</p>
+<p>Classical <a href="/wiki/Error_correction" title="Error correction" class="mw-redirect">error correction</a> employs <a href="/wiki/Redundancy_(information_theory)" title="Redundancy (information theory)">redundancy</a>. The simplest way is to store the information multiple times, and—if these copies are later found to disagree—just take a majority vote; e.g. Suppose we copy a bit three times. Suppose further that a noisy error corrupts the three-bit state so that one bit is equal to zero but the other two are equal to one. If we assume that noisy errors are independent and occur with some probability p.&#160;It is most likely that the error is a single-bit error and the transmitted message is three ones. It is possible that a double-bit error occurs and the transmitted message is equal to three zeros, but this outcome is less likely than the above outcome.</p>
+<p>Copying quantum information is not possible due to the <a href="/wiki/No-cloning_theorem" title="No-cloning theorem">no-cloning theorem</a>. This theorem seems to present an obstacle to formulating a theory of quantum error correction. But it is possible to <i>spread</i> the information of one <a href="/wiki/Qubit" title="Qubit">qubit</a> onto a highly entangled state of several (<i>physical</i>) qubits. <a href="/wiki/Peter_Shor" title="Peter Shor">Peter Shor</a> first discovered this method of formulating a <i>quantum error correcting code</i> by storing the information of one qubit onto a highly entangled state of nine qubits. A quantum error correcting code protects quantum information against errors of a limited form.</p>
+<p>Classical error correcting codes use a <i>syndrome measurement</i> to diagnose which error corrupts an encoded state. We then reverse an error by applying a corrective operation based on the syndrome. Quantum error correction also employs syndrome measurements. We perform a multi-qubit measurement that does not disturb the quantum information in the encoded state but retrieves information about the error. A syndrome measurement can determine whether a qubit has been corrupted, and if so, which one. What is more, the outcome of this operation (the <i>syndrome</i>) tells us not only which physical qubit was affected, but also, in which of several possible ways it was affected. The latter is counter-intuitive at first sight: Since noise is arbitrary, how can the effect of noise be one of only few distinct possibilities? In most codes, the effect is either a bit flip, or a sign (of the <a href="/wiki/Phase_(waves)" title="Phase (waves)">phase</a>) flip, or both (corresponding to the <a href="/wiki/Pauli_matrices" title="Pauli matrices">Pauli matrices</a> <i>X</i>, <i>Z</i>, and <i>Y</i>). The reason is that the measurement of the syndrome has the <a href="/wiki/Projection_(linear_algebra)" title="Projection (linear algebra)">projective</a> effect of a <a href="/wiki/Quantum_measurement" title="Quantum measurement" class="mw-redirect">quantum measurement</a>. So even if the error due to the noise was arbitrary, it can be expressed as a <a href="/wiki/Quantum_superposition" title="Quantum superposition">superposition</a> of <a href="/wiki/Basis_(linear_algebra)" title="Basis (linear algebra)">basis</a> operations—the <i>error basis</i> (which is here given by the Pauli matrices and the <a href="/wiki/Identity_(mathematics)" title="Identity (mathematics)">identity</a>). The syndrome measurement "forces" the qubit to "decide" for a certain specific "Pauli error" to "have happened", and the syndrome tells us which, so that we can let the same Pauli operator act again on the corrupted qubit to revert the effect of the error.</p>
+<p>The syndrome measurement tells us as much as possible about the error that has happened, but <i>nothing</i> at all about the <i>value</i> that is stored in the logical qubit—as otherwise the measurement would destroy any <a href="/wiki/Quantum_superposition" title="Quantum superposition">quantum superposition</a> of this logical qubit with other qubits in the <a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">quantum computer</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_bit_flip_code"><span class="tocnumber">1</span> <span class="toctext">The bit flip code</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#The_sign_flip_code"><span class="tocnumber">2</span> <span class="toctext">The sign flip code</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#The_Shor_code"><span class="tocnumber">3</span> <span class="toctext">The Shor code</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#General_codes"><span class="tocnumber">4</span> <span class="toctext">General codes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Models"><span class="tocnumber">5</span> <span class="toctext">Models</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Experimental_realization"><span class="tocnumber">6</span> <span class="toctext">Experimental realization</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Notes"><span class="tocnumber">7</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Bibliography"><span class="tocnumber">8</span> <span class="toctext">Bibliography</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="The_bit_flip_code">The bit flip code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=1" title="Edit section: The bit flip code">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The repetition code works in a classical channel, because classical bits are easy to measure and to repeat. However, in a quantum channel, it is no longer possible, due to the <a href="/wiki/No-cloning_theorem" title="No-cloning theorem">no-cloning theorem</a>, which forbids the creation of identical copies of an arbitrary unknown quantum state. So a single qubit can not be repeated three times as in the previous example, as any measurement of the qubit will change its <a href="/wiki/Wave_function" title="Wave function">wave function</a>. Nevertheless, in a quantum computer, there is another method, which is called the three qubits bit flip code. It uses entanglement and syndrome measurements, and can perform the similar results to the repetition code.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:352px;"><a href="/wiki/File:Quantum_error_correction_of_bit_flip_using_three_qubits.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/Quantum_error_correction_of_bit_flip_using_three_qubits.svg/350px-Quantum_error_correction_of_bit_flip_using_three_qubits.svg.png" width="350" height="93" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/Quantum_error_correction_of_bit_flip_using_three_qubits.svg/525px-Quantum_error_correction_of_bit_flip_using_three_qubits.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/80/Quantum_error_correction_of_bit_flip_using_three_qubits.svg/700px-Quantum_error_correction_of_bit_flip_using_three_qubits.svg.png 2x" data-file-width="241" data-file-height="64" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Quantum_error_correction_of_bit_flip_using_three_qubits.svg" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Quantum_circuit" title="Quantum circuit">Quantum circuit</a> of the bit flip code</div>
+</div>
+</div>
+<p>Let <img class="mwe-math-fallback-image-inline tex" alt="|\psi\rangle = \alpha_0|0\rangle + \alpha_1|1\rangle" src="//upload.wikimedia.org/math/2/2/6/226a576c3a7e92b90c0dc2d053a87fdf.png" /> be an arbitrary qubit. The first step of the three qubit bit flip code is to entangle the qubit with two other qubits using two <a href="/wiki/Controlled_NOT_gate" title="Controlled NOT gate">CNOT gates</a> with input <img class="mwe-math-fallback-image-inline tex" alt="|0\rangle" src="//upload.wikimedia.org/math/4/9/6/4964d23384c66fc9420ae1133ef47c24.png" />.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> The result will be <img class="mwe-math-fallback-image-inline tex" alt="|\psi'\rangle= \alpha_0 |000\rangle + \alpha_1|111\rangle. " src="//upload.wikimedia.org/math/6/9/3/693b4c056dc5f1605a993b7eda8ffc94.png" /> This is just a tensor product of three qubits, and different from cloning a state.</p>
+<p>Now these qubits will be sent through a channel <img class="mwe-math-fallback-image-inline tex" alt="E_{\text{bit}}" src="//upload.wikimedia.org/math/e/0/6/e065ed377e66a8a0705182919af72c0c.png" /> where we assume that at most one bit flip may occur. For example, in the case where the first qubit is flipped, the result would be <img class="mwe-math-fallback-image-inline tex" alt="|\psi'_r\rangle=\alpha_0|100\rangle + \alpha_1|011\rangle" src="//upload.wikimedia.org/math/c/f/c/cfcb0f28b1b8a33cda416c3a9673e509.png" />. To diagnose bit flips in any of the three possible qubits, syndrome diagnosis is needed, which includes four projection operators:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="P_0=|000\rangle\langle000|+|111\rangle\langle111|" src="//upload.wikimedia.org/math/4/d/6/4d6dc837c18898ffee02a7dd5620eeb1.png" /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="P_1=|100\rangle\langle100|+|011\rangle\langle011|" src="//upload.wikimedia.org/math/6/a/9/6a95bf6efc05444eac47fcd203556d78.png" /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="P_2=|010\rangle\langle010|+|101\rangle\langle101|" src="//upload.wikimedia.org/math/4/b/4/4b41741c7b5cb40bfcf624907a6f446d.png" /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="P_3=|001\rangle\langle001|+|110\rangle\langle110|" src="//upload.wikimedia.org/math/a/9/b/a9b59586d2f8d5e8dc0182252cffb0a7.png" /></p>
+<p>It can be obtained:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\langle\psi'_r|P_0|\psi'_r\rangle = 0" src="//upload.wikimedia.org/math/3/0/4/304ca56cbf6934a57d9768e858371127.png" /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\langle\psi'_r|P_1|\psi'_r\rangle = 1" src="//upload.wikimedia.org/math/3/5/6/3560bfa531ad6f7a578554f67c35d607.png" /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\langle\psi'_r|P_2|\psi'_r\rangle = 0" src="//upload.wikimedia.org/math/5/8/c/58c4e23ed9345ecc7bac21f176cc1624.png" /></p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="\langle\psi'_r|P_3|\psi'_r\rangle = 0" src="//upload.wikimedia.org/math/6/9/1/691e50549e3f9b4e8ff23040ecc297e3.png" /></p>
+<p>So it will be known that the error syndrome corresponds to <img class="mwe-math-fallback-image-inline tex" alt="P_1" src="//upload.wikimedia.org/math/4/7/d/47ddd0a8d1607438330cf19c0c1ac45e.png" />. This three qubits bit flip code can correct one error if at most one bit-flip-error occurred in the channel. It is similar to the three bits repetition code in a classical computer.</p>
+<h2><span class="mw-headline" id="The_sign_flip_code">The sign flip code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=2" title="Edit section: The sign flip code">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:452px;"><a href="/wiki/File:Quantum_error_correction_of_phase_flip_using_three_qubits.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Quantum_error_correction_of_phase_flip_using_three_qubits.svg/450px-Quantum_error_correction_of_phase_flip_using_three_qubits.svg.png" width="450" height="111" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Quantum_error_correction_of_phase_flip_using_three_qubits.svg/675px-Quantum_error_correction_of_phase_flip_using_three_qubits.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/74/Quantum_error_correction_of_phase_flip_using_three_qubits.svg/900px-Quantum_error_correction_of_phase_flip_using_three_qubits.svg.png 2x" data-file-width="323" data-file-height="80" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Quantum_error_correction_of_phase_flip_using_three_qubits.svg" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Quantum_circuit" title="Quantum circuit">Quantum circuit</a> of the phase flip code</div>
+</div>
+</div>
+<p>Flipped bits are the only kind of error in classical computer, but there is another possibility of an error with quantum computers, the sign flip. Through the transmission in a channel the relative sign between <img class="mwe-math-fallback-image-inline tex" alt="|0\rangle" src="//upload.wikimedia.org/math/4/9/6/4964d23384c66fc9420ae1133ef47c24.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="|1\rangle" src="//upload.wikimedia.org/math/e/e/7/ee73186e90463a7382893d182c1314c3.png" /> can become inverted. For instance, a qubit in the state <img class="mwe-math-fallback-image-inline tex" alt="|-\rangle=(|0\rangle-|1\rangle)/\sqrt{2}" src="//upload.wikimedia.org/math/c/d/6/cd691ab92fb9587c39e1ac977239f4e3.png" /> may have its sign flip to <img class="mwe-math-fallback-image-inline tex" alt="|+\rangle=(|0\rangle+|1\rangle)/\sqrt{2}." src="//upload.wikimedia.org/math/0/4/3/043e7bd117d2ec1323867a868e4f7ba6.png" /></p>
+<p>The original state of the qubit</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="|\psi\rangle = \alpha_0|+\rangle+\alpha_1|-\rangle" src="//upload.wikimedia.org/math/1/f/1/1f1ca4b41d3b37c307a9db7a9d9d201f.png" /></p>
+<p>will be changed into the state</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="|\psi'\rangle = \alpha_0|{+}{+}{+}\rangle+\alpha_1|{-}{-}{-}\rangle." src="//upload.wikimedia.org/math/d/7/b/d7b3bef286146c90f0de1531a9c85cce.png" /></p>
+<p>In the Hadamard basis, bit flips become sign flips and sign flips become bit flips. Let <img class="mwe-math-fallback-image-inline tex" alt="E_\text{phase}" src="//upload.wikimedia.org/math/7/3/e/73e761932722e0687f040feca814e1f2.png" /> be a quantum channel that can cause at most one phase flip. Then the bit flip code from above can recover <img class="mwe-math-fallback-image-inline tex" alt="|\psi\rangle" src="//upload.wikimedia.org/math/6/0/5/605b44d27aad3e8e841b1dd43053faa1.png" /> by transforming into the Hadamard basis before and after transmission through <img class="mwe-math-fallback-image-inline tex" alt="E_\text{phase}" src="//upload.wikimedia.org/math/7/3/e/73e761932722e0687f040feca814e1f2.png" />.</p>
+<h2><span class="mw-headline" id="The_Shor_code">The Shor code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=3" title="Edit section: The Shor code">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The error channel may induce either a bit flip, a sign flip, or both. It is possible to correct for both types of errors using one code, and the Shor code does just that. In fact, the Shor code corrects arbitrary single-qubit errors.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:502px;"><a href="/wiki/File:Shore_code.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Shore_code.svg/500px-Shore_code.svg.png" width="500" height="251" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Shore_code.svg/750px-Shore_code.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Shore_code.svg/1000px-Shore_code.svg.png 2x" data-file-width="420" data-file-height="211" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Shore_code.svg" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Quantum_circuit" title="Quantum circuit">Quantum circuit</a> of the Shor code</div>
+</div>
+</div>
+<p>Let <img class="mwe-math-fallback-image-inline tex" alt="E" src="//upload.wikimedia.org/math/3/a/3/3a3ea00cfc35332cedf6e5e9a32e94da.png" /> be a quantum channel that can arbitrarily corrupt a single qubit. The 1st, 4th and 7th qubits are for the sign flip code, while the three group of qubits (1,2,3), (4,5,6), and (7,8,9) are designed for the bit flip code. With the Shor code, a qubit state <img class="mwe-math-fallback-image-inline tex" alt="|\psi\rangle=\alpha_0|0\rangle+\alpha_1|1\rangle" src="//upload.wikimedia.org/math/2/2/6/226a576c3a7e92b90c0dc2d053a87fdf.png" /> will be transformed into the product of 9 qubits <img class="mwe-math-fallback-image-inline tex" alt="|\psi'\rangle=\alpha_0|0_S\rangle+\alpha_1|1_S\rangle" src="//upload.wikimedia.org/math/5/a/c/5ac0cf5307fd1841618be6378632b616.png" />, where</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="|0_S\rangle=\frac{1}{2\sqrt{2}}(|000\rangle + |111\rangle) \otimes (|000\rangle + |111\rangle) \otimes (|000\rangle + |111\rangle)" src="//upload.wikimedia.org/math/0/4/8/0486ec4c2d0e5d46e55e068699e4a53f.png" /></dd>
+</dl>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="|1_S\rangle=\frac{1}{2\sqrt{2}}(|000\rangle - |111\rangle) \otimes (|000\rangle - |111\rangle) \otimes (|000\rangle - |111\rangle)" src="//upload.wikimedia.org/math/f/5/8/f5851d919f705c6485077cb4d33ca60d.png" /></dd>
+</dl>
+<p>If a bit flip error happens to a qubit, the syndrome analysis will be performed on each set of states (1,2,3), (4,5,6), and (7,8,9), then correct the error.</p>
+<p>If the three bit flip group (1,2,3), (4,5,6), and (7,8,9) are considered as three inputs, then the Shor code circuit can be reduced as a sign flip code. This means that the Shor code can also repair sign flip error for a single qubit.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>The Shor code also can correct for any arbitrary errors (both bit flip and sign flip) to a single qubit. If an error is modeled by a unitary transform U, which will act on a qubit <img class="mwe-math-fallback-image-inline tex" alt="|\psi\rangle" src="//upload.wikimedia.org/math/6/0/5/605b44d27aad3e8e841b1dd43053faa1.png" />, then <img class="mwe-math-fallback-image-inline tex" alt="U" src="//upload.wikimedia.org/math/4/c/6/4c614360da93c0a041b22e537de151eb.png" /> can be described in the form</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="U=c_0I+c_1\sigma_x+c_2\sigma_y+c_3\sigma_z" src="//upload.wikimedia.org/math/e/d/2/ed234a74cfaeb5897bb2247a34111fdb.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="c_0" src="//upload.wikimedia.org/math/b/4/4/b44bd3c13387c64590c6d95ad2d6c1e1.png" />,<img class="mwe-math-fallback-image-inline tex" alt="c_1" src="//upload.wikimedia.org/math/0/b/d/0bd1ecc6359ce275e3a626020b904c8c.png" />,<img class="mwe-math-fallback-image-inline tex" alt="c_2" src="//upload.wikimedia.org/math/e/c/6/ec6afd67ef6d50afbb01857b9eee7d59.png" />, and <img class="mwe-math-fallback-image-inline tex" alt="c_3" src="//upload.wikimedia.org/math/7/4/8/74825ca9b2f88df56bbb019019c51ffe.png" /> are complex constants, I is the identity, and the <a href="/wiki/Pauli_matrices" title="Pauli matrices">Pauli matrices</a> are given by</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sigma_x=\biggl( \begin{matrix}
+               0&amp;1\\1&amp;0
+              \end{matrix} \biggr);" src="//upload.wikimedia.org/math/c/9/4/c94feaf90c700bbd11ba7d2de8a5f328.png" /></dd>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sigma_y=\biggl( \begin{matrix}
+               0&amp;-i\\i&amp;0
+              \end{matrix} \biggr);" src="//upload.wikimedia.org/math/7/5/f/75f8961e047755a7f4478433e388780f.png" /></dd>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sigma_z=\biggl( \begin{matrix}
+               1&amp;0\\0&amp;-1
+              \end{matrix} \biggr)" src="//upload.wikimedia.org/math/1/a/d/1ade7b03740e57a9cee0744110b8517f.png" /></dd>
+</dl>
+<p>If U is equal to I, then no error occurs. If <img class="mwe-math-fallback-image-inline tex" alt="U=\sigma_x" src="//upload.wikimedia.org/math/b/2/7/b27bcd715a0341a5d8341f67776f0c0a.png" />, a bit flip error occurs. If <img class="mwe-math-fallback-image-inline tex" alt="U=\sigma_z" src="//upload.wikimedia.org/math/d/2/6/d26c8a3845874f263e698778123b65a8.png" />, a sign flip error occurs. If <img class="mwe-math-fallback-image-inline tex" alt="U=i\sigma_y" src="//upload.wikimedia.org/math/a/9/c/a9c8bc9cc5bc9dbbb589655948ab15ed.png" /> then both a bit flip error and a sign flip error occur. Due to linearity, it follows that the Shor code can correct arbitrary 1-qubit errors.</p>
+<h2><span class="mw-headline" id="General_codes">General codes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=4" title="Edit section: General codes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In general, a <i>quantum code</i> for a <a href="/wiki/Quantum_channel" title="Quantum channel">quantum channel</a> <img class="mwe-math-fallback-image-inline tex" alt="\mathcal{E}" src="//upload.wikimedia.org/math/d/3/c/d3c305fc416b971cd6d284564e51bf85.png" /> is a subspace <img class="mwe-math-fallback-image-inline tex" alt="\mathcal{C} \subseteq \mathcal{H}" src="//upload.wikimedia.org/math/1/7/8/178871f232dc5b25e843d43947f51742.png" />, where <img class="mwe-math-fallback-image-inline tex" alt="\mathcal{H}" src="//upload.wikimedia.org/math/3/5/0/350860cf68ca8fd18af87b6ee9044fc7.png" /> is the state Hilbert space, such that there exists another quantum channel <img class="mwe-math-fallback-image-inline tex" alt="\mathcal{R}" src="//upload.wikimedia.org/math/1/3/1/131ce5f8ec4744bd9a86d87cefda1d11.png" /> with</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="
+  (\mathcal{R} \circ \mathcal{E})(\rho) = \rho \quad \forall \rho = P_{\mathcal{C}}\rho P_{\mathcal{C}},
+" src="//upload.wikimedia.org/math/f/b/7/fb70e48885a54176aac320a1a904b4ea.png" /></p>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="P_{\mathcal{C}}" src="//upload.wikimedia.org/math/7/e/1/7e1960650216964f9894728148ee0987.png" /> is the <a href="/wiki/Orthogonal_projection" title="Orthogonal projection" class="mw-redirect">orthogonal projection</a> onto <img class="mwe-math-fallback-image-inline tex" alt="\mathcal{C}" src="//upload.wikimedia.org/math/9/8/c/98c20e34c90ebe87fa78ddb2b83977fd.png" />. Here <img class="mwe-math-fallback-image-inline tex" alt="\mathcal{R}" src="//upload.wikimedia.org/math/1/3/1/131ce5f8ec4744bd9a86d87cefda1d11.png" /> is known as the <i>correction operation</i>.</p>
+<h2><span class="mw-headline" id="Models">Models</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=5" title="Edit section: Models">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Over time, researchers have come up with several codes:</p>
+<ul>
+<li><a href="/wiki/Peter_Shor" title="Peter Shor">Peter Shor</a>'s 9-qubit-code, a.k.a. the <a href="/wiki/Shor_code" title="Shor code" class="mw-redirect">Shor code</a>, encodes 1 logical qubit in 9 physical qubits and can correct for arbitrary errors in a single qubit.</li>
+<li><a href="/wiki/Andrew_Steane" title="Andrew Steane">Andrew Steane</a> found a code which does the same with 7 instead of 9 qubits, see <a href="/wiki/Steane_code" title="Steane code">Steane code</a>.</li>
+<li><a href="/wiki/Raymond_Laflamme" title="Raymond Laflamme">Raymond Laflamme</a> and collaborators found a class of 5-qubit codes which do the same, which also have the property of being <a href="/wiki/Fault-tolerant" title="Fault-tolerant" class="mw-redirect">fault-tolerant</a>. A 5-qubit code is the smallest possible code which protects a single logical qubit against single-qubit errors.</li>
+<li>A generalisation of this concept are the <a href="/wiki/CSS_code" title="CSS code">CSS codes</a>, named for their inventors: <a href="/w/index.php?title=A._R._Calderbank&amp;action=edit&amp;redlink=1" class="new" title="A. R. Calderbank (page does not exist)">A. R. Calderbank</a>, <a href="/wiki/Peter_Shor" title="Peter Shor">Peter Shor</a> and <a href="/wiki/Andrew_Steane" title="Andrew Steane">Andrew Steane</a>. According to the quantum Hamming bound, encoding a single logical qubit and providing for arbitrary error correction in a single qubit requires a minimum of 5 physical qubits.</li>
+<li>A more general class of codes (encompassing the former) are the <a href="/wiki/Stabilizer_code" title="Stabilizer code">stabilizer codes</a> discovered by <a href="/wiki/Daniel_Gottesman" title="Daniel Gottesman">Daniel Gottesman</a> (<a rel="nofollow" class="external autonumber" href="http://arxiv.org/abs/quant-ph/9604038">[1]</a>), and by <a href="/w/index.php?title=A._R._Calderbank&amp;action=edit&amp;redlink=1" class="new" title="A. R. Calderbank (page does not exist)">A. R. Calderbank</a>, <a href="/w/index.php?title=Eric_Rains&amp;action=edit&amp;redlink=1" class="new" title="Eric Rains (page does not exist)">Eric Rains</a>, <a href="/wiki/Peter_Shor" title="Peter Shor">Peter Shor</a>, and <a href="/wiki/N._J._A._Sloane" title="N. J. A. Sloane" class="mw-redirect">N. J. A. Sloane</a> (<a rel="nofollow" class="external autonumber" href="http://arxiv.org/abs/quant-ph/9605005">[2]</a>, <a rel="nofollow" class="external autonumber" href="http://arxiv.org/abs/quant-ph/9608006">[3]</a>); these are also called <a href="/w/index.php?title=Additive_code&amp;action=edit&amp;redlink=1" class="new" title="Additive code (page does not exist)">additive codes</a>.</li>
+<li>A newer idea is <a href="/wiki/Alexei_Kitaev" title="Alexei Kitaev">Alexei Kitaev</a>'s <a href="/wiki/Toric_code" title="Toric code">topological quantum codes</a> and the more general idea of a <a href="/wiki/Topological_quantum_computer" title="Topological quantum computer">topological quantum computer</a>.</li>
+<li><a href="/w/index.php?title=Todd_Brun&amp;action=edit&amp;redlink=1" class="new" title="Todd Brun (page does not exist)">Todd Brun</a>, <a href="/w/index.php?title=Igor_Devetak&amp;action=edit&amp;redlink=1" class="new" title="Igor Devetak (page does not exist)">Igor Devetak</a>, and <a href="/w/index.php?title=Min-Hsiu_Hsieh&amp;action=edit&amp;redlink=1" class="new" title="Min-Hsiu Hsieh (page does not exist)">Min-Hsiu Hsieh</a> also constructed the <a href="/wiki/Entanglement-assisted_stabilizer_formalism" title="Entanglement-assisted stabilizer formalism">entanglement-assisted stabilizer formalism</a> as an extension of the standard <a href="/wiki/Stabilizer_formalism" title="Stabilizer formalism" class="mw-redirect">stabilizer formalism</a> that incorporates <a href="/wiki/Quantum_entanglement" title="Quantum entanglement">quantum entanglement</a> shared between a sender and a receiver.</li>
+</ul>
+<p>That these codes allow indeed for quantum computations of arbitrary length is the content of the <i>threshold theorem</i>, found by <a href="/w/index.php?title=Michael_Ben-Or&amp;action=edit&amp;redlink=1" class="new" title="Michael Ben-Or (page does not exist)">Michael Ben-Or</a> and <a href="/wiki/Dorit_Aharonov" title="Dorit Aharonov">Dorit Aharonov</a>, which asserts that you can correct for all errors if you concatenate quantum codes such as the CSS codes—i.e. re-encode each logical qubit by the same code again, and so on, on logarithmically many levels—<i>provided</i> the error rate of individual <a href="/wiki/Quantum_gate" title="Quantum gate">quantum gates</a> is below a certain threshold; as otherwise, the attempts to measure the syndrome and correct the errors would introduce more new errors than they correct for.</p>
+<p>As of late 2004, estimates for this threshold indicate that it could be as high as 1-3% <a rel="nofollow" class="external autonumber" href="http://www.arxiv.org/abs/quant-ph/0410199">[4]</a>, provided that there are sufficiently many <a href="/wiki/Qubit" title="Qubit">qubits</a> available.</p>
+<h2><span class="mw-headline" id="Experimental_realization">Experimental realization</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=6" title="Edit section: Experimental realization">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There have been several experimental realizations of CSS-based codes. The first demonstration was with NMR qubits.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup> Subsequently demonstrations have been made with linear optics,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> trapped ions,<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup> and superconducting (<a href="/wiki/Transmon" title="Transmon">transmon</a>) qubits.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>Other error correcting codes have also been implemented, such as one aimed at correcting for photon loss, the dominant error source in photonic qubit schemes.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=7" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation journal"><a href="/wiki/Michael_A._Nielsen" title="Michael A. Nielsen" class="mw-redirect">Michael A. Nielsen</a> and <a href="/wiki/Isaac_L._Chuang" title="Isaac L. Chuang" class="mw-redirect">Isaac L. Chuang</a> (2000). "Quantum Computation and Quantum Information". <i>Cambridge University Press</i>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+error+correction&amp;rft.atitle=Quantum+Computation+and+Quantum+Information&amp;rft.aulast=Michael+A.+Nielsen+and+Isaac+L.+Chuang&amp;rft.au=Michael+A.+Nielsen+and+Isaac+L.+Chuang&amp;rft.date=2000&amp;rft.genre=article&amp;rft.jtitle=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation journal"><a href="/wiki/Peter_W._Shor" title="Peter W. Shor" class="mw-redirect">W.Shor, Peter</a> (1995). <a rel="nofollow" class="external text" href="http://link.aps.org/abstract/PRA/v52/pR2493">"Scheme for reducing decoherence in quantum computer memory"</a>. <i>AT&amp;T Bell Laboratories</i>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+error+correction&amp;rft.atitle=Scheme+for+reducing+decoherence+in+quantum+computer+memory&amp;rft.aufirst=Peter&amp;rft.aulast=W.Shor&amp;rft.au=W.Shor%2C+Peter&amp;rft.date=1995&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Flink.aps.org%2Fabstract%2FPRA%2Fv52%2FpR2493&amp;rft.jtitle=AT%26T+Bell+Laboratories&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">D. G. Cory, M. D. Price, W. Maas, E. Knill, R. Laflamme, W. H. Zurek, T. F. Havel and S. S. Somaroo, "Experimental Quantum Error Correction," <i>Phys. Rev. Lett.</i> <b>81</b>, 2152–2155 (1998), <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1103%2FPhysRevLett.81.2152">10.1103/PhysRevLett.81.2152</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">T. B. Pittman, B. C. Jacobs and J. D. Franson, "Demonstration of quantum error correction using linear optics," <i>Phys. Rev. A</i> <b>71</b>, 052332 (2005), <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1103%2FPhysRevA.71.052332">10.1103/PhysRevA.71.052332</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">J. Chiaverini, D. Leibfried, T. Schaetz, M. D. Barrett, R. B. Blakestad, J. Britton, W. M. Itano, J. D. Jost, E. Knill, C. Langer, R. Ozeri and D. J. Wineland, "Realization of quantum error correction," <i>Nature</i> <b>432</b>, 602-605 (2004), <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1038%2Fnature03074">10.1038/nature03074</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text">P. Schindler, J. T. Barreiro, T. Monz, V. Nebendahl, D. Nigg, M. Chwalla, M. Hennrich and R. Blatt, "Experimental Repetitive Quantum Error Correction," <i>Science</i> <b>332</b>, 1059-1061 (2011), <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1126%2Fscience.1203329">10.1126/science.1203329</a></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text">M. D. Reed, L. DiCarlo, S. E. Nigg, L. Sun, L. Frunzio, S. M. Girvin and R. J. Schoelkopf, "Realization of Three-Qubit Quantum Error Correction with Superconducting Circuits," <i>Nature</i> <b>482</b>, 382-385 (2012), <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1038%2Fnature10786">10.1038/nature10786</a>, <a rel="nofollow" class="external text" href="http://arxiv.org/abs/1109.4948">arXiv:1109.4948</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text">M. Lassen, M. Sabuncu, A. Huck, J. Niset, G. Leuchs, N. J. Cerf and U. L. Andersen, "Quantum optical coherence can survive photon losses using a continuous-variable quantum erasure-correcting code," <i>Nature Photonics</i> 4, 700 (2010), <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1038%2Fnphoton.2010.168">10.1038/nphoton.2010.168</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Bibliography">Bibliography</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=8" title="Edit section: Bibliography">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="citation journal"><a href="/wiki/Daniel_Lidar" title="Daniel Lidar">Daniel Lidar</a> and <a href="/w/index.php?title=Todd_Brun&amp;action=edit&amp;redlink=1" class="new" title="Todd Brun (page does not exist)">Todd Brun</a>, ed. (2013). "Quantum Error Correction". <i>Cambridge University Press</i>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+error+correction&amp;rft.atitle=Quantum+Error+Correction&amp;rft.date=2013&amp;rft.genre=article&amp;rft.jtitle=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<ul>
+<li><span class="citation journal"><a href="/w/index.php?title=Frank_Gaitan&amp;action=edit&amp;redlink=1" class="new" title="Frank Gaitan (page does not exist)">Frank Gaitan</a> (2008). "Quantum Error Correction and Fault Tolerant Quantum Computing". <i>Taylor &amp; Francis</i>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+error+correction&amp;rft.atitle=Quantum+Error+Correction+and+Fault+Tolerant+Quantum+Computing&amp;rft.au=Frank+Gaitan&amp;rft.aulast=Frank+Gaitan&amp;rft.date=2008&amp;rft.genre=article&amp;rft.jtitle=Taylor+%26+Francis&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<ul>
+<li>Freedman, Michael H.; Meyer, David A.; Luo, Feng: Z<sub>2</sub>-<a href="/wiki/Systolic_freedom" title="Systolic freedom">Systolic freedom</a> and quantum codes. <i>Mathematics of quantum computation</i>, 287–320, Comput. Math. Ser., Chapman &amp; Hall/CRC, Boca Raton, FL, 2002.</li>
+</ul>
+<ul>
+<li>Freedman, Michael H.; Meyer, David A.: <a href="/wiki/Real_projective_plane" title="Real projective plane">Projective plane</a> and planar quantum codes. <i>Found. Comput. Math.</i> 1 (2001), no. 3, 325–332.</li>
+</ul>
+<ul>
+<li>Mikael Lassen, Metin Sabuncu, Alexander Huck, Julien Niset, Gerd Leuchs, Nicolas J. Cerf, Ulrik L. Andersen, <i>Quantum optical coherence can survive photon losses using a continuous-variable quantum erasure-correcting code</i> , <a href="/wiki/Nature_Photonics" title="Nature Photonics">Nature Photonics</a> <b>4</b> 10 (2010)(<a rel="nofollow" class="external text" href="http://www.nature.com/nphoton/journal/v4/n10/full/nphoton.2010.168.html">this document online</a>)</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Error_detection_and_correction" title="Error detection and correction">Error detection and correction</a></li>
+<li><a href="/wiki/Soft_error" title="Soft error">Soft error</a></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.arxiv.org/abs/quant-ph/0410199">Prospects</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.newscientisttech.com/article.ns?id=dn9301&amp;feedId=online-news_rss20">Error-check breakthrough in quantum computing</a></li>
+<li><a rel="nofollow" class="external text" href="http://xstructure.inr.ac.ru/x-bin/theme3.py?level=1&amp;index1=362347">Quantum error correction on arxiv.org</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Quantum_information" title="Template:Quantum information"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Quantum_information" title="Template talk:Quantum information"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Quantum_information&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Quantum_information_science" title="Quantum information science">Quantum information science</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">General</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">Quantum computer</a></li>
+<li><a href="/wiki/Qubit" title="Qubit">Qubit</a></li>
+<li><a href="/wiki/Quantum_information" title="Quantum information">Quantum information</a></li>
+<li><a href="/wiki/Quantum_programming" title="Quantum programming">Quantum programming</a></li>
+<li><a href="/wiki/Timeline_of_quantum_computing" title="Timeline of quantum computing">Timeline of quantum computing</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="13" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Bloch_Sphere.svg" class="image"><img alt="Bloch Sphere.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/80px-Bloch_Sphere.svg.png" width="80" height="91" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/120px-Bloch_Sphere.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/160px-Bloch_Sphere.svg.png 2x" data-file-width="163" data-file-height="185" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum communication</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_capacity" title="Quantum capacity">Quantum capacity</a></li>
+<li><a href="/wiki/Classical_capacity" title="Classical capacity">Classical capacity</a></li>
+<li><a href="/wiki/Entanglement-assisted_classical_capacity" title="Entanglement-assisted classical capacity">Entanglement-assisted classical capacity</a></li>
+<li><a href="/wiki/Quantum_channel" title="Quantum channel">Quantum channel</a>
+<ul>
+<li><a href="/wiki/Quantum_network" title="Quantum network">Quantum network</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_cryptography" title="Quantum cryptography">Quantum cryptography</a>
+<ul>
+<li><a href="/wiki/Quantum_key_distribution" title="Quantum key distribution">Quantum key distribution</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_energy_teleportation" title="Quantum energy teleportation">Quantum energy teleportation</a></li>
+<li><a href="/wiki/Quantum_teleportation" title="Quantum teleportation">Quantum teleportation</a></li>
+<li><a href="/wiki/Superdense_coding" title="Superdense coding">Superdense coding</a></li>
+<li><a href="/wiki/LOCC" title="LOCC">LOCC</a></li>
+<li><a href="/wiki/Entanglement_distillation" title="Entanglement distillation">Entanglement distillation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_algorithm" title="Quantum algorithm">Quantum algorithms</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Universal_quantum_simulator" title="Universal quantum simulator" class="mw-redirect">Universal quantum simulator</a></li>
+<li><a href="/wiki/Deutsch%E2%80%93Jozsa_algorithm" title="Deutsch–Jozsa algorithm">Deutsch–Jozsa algorithm</a></li>
+<li><a href="/wiki/Grover%27s_algorithm" title="Grover's algorithm">Grover's algorithm</a></li>
+<li><a href="/wiki/Quantum_Fourier_transform" title="Quantum Fourier transform">Quantum Fourier transform</a></li>
+<li><a href="/wiki/Shor%27s_algorithm" title="Shor's algorithm">Shor's algorithm</a></li>
+<li><a href="/wiki/Simon%27s_problem" title="Simon's problem">Simon's problem</a></li>
+<li><a href="/wiki/Quantum_phase_estimation_algorithm" title="Quantum phase estimation algorithm">Quantum phase estimation algorithm</a></li>
+<li><a href="/wiki/Quantum_annealing" title="Quantum annealing">Quantum annealing</a></li>
+<li><a href="/wiki/Algorithmic_cooling" title="Algorithmic cooling">Algorithmic cooling</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_complexity_theory" title="Quantum complexity theory">Quantum complexity theory</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_Turing_machine" title="Quantum Turing machine">Quantum Turing machine</a></li>
+<li><a href="/wiki/BQP" title="BQP">BQP</a></li>
+<li><a href="/wiki/QMA" title="QMA">QMA</a></li>
+<li><a href="/wiki/PostBQP" title="PostBQP">PostBQP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum computing models</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_circuit" title="Quantum circuit">Quantum circuit</a>
+<ul>
+<li><a href="/wiki/Quantum_gate" title="Quantum gate">Quantum gate</a></li>
+</ul>
+</li>
+<li><a href="/wiki/One-way_quantum_computer" title="One-way quantum computer">One-way quantum computer</a>
+<ul>
+<li><a href="/wiki/Cluster_state" title="Cluster state">cluster state</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Adiabatic_quantum_computation" title="Adiabatic quantum computation">Adiabatic quantum computation</a></li>
+<li><a href="/wiki/Topological_quantum_computer" title="Topological quantum computer">Topological quantum computer</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_decoherence" title="Quantum decoherence">Decoherence</a> prevention</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Quantum error correction</strong></li>
+<li><a href="/wiki/Stabilizer_code" title="Stabilizer code">Stabilizer codes</a></li>
+<li><a href="/wiki/Entanglement-assisted_stabilizer_formalism" title="Entanglement-assisted stabilizer formalism">Entanglement-Assisted Quantum Error Correction</a></li>
+<li><a href="/wiki/Quantum_convolutional_code" title="Quantum convolutional code">Quantum convolutional codes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Physical implementations</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Quantum_optics" title="Quantum optics">Quantum optics</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cavity_quantum_electrodynamics" title="Cavity quantum electrodynamics">Cavity QED</a></li>
+<li><a href="/wiki/Circuit_quantum_electrodynamics" title="Circuit quantum electrodynamics">Circuit QED</a></li>
+<li><a href="/wiki/Linear_optical_quantum_computing" title="Linear optical quantum computing">Linear optical quantum computing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Ultracold_atom" title="Ultracold atom">Ultracold atoms</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Trapped_ion_quantum_computer" title="Trapped ion quantum computer">Trapped ion quantum computer</a></li>
+<li><a href="/wiki/Optical_lattice" title="Optical lattice">Optical lattice</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Spin_(physics)" title="Spin (physics)">Spin</a>-based</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Nuclear_magnetic_resonance_quantum_computer" title="Nuclear magnetic resonance quantum computer">Nuclear magnetic resonance QC</a></li>
+<li><a href="/wiki/Kane_quantum_computer" title="Kane quantum computer">Kane QC</a></li>
+<li><a href="/wiki/Loss%E2%80%93DiVincenzo_quantum_computer" title="Loss–DiVincenzo quantum computer">Loss–DiVincenzo QC</a></li>
+<li><a href="/wiki/Nitrogen-vacancy_center" title="Nitrogen-vacancy center">Nitrogen-vacancy center</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Superconducting_quantum_computing" title="Superconducting quantum computing">Superconducting quantum computing</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Charge_qubit" title="Charge qubit">Charge qubit</a></li>
+<li><a href="/wiki/Flux_qubit" title="Flux qubit">Flux qubit</a></li>
+<li><a href="/wiki/Phase_qubit" title="Phase qubit">Phase qubit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1009
+Cached time: 20150907221915
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.365 seconds
+Real time usage: 3.145 seconds
+Preprocessor visited node count: 1361/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 31880/2097152 bytes
+Template argument size: 1828/2097152 bytes
+Highest expansion depth: 9/40
+Expensive parser function count: 0/500
+Lua time usage: 0.053/10.000 seconds
+Lua memory usage: 1.59 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  155.269      1 - -total
+ 61.34%   95.238      1 - Template:Reflist
+ 44.41%   68.961      4 - Template:Cite_journal
+ 37.54%   58.287      2 - Template:Navbox
+ 32.89%   51.066      1 - Template:Quantum_computing
+ 14.14%   21.958      1 - Template:Navbox_subgroup
+ 11.98%   18.603      6 - Template:Doi
+  5.31%    8.248     12 - Template:Hide_in_print
+  2.29%    3.551      6 - Template:Only_in_print
+  2.17%    3.368      6 - Template:Str_left
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:892803-0!*!0!!en!4!*!math=0 and timestamp 20150907221912 and revision id 673894034
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Quantum_error_correction&amp;oldid=673894034">https://en.wikipedia.org/w/index.php?title=Quantum_error_correction&amp;oldid=673894034</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Quantum_information_science" title="Category:Quantum information science">Quantum information science</a></li><li><a href="/wiki/Category:Quantum_computing" title="Category:Quantum computing">Quantum computing</a></li><li><a href="/wiki/Category:Fault-tolerant_computer_systems" title="Category:Fault-tolerant computer systems">Fault-tolerant computer systems</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantum+error+correction&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantum+error+correction" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Quantum_error_correction"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Quantum_error_correction"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Quantum_error_correction" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Quantum_error_correction&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Quantum_error_correction&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Quantum_error_correction" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Quantum_error_correction" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Quantum_error_correction&amp;oldid=673894034" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Quantum_error_correction&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q1536431" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Quantum_error_correction&amp;id=673894034" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Quantum+error+correction">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Quantum+error+correction&amp;oldid=673894034&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Quantum_error_correction&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Quantenfehlerkorrektur" title="Quantenfehlerkorrektur – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Correcci%C3%B3n_de_errores_cu%C3%A1ntica" title="Corrección de errores cuántica – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Code_quantique" title="Code quantique – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-lt"><a href="//lt.wikipedia.org/wiki/Kvantin%C4%97_klaid%C5%B3_korekcija" title="Kvantinė klaidų korekcija – Lithuanian" lang="lt" hreflang="lt">Lietuvių</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q1536431#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 31 July 2015, at 06:21.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Quantum_error_correction&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":64,"wgHostname":"mw1257"});
+} );</script>
+	</body>
+</html>

@@ -1,0 +1,2841 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head id="ctl00_m_htmlHeader"><title>
+	Software Engineer Salary in New York, New York (United States)
+</title><meta http-equiv="x-ua-compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c6be3e8463","applicationID":"7165898","transactionName":"b1RQZ0BQD0FWWkFQClYec2BiHlUCAxdUShVA","queueTime":0,"applicationTime":351,"ttGuid":"434F12F76CF5E7A2","agent":"js-agent.newrelic.com/nr-686.min.js"}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAcGVlBTGwQBUlRaDgk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+        <meta property="fb:app_id" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="apple-touch-icon" sizes="57x57" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="//cdn-payscale.com/resources/150825/images/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="//cdn-payscale.com/resources/150825/images/favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//cdn-payscale.com/resources/150825/images/favicon/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="//cdn-payscale.com/resources/150825/images/favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//cdn-payscale.com/resources/150825/images/favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="//cdn-payscale.com/resources/150825/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#c53b31">
+<meta name="msapplication-TileImage" content="//cdn-payscale.com/resources/150825/images/favicon/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-config" content="//cdn-payscale.com/resources/150825/images/favicon/browserconfig.xml"><meta name="description" content="As of Jul 2015, the avg. pay for a Software Engineer is $47.80/hr or $87,764 annually." /><meta name="keywords" content="salary, salaries, Software Engineer, New York, New York, United States" /><link rel="shortcut icon" href="/favicon.ico" /><link rel="icon" href="/favicon.ico" /><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/dist/consumer/payscale-researchcenter.min.css"/><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/jquery/jquery-autocomplete.min.css"/><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/dist/consumer/header-footer.min.css"/><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/rc-chart.css"/><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/researchCenter/relatedResearchReportRangeChart.css"/><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/guiders/guiders-2.0.0.css"/><link rel="stylesheet" type="text/css" href="//cdn-payscale.com/resources/150825/css/dist/consumer/font-awesome.min.css"/><meta property="og:image" content="http://www.payscale.com/images/researchcenter/rctng-fb-like.png" /><link rel="canonical" href="http://www.payscale.com/research/US/Job=Software_Engineer/Salary/df029197/New-York-NY" /><style type="text/css">.hourly { display: none; } </style><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/jquery/jquery-2.1.3.min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/jquery/jquery-migrate-1.2.1.js"></script><link rel='search' type='application/opensearchdescription+xml' title='PayScale Salary Search' href='/opensearch.xml' />
+<script>
+var dataLayer = [{"cacheControl":"public"}];
+</script>
+<script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/dist/consumer/payscale-researchcenter.min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/lib/waypoints/3.1.0/lib/jquery.waypoints.min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/jquery/jquery-autocomplete.min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/researchCenter/relatedResearchReportRangeChart.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/researchCenter/rctngNavigation.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/rcCharts.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/casedControl.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/dist/consumer/common.min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/guiders/guiders-2.0.0.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/dist/consumer/header-footer.min.js"></script><script type="text/javascript" src="//cdn-payscale.com/resources/150825/js/dist/consumer/facebook.min.js"></script><script language="javascript" type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+                    <script>
+                    var startTime = new Date();
+                    function GetClientUTC()
+                    {
+                        var now = new Date();
+                        var offset = (now.getTimezoneOffset() / 60) * -1;
+                        return offset;
+                    }
+
+                    // Get our elapsed Time
+                    function checkLoadTime(){
+                        var endTime = new Date();
+                        var jsElapsedTime = endTime.getTime() - startTime.getTime();
+                        var url="/PerformanceLogger.aspx?clientTime=" + jsElapsedTime + "&serverTime=0&pageName=/404.aspx";
+                        $.ajax(url);
+                    }
+                    </script><script>var g_suppressJsErrors = false;</script><style type="text/css">.b{font-weight: bold;}.bb{border-bottom: 1px solid #ddd;}.bcff1b2a54{background-color: rgb(27,42,84);}.bcff2e5c8a{background-color: rgb(46,92,138);}.bcff990000{background-color: rgb(153,0,0);}.bcff9ebfda{background-color: rgb(158,191,218);}.bcffcc9999{background-color: rgb(204,153,153);}.brb{margin-top: -12px; background-color: #eee; border: none; height: 12px;}.c6{color: #666;}.di{display: inline;}.f10{font-size: 10px;}.f11{font-size: 11px;}.f9{font-size: 9px;}.fr{float:right;}.h8{height: 8px}.i{font-style: italic;}.lb{border-left: 1px solid #ddd;}.mdb{margin-top: -12px; background-image:url(//cdn-payscale.com/resources/150825/images/rclowdatabarchart.png);background-repeat:repeat; border-top:1px solid #8ebee0; border-bottom:1px solid #8ebee0; height:10px;}.ml0{margin-left: 0px}.ml108{margin-left: 108px}.ml109{margin-left: 109px}.ml35{margin-left: 35px}.ml54{margin-left: 54px}.n{font-weight: normal;}.nd{margin-top: -7px; margin-left: 5px;}.p2{padding: 2px 0px}.p9{padding: 9px 0px}.pa{position: absolute;}.pl23{padding-left: 23px}.pl5{padding-left: 5px}.pr{position: relative;}.pr10{padding-right: 10px;}.pt3{padding-top:3px}.rb{margin-top: -12px; background-image:url(//cdn-payscale.com/resources/150825/images/rcbarchart.png);background-repeat:repeat; border:none; height:12px;}.tlf{table-layout: fixed;}.tr{text-align: right;}.vm{vertical-align: middle}.vt{vertical-align: top}.w114{width: 114px}.w116{width: 116px}.w118{width: 118px}.w128{width: 128px}.w140{width: 140px}.w149{width: 149px}.w15{width: 15px}.w17{width: 17px}.w175{width: 175px}.w184{width: 184px}.w197{width: 197px}.w-2147483648{width: -2147483648px}.w222{width: 222px}.w237{width: 237px}.w273{width: 273px}.w31{width: 31px}.w34{width: 34px}.w35{width: 35px}.w36{width: 36px}.w50{width: 50px}.w525{width: 525px}.w600{width: 600px}.w64{width: 64px}.w65{width: 65px}.w8{width: 8px}.w90{width: 90px}.w91{width: 91px}th{font-weight: normal; text-align: left;}</style><script type='text/javascript'>var googletag = googletag || {};  googletag.cmd = googletag.cmd || []; (function() { var gads = document.createElement('script'); gads.async = true; gads.type = 'text/javascript'; var useSSL = 'https:' == document.location.protocol; gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js'; var node = document.getElementsByTagName('script')[0]; node.parentNode.insertBefore(gads, node); })();</script><script type='text/javascript'>googletag.cmd.push(function() {googletag.defineSlot('/1063747/PayScale_RC_Monster_Right-Column_300x250', [300,250], 'div-gpt-ad-payscale-0').addService(googletag.pubads()); googletag.defineSlot('/1063747/B2B_House_300x250_RC_Index', [300,250], 'div-gpt-ad-payscale-1').addService(googletag.pubads()); googletag.defineSlot('/1063747/PS_RC_top_728x90', [728,90], 'div-gpt-ad-payscale-2').addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.pubads().collapseEmptyDivs(); googletag.enableServices();googletag.pubads().setTargeting("jobTitle","Software Engineer").setTargeting("city","New York").setTargeting("state","New York").setTargeting("country","United States");});</script></head>
+    <body>
+        
+<!-- Google Tag Manager -->
+<noscript><iframe src='//www.googletagmanager.com/ns.html?id=GTM-P3CVWR'
+height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+<script>    (function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({ 'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-P3CVWR');</script>
+<!-- End Google Tag Manager -->
+
+
+        
+        <div id="rc_banner_ad" class="container-fluid banner-ad">
+            <div class="row payscale-header-background">
+              <div class="col-md-12">
+                <div class="center-block text-center"><div id="div-gpt-ad-payscale-2" style="width: 728px; height: 90px" class="center-block"><script type='text/javascript'>googletag.cmd.push(function () { googletag.display('div-gpt-ad-payscale-2'); });</script></div><h5>ADVERTISEMENT</h5></div>
+              </div>
+            </div>
+        </div>
+    
+
+
+        <span id="pageTop"></span>
+        <div id="ctl00__header">
+            
+            
+<span class="dynamicContentBegin hidden" data-content="/header-footer/header"></span><div id="psHeaderCon">
+  <div id="psHeader" class="menuStart">
+    <a href="/" class="ps-logo"><img src="//cdn-payscale.com/resources/150825/images/header/PS_logo_180x61.png" /></a>
+    <div class="menuToggle rightSideNav psMobile">
+      <img src="//cdn-payscale.com/resources/150825/images/header/hamburger.png" class="hamburger">
+      <img src="//cdn-payscale.com/resources/150825/images/header/x-black-16x16.png" class="xburger">
+    </div>
+    <ul class="psHeaderMenu">
+      <li id="personal" class="menuTop">
+        <a href="/mypayscale.aspx" class="menuLink">
+          <span id="psHeaderPersonal" class="menuItem">
+            PERSONAL
+            <span class="menuItemBlurb">What am I worth?</span>
+          </span>
+        </a>
+        <div class="flyout">
+          <div class="flyoutBody">
+            <div id="menuAdLeft" class="menuColumn whatsYourWorthAd">
+              <h3 class="whatsYourWorthHeadline">What are you worth?</h3>
+                <div class="whatsYourWorthText">
+                Find out what you
+                <br>
+                should be paid.
+              </div>
+              <a href="/startwizard.aspx?starttype=Header">
+                <span class="primaryButton">
+                  Get a Free <br>Salary Report
+                </span>
+              </a> 
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/mypayscale.aspx">Salary Reports</a>
+              </div>
+              <div class="navItem">
+                <a href="/mypayscale.aspx">Your Salary</a>
+              </div>
+              <div class="navItem">
+                <a href="/startwizard.aspx?startType=Header">Start New Survey</a>
+              </div>
+              <div class="navItem">
+                <a href="/linkedin">Import LinkedIn Profile</a>
+              </div>
+              <div class="navCategory">
+                <a href="/research/US/Country=United_States/Salary">Career Research</a>
+              </div>
+              <div class="navItem">
+                <a href="/research/US/Country=United_States/Salary">Employer &amp; Job Salaries</a>
+              </div>
+              <div class="navItem">
+                <a href="/gigzig.aspx">Career Path Explorer</a>
+              </div>
+              <div class="navItem">
+                <a href="/cost-of-living-calculator">Cost of Living Calculator</a>
+              </div>
+              <div class="navItem">
+                <a href="/career-goals">Career Goal Tracker</a>
+              </div>
+              <div class="navCategory">
+                <a href="/career-news">Career News Blog</a>
+              </div>
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/resources.aspx">Special Reports</a>
+              </div>
+              <div class="navItem">
+                <a href="/salary-negotiation-guide">Salary Negotiation Guide</a>
+              </div>
+              <div class="navItem">
+                <a href="/payscale-index/">The PayScale Index</a>
+              </div>
+              <div class="navItem">
+                <a href="/data-packages">Data Packages</a>
+              </div>
+              <div class="navItem">
+                <a href="/data-visualizations">Data Visualizations</a>
+              </div>
+
+              <div class="navCategory">
+                <a href="/education">Education</a>
+              </div>
+              <div class="navItem">
+                <a href="/college-roi/">College ROI Report</a>
+              </div>
+              <div class="navItem">
+                <a href="/college-salary-report">College Salary Report</a>
+              </div>
+              <div class="navCategory">
+                <a href="/Job-Search-Engine">Find Jobs</a>
+              </div>
+            </div>
+            <div id="menuAdRight" class="menuColumn whatsYourWorthAd">              
+                <h3 class="whatsYourWorthHeadline">What are you worth?</h3>
+                <div class="whatsYourWorthText">
+                  Find out what you
+                  <br>
+                  should be paid.
+                </div>
+                <a href="/startwizard.aspx?starttype=Header">
+                  <span class="primaryButton">
+                    Get a Free <br>Salary Report
+                  </span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="business" class="menuTop">
+        <a href="/hr" class="menuLink">
+          <span id="psHeaderBusiness" class="menuItem">
+            BUSINESS<span class="menuItemBlurb">What should I pay?</span>
+          </span>
+        </a>
+        <div class="flyout">
+          <div class="flyoutBody">
+            <div id="menuAdLeft" class="menuColumn latestCompTrendsAd">
+              <a href="http://resources.payscale.com/hr-2014-compensation-practices-report.html">
+                <img width="237" height="303" alt="Download the Compensation Best Practices Report and make sure to keep your top employees" src="//www.payscale.com/content/header-footer/comp-trends-ad-grey.jpg">
+              </a>
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/hr">Compensation Software</a>
+              </div>
+              <div class="navItem">
+                <a href="/hr/videos">Tour</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/product-insight-expert">Products</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/customers">Customers</a>
+              </div>
+              <div class="navCategory">
+                <a href="/industries">Industries</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/partners">Partners</a>
+              </div>
+               <div class="navCategory">
+                <a href="/hr/services">Services</a>
+              </div>
+
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/hr/resources">Resources</a>
+              </div>
+              <div class="navItem">
+                <a href="/hr/resources">Compensation Resources</a>
+              </div>
+              <div class="navItem">
+                <a href="/hr/product-how-it-works">Methodology</a>
+              </div>
+              <div class="navItem">
+                <a href="/cbpr">Best Practices Research</a>
+              </div>
+
+              <div class="navCategory">
+                <a href="/compensation-today">Blog</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/startwizard?starttype=Header">Price a Job</a>
+              </div>
+              <div class="navCategory">
+                <a href="http://resources.payscale.com/hr-request-a-demo.html">Demo</a>
+              </div>
+              <div class="navCategory">
+                <a href="/hr/whypayscale/support">Support</a>
+              </div>
+            </div>
+            <div id="menuAdRight" class="menuColumn latestCompTrendsAd">
+              <a href="http://www.payscale.com/cbpr">
+                <img width="237" height="303" alt="Download 2015 Compensation Best Practices Report" src="//cdn-payscale.com/cms-images/default-source/b2b/img_2015cbpr_navigation_ad.jpg?sfvrsn=2">
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="about" class="menuTop">
+        <a href="/about" class="menuLink">
+          <span id="psHeaderAbout" class="menuItem">
+            ABOUT<span class="menuItemBlurb">Who we are.</span>
+          </span>
+        </a>
+        <div class="flyout">
+          <div class="flyoutBody">
+            <div id="menuAdLeft" class="menuColumn compVideoAd">
+              <a href="/hr/videos">
+                <img alt="Take a tour of PayScale!" width="243" height="135" src="//cdn-payscale.com/cms-images/default-source/b2b/img_video.png?sfvrsn=2">
+              </a>
+                <p class="compVideoAdBlurb">
+                  Got a minute?
+                </p>
+              </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/about">Who We Are</a>
+              </div>
+              <div class="navItem">
+                <a href="/about/management-team">Executive Team</a>
+              </div>
+              <div class="navItem">
+                <a href="/about/board-of-directors">Board of Directors</a>
+              </div>
+              <div class="navItem">
+                <a href="/about/board-of-advisors">Economic Advisors</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/methodology">Methodology</a>
+              </div>
+              <div class="navCategory linkJobListing">
+                <a href="/about/jobs">Work For Us</a>
+              </div>
+            </div>
+            <div class="menuColumn">
+              <div class="navCategory">
+                <a href="/about/latest-news">PayScale in the News</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/press-releases">Press Releases</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/press-kit">Press Kit</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/use-our-data">Use Our Data</a>
+              </div>
+              <div class="navCategory">
+                <a href="/about/contact">Contact</a>
+              </div>
+            </div>
+            <div id="menuAdRight" class="menuColumn whatsYourWorthAd">
+              <a href="/hr/videos">
+                <img alt="Take a tour of PayScale!" width="243" height="135" src="//cdn-payscale.com/cms-images/default-source/b2b/img_video.png?sfvrsn=2">
+              </a>
+              <p class="compVideoAdBlurb">
+                Got a minute?
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li id="phone" class="rightSideNav menuTop">
+        <a href="tel:+1-888-219-0327" style="display:block; width=100%;">
+          <span id="psHeaderPhoneCon" class="menuItemStatic">
+            <div class="telephone"></div>
+            <span>1.888.219.0327</span>
+          </span>
+        </a>
+      </li>
+      <li id="loggedin" class="rightSideNav menuTop loginOption out">
+        <span id="loginContainer" class="menuItemStatic" >
+          <a href="/login.aspx" class="menuLink allowNav">
+            <span>LOGIN</span>
+          </a>
+        </span>
+      </li>
+        <li id="loggedout" class="rightSideNav menuTop loginOption in">
+        <span id="loggedInContainer" class="menuItemStatic menuLink">
+          <div class="star"></div>
+          <span id="loggedInUsername"></span>
+        </span>
+            <div class="smallMenu" style="width: 150px">
+                <div class="smallMenuBody" id="loginMenuBusiness">
+                    <div>
+                        <a href="/redir.aspx?site=insight&url=/dashboard.aspx">My Dashboard</a>
+                    </div>
+                    <div style="min-height: 10px;">
+                    </div>
+                    <div>
+                        <a href="/mypayscale.aspx">My Salary Reports</a>
+                    </div>
+                    <div>
+                        <a href="/myaccount.aspx">My Account</a>
+                    </div>
+
+                    <div>
+                        <a href="/logout.aspx">Log Out</a>
+                    </div>
+                </div>
+
+                <div class="smallMenuBody" id="loginMenuPersonal">
+                    <div>
+                        <a href="/mypayscale.aspx">My Salary Reports</a>
+                    </div>
+                    <div>
+                        <a href="/myaccount.aspx">My Account</a>
+                    </div>
+                    <div>
+                        <a href="/logout.aspx">Log Out</a>
+                    </div>
+                </div>
+
+                <div class="smallMenuBody" id="loginMenuAbout">
+                    <div>
+                        <a href="/mypayscale.aspx">My Salary Reports</a>
+                    </div>
+                    <div>
+                        <a href="/myaccount.aspx">My Account</a>
+                    </div>
+                    <div>
+                        <a href="/logout.aspx">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+  <div class="headerBottomBorder"></div>
+</div>
+<span class="dynamicContentEnd hidden" data-content="/header-footer/header"></span>
+<script>
+    window.pageType = 1;
+</script>
+
+        </div>
+
+        
+        
+
+        
+    <!-- AnswerValues:Software Engineer;New York, NY (US);Salary -->
+    
+    <style>
+        .payRange, .medianClear, .medianHeader, .payOverTimeDashed {
+            display: none;
+        }
+
+        a.guiders_button {
+            color: white;
+            font-size: 100%;
+        }
+
+        @media handheld, screen and (max-width: 501px) {
+            #divAddChart {
+                display: none;
+            }
+        }
+    </style>
+    <div class="container">
+        <span class="dynamicContentBegin hidden" data-content="rc_modal_clouds"></span>
+<div class="abTestControl hidden" data-abtest-name="ForceModalSurveyStart-2015-07" data-abtest-condition="PS.rcModal.shouldRunTest">
+    <div class="abTestItem" data-abtestitem-weight="50" data-abtestitem-versioncode="ForceModalOff"> 
+    </div>
+    <div class="abTestItem" data-abtestitem-weight="50" data-abtestitem-versioncode="ForceModalOn" data-abtestitem-javascript="$('#rc_modal_clouds').modal({ backdrop: 'static' })"> 
+    </div>
+</div>
+
+<div class="modal" id="rc_modal_clouds" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close" onClick="PS.rcModal.logToGa('RCModal072015_Close');">
+								<span aria-hidden="true">&times;</span>
+							</button>
+                <h2>Get more out of PayScale!</h2>
+            </div>
+            <div class="modal-body clearfix">         
+                <div class="pull-left sprite-poptop-cloud-left">
+                    <div>What am I worth?</div>
+                    <a href="/wizards/choose.aspx?TK=RCModal072015" class="btn" onClick="PS.rcModal.logToGa('RCModal072015_Consumer');">Get a free salary report &raquo;</a>
+                </div>
+                <div class="pull-left sprite-poptop-cloud-right">
+                    <div>What should I pay?</div>
+                    <a href="/hr/startwizard?src=RCModal072015" class="btn" onClick="PS.rcModal.logToGa('RCModal072015_B2B');">Pay the right way &raquo;</a>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script type="text/javascript">
+	$(function () {
+	// window.readCookie and window.createCookie are defined in cookies.js, bundled in payscale-researchCenter.js
+
+	function logToGa(label) {
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({
+	'event': 'interactiveEvent',
+	'eventCategory': 'RC Popup',
+	'eventAction': 'RC Modal Clouds Click',
+	'eventLabel': label
+	});
+	}
+
+	var cookieValue = window.readCookie("rcPagesSeen");
+	var pagesSeenSoFar = cookieValue ? (parseInt(cookieValue) + 1) : 1;
+	window.createCookie("rcPagesSeen", pagesSeenSoFar);
+	var onFifthPage = (pagesSeenSoFar == 5);
+
+	window.PS = window.PS || {};
+	window.PS.rcModal = { shouldRunTest: onFifthPage, logToGa: logToGa };
+	});
+</script>
+<span class="dynamicContentEnd hidden" data-content="rc_modal_clouds"></span>
+        <span class="dynamicContentBegin hidden" data-content="rc_poptop_clouds"></span>
+<span class="casedControl hidden">
+    <span class="casedControlItem" data-casedcontrol-rule="Cookie" data-casedcontrol-value="jar%2Elong.sawrcpopup=true"></span>
+    <span class="casedControlItem" data-casedcontrol-rule="Crawler"></span>
+    <span class="casedControlItem" data-casedcontrol-rule="Cookie" data-casedcontrol-value="sawrcpopup=true"></span>
+    <span class="casedControlItem default" data-casedcontrol-rule="default" data-cookie-name="sawrcpopup" data-cookie-value="true" data-casedcontrol-javascript=" window.dataLayer = window.dataLayer || []; window.dataLayer.push({ 'event': 'nonInteractiveEvent', 'eventCategory': 'RC Popup', 'eventAction': 'RC Popup Optimization', 'eventLabel': 'RCPopTop122014_Shown' }); if(typeof repositionGuider !== 'undefined') { updateGuiderPosition = setTimeout(repositionGuider, 100); }">  
+        <div class="row">
+            <div class="col-md-12">
+                <div id="rc_poptop_clouds">
+                    <div class="collapse-clouds">
+                        <div class="pull-right"><a href="javascript:void(0);" onClick="collapsePopTop('#rc_poptop_clouds');">[collapse]</a></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                    <div class="clouds-bg"></div>
+                    
+                    <div class="clouds">    
+                        <div class="pull-left sprite-poptop-cloud-left">
+                            <div>What am I worth?</div>
+                            <a href="/wizards/choose.aspx?TK=RCPopTop122014" class="btn" onClick="registerPopupToGa('RCPopTop122014_Consumer');">Get a free salary report &raquo;</a>
+                        </div>
+                        <div class="pull-left sprite-poptop-cloud-right">
+                            <div>What should I pay?</div>
+                            <a href="/hr/startwizard?src=RCPopTop122014" class="btn" onClick="registerPopupToGa('RCPopTop122014_B2B');">Pay the right way &raquo;</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>        
+        function collapsePopTop(id) {
+            $(id).hide();
+            return false;
+        }
+
+        function registerPopupToGa(value, nonInteractive) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ 
+                'event': 'interactiveEvent', 
+                'eventCategory': 'RC Popup', 
+                'eventAction': 'RC Popup Optimization', 
+                'eventLabel': value 
+            });
+        }
+        </script>
+    </span>
+</span><span class="dynamicContentEnd hidden" data-content="rc_poptop_clouds"></span>
+        
+
+<div class="hidden-xs">
+    <form id="rcSearchBar" action="/rcsearch.aspx" method="get" name="upwiz">
+        <div class="well margin-bottom-none">
+            <div class="row">
+                <div id="rcSearchDropDown" class="col-md-3">
+                    <div class="btn-group dropdown-block">
+                        <a data-toggle="dropdown" class="btn btn-default btn-block dropdown-toggle" id="rcSearchDropDownBtn">
+                            <span id="rcSearchDropDownText" class="pull-left">All</span>
+                            <div class="pull-right"><span class="caret"></span></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul class="dropdown-menu rcSearchDDList">
+                            <li title="All" data-val=""><a href="#">All</a></li>
+                            <li title="Jobs" data-val="Job"><a href="#">Jobs</a></li>
+                            <li title="Employers" data-val="Employer Name"><a href="#">Employers</a></li>
+                            <li title="Schools" data-val="School Name"><a href="#">Schools</a></li>
+                            <li title="Degrees" data-val="Degree/Major Subject"><a href="#">Degrees</a></li>
+                        </ul>
+                    </div>
+                    <input id="categoryDropdown" type="hidden" name="category" value="" />
+                    <span class="hidden-lg hidden-md">&nbsp;</span>
+                </div>
+                <div class="col-md-6">
+                    <input name="ctl00$mainContent$RCSearch$ctl00" type="text" class="form-control searchInput" autocomplete="off" />
+                    <span class="hidden-lg hidden-md">&nbsp;</span>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary btn-block">Search</button>
+                </div>
+                <input type="hidden" name="CountryName" value='United States' />
+                <input type="hidden" name="SourceId" value='' />
+            </div>
+        </div>
+    </form>
+
+    <div id="RCSearchBrowse" class="text-right margin-bottom">
+        <a href="/index/US">Browse Categories</a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <h1>
+                    Software Engineer
+                    Salary
+                in
+                    New York
+                    
+                    
+                    <div class="btn-group h1-btn-group top">
+                        <a class="btn btn-link dropdown-toggle" id="countryDropdown" data-toggle="dropdown">(United States)</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="countryDropdown">
+                            <li><a href="/research/US/Country=United_States/Salary">United States Home</a></li>
+                            <li><a href="/rccountries.aspx">Change Country</a></li>
+                            <li class="divider"></li>
+                            <li role="presentation"><a href="/wizards/choose.aspx">Don't see what you are looking for?<br />
+                                <strong>Get A Free Custom Salary Report &raquo;</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </h1>
+
+                <p id="ctl00_mainContent_m_summaryText_generatedText" class="">The average Software Engineer in New York  can expect to rake in roughly $88K per year.  In the world of New York Software Engineers, total cash compensation can vary between $60K and $130K. Each package generally includes bonuses and profit sharing proceeds, and in exceptional cases, those amounts can reach heights of $20K and $18K, respectively.  Career length and the company each impact pay for this group, with the former having the largest influence.  Most Software Engineers in New York, N.Y. report high levels of job satisfaction.  Medical benefits are awarded to a large number, and a fair number earn dental coverage.  The figures in this overview were provided by individuals who took PayScale's salary questionnaire.</p>
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                        <!--Bootstrap 3 Modal Dialog - Survey Start -->
+                        <div class="yearly">
+                            <div id="ctl00_mainContent_m_payOverTime_m_payRange_m_literalDiv" class="payRange">
+    $59,388 - $122,400
+</div>
+
+    <div class="bottom_dashed payOverTimeDashed" style="min-height: 9px; margin-bottom: 3px;"></div>
+
+
+<div class="abTestControl hidden" data-abtest-name="ArrowChartModal_ctl00_mainContent_m_payOverTime_ctl00">
+    <!-- A Case: Normal -->
+    <div class="abTestItem" data-abtestitem-weight="50" data-abtestitem-versioncode="original">
+        <div id="ctl00_mainContent_m_payOverTime_ctl00_Div3" class="results-salary">
+            <div class="clip-children">
+                <div class="ticklines-header">
+                    <div class="clear" style="min-height: 5px;">
+                    </div>
+                    <div class="head-block">
+                        <div class="tickheader medianHeader">
+                            <div class="ticker" style="left: 64.53%;">
+                                <div class="ticker_text" style="left: -23px;">
+                                    (Median)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear medianClear" style="min-height: 20px;">
+                    </div>
+                    <div class="head-block">
+                        <div class="tickheader">
+                            
+                        </div>
+                    </div>
+                    <div class="clear" style="min-height: 54px;">
+                    </div>
+                </div>
+                <div class="results-table">
+                    <div class="linepane">
+                        <div class="line" style="left: 0%">
+                        </div>
+                        <div class="whiteline" style="left: 64.53%">
+                        </div>
+                        <div class="you_star_container" style="left: 64.53%;">
+                            <div class="you_star">
+                            </div>
+                        </div>
+                        <div class="you_label_arrow" style="left: 64.53%;">
+                            <div class="you_label" style="left: -50%;">
+                                MEDIAN:&nbsp;$87,763
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="stripe">
+                            <div class="salary-info">
+                                <div class="graph">
+                                    
+                                    <div class="box stripe10to25percent" style="left: 43.67%;
+                                        width: 8.70%">
+                                    </div>
+                                    
+                                    <div class="box stripe25to75percent" style="left: 52.37%;
+                                        width: 23.64%">
+                                    </div>
+                                    
+                                    <div class="box stripe75to90percent" style="left: 76.01%;
+                                        width: 13.99%">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-right">
+                </div>
+                <div class="clear">
+                </div>
+                <div class="ticklines-header">
+                    <div class="head-block">
+                        <div class="tickheader">
+                            
+                        </div>
+                    </div>
+                    <div class="clear" style="min-height: 20px;">
+                    </div>
+                </div>
+                <div class="clear bottomClear" style="min-height: 10px;">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- B Case: Modal popup -->
+    <div class="abTestItem" data-abtestitem-weight="50" data-abtestitem-versioncode="ModalPopup">
+        <a href="#surveyStartModal" data-toggle="modal">
+            <div id="ctl00_mainContent_m_payOverTime_ctl00_Div1" class="results-salary">
+                <div class="clip-children">
+                    <div class="ticklines-header">
+                        <div class="clear" style="min-height: 5px;">
+                        </div>
+                        <div class="head-block">
+                            <div class="tickheader medianHeader">
+                                <div class="ticker" style="left: 64.53%;">
+                                    <div class="ticker_text" style="left: -23px;">
+                                        (Median)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear medianClear" style="min-height: 20px;">
+                        </div>
+                        <div class="head-block">
+                            <div class="tickheader">
+                                
+                            </div>
+                        </div>
+                        <div class="clear" style="min-height: 54px;">
+                        </div>
+                    </div>
+                    <div class="results-table">
+                        <div class="linepane">
+                            <div class="line" style="left: 0%">
+                            </div>
+                            <div class="whiteline" style="left: 64.53%">
+                            </div>
+                            <div class="you_star_container" style="left: 64.53%;">
+                                <div class="you_star">
+                                </div>
+                            </div>
+                            <div class="you_label_arrow" style="left: 64.53%;">
+                                <div class="you_label" style="left: -50%;">
+                                    MEDIAN:&nbsp;$87,763
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="stripe">
+                                <div class="salary-info">
+                                    <div class="graph">
+                                        
+                                        <div class="box stripe10to25percent" style="left: 43.67%;
+                                            width: 8.70%">
+                                        </div>
+                                        
+                                        <div class="box stripe25to75percent" style="left: 52.37%;
+                                            width: 23.64%">
+                                        </div>
+                                        
+                                        <div class="box stripe75to90percent" style="left: 76.01%;
+                                            width: 13.99%">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-right">
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div class="ticklines-header">
+                        <div class="head-block">
+                            <div class="tickheader">
+                                
+                            </div>
+                        </div>
+                        <div class="clear" style="min-height: 20px;">
+                        </div>
+                    </div>
+                    <div class="clear bottomClear" style="min-height: 10px;">
+                    </div>
+                </div>
+            </div>
+            
+        </a>
+    </div>
+</div>
+
+    <p class="small" id="divAddChart">
+        Add this chart to your site: 
+                <a id="syndicateTotalPayLink" href="javascript:void(0);" rel="nofollow" class="small syndicateTotalPayLinkLarge">
+                    <img width="16" height="16" border="0" style="vertical-align: bottom;" alt="" src="//cdn-payscale.com/resources/150825/images/embedicon.png">
+                    640px
+                </a>&nbsp;&nbsp;
+                <a id="syndicateTotalPayLink2" href="javascript:void(0);" rel="nofollow" class="small syndicateTotalPayLinkSmall">
+                    <img width="16" height="16" border="0" style="vertical-align: bottom;" alt="" src="//cdn-payscale.com/resources/150825/images/embedicon.png">
+                    300px
+                </a>
+        <span id="syndicateTotalPayChartHelpText" style="display: none;" class="small togglableCopyText">&nbsp;Copy and paste this HTML:</span><br />
+        <span id="syndicateTotalPayChartInput" style="display: none;" class="togglableCopyText">
+            <input onclick="this.select()" id="syndicateTotalPayChart" value="" class="form-control syndicateTotalPayChartInput" />
+        </span>
+    </p>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.syndicateTotalPayLinkLarge').click(function () {
+            $('.togglableCopyText').show();
+
+            var copyText = '';
+            if (($('.yearly') == null) || ($('.yearly').css('display') === 'none')) {
+                //Hourly Data
+                copyText = '&lt;div style=&quot;width:628px; border: 1px solid #cecece; font-family: &#39;Open Sans&#39;; padding:10px 0px 10px 10px;&quot;&gt;&lt;div style=&quot;font-size:20px; text-align: center;&quot;&gt;&lt;a style=&quot;text-decoration: none; color:#0066cc;&quot; target=&quot;_blank&quot; href=&quot;http://www.payscale.com/research/US/Job=Software_Engineer/Salary/df029197/New-York-NY&quot;&gt;Software Engineer in New York, New York Salary&lt;/a&gt; (United States)&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.payscale.com/syndication/total_pay_chart.aspx?js=&amp;country=United+States&amp;city=New+York&amp;state=New+York&amp;job=Software+Engineer&amp;company=&amp;width=628px&amp;showhourly=1&amp;chartTNG=1&amp;showfooter=1&amp;reportid=df029197&amp;skills=&amp;explvl=&quot;&gt;&lt;/script&gt;&lt;div style=&quot;float: right; padding-right: 12px;&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/small_logo_transparent.png&quot; alt=&quot;PayScale&quot; width=&quot;75&quot; height=&quot;25&quot; /&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px; padding-top: 9px; font-style: italic; color: #333;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Compare your salary. &lt;a href=&quot;http://www.payscale.com/wizards/choose.aspx&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; text-decoration: none;&quot;&gt;Get a FREE salary report &amp;raquo;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;';
+            }
+            else {
+                //Yearly data
+                copyText = '&lt;div style=&quot;width:628px; border: 1px solid #cecece; font-family: &#39;Open Sans&#39;; padding:10px 0px 10px 10px;&quot;&gt;&lt;div style=&quot;font-size:20px; text-align: center;&quot;&gt;&lt;a style=&quot;text-decoration: none; color:#0066cc;&quot; target=&quot;_blank&quot; href=&quot;http://www.payscale.com/research/US/Job=Software_Engineer/Salary/df029197/New-York-NY&quot;&gt;Software Engineer in New York, New York Salary&lt;/a&gt; (United States)&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.payscale.com/syndication/total_pay_chart.aspx?js=&amp;country=United+States&amp;city=New+York&amp;state=New+York&amp;job=Software+Engineer&amp;company=&amp;width=628px&amp;chartTNG=1&amp;showfooter=1&amp;reportid=df029197&amp;skills=&amp;explvl=&quot;&gt;&lt;/script&gt;&lt;div style=&quot;float: right; padding-right: 12px;&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/small_logo_transparent.png&quot; alt=&quot;PayScale&quot; width=&quot;75&quot; height=&quot;25&quot; /&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px; padding-top: 9px; font-style: italic; color: #333;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Compare your salary. &lt;a href=&quot;http://www.payscale.com/wizards/choose.aspx&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; text-decoration: none;&quot;&gt;Get a FREE salary report &amp;raquo;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;';
+            }
+
+            copyText = unescapeHtml(copyText);
+
+            $('.syndicateTotalPayChartInput').val(copyText);
+
+            //keep track of what is clicked last in order to display accurate info when toggling between hourly and yearly data
+            lastClicked = 'large';
+        });
+
+        $('.syndicateTotalPayLinkSmall').click(function () {
+            $('.togglableCopyText').show();
+
+            var copyText = '';
+            if (($('.yearly') == null) || ($('.yearly').css('display') === 'none')) {
+                //Hourly Data
+                copyText = '&lt;div style=&quot;width:278px; border: 1px solid #cecece; font-family: &#39;Open Sans&#39;; padding: 10px;&quot;&gt;&lt;div style=&quot;font-size:18px; text-align: center;&quot;&gt;&lt;a style=&quot;text-decoration: none; color:#0066cc;&quot; target=&quot;_blank&quot; href=&quot;http://www.payscale.com/research/US/Job=Software_Engineer/Salary/df029197/New-York-NY&quot;&gt;Software Engineer&lt;/a&gt; (United States)&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.payscale.com/syndication/total_pay_chart.aspx?js=&amp;country=United+States&amp;city=New+York&amp;state=New+York&amp;job=Software+Engineer&amp;company=&amp;width=278px&amp;showhourly=1&amp;chartTNG=1&amp;reportid=df029197&amp;skills=&amp;explvl=&quot;&gt;&lt;/script&gt;&lt;table style=&quot;width: 99%;&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;Compare your salary.&lt;br /&gt;&lt;a href=&quot;http://www.payscale.com/wizards/choose.aspx&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; text-decoration: none; font-size: 13px;&quot;&gt;Get a FREE salary report &amp;raquo;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;div style=&quot;padding-top: 10px; padding-left: 15px;&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/small_logo_transparent.png&quot; alt=&quot;PayScale&quot; width=&quot;75&quot; height=&quot;25&quot; /&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;';
+            }
+            else {
+                //Yearly data
+                copyText = '&lt;div style=&quot;width:278px; border: 1px solid #cecece; font-family: &#39;Open Sans&#39;; padding: 10px;&quot;&gt;&lt;div style=&quot;font-size:18px; text-align: center;&quot;&gt;&lt;a style=&quot;text-decoration: none; color:#0066cc;&quot; target=&quot;_blank&quot; href=&quot;http://www.payscale.com/research/US/Job=Software_Engineer/Salary/df029197/New-York-NY&quot;&gt;Software Engineer&lt;/a&gt; (United States)&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.payscale.com/syndication/total_pay_chart.aspx?js=&amp;country=United+States&amp;city=New+York&amp;state=New+York&amp;job=Software+Engineer&amp;company=&amp;width=278px&amp;chartTNG=1&amp;reportid=df029197&amp;skills=&amp;explvl=&quot;&gt;&lt;/script&gt;&lt;table style=&quot;width: 99%;&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;Compare your salary.&lt;br /&gt;&lt;a href=&quot;http://www.payscale.com/wizards/choose.aspx&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; text-decoration: none; font-size: 13px;&quot;&gt;Get a FREE salary report &amp;raquo;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;div style=&quot;padding-top: 10px; padding-left: 15px;&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/small_logo_transparent.png&quot; alt=&quot;PayScale&quot; width=&quot;75&quot; height=&quot;25&quot; /&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;';
+            }
+
+            copyText = unescapeHtml(copyText);
+
+            $('.syndicateTotalPayChartInput').val(copyText);
+
+            //track what was clicked last in order to display accurate info when switching between hourly/yearly data
+            lastClicked = 'small';
+        });
+    });
+
+    function unescapeHtml(text) {
+        return text.replace(/&amp;/g, '&')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, "'")
+            .replace(/&#039;/g, "'");
+    }
+</script>
+
+                        </div>
+                        <div class="hourly">
+                            <div id="ctl00_mainContent_m_payOverTime_hourly_m_payRange_m_literalDiv" class="payRange">
+    $19.49 - $101.37
+</div>
+
+    <div class="bottom_dashed payOverTimeDashed" style="min-height: 9px; margin-bottom: 3px;"></div>
+
+
+<div class="abTestControl hidden" data-abtest-name="ArrowChartModal_ctl00_mainContent_m_payOverTime_hourly_ctl00">
+    <!-- A Case: Normal -->
+    <div class="abTestItem" data-abtestitem-weight="50" data-abtestitem-versioncode="original">
+        <div id="ctl00_mainContent_m_payOverTime_hourly_ctl00_Div3" class="results-salary">
+            <div class="clip-children">
+                <div class="ticklines-header">
+                    <div class="clear" style="min-height: 5px;">
+                    </div>
+                    <div class="head-block">
+                        <div class="tickheader medianHeader">
+                            <div class="ticker" style="left: 42.44%;">
+                                <div class="ticker_text" style="left: -23px;">
+                                    (Median)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear medianClear" style="min-height: 20px;">
+                    </div>
+                    <div class="head-block">
+                        <div class="tickheader">
+                            
+                        </div>
+                    </div>
+                    <div class="clear" style="min-height: 54px;">
+                    </div>
+                </div>
+                <div class="results-table">
+                    <div class="linepane">
+                        <div class="line" style="left: 0%">
+                        </div>
+                        <div class="whiteline" style="left: 42.44%">
+                        </div>
+                        <div class="you_star_container" style="left: 42.44%;">
+                            <div class="you_star">
+                            </div>
+                        </div>
+                        <div class="you_label_arrow" style="left: 42.44%;">
+                            <div class="you_label" style="left: -50%;">
+                                MEDIAN:&nbsp;$47.00
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="stripe">
+                            <div class="salary-info">
+                                <div class="graph">
+                                    
+                                    <div class="box stripe10to25percent" style="left: 17.30%;
+                                        width: 9.33%">
+                                    </div>
+                                    
+                                    <div class="box stripe25to75percent" style="left: 26.64%;
+                                        width: 31.08%">
+                                    </div>
+                                    
+                                    <div class="box stripe75to90percent" style="left: 57.71%;
+                                        width: 32.29%">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-right">
+                </div>
+                <div class="clear">
+                </div>
+                <div class="ticklines-header">
+                    <div class="head-block">
+                        <div class="tickheader">
+                            
+                        </div>
+                    </div>
+                    <div class="clear" style="min-height: 20px;">
+                    </div>
+                </div>
+                <div class="clear bottomClear" style="min-height: 10px;">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- B Case: Modal popup -->
+    <div class="abTestItem" data-abtestitem-weight="50" data-abtestitem-versioncode="ModalPopup">
+        <a href="#surveyStartModal" data-toggle="modal">
+            <div id="ctl00_mainContent_m_payOverTime_hourly_ctl00_Div1" class="results-salary">
+                <div class="clip-children">
+                    <div class="ticklines-header">
+                        <div class="clear" style="min-height: 5px;">
+                        </div>
+                        <div class="head-block">
+                            <div class="tickheader medianHeader">
+                                <div class="ticker" style="left: 42.44%;">
+                                    <div class="ticker_text" style="left: -23px;">
+                                        (Median)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear medianClear" style="min-height: 20px;">
+                        </div>
+                        <div class="head-block">
+                            <div class="tickheader">
+                                
+                            </div>
+                        </div>
+                        <div class="clear" style="min-height: 54px;">
+                        </div>
+                    </div>
+                    <div class="results-table">
+                        <div class="linepane">
+                            <div class="line" style="left: 0%">
+                            </div>
+                            <div class="whiteline" style="left: 42.44%">
+                            </div>
+                            <div class="you_star_container" style="left: 42.44%;">
+                                <div class="you_star">
+                                </div>
+                            </div>
+                            <div class="you_label_arrow" style="left: 42.44%;">
+                                <div class="you_label" style="left: -50%;">
+                                    MEDIAN:&nbsp;$47.00
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="stripe">
+                                <div class="salary-info">
+                                    <div class="graph">
+                                        
+                                        <div class="box stripe10to25percent" style="left: 17.30%;
+                                            width: 9.33%">
+                                        </div>
+                                        
+                                        <div class="box stripe25to75percent" style="left: 26.64%;
+                                            width: 31.08%">
+                                        </div>
+                                        
+                                        <div class="box stripe75to90percent" style="left: 57.71%;
+                                            width: 32.29%">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-right">
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div class="ticklines-header">
+                        <div class="head-block">
+                            <div class="tickheader">
+                                
+                            </div>
+                        </div>
+                        <div class="clear" style="min-height: 20px;">
+                        </div>
+                    </div>
+                    <div class="clear bottomClear" style="min-height: 10px;">
+                    </div>
+                </div>
+            </div>
+            
+        </a>
+    </div>
+</div>
+
+    <p class="small" id="divAddChart">
+        Add this chart to your site: 
+                <a id="syndicateTotalPayLink" href="javascript:void(0);" rel="nofollow" class="small syndicateTotalPayLinkLarge">
+                    <img width="16" height="16" border="0" style="vertical-align: bottom;" alt="" src="//cdn-payscale.com/resources/150825/images/embedicon.png">
+                    640px
+                </a>&nbsp;&nbsp;
+                <a id="syndicateTotalPayLink2" href="javascript:void(0);" rel="nofollow" class="small syndicateTotalPayLinkSmall">
+                    <img width="16" height="16" border="0" style="vertical-align: bottom;" alt="" src="//cdn-payscale.com/resources/150825/images/embedicon.png">
+                    300px
+                </a>
+        <span id="syndicateTotalPayChartHelpText" style="display: none;" class="small togglableCopyText">&nbsp;Copy and paste this HTML:</span><br />
+        <span id="syndicateTotalPayChartInput" style="display: none;" class="togglableCopyText">
+            <input onclick="this.select()" id="syndicateTotalPayChart" value="" class="form-control syndicateTotalPayChartInput" />
+        </span>
+    </p>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.syndicateTotalPayLinkLarge').click(function () {
+            $('.togglableCopyText').show();
+
+            var copyText = '';
+            if (($('.yearly') == null) || ($('.yearly').css('display') === 'none')) {
+                //Hourly Data
+                copyText = '&lt;div style=&quot;width:628px; border: 1px solid #cecece; font-family: &#39;Open Sans&#39;; padding:10px 0px 10px 10px;&quot;&gt;&lt;div style=&quot;font-size:20px; text-align: center;&quot;&gt;&lt;a style=&quot;text-decoration: none; color:#0066cc;&quot; target=&quot;_blank&quot; href=&quot;http://www.payscale.com/research/US/Job=Software_Engineer/Salary/df029197/New-York-NY&quot;&gt;Software Engineer in New York, New York Salary&lt;/a&gt; (United States)&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.payscale.com/syndication/total_pay_chart.aspx?js=&amp;country=United+States&amp;city=New+York&amp;state=New+York&amp;job=Software+Engineer&amp;company=&amp;width=628px&amp;showhourly=1&amp;chartTNG=1&amp;showfooter=1&amp;reportid=df029197&amp;skills=&amp;explvl=&quot;&gt;&lt;/script&gt;&lt;div style=&quot;float: right; padding-right: 12px;&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/small_logo_transparent.png&quot; alt=&quot;PayScale&quot; width=&quot;75&quot; height=&quot;25&quot; /&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px; padding-top: 9px; font-style: italic; color: #333;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Compare your salary. &lt;a href=&quot;http://www.payscale.com/wizards/choose.aspx&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; text-decoration: none;&quot;&gt;Get a FREE salary report &amp;raquo;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;';
+            }
+            else {
+                //Yearly data
+                copyText = '&lt;div style=&quot;width:628px; border: 1px solid #cecece; font-family: &#39;Open Sans&#39;; padding:10px 0px 10px 10px;&quot;&gt;&lt;div style=&quot;font-size:20px; text-align: center;&quot;&gt;&lt;a style=&quot;text-decoration: none; color:#0066cc;&quot; target=&quot;_blank&quot; href=&quot;http://www.payscale.com/research/US/Job=Software_Engineer/Salary/df029197/New-York-NY&quot;&gt;Software Engineer in New York, New York Salary&lt;/a&gt; (United States)&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.payscale.com/syndication/total_pay_chart.aspx?js=&amp;country=United+States&amp;city=New+York&amp;state=New+York&amp;job=Software+Engineer&amp;company=&amp;width=628px&amp;chartTNG=1&amp;showfooter=1&amp;reportid=df029197&amp;skills=&amp;explvl=&quot;&gt;&lt;/script&gt;&lt;div style=&quot;float: right; padding-right: 12px;&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/small_logo_transparent.png&quot; alt=&quot;PayScale&quot; width=&quot;75&quot; height=&quot;25&quot; /&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px; padding-top: 9px; font-style: italic; color: #333;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Compare your salary. &lt;a href=&quot;http://www.payscale.com/wizards/choose.aspx&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; text-decoration: none;&quot;&gt;Get a FREE salary report &amp;raquo;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;';
+            }
+
+            copyText = unescapeHtml(copyText);
+
+            $('.syndicateTotalPayChartInput').val(copyText);
+
+            //keep track of what is clicked last in order to display accurate info when toggling between hourly and yearly data
+            lastClicked = 'large';
+        });
+
+        $('.syndicateTotalPayLinkSmall').click(function () {
+            $('.togglableCopyText').show();
+
+            var copyText = '';
+            if (($('.yearly') == null) || ($('.yearly').css('display') === 'none')) {
+                //Hourly Data
+                copyText = '&lt;div style=&quot;width:278px; border: 1px solid #cecece; font-family: &#39;Open Sans&#39;; padding: 10px;&quot;&gt;&lt;div style=&quot;font-size:18px; text-align: center;&quot;&gt;&lt;a style=&quot;text-decoration: none; color:#0066cc;&quot; target=&quot;_blank&quot; href=&quot;http://www.payscale.com/research/US/Job=Software_Engineer/Salary/df029197/New-York-NY&quot;&gt;Software Engineer&lt;/a&gt; (United States)&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.payscale.com/syndication/total_pay_chart.aspx?js=&amp;country=United+States&amp;city=New+York&amp;state=New+York&amp;job=Software+Engineer&amp;company=&amp;width=278px&amp;showhourly=1&amp;chartTNG=1&amp;reportid=df029197&amp;skills=&amp;explvl=&quot;&gt;&lt;/script&gt;&lt;table style=&quot;width: 99%;&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;Compare your salary.&lt;br /&gt;&lt;a href=&quot;http://www.payscale.com/wizards/choose.aspx&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; text-decoration: none; font-size: 13px;&quot;&gt;Get a FREE salary report &amp;raquo;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;div style=&quot;padding-top: 10px; padding-left: 15px;&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/small_logo_transparent.png&quot; alt=&quot;PayScale&quot; width=&quot;75&quot; height=&quot;25&quot; /&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;';
+            }
+            else {
+                //Yearly data
+                copyText = '&lt;div style=&quot;width:278px; border: 1px solid #cecece; font-family: &#39;Open Sans&#39;; padding: 10px;&quot;&gt;&lt;div style=&quot;font-size:18px; text-align: center;&quot;&gt;&lt;a style=&quot;text-decoration: none; color:#0066cc;&quot; target=&quot;_blank&quot; href=&quot;http://www.payscale.com/research/US/Job=Software_Engineer/Salary/df029197/New-York-NY&quot;&gt;Software Engineer&lt;/a&gt; (United States)&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.payscale.com/syndication/total_pay_chart.aspx?js=&amp;country=United+States&amp;city=New+York&amp;state=New+York&amp;job=Software+Engineer&amp;company=&amp;width=278px&amp;chartTNG=1&amp;reportid=df029197&amp;skills=&amp;explvl=&quot;&gt;&lt;/script&gt;&lt;table style=&quot;width: 99%;&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;Compare your salary.&lt;br /&gt;&lt;a href=&quot;http://www.payscale.com/wizards/choose.aspx&quot; target=&quot;_blank&quot; style=&quot;color: #0066cc; text-decoration: none; font-size: 13px;&quot;&gt;Get a FREE salary report &amp;raquo;&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;&lt;td&gt;&lt;div style=&quot;padding-top: 10px; padding-left: 15px;&quot;&gt;&lt;img src=&quot;http://www.payscale.com/images/small_logo_transparent.png&quot; alt=&quot;PayScale&quot; width=&quot;75&quot; height=&quot;25&quot; /&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;';
+            }
+
+            copyText = unescapeHtml(copyText);
+
+            $('.syndicateTotalPayChartInput').val(copyText);
+
+            //track what was clicked last in order to display accurate info when switching between hourly/yearly data
+            lastClicked = 'small';
+        });
+    });
+
+    function unescapeHtml(text) {
+        return text.replace(/&amp;/g, '&')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, "'")
+            .replace(/&#039;/g, "'");
+    }
+</script>
+
+                        </div>
+                        <div class="modal fade" id="surveyStartModal" tabindex="-1" role="dialog" aria-labelledby="surveyStart" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                        <h2 class="modal-title"><strong>Get a more accurate salary range!</strong></h2>
+                                        <h3>Take the PayScale survey</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+
+<form onsubmit="surveyStartTNG.onSubmit(this)" method="post" action="/wizards/choose.aspx">
+    <div class="row">
+        <div class="col-xs-offset-1 col-xs-10">
+            <div class="form-group">
+                <label>Job Title:</label>
+                <input type="text" class="form-control" category="job\job" maxlength="250" name="job" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-offset-1 col-xs-10">
+            <div class="form-group">
+                <label>Years in Field/Career:</label>
+                <input type="number" class="form-control" category="job\job" maxlength="250" name="yearsexp" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-offset-1 col-xs-10">
+            <div class="form-group">
+                <label>Location:</label>
+                <input name="cityState" class="form-control" type="text" onclick="surveyStartTNG.showAutoComplete(this);"
+                    onfocus="surveyStartTNG.showAutoComplete(this);" category="location\citystatecountry" maxlength="250" />
+                <input name="city" type="hidden" value="" />
+                <input name="state" type="hidden" value="" />
+            </div>
+            <div class="form-group fieldHolder">
+                <span class="countryLabel">United States</span> <a href="javascript:void(0)" onclick="surveyStartTNG.showAutoCompleteCountry(this);">(change)</a>
+                <input class="form-control countryInput" style="display: none;" name="confCountry" type="text" onblur="surveyStartTNG.onBlurCountryInput(this);" value="United States" category="location\country" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-12 text-center">
+            <button type="submit" class="btn btn-primary btn-block" value="Submit" name="m_nextButton">
+                Get your free salary report &raquo;
+            </button>
+            <br />
+            <a href="javascript:void(0);" data-dismiss="modal">No thanks, I just want to explore for now</a>
+        </div>
+    </div>
+</form>
+
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
+                        <!-- End Bootstrap 3 Modal Dialog - Survey Start -->
+
+                        <div class="rc-nav-buttons">
+                            
+                                    <div class="dropdown btn-group margin-small">
+                                        <button class="btn dropdown-toggle btn-primary" type="button" id="experienceForwardNavLink" data-toggle="dropdown">
+                                            +&nbsp;experience
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="experienceForwardNavLink">
+                                            
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/69c0ed0c/Entry-Level-New-York-NY">
+                                                            Entry-Level
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/5f88416c/Mid-Career-New-York-NY">
+                                                            Mid-Career
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/49519e7d/Experienced-New-York-NY">
+                                                            Experienced
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/b2aab1ab/Late-Career-New-York-NY">
+                                                            Late-Career
+                                                        </a>
+                                                    </li>
+                                                
+                                            <li class="divider"></li>
+                                            <li role="presentation"><a class="text-nowrap" href="/wizards/choose.aspx">Don't see what you are looking for?<br />
+                                                <strong>Get A Free Custom Salary Report &raquo;</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="dropdown btn-group margin-small">
+                                        <button class="btn dropdown-toggle btn-primary" type="button" id="skillForwardNavLink" data-toggle="dropdown">
+                                            +&nbsp;skill
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="skillForwardNavLink">
+                                            
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/c28b30d3/New-York-NY-SQL">
+                                                            SQL
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/1c78d8ea/New-York-NY-Python">
+                                                            Python
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/b211a4e0/New-York-NY-HTML">
+                                                            HTML
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/2846e2b6/New-York-NY-.NET">
+                                                            .NET
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/61892ad9/New-York-NY-C">
+                                                            C
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/4cc670fd/New-York-NY-ASP.NET">
+                                                            ASP.NET
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/bfd4b037/New-York-NY-Microsoft-SQL-Server">
+                                                            Microsoft SQL Server
+                                                        </a>
+                                                    </li>
+                                                
+                                            <li class="divider"></li>
+                                            <li role="presentation"><a class="text-nowrap" href="/wizards/choose.aspx">Don't see what you are looking for?<br />
+                                                <strong>Get A Free Custom Salary Report &raquo;</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="dropdown btn-group margin-small">
+                                        <button class="btn dropdown-toggle btn-primary" type="button" id="employerForwardNavLink" data-toggle="dropdown">
+                                            +&nbsp;employer
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="employerForwardNavLink">
+                                            
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/2c476c52/Google-Inc.-New-York-NY">
+                                                            Google, Inc.
+                                                        </a>
+                                                    </li>
+                                                
+                                            <li class="divider"></li>
+                                            <li role="presentation"><a class="text-nowrap" href="/wizards/choose.aspx">Don't see what you are looking for?<br />
+                                                <strong>Get A Free Custom Salary Report &raquo;</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                            
+                                    <div class="dropdown btn-group margin-small">
+                                        <button class="btn dropdown-toggle btn-info" type="button" id="citySideNavLink" data-toggle="dropdown">
+                                            city
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="citySideNavLink">
+                                            
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/d227501c/Rochester-NY">
+                                                            Rochester
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/44bc54e0/Buffalo-NY">
+                                                            Buffalo
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/5a69566b/Syracuse-NY">
+                                                            Syracuse
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/1da6a28e/Albany-NY">
+                                                            Albany
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/470c5258/Poughkeepsie-NY">
+                                                            Poughkeepsie
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/afcbd3eb/Binghamton-NY">
+                                                            Binghamton
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/1a9d67d1/Ithaca-NY">
+                                                            Ithaca
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/2aa8ca85/Hauppauge-NY">
+                                                            Hauppauge
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/df06b0c2/Nyack-NY">
+                                                            Nyack
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/470ff492/White-Plains-NY">
+                                                            White Plains
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Software_Engineer/Salary/d27f71a1/Schenectady-NY">
+                                                            Schenectady
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                                <li class="divider"></li>
+                                                <li role="presentation"><a href="/research/US/Job=Software_Engineer/Salary">All</a></li>
+                                            
+                                            <li class="divider"></li>
+                                            <li role="presentation"><a class="text-no-wrap" href="/wizards/choose.aspx">Don't see what you are looking for?<br />
+                                                <strong>Get A Free Custom Salary Report &raquo;</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                                    <div class="dropdown btn-group margin-small">
+                                        <button class="btn dropdown-toggle btn-info" type="button" id="jobTitleSideNavLink" data-toggle="dropdown">
+                                            job
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="jobTitleSideNavLink">
+                                            
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Application_Developer/Salary">
+                                                            Application Developer
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Computer_Programmer/Salary">
+                                                            Computer Programmer
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Information_Technology_(IT)_Consultant/Salary">
+                                                            Information Technology (IT) Consultant
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Junior_Software_Engineer/Salary">
+                                                            Junior Software Engineer
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Lead_Software_Development_Engineer_(SDE)/Salary">
+                                                            Lead Software Development Engineer (SDE)
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Lead_Software_Engineer/Salary">
+                                                            Lead Software Engineer
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Principal_Software_Engineer/Salary">
+                                                            Principal Software Engineer
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Senior_Software_Architect/Salary">
+                                                            Senior Software Architect
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Senior_Software_Development_Engineer_(SDE)/Salary">
+                                                            Senior Software Development Engineer (SDE)
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li role="presentation">
+                                                        <a role="menuitem" href="/research/US/Job=Senior_Software_Engineer/Salary">
+                                                            Senior Software Engineer
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                            <li class="divider"></li>
+                                            <li role="presentation"><a class="text-no-wrap" href="/wizards/choose.aspx">Don't see what you are looking for?<br />
+                                                <strong>Get A Free Custom Salary Report &raquo;</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                            
+                            
+                                <a class="hourly pull-right" href="javascript:toggleHourlySalary()">Show Annual Salary</a>
+                                <a class="yearly pull-right" href="javascript:toggleHourlySalary()">Show Hourly Rate</a>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="yearly overflow-auto">
+                            
+    <div style="padding: 10px">
+        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+            <tr>
+                <td valign="top">
+                    <div id="m_summaryReport">
+                        <div style="margin-bottom: 2px">
+                            
+                        </div>
+                        <table class="tlf f11 w600" cellpadding="0" cellspacing="0"><tr class="f9"><th class="w116"><div class="f9 c6"></div></th><th class="w175"><div class="f9 c6 pl5"><span>Local Salary Data</span>&nbsp;(<a id="2a943a1c-31ba-4398-9ffd-2958c4fb002e_" href="javascript:showFieldHelp('9e4cc74b-6d5d-436b-8127-4dda5d02f588_', '', '2a943a1c-31ba-4398-9ffd-2958c4fb002e_', 0);"><nobr>?</nobr></a><div id="9e4cc74b-6d5d-436b-8127-4dda5d02f588_" class="fieldHelp"><span class="fieldHelpClose"><a href="javascript:showFieldHelp('9e4cc74b-6d5d-436b-8127-4dda5d02f588_', '', '2a943a1c-31ba-4398-9ffd-2958c4fb002e_', 0);" tabIndex="-1">X</a></span>All compensation data shown are gross 10th to 90th percentile ranges. Take the <a href="/startwizard.aspx">PayScale Survey</a> to find out how location influences pay for this job.</div>)</div></th><td class="f9 w91 c6">$0</td><td class="f9 w91 c6">$50K</td><td class="f9 w91 c6">$100K</td><td class="f9 w36 c6">$150K</td></tr><tr><th class=" p9  vt"><strong>Salary</strong><span class=" "></span><div id="ctl00_mainContent_m_summaryReport_yearlyBarChart_rowRepeater_ctl00_countDiv"></div></th><td class=" p9 lb  tr pr10 vm">$59,388 - $122,400</td><td class="lb pr ">
+            &nbsp;<div class="pa ierb brb w222"></div><div class="pa ierb rb ml108 w114"></div></td><td rowspan="4" class="lb ">&nbsp;</td><td rowspan="4" class="lb ">&nbsp;</td><td rowspan="4" class="lb ">&nbsp;</td></tr><tr><th class=" p9  vt"><strong>Bonus</strong><span class=" "></span><div id="ctl00_mainContent_m_summaryReport_yearlyBarChart_rowRepeater_ctl01_countDiv"></div></th><td class=" p9 lb  tr pr10 vm">$509 - $19,505</td><td class="lb pr ">
+            &nbsp;<div class="pa ierb brb w35"></div><div class="pa ierb rb ml0 w34"></div></td></tr><tr><th class=" p9  vt"><strong>Profit Sharing</strong><span class=" "></span><div id="ctl00_mainContent_m_summaryReport_yearlyBarChart_rowRepeater_ctl02_countDiv"></div></th><td class=" p9 lb  tr pr10 vm">$0.00 - $17,500</td><td class="lb pr ">
+            &nbsp;<div class="pa ierb brb w31"></div><div class="pa ierb rb ml0 w31"></div></td></tr><tr><th class=" p9 b vt"><strong>Total Pay <span class="n">(<a id="43ef43a6-cd82-4fa7-ad83-1a4dac5abfcc_" href="javascript:showFieldHelp('5851f11a-a275-43dc-98fb-52db966304c1_', '', '43ef43a6-cd82-4fa7-ad83-1a4dac5abfcc_', 0);"><nobr>?</nobr></a><div id="5851f11a-a275-43dc-98fb-52db966304c1_" class="fieldHelp"><span class="fieldHelpClose"><a href="javascript:showFieldHelp('5851f11a-a275-43dc-98fb-52db966304c1_', '', '43ef43a6-cd82-4fa7-ad83-1a4dac5abfcc_', 0);" tabIndex="-1">X</a></span>Total Pay combines base annual salary or hourly wage, bonuses, profit sharing, tips, commissions, overtime pay and other forms of cash earnings, as applicable for this job. It does not include equity (stock) compensation, cash value of retirement benefits, or the value of other non-cash benefits (e.g. healthcare).</div>)</span></strong><span class=" "></span><div id="ctl00_mainContent_m_summaryReport_yearlyBarChart_rowRepeater_ctl03_countDiv"></div></th><td class=" p9 lb b tr pr10 vm">$59,899 - $130,261</td><td class="lb pr ">
+            &nbsp;<div class="pa ierb brb w237"></div><div class="pa ierb rb ml109 w128"></div></td></tr><tr><td class="pr" colspan="6"><div class="p9 f10 i c6">Country: United States | Currency: USD | Updated: 18 Jul 2015 | Individuals Reporting: 1,252</div></td></tr></table>
+                    </div>
+                </td>
+                
+                        <td width="11" valign="top"><img src="//cdn-payscale.com/resources/150825/images/copyright.png" width="11" height="181" alt="" /></td>
+                    
+            </tr>
+        </table>
+    </div>
+
+
+
+                        </div>
+                        <div class="hourly overflow-auto">
+                            
+    <div style="padding: 10px">
+        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+            <tr>
+                <td valign="top">
+                    <div id="m_summaryReport_hourly">
+                        <div style="margin-bottom: 2px">
+                            <table class="tlf f11 w600" cellpadding="0" cellspacing="0"><tr class="f9"><th class="w116"><div class="f9 c6"></div></th><th class="w175"><div class="f9 c6 pl5">Local Hourly Rate Data&nbsp;(<a id="e6dc9100-d8cd-4219-9ebb-813aa2c9d303_" href="javascript:showFieldHelp('c7aca4a2-b350-4338-a797-f2cb7cea0fb1_', '', 'e6dc9100-d8cd-4219-9ebb-813aa2c9d303_', 0);"><nobr>?</nobr></a><div id="c7aca4a2-b350-4338-a797-f2cb7cea0fb1_" class="fieldHelp"><span class="fieldHelpClose"><a href="javascript:showFieldHelp('c7aca4a2-b350-4338-a797-f2cb7cea0fb1_', '', 'e6dc9100-d8cd-4219-9ebb-813aa2c9d303_', 0);" tabIndex="-1">X</a></span>All compensation data shown are gross 10th to 90th percentile ranges. Take the <a href="/startwizard.aspx">PayScale Survey</a> to find out how location influences pay for this job.</div>)</div></th><td class="f9 w91 c6">$0</td><td class="f9 w91 c6">$50</td><td class="f9 w91 c6">$100</td><td class="f9 w36 c6">$150</td></tr><tr><th class=" p9 b vt"><strong>Hourly Rate</strong><span class=" "></span><div id="ctl00_mainContent_m_summaryReport_hourly_hourlyBarChart_rowRepeater_ctl00_countDiv"></div></th><td class=" p9 lb b tr pr10 vm">$19.49 - $101.37</td><td class="lb pr ">
+            &nbsp;<div class="pa ierb brb w184"></div><div class="pa ierb rb ml35 w149"></div></td><td rowspan="2" class="lb bb">&nbsp;</td><td rowspan="2" class="lb bb">&nbsp;</td><td rowspan="2" class="lb bb">&nbsp;</td></tr><tr><th class=" p9  vt"><strong>Overtime</strong><span class=" "></span><div id="ctl00_mainContent_m_summaryReport_hourly_hourlyBarChart_rowRepeater_ctl01_countDiv"></div></th><td class=" p9 lb  tr pr10 vm bb">$0.00 - $108.50</td><td class="lb pr bb">
+            &nbsp;<div class="pa ierb brb w197"></div><div class="pa ierb rb ml0 w197"></div></td></tr></table>
+                        </div>
+                        <table class="tlf f11 w600" cellpadding="0" cellspacing="0"><tr class="f9"><th class="w116"><div class="f9 c6"></div></th><th class="w175"><div class="f9 c6 pl5">Local Annualized Data&nbsp;(<a id="f34b91d6-294e-4b88-ac52-44c0a4473e10_" href="javascript:showFieldHelp('673cbee7-0a11-4d3f-887a-646b2dcac6a2_', '', 'f34b91d6-294e-4b88-ac52-44c0a4473e10_', 0);"><nobr>?</nobr></a><div id="673cbee7-0a11-4d3f-887a-646b2dcac6a2_" class="fieldHelp"><span class="fieldHelpClose"><a href="javascript:showFieldHelp('673cbee7-0a11-4d3f-887a-646b2dcac6a2_', '', 'f34b91d6-294e-4b88-ac52-44c0a4473e10_', 0);" tabIndex="-1">X</a></span>All compensation data shown are gross 10th to 90th percentile ranges. Take the <a href="/startwizard.aspx">PayScale Survey</a> to find out how location influences pay for this job.</div>)</div></th><td class="f9 w91 c6">$0</td><td class="f9 w91 c6">$100K</td><td class="f9 w91 c6">$200K</td><td class="f9 w36 c6">$300K</td></tr><tr><th class=" p9  vt"><strong>Bonus</strong><span class=" "></span><div id="ctl00_mainContent_m_summaryReport_hourly_yearlyBarChart_rowRepeater_ctl00_countDiv"></div></th><td class=" p9 lb  tr pr10 vm">$509 - $19,505</td><td class="lb pr ">
+            &nbsp;<div class="pa ierb brb w17"></div><div class="pa ierb rb ml0 w17"></div></td><td rowspan="3" class="lb bb">&nbsp;</td><td rowspan="3" class="lb bb">&nbsp;</td><td rowspan="3" class="lb bb">&nbsp;</td></tr><tr><th class=" p9  vt"><strong>Profit Sharing</strong><span class=" "></span><div id="ctl00_mainContent_m_summaryReport_hourly_yearlyBarChart_rowRepeater_ctl01_countDiv"></div></th><td class=" p9 lb  tr pr10 vm">$0.00 - $17,500</td><td class="lb pr ">
+            &nbsp;<div class="pa ierb brb w15"></div><div class="pa ierb rb ml0 w15"></div></td></tr><tr><th class=" p9 b vt bb"><strong>Total Pay <span class="n">(<a id="9110af63-8639-41f3-a5bf-16404c6fd248_" href="javascript:showFieldHelp('aac6bf1c-24d1-4ea9-8bf8-837e897ff07e_', '', '9110af63-8639-41f3-a5bf-16404c6fd248_', 0);"><nobr>?</nobr></a><div id="aac6bf1c-24d1-4ea9-8bf8-837e897ff07e_" class="fieldHelp"><span class="fieldHelpClose"><a href="javascript:showFieldHelp('aac6bf1c-24d1-4ea9-8bf8-837e897ff07e_', '', '9110af63-8639-41f3-a5bf-16404c6fd248_', 0);" tabIndex="-1">X</a></span>Total Pay combines base annual salary or hourly wage, bonuses, profit sharing, tips, commissions, overtime pay and other forms of cash earnings, as applicable for this job. It does not include equity (stock) compensation, cash value of retirement benefits, or the value of other non-cash benefits (e.g. healthcare).</div>)</span></strong><span class=" "></span><div id="ctl00_mainContent_m_summaryReport_hourly_yearlyBarChart_rowRepeater_ctl02_countDiv"></div></th><td class=" p9 lb b tr pr10 vm bb">$59,899 - $130,261</td><td class="lb pr bb">
+            &nbsp;<div class="pa ierb brb w118"></div><div class="pa ierb rb ml54 w64"></div></td></tr><tr><td class="pr" colspan="6"><div class="p9 f10 i c6">Country: United States | Currency: USD | Updated: 18 Jul 2015 | Individuals Reporting: 57</div></td></tr></table>
+                    </div>
+                </td>
+                
+                        <td width="11" valign="top"><img src="//cdn-payscale.com/resources/150825/images/copyright.png" width="11" height="181" alt="" /></td>
+                    
+            </tr>
+        </table>
+    </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                
+
+<div id='ctl00_mainContent_RCSurveyStartSingleRow'>
+    
+
+<form onsubmit="surveyStartTNG.onSubmit(this)" method="post" action="/wizards/choose.aspx?TK=RCSingleRowSurveyStart2015" id="SingleRowSurveyStart_bootstrap">
+    <div class="well fieldHolder singleRowSurveyStartBody" style="background-color:#e4e4e4">
+        <label>
+          <span class="singleRowContextualMsg"></span>
+          <span class="singleRowSurveyStartContextualMessage" style="display: none;">
+            &nbsp;
+          </span>
+          <span>Get a personalized salary report!</span>
+        </label>
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-5">
+                <span>Location:</span>
+            </div>
+            <div class="col-md-7">
+                <span>Years in Field/Career:</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <span class="hidden-lg hidden-md">Location:</span>
+                <input name="cityState" class="form-control margin-bottom-xs" type="text" onclick="surveyStartTNG.showAutoComplete(this);"
+                    onfocus="surveyStartTNG.showAutoComplete(this);" category="location\citystatecountry" maxlength="250" />
+                <input class="jobInput" name="job" type="hidden" />
+                <input name="city" type="hidden" value="" />
+                <input name="state" type="hidden" value="" />
+            </div>
+            <div class="col-md-2">
+                <span class="hidden-lg hidden-md">Years in Field/Career:</span>
+                <input type="number" min="0" class="form-control margin-bottom-xs" category="job\job" maxlength="250" name="yearsexp" />
+            </div>
+            <div class="col-md-5">
+                <input type="submit" class="btn btn-primary btn-block margin-bottom-xs" value="Get your salary report &raquo" name="m_nextButton">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 fieldHolder">
+                <span class="countryLabel">United States</span>
+                <a href="javascript:void(0)" onclick="surveyStartTNG.showAutoCompleteCountry(this);" id="changeCountryLink">(change)</a>
+                <input name="confCountry" class="form-control countryInput" style="display: none;" type="text" onblur="surveyStartTNG.onBlurCountryInput(this);" value="United States" category="location\country" />
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+<script>
+    ctl00_mainContent_RCSurveyStartSingleRow = {"country":"United States","tk":"RCTopRight2015","classList":["hidden-xs"],"contextualMessage":"Is Software Engineer your job title?"}
+
+    // Initializing Survey Starts
+    if (ctl00_mainContent_RCSurveyStartSingleRow !== undefined) {
+        var panel = $('#ctl00_mainContent_RCSurveyStartSingleRow form > .well');
+        for (i = 0; i < ctl00_mainContent_RCSurveyStartSingleRow.classList.length; i++) {
+            panel.addClass(ctl00_mainContent_RCSurveyStartSingleRow.classList[i]);
+        }
+
+        panel.find('.jobInput').prop('value', 'Software Engineer');
+        
+        if (ctl00_mainContent_RCSurveyStartSingleRow.contextualMessage === null) {
+            panel.find('.singleRowContextualMsg').hide();
+        }
+        else {
+            panel.find('.singleRowContextualMsg').html(ctl00_mainContent_RCSurveyStartSingleRow.contextualMessage);
+        }
+
+        panel.find('.countryLabel').html(ctl00_mainContent_RCSurveyStartSingleRow.country);
+        panel.find('.countryInput').prop('value', ctl00_mainContent_RCSurveyStartSingleRow.country);
+    }
+</script>
+
+                
+
+<div id='ctl00_mainContent_pinnedSurveyStartMobile'>
+    
+
+<form id="formPinnedSurveyStart" onsubmit="surveyStartTNG.onSubmit(this)" method="post" action="/wizards/choose.aspx?TK=RCPinnedSurveyStart" id="PinnedSurveyStart_bootstrap">
+    <div class="panel panel-default pinnedSurveyStart">
+        <div class="panel-heading"></div>
+        <div class="panel-body fieldHolder">
+            <h2 class="text-center"><strong><span class="pinnedSurveyStartContextualMesage" style="display: none;"><br/></span>Find Out Exactly What You Should Be Paid</strong></h2>
+            <div class="form-group">
+                <label>Job Title:</label>
+                <input type="text" class="form-control" category="job\job" maxlength="250" name="job" />
+            </div>
+            <div class="form-group">
+                <label>Years in Field/Career:</label>
+                <input type="number" class="form-control" category="job\job" maxlength="250" name="yearsexp" />
+            </div>
+            <div class="form-group">
+                <label>Location:</label>
+                <input name="cityState" class="form-control" type="text" onclick="surveyStartTNG.showAutoComplete(this);"
+                    onfocus="surveyStartTNG.showAutoComplete(this);" category="location\citystatecountry" maxlength="250" />
+                <input name="city" type="hidden" value="" />
+                <input name="state" type="hidden" value="" />
+            </div>
+            <div class="form-group fieldHolder">
+                <span class="countryLabel">United States</span> <a href="javascript:void(0)" onclick="surveyStartTNG.showAutoCompleteCountry(this);">(change)</a>
+                <input class="form-control countryInput" style="display: none;" name="confCountry" type="text" onblur="surveyStartTNG.onBlurCountryInput(this);" value="United States" category="location\country" />
+            </div>
+            <p>
+                <input type="submit" class="btn btn-primary btn-block" value="Submit" name="m_nextButton"></p>
+                <div class="pinnedSurveyStartFacebookButton" style="display: none;">
+
+<div id='fb-root'></div><script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId                 : '355988364493140',
+            status                : true,
+            cookie                : true,
+            xfbml                 : true,
+            oauth                 : true,
+            frictionlessRequests  : true,
+            version               : 'v2.0'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+        <a class="btn-block btn btn-facebook" href="#" onclick="trackLoginPage(); setupFacebookLoginHandler('/mypayscale.aspx');return false;">
+            <span class="btn-divider"><i class="fa fa-facebook"></i></span>Log in with Facebook
+        </a>
+        <script>
+            $(function () {
+                // Facebook API is not supported on Chrome iOS, so we hide the button
+                if (navigator.userAgent.indexOf('CriOS') !== -1) {
+                    $('.btn-facebook').hide();
+                }
+            });
+        </script>
+    
+</div>
+            <hr/>
+                <a class="btn btn-warning btn-block" href="/hr/default?src=RC_SurveyStart_CompManagers">Comp Managers: Start Here &raquo;</a>
+        </div>
+        <div class="panel-footer"></div>
+    </div>
+</form>
+</div>
+<script>
+    ctl00_mainContent_pinnedSurveyStartMobile = {"country":"United States","tk":"RCTopRight2015","classList":["visible-xs-block"],"contextualMessage":null}
+	
+	// Initializing Survey Starts
+    if (ctl00_mainContent_pinnedSurveyStartMobile !== undefined) {
+		var panel = $('#ctl00_mainContent_pinnedSurveyStartMobile form > .panel');
+		for (i = 0; i < ctl00_mainContent_pinnedSurveyStartMobile.classList.length; i++) {
+			panel.addClass(ctl00_mainContent_pinnedSurveyStartMobile.classList[i]);
+		}
+
+		panel.find('.countryLabel').html(ctl00_mainContent_pinnedSurveyStartMobile.country);
+		panel.find('.countryInput').prop('value', ctl00_mainContent_pinnedSurveyStartMobile.country);
+	}
+</script>
+                
+<script type="text/javascript">
+    $("#readAbstractMoreLink").click(function () {
+        $(".abstractLessMoreToggle").toggle();
+        RecordSynchronousEvent('Research Center', 'RC-JobDescription-Expand', 'Expanded Job Description for ');
+        return false;
+    });
+</script>
+
+                
+                
+            
+                <!-- Show Job Listings -->
+                
+
+
+<style>
+    .jobListingsBody {
+        display: none;
+    }
+</style>
+<script language="javascript" type="text/javascript" src="http://api.simplyhired.com/c/jobs-api/js/xml-v2.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.indeed.com/ads/apiresults.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.ResearchCenterSearchForm[name^="jobsearch"]').attr('target', '_blank');
+        $.ajax({
+            url: '/research/US|New York|New York/Job=Software_Developer/Job-Listings?count=3&part=true&more=true&geotarget=true&configuration=indeed',
+            success: function (data) {
+                if (data.indexOf('No Listings Found') === -1) {
+                    var output = GetValidOutputFromData(data);
+                    $(".jobListingsBody").show();
+                    $("#jobListingsDiv").append(output);
+                }
+            }
+        });
+    });
+ </script>
+
+        
+<div class="panel panel-default  jobListingsBody">
+    <div class="panel-heading">
+        <h3 class="panel-title">Software Developer Job Listings</h3>
+    </div>
+    <div class="panel-body">
+        
+                <div id="jobListingsDiv">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="div_more">
+                            <a class="btn btn-success" href="/research/US|New York|New York/Job=Software_Developer/Job-Listings">
+                            View More Jobs &raquo;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="dynamicContentBegin hidden" data-content="JobListingAttribution"></span><span class="casedControl hidden">
+    <span class="casedControlItem" data-casedcontrol-rule="AffiliateConfig" data-casedcontrol-value="JobListingConfiguration=SimplyHired">
+        <div class="text-right">
+            <span style="color: rgb(0, 0, 0);">Jobs</span> by 
+            <span style="color: rgb(0, 159, 223);"><strong>Simply</strong></span>
+            <span style="color: rgb(163, 204, 64);"><strong>Hired</strong></span>
+        </div>    
+    </span>
+    <span class="casedControlItem default" data-casedcontrol-rule="default">   
+		<span id="indeed_at">
+			<a href="http://www.indeed.com?indpubnum=7191911656972534">jobs</a> by 
+			<a href="http://www.indeed.com?indpubnum=7191911656972534" title="Job Search">
+				<img src="http://www.indeed.com/p/jobsearch.gif" style="border: 0; vertical-align: middle;" alt="Indeed job search" width="54" height="19" />
+			</a>
+		</span>
+    </span>
+</span><span class="dynamicContentEnd hidden" data-content="JobListingAttribution"></span>
+                    </div>
+                </div>
+            
+
+
+<h3>Search for more jobs:</h3>
+<form action="/rcsearch.aspx" method="get">
+    <div class="row">
+        <div class="col-md-5 col-sm-5">
+            <div class="form-group">
+                <label>Job Title/Company</label>
+                <input class="form-control" placeholder="Job Title, Skills or Company" name="str">
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-5">
+            <div class="form-group">
+                <label>Location</label>
+                <input class="form-control" placeholder="City, State or Zip" name="loc">
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2">
+            <label class="hidden-xs">&nbsp;</label>
+            <input type="submit" value="Search" class="btn btn-primary btn-block">
+            <input type="hidden" name="country" id="hiddenCountryField" value=""United States" />
+            <input type="hidden" name="category" id="category" value="Job Listings" />
+        </div>
+    </div>
+</form>
+
+
+            
+    </div>
+</div>
+
+    
+
+             
+    
+
+                
+<div class="panel panel-default  svgRangeChart">
+    <div class="panel-heading">
+        <h3 class="panel-title">Popular Employer Salaries for Software Engineer in New York, New York</h3>
+    </div>
+    <div class="panel-body">
+        
+        <div id="employerChart"></div>
+        
+<hr />
+
+<p>
+    Well-known firms with a reputation for hiring numerous New York Software Engineers include Google, Inc., Bloomberg LP, Morgan Stanley, The Goldman Sachs Group, Inc., and Factset Research Systems Inc.  Google, Inc. does shell out the biggest paychecks — the median in that office is $123K — but the company pay scale is greatly mixed, meaning that workers on the low end may earn only $85K while workers on the upper end may rake in up to $159K.  
+</p>
+
+<p>
+    The lowest salaries can be found at Factset Research Systems Inc. — median pay is $97K — and there is little variation in compensation, with paychecks starting at $76K and only reaching $105K.  
+</p>
+
+    
+    </div>
+</div>
+
+
+<script>$(function () {renderRangeChart("employerChart", "$", [{"label":"Google, Inc.","low":103000,"median":122884,"high":139000,"count":24,"href":"/research/US/Job=Software_Engineer/Salary/2c476c52/Google-Inc.-New-York-NY","showSpanOnly":false},{"label":"Bloomberg LP","low":95000,"median":118673,"high":126000,"count":15,"href":"/research/US/Job=Software_Engineer/Salary/facaaee5/Bloomberg-LP-New-York-NY","showSpanOnly":true},{"label":"Morgan Stanley","low":98000,"median":112318,"high":118000,"count":13,"href":"/research/US/Job=Software_Engineer/Salary/bd80eac0/Morgan-Stanley-New-York-NY","showSpanOnly":true},{"label":"The Goldman Sachs Group, Inc.","low":87000,"median":97239,"high":123000,"count":12,"href":"/research/US/Job=Software_Engineer/Salary/545e6a52/The-Goldman-Sachs-Group-Inc.-New-York-NY","showSpanOnly":true},{"label":"Factset Research Systems Inc.","low":92000,"median":97020,"high":101000,"count":12,"href":"/research/US/Job=Software_Engineer/Salary/fff49923/Factset-Research-Systems-Inc.-New-York-NY","showSpanOnly":true}], 5); });</script>
+
+                
+                
+
+<script type="text/javascript">
+    var pbeData = [{"Count":952,"Delta":-7,"Median":85000,"ShowSpanOnly":false,"Title":"Entry-Level","Tooltip":null,"Url":"\/research\/US\/Job=Software_Engineer\/Salary\/69c0ed0c\/Entry-Level-New-York-NY"},{"Count":398,"Delta":11,"Median":102000,"ShowSpanOnly":false,"Title":"Mid-Career","Tooltip":null,"Url":"\/research\/US\/Job=Software_Engineer\/Salary\/5f88416c\/Mid-Career-New-York-NY"},{"Count":142,"Delta":35,"Median":123000,"ShowSpanOnly":false,"Title":"Experienced","Tooltip":null,"Url":"\/research\/US\/Job=Software_Engineer\/Salary\/49519e7d\/Experienced-New-York-NY"},{"Count":34,"Delta":52,"Median":138000,"ShowSpanOnly":false,"Title":"Late-Career","Tooltip":null,"Url":"\/research\/US\/Job=Software_Engineer\/Salary\/b2aab1ab\/Late-Career-New-York-NY"},{"Count":1309,"Delta":0,"Median":91000,"ShowSpanOnly":true,"Title":"National Average","Tooltip":null,"Url":null}];
+    var pbeCurrencySymbol = "$";
+    var experienceMappings = [["Entry-Level","0","5"],["Mid-Career","5","10"],["Experienced","10","20"],["Late-Career","20","99"]];
+</script>
+
+<div id="payByExperienceGraphContainer">
+    
+<div class="panel panel-default  ">
+    <div class="panel-heading">
+        <h3 class="panel-title">Pay by Experience Level for Software Engineer in New York, New York</h3>
+    </div>
+    <div class="panel-body">
+        
+            <div id="pay-by-experience"></div>
+            <p><em>Median of all compensation (including tips, bonus, and overtime) by years of experience.</em></p>
+            
+<hr />
+
+<p>
+    Experience is an important factor influencing the compensation of Software Engineers in New York.  The relatively untested earn a median of $85K per year, but survey respondents who have racked up five to 10 years of experience report a six-figure median of $102K.  Software Engineers in New York, N.Y. see a median salary of $123K after reaching one to two decades on the job.  Respondents who claim more than 20 years of experience may encounter pay that doesn't quite reflect their extensive experience; these veterans report a median income of around $138K.
+</p>
+
+        
+    </div>
+</div>
+
+</div>
+
+                
+                
+                
+            </div>
+            <div class="col-md-4">
+                
+<script type="text/javascript">
+    function plusone_vote(obj) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ 'event': 'nonInteractiveEvent', 'eventCategory': 'Social Media', 'eventAction': 'Google Plus One Click', 'eventLabel': 'Research Center' });
+    }
+</script>
+<style>
+    .twitter-share-button
+    {
+        width: 65px !important;
+    }
+
+    .shareButtonContainer
+    {
+        position: relative;
+        float: right;
+    }
+
+        .shareButtonContainer div
+        {
+            float: left;
+            margin-right: 3px;
+        }
+
+    #facebookLikeBtn
+    {
+        border: none;
+        overflow: hidden;
+        width: 78px;
+        height: 21px;
+    }
+</style>
+<div class="shareButtonContainer">
+    <div>
+        <iframe id="facebookLikeBtn" src="http://www.facebook.com/plugins/like.php?href=http%3a%2f%2fwww.payscale.com%2fresearch%2fUS%2fJob%3dSoftware_Engineer%2fSalary%2fdf029197%2fNew-York-NY&amp;layout=button_count&amp;show_faces=false&amp;width=78&amp;action=like&amp;colorscheme=light&amp;height=21"></iframe>
+    </div>
+    <div>
+        <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+        <script type="in/share"></script>
+    </div>
+    <div>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="none"
+            data-via="payscale" data-related="http://twitter.com/payscale">Tweet</a>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </div>
+    <div>
+        <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+        <script type="text/javascript">
+            (function () {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+                
+
+<span class="casedControl hidden">
+    <span class="casedControlItem" data-casedcontrol-rule="Affiliate" data-casedcontrol-value="2487">&nbsp;</span>
+    <span class="casedControlItem default" data-casedcontrol-rule="Default">
+        <div class="center-block text-center"><div id="div-gpt-ad-payscale-0" style="width: 300px; height: 250px" class="center-block"><script type='text/javascript'>googletag.cmd.push(function () { googletag.display('div-gpt-ad-payscale-0'); });</script></div><h5>ADVERTISEMENT</h5></div>
+    </span>
+</span>
+
+    
+
+                
+
+<div id='ctl00_mainContent_singleSurveyStartMobile'>
+    
+
+<form onsubmit="surveyStartTNG.onSubmit(this)" method="post" action="/wizards/choose.aspx?TK=RCSingleRowSurveyStart2015" id="SingleRowSurveyStart_bootstrap">
+    <div class="well fieldHolder singleRowSurveyStartBody" style="background-color:#e4e4e4">
+        <label>
+          <span class="singleRowContextualMsg"></span>
+          <span class="singleRowSurveyStartContextualMessage" style="display: none;">
+            &nbsp;
+          </span>
+          <span>Get a personalized salary report!</span>
+        </label>
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-5">
+                <span>Location:</span>
+            </div>
+            <div class="col-md-7">
+                <span>Years in Field/Career:</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <span class="hidden-lg hidden-md">Location:</span>
+                <input name="cityState" class="form-control margin-bottom-xs" type="text" onclick="surveyStartTNG.showAutoComplete(this);"
+                    onfocus="surveyStartTNG.showAutoComplete(this);" category="location\citystatecountry" maxlength="250" />
+                <input class="jobInput" name="job" type="hidden" />
+                <input name="city" type="hidden" value="" />
+                <input name="state" type="hidden" value="" />
+            </div>
+            <div class="col-md-2">
+                <span class="hidden-lg hidden-md">Years in Field/Career:</span>
+                <input type="number" min="0" class="form-control margin-bottom-xs" category="job\job" maxlength="250" name="yearsexp" />
+            </div>
+            <div class="col-md-5">
+                <input type="submit" class="btn btn-primary btn-block margin-bottom-xs" value="Get your salary report &raquo" name="m_nextButton">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 fieldHolder">
+                <span class="countryLabel">United States</span>
+                <a href="javascript:void(0)" onclick="surveyStartTNG.showAutoCompleteCountry(this);" id="changeCountryLink">(change)</a>
+                <input name="confCountry" class="form-control countryInput" style="display: none;" type="text" onblur="surveyStartTNG.onBlurCountryInput(this);" value="United States" category="location\country" />
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+<script>
+    ctl00_mainContent_singleSurveyStartMobile = {"country":"United States","tk":"RCTopRight2015","classList":["visible-xs-block"],"contextualMessage":null}
+
+    // Initializing Survey Starts
+    if (ctl00_mainContent_singleSurveyStartMobile !== undefined) {
+        var panel = $('#ctl00_mainContent_singleSurveyStartMobile form > .well');
+        for (i = 0; i < ctl00_mainContent_singleSurveyStartMobile.classList.length; i++) {
+            panel.addClass(ctl00_mainContent_singleSurveyStartMobile.classList[i]);
+        }
+
+        panel.find('.jobInput').prop('value', 'Software Engineer');
+        
+        if (ctl00_mainContent_singleSurveyStartMobile.contextualMessage === null) {
+            panel.find('.singleRowContextualMsg').hide();
+        }
+        else {
+            panel.find('.singleRowContextualMsg').html(ctl00_mainContent_singleSurveyStartMobile.contextualMessage);
+        }
+
+        panel.find('.countryLabel').html(ctl00_mainContent_singleSurveyStartMobile.country);
+        panel.find('.countryInput').prop('value', ctl00_mainContent_singleSurveyStartMobile.country);
+    }
+</script>
+
+                
+
+<div id='ctl00_mainContent_pinnedSurveyStart'>
+    
+
+<form id="formPinnedSurveyStart" onsubmit="surveyStartTNG.onSubmit(this)" method="post" action="/wizards/choose.aspx?TK=RCPinnedSurveyStart" id="PinnedSurveyStart_bootstrap">
+    <div class="panel panel-default pinnedSurveyStart">
+        <div class="panel-heading"></div>
+        <div class="panel-body fieldHolder">
+            <h2 class="text-center"><strong><span class="pinnedSurveyStartContextualMesage" style="display: none;"><br/></span>Find Out Exactly What You Should Be Paid</strong></h2>
+            <div class="form-group">
+                <label>Job Title:</label>
+                <input type="text" class="form-control" category="job\job" maxlength="250" name="job" />
+            </div>
+            <div class="form-group">
+                <label>Years in Field/Career:</label>
+                <input type="number" class="form-control" category="job\job" maxlength="250" name="yearsexp" />
+            </div>
+            <div class="form-group">
+                <label>Location:</label>
+                <input name="cityState" class="form-control" type="text" onclick="surveyStartTNG.showAutoComplete(this);"
+                    onfocus="surveyStartTNG.showAutoComplete(this);" category="location\citystatecountry" maxlength="250" />
+                <input name="city" type="hidden" value="" />
+                <input name="state" type="hidden" value="" />
+            </div>
+            <div class="form-group fieldHolder">
+                <span class="countryLabel">United States</span> <a href="javascript:void(0)" onclick="surveyStartTNG.showAutoCompleteCountry(this);">(change)</a>
+                <input class="form-control countryInput" style="display: none;" name="confCountry" type="text" onblur="surveyStartTNG.onBlurCountryInput(this);" value="United States" category="location\country" />
+            </div>
+            <p>
+                <input type="submit" class="btn btn-primary btn-block" value="Submit" name="m_nextButton"></p>
+                <div class="pinnedSurveyStartFacebookButton" style="display: none;">
+
+<div id='fb-root'></div><script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId                 : '355988364493140',
+            status                : true,
+            cookie                : true,
+            xfbml                 : true,
+            oauth                 : true,
+            frictionlessRequests  : true,
+            version               : 'v2.0'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+        <a class="btn-block btn btn-facebook" href="#" onclick="trackLoginPage(); setupFacebookLoginHandler('/mypayscale.aspx');return false;">
+            <span class="btn-divider"><i class="fa fa-facebook"></i></span>Log in with Facebook
+        </a>
+        <script>
+            $(function () {
+                // Facebook API is not supported on Chrome iOS, so we hide the button
+                if (navigator.userAgent.indexOf('CriOS') !== -1) {
+                    $('.btn-facebook').hide();
+                }
+            });
+        </script>
+    
+</div>
+            <hr/>
+                <a class="btn btn-warning btn-block" href="/hr/default?src=RC_SurveyStart_CompManagers">Comp Managers: Start Here &raquo;</a>
+        </div>
+        <div class="panel-footer"></div>
+    </div>
+</form>
+</div>
+<script>
+    ctl00_mainContent_pinnedSurveyStart = {"country":"United States","tk":"RCTopRight2015","classList":["hidden-xs"],"contextualMessage":null}
+	
+	// Initializing Survey Starts
+    if (ctl00_mainContent_pinnedSurveyStart !== undefined) {
+		var panel = $('#ctl00_mainContent_pinnedSurveyStart form > .panel');
+		for (i = 0; i < ctl00_mainContent_pinnedSurveyStart.classList.length; i++) {
+			panel.addClass(ctl00_mainContent_pinnedSurveyStart.classList[i]);
+		}
+
+		panel.find('.countryLabel').html(ctl00_mainContent_pinnedSurveyStart.country);
+		panel.find('.countryInput').prop('value', ctl00_mainContent_pinnedSurveyStart.country);
+	}
+</script>
+                
+<div class="panel panel-default  ">
+    <div class="panel-heading">
+        <h3 class="panel-title">Related Jobs</h3>
+    </div>
+    <div class="panel-body">
+        
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Application_Developer/Salary">Application Developer</a>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Computer_Programmer/Salary">Computer Programmer</a>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Information_Technology_(IT)_Consultant/Salary">Information Technology (IT) Consultant</a>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Junior_Software_Engineer/Salary">Junior Software Engineer</a>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Lead_Software_Development_Engineer_(SDE)/Salary">Lead Software Development Engineer (SDE)</a>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Lead_Software_Engineer/Salary">Lead Software Engineer</a>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Principal_Software_Engineer/Salary">Principal Software Engineer</a>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Senior_Software_Architect/Salary">Senior Software Architect</a>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Senior_Software_Development_Engineer_(SDE)/Salary">Senior Software Development Engineer (SDE)</a>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom">
+            <div class="col-md-12">
+                <a href="/research/US/Job=Senior_Software_Engineer/Salary">Senior Software Engineer</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+                
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Experience Affects Software Engineer in New York, New York Salaries</h3>
+    </div>
+    <div class="panel-body">
+        
+        <div class="row">
+            <div class="col-md-8" title="more than 20 years">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/b2aab1ab/Late-Career-New-York-NY'>Late-Career</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-green.png" alt="up arrow" style="float:left;" />
+                <span class="text-success">52%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="10-20 years">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/49519e7d/Experienced-New-York-NY'>Experienced</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-green.png" alt="up arrow" style="float:left;" />
+                <span class="text-success">35%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="5-10 years">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/5f88416c/Mid-Career-New-York-NY'>Mid-Career</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-green.png" alt="up arrow" style="float:left;" />
+                <span class="text-success">11%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8">
+                <strong><span class='mapLink'>National Average</span></strong>
+            </div>
+            <div class="col-md-4">
+                <span><strong>$91,000</strong></span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="0-5 years">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/69c0ed0c/Entry-Level-New-York-NY'>Entry-Level</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-red.png" alt="up arrow" style="float:left;" />
+                <span class="text-danger">7%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+    </div>
+    
+</div>
+
+                
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Skills That Affect Software Engineer in New York, New York Salaries</h3>
+    </div>
+    <div class="panel-body">
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/1c78d8ea/New-York-NY-Python'>Python</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-green.png" alt="up arrow" style="float:left;" />
+                <span class="text-success">11%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <span class='mapLink'>C++</span>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-green.png" alt="up arrow" style="float:left;" />
+                <span class="text-success">4%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <span class='mapLink'>UNIX</span>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-green.png" alt="up arrow" style="float:left;" />
+                <span class="text-success">4%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <span class='mapLink'>Linux</span>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-green.png" alt="up arrow" style="float:left;" />
+                <span class="text-success">3%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <span class='mapLink'>Ruby on Rails</span>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-green.png" alt="up arrow" style="float:left;" />
+                <span class="text-success">3%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <span class='mapLink'>PHP</span>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-green.png" alt="up arrow" style="float:left;" />
+                <span class="text-success">2%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <span class='mapLink'>Java</span>
+            </div>
+            <div class="col-md-4">
+                
+                <span class="">0%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <span class='mapLink'>JavaScript</span>
+            </div>
+            <div class="col-md-4">
+                
+                <span class="">0%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8">
+                <strong><span class='mapLink'>National Average</span></strong>
+            </div>
+            <div class="col-md-4">
+                <span><strong>$91,000</strong></span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <span class='mapLink'>C#</span>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-red.png" alt="up arrow" style="float:left;" />
+                <span class="text-danger">3%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/c28b30d3/New-York-NY-SQL'>SQL</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-red.png" alt="up arrow" style="float:left;" />
+                <span class="text-danger">5%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/2846e2b6/New-York-NY-.NET'>.NET</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-red.png" alt="up arrow" style="float:left;" />
+                <span class="text-danger">5%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/61892ad9/New-York-NY-C'>C</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-red.png" alt="up arrow" style="float:left;" />
+                <span class="text-danger">5%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/4cc670fd/New-York-NY-ASP.NET'>ASP.NET</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-red.png" alt="up arrow" style="float:left;" />
+                <span class="text-danger">5%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/b211a4e0/New-York-NY-HTML'>HTML</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-red.png" alt="up arrow" style="float:left;" />
+                <span class="text-danger">7%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+        <div class="row">
+            <div class="col-md-8" title="">
+                <a class='mapLink' href='/research/US/Job=Software_Engineer/Salary/bfd4b037/New-York-NY-Microsoft-SQL-Server'>Microsoft SQL Server</a>
+            </div>
+            <div class="col-md-4">
+                <img src="//cdn-payscale.com/resources/150825/images/researchcenter/delta-red.png" alt="up arrow" style="float:left;" />
+                <span class="text-danger">7%</span>
+            </div>
+        </div>
+        <hr class="hideLast smallMargin" />
+        
+    </div>
+    
+</div>
+
+                
+<div class="panel panel-default  ">
+    <div class="panel-heading">
+        <h3 class="panel-title">Job Satisfaction</h3>
+    </div>
+    <div class="panel-body">
+        
+        <table class="table table-noborder no-margin">
+            <tr>
+                <td class="text-center">
+                    <div class="center-block sprite-rc_job-sat_smileys_4"></div>
+                    Highly satisfied</td>
+                <td class="text-center vr-left ">
+                    Rated 4 out of 5<br>based on 133 votes.</td>
+            </tr>
+        </table>
+    
+    </div>
+</div>
+
+
+                
+<div class="panel panel-default  ">
+    <div class="panel-heading">
+        <h3 class="panel-title">Gender</h3>
+    </div>
+    <div class="panel-body">
+        
+        <table class="table table-noborder table-condensed no-margin">
+            <tr>
+                <td class="middle">
+                    <div class="text-center">
+                        Female<br />
+                        10 %
+                    </div>
+                </td>
+                <td>
+                    <div class="sprite-rc_icon_bluefemale">
+                        <div style="overflow: hidden; height: 84.2802721088435px;">
+                            <div class="sprite-rc_icon_female"></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="middle">
+                    <div class="text-center">
+                        Male<br />
+                        90 %
+                    </div>
+                </td>
+                <td>
+                    <div class="sprite-rc_icon_bluemale">
+                        <div style="overflow: hidden; height: 9.71972789115645px;">
+                            <div class="sprite-rc_icon_male"></div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+        </table>
+    
+    </div>
+</div>
+
+
+
+                
+<div class="panel panel-default  ">
+    <div class="panel-heading">
+        <h3 class="panel-title">Years of Experience</h3>
+    </div>
+    <div class="panel-body">
+        
+            
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table class="tlf f11 w140" cellpadding="0" cellspacing="0"><tr class="f9"><th class="w90"><div class="f9 c6"></div></th><th class="w50"><div class="f9 c6 pl5"></div></th></tr><tr><th class=" p2  vt"><strong><table cellpadding="0" cellspacing="0"><tr><td valign="top" style="padding: 3px 5px 0px 0px"><img class="w8 h8 bcff9ebfda" src="//cdn-payscale.com/resources/150825/images/spacer.gif" width="8" height="8" /></td><td>Less than 1 year</td></tr></table></strong><span class=" "></span><div id="ctl00_mainContent_yearsExperienceTNG__module_ctl00_yearsExperienceChart_pieLegend_rowRepeater_ctl00_countDiv"></div></th><td class=" p2   tr pr10 vt">11%</td></tr><tr><th class=" p2  vt"><strong><table cellpadding="0" cellspacing="0"><tr><td valign="top" style="padding: 3px 5px 0px 0px"><img class="w8 h8 bcff2e5c8a" src="//cdn-payscale.com/resources/150825/images/spacer.gif" width="8" height="8" /></td><td>1-4 years</td></tr></table></strong><span class=" "></span><div id="ctl00_mainContent_yearsExperienceTNG__module_ctl00_yearsExperienceChart_pieLegend_rowRepeater_ctl01_countDiv"></div></th><td class=" p2   tr pr10 vt">51%</td></tr><tr><th class=" p2  vt"><strong><table cellpadding="0" cellspacing="0"><tr><td valign="top" style="padding: 3px 5px 0px 0px"><img class="w8 h8 bcff1b2a54" src="//cdn-payscale.com/resources/150825/images/spacer.gif" width="8" height="8" /></td><td>5-9 years</td></tr></table></strong><span class=" "></span><div id="ctl00_mainContent_yearsExperienceTNG__module_ctl00_yearsExperienceChart_pieLegend_rowRepeater_ctl02_countDiv"></div></th><td class=" p2   tr pr10 vt">26%</td></tr><tr><th class=" p2  vt"><strong><table cellpadding="0" cellspacing="0"><tr><td valign="top" style="padding: 3px 5px 0px 0px"><img class="w8 h8 bcff990000" src="//cdn-payscale.com/resources/150825/images/spacer.gif" width="8" height="8" /></td><td>10-19 years</td></tr></table></strong><span class=" "></span><div id="ctl00_mainContent_yearsExperienceTNG__module_ctl00_yearsExperienceChart_pieLegend_rowRepeater_ctl03_countDiv"></div></th><td class=" p2   tr pr10 vt">10%</td></tr><tr><th class=" p2  vt"><strong><table cellpadding="0" cellspacing="0"><tr><td valign="top" style="padding: 3px 5px 0px 0px"><img class="w8 h8 bcffcc9999" src="//cdn-payscale.com/resources/150825/images/spacer.gif" width="8" height="8" /></td><td>20 years or more</td></tr></table></strong><span class=" "></span><div id="ctl00_mainContent_yearsExperienceTNG__module_ctl00_yearsExperienceChart_pieLegend_rowRepeater_ctl04_countDiv"></div></th><td class=" p2   tr pr10 vt">3%</td></tr></table>
+            </td>
+            <td>
+                <div id="ctl00_mainContent_yearsExperienceTNG__module_ctl00_yearsExperienceChart_svgPieChart">
+
+</div>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        var PieLoader = {};
+    </script>
+    <script>
+var pieData = [143.0,664.0,339.0,129.0,34.0]
+    </script>
+    <script>
+        PieLoader.drawPieChart = function(){
+            var w = 280,                      
+            h = 125,                          
+            r = 50;  
+
+            var color = d3.scale.ordinal()
+                .range(['#9EBFDA', '#2E5C8A', '#1B2A54', '#990000', '#CC9999']);
+
+            data = pieData;
+
+            var vis = d3.select('#ctl00_mainContent_yearsExperienceTNG__module_ctl00_yearsExperienceChart_svgPieChart')
+                .append('svg:svg')          
+                .data([data])                 
+                .attr('width', w/2)          
+                .attr('height', h)
+                .style('padding-left','18px')
+                .style('padding-top', '5px')
+                .append('svg:g')               
+                .attr('transform', 'translate(' + r + ',' + r + ')')   
+        
+            var arc = d3.svg.arc()       
+                .outerRadius(r);
+        
+            var pie = d3.layout.pie()       
+                .sort(null);
+        
+            var arcs = vis.selectAll('g.slice')    
+                .data(pie)                         
+                .enter()                     
+                    .append('svg:g')              
+                        .attr('class', 'slice');  
+        
+            arcs.append('svg:path')
+                    .attr('fill', function (d, i) { return color(i); }) 
+                    .attr('d', arc)
+                    .style('stroke','black')
+                    .style('stroke-width', '0.5px');
+        };
+
+        if (typeof d3 === 'undefined') {
+            (function () {
+                var d3Loader = document.createElement('script');
+                d3Loader.type = 'text/javascript';
+                d3Loader.src = 'http://d3js.org/d3.v3.js';
+                d3Loader.onload = function () {
+                    PieLoader.drawPieChart();
+            };
+
+            document.body.appendChild(d3Loader);
+        }());
+    } else {
+        PieLoader.drawPieChart();
+        }
+    </script>
+
+
+        
+    </div>
+</div>
+
+
+                
+<div class="panel panel-default  ">
+    <div class="panel-heading">
+        <h3 class="panel-title">Common Health Benefits</h3>
+    </div>
+    <div class="panel-body">
+        
+            <table class="table margin-bottom-none table-condensed table-noborder">
+                <tr>
+                    <td>
+                        <img src="http://cdn-payscale.com/content/rc_icon_health.png"
+                            alt="medical benefits" width="34" height="34" border="0" /></td>
+                    <td class="text-nowrap">
+                        <span>Medical:
+                    88%</span></td>
+                    <td>
+                        <img src="http://cdn-payscale.com/content/rc_icon_dental.png"
+                            alt="dental benefits" width="35" height="35" border="0" /></td>
+                    <td class="text-nowrap">
+                        <span>Dental:
+                    73%</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="http://cdn-payscale.com/content/rc_icon_vision.png"
+                            alt="vision benefits" width="34" height="34" border="0" /></td>
+                    <td class="text-nowrap">
+                        <span>Vision:
+                    60%</span></td>
+                    <td>
+                        <img src="http://cdn-payscale.com/content/rc_icon_none.gif" alt="employee benefits"
+                            width="35" height="35" border="0" /></td>
+                    <td class="text-nowrap">
+                        <span>None:
+                    11%</span></td>
+                </tr>
+            </table>
+        
+    </div>
+</div>
+
+
+                <div class="center-block text-center"><div id="div-gpt-ad-payscale-1" style="width: 300px; height: 250px" class="center-block"><script type='text/javascript'>googletag.cmd.push(function () { googletag.display('div-gpt-ad-payscale-1'); });</script></div><h5>ADVERTISEMENT</h5></div>
+
+            </div>
+        </div>
+    </div>
+    <span class="dynamicContentBegin hidden" data-content="UserVoice-Javascript"></span>    <script>
+        // Include the UserVoice JavaScript SDK (only needed once on a page)
+        UserVoice = window.UserVoice || []; (function () { var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true; uv.src = '//widget.uservoice.com/rl1yaiDmrmRaV7j23TxKQ.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s) })();
+        UserVoice.push(['set', {
+            accent_color: '#e23a39',
+            trigger_color: 'white',
+            trigger_background_color: '#448dd6'
+        }]);
+        UserVoice.push(['identify', { type: 'Consumer' }]);
+        UserVoice.push(['addTrigger', { mode: 'satisfaction', trigger_position: 'bottom-right'}]);
+        UserVoice.push(['autoprompt', {}]);
+    </script>
+<span class="dynamicContentEnd hidden" data-content="UserVoice-Javascript"></span>
+
+
+        <div class="Payscale_Footer">
+            
+<span class="dynamicContentBegin hidden" data-content="/header-footer/footer"></span>  <div id="psFooterCon">
+    <div id="psFooter">
+      <div id="psFooterBody">
+      <div id="psFooterLinks">
+        <div class="psFooterCol">
+          <div class="takeSurveyAd">
+            <a href="/wizards/choose.aspx">
+              <img alt="Take the survey and earn more money" src="//cdn-payscale.com/content/header-footer/take_survey_ad.png">
+					  </a>
+          </div>
+          <div class="viewProductsAd">
+            <a href="/hr/product-insight-expert">
+              <img alt="Explore PayScale's cloud compensation software" src="//cdn-payscale.com/content/header-footer/product_footer_ad.png">
+					  </a>
+          </div>
+          
+        </div>
+        <div class="psFooterCol">
+          <div class="navCategory">
+            BUSINESS
+          </div>
+          <div class="navItem">
+            <a href="/hr/product-insight-expert">Compensation Software</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/whitepapers">Whitepapers</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/webinars">Webinars</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/customers">Customers</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/whypayscale/support">Support</a>
+          </div>
+          <div class="navItem">
+            <a href="http://resources.payscale.com/hr-request-a-demo.html">Request a Demo</a>
+          </div>
+          <div class="navCategory">
+            PERSONAL
+          </div>
+          <div class="navItem">
+            <a href="/mypayscale.aspx">Get Your Salary Report</a>
+          </div>
+          <div class="navItem">
+            <a href="/Job-Search-Engine">Find a Job</a>
+          </div>
+          <div class="navItem">
+            <a href="/research/US/Country=United_States/Salary">Research Careers</a>
+          </div>
+          <div class="navItem">
+            <a href="/college-salary-report">College Salary Report</a>
+          </div>
+          <div class="navCategory">
+            SCHOOLS
+          </div>
+          <div class="navItem">
+            <a href="/about/education-data/">Alumni Analytics</a>
+          </div>
+        </div>
+        <div class="psFooterCol">
+          <div class="navCategory">
+            PRESS
+          </div>
+          <div class="navItem">
+            <a href="/about/press-releases">Press Releases</a>
+          </div>
+          <div class="navItem">
+            <a href="/about/latest-news">PayScale in the News</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/partners">Partners</a>
+          </div>
+          <div class="navCategory">
+            BLOGS
+          </div>
+          <div class="navItem">
+            <a href="/career-news">Career News</a>
+          </div>
+          <div class="navItem">
+            <a href="/compensation-today">Compensation Today</a>
+          </div>
+          <div class="navCategory linkJobListing">
+            JOBS
+          </div>
+          <div class="navItem linkJobListing">
+            <a href="/about/jobs">Hiring in Seattle, WA</a>
+          </div>
+        </div>
+        <div class="psFooterCol">
+          <div class="navCategory">
+            CONTACT
+          </div>
+          <div>
+            PayScale, Inc.
+            <br>
+            1000 1st Ave South
+            <br>
+            Suite 500<br>
+			Seattle, WA 98134
+			</div>
+          <div class="socialMediaLinks">
+            <a href="http://www.facebook.com/PayScale">
+              <img src="//cdn-payscale.com/resources/150825/images/footer/facebook_26x26.png">
+					</a>
+            <a href="http://twitter.com/payscale">
+              <img src="//cdn-payscale.com/resources/150825/images/footer/twitter_26x26.png">
+					</a>
+            <a href="http://www.linkedin.com/company/47199">
+              <img src="//cdn-payscale.com/resources/150825/images/footer/linkedin_26x26.png">
+					</a>
+            <a href="https://plus.google.com/+payscale">
+              <img src="//cdn-payscale.com/resources/150825/images/footer/gplus_26x26.png">
+					</a>
+          </div>
+          <div class="navCategory">
+            ABOUT
+          </div>
+          <div class="navItem">
+            <a href="/about">About PayScale</a>
+          </div>
+          <div class="navItem linkJobListing">
+            <a href="/about/jobs">Work for Us</a>
+          </div>
+          <div class="navItem">
+            <a href="/about/use-our-data">Use Our Data</a>
+          </div>
+		  <div class="navItem">
+            <a href="/about/management-team">Management Team</a>
+          </div>
+          <div class="navItem">
+            <a href="/about/board-of-directors">Board of Directors</a>
+          </div>
+          <div class="navItem">
+            <a href="/about/board-of-advisors">Board of Advisors</a>
+          </div>
+          <div class="navItem">
+            <a href="/hr/product-how-it-works">Methodology</a>
+          </div>
+        </div>
+        
+        <div class="clear"></div>
+</div>
+      <div class="privacyCon">
+        
+          <div class="privacyNotice">
+            <img src="//cdn-payscale.com/content/header-footer/lock-icon.png">
+            Privacy Notice: PayScale takes your privacy seriously and is sensitive to the nature of information collected on this site.
+          </div>
+        <div class="privacyLinks" style="margin-top:16px">
+          <a href="/license">Terms of Use</a>
+          <span class="privacyLinkDivider">|</span>
+          <a href="/privacy.aspx">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+          &copy; 2015 PayScale, Inc. All rights reserved
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="backToTopCon">
+      <a href="#pageTop">
+        <span id="backToTopButton">Back to Top</span>
+      </a>
+    </div>
+  </div>
+
+    <div class="psFooterBottom"></div>
+  </div><span class="dynamicContentEnd hidden" data-content="/header-footer/footer"></span>
+
+        </div>
+
+        <script>
+    document.write(unescape("%3Cscript src='" + document.location.protocol + "//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>
+(function () {
+    function containsItem(itemToFind, allItems) {
+        var isFound = false;
+
+        for (var i = 0; i < allItems.length && !isFound; i++) {
+            isFound = (itemToFind.substr(0, allItems[i].length) === allItems[i]); // match prefixes
+        }
+
+        return isFound;
+    }
+
+    function initializeMarketo()
+    {
+        if (typeof Munchkin !== 'undefined') { // Might be undefined if munchkin.js script hasn't finished loading
+            var marketoAccountId = '417-NLK-080'; // '417-NLK-080';
+            var pagePath = window.location.pathname.toLowerCase();
+            var pagesToTrack = [
+                '/hr',
+                '/biz/',
+                '/compensation',
+                '/payscale-index',
+                '/createaccount.aspx'
+                ];
+
+            if (window.location.hostname.toLowerCase() === 'marketrate.payscale.com' || (window.location.pathname === '/') || containsItem(pagePath, pagesToTrack)) {
+                Munchkin.init(marketoAccountId);
+            } else {
+                // Workaround for Marketo not being able to handle all of our traffic
+                Munchkin.init(marketoAccountId, {cookieAnon: false});
+            }
+        }
+    }
+
+    initializeMarketo();
+})();
+</script>
+
+
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({'event':'nonInteractiveEvent', 'eventCategory':'ABTest', 'eventAction':'RC.NLG.HighDataLowTraffic', 'eventLabel':'ShowNarrative', 'eventValue':''});
+</script>
+
+<script type="text/javascript">checkLoadTime()</script>
+
+        
+
+        <div id="pageBottom"></div>
+        
+    </body>
+</html>

@@ -1,0 +1,30 @@
+ID: 1 , Time: 10:34AM Sep23 2015 , score: 676 , Depth: 0 , Access: True , Code: 200 , Size 161KB , url: https://en.wikipedia.org/wiki/New_York_University_Polytechnic_School_of_Engineering
+ID: 2 , Time: 10:34AM Sep23 2015 , score: 92 , Depth: 1 , Access: True , Code: 200 , Size 27KB , url: http://en.wikipedia.org/wiki/File:NYU_Polytechnic_School_of_Engineering.png
+ID: 3 , Time: 10:34AM Sep23 2015 , score: 32 , Depth: 1 , Access: True , Code: 200 , Size 29KB , url: http://en.wikipedia.org/wiki/Wunsch_Building,_Polytechnic_Institute_of_New_York
+ID: 4 , Time: 10:34AM Sep23 2015 , score: 348 , Depth: 1 , Access: True , Code: 200 , Size 99KB , url: http://en.wikipedia.org/wiki/Poly_Prep_Country_Day_School
+ID: 5 , Time: 10:34AM Sep23 2015 , score: 9 , Depth: 1 , Access: True , Code: 200 , Size 35KB , url: http://en.wikipedia.org/wiki/File:Polytechnic_School_of_Engineering_-_School_and_dorm.jpg
+ID: 6 , Time: 10:34AM Sep23 2015 , score: 72 , Depth: 1 , Access: True , Code: 200 , Size 48KB , url: http://en.wikipedia.org/wiki/File:Nyuseal.png
+ID: 7 , Time: 10:34AM Sep23 2015 , score: 10 , Depth: 1 , Access: True , Code: 200 , Size 36KB , url: http://en.wikipedia.org/wiki/File:First_Free_Congregational_Poly_jeh.jpg
+ID: 8 , Time: 10:34AM Sep23 2015 , score: 17 , Depth: 1 , Access: True , Code: 200 , Size 28KB , url: http://en.wikipedia.org/wiki/File:Electrostatic_Laboratory_of_the_Polytechnic_Institute.jpg
+ID: 9 , Time: 10:34AM Sep23 2015 , score: 1 , Depth: 1 , Access: True , Code: 200 , Size 644KB , url: http://en.wikipedia.org/wiki/Buenos_Aires
+ID: 10 , Time: 10:34AM Sep23 2015 , score: 464 , Depth: 0 , Access: True , Code: 200 , Size 272KB , url: https://twitter.com/nyupoly
+ID: 11 , Time: 10:34AM Sep23 2015 , score: 12 , Depth: 1 , Access: True , Code: 200 , Size 299KB , url: http://en.wikipedia.org/wiki/Abu_Dhabi
+ID: 12 , Time: 10:34AM Sep23 2015 , score: 16 , Depth: 1 , Access: True , Code: 200 , Size 1213KB , url: http://en.wikipedia.org/wiki/United_States
+ID: 13 , Time: 10:34AM Sep23 2015 , score: 1 , Depth: 1 , Access: True , Code: 200 , Size 673KB , url: http://en.wikipedia.org/wiki/United_Arab_Emirates
+ID: 14 , Time: 10:34AM Sep23 2015 , score: 36 , Depth: 1 , Access: True , Code: 200 , Size 52KB , url: http://en.wikipedia.org/wiki/Donald_Othmer
+ID: 15 , Time: 10:34AM Sep23 2015 , score: 176 , Depth: 0 , Access: False , Code: 200 , Size 202KB , url: http://www.yelp.com/biz/nyu-polytechnic-school-of-engineering-brooklyn
+ID: 16 , Time: 10:34AM Sep23 2015 , score: 108 , Depth: 0 , Access: True , Code: 200 , Size 25KB , url: http://engineering.nyu.edu/
+ID: 17 , Time: 10:34AM Sep23 2015 , score: 3 , Depth: 1 , Access: True , Code: 200 , Size 603KB , url: http://en.wikipedia.org/wiki/New_York
+ID: 18 , Time: 10:34AM Sep23 2015 , score: 308 , Depth: 0 , Access: False , Code: 200 , Size 624KB , url: https://www.facebook.com/nyupoly
+ID: 19 , Time: 10:34AM Sep23 2015 , score: 1156 , Depth: 1 , Access: True , Code: 200 , Size 385KB , url: http://en.wikipedia.org/wiki/New_York_University
+ID: 20 , Time: 10:34AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 106KB , url: http://en.wikipedia.org/wiki/Downtown_Brooklyn
+ID: 21 , Time: 10:34AM Sep23 2015 , score: 24 , Depth: 1 , Access: True , Code: 200 , Size 210KB , url: http://en.wikipedia.org/wiki/Dyker_Heights
+ID: 22 , Time: 10:34AM Sep23 2015 , score: 8 , Depth: 1 , Access: True , Code: 200 , Size 732KB , url: http://en.wikipedia.org/wiki/Manhattan
+##############################################################################################################
+The total number of crawled pages:  22
+##############################################################################################################
+The total number of successful pages:  20
+##############################################################################################################
+The total size of successful pages:  5
+##############################################################################################################
+The total time:  19.5267329216

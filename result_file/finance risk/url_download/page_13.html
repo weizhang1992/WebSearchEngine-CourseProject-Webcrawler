@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Modern portfolio theory - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Modern_portfolio_theory","wgTitle":"Modern portfolio theory","wgCurRevisionId":677959720,"wgRevisionId":677959720,"wgArticleId":734434,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Wikipedia articles needing clarification from August 2015","All articles with unsourced statements","Articles with unsourced statements from August 2009","Articles with unsourced statements from February 2011","Commons category without a link on Wikidata","Financial economics","Finance theories","Mathematical finance","Investment","Portfolio theories","Financial risk"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August",
+"September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Modern_portfolio_theory","wgRelevantArticleId":734434,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Markowitz_frontier.jpg/100px-Markowitz_frontier.jpg","wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,
+"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1072885","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Modern_portfolio_theory" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Modern_portfolio_theory" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Modern_portfolio_theory skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Modern portfolio theory</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="hatnote">"Portfolio analysis" redirects here. For theorems about the mean-variance efficient frontier, see <a href="/wiki/Mutual_fund_separation_theorem" title="Mutual fund separation theorem">Mutual fund separation theorem</a>. For non-mean-variance portfolio analysis, see <a href="/wiki/Marginal_conditional_stochastic_dominance" title="Marginal conditional stochastic dominance">Marginal conditional stochastic dominance</a>.</div>
+<p><b>Modern portfolio theory</b> (<b>MPT</b>) is a theory of <a href="/wiki/Finance" title="Finance">finance</a> that attempts to maximize portfolio expected <a href="/wiki/Rate_of_return" title="Rate of return">return</a> for a given amount of portfolio risk, or equivalently minimize <a href="/wiki/Financial_risk" title="Financial risk">risk</a> for a given level of expected return, by carefully choosing the proportions of various <a href="/wiki/Asset" title="Asset">assets</a>. Although MPT is widely used in practice in the financial industry and several of its creators won a <a href="/wiki/Nobel_Memorial_Prize_in_Economic_Sciences" title="Nobel Memorial Prize in Economic Sciences">Nobel memorial prize</a> for the theory,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> in recent years the basic assumptions of MPT have been widely challenged by fields such as <a href="/wiki/Behavioral_economics" title="Behavioral economics">behavioral economics</a>.</p>
+<p>MPT is a mathematical formulation of the concept of <a href="/wiki/Diversification_(finance)" title="Diversification (finance)">diversification</a> in investing, with the aim of selecting a collection of investment assets that has lower overall risk than any other combination of assets with the same expected return. This is possible, intuitively speaking, because different types of assets sometimes change in value in opposite directions.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> For example, to the extent prices in the <a href="/wiki/Stock_market" title="Stock market">stock market</a> move differently from prices in the <a href="/wiki/Bond_market" title="Bond market">bond market</a>, a combination of both types of assets can in theory generate lower overall risk than either individually. Diversification can lower risk even if assets' returns are positively correlated.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>More technically, MPT models an asset's return as a <a href="/wiki/Normal_distribution" title="Normal distribution">normally</a> or <a href="/wiki/Elliptical_distribution" title="Elliptical distribution">elliptically</a> distributed <a href="/wiki/Random_variable" title="Random variable">random variable</a>, defines <a href="/wiki/Risk" title="Risk">risk</a> as the <a href="/wiki/Standard_deviation" title="Standard deviation">standard deviation</a> of return, and models a portfolio as a weighted combination of assets, so that the return of a portfolio is the weighted combination of the assets' returns. By combining different assets whose returns are not perfectly positively <a href="/wiki/Correlated" title="Correlated" class="mw-redirect">correlated</a>, MPT seeks to reduce the total <a href="/wiki/Variance" title="Variance">variance</a> of the portfolio return. MPT also assumes that investors are <a href="/wiki/Homo_economicus" title="Homo economicus">rational</a> and markets are <a href="/wiki/Efficient-market_hypothesis" title="Efficient-market hypothesis">efficient</a>.</p>
+<p>MPT was developed in the 1950s through the early 1970s and was considered an important advance in the mathematical modeling of finance. Since then, some theoretical and practical <a href="#Criticisms">criticisms</a> have been leveled against it. These include evidence that financial returns do not follow a <a href="/wiki/Normal_distribution" title="Normal distribution">normal distribution</a> or indeed any symmetric distribution, and that correlations between asset classes are not fixed but can vary depending on external events (especially in crises). Further, there remains evidence that investors are not <a href="/wiki/Rational_investor" title="Rational investor" class="mw-redirect">rational</a> and markets may not be <a href="/wiki/Efficient-market_hypothesis" title="Efficient-market hypothesis">efficient</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup> Finally, the low volatility anomaly conflicts with <a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">CAPM</a>'s trade-off assumption of higher risk for higher return. It states that a portfolio consisting of low volatility equities (like blue chip stocks) reaps higher risk-adjusted returns than a portfolio with high volatility equities (like illiquid penny stocks). A study conducted by Myron Scholes, Michael Jensen, and Fischer Black in 1972 suggests that the relationship between return and <a href="/wiki/Beta_(finance)" title="Beta (finance)">beta</a> might be flat or even negatively correlated.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Concept"><span class="tocnumber">1</span> <span class="toctext">Concept</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Mathematical_model"><span class="tocnumber">3</span> <span class="toctext">Mathematical model</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Risk_and_expected_return"><span class="tocnumber">3.1</span> <span class="toctext">Risk and expected return</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Diversification"><span class="tocnumber">3.2</span> <span class="toctext">Diversification</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Efficient_frontier_with_no_risk-free_asset"><span class="tocnumber">3.3</span> <span class="toctext">Efficient frontier with no risk-free asset</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Two_mutual_fund_theorem"><span class="tocnumber">3.4</span> <span class="toctext">Two mutual fund theorem</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Risk-free_asset_and_the_capital_allocation_line"><span class="tocnumber">3.5</span> <span class="toctext">Risk-free asset and the capital allocation line</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Asset_pricing"><span class="tocnumber">4</span> <span class="toctext">Asset pricing</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Systematic_risk_and_specific_risk"><span class="tocnumber">4.1</span> <span class="toctext">Systematic risk and specific risk</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Capital_asset_pricing_model"><span class="tocnumber">4.2</span> <span class="toctext">Capital asset pricing model</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Criticisms"><span class="tocnumber">5</span> <span class="toctext">Criticisms</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Assumptions"><span class="tocnumber">5.1</span> <span class="toctext">Assumptions</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Poor_model"><span class="tocnumber">5.2</span> <span class="toctext">Poor model</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Effect_on_asset_prices"><span class="tocnumber">5.3</span> <span class="toctext">Effect on asset prices</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Extensions"><span class="tocnumber">6</span> <span class="toctext">Extensions</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#Other_Applications"><span class="tocnumber">7</span> <span class="toctext">Other Applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#Project_portfolios_and_other_.22non-financial.22_assets"><span class="tocnumber">7.1</span> <span class="toctext">Project portfolios and other "non-financial" assets</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#Comparison_with_arbitrage_pricing_theory"><span class="tocnumber">8</span> <span class="toctext">Comparison with arbitrage pricing theory</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Further_reading"><span class="tocnumber">11</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Concept">Concept</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=1" title="Edit section: Concept">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The fundamental concept behind MPT is that the <a href="/wiki/Asset" title="Asset">assets</a> in an investment <a href="/wiki/Portfolio_(finance)" title="Portfolio (finance)">portfolio</a> should not be selected merely individually, each on its own merits. Rather, it is important to consider how each asset might change in price relative to how every other asset in the portfolio might change in price.</p>
+<p>Investing is a tradeoff between <a href="/wiki/Risk" title="Risk">risk</a> and expected <a href="/wiki/Return_(finance)" title="Return (finance)" class="mw-redirect">return</a>. In general, assets with higher expected returns are riskier. The stocks in an efficient portfolio are chosen depending on the investor's risk tolerance: an efficient portfolio is said to be having a combination<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (August 2015)">clarification needed</span></a></i>]</sup> of at least two stocks above the minimum variance portfolio. For a given amount of risk, and on a lot of assumptions about the probability distribution of returns on each asset, MPT shows how to select a portfolio with the highest possible expected return. Or, for a given expected return, MPT explains how to select a portfolio with the lowest possible risk (the targeted expected return cannot be more than the highest-returning available security, of course, unless negative holdings of assets are possible.)<sup id="cite_ref-elton_7-0" class="reference"><a href="#cite_note-elton-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>Therefore, MPT is a theory of <a href="/wiki/Diversification_(finance)" title="Diversification (finance)">diversification</a>. Under certain <a href="#Assumptions">assumptions</a> and for specific <a href="/wiki/Quantification_(science)" title="Quantification (science)">quantitative</a> definitions of risk and return, MPT explains how to find the best possible diversification strategy.</p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=2" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="/wiki/Harry_Markowitz" title="Harry Markowitz">Harry Markowitz</a> introduced MPT in a 1952 article<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup> and a 1959 book.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup> Markowitz classifies it simply as "Portfolio Theory," because "There's nothing modern about it." See also this<sup id="cite_ref-elton_7-1" class="reference"><a href="#cite_note-elton-7"><span>[</span>7<span>]</span></a></sup> survey of the history.</p>
+<h2><span class="mw-headline" id="Mathematical_model">Mathematical model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=3" title="Edit section: Mathematical model">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In some sense the mathematical derivation below is MPT, although the basic concepts behind the model have also been very influential.<sup id="cite_ref-elton_7-2" class="reference"><a href="#cite_note-elton-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>This section develops the "classic" MPT model. There have been many <a href="#Extensions">extensions</a> since.</p>
+<h3><span class="mw-headline" id="Risk_and_expected_return">Risk and expected return</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=4" title="Edit section: Risk and expected return">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>MPT assumes that investors are risk averse, meaning that given two portfolios that offer the same expected return, investors will prefer the less risky one. Thus, an investor will take on increased risk only if compensated by higher expected returns. Conversely, an investor who wants higher expected returns must accept more risk. The exact trade-off will be the same for all investors, but different investors will evaluate the trade-off differently based on individual risk aversion characteristics. The implication is that a <a href="/wiki/Rationality" title="Rationality">rational</a> investor will not invest in a portfolio if a second portfolio exists with a more favorable <a href="/wiki/Risk-return_spectrum" title="Risk-return spectrum" class="mw-redirect">risk-expected return profile</a> – i.e., if for that level of risk an alternative portfolio exists that has better expected returns.</p>
+<p>Note that the theory uses standard deviation of return as a proxy for risk, which is valid if asset returns are <a href="/wiki/Joint_normality" title="Joint normality" class="mw-redirect">jointly normally distributed</a> or otherwise <a href="/wiki/Elliptical_distribution" title="Elliptical distribution">elliptically distributed</a>. There are problems with this, however; see <a href="#Criticisms">criticism</a>.</p>
+<p>Under the model:</p>
+<ul>
+<li>Portfolio return is the <a href="/wiki/Linear_combination" title="Linear combination">proportion-weighted combination</a> of the constituent assets' returns.</li>
+<li>Portfolio volatility is a function of the <a href="/wiki/Correlation" title="Correlation" class="mw-redirect">correlations</a> <i>ρ</i><sub>ij</sub> of the component assets, for all asset pairs (<i>i</i>, <i>j</i>).</li>
+</ul>
+<blockquote style="background: 1; border: 1px solid black; padding: 1em;">
+<p>In general:</p>
+<ul>
+<li>Expected return:</li>
+</ul>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \operatorname{E}(R_p) = \sum_i w_i \operatorname{E}(R_i) \quad " src="//upload.wikimedia.org/math/f/c/2/fc2579ff225aa039e4d057a593dcf5b1.png" /></dd>
+</dl>
+<dl>
+<dd>where <img class="mwe-math-fallback-image-inline tex" alt="R_p" src="//upload.wikimedia.org/math/4/6/c/46c15ff79849925fe72667d0daaa34c3.png" /> is the return on the portfolio, <img class="mwe-math-fallback-image-inline tex" alt=" R_i " src="//upload.wikimedia.org/math/6/0/c/60cc9655a5f88e01bc72f76307e01689.png" /> is the return on asset <i>i</i> and <img class="mwe-math-fallback-image-inline tex" alt=" w_i " src="//upload.wikimedia.org/math/d/f/c/dfc96001568235d60dc12dca4b32d260.png" /> is the weighting of component asset <img class="mwe-math-fallback-image-inline tex" alt=" i " src="//upload.wikimedia.org/math/8/6/5/865c0c0b4ab0e063e5caa3387c1a8741.png" /> (that is, the proportion of asset "i" in the portfolio).</dd>
+</dl>
+<ul>
+<li>Portfolio return variance:</li>
+</ul>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \sigma_p^2 = \sum_i w_i^2 \sigma_{i}^2 + \sum_i \sum_{j \neq i} w_i w_j \sigma_i \sigma_j \rho_{ij}, " src="//upload.wikimedia.org/math/1/8/c/18cef8bf12e266c95293227c9c54b466.png" /></dd>
+<dd>where <img class="mwe-math-fallback-image-inline tex" alt="\rho_{ij}" src="//upload.wikimedia.org/math/3/d/8/3d871d45bba3e5ac7c963d6797b933ce.png" /> is the <a href="/wiki/Pearson_product-moment_correlation_coefficient" title="Pearson product-moment correlation coefficient">correlation coefficient</a> between the returns on assets <i>i</i> and <i>j</i>. Alternatively the expression can be written as:</dd>
+</dl>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \sigma_p^2 = \sum_i \sum_j w_i w_j \sigma_i \sigma_j \rho_{ij} " src="//upload.wikimedia.org/math/b/4/5/b4547d97bc4475bb6d2694d5363ad235.png" />,</dd>
+<dd>where <img class="mwe-math-fallback-image-inline tex" alt=" \rho_{ij} = 1 " src="//upload.wikimedia.org/math/2/0/0/200fa2a8b764dd5d3c222ee2750e4672.png" /> for <i>i</i>=<i>j</i>.</dd>
+</dl>
+<ul>
+<li>Portfolio return volatility (standard deviation):</li>
+</ul>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="  \sigma_p = \sqrt {\sigma_p^2} " src="//upload.wikimedia.org/math/9/2/9/929a89045afdb487daa434cd134c920b.png" /></dd>
+</dl>
+<p>For a <b>two asset</b> portfolio:</p>
+<ul>
+<li>Portfolio return: <img class="mwe-math-fallback-image-inline tex" alt=" \operatorname{E}(R_p) =  w_A \operatorname{E}(R_A) +
+w_B \operatorname{E}(R_B) = w_A \operatorname{E}(R_A) + (1 - w_A) \operatorname{E}(R_B). " src="//upload.wikimedia.org/math/7/0/2/702c41ff4906cfc7b4caa1e3b8c4b5f8.png" /></li>
+<li>Portfolio variance: <img class="mwe-math-fallback-image-inline tex" alt=" \sigma_p^2  = w_A^2 \sigma_A^2  + w_B^2 \sigma_B^2 + 2w_Aw_B  \sigma_{A} \sigma_{B} \rho_{AB}" src="//upload.wikimedia.org/math/4/9/a/49ab3013d5662416dda518eaad45f638.png" /></li>
+</ul>
+<p>For a <b>three asset</b> portfolio:</p>
+<ul>
+<li>Portfolio return: <img class="mwe-math-fallback-image-inline tex" alt=" \operatorname{E}(R_p) = w_A \operatorname{E}(R_A) + w_B \operatorname{E}(R_B) + w_C \operatorname{E}(R_C) " src="//upload.wikimedia.org/math/4/9/4/494f66f31fc90a31c2cbde4a59068a2f.png" /></li>
+<li>Portfolio variance: <img class="mwe-math-fallback-image-inline tex" alt=" \sigma_p^2  = w_A^2 \sigma_A^2  + w_B^2 \sigma_B^2 + w_C^2 \sigma_C^2 + 2w_Aw_B  \sigma_{A} \sigma_{B} \rho_{AB}
++ 2w_Aw_C  \sigma_{A} \sigma_{C} \rho_{AC} + 2w_Bw_C  \sigma_{B} \sigma_{C} \rho_{BC}" src="//upload.wikimedia.org/math/f/3/a/f3ad566cdf4d5ef0726b795a392edd9c.png" /></li>
+</ul>
+</blockquote>
+<h3><span class="mw-headline" id="Diversification">Diversification</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=5" title="Edit section: Diversification">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>An investor can reduce portfolio risk simply by holding combinations of instruments that are not perfectly positively <a href="/wiki/Correlation" title="Correlation" class="mw-redirect">correlated</a> (<a href="/wiki/Pearson_product-moment_correlation_coefficient" title="Pearson product-moment correlation coefficient">correlation coefficient</a> <img class="mwe-math-fallback-image-inline tex" alt="-1 \le \rho_{ij}&lt;  1" src="//upload.wikimedia.org/math/d/6/0/d60e32d1f2dd06234b3b7a87b31ce7bf.png" />). In other words, investors can reduce their exposure to individual asset risk by holding a <a href="/wiki/Diversification_(finance)" title="Diversification (finance)">diversified</a> portfolio of assets. Diversification may allow for the same portfolio expected return with reduced risk. These ideas have been started with Markowitz and then reinforced by other economists and mathematicians such as Andrew Brennan who have expressed ideas in the limitation of variance through portfolio theory.</p>
+<p>If all the asset pairs have correlations of 0—they are perfectly uncorrelated—the portfolio's return variance is the sum over all assets of the square of the fraction held in the asset times the asset's return variance (and the portfolio standard deviation is the square root of this sum).</p>
+<h3><span class="mw-headline" id="Efficient_frontier_with_no_risk-free_asset">Efficient frontier with no risk-free asset</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=6" title="Edit section: Efficient frontier with no risk-free asset">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Efficient_frontier" title="Efficient frontier">Efficient frontier</a></div>
+<div class="hatnote">See also: <a href="/wiki/Portfolio_optimization" title="Portfolio optimization">Portfolio optimization</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:271px;"><a href="/wiki/File:Markowitz_frontier.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Markowitz_frontier.jpg/269px-Markowitz_frontier.jpg" width="269" height="148" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Markowitz_frontier.jpg/404px-Markowitz_frontier.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/e/e1/Markowitz_frontier.jpg 2x" data-file-width="434" data-file-height="239" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Markowitz_frontier.jpg" class="internal" title="Enlarge"></a></div>
+Efficient Frontier. The hyperbola is sometimes referred to as the 'Markowitz Bullet', and is the efficient frontier if no risk-free asset is available. With a risk-free asset, the straight line is the efficient frontier.</div>
+</div>
+</div>
+<p>As shown in this graph, every possible combination of the risky assets, without including any holdings of the risk-free asset, can be plotted in risk-expected return space, and the collection of all such possible portfolios defines a region in this space. The left boundary of this region is a hyperbola,<sup id="cite_ref-Merton_10-0" class="reference"><a href="#cite_note-Merton-10"><span>[</span>10<span>]</span></a></sup> and the upper edge of this region is the <i>efficient frontier</i> in the absence of a risk-free asset (sometimes called "the Markowitz bullet"). Combinations along this upper edge represent portfolios (including no holdings of the risk-free asset) for which there is lowest risk for a given level of expected return. Equivalently, a portfolio lying on the efficient frontier represents the combination offering the best possible expected return for given risk level.</p>
+<blockquote style="background: 1; border: 1px solid black; padding: 1em;">
+<p><a href="/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">Matrices</a> are preferred for calculations of the efficient frontier.</p>
+<p>In matrix form, for a given "risk tolerance" <img class="mwe-math-fallback-image-inline tex" alt="q \in [0,\infty)" src="//upload.wikimedia.org/math/1/a/4/1a489d8f68798684bfddd44552a28614.png" />, the efficient frontier is found by minimizing the following expression:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="  w^T \Sigma w - q*R^T w" src="//upload.wikimedia.org/math/d/a/c/daccd2cb76fcb8ce8fad9dc58ff284a3.png" /></dd>
+</dl>
+<p>where</p>
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt="w" src="//upload.wikimedia.org/math/f/1/2/f1290186a5d0b1ceab27f4e77c0c5d68.png" /> is a vector of portfolio weights and <img class="mwe-math-fallback-image-inline tex" alt="\sum_i w_i = 1." src="//upload.wikimedia.org/math/8/d/4/8d4a5e7cac379325daf967a65e1ea405.png" /> (The weights can be negative, which means investors can <a href="/wiki/Shorting" title="Shorting" class="mw-redirect">short</a> a security.);</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="\Sigma" src="//upload.wikimedia.org/math/a/6/4/a643a0ef5974b64678111d03125054fc.png" /> is the <a href="/wiki/Covariance_matrix" title="Covariance matrix">covariance matrix</a> for the returns on the assets in the portfolio;</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="q \ge 0" src="//upload.wikimedia.org/math/3/0/1/301af9059e451caa25882f245cb7125a.png" /> is a "risk tolerance" factor, where 0 results in the portfolio with minimal risk and <img class="mwe-math-fallback-image-inline tex" alt="\infty" src="//upload.wikimedia.org/math/d/2/4/d245777abca64ece2d5d7ca0d19fddb6.png" /> results in the portfolio infinitely far out on the frontier with both expected return and risk unbounded; and</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="R" src="//upload.wikimedia.org/math/e/1/e/e1e1d3d40573127e9ee0480caf1283d6.png" /> is a vector of expected returns.</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="w^T \Sigma w" src="//upload.wikimedia.org/math/1/5/2/152ee2909a53a9de3ca26bdf23a5c8e2.png" /> is the variance of portfolio return.</li>
+<li><img class="mwe-math-fallback-image-inline tex" alt="R^T w" src="//upload.wikimedia.org/math/d/9/2/d921ee93ca6e168c2d87c2de220fa313.png" /> is the expected return on the portfolio.</li>
+</ul>
+<p>The above optimization finds the point on the frontier at which the inverse of the slope of the frontier would be <i>q</i> if portfolio return variance instead of standard deviation were plotted horizontally. The frontier in its entirety is parametric on <i>q</i>.</p>
+<p>Many software packages, including <a href="/wiki/MATLAB" title="MATLAB">MATLAB</a>, <a href="/wiki/Microsoft_Excel" title="Microsoft Excel">Microsoft Excel</a>, <a href="/wiki/Mathematica" title="Mathematica">Mathematica</a> and <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a>, provide <a href="/wiki/Quadratic_programming" title="Quadratic programming">optimization</a> routines suitable for the above problem.</p>
+<p>An alternative approach to specifying the efficient frontier is to do so parametrically on the expected portfolio return <img class="mwe-math-fallback-image-inline tex" alt="R^T w." src="//upload.wikimedia.org/math/4/e/7/4e73eba41b86ee8ef2dcfafde92a3c1b.png" /> This version of the problem requires that we minimize</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="  w^T \Sigma w  " src="//upload.wikimedia.org/math/1/5/2/152ee2909a53a9de3ca26bdf23a5c8e2.png" /></dd>
+</dl>
+<p>subject to</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="R^T w = \mu" src="//upload.wikimedia.org/math/9/1/e/91ef784273564be9a3a00c875d55233c.png" /></dd>
+</dl>
+<p>for parameter <img class="mwe-math-fallback-image-inline tex" alt="\mu" src="//upload.wikimedia.org/math/b/7/2/b72bb92668acc30b4474caff40274044.png" />. This problem is easily solved using a <a href="/wiki/Lagrange_multiplier" title="Lagrange multiplier">Lagrange multiplier</a>.</p>
+</blockquote>
+<h3><span class="mw-headline" id="Two_mutual_fund_theorem">Two mutual fund theorem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=7" title="Edit section: Two mutual fund theorem">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>One key result of the above analysis is the <a href="/wiki/Mutual_fund_separation_theorem#No_risk-free_asset" title="Mutual fund separation theorem">two mutual fund theorem</a>.<sup id="cite_ref-Merton_10-1" class="reference"><a href="#cite_note-Merton-10"><span>[</span>10<span>]</span></a></sup> This theorem states that any portfolio on the efficient frontier can be generated by holding a combination of any two given portfolios on the frontier; the latter two given portfolios are the "mutual funds" in the theorem's name. So in the absence of a risk-free asset, an investor can achieve any desired efficient portfolio even if all that is accessible is a pair of efficient mutual funds. If the location of the desired portfolio on the frontier is between the locations of the two mutual funds, both mutual funds will be held in positive quantities. If the desired portfolio is outside the range spanned by the two mutual funds, then one of the mutual funds must be sold short (held in negative quantity) while the size of the investment in the other mutual fund must be greater than the amount available for investment (the excess being funded by the borrowing from the other fund).</p>
+<h3><span class="mw-headline" id="Risk-free_asset_and_the_capital_allocation_line">Risk-free asset and the capital allocation line</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=8" title="Edit section: Risk-free asset and the capital allocation line">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Capital_allocation_line" title="Capital allocation line">Capital allocation line</a></div>
+<p>The risk-free asset is the (hypothetical) asset that pays a <a href="/wiki/Risk-free_rate" title="Risk-free rate" class="mw-redirect">risk-free rate</a>. In practice, short-term government securities (such as US <a href="/wiki/Treasury_bills" title="Treasury bills" class="mw-redirect">treasury bills</a>) are used as a risk-free asset, because they pay a fixed rate of interest and have exceptionally low <a href="/wiki/Default_(finance)" title="Default (finance)">default</a> risk. The risk-free asset has zero variance in returns (hence is risk-free); it is also uncorrelated with any other asset (by definition, since its variance is zero). As a result, when it is combined with any other asset or portfolio of assets, the change in return is linearly related to the change in risk as the proportions in the combination vary.</p>
+<p>When a risk-free asset is introduced, the half-line shown in the figure is the new efficient frontier. It is tangent to the hyperbola at the pure risky portfolio with the highest <a href="/wiki/Sharpe_ratio" title="Sharpe ratio">Sharpe ratio</a>. Its vertical intercept represents a portfolio with 100% of holdings in the risk-free asset; the tangency with the hyperbola represents a portfolio with no risk-free holdings and 100% of assets held in the portfolio occurring at the tangency point; points between those points are portfolios containing positive amounts of both the risky tangency portfolio and the risk-free asset; and points on the half-line beyond the tangency point are <a href="/wiki/Leverage_(finance)" title="Leverage (finance)">leveraged</a> portfolios involving negative holdings of the risk-free asset (the latter has been sold short—in other words, the investor has borrowed at the risk-free rate) and an amount invested in the tangency portfolio equal to more than 100% of the investor's initial capital. This efficient half-line is called the <a href="/wiki/Capital_allocation_line" title="Capital allocation line">capital allocation line</a> (CAL), and its formula can be shown to be</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" E(R_{C}) = R_F + \sigma_C  \frac{E(R_P) - R_F}{\sigma_P}." src="//upload.wikimedia.org/math/a/2/e/a2ed09cde4b29b7e0116aa7af926fd77.png" /></dd>
+</dl>
+<p>In this formula <i>P</i> is the sub-portfolio of risky assets at the tangency with the Markowitz bullet, <i>F</i> is the risk-free asset, and <i>C</i> is a combination of portfolios <i>P</i> and <i>F</i>.</p>
+<p>By the diagram, the introduction of the risk-free asset as a possible component of the portfolio has improved the range of risk-expected return combinations available, because everywhere except at the tangency portfolio the half-line gives a higher expected return than the hyperbola does at every possible risk level. The fact that all points on the linear efficient locus can be achieved by a combination of holdings of the risk-free asset and the tangency portfolio is known as the <a href="/wiki/Mutual_fund_separation_theorem#One_risk-free_asset" title="Mutual fund separation theorem">one mutual fund theorem</a>,<sup id="cite_ref-Merton_10-2" class="reference"><a href="#cite_note-Merton-10"><span>[</span>10<span>]</span></a></sup> where the mutual fund referred to is the tangency portfolio.</p>
+<h2><span class="mw-headline" id="Asset_pricing">Asset pricing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=9" title="Edit section: Asset pricing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The above analysis describes optimal behavior of an individual investor. Asset pricing theory builds on this analysis in the following way. Since everyone holds the risky assets in identical proportions to each other—namely in the proportions given by the tangency portfolio—in market equilibrium the risky assets' prices, and therefore their expected returns, will adjust so that the ratios in the tangency portfolio are the same as the ratios in which the risky assets are supplied to the market. Thus relative supplies will equal relative demands. MPT derives the required expected return for a correctly priced asset in this context.</p>
+<h3><span class="mw-headline" id="Systematic_risk_and_specific_risk">Systematic risk and specific risk</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=10" title="Edit section: Systematic risk and specific risk">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Specific risk is the risk associated with individual assets - within a portfolio these risks can be reduced through diversification (specific risks "cancel out"). Specific risk is also called diversifiable, unique, unsystematic, or idiosyncratic risk. <a href="/wiki/Systematic_risk" title="Systematic risk">Systematic risk</a> (a.k.a. portfolio risk or market risk) refers to the risk common to all securities—except for <a href="/wiki/Short_(finance)" title="Short (finance)">selling short</a> as noted below, systematic risk cannot be diversified away (within one market). Within the market portfolio, asset specific risk will be diversified away to the extent possible. Systematic risk is therefore equated with the risk (standard deviation) of the market portfolio.</p>
+<p>Since a security will be purchased only if it improves the risk-expected return characteristics of the market portfolio, the relevant measure of the risk of a security is the risk it adds to the market portfolio, and not its risk in isolation. In this context, the volatility of the asset, and its correlation with the market portfolio, are historically observed and are therefore given. (There are several approaches to asset pricing that attempt to price assets by modelling the stochastic properties of the moments of assets' returns - these are broadly referred to as conditional asset pricing models.)</p>
+<p>Systematic risks within one market can be managed through a strategy of using both long and short positions within one portfolio, creating a "market neutral" portfolio. Market neutral portfolios, therefore will have a correlations of zero.</p>
+<h3><span class="mw-headline" id="Capital_asset_pricing_model">Capital asset pricing model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=11" title="Edit section: Capital asset pricing model">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">Capital asset pricing model</a></div>
+<p>The asset return depends on the amount paid for the asset today. The price paid must ensure that the market portfolio's risk / return characteristics improve when the asset is added to it. The <a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">CAPM</a> is a model that derives the theoretical required expected return (i.e., discount rate) for an asset in a market, given the risk-free rate available to investors and the risk of the market as a whole. The CAPM is usually expressed:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \operatorname{E}(R_i) = R_f + \beta_i (\operatorname{E}(R_m) - R_f) " src="//upload.wikimedia.org/math/1/4/c/14c1efa556b7fcd8f595a5f7b6ef9949.png" /></dd>
+</dl>
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt=" \beta " src="//upload.wikimedia.org/math/0/7/1/071997f13634882f823041b057f90923.png" />, Beta, is the measure of asset sensitivity to a movement in the overall market; Beta is usually found via <a href="/wiki/Regression_analysis" title="Regression analysis">regression</a> on historical data. Betas exceeding one signify more than average "riskiness" in the sense of the asset's contribution to overall portfolio risk; betas below one indicate a lower than average risk contribution.</li>
+</ul>
+<ul>
+<li><img class="mwe-math-fallback-image-inline tex" alt=" (\operatorname{E}(R_m) - R_f) " src="//upload.wikimedia.org/math/3/b/5/3b51cd7353216b34cebdcd8fc6160e13.png" /> is the market premium, the expected excess return of the market portfolio's expected return over the risk-free rate.</li>
+</ul>
+<p>The derivation is as follows:</p>
+<blockquote style="background: 1; border: 1px solid black; padding: 1em;">
+<p>(1) The incremental impact on risk and expected return when an additional risky asset, <b>a</b>, is added to the market portfolio, <b>m</b>, follows from the formulae for a two-asset portfolio. These results are used to derive the asset-appropriate discount rate.</p>
+<ul>
+<li>Market portfolio's risk = <img class="mwe-math-fallback-image-inline tex" alt="  (w_m^2 \sigma_m ^2 + [ w_a^2 \sigma_a^2  + 2 w_m w_a \rho_{am} \sigma_a \sigma_m]  ) " src="//upload.wikimedia.org/math/8/a/6/8a6c334e7488d54d5e86b762664ac768.png" /></li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd>Hence, risk added to portfolio = <img class="mwe-math-fallback-image-inline tex" alt="  [ w_a^2 \sigma_a^2  + 2 w_m w_a \rho_{am} \sigma_a \sigma_m]  " src="//upload.wikimedia.org/math/0/6/5/065759bd620995bdd1a7653abf3f9047.png" /></dd>
+<dd>but since the weight of the asset will be relatively low, <img class="mwe-math-fallback-image-inline tex" alt=" w_a^2 \approx 0 " src="//upload.wikimedia.org/math/8/8/b/88bc8aadd2449804106d543c1652b826.png" /></dd>
+<dd>i.e. additional risk = <img class="mwe-math-fallback-image-inline tex" alt="  [ 2 w_m w_a \rho_{am} \sigma_a \sigma_m] \quad " src="//upload.wikimedia.org/math/5/b/1/5b146f9f3dfe9825bef30e7fbb900c64.png" /></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>Market portfolio's expected return = <img class="mwe-math-fallback-image-inline tex" alt="  ( w_m \operatorname{E}(R_m) + [ w_a \operatorname{E}(R_a) ] ) " src="//upload.wikimedia.org/math/c/4/2/c420bcc15433abfb8180d580508e3995.png" /></li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd>Hence additional expected return = <img class="mwe-math-fallback-image-inline tex" alt="  [ w_a \operatorname{E}(R_a) ] " src="//upload.wikimedia.org/math/2/9/2/292f0f3fd92a3bdf1fa91cc492cecda0.png" /></dd>
+</dl>
+</dd>
+</dl>
+<p>(2) If an asset, <b>a</b>, is correctly priced, the improvement in its risk-to-expected return ratio achieved by adding it to the market portfolio, <b>m</b>, will at least match the gains of spending that money on an increased stake in the market portfolio. The assumption is that the investor will purchase the asset with funds borrowed at the risk-free rate, <b><img class="mwe-math-fallback-image-inline tex" alt="R_f" src="//upload.wikimedia.org/math/6/f/2/6f2ac003277e769619d66dc640239f42.png" /></b>; this is rational if <img class="mwe-math-fallback-image-inline tex" alt=" \operatorname{E}(R_a) &gt; R_f " src="//upload.wikimedia.org/math/b/1/3/b131f57a0412d0ddef041a184834f8a5.png" />.</p>
+<dl>
+<dd>Thus: <img class="mwe-math-fallback-image-inline tex" alt=" [ w_a ( \operatorname{E}(R_a) - R_f ) ] / [2 w_m w_a \rho_{am} \sigma_a \sigma_m]   =  [ w_a ( \operatorname{E}(R_m) - R_f ) ] / [2 w_m w_a \sigma_m \sigma_m  ]   " src="//upload.wikimedia.org/math/e/8/d/e8db53a1d6ccf7f92d3172ca2d6513c9.png" /></dd>
+<dd>i.e.&#160;: <img class="mwe-math-fallback-image-inline tex" alt=" [\operatorname{E}(R_a) ] = R_f + [\operatorname{E}(R_m) - R_f] * [ \rho_{am} \sigma_a \sigma_m]  / [ \sigma_m \sigma_m  ] " src="//upload.wikimedia.org/math/c/f/d/cfdeeddd7d3731cb61a106fbe18a9766.png" /></dd>
+<dd>i.e.&#160;: <img class="mwe-math-fallback-image-inline tex" alt=" [\operatorname{E}(R_a) ] = R_f + [\operatorname{E}(R_m) - R_f] * [\sigma_{am}]  / [ \sigma_{mm}]  " src="//upload.wikimedia.org/math/b/3/b/b3b928bc81cc747286a4008802276277.png" /></dd>
+</dl>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" [\sigma_{am}]  / [ \sigma_{mm}] \quad " src="//upload.wikimedia.org/math/1/0/6/1067daf771684197f14d2f245550c2dc.png" /> is the "beta", <img class="mwe-math-fallback-image-inline tex" alt=" \beta  " src="//upload.wikimedia.org/math/0/7/1/071997f13634882f823041b057f90923.png" /> return— the <a href="/wiki/Covariance" title="Covariance">covariance</a> between the asset's return and the market's return divided by the variance of the market return— i.e. the sensitivity of the asset price to movement in the market portfolio's value.</dd>
+</dl>
+</blockquote>
+<p>This equation can be <a href="/wiki/Estimation_theory" title="Estimation theory">estimated</a> statistically using the following <a href="/wiki/Regression_analysis" title="Regression analysis">regression</a> equation:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\mathrm{SCL} : R_{i,t} - R_{f} = \alpha_i + \beta_i\,  ( R_{M,t} - R_{f} ) + \epsilon_{i,t} \frac{}{}" src="//upload.wikimedia.org/math/1/4/9/1492f80d8ccbe0e8f80d0eb1ee999ac1.png" /></dd>
+</dl>
+<p>where α<sub><i>i</i></sub> is called the asset's <a href="/wiki/Alpha_(finance)" title="Alpha (finance)">alpha</a>, β<sub><i>i</i></sub> is the asset's <a href="/wiki/Beta_coefficient" title="Beta coefficient" class="mw-redirect">beta coefficient</a> and SCL is the <a href="/wiki/Security_characteristic_line" title="Security characteristic line">security characteristic line</a>.</p>
+<p>Once an asset's expected return, <img class="mwe-math-fallback-image-inline tex" alt=" E(R_i) " src="//upload.wikimedia.org/math/2/0/4/204f9e3a6df76f200dc59fe06bde7e03.png" />, is calculated using CAPM, the future <a href="/wiki/Cash_flow" title="Cash flow">cash flows</a> of the asset can be <a href="/wiki/Discounted" title="Discounted" class="mw-redirect">discounted</a> to their <a href="/wiki/Present_value" title="Present value">present value</a> using this rate to establish the correct price for the asset. A riskier stock will have a higher beta and will be discounted at a higher rate; less sensitive stocks will have lower betas and be discounted at a lower rate. In theory, an asset is correctly priced when its observed price is the same as its value calculated using the CAPM derived discount rate. If the observed price is higher than the valuation, then the asset is overvalued; it is undervalued for a too low price.</p>
+<h2><span class="mw-headline" id="Criticisms">Criticisms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=12" title="Edit section: Criticisms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Despite its theoretical importance, critics of MPT question whether it is an ideal investment tool, because its model of financial markets does not match the real world in many ways.<sup id="cite_ref-wilmottM.com_11-0" class="reference"><a href="#cite_note-wilmottM.com-11"><span>[</span>11<span>]</span></a></sup></p>
+<p>Efforts to translate the theoretical foundation into a viable portfolio construction algorithm have been plagued by technical difficulties stemming from the instability of the original optimization problem with respect to the available data. Recent research has shown that instabilities of this type disappear when a regularizing constraint or penalty term is incorporated in the optimization procedure.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Assumptions">Assumptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=13" title="Edit section: Assumptions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The framework of MPT makes many assumptions about investors and markets. Some are explicit in the equations, such as the use of <a href="/wiki/Normal_distribution" title="Normal distribution">Normal distributions</a> to model returns. Others are implicit, such as the neglect of taxes and transaction fees. None of these assumptions are entirely true, and each of them compromises MPT to some degree.</p>
+<ul>
+<li><b>Investors are interested in the optimization problem described above (maximizing the mean for a given variance)</b>. In reality, investors have utility functions that may be sensitive to higher moments of the distribution of the returns. For the investors to use the mean-variance optimization, one must suppose that the combination of utility and returns make the optimization of utility problem similar to the mean-variance optimization problem. A quadratic utility without any assumption about returns is sufficient. Another assumption is to use exponential utility and normal distribution, as discussed below.</li>
+<li><b>Asset returns are (<a href="/wiki/Joint_probability_distribution" title="Joint probability distribution">jointly</a>) <a href="/wiki/Normal_distribution" title="Normal distribution">normally distributed</a> <a href="/wiki/Random" title="Random" class="mw-redirect">random</a> variables.</b> In reality, it is frequently observed that returns in equity and other markets are not normally distributed. Large swings (3 to 6 standard deviations from the mean) occur in the market far more frequently than the normal distribution assumption would predict.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>13<span>]</span></a></sup> While the model can also be justified by assuming any return distribution that is <a href="/wiki/Elliptical_distribution" title="Elliptical distribution">jointly elliptical</a>,<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>14<span>]</span></a></sup><sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>15<span>]</span></a></sup> all the joint elliptical distributions are symmetrical, whereas asset returns empirically are not. Bouchaud and Chicheportiche (2012)<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>16<span>]</span></a></sup> empirically reject the elliptical hypothesis, writing "intuitively, the failure of elliptical models can be traced to the inadequacy of the assumption of a single volatility model for all stocks."</li>
+<li><b>Correlations between assets are fixed and constant forever.</b> Correlations depend on systemic relationships between the underlying assets, and change when these relationships change (ie whenever there is a significant movement in market prices). Examples include one country declaring war on another, or a general market crash. During times of financial crisis all assets tend to become positively correlated, because they all move (down) together.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Cleanup" title="Wikipedia:Cleanup"><span title="Wikipedia:Cleanup">non sequitur</span></a></i>]</sup> In other words, MPT breaks down precisely when investors are most in need of protection from risk.</li>
+<li><b>All investors aim to maximize economic utility (in simpler terms, to make as much money as possible, regardless of any other considerations).</b> This is a key assumption of the <a href="/wiki/Efficient-market_hypothesis" title="Efficient-market hypothesis">efficient-market hypothesis</a>, upon which MPT relies.</li>
+<li><b>All investors are rational and <a href="/wiki/Risk-averse" title="Risk-averse" class="mw-redirect">risk-averse</a>.</b> This is another assumption of the <a href="/wiki/Efficient-market_hypothesis" title="Efficient-market hypothesis">efficient-market hypothesis</a>. In reality, as proven by <a href="/wiki/Behavioral_economics" title="Behavioral economics">behavioral economics</a>, market participants are not always <a href="/wiki/Rational_choice_theory" title="Rational choice theory">rational</a> or consistently rational. The assumption does not account for emotional decisions, stale market information, "herd behavior", or investors who may seek risk for the sake of risk. <a href="/wiki/Gambling" title="Gambling">Casino gamblers</a> clearly pay for risk, and it is possible that some stock traders will pay for risk as well.</li>
+<li><b>All investors have access to the same information at the same time.</b> In fact, real markets contain <a href="/wiki/Information_asymmetry" title="Information asymmetry">information asymmetry</a>: <a href="/wiki/Insider_trading" title="Insider trading">insider trading</a>, and those who are simply better informed than others. Moreover, estimating the mean (for instance, there is no consistent estimator of the drift of a Brownian when subsampling between 0 and T) and the covariance matrix of the returns (when the number of assets is of the same order of the number of periods) are difficult statistical tasks.</li>
+<li><b>Investors have an accurate conception of possible returns, i.e. the probability beliefs of investors match the true distribution of returns.</b> A different possibility is that investors' expectations are biased, causing market prices to be informationally inefficient. This possibility is studied in the field of <a href="/wiki/Behavioral_finance" title="Behavioral finance" class="mw-redirect">behavioral finance</a>, which uses psychological assumptions to provide alternatives to the CAPM such as the overconfidence-based asset pricing model of Kent Daniel, <a href="/wiki/David_Hirshleifer" title="David Hirshleifer">David Hirshleifer</a>, and Avanidhar Subrahmanyam (2001).<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span>[</span>17<span>]</span></a></sup></li>
+<li><b>There are no taxes or transaction costs.</b> Real financial products are subject both to taxes and transaction costs (such as broker fees), and taking these into account will alter the composition of the optimum portfolio. These assumptions can be relaxed with more complicated versions of the model.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (August 2009)">citation needed</span></a></i>]</sup></li>
+<li><b>All investors are price takers, i.e. their actions do not influence prices.</b> In reality, sufficiently large sales or purchases of individual assets can shift market prices of that asset and others (via <a href="/wiki/Cross_elasticity_of_demand" title="Cross elasticity of demand">cross elasticity of demand</a>.) An investor may not even be able to assemble the theoretically optimal portfolio if the market moves too much while they are buying the required securities.</li>
+<li><b>Any investor can lend and borrow an unlimited amount at the risk free rate of interest.</b> In reality, every investor has a credit limit.</li>
+<li><b>All securities can be divided into parcels of any size.</b> In reality, fractional shares usually cannot be bought or sold, and some assets have minimum order sizes. This is unlikely to be a serious issue for institutional investors, or (with rare exceptions) for wealthy individuals.</li>
+<li><b>Risk/Volatility of an asset is known in advance/is constant</b>. In fact, markets often misprice risk (e.g. the US mortgage bubble or the European debt crisis) and volatility changes rapidly.</li>
+</ul>
+<p>More complex versions of MPT can take into account a more sophisticated model of the world (such as one with non-normal distributions and taxes) but all mathematical models of finance still rely on many unrealistic premises.</p>
+<h3><span class="mw-headline" id="Poor_model">Poor model</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=14" title="Edit section: Poor model">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The risk, return, and correlation measures used by MPT are based on <a href="/wiki/Expected_value" title="Expected value">expected values</a>, which means that they are mathematical statements about the future (the expected value of returns is explicit in the above equations, and implicit in the definitions of <a href="/wiki/Variance" title="Variance">variance</a> and <a href="/wiki/Covariance" title="Covariance">covariance</a>). In practice, investors must substitute predictions based on historical measurements of asset return and <a href="/wiki/Volatility_(finance)" title="Volatility (finance)">volatility</a> for these values in the equations. Very often such expected values fail to take account of new circumstances that did not exist when the historical data were generated.</p>
+<p>More fundamentally, investors are stuck with estimating key parameters from past market data because MPT attempts to model risk in terms of the likelihood of losses, but says nothing about why those losses might occur. The risk measurements used are <a href="/wiki/Probability" title="Probability">probabilistic</a> in nature, not structural. This is a major difference as compared to many engineering approaches to <a href="/wiki/Risk_management" title="Risk management">risk management</a>.</p>
+<blockquote class="templatequote">
+<p><a href="/wiki/Option_(finance)" title="Option (finance)">Options</a> theory and MPT have at least one important conceptual difference from the <a href="/wiki/Probabilistic_risk_assessment" title="Probabilistic risk assessment">probabilistic risk assessment</a> done by nuclear power [plants]. A PRA is what economists would call a <i>structural model</i>. The components of a system and their relationships are modeled in <a href="/wiki/Monte_Carlo_simulations" title="Monte Carlo simulations" class="mw-redirect">Monte Carlo simulations</a>. If valve X fails, it causes a loss of back pressure on pump Y, causing a drop in flow to vessel Z, and so on.</p>
+<p>But in the <a href="/wiki/Black%E2%80%93Scholes" title="Black–Scholes" class="mw-redirect">Black–Scholes</a> equation and MPT, there is no attempt to explain an underlying structure to price changes. Various outcomes are simply given probabilities. And, unlike the PRA, if there is no history of a particular system-level event like a <a href="/wiki/Liquidity_crisis" title="Liquidity crisis">liquidity crisis</a>, there is no way to compute the odds of it. If nuclear engineers ran risk management this way, they would never be able to compute the odds of a meltdown at a particular plant until several similar events occurred in the same reactor design.</p>
+<div class="templatequotecite"><cite>— Douglas W. Hubbard, 'The Failure of Risk Management', p. 67, John Wiley &amp; Sons, 2009. <a href="/wiki/Special:BookSources/9780470387955" class="internal mw-magiclink-isbn">ISBN 978-0-470-38795-5</a></cite></div>
+</blockquote>
+<p>Essentially, the mathematics of MPT view the markets as a collection of dice. By examining past market data we can develop hypotheses about how the dice are weighted, but this isn't helpful if the markets are actually dependent upon a much bigger and more complicated <a href="/wiki/Chaos_theory" title="Chaos theory">chaotic</a> system—the world. For this reason, accurate structural models of real financial markets are unlikely to be forthcoming because they would essentially be structural models of the entire world. Nonetheless there is growing awareness of the concept of <a href="/wiki/Systemic_risk" title="Systemic risk">systemic risk</a> in financial markets, which should lead to more sophisticated market models.</p>
+<p>Mathematical risk measurements are also useful only to the degree that they reflect investors' true concerns—there is no point minimizing a variable that nobody cares about in practice. MPT uses the mathematical concept of <a href="/wiki/Variance" title="Variance">variance</a> to quantify risk, and this might be justified under the assumption of <a href="/wiki/Elliptical_distribution" title="Elliptical distribution">elliptically distributed</a> returns such as <a href="/wiki/Normal_distribution" title="Normal distribution">normally distributed</a> returns, but for general return <a href="/wiki/Probability_distribution" title="Probability distribution">distributions</a> other risk measures (like <a href="/wiki/Coherent_risk_measure" title="Coherent risk measure">coherent risk measures</a>) might better reflect investors' true preferences.</p>
+<p>In particular, <a href="/wiki/Variance" title="Variance">variance</a> is a symmetric measure that counts abnormally high returns as just as risky as abnormally low returns. Some would argue that, in reality, investors are only concerned about losses, and do not care about the dispersion or tightness of above-average returns. According to this view, our intuitive concept of risk is fundamentally asymmetric in nature.</p>
+<p>MPT does not account for the personal, environmental, strategic, or <a href="/wiki/Socially_responsible_investing" title="Socially responsible investing">social dimensions of investment decisions</a>. It only attempts to maximize risk-adjusted returns, without regard to other consequences. In a narrow sense, its complete reliance on asset <a href="/wiki/Price" title="Price">prices</a> makes it vulnerable to all the standard <a href="/wiki/Market_failure" title="Market failure">market failures</a> such as those arising from <a href="/wiki/Information_asymmetry" title="Information asymmetry">information asymmetry</a>, <a href="/wiki/Externality" title="Externality">externalities</a>, and <a href="/wiki/Public_goods" title="Public goods" class="mw-redirect">public goods</a>. It also rewards corporate fraud and dishonest accounting. More broadly, a firm may have strategic or social goals that shape its investment decisions, and an individual investor might have personal goals. In either case, information other than historical returns is relevant.</p>
+<p>Modern portfolio theory has also been criticized because it assumes that returns follow a <a href="/wiki/Normal_distribution" title="Normal distribution">Gaussian distribution</a>. Already in the 1960's, <a href="/wiki/Benoit_Mandelbrot" title="Benoit Mandelbrot">Benoit Mandelbrot</a> and <a href="/wiki/Eugene_Fama" title="Eugene Fama">Eugene Fama</a> showed the inadequacy of this assumption and proposed the use of <a href="/wiki/Stable_distributions" title="Stable distributions" class="mw-redirect">stable distributions</a> instead. <a href="/wiki/Stefan_Mittnik" title="Stefan Mittnik">Stefan Mittnik</a> and <a href="/wiki/Svetlozar_Rachev" title="Svetlozar Rachev">Svetlozar Rachev</a> presented strategies for deriving optimal portfolios in such settings.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span>[</span>18<span>]</span></a></sup> <sup id="cite_ref-19" class="reference"><a href="#cite_note-19"><span>[</span>19<span>]</span></a></sup> <sup id="cite_ref-20" class="reference"><a href="#cite_note-20"><span>[</span>20<span>]</span></a></sup> More recently, financial economist <a href="/wiki/Nassim_Nicholas_Taleb" title="Nassim Nicholas Taleb">Nassim Nicholas Taleb</a> has also criticized modern portfolio theory on this ground, writing:</p>
+<blockquote class="templatequote">
+<p>After the stock market crash (in 1987), they rewarded two theoreticians, Harry Markowitz and William Sharpe, who built beautifully Platonic models on a Gaussian base, contributing to what is called Modern Portfolio Theory. Simply, if you remove their Gaussian assumptions and treat prices as scalable, you are left with hot air. The Nobel Committee could have tested the Sharpe and Markowitz models—they work like quack remedies sold on the Internet—but nobody in Stockholm seems to have thought about it.</p>
+<div class="templatequotecite"><cite>— <sup id="cite_ref-21" class="reference"><a href="#cite_note-21"><span>[</span>21<span>]</span></a></sup><sup class="reference" style="white-space:nowrap;">:p.279</sup></cite></div>
+</blockquote>
+<h3><span class="mw-headline" id="Effect_on_asset_prices">Effect on asset prices</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=15" title="Edit section: Effect on asset prices">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Diversification eliminates non-systematic risk. As unsystematic risk is not associated with increased expected return, this is considered one of the few "free lunches" available. Following MPT means portfolio managers can invest in assets without analyzing their fundamentals, specially weighting each asset by the markets weight in the asset. Because the investor purchases assets in proportion to their market weights, there is no relative increase in demand for one asset versus another, and thus no impact on the expected returns of the portfolio.</p>
+<h2><span class="mw-headline" id="Extensions">Extensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=16" title="Edit section: Extensions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Since MPT's introduction in 1952, many attempts have been made to improve the model, especially by using more realistic assumptions.</p>
+<p><a href="/wiki/Post-modern_portfolio_theory" title="Post-modern portfolio theory">Post-modern portfolio theory</a> extends MPT by adopting non-normally distributed, asymmetric measures of risk. This helps with some of these problems, but not others.</p>
+<p><a href="/wiki/Black-Litterman_model" title="Black-Litterman model" class="mw-redirect">Black-Litterman model</a> optimization is an extension of unconstrained Markowitz optimization that incorporates relative and absolute `views' on inputs of risk and returns.</p>
+<h2><span class="mw-headline" id="Other_Applications">Other Applications</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=17" title="Edit section: Other Applications">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In the 1970s, concepts from Modern Portfolio Theory found their way into the field of <a href="/wiki/Regional_science" title="Regional science">regional science</a>. In a series of seminal works, Michael Conroy<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (February 2011)">citation needed</span></a></i>]</sup> modeled the labor force in the economy using portfolio-theoretic methods to examine growth and variability in the labor force. This was followed by a long literature on the relationship between economic growth and volatility.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span>[</span>22<span>]</span></a></sup></p>
+<p>More recently, modern portfolio theory has been used to model the self-concept in social psychology. When the self attributes comprising the self-concept constitute a well-diversified portfolio, then psychological outcomes at the level of the individual such as mood and self-esteem should be more stable than when the self-concept is undiversified. This prediction has been confirmed in studies involving human subjects.<sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span>[</span>23<span>]</span></a></sup></p>
+<p>Recently, modern portfolio theory has been applied to modelling the uncertainty and correlation between documents in information retrieval. Given a query, the aim is to maximize the overall relevance of a ranked list of documents and at the same time minimize the overall uncertainty of the ranked list.<sup id="cite_ref-24" class="reference"><a href="#cite_note-24"><span>[</span>24<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Project_portfolios_and_other_.22non-financial.22_assets">Project portfolios and other "non-financial" assets</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=18" title="Edit section: Project portfolios and other &quot;non-financial&quot; assets">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Some experts apply MPT to portfolios of projects and other assets besides financial instruments.<sup id="cite_ref-Hubbard2007_25-0" class="reference"><a href="#cite_note-Hubbard2007-25"><span>[</span>25<span>]</span></a></sup><sup id="cite_ref-Sabbadini2010_26-0" class="reference"><a href="#cite_note-Sabbadini2010-26"><span>[</span>26<span>]</span></a></sup> When MPT is applied outside of traditional financial portfolios, some differences between the different types of portfolios must be considered.</p>
+<ol>
+<li>The assets in financial portfolios are, for practical purposes, continuously divisible while portfolios of projects are "lumpy". For example, while we can compute that the optimal portfolio position for 3 stocks is, say, 44%, 35%, 21%, the optimal position for a project portfolio may not allow us to simply change the amount spent on a project. Projects might be all or nothing or, at least, have logical units that cannot be separated. A portfolio optimization method would have to take the discrete nature of projects into account.</li>
+<li>The assets of financial portfolios are liquid; they can be assessed or re-assessed at any point in time. But opportunities for launching new projects may be limited and may occur in limited windows of time. Projects that have already been initiated cannot be abandoned without the loss of the <a href="/wiki/Sunk_costs" title="Sunk costs">sunk costs</a> (i.e., there is little or no recovery/salvage value of a half-complete project).</li>
+</ol>
+<p>Neither of these necessarily eliminate the possibility of using MPT and such portfolios. They simply indicate the need to run the optimization with an additional set of mathematically expressed constraints that would not normally apply to financial portfolios.</p>
+<p>Furthermore, some of the simplest elements of Modern Portfolio Theory are applicable to virtually any kind of portfolio. The concept of capturing the risk tolerance of an investor by documenting how much risk is acceptable for a given return may be applied to a variety of decision analysis problems. MPT uses historical variance as a measure of risk, but portfolios of assets like major projects don't have a well-defined "historical variance". In this case, the MPT investment boundary can be expressed in more general terms like "chance of an ROI less than cost of capital" or "chance of losing more than half of the investment". When risk is put in terms of uncertainty about forecasts and possible losses then the concept is transferable to various types of investment.<sup id="cite_ref-Hubbard2007_25-1" class="reference"><a href="#cite_note-Hubbard2007-25"><span>[</span>25<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Comparison_with_arbitrage_pricing_theory">Comparison with arbitrage pricing theory</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=19" title="Edit section: Comparison with arbitrage pricing theory">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Security Market Line and <a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">capital asset pricing model</a> are often contrasted with the <a href="/wiki/Arbitrage_pricing_theory" title="Arbitrage pricing theory">arbitrage pricing theory</a> (APT), which holds that the <a href="/wiki/Expected_return" title="Expected return">expected return</a> of a financial asset can be modeled as a <a href="/wiki/Linear_function" title="Linear function">linear function</a> of various <a href="/wiki/Macroeconomics" title="Macroeconomics">macro-economic</a> factors, where sensitivity to changes in each factor is represented by a factor specific <a href="/wiki/Beta_coefficient" title="Beta coefficient" class="mw-redirect">beta coefficient</a>.</p>
+<p>The APT is less restrictive in its assumptions: it allows for a statistical model of asset returns, and assumes that each investor will hold a unique portfolio with its own particular array of betas, as opposed to the identical "market portfolio". Unlike the CAPM, the APT, however, does not itself reveal the identity of its priced factors—the number and nature of these factors is likely to change over time and between economies.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=20" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Bias_ratio_(finance)" title="Bias ratio (finance)" class="mw-redirect">Bias ratio (finance)</a></li>
+<li><a href="/wiki/Black-Litterman_model" title="Black-Litterman model" class="mw-redirect">Black-Litterman model</a></li>
+<li><a href="/wiki/Fundamental_analysis" title="Fundamental analysis">Fundamental analysis</a></li>
+<li><a href="/wiki/Intertemporal_portfolio_choice" title="Intertemporal portfolio choice">Intertemporal portfolio choice</a></li>
+<li><a href="/wiki/Investment_theory" title="Investment theory">Investment theory</a></li>
+<li><a href="/wiki/Jensen%27s_alpha" title="Jensen's alpha">Jensen's alpha</a></li>
+<li><a href="/wiki/Marginal_conditional_stochastic_dominance" title="Marginal conditional stochastic dominance">Marginal conditional stochastic dominance</a></li>
+<li><a href="/wiki/Mutual_fund_separation_theorem" title="Mutual fund separation theorem">Mutual fund separation theorem</a></li>
+<li><a href="/wiki/Omega_ratio" title="Omega ratio">Omega ratio</a></li>
+<li><a href="/wiki/Post-modern_portfolio_theory" title="Post-modern portfolio theory">Post-modern portfolio theory</a></li>
+<li><a href="/wiki/Roll%27s_critique" title="Roll's critique">Roll's critique</a></li>
+<li><a href="/wiki/Sortino_ratio" title="Sortino ratio">Sortino ratio</a></li>
+<li><a href="/wiki/Treynor_ratio" title="Treynor ratio">Treynor ratio</a></li>
+<li><a href="/wiki/Two-moment_decision_models" title="Two-moment decision models" class="mw-redirect">Two-moment decision models</a></li>
+<li><a href="/wiki/Value_investing" title="Value investing">Value investing</a></li>
+<li><a href="/wiki/Low-volatility_anomaly" title="Low-volatility anomaly">Low-volatility anomaly</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=21" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Harry M. Markowitz - Autobiography, The Nobel Prizes 1990, Editor Tore Frängsmyr, [Nobel Foundation], Stockholm, 1991</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.emanagedfutures.com/articles/reducing-portfolio-volatility/">"Managed Futures - Reducing Portfolio Volatility | A Look Into The Top 3 Managed Futures Accounts Worldwide"</a>. Emanagedfutures.com. 2011-03-19<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-09-05</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.btitle=Managed+Futures+-+Reducing+Portfolio+Volatility+%26%23124%3B+A+Look+Into+The+Top+3+Managed+Futures+Accounts+Worldwide&amp;rft.date=2011-03-19&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.emanagedfutures.com%2Farticles%2Freducing-portfolio-volatility%2F&amp;rft.pub=Emanagedfutures.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation book">Bhalla, V. K. (2010). <i>Investment Management</i>. New Delhi: S. Chand &amp; Co. Ltd. pp.&#160;587–93. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/81-219-1248-2" title="Special:BookSources/81-219-1248-2">81-219-1248-2</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.au=Bhalla%2C+V.+K.&amp;rft.aufirst=V.+K.&amp;rft.aulast=Bhalla&amp;rft.btitle=Investment+Management&amp;rft.date=2010&amp;rft.genre=book&amp;rft.isbn=81-219-1248-2&amp;rft.pages=587-93&amp;rft.place=New+Delhi&amp;rft.pub=S.+Chand+%26+Co.+Ltd&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Andrei Shleifer: Inefficient Markets: An Introduction to Behavioral Finance. Clarendon Lectures in Economics (2000)</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text">Koponen, Timothy M. 2003. <i>Commodities in action: measuring embeddedness and imposing values</i>. The Sociological Review. Volume 50 Issue 4, Pages 543 - 569</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation book">Jenson, Michael; Scholes, Myron; Black, Fischer (1972). <a rel="nofollow" class="external text" href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=908569">"The Capital Asset Pricing Model: Some Empirical Tests"</a>. In Jensen, Michael. <a rel="nofollow" class="external text" href="http://hollis.harvard.edu/?itemid=%7Clibrary/m/aleph%7C004458390"><i>Studies in the Theory of Capital Markets</i></a>. Praeger Publishers<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-03-24</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=The+Capital+Asset+Pricing+Model%3A+Some+Empirical+Tests&amp;rft.au=Black%2C+Fischer&amp;rft.aufirst=Michael&amp;rft.au=Jenson%2C+Michael&amp;rft.aulast=Jenson&amp;rft.au=Scholes%2C+Myron&amp;rft.btitle=Studies+in+the+Theory+of+Capital+Markets&amp;rft.date=1972&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fhollis.harvard.edu%2F%3Fitemid%3D%26%23124%3Blibrary%2Fm%2Faleph%26%23124%3B004458390&amp;rft.pub=Praeger+Publishers&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-elton-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-elton_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-elton_7-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-elton_7-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">Edwin J. Elton and Martin J. Gruber, "Modern portfolio theory, 1950 to date", Journal of Banking &amp; Finance 21 (1997) 1743-1759</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation journal">Markowitz, H.M. (March 1952). "Portfolio Selection". <i>The Journal of Finance</i> <b>7</b> (1): 77–91. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.2307%2F2975974">10.2307/2975974</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2975974">2975974</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=Portfolio+Selection&amp;rft.aulast=Markowitz%2C+H.M.&amp;rft.au=Markowitz%2C+H.M.&amp;rft.date=March+1952&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2975974&amp;rft.issue=1&amp;rft.jstor=2975974&amp;rft.jtitle=The+Journal+of+Finance&amp;rft.pages=77-91&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=7" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation book">Markowitz, H.M. (1959). <a rel="nofollow" class="external text" href="http://cowles.econ.yale.edu/P/cm/m16/index.htm"><i>Portfolio Selection: Efficient Diversification of Investments</i></a>. New York: John Wiley &amp; Sons.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.aulast=Markowitz%2C+H.M.&amp;rft.au=Markowitz%2C+H.M.&amp;rft.btitle=Portfolio+Selection%3A+Efficient+Diversification+of+Investments&amp;rft.date=1959&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fcowles.econ.yale.edu%2FP%2Fcm%2Fm16%2Findex.htm&amp;rft.place=New+York&amp;rft.pub=John+Wiley+%26+Sons&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> (reprinted by Yale University Press, 1970, <a href="/wiki/Special:BookSources/9780300013726" class="internal mw-magiclink-isbn">ISBN 978-0-300-01372-6</a>; 2nd ed. Basil Blackwell, 1991, <a href="/wiki/Special:BookSources/9781557861085" class="internal mw-magiclink-isbn">ISBN 978-1-55786-108-5</a>)</span></li>
+<li id="cite_note-Merton-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-Merton_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Merton_10-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Merton_10-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">Merton, Robert. "An analytic derivation of the efficient portfolio frontier," <i><a href="/wiki/Journal_of_Financial_and_Quantitative_Analysis" title="Journal of Financial and Quantitative Analysis">Journal of Financial and Quantitative Analysis</a></i> 7, September 1972, 1851-1872.</span></li>
+<li id="cite_note-wilmottM.com-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-wilmottM.com_11-0">^</a></b></span> <span class="reference-text"><span class="citation journal">Mahdavi Damghani B. (2013). <a rel="nofollow" class="external text" href="http://onlinelibrary.wiley.com/doi/10.1002/wilm.10252/abstract">"The Non-Misleading Value of Inferred Correlation: An Introduction to the Cointelation Model"</a>. <i>Wilmott Magazine</i>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1002%2Fwilm.10252">10.1002/wilm.10252</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=The+Non-Misleading+Value+of+Inferred+Correlation%3A+An+Introduction+to+the+Cointelation+Model&amp;rft.date=2013&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fonlinelibrary.wiley.com%2Fdoi%2F10.1002%2Fwilm.10252%2Fabstract&amp;rft_id=info%3Adoi%2F10.1002%2Fwilm.10252&amp;rft.jtitle=Wilmott+Magazine&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation journal">Brodie, De Mol, Daubechies, Giannone and Loris (2009). <a rel="nofollow" class="external text" href="http://www.pnas.org/content/106/30/12267.abstract">"Sparse and stable Markowitz portfolios"</a>. <i>Proceedings of the National Academy of Sciences</i> <b>106</b> (30). <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1073%2Fpnas.0904287106">10.1073/pnas.0904287106</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=Sparse+and+stable+Markowitz+portfolios&amp;rft.date=2009&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.pnas.org%2Fcontent%2F106%2F30%2F12267.abstract&amp;rft_id=info%3Adoi%2F10.1073%2Fpnas.0904287106&amp;rft.issue=30&amp;rft.jtitle=Proceedings+of+the+National+Academy+of+Sciences&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=106" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text">Mandelbrot, B., and Hudson, R. L. (2004). The (Mis)Behaviour of Markets: A Fractal View of Risk, Ruin, and Reward. London: Profile Books.</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text">Chamberlain, G. 1983."A characterization of the distributions that imply mean-variance utility functions", <i><a href="/wiki/Journal_of_Economic_Theory" title="Journal of Economic Theory">Journal of Economic Theory</a></i> 29, 185-201.</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation journal">Owen, J.; Rabinovitch, R. (1983). "On the class of elliptical distributions and their applications to the theory of portfolio choice". <i><a href="/wiki/Journal_of_Finance" title="Journal of Finance" class="mw-redirect">Journal of Finance</a></i> <b>38</b>: 745–752. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1111%2Fj.1540-6261.1983.tb02499.x">10.1111/j.1540-6261.1983.tb02499.x</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=On+the+class+of+elliptical+distributions+and+their+applications+to+the+theory+of+portfolio+choice&amp;rft.aufirst=J.&amp;rft.aulast=Owen&amp;rft.au=Owen%2C+J.&amp;rft.au=Rabinovitch%2C+R.&amp;rft.date=1983&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1111%2Fj.1540-6261.1983.tb02499.x&amp;rft.jtitle=Journal+of+Finance&amp;rft.pages=745-752&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=38" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://arxiv.org/pdf/1009.1100.pdf">http://arxiv.org/pdf/1009.1100.pdf</a> Chicheportiche, R., &amp; Bouchaud, J. P. (2012). The joint distribution of stock returns is not elliptical. International Journal of Theoretical and Applied Finance, 15(03).</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text">'Overconfidence, Arbitrage, and Equilibrium Asset Pricing,' Kent D. Daniel, David Hirshleifer and Avanidhar Subrahmanyam, Journal of Finance, 56(3) (June, 2001), pp. 921-965</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text">Rachev, Svetlozar T. and Stefan Mittnik (2000), Stable Paretian Models in Finance, Wiley, <a href="/wiki/Special:BookSources/9780471953142" class="internal mw-magiclink-isbn">ISBN 978-0-471-95314-2</a>.</span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-19">^</a></b></span> <span class="reference-text">Risk Manager Journal (2006), <span class="citation web"><a rel="nofollow" class="external text" href="https://statistik.econ.kit.edu/download/doc_secure1/RM-Interview-Rachev-Mittnik-EnglishTranslation.pdf">"New Approaches for Portfolio Optimization: Parting with the Bell Curve — Interview with Prof. Svetlozar Rachev and Prof.Stefan Mittnik"</a> <span style="font-size:85%;">(PDF)</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.btitle=New+Approaches+for+Portfolio+Optimization%3A+Parting+with+the+Bell+Curve+%E2%80%94+Interview+with+Prof.+Svetlozar+Rachev+and+Prof.Stefan+Mittnik&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fstatistik.econ.kit.edu%2Fdownload%2Fdoc_secure1%2FRM-Interview-Rachev-Mittnik-EnglishTranslation.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="#cite_ref-20">^</a></b></span> <span class="reference-text"><span class="citation journal">Doganoglu, Toker; Hartz, Christoph; Mittnik, Stefan (2007). "Portfolio Optimization When Risk Factors Are Conditionally Varying and Heavy Tailed". <i>Computational Economics</i> <b>29</b>: 333–354. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1007%2Fs10614-006-9071-1">10.1007/s10614-006-9071-1</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=Portfolio+Optimization+When+Risk+Factors+Are+Conditionally+Varying+and+Heavy+Tailed&amp;rft.au=Doganoglu%2C+Toker&amp;rft.aufirst=Toker&amp;rft.au=Hartz%2C+Christoph&amp;rft.aulast=Doganoglu&amp;rft.au=Mittnik%2C+Stefan&amp;rft.date=2007&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1007%2Fs10614-006-9071-1&amp;rft.jtitle=Computational+Economics&amp;rft.pages=333-354&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=29" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-21">^</a></b></span> <span class="reference-text">Taleb, Nassim Nicholas (2007), <i><a href="/wiki/The_Black_Swan_(Taleb_book)" title="The Black Swan (Taleb book)">The Black Swan: The Impact of the Highly Improbable</a>, Random House, <a href="/wiki/Special:BookSources/9781400063512" class="internal mw-magiclink-isbn">ISBN 978-1-4000-6351-2</a>.</i></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text"><span class="citation journal">Chandra, Siddharth (2003). "Regional Economy Size and the Growth-Instability Frontier: Evidence from Europe". <i><a href="/wiki/Journal_of_Regional_Science" title="Journal of Regional Science">Journal of Regional Science</a></i> <b>43</b> (1): 95–122. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1111%2F1467-9787.00291">10.1111/1467-9787.00291</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=Regional+Economy+Size+and+the+Growth-Instability+Frontier%3A+Evidence+from+Europe&amp;rft.au=Chandra%2C+Siddharth&amp;rft.aufirst=Siddharth&amp;rft.aulast=Chandra&amp;rft.date=2003&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1111%2F1467-9787.00291&amp;rft.issue=1&amp;rft.jtitle=Journal+of+Regional+Science&amp;rft.pages=95-122&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=43" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><span class="citation journal">Chandra, Siddharth; Shadel, William G. (2007). "Crossing disciplinary boundaries: Applying financial portfolio theory to model the organization of the self-concept". <i>Journal of Research in Personality</i> <b>41</b> (2): 346–373. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2Fj.jrp.2006.04.007">10.1016/j.jrp.2006.04.007</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=Crossing+disciplinary+boundaries%3A+Applying+financial+portfolio+theory+to+model+the+organization+of+the+self-concept&amp;rft.au=Chandra%2C+Siddharth&amp;rft.aufirst=Siddharth&amp;rft.aulast=Chandra&amp;rft.au=Shadel%2C+William+G.&amp;rft.date=2007&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2Fj.jrp.2006.04.007&amp;rft.issue=2&amp;rft.jtitle=Journal+of+Research+in+Personality&amp;rft.pages=346-373&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=41" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><span class="citation web">Portfolio Theory of Information Retrieval July 11th, 2009 (2009-07-11). <a rel="nofollow" class="external text" href="http://web4.cs.ucl.ac.uk/staff/jun.wang/blog/2009/07/11/portfolio-theory/">"Portfolio Theory of Information Retrieval | Dr. Jun Wang's Home Page"</a>. Web4.cs.ucl.ac.uk<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-09-05</span></span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.aulast=Portfolio+Theory+of+Information+Retrieval+July+11th%2C+2009&amp;rft.au=Portfolio+Theory+of+Information+Retrieval+July+11th%2C+2009&amp;rft.btitle=Portfolio+Theory+of+Information+Retrieval+%26%23124%3B+Dr.+Jun+Wang%27s+Home+Page&amp;rft.date=2009-07-11&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fweb4.cs.ucl.ac.uk%2Fstaff%2Fjun.wang%2Fblog%2F2009%2F07%2F11%2Fportfolio-theory%2F&amp;rft.pub=Web4.cs.ucl.ac.uk&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Hubbard2007-25"><span class="mw-cite-backlink">^ <a href="#cite_ref-Hubbard2007_25-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Hubbard2007_25-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation book">Hubbard, Douglas (2007). <i>How to Measure Anything: Finding the Value of Intangibles in Business</i>. Hoboken, NJ: John Wiley &amp; Sons. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-470-11012-6" title="Special:BookSources/978-0-470-11012-6">978-0-470-11012-6</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.aufirst=Douglas&amp;rft.au=Hubbard%2C+Douglas&amp;rft.aulast=Hubbard&amp;rft.btitle=How+to+Measure+Anything%3A+Finding+the+Value+of+Intangibles+in+Business&amp;rft.date=2007&amp;rft.genre=book&amp;rft.isbn=978-0-470-11012-6&amp;rft.place=Hoboken%2C+NJ&amp;rft.pub=John+Wiley+%26+Sons&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Sabbadini2010-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-Sabbadini2010_26-0">^</a></b></span> <span class="reference-text"><span class="citation web">Sabbadini, Tony (2010). <a rel="nofollow" class="external text" href="http://sctrackr.com/wp-content/uploads/2012/06/Manufacturing-Portfolio-Theory-CFPv1.pdf">"Manufacturing Portfolio Theory"</a> <span style="font-size:85%;">(PDF)</span>. <a href="/wiki/International_Institute_for_Advanced_Studies_in_Systems_Research_and_Cybernetics" title="International Institute for Advanced Studies in Systems Research and Cybernetics">International Institute for Advanced Studies in Systems Research and Cybernetics</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.aufirst=Tony&amp;rft.aulast=Sabbadini&amp;rft.au=Sabbadini%2C+Tony&amp;rft.btitle=Manufacturing+Portfolio+Theory&amp;rft.date=2010&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fsctrackr.com%2Fwp-content%2Fuploads%2F2012%2F06%2FManufacturing-Portfolio-Theory-CFPv1.pdf&amp;rft.pub=International+Institute+for+Advanced+Studies+in+Systems+Research+and+Cybernetics&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=22" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="citation journal">Lintner, John (1965). "The Valuation of Risk Assets and the Selection of Risky Investments in Stock Portfolios and Capital Budgets". <i>The Review of Economics and Statistics</i> (The MIT Press) <b>47</b> (1): 13–39. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.2307%2F1924119">10.2307/1924119</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/1924119">1924119</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=The+Valuation+of+Risk+Assets+and+the+Selection+of+Risky+Investments+in+Stock+Portfolios+and+Capital+Budgets&amp;rft.aufirst=John&amp;rft.aulast=Lintner&amp;rft.au=Lintner%2C+John&amp;rft.date=1965&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F1924119&amp;rft.issue=1&amp;rft.jstor=1924119&amp;rft.jtitle=The+Review+of+Economics+and+Statistics&amp;rft.pages=13-39&amp;rft.pub=The+MIT+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=47" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation journal">Sharpe, William F. (1964). "Capital asset prices: A theory of market equilibrium under conditions of risk". <i>Journal of Finance</i> <b>19</b> (3): 425–442. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.2307%2F2977928">10.2307/2977928</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2977928">2977928</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=Capital+asset+prices%3A+A+theory+of+market+equilibrium+under+conditions+of+risk&amp;rft.aufirst=William+F.&amp;rft.aulast=Sharpe&amp;rft.au=Sharpe%2C+William+F.&amp;rft.date=1964&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2977928&amp;rft.issue=3&amp;rft.jstor=2977928&amp;rft.jtitle=Journal+of+Finance&amp;rft.pages=425-442&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=19" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><span class="citation journal">Tobin, James (1958). "Liquidity preference as behavior towards risk". <i>The Review of Economic Studies</i> <b>25</b> (2): 65–86. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.2307%2F2296205">10.2307/2296205</a>. <a href="/wiki/JSTOR" title="JSTOR">JSTOR</a>&#160;<a rel="nofollow" class="external text" href="//www.jstor.org/stable/2296205">2296205</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AModern+portfolio+theory&amp;rft.atitle=Liquidity+preference+as+behavior+towards+risk&amp;rft.aufirst=James&amp;rft.aulast=Tobin&amp;rft.au=Tobin%2C+James&amp;rft.date=1958&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.2307%2F2296205&amp;rft.issue=2&amp;rft.jstor=2296205&amp;rft.jtitle=The+Review+of+Economic+Studies&amp;rft.pages=65-86&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=25" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit&amp;section=23" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="//commons.wikimedia.org/wiki/Category:Portfolio_theory" class="extiw" title="commons:Category:Portfolio theory">Portfolio theory</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.stanford.edu/~wfsharpe/mia/mia.htm">Macro-Investment Analysis</a>, Prof. <a href="/wiki/William_F._Sharpe" title="William F. Sharpe">William F. Sharpe</a>, <a href="/wiki/Stanford_University" title="Stanford University">Stanford University</a></li>
+<li>"New Approaches for Portfolio Optimization: Parting with the Bell Curve — Interview with Prof. Svetlozar Rachev and Prof.Stefan Mittnik" <a rel="nofollow" class="external free" href="https://statistik.econ.kit.edu/download/doc_secure1/RM-Interview-Rachev-Mittnik-EnglishTranslation.pdf">https://statistik.econ.kit.edu/download/doc_secure1/RM-Interview-Rachev-Mittnik-EnglishTranslation.pdf</a></li>
+<li><a rel="nofollow" class="external autonumber" href="http://seekingalpha.com/article/1033601-modern-portfolio-theory-2_0-the-most-diversified-portfolio">[1]</a>, Article about "Modern Portfolio Theory 2.0" on Seeking Alpha (Editor's Pick)</li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Financial_markets_navigation" title="Template:Financial markets navigation"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Financial_markets_navigation" title="Template talk:Financial markets navigation"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Financial_markets_navigation&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Financial_market" title="Financial market">Financial markets</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Types of <a href="/wiki/Capital_market" title="Capital market">markets</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Primary_market" title="Primary market">Primary market</a></li>
+<li><a href="/wiki/Secondary_market" title="Secondary market">Secondary market</a></li>
+<li><a href="/wiki/Third_market" title="Third market">Third market</a></li>
+<li><a href="/wiki/Fourth_market" title="Fourth market">Fourth market</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Types of <a href="/wiki/Stock" title="Stock">stocks</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Common_stock" title="Common stock">Common stock</a></li>
+<li><a href="/wiki/Golden_share" title="Golden share">Golden share</a></li>
+<li><a href="/wiki/Preferred_stock" title="Preferred stock">Preferred stock</a></li>
+<li><a href="/wiki/Restricted_stock" title="Restricted stock">Restricted stock</a></li>
+<li><a href="/wiki/Tracking_stock" title="Tracking stock">Tracking stock</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Share_capital" title="Share capital">Share capital</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Authorised_capital" title="Authorised capital">Authorised capital</a></li>
+<li><a href="/wiki/Issued_shares" title="Issued shares">Issued shares</a></li>
+<li><a href="/wiki/Shares_outstanding" title="Shares outstanding">Shares outstanding</a></li>
+<li><a href="/wiki/Treasury_stock" title="Treasury stock">Treasury stock</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Participants</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Broker-dealer" title="Broker-dealer">Broker-dealer</a></li>
+<li><a href="/wiki/Day_trader" title="Day trader">Day trader</a></li>
+<li><a href="/wiki/Floor_broker" title="Floor broker">Floor broker</a></li>
+<li><a href="/wiki/Floor_trader" title="Floor trader">Floor trader</a></li>
+<li><a href="/wiki/Investor" title="Investor">Investor</a></li>
+<li><a href="/wiki/Market_maker" title="Market maker">Market maker</a></li>
+<li><a href="/wiki/Proprietary_trading" title="Proprietary trading">Proprietary trader</a></li>
+<li><a href="/wiki/Quantitative_analyst" title="Quantitative analyst">Quantitative analyst</a></li>
+<li><a href="/wiki/Financial_regulation" title="Financial regulation">Regulator</a></li>
+<li><a href="/wiki/Stock_trader" title="Stock trader">Stock trader</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Stock_exchange" title="Stock exchange">Exchanges</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Electronic_communication_network" title="Electronic communication network">Electronic communication network</a></li>
+<li><a href="/wiki/List_of_stock_exchanges" title="List of stock exchanges">List of stock exchanges</a>
+<ul>
+<li><a href="/wiki/List_of_stock_exchange_opening_times" title="List of stock exchange opening times">Opening times</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Multilateral_trading_facility" title="Multilateral trading facility">Multilateral trading facility</a></li>
+<li><a href="/wiki/Over-the-counter_(finance)" title="Over-the-counter (finance)">Over-the-counter</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Stock_valuation" title="Stock valuation">Stock valuation</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Alpha_(investment)" title="Alpha (investment)" class="mw-redirect">Alpha</a></li>
+<li><a href="/wiki/Arbitrage_pricing_theory" title="Arbitrage pricing theory">Arbitrage pricing theory</a></li>
+<li><a href="/wiki/Beta_(finance)" title="Beta (finance)">Beta</a></li>
+<li><a href="/wiki/Bid%E2%80%93ask_spread" title="Bid–ask spread">Bid–ask spread</a></li>
+<li><a href="/wiki/Book_value" title="Book value">Book value</a></li>
+<li><a href="/wiki/Capital_asset_pricing_model" title="Capital asset pricing model">Capital asset pricing model</a></li>
+<li><a href="/wiki/Dividend_discount_model" title="Dividend discount model">Dividend discount model</a></li>
+<li><a href="/wiki/Dividend_yield" title="Dividend yield">Dividend yield</a></li>
+<li><a href="/wiki/Earnings_per_share" title="Earnings per share">Earnings per share</a></li>
+<li><a href="/wiki/Earnings_yield" title="Earnings yield">Earnings yield</a></li>
+<li><a href="/wiki/Net_asset_value" title="Net asset value">Net asset value</a></li>
+<li><a href="/wiki/Security_characteristic_line" title="Security characteristic line">Security characteristic line</a></li>
+<li><a href="/wiki/Security_market_line" title="Security market line">Security market line</a></li>
+<li><a href="/wiki/T-model" title="T-model">T-model</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Trading theories<br />
+and <a href="/wiki/Trading_strategy" title="Trading strategy">strategies</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Algorithmic_trading" title="Algorithmic trading">Algorithmic trading</a></li>
+<li><a href="/wiki/Buy_and_hold" title="Buy and hold">Buy and hold</a></li>
+<li><a href="/wiki/Concentrated_stock" title="Concentrated stock">Concentrated stock</a></li>
+<li><a href="/wiki/Contrarian_investing" title="Contrarian investing">Contrarian investing</a></li>
+<li><a href="/wiki/Day_trading" title="Day trading">Day trading</a></li>
+<li><a href="/wiki/Dollar_cost_averaging" title="Dollar cost averaging">Dollar cost averaging</a></li>
+<li><a href="/wiki/Efficient-market_hypothesis" title="Efficient-market hypothesis">Efficient-market hypothesis</a></li>
+<li><a href="/wiki/Fundamental_analysis" title="Fundamental analysis">Fundamental analysis</a></li>
+<li><a href="/wiki/Growth_stock" title="Growth stock">Growth stock</a></li>
+<li><a href="/wiki/Market_timing" title="Market timing">Market timing</a></li>
+<li><strong class="selflink">Modern portfolio theory</strong></li>
+<li><a href="/wiki/Momentum_investing" title="Momentum investing">Momentum investing</a></li>
+<li><a href="/wiki/Mosaic_theory_(investments)" title="Mosaic theory (investments)">Mosaic theory</a></li>
+<li><a href="/wiki/Pairs_trade" title="Pairs trade">Pairs trade</a></li>
+<li><a href="/wiki/Post-modern_portfolio_theory" title="Post-modern portfolio theory">Post-modern portfolio theory</a></li>
+<li><a href="/wiki/Random_walk_hypothesis" title="Random walk hypothesis">Random walk hypothesis</a></li>
+<li><a href="/wiki/Sector_rotation" title="Sector rotation">Sector rotation</a></li>
+<li><a href="/wiki/Style_investing" title="Style investing">Style investing</a></li>
+<li><a href="/wiki/Swing_trading" title="Swing trading">Swing trading</a></li>
+<li><a href="/wiki/Technical_analysis" title="Technical analysis">Technical analysis</a></li>
+<li><a href="/wiki/Trend_following" title="Trend following">Trend following</a></li>
+<li><a href="/wiki/Value_investing" title="Value investing">Value investing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related terms</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Block_trade" title="Block trade">Block trade</a></li>
+<li><a href="/wiki/Cross_listing" title="Cross listing">Cross listing</a></li>
+<li><a href="/wiki/Dark_liquidity" title="Dark liquidity">Dark liquidity</a></li>
+<li><a href="/wiki/Dividend" title="Dividend">Dividend</a></li>
+<li><a href="/wiki/Dual-listed_company" title="Dual-listed company">Dual-listed company</a></li>
+<li><a href="/wiki/DuPont_analysis" title="DuPont analysis">DuPont analysis</a></li>
+<li><a href="/wiki/Efficient_frontier" title="Efficient frontier">Efficient frontier</a></li>
+<li><a href="/wiki/Flight-to-quality" title="Flight-to-quality">Flight-to-quality</a></li>
+<li><a href="/wiki/Haircut_(finance)" title="Haircut (finance)">Haircut</a></li>
+<li><a href="/wiki/Initial_public_offering" title="Initial public offering">Initial public offering</a></li>
+<li><a href="/wiki/Margin_(finance)" title="Margin (finance)">Margin</a></li>
+<li><a href="/wiki/Market_anomaly" title="Market anomaly">Market anomaly</a></li>
+<li><a href="/wiki/Market_capitalization" title="Market capitalization">Market capitalization</a></li>
+<li><a href="/wiki/Market_depth" title="Market depth">Market depth</a></li>
+<li><a href="/wiki/Market_manipulation" title="Market manipulation">Market manipulation</a></li>
+<li><a href="/wiki/Market_trend" title="Market trend">Market trend</a></li>
+<li><a href="/wiki/Mean_reversion_(finance)" title="Mean reversion (finance)">Mean reversion</a></li>
+<li><a href="/wiki/Momentum_(finance)" title="Momentum (finance)">Momentum</a></li>
+<li><a href="/wiki/Open_outcry" title="Open outcry">Open outcry</a></li>
+<li><a href="/wiki/Public_float" title="Public float">Public float</a></li>
+<li><a href="/wiki/Public_offering" title="Public offering">Public offering</a></li>
+<li><a href="/wiki/Rally_(stock_market)" title="Rally (stock market)">Rally</a></li>
+<li><a href="/wiki/Returns-based_style_analysis" title="Returns-based style analysis">Returns-based style analysis</a></li>
+<li><a href="/wiki/Reverse_stock_split" title="Reverse stock split">Reverse stock split</a></li>
+<li><a href="/wiki/Share_repurchase" title="Share repurchase">Share repurchase</a></li>
+<li><a href="/wiki/Short_(finance)" title="Short (finance)">Short selling</a></li>
+<li><a href="/wiki/Slippage_(finance)" title="Slippage (finance)">Slippage</a></li>
+<li><a href="/wiki/Speculation" title="Speculation">Speculation</a></li>
+<li><a href="/wiki/Stock_dilution" title="Stock dilution">Stock dilution</a></li>
+<li><a href="/wiki/Stock_market_index" title="Stock market index">Stock market index</a></li>
+<li><a href="/wiki/Stock_split" title="Stock split">Stock split</a></li>
+<li><a href="/wiki/Trade_(financial_instrument)" title="Trade (financial instrument)">Trade</a></li>
+<li><a href="/wiki/Uptick_rule" title="Uptick rule">Uptick rule</a></li>
+<li><a href="/wiki/Volatility_(finance)" title="Volatility (finance)">Volatility</a></li>
+<li><a href="/wiki/Voting_interest" title="Voting interest">Voting interest</a></li>
+<li><a href="/wiki/Yield_(finance)" title="Yield (finance)">Yield</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Financial_risk" title="Template:Financial risk"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Financial_risk" title="Template talk:Financial risk"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Financial_risk&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Financial_risk" title="Financial risk">Financial risk</a> and <a href="/wiki/Financial_risk_management" title="Financial risk management">financial risk management</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Categories</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Credit_risk" title="Credit risk">Credit risk</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Concentration_risk" title="Concentration risk">Concentration risk</a></li>
+<li><a href="/wiki/Consumer_credit_risk" title="Consumer credit risk">Consumer credit risk</a></li>
+<li><a href="/wiki/Credit_derivative" title="Credit derivative">Credit derivative</a></li>
+<li><a href="/wiki/Securitization" title="Securitization">Securitization</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Market_risk" title="Market risk">Market risk</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Commodity_risk" title="Commodity risk">Commodity risk</a></li>
+<li><a href="/wiki/Equity_risk" title="Equity risk">Equity risk</a></li>
+<li><a href="/wiki/Foreign_exchange_risk" title="Foreign exchange risk">Foreign exchange risk</a></li>
+<li><a href="/wiki/Interest_rate_risk" title="Interest rate risk">Interest rate risk</a></li>
+<li><a href="/wiki/Volatility_risk" title="Volatility risk">Volatility risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Liquidity_risk" title="Liquidity risk">Liquidity risk</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Refinancing_risk" title="Refinancing risk">Refinancing risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Operational_risk" title="Operational risk">Operational risk</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Operational_risk_management" title="Operational risk management">Operational risk management</a></li>
+<li><a href="/wiki/Legal_risk" title="Legal risk">Legal risk</a></li>
+<li><a href="/wiki/Political_risk" title="Political risk">Political risk</a></li>
+<li><a href="/wiki/Reputational_risk" title="Reputational risk">Reputational risk</a></li>
+<li><a href="/wiki/Settlement_risk" title="Settlement risk">Settlement risk</a></li>
+<li><a href="/wiki/Valuation_risk" title="Valuation risk">Valuation risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Profit_risk" title="Profit risk">Profit risk</a></li>
+<li><a href="/wiki/Systemic_risk" title="Systemic risk">Systemic risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Financial_risk_modeling" title="Financial risk modeling">Modeling</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Market_portfolio" title="Market portfolio">Market portfolio</a></li>
+<li><strong class="selflink">Modern portfolio theory</strong></li>
+<li><a href="/wiki/Risk-adjusted_return_on_capital" title="Risk-adjusted return on capital">RAROC</a></li>
+<li><a href="/wiki/Risk-free_interest_rate" title="Risk-free interest rate">Risk-free rate</a></li>
+<li><a href="/wiki/Risk_parity" title="Risk parity">Risk parity</a></li>
+<li><a href="/wiki/Sharpe_ratio" title="Sharpe ratio">Sharpe ratio</a></li>
+<li><a href="/wiki/Value_at_risk" title="Value at risk">Value at risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Basic concepts</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Diversification_(finance)" title="Diversification (finance)">Diversification</a></li>
+<li><a href="/wiki/Expected_return" title="Expected return">Expected return</a></li>
+<li><a href="/wiki/Hazard" title="Hazard">Hazard</a></li>
+<li><a href="/wiki/Hedge_(finance)" title="Hedge (finance)">Hedge</a></li>
+<li><a href="/wiki/Risk" title="Risk">Risk</a></li>
+<li><a href="/wiki/Risk_pool" title="Risk pool">Risk pool</a></li>
+<li><a href="/wiki/Systematic_risk" title="Systematic risk">Systematic risk</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="/wiki/Financial_economics" title="Financial economics">Financial economics</a></li>
+<li><a href="/wiki/Investment_management" title="Investment management">Investment management</a></li>
+<li><a href="/wiki/Mathematical_finance" title="Mathematical finance">Mathematical finance</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1050
+Cached time: 20150917225743
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.553 seconds
+Real time usage: 2.637 seconds
+Preprocessor visited node count: 2576/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 77384/2097152 bytes
+Template argument size: 3615/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 4/500
+Lua time usage: 0.151/10.000 seconds
+Lua memory usage: 4.09 MB/50 MB
+Number of Wikibase entities loaded: 1-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2467.208      1 - -total
+  5.66%  139.628      1 - Template:Reflist
+  2.29%   56.524      1 - Template:Clarifyme
+  2.11%   52.075      8 - Template:Category_handler
+  1.95%   47.996      1 - Template:Fix-span
+  1.74%   43.026      4 - Template:Cite_web
+  1.70%   41.965     10 - Template:Cite_journal
+  1.51%   37.321      3 - Template:Navbox
+  1.47%   36.286      1 - Template:Redirect
+  1.21%   29.956      1 - Template:Commonscat
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:734434-0!*!0!!en!4!*!math=0 and timestamp 20150917225740 and revision id 677959720
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Modern_portfolio_theory&amp;oldid=677959720">https://en.wikipedia.org/w/index.php?title=Modern_portfolio_theory&amp;oldid=677959720</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Financial_economics" title="Category:Financial economics">Financial economics</a></li><li><a href="/wiki/Category:Finance_theories" title="Category:Finance theories">Finance theories</a></li><li><a href="/wiki/Category:Mathematical_finance" title="Category:Mathematical finance">Mathematical finance</a></li><li><a href="/wiki/Category:Investment" title="Category:Investment">Investment</a></li><li><a href="/wiki/Category:Portfolio_theories" title="Category:Portfolio theories">Portfolio theories</a></li><li><a href="/wiki/Category:Financial_risk" title="Category:Financial risk">Financial risk</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_August_2015" title="Category:Wikipedia articles needing clarification from August 2015">Wikipedia articles needing clarification from August 2015</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_August_2009" title="Category:Articles with unsourced statements from August 2009">Articles with unsourced statements from August 2009</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_February_2011" title="Category:Articles with unsourced statements from February 2011">Articles with unsourced statements from February 2011</a></li><li><a href="/wiki/Category:Commons_category_without_a_link_on_Wikidata" title="Category:Commons category without a link on Wikidata">Commons category without a link on Wikidata</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Modern+portfolio+theory&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Modern+portfolio+theory" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Modern_portfolio_theory"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Modern_portfolio_theory"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Modern_portfolio_theory" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Modern_portfolio_theory" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Modern_portfolio_theory" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Modern_portfolio_theory&amp;oldid=677959720" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Modern_portfolio_theory&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q1072885" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Modern_portfolio_theory&amp;id=677959720" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Modern+portfolio+theory">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Modern+portfolio+theory&amp;oldid=677959720&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Modern_portfolio_theory&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar"><a href="//ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%AD%D9%81%D8%B8%D8%A9_%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9" title="نظرية المحفظة الحديثة – Arabic" lang="ar" hreflang="ar">العربية</a></li><li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Portfoliotheorie" title="Portfoliotheorie – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Teor%C3%ADa_moderna_del_portafolio" title="Teoría moderna del portafolio – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Th%C3%A9orie_moderne_du_portefeuille" title="Théorie moderne du portefeuille – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="//ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4_%EC%9D%B4%EB%A1%A0" title="현대 포트폴리오 이론 – Korean" lang="ko" hreflang="ko">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Frontiera_dei_portafogli" title="Frontiera dei portafogli – Italian" lang="it" hreflang="it">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%94%D7%AA%D7%90%D7%95%D7%A8%D7%99%D7%94_%D7%94%D7%9E%D7%95%D7%93%D7%A8%D7%A0%D7%99%D7%AA_%D7%A9%D7%9C_%D7%AA%D7%99%D7%A7%D7%99_%D7%94%D7%A9%D7%A7%D7%A2%D7%95%D7%AA" title="התאוריה המודרנית של תיקי השקעות – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-lv"><a href="//lv.wikipedia.org/wiki/Kred%C4%ABtportfelis" title="Kredītportfelis – Latvian" lang="lv" hreflang="lv">Latviešu</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Moderne_portefeuilletheorie" title="Moderne portefeuilletheorie – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E7%8F%BE%E4%BB%A3%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E7%90%86%E8%AB%96" title="現代ポートフォリオ理論 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Teoria_portfelowa" title="Teoria portfelowa – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Teoria_moderna_do_portf%C3%B3lio" title="Teoria moderna do portfólio – Portuguese" lang="pt" hreflang="pt">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0_%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%B5%D0%BB%D1%8F" title="Оценка эффективности инвестиционного портфеля – Russian" lang="ru" hreflang="ru">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Modern_portf%C3%B6ljteori" title="Modern portföljteori – Swedish" lang="sv" hreflang="sv">Svenska</a></li><li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8_%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B0%D0%BD%D0%B0%D0%BB%D1%96%D0%B7%D1%83" title="Методи портфельного аналізу – Ukrainian" lang="uk" hreflang="uk">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E7%8E%B0%E4%BB%A3%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88%E7%90%86%E8%AE%BA" title="现代投资组合理论 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q1072885#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 26 August 2015, at 15:31.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Modern_portfolio_theory&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":2780,"wgHostname":"mw1050"});
+} );</script>
+	</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Algorithmic efficiency - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Algorithmic_efficiency","wgTitle":"Algorithmic efficiency","wgCurRevisionId":679726998,"wgRevisionId":679726998,"wgArticleId":145128,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Use dmy dates from June 2013","Analysis of algorithms","Computer performance","Software optimization"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Algorithmic_efficiency","wgRelevantArticleId":145128,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],
+"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgULSAcceptLanguageList":["en","en-au"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1296251","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Algorithmic_efficiency" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Algorithmic_efficiency" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Algorithmic_efficiency skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Algorithmic efficiency</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>In <a href="/wiki/Computer_science" title="Computer science">computer science</a>, <b>algorithmic efficiency</b> are the properties of an <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> which relate to the amount of <a href="/wiki/Computational_resource" title="Computational resource">computational resources</a> used by the algorithm. An algorithm must be <a href="/wiki/Analysis_of_algorithms" title="Analysis of algorithms">analysed</a> to determine its resource usage. Algorithmic efficiency can be thought of as analogous to engineering <a href="/wiki/Productivity" title="Productivity">productivity</a> for a repeating or continuous process.</p>
+<p>For maximum efficiency we wish to minimize resource usage. However, the various resources (e.g. time, space) cannot be compared directly, so which of two algorithms is considered to be more efficient often depends on which measure of efficiency is considered the most important, e.g. the requirement for high speed, minimum memory usage or some other measure of performance.</p>
+<dl>
+<dd><i>Note that this article is <b>not</b> about optimization, which is discussed in <a href="/wiki/Program_optimization" title="Program optimization">program optimization</a>, <a href="/wiki/Optimizing_compiler" title="Optimizing compiler">optimizing compiler</a>, <a href="/wiki/Loop_optimization" title="Loop optimization">loop optimization</a>, <a href="/wiki/Object_code_optimizer" title="Object code optimizer">object code optimizer</a>, etc. The term 'optimization' is itself misleading, since all that can generally be done is an 'improvement'.</i></dd>
+</dl>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Background"><span class="tocnumber">1</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Overview"><span class="tocnumber">2</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Theoretical_analysis"><span class="tocnumber">2.1</span> <span class="toctext">Theoretical analysis</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Benchmarking:_measuring_performance"><span class="tocnumber">2.2</span> <span class="toctext">Benchmarking: measuring performance</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Implementation_issues"><span class="tocnumber">2.3</span> <span class="toctext">Implementation issues</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Measures_of_resource_usage"><span class="tocnumber">3</span> <span class="toctext">Measures of resource usage</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Time"><span class="tocnumber">3.1</span> <span class="toctext">Time</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Theory"><span class="tocnumber">3.1.1</span> <span class="toctext">Theory</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Practice"><span class="tocnumber">3.1.2</span> <span class="toctext">Practice</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#Space"><span class="tocnumber">3.2</span> <span class="toctext">Space</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Examples_of_efficient_algorithms"><span class="tocnumber">4</span> <span class="toctext">Examples of efficient algorithms</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Criticism_of_the_current_state_of_programming"><span class="tocnumber">5</span> <span class="toctext">Criticism of the current state of programming</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Competitions_for_the_best_algorithms"><span class="tocnumber">6</span> <span class="toctext">Competitions for the best algorithms</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Background">Background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=1" title="Edit section: Background">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The importance of efficiency with respect to time was emphasised by <a href="/wiki/Ada_Lovelace" title="Ada Lovelace">Ada Lovelace</a> in 1843 as applying to <a href="/wiki/Charles_Babbage" title="Charles Babbage">Charles Babbage</a>'s mechanical analytical engine:</p>
+<blockquote>
+<p>"In almost every computation a great variety of arrangements for the succession of the processes is possible, and various considerations must influence the selections amongst them for the purposes of a calculating engine. One essential object is to choose that arrangement which shall tend to reduce to a minimum the time necessary for completing the calculation"<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+</blockquote>
+<p>Early electronic computers were severely limited both by the speed of operations and the amount of memory available. In some cases it was realised that there was a <a href="/wiki/Space%E2%80%93time_trade-off" title="Space–time trade-off" class="mw-redirect">space–time trade-off</a>, whereby a task could be handled either by using a fast algorithm which used quite a lot of working memory, or by using a slower algorithm which used very little working memory. The engineering trade-off was then to use the fastest algorithm which would fit in the available memory.</p>
+<p>Modern computers are very much faster than the early computers, and have a much larger amount of memory available (Gigabytes instead of Kilobytes). Nevertheless, <a href="/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a> emphasised that efficiency is still an important consideration:</p>
+<blockquote>
+<p>"In established engineering disciplines a 12% improvement, easily obtained, is never considered marginal and I believe the same viewpoint should prevail in software engineering"<sup id="cite_ref-Knuth1974_2-0" class="reference"><a href="#cite_note-Knuth1974-2"><span>[</span>2<span>]</span></a></sup></p>
+</blockquote>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=2" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An algorithm is considered efficient if its resource consumption (or computational cost) is at or below some acceptable level. Roughly speaking, 'acceptable' means: it will run in a reasonable amount of time on an available computer. Since the 1950s computers have seen dramatic increases in both the available computational power and in the available amount of memory, so current acceptable levels would have been unacceptable even 10 years ago.</p>
+<p>Computer manufacturers frequently bring out new models, often with higher <a href="/wiki/Computer_performance" title="Computer performance">performance</a>. Software costs can be quite high, so in some cases the simplest and cheapest way of getting higher performance might be to just buy a faster computer, provided it is <a href="/wiki/Backward_compatibility" title="Backward compatibility">compatible</a> with an existing computer.</p>
+<p>There are many ways in which the resources used by an algorithm can be measured: the two most common measures are speed and memory usage; other measures could include transmission speed, temporary disk usage, long-term disk usage, power consumption, <a href="/wiki/Total_cost_of_ownership" title="Total cost of ownership">total cost of ownership</a>, response time to external stimuli, etc. Many of these measures depend on the size of the input to the algorithm (i.e. the amount of data to be processed); they might also depend on the way in which the data is arranged (e.g. some sorting algorithms perform poorly on data which is already sorted, or which is sorted in reverse order).</p>
+<p>In practice, there are other factors which can affect the efficiency of an algorithm, such as requirements for accuracy and/or reliability. As detailed below, the way in which an algorithm is implemented can also have a significant effect on actual efficiency, though many aspects of this relate to optimization issues.</p>
+<h3><span class="mw-headline" id="Theoretical_analysis">Theoretical analysis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=3" title="Edit section: Theoretical analysis">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the theoretical analysis of algorithms, the normal practice is to estimate their complexity in the asymptotic sense, i.e. use <a href="/wiki/Big_O_notation" title="Big O notation">Big O notation</a> to represent the complexity of an algorithm as a function of the size of the input <b>n</b>. This is generally sufficiently accurate when <b>n</b> is large, but may be misleading for small values of <b>n</b> (e.g. bubble sort may be faster than quicksort when only a few items are to be sorted).</p>
+<p>Some examples of Big O notation include:</p>
+<table class="wikitable">
+<tr>
+<th>Notation</th>
+<th>Name</th>
+<th>Examples</th>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="O(1)\," src="//upload.wikimedia.org/math/3/c/a/3cafa487bd35dc5de745b73b42e41f8c.png" /></td>
+<td><a href="/wiki/Constant_time" title="Constant time" class="mw-redirect">constant</a></td>
+<td>Determining if a number is even or odd; Using a constant-size <a href="/wiki/Lookup_table" title="Lookup table">lookup table</a>; Using a suitable <a href="/wiki/Hash_function" title="Hash function">hash function</a> for looking up an item.</td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="O(\log n)\," src="//upload.wikimedia.org/math/5/f/f/5ffe63dd51eb6795ef395eb4382065cc.png" /></td>
+<td><a href="/wiki/Logarithmic_time" title="Logarithmic time" class="mw-redirect">logarithmic</a></td>
+<td>Finding an item in a sorted array with a <a href="/wiki/Binary_search_algorithm" title="Binary search algorithm">binary search</a> or a balanced search <a href="/wiki/Tree_data_structure" title="Tree data structure" class="mw-redirect">tree</a> as well as all operations in a <a href="/wiki/Binomial_heap" title="Binomial heap">Binomial heap</a>.</td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="O(n)\," src="//upload.wikimedia.org/math/6/e/8/6e85ed16b150a2e8c2dd03d09406ff4e.png" /></td>
+<td><a href="/wiki/Linear_time" title="Linear time" class="mw-redirect">linear</a></td>
+<td>Finding an item in an unsorted list or a malformed tree (worst case) or in an unsorted array; Adding two <i>n</i>-bit integers by <a href="/wiki/Ripple_carry_adder" title="Ripple carry adder" class="mw-redirect">ripple carry</a>.</td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="O(n\log n)\," src="//upload.wikimedia.org/math/8/f/c/8fc105528643ec9734489a2f112bbf17.png" /></td>
+<td><a href="/wiki/Linearithmic_time" title="Linearithmic time" class="mw-redirect">linearithmic</a>, loglinear, or quasilinear</td>
+<td>Performing a <a href="/wiki/Fast_Fourier_transform" title="Fast Fourier transform">Fast Fourier transform</a>; <a href="/wiki/Heapsort" title="Heapsort">heapsort</a>, <a href="/wiki/Quicksort" title="Quicksort">quicksort</a> (best and average case), or <a href="/wiki/Merge_sort" title="Merge sort">merge sort</a></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="O(n^2)\," src="//upload.wikimedia.org/math/2/5/0/2505c72066c2e1cc1a51e4be2f0a1085.png" /></td>
+<td><a href="/wiki/Quadratic_time" title="Quadratic time" class="mw-redirect">quadratic</a></td>
+<td>Multiplying two <i>n</i>-digit numbers by a simple algorithm; <a href="/wiki/Bubble_sort" title="Bubble sort">bubble sort</a> (worst case or naive implementation), <a href="/wiki/Shell_sort" title="Shell sort" class="mw-redirect">Shell sort</a>, quicksort (worst case), <a href="/wiki/Selection_sort" title="Selection sort">selection sort</a> or <a href="/wiki/Insertion_sort" title="Insertion sort">insertion sort</a></td>
+</tr>
+<tr>
+<td><img class="mwe-math-fallback-image-inline tex" alt="O(c^n),\;c&gt;1" src="//upload.wikimedia.org/math/c/0/d/c0dcf3a8da4f8216140b2d5f3d447cb9.png" /></td>
+<td><a href="/wiki/Exponential_time" title="Exponential time" class="mw-redirect">exponential</a></td>
+<td>Finding the (exact) solution to the <a href="/wiki/Travelling_salesman_problem" title="Travelling salesman problem">travelling salesman problem</a> using <a href="/wiki/Dynamic_programming" title="Dynamic programming">dynamic programming</a>; determining if two logical statements are equivalent using <a href="/wiki/Brute-force_search" title="Brute-force search">brute-force search</a></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Benchmarking:_measuring_performance">Benchmarking: measuring performance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=4" title="Edit section: Benchmarking: measuring performance">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For new versions of software or to provide comparisons with competitive systems, <a href="/wiki/Benchmark_(computing)" title="Benchmark (computing)">benchmarks</a> are sometimes used, which assist with gauging an algorithms relative performance. If a new <a href="/wiki/Sorting_algorithm" title="Sorting algorithm">sort</a> algorithm is produced for example it can be compared with its predecessors to ensure that at least it is efficient as before with known data—taking into consideration any functional improvements. Benchmarks can be used by customers when comparing various products from alternative suppliers to estimate which product will best suit their specific requirements in terms of functionality and performance. For example in the <a href="/wiki/Mainframe_computer" title="Mainframe computer">mainframe</a> world certain proprietary <a href="/wiki/Mainframe_sort_merge" title="Mainframe sort merge">sort</a> products from independent software companies such as <a href="/wiki/Syncsort" title="Syncsort">Syncsort</a> compete with products from the major suppliers such as <a href="/wiki/IBM" title="IBM">IBM</a> for speed.</p>
+<p>Some benchmarks provide opportunities for producing an analysis comparing the relative speed of various compiled and interpreted languages for example<sup id="cite_ref-fourmilab.ch_3-0" class="reference"><a href="#cite_note-fourmilab.ch-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> and <i>The Computer Language Benchmarks Game</i><sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup> compares the performance of implementations of typical programming problems in several programming languages.</p>
+<p>(Even creating "<a href="/wiki/Do_it_yourself" title="Do it yourself">do it yourself</a>" benchmarks to get at least some appreciation of the relative performance of different programming languages, using a variety of user specified criteria, is quite simple to produce as this "Nine language Performance roundup" by Christopher W. Cowell-Shah demonstrates by example)<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Implementation_issues">Implementation issues</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=5" title="Edit section: Implementation issues">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Implementation issues can also have an effect on actual efficiency, such as the choice of programming language, or the way in which the algorithm is actually coded, or the choice of a <a href="/wiki/Compiler" title="Compiler">compiler</a> for a particular language, or the compilation options used, or even the operating system being used. In some cases a language implemented by an <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a> may be much slower than a language implemented by a compiler.<sup id="cite_ref-fourmilab.ch_3-1" class="reference"><a href="#cite_note-fourmilab.ch-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>There are other factors which may affect time or space issues, but which may be outside of a programmer's control; these include <a href="/wiki/Data_alignment" title="Data alignment" class="mw-redirect">data alignment</a>, <a href="/wiki/Granularity#Data_granularity" title="Granularity">data granuality</a>, <a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a>, <a href="/wiki/Instruction-level_parallelism" title="Instruction-level parallelism">instruction-level parallelism</a>, and subroutine calls.<sup id="cite_ref-steele1997_7-0" class="reference"><a href="#cite_note-steele1997-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>Some processors have capabilities for <a href="/wiki/Vector_processor" title="Vector processor">vector processing</a>, which allow a single instruction to operate on multiple operands; it may or may not be easy for a programmer or compiler to use these capabilities. Algorithms designed for sequential processing may need to be completely redesigned to make use of <a href="/wiki/Parallel_processing" title="Parallel processing">parallel processing</a>.</p>
+<p>Another problem which can arise with compatible processors is that they may implement an instruction in different ways, so that instructions which are relatively fast on some models may be relatively slow on other models; this can make life difficult for an optimizing compiler.</p>
+<h2><span class="mw-headline" id="Measures_of_resource_usage">Measures of resource usage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=6" title="Edit section: Measures of resource usage">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Measures are normally expressed as a function of the size of the input <b>n</b>.</p>
+<p>The two most common measures are:</p>
+<ul>
+<li><i>Time</i>: how long does the algorithm take to complete.</li>
+<li><i>Space</i>: how much working memory (typically RAM) is needed by the algorithm. This has two aspects: the amount of memory needed by the code, and the amount of memory needed for the data on which the code operates.</li>
+</ul>
+<p>For computers whose power is supplied by a battery (e.g. <a href="/wiki/Laptop" title="Laptop">laptops</a>), or for very long/large calculations (e.g. <a href="/wiki/Supercomputer" title="Supercomputer">supercomputers</a>), other measures of interest are:</p>
+<ul>
+<li><i>Direct power consumption</i>: power needed directly to operate the computer.</li>
+<li><i>Indirect power consumption</i>: power needed for cooling, lighting, etc.</li>
+</ul>
+<p>In some cases other less common measures may also be relevant:</p>
+<ul>
+<li><i>Transmission size</i>: bandwidth could be a limiting factor. <a href="/wiki/Data_compression" title="Data compression">Data compression</a> can be used to reduce the amount of data to be transmitted. Displaying a picture or image (e.g. <a href="/wiki/File:Google.png" title="File:Google.png">Google logo</a>) can result in transmitting tens of thousands of bytes (48K in this case) compared with transmitting six bytes for the text "Google".</li>
+<li><i>External space</i>: space needed on a disk or other external memory device; this could be for temporary storage while the algorithm is being carried out, or it could be long-term storage needed to be carried forward for future reference.</li>
+<li><i>Response time</i>: this is particularly relevant in a real-time application when the computer system must respond quickly to some external event.</li>
+<li><i>Total cost of ownership</i>: particularly if a computer is dedicated to one particular algorithm.</li>
+</ul>
+<h3><span class="mw-headline" id="Time">Time</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=7" title="Edit section: Time">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="Theory">Theory</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=8" title="Edit section: Theory">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><a href="/wiki/Analysis_of_algorithms" title="Analysis of algorithms">Analyse</a> the algorithm, typically using <a href="/wiki/Time_complexity" title="Time complexity">time complexity</a> analysis to get an estimate of the running time as a function as the size of the input data. The result is normally expressed using <a href="/wiki/Big_O_notation" title="Big O notation">Big O notation</a>. This is useful for comparing algorithms, especially when a large amount of data is to be processed. More detailed estimates are needed for algorithm comparison when the amount of data is small (though in this situation time is less likely to be a problem anyway). Algorithms which include parallel processing may be more difficult to analyse.</p>
+<h4><span class="mw-headline" id="Practice">Practice</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=9" title="Edit section: Practice">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Use a benchmark to time the use of an algorithm. Many programming languages have an available function which provides CPU time usage. For long-running algorithms the elapsed time could also be of interest. Results should generally be averaged over several tests.</p>
+<p>This sort of test can be very sensitive to hardware configuration and the possibility of other programs or tasks running at the same time in a <a href="/wiki/Multi-processing" title="Multi-processing" class="mw-redirect">multi-processing</a> and <a href="/wiki/Multi-programming" title="Multi-programming" class="mw-redirect">multi-programming</a> environment.</p>
+<p>This sort of test also depends heavily on the selection of a particular programming language, compiler, and compiler options, so algorithms being compared must all be implemented under the same conditions.</p>
+<h3><span class="mw-headline" id="Space">Space</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=10" title="Edit section: Space">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This section is concerned with the use of main memory (often RAM) while the algorithm is being carried out. As for time analysis above, <a href="/wiki/Analysis_of_algorithms" title="Analysis of algorithms">analyse</a> the algorithm, typically using <a href="/wiki/DSPACE" title="DSPACE">space complexity</a> analysis to get an estimate of the run-time memory needed as a function as the size of the input data. The result is normally expressed using <a href="/wiki/Big_O_notation" title="Big O notation">Big O notation</a>.</p>
+<p>There are up to four aspects of memory usage to consider:</p>
+<ul>
+<li>The amount of memory needed to hold the code for the algorithm.</li>
+<li>The amount of memory needed for the input data.</li>
+<li>The amount of memory needed for any output data (some algorithms, such as sorting, often just rearrange the input data and don't need any space for output data).</li>
+<li>The amount of memory needed as working space during the calculation (this includes both named variables and any stack space needed by routines called during the calculation; this stack space can be significant for algorithms which use <a href="/wiki/Recursion_(computer_science)" title="Recursion (computer science)">recursive</a> techniques).</li>
+</ul>
+<p>Early electronic computers, and early home computers, had relatively small amounts of working memory. E.g. the 1949 <a href="/wiki/Electronic_Delay_Storage_Automatic_Calculator" title="Electronic Delay Storage Automatic Calculator">EDSAC</a> had a maximum working memory of 1024 17-bit words, while the 1980 Sinclair <a href="/wiki/ZX80" title="ZX80">ZX80</a> came initially with 1024 8-bit bytes of working memory.</p>
+<p>Current computers can have relatively large amounts of memory (possibly Gigabytes), so having to squeeze an algorithm into a confined amount of memory is much less of a problem than it used to be. But the presence of three different categories of memory can be significant:</p>
+<ul>
+<li>Cache memory (often static RAM) - this operates at speeds comparable with the CPU.</li>
+<li>Main physical memory (often dynamic RAM) - this operates somewhat slower than the CPU.</li>
+<li>Virtual memory (often on disk) - this gives the illusion of lots of memory, and operates thousands of times slower than RAM.</li>
+</ul>
+<p>An algorithm whose memory needs will fit in cache memory will be much faster than an algorithm which fits in main memory, which in turn will be very much faster than an algorithm which has to resort to virtual memory. To further complicate the issue, some systems have up to three levels of cache memory, with varying effective speeds. Different systems will have different amounts of these various types of memory, so the effect of algorithm memory needs can vary greatly from one system to another.</p>
+<p>In the early days of electronic computing, if an algorithm and its data wouldn't fit in main memory then the algorithm couldn't be used. Nowadays the use of virtual memory appears to provide lots of memory, but at the cost of performance. If an algorithm and its data will fit in cache memory, then very high speed can be obtained; in this case minimising space will also help minimise time. An algorithm which will not fit completely in cache memory but which exhibits <a href="/wiki/Locality_of_reference" title="Locality of reference">locality of reference</a> may perform reasonably well.</p>
+<h2><span class="mw-headline" id="Examples_of_efficient_algorithms">Examples of efficient algorithms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=11" title="Edit section: Examples of efficient algorithms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Quicksort" title="Quicksort">quicksort</a> First known sorting algorithm with speed of order <img class="mwe-math-fallback-image-inline tex" alt="O(n\log n)\," src="//upload.wikimedia.org/math/8/f/c/8fc105528643ec9734489a2f112bbf17.png" />.</li>
+<li><a href="/wiki/Heapsort" title="Heapsort">heapsort</a> Another fast sorting algorithm.</li>
+<li><a href="/wiki/Binary_search_algorithm" title="Binary search algorithm">binary search</a> Searching an ordered table.</li>
+<li><a href="/wiki/Boyer%E2%80%93Moore_string_search_algorithm" title="Boyer–Moore string search algorithm">Boyer–Moore string search algorithm</a> Finding a string within another string.</li>
+</ul>
+<h2><span class="mw-headline" id="Criticism_of_the_current_state_of_programming">Criticism of the current state of programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=12" title="Edit section: Criticism of the current state of programming">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/David_May_(computer_scientist)" title="David May (computer scientist)">David May</a> FRS a <a href="/wiki/United_Kingdom" title="United Kingdom">British</a> <a href="/wiki/Computer_scientist" title="Computer scientist">computer scientist</a> and currently <a href="/wiki/Professor" title="Professor">Professor</a> of <a href="/wiki/Computer_Science" title="Computer Science" class="mw-redirect">Computer Science</a> at <a href="/wiki/University_of_Bristol" title="University of Bristol">University of Bristol</a> and founder and <a href="/wiki/Chief_technical_officer" title="Chief technical officer" class="mw-redirect">CTO</a> of <a href="/wiki/XMOS" title="XMOS">XMOS Semiconductor</a>, believes one of the problems is that there is a reliance on <a href="/wiki/Moore%27s_law" title="Moore's law">Moore's law</a> to solve inefficiencies. He has advanced an 'alternative' to Moore's law (<a href="/wiki/Wirth%27s_law" title="Wirth's law">May's law</a>) stated as follows:<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup>
+<blockquote>
+<p>Software efficiency halves every 18 months, compensating Moore's Law</p>
+</blockquote>
+He goes on to state
+<blockquote>
+<p>In ubiquitous systems, halving the instructions executed can double the battery life and big data sets bring big opportunities for better software and algorithms: Reducing the number of operations from N x N to N x log(N) has a dramatic effect when N is large... for N = 30 billion, this change is as good as 50 years of technology improvements</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li>Software author Adam N. Rosenburg in his blog "<i>The failure of the Digital computer</i>", has described the current state of programming as nearing the "Software event horizon", (alluding to the fictitious "<i>shoe event horizon</i>" described by <a href="/wiki/Douglas_Adams" title="Douglas Adams">Douglas Adams</a> in his <i>Hitchhiker's Guide to the Galaxy</i> book<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup>). He estimates there has been a 70 dB factor loss of productivity or "99.99999 percent, of its ability to deliver the goods", since the 1980s—"When <a href="/wiki/Arthur_C._Clarke" title="Arthur C. Clarke">Arthur C. Clarke</a> compared the reality of computing in 2001 to the computer <a href="/wiki/HAL_9000" title="HAL 9000">HAL</a> in his book <a href="/wiki/2001:_A_Space_Odyssey" title="2001: A Space Odyssey">2001: A Space Odyssey</a>, he pointed out how wonderfully small and powerful computers were but how disappointing computer programming had become".</li>
+<li>Conrad Weisert gives examples, some of which were published in ACM SIGPLAN (Special Interest Group on Programming Languages) Notices, December 1995 in: "Atrocious Programming Thrives"<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>10<span>]</span></a></sup></li>
+<li><a href="/wiki/Marc_Andreessen" title="Marc Andreessen">Marc Andreessen</a> co-founder of <a href="/wiki/Netscape" title="Netscape">Netscape</a> is quoted in "<a href="/w/index.php?title=Mavericks_at_Work&amp;action=edit&amp;redlink=1" class="new" title="Mavericks at Work (page does not exist)">Mavericks at Work</a>" (<a href="/wiki/Special:BookSources/0060779616" class="internal mw-magiclink-isbn">ISBN 0060779616</a>) as saying "Five great programmers can completely outperform 1,000 mediocre programmers."<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>11<span>]</span></a></sup></li>
+</ul>
+<h2><span class="mw-headline" id="Competitions_for_the_best_algorithms">Competitions for the best algorithms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=13" title="Edit section: Competitions for the best algorithms">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following competitions invite entries for the best algorithms based on some arbitrary criteria decided by the judges:-</p>
+<ul>
+<li><a href="/wiki/Wired_magazine" title="Wired magazine" class="mw-redirect">Wired magazine</a><sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup></li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=14" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Analysis_of_algorithms" title="Analysis of algorithms">Analysis of algorithms</a> - how to determine the resources needed by an algorithm</li>
+<li><a href="/wiki/Arithmetic_coding" title="Arithmetic coding">Arithmetic coding</a>—a form of <a href="/wiki/Variable-length_code" title="Variable-length code">variable-length</a> <a href="/wiki/Entropy_encoding" title="Entropy encoding">entropy encoding</a> for efficient data compression</li>
+<li><a href="/wiki/Associative_array" title="Associative array">Associative array</a>—a data structure that can be made more efficient using <a href="/wiki/Patricia_tree" title="Patricia tree" class="mw-redirect">Patricia trees</a> or <a href="/wiki/Judy_array" title="Judy array">Judy arrays</a></li>
+<li><a href="/wiki/Binary_search_algorithm" title="Binary search algorithm">Binary search algorithm</a>—a simple and efficient technique for searching sorted arrays</li>
+<li><a href="/wiki/Benchmark_(computing)" title="Benchmark (computing)">Benchmark</a>—a method for measuring comparative execution times in defined cases</li>
+<li><a href="/wiki/Best,_worst_and_average_case" title="Best, worst and average case">Best, worst and average case</a>—considerations for estimating execution times in three scenarios</li>
+<li><a href="/wiki/Branch_table" title="Branch table">Branch table</a>—a technique for reducing instruction path-length, size of <a href="/wiki/Machine_code" title="Machine code">machine code</a>, (and often also memory)</li>
+<li><a href="/wiki/Comparison_of_programming_paradigms" title="Comparison of programming paradigms">Comparison of programming paradigms</a>—paradigm specific performance considerations</li>
+<li><a href="/wiki/Compiler_optimization" title="Compiler optimization" class="mw-redirect">Compiler optimization</a>—compiler-derived optimization</li>
+<li><a href="/wiki/Computational_complexity_theory" title="Computational complexity theory">Computational complexity theory</a></li>
+<li><a href="/wiki/Computer_performance" title="Computer performance">Computer performance</a>—computer hardware metrics</li>
+<li><a href="/wiki/Data_compression" title="Data compression">Data compression</a>—reducing transmission bandwidth and disk storage</li>
+<li><a href="/wiki/Database_index" title="Database index">Database index</a>—a data structure that improves the speed of data retrieval operations on a database table</li>
+<li><a href="/wiki/Entropy_encoding" title="Entropy encoding">Entropy encoding</a>—encoding data efficiently using frequency of occurrence of strings as a criterion for substitution</li>
+<li><a href="/wiki/Garbage_collection_(computer_science)" title="Garbage collection (computer science)">Garbage collection</a>—automatic freeing of memory after use</li>
+<li><a href="/wiki/Green_computing" title="Green computing">Green computing</a>—a move to implement 'greener' technologies, consuming less resources</li>
+<li><a href="/wiki/Huffman_algorithm" title="Huffman algorithm" class="mw-redirect">Huffman algorithm</a>—an algorithm for efficient data encoding</li>
+<li><a href="/wiki/Locality_of_reference" title="Locality of reference">Locality of reference</a>—for avoidance of <a href="/wiki/CPU_cache" title="CPU cache">caching</a> delays caused by non-local memory access</li>
+<li><a href="/wiki/Loop_optimization" title="Loop optimization">Loop optimization</a></li>
+<li><a href="/wiki/Memory_management" title="Memory management">Memory management</a></li>
+<li><a href="/wiki/Optimization_(computer_science)" title="Optimization (computer science)" class="mw-redirect">Optimization (computer science)</a></li>
+<li><a href="/wiki/Profiling_(computer_programming)" title="Profiling (computer programming)">Performance analysis</a>—methods of measuring actual performance of an algorithm at run-time</li>
+<li><a href="/wiki/Real-time_computing" title="Real-time computing">Real-time computing</a>—further examples of time-critical applications</li>
+<li><a href="/wiki/Run-time_analysis" title="Run-time analysis" class="mw-redirect">Run-time analysis</a>—estimation of expected run-times and an algorithm's scalability</li>
+<li><a href="/wiki/Super-threading" title="Super-threading">Super-threading</a></li>
+<li><a href="/wiki/Simultaneous_multithreading" title="Simultaneous multithreading">Simultaneous multithreading</a></li>
+<li><a href="/wiki/Speculative_execution" title="Speculative execution">Speculative execution</a> or <a href="/wiki/Eager_execution" title="Eager execution" class="mw-redirect">Eager execution</a></li>
+<li><a href="/wiki/Threaded_code" title="Threaded code">Threaded code</a>—similar to virtual method table or branch table</li>
+<li><a href="/wiki/Virtual_method_table" title="Virtual method table">Virtual method table</a>—branch table with dynamically assigned pointers for dispatching</li>
+<li><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/ff647790.aspx">Improving Managed code Performance</a>—Microsoft MSDN Library</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span id="CITEREFGreen" class="citation">Green, Christopher, <a rel="nofollow" class="external text" href="http://psychclassics.yorku.ca/Lovelace/lovelace.htm"><i>Classics in the History of Psychology</i></a><span class="reference-accessdate">, retrieved <span class="nowrap">19 May</span> 2013</span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+efficiency&amp;rft.aufirst=Christopher&amp;rft.au=Green%2C+Christopher&amp;rft.aulast=Green&amp;rft.btitle=Classics+in+the+History+of+Psychology&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fpsychclassics.yorku.ca%2FLovelace%2Flovelace.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Knuth1974-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-Knuth1974_2-0">^</a></b></span> <span class="reference-text"><span id="CITEREFKnuth1974" class="citation">Knuth, Donald (1974), <a rel="nofollow" class="external text" href="http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf">"Structured Programming with go-to Statements"</a> <span style="font-size:85%;">(PDF)</span>, <i>Computing Surveys</i> (ACM) <b>6</b> (4)<span class="reference-accessdate">, retrieved <span class="nowrap">19 May</span> 2013</span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+efficiency&amp;rft.atitle=Structured+Programming+with+go-to+Statements&amp;rft.aufirst=Donald&amp;rft.au=Knuth%2C+Donald&amp;rft.aulast=Knuth&amp;rft.date=1974&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fpplab.snu.ac.kr%2Fcourses%2Fadv_pl05%2Fpapers%2Fp261-knuth.pdf&amp;rft.issue=4&amp;rft.jtitle=Computing+Surveys&amp;rft.pub=ACM&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=6" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-fourmilab.ch-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-fourmilab.ch_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-fourmilab.ch_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.fourmilab.ch/fourmilog/archives/2005-08/000567.html">"Floating Point Benchmark: Comparing Languages (Fourmilog: None Dare Call It Reason)"</a>. Fourmilab.ch. 4 August 2005<span class="reference-accessdate">. Retrieved <span class="nowrap">14 December</span> 2011</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+efficiency&amp;rft.btitle=Floating+Point+Benchmark%3A+Comparing+Languages+%28Fourmilog%3A+None+Dare+Call+It+Reason%29&amp;rft.date=4+August+2005&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.fourmilab.ch%2Ffourmilog%2Farchives%2F2005-08%2F000567.html&amp;rft.pub=Fourmilab.ch&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.roylongbottom.org.uk/whetstone.htm#anchorPC2">"Whetstone Benchmark History"</a>. Roylongbottom.org.uk<span class="reference-accessdate">. Retrieved <span class="nowrap">14 December</span> 2011</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+efficiency&amp;rft.btitle=Whetstone+Benchmark+History&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.roylongbottom.org.uk%2Fwhetstone.htm%23anchorPC2&amp;rft.pub=Roylongbottom.org.uk&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://benchmarksgame.alioth.debian.org/">"The Computer Language Benchmarks Game"</a>. benchmarksgame.alioth.debian.org<span class="reference-accessdate">. Retrieved <span class="nowrap">14 December</span> 2011</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+efficiency&amp;rft.btitle=The+Computer+Language+Benchmarks+Game&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbenchmarksgame.alioth.debian.org%2F&amp;rft.pub=benchmarksgame.alioth.debian.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.osnews.com/story/5602">http://www.osnews.com/story/5602</a></span></li>
+<li id="cite_note-steele1997-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-steele1997_7-0">^</a></b></span> <span class="reference-text">Guy Lewis Steele, Jr. "Debunking the 'Expensive Procedure Call' Myth, or, Procedure Call Implementations Considered Harmful, or, Lambda: The Ultimate GOTO". MIT AI Lab. AI Lab Memo AIM-443. October 1977.<a rel="nofollow" class="external autonumber" href="http://dspace.mit.edu/handle/1721.1/5753">[1]</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.cs.bris.ac.uk/~dave/iee.pdf">http://www.cs.bris.ac.uk/~dave/iee.pdf</a></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.the-adam.com/adam/rantrave/computers.htm">http://www.the-adam.com/adam/rantrave/computers.htm</a></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.idinews.com/atrocious.html">"Atrocious Programming Thrives"</a>. Idinews.com. 9 January 2003<span class="reference-accessdate">. Retrieved <span class="nowrap">14 December</span> 2011</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+efficiency&amp;rft.btitle=Atrocious+Programming+Thrives&amp;rft.date=9+January+2003&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.idinews.com%2Fatrocious.html&amp;rft.pub=Idinews.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">blogs.hbr.org/2011/06/great-people-are-overrated/</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation news">Fagone, Jason (29 November 2010). <a rel="nofollow" class="external text" href="http://www.wired.com/magazine/2010/11/mf_algorithmolympics/all/1">"Teen Mathletes Do Battle at Algorithm Olympics"</a>. <i>Wired</i>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AAlgorithmic+efficiency&amp;rft.atitle=Teen+Mathletes+Do+Battle+at+Algorithm+Olympics&amp;rft.au=Fagone%2C+Jason&amp;rft.aufirst=Jason&amp;rft.aulast=Fagone&amp;rft.date=29+November+2010&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.wired.com%2Fmagazine%2F2010%2F11%2Fmf_algorithmolympics%2Fall%2F1&amp;rft.jtitle=Wired&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks sistersitebox" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b><a href="//en.wikibooks.org/wiki/Optimizing_Code_for_Speed" class="extiw" title="wikibooks:Optimizing Code for Speed">Optimizing Code for Speed</a></b></i></td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://cgjennings.ca/fjs/index.html">Animation of the Boyer-Moore algorithm</a> (<a href="/wiki/Java_Applet" title="Java Applet" class="mw-redirect">Java Applet</a>)</li>
+<li><a rel="nofollow" class="external text" href="http://www.dailymotion.com/video/xn8cg8_ted-talk-kevin-slavin-how-algorithms-shape-our-world_tech#.UNqz4axdxlM">"How algorithms shape our world".</a> A <a href="/wiki/TED_(conference)" title="TED (conference)">TED (conference)</a> Talk by Kevin Slavin.</li>
+<li><a rel="nofollow" class="external text" href="http://dx.doi.org/10.1016/j.compedu.2003.07.004">Misconceptions about algorithmic efficiency in high-schools</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1035
+Cached time: 20150906162511
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.216 seconds
+Real time usage: 0.887 seconds
+Preprocessor visited node count: 960/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 13860/2097152 bytes
+Template argument size: 345/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 1/500
+Lua time usage: 0.044/10.000 seconds
+Lua memory usage: 2.14 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  802.778      1 - -total
+ 11.01%   88.399      1 - Template:Reflist
+  4.85%   38.950      2 - Template:Citation
+  4.53%   36.404      1 - Template:Use_dmy_dates
+  2.35%   18.889      4 - Template:Cite_web
+  2.04%   16.414      1 - Template:Wikibooks
+  1.85%   14.880      1 - Template:DMCA
+  1.67%   13.369      1 - Template:Sister_project
+  1.56%   12.526      1 - Template:Dated_maintenance_category
+  1.24%    9.991      1 - Template:Side_box
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:145128-0!*!0!!en!4!*!math=0 and timestamp 20150906162511 and revision id 679726998
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Algorithmic_efficiency&amp;oldid=679726998">https://en.wikipedia.org/w/index.php?title=Algorithmic_efficiency&amp;oldid=679726998</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Analysis_of_algorithms" title="Category:Analysis of algorithms">Analysis of algorithms</a></li><li><a href="/wiki/Category:Computer_performance" title="Category:Computer performance">Computer performance</a></li><li><a href="/wiki/Category:Software_optimization" title="Category:Software optimization">Software optimization</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Use_dmy_dates_from_June_2013" title="Category:Use dmy dates from June 2013">Use dmy dates from June 2013</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Algorithmic+efficiency&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Algorithmic+efficiency" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Algorithmic_efficiency"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Algorithmic_efficiency"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Algorithmic_efficiency" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Algorithmic_efficiency" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Algorithmic_efficiency" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Algorithmic_efficiency&amp;oldid=679726998" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Algorithmic_efficiency&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q1296251" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Algorithmic_efficiency&amp;id=679726998" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Algorithmic+efficiency">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Algorithmic+efficiency&amp;oldid=679726998&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Algorithmic_efficiency&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Effizienz_(Informatik)" title="Effizienz (Informatik) – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Eficiencia_Algor%C3%ADtmica" title="Eficiencia Algorítmica – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%DA%A9%D8%A7%D8%B1%D8%A7%DB%8C%DB%8C_%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85%DB%8C" title="کارایی الگوریتمی – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%99%D7%A2%D7%99%D7%9C%D7%95%D7%AA_%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9E%D7%99%D7%AA" title="יעילות אלגוריתמית – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Wydajno%C5%9B%C4%87_oprogramowania" title="Wydajność oprogramowania – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-ro"><a href="//ro.wikipedia.org/wiki/Eficien%C8%9Ba_algoritmilor" title="Eficiența algoritmilor – Romanian" lang="ro" hreflang="ro">Română</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q1296251#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 6 September 2015, at 11:40.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Algorithmic_efficiency&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":92,"wgHostname":"mw1065"});
+} );</script>
+	</body>
+</html>

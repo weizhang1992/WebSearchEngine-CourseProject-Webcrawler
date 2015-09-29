@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Author" content="CSC Webmaster" />
+<meta name="Description" content="NCSU - Computer Science Department: Welcome to the Department of Computer Science" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>NC State University: Welcome to the Department of Computer Science</title>
+<link href="css/top_bottom_nav_css-new.php" rel="stylesheet" type="text/css" />
+<link href="css/menu_images_css-new.php" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/ncsu_bar_css.css" /> 
+
+<link href="indexcss/newstyle.css" rel="stylesheet" type="text/css" />
+<link href="indexcss/slideshow.css" rel="stylesheet" type="text/css" />
+
+<script src="indexcss/liquid/js/jquery-1.8.2.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<!--<script src="liquid/js/jquery-ui-1.8.20.custom.min.js"></script>-->
+<script src="indexcss/liquid/js/jquery.liquid-slider-0.1.min.js"></script>
+<link href="indexcss/liquid/stylesheets/liquid-slider-0.1.css" rel="stylesheet" type="text/css" />
+<link href="indexcss/slider_styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="media/features/swfobject.js"></script>
+<link href="css/top_bottom_nav_css-new.php" rel="stylesheet" type="text/css" />
+<link href="css/iCal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+
+-->
+</style>
+<script type="text/javascript" language="JavaScript">
+var preloadimages = new Array();
+function preloadSwapImages() {
+    for(var i=0; i<document.images.length; i++) {
+        var img = document.images[i];
+        if (img.src.indexOf("_on") != -1) { preloadimages[preloadimages.length] = new Image(); preloadimages[preloadimages.length-1].src = img.src.replace(/\_on/i,"_off"); }
+        else if (img.src.indexOf("_off") != -1) { preloadimages[preloadimages.length] = new Image(); preloadimages[preloadimages.length-1].src = img.src.replace(/\_off/i,"_on"); }
+    }
+}
+var shouldslide=true;
+var current=-1;
+function slideit()
+{
+	if(shouldslide==true)
+	{
+		$('.liquid-nav-right-arrow').trigger('click');
+		//alert("hello");
+		shouldslide=true;
+		setTimeout("slideit()",8000);
+	}
+}
+function slidestart()
+{
+	if(shouldslide==true)
+	{
+		//alert("hello");
+		setTimeout("slideit()",8000);
+	}
+}
+</script>
+<script>
+  $(function() {
+  	
+  $('#slider-id').liquidSlider({
+    autoHeight: false,
+    hashLinking: false,
+	autoSlide:false,
+	autoSlideInterval: 5000,
+	autoSlideStopWhenClicked: true,
+	continuous:false,
+	//hashLinking: true,
+	//hashNames: false,
+	crossLinks: true,
+	slideEaseDuration: 1500,
+	/*hashTitleSelector: "h2.title"*/
+	dynamicTabs: false
+	//callbackFunction:fixwidth
+	
+  });
+	document.getElementById("slider-id").style.display="";
+
+	$("#thebannerrow").css('width','960px');
+	slidestart();
+	
+	$("#headerflash,.liquid-nav-left-arrow,.liquid-nav-right-arrow,#slider-navbar,.normalnav").click(function() {
+  		shouldslide=-1;
+	});	
+	$("#slider-navbar,.normalnav").find('*').click(function() {
+  		shouldslide=-1;
+	});	
+	
+	
+});
+
+
+</script>
+<style>
+/* Dop not MOVE to stylesheet.... Present here to override stylesheet */
+.currentCrossLink
+{
+	font-weight:normal;
+}
+</style>
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-44901852-1', 'ncsu.edu');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+<!--[if !IE]><!-->
+
+<!--<![endif]-->
+    <a href="#c"  accesskey="1" class = "disappear">skip to content</a>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30639651-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+<script type="text/javascript">
+function activateSearch(formElement){
+		formElement.style.color = '#000000';
+		formElement.value = '';
+}
+</script>
+
+<div id="outer-wrapper">
+<div id="left-border"><div id="right-border">
+<div id="header">
+     <div id="utility_bar" >
+
+			<div id="head_in" style="width:880px; ">
+						<div class="logo" title="North Carolina State University"><a href="http://www.ncsu.edu/">North Carolina State University</a></div>
+
+						<h6 class="access">NC State Utility Bar Useful Links</h6>
+						<ul id="topnav">
+							<li><a href="http://www.ncsu.edu/directory/" title="Find People at NC State University">Campus Directory</a></li>
+							<li><a href="http://www.lib.ncsu.edu/" title="NC State University Libraries">Libraries</a></li>
+							<li><a href="http://mypack.ncsu.edu/" title="NC State University MyPack Portal">MyPack Portal</a></li>
+							<li><a href="http://www.ncsu.edu/campus_map/" title="NC State University Campus">Campus Map</a></li>
+							<li><a href="https://ccfn.ncsu.edu/advancement-services/giving/E/">GIVING</a></li>
+						    <li class="last"><a href="http://search.ncsu.edu/">Search NCSU.EDU</a></li>
+						</ul>
+ 			 </div>
+		</div> 
+<form method="get" action="/search/" name="SEARCH" id="SEARCH" title="Search CSC" class="search" style="margin-top:-28px;">
+<label for="q" class="hidden">google search computer science</label>
+     <input type="text" name="q" size="20" maxlength="255" value="search CSC" style="color:#666666" onfocus="activateSearch(this)" id="q" class="texta" />
+              <input type="hidden" name="domains" value="www.csc.ncsu.edu" />
+            <input type="hidden" name="sitesearch" value="www.csc.ncsu.edu" /><!-- <input name="Image" type="image" src="/images/searchgoblk-png8.png" alt="Click to Search CSC" title="Click to Search CSC" />-->
+  </form>
+    <a href="/">
+  <!-- <img src="" alt="" border="0" align="middle" /> -->
+  <img src="/images/featured.jpg" alt="" border="0" align="middle" />  </a></div> 
+<!-- close div for header -->
+
+<!-- End of Header -->
+<!-- Top Nav Menu -->  
+<h2 class="disappear">Navigation: CSC Department Menu</h2>
+<div id="menu">
+<ul class = "top_menu" >
+  <li><a href="/about_us.php" title="About us">ABOUT US</a>
+    <ul>
+		<li><a href="/directories/admin.php">Administration</a></li>
+		<li><a href="/department/reports_publications.php">Annual Reports &amp; Publications</a></li>
+		<li><a href="/department/map/">Directions</a></li>
+		<li><a href="/department/facilities/index.php">Facilities</a></li>
+		<li><a href="/department/publications/csc_poi_march_2014.pdf">Points of Interest [PDF]</a></li>
+		<li><a href="/faculty_awards/">Faculty &amp; Staff Awards</a></li>
+		<li><a href="/department/history/">History</a></li>
+		<li><a href="/gallery/">Photo Gallery</a></li>
+    </ul>
+  </li>
+</ul>
+<ul class = "top_menu" style="width: 108px;">
+  <li><a href="/academics/" title="Academics">ACADEMICS</a>
+    <ul class="academics">
+      <li><a href="/academics/undergrad/">Undergraduate Program</a></li>
+      <li><a href="/academics/graduate/">Graduate Program</a> </li>
+	  <li><a href="/courses/">Course Listings</a></li>
+	  <li><a href="/academics/undergrad/certificate.php">Programming Certificate</a></li>		
+	  <li><a href="http://www.cae-r.ncsu.edu/">Information Assurance</a></li>
+	  <li><a href="/academics/outreach/">Corporate Education Program</a></li>
+	  <li><a href="http://research.csc.ncsu.edu/colloquia/">Seminars &amp; Colloquia</a></li>			
+    </ul>
+  </li>
+</ul>
+<ul class = "top_menu" style="width: 108px;">
+  <li><a href="/research/" title="Research">RESEARCH</a>
+    <ul class="research"> 
+      <li><a href="/research/interests.php" >Reseach Interests by Faculty</a></li>
+      <li><a href="/research/areas/">Research Areas</a></li>
+	  <li><a href="/research/faculty_projs/fundedprojects.php">Funded Projects</a></li>
+	  <li><a href="/research/rgroups.php">Centers, Institutes, Labs, &amp; Groups</a></li>			
+	  <li><a href="/research/index.php#brochures">Research Brochure</a></li>
+	  <li><a href="/research/tech/reports.php">Technical Reports</a></li>
+	  <li><a href="http://research.csc.ncsu.edu/colloquia/">Seminars &amp; Colloquia</a></li>			
+	  <li><a href="/faculty_awards/">Faculty &amp; Staff Awards</a></li>
+     </ul>
+  </li>
+</ul>
+<ul class = "top_menu"  style="width: 108px;">
+  <li><a href="/directories/" title="Directories">DIRECTORIES</a>
+    <ul class="directories">
+      <li><a href="/directories/admin.php">Administration</a></li>
+      <li><a href="/directories/faculty.php">Faculty</a></li>
+	  <li><a href="/directories/professors.php">Full Professors</a></li>
+	  <li><a href="/directories/associate.php">Associate Professors</a></li>			
+	  <li><a href="/directories/assistant.php">Assistant Professors</a></li>
+        <li><a href="/directories/teaching.php">Teaching Professors</a></li>
+	  <li><a href="/directories/adjunct.php">Adjunct Faculty</a></li>
+	<li><a href="/directories/emeritus.php">Emeritus Faculty</a></li>
+	<li><a href="/directories/graduate_faculty.php">Graduate Faculty</a></li>		
+	  <li><a href="/directories/research_faculty.php">Research Faculty</a></li>
+	  <li><a href="/directories/lecturer.php">Lecturers</a></li>
+	  <li><a href="/directories/staff.php">Staff</a></li>			
+	  <li><a href="/directories/undergraduate.php">Undergraduate Students</a></li>
+	  <li><a href="/directories/graduate.php">Graduate Students</a></li>			
+	  <li><a href="/directories/phds.php">PhD Students</a></li>
+      <li><a href="/academics/students_orgs.php">Student Organizations</a></li>
+	  <li><a href="/alumni/directory.php">Alumni</a></li>
+      <li><a href="/directories/sab/">Strategic Advisory Board</a></li>
+            <li><a href="/webapps/admin/internal/aliases.php">Mailing Lists</a></li>
+     </ul>
+  </li>
+</ul>
+<ul class = "top_menu" >
+  <li><a href="/news/" title="News">NEWS</a>
+    <ul class= "news">
+      <li><a href="/enews/">CSC eNewsletter</a></li>
+      <li><a href="/department/reports_publications.php">Department Publications</a></li>
+	  <li><a href="/news/features.php">Featured News</a></li>
+	  <li><a href="/academics/graduate/news/index.php">Graduate News</a></li>			
+	  <li><a href="/news/inthenews/">In the News</a></li>
+	  <li><a href="/news/research_news.php">Research News</a></li>
+	  <li><a href="/academics/undergrad/news/index.php">Undergraduate News</a></li>			
+	  <li><a href="/faculty_awards/index.php">Faculty &amp; Staff Awards</a></li>
+	  <li><a href="http://www.engr.ncsu.edu/news/">College of Engineering News</a></li>			
+	  <li><a href="http://oit.ncsu.edu/views/oit-news-releases">OIT News</a></li>
+	  <li><a href="http://sysnews.ncsu.edu/">NC State SYS News</a></li>			
+	  <li><a href="/news/rss/">CSC RSS Feeds</a></li>
+     </ul>
+  </li>
+</ul>	
+<ul class = "top_menu" >
+  <li><a href="/events/" title="Events">EVENTS</a>
+    <ul class="events"> 
+      <li><a href="/calendar/">CSC Web Calendar</a></li>
+      <li><a href="http://research.csc.ncsu.edu/colloquia/">Seminars and Colloquia</a></li>
+	  <li><a href="http://www.ncsu.edu/registrar/calendars/">Academic Calendar</a></li>
+	  <li><a href="http://www.ncsu.edu/calendar/">NC State Calendar of Events</a></li>			
+	  <li><a href="http://www.ncsu.edu/human_resources/employment/closings.php">University Holidays/Closings</a></li>
+     </ul>
+  </li>
+</ul>	
+
+<ul class = "top_menu" >
+  <li><a href="/employment/" title="Employment">EMPLOYMENT</a>
+
+    <ul class="employment"> 
+      <li><a href="/corporate_relations/jobs/job_listings.php">CSC Jobs Board</a></li>
+      <li><a href="/employment/">Faculty / Staff / Internal Positions</a></li>
+      <li><a href="/corporate_relations/career_center.php">Computer Science Career Services</a></li>
+	  <li><a href="http://careers.ncsu.edu/">NCSU Career Development Center</a></li>
+	  <li><a href="/employment/forms/index.php">Forms</a></li>
+	  <li><a href="http://www.ncsu.edu/human_resources/">University Human Resources</a></li>
+     </ul>
+  </li>
+</ul>	
+
+<ul class = "top_menu" >
+  <li><a href="/research/rgroups.php" title="Centers">CENTERS</a>
+  </li>
+</ul>	
+<h3 class="hidden">Navigation: Contact Us</h3>			
+<ul class = "top_menu" >
+  <li><a href="/contactus.php" title="Contact us">CONTACT US</a>
+  </li>
+</ul>	
+</div> <!-- close div tag for top menu bar-->
+<div id="main-body">
+<img src="/images/menu_background/aboutus.jpg" class="hiddenPic" alt=" "/>
+<img src="/images/menu_background/news.jpg" class="hiddenPic" alt=" "/>
+<img src="/images/menu_background/academics.jpg" class="hiddenPic" alt=" "/>
+<img src="/images/menu_background/research.jpg" class="hiddenPic" alt=" "/>
+<img src="/images/menu_background/directories.jpg" class="hiddenPic" alt=" "/>
+<img src="/images/menu_background/events.jpg" class="hiddenPic" alt=" "/>
+<img src="/images/menu_background/employment.jpg" class="hiddenPic" alt=" "/>
+<img src="/images/menu_background/menu_back.png" class="hiddenPic" alt=" "/>
+    
+    <div id="main-body">
+              <!--<div id="flashcontent" style="z-index:3;">
+               
+                        <ul class="features">
+                         
+                        </ul>
+                    <p class="flashon">To view the Flash version of this page, please upgrade your Flash Player or turn on javascript on your browser. <a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">Click here to get the latest flash player.</a> </p>
+              </div>
+      
+
+<script type="text/javascript">
+                    // <![CDATA[
+                    var so = new SWFObject("/cscHomeFlash.swf", "features", "960", "295", "8", "#FFFFFF");
+                    so.addParam("wmode", "transparent");
+                    //so.addVariable("flashVarText", "this is passed in via FlashVars"); // this line is optional, but this example uses the variable and displays this text inside the flash movie
+                    so.useExpressInstall('media/features/expressinstall.swf');
+                    so.write("flashcontent");
+                    // ]]>
+                </script>-->
+       
+       
+       <div id="headerflash" style="height:295px;width:960px;padding:0px;"><!--  name="headerRegion" -->
+	<div id="thebannerrow" style="padding:0;background:#CC0100;width:960px;" class="coda-slider-wrapper">
+	
+
+		<!-- Panels autogenerated by slider will fall below (this includes the navigation arrows) -->
+        <div class="liquid-slider"  id="slider-id" style="position:relative;left:0;width:765px;display:none;">
+                       		<div style="background-image: url(/enews/images/features/1718-large.jpg); height:295px; width:765px;" class="panel">
+                    	<div class="panel-wrapper" id="slide1" style="padding-top:0px">
+                            <h2 class="title" style="display:none;">Engineering Online at NC State Ranked in the Top 10 Nationally</h2>
+                                    <div style="text-align:right;margin-top:01px;">
+                                        <div>
+                                            <div class="imgtextborder-right"  id="thetitle0">
+                                                
+                                                    <span class="imgtitle-right"><span class="titleselect" style="text-align:left;">Engineering Online at NC State Ranked in the Top 10 Nationally</span></span><br />
+                                                    <!--<span class="compsci-right">THIS IS COMPUTER SCIENCE</span>-->
+                                               
+                                            </div>
+                                            <br />
+                                            <div class="horizline-right" style="height:4px;">
+                                            </div>
+                                            <br />
+                                            <span class="imgtextcontent-right" id="thetext0" >
+                                                <p class="imgtextinnercontent">U.S. News & World Report ranked the NC State Engineering Online Computer Science and Networking programs as the 7th best nationally in the magazine’s 2015 list of the Best Online Graduate Computer Information Technology programs.</p>
+												<a href="http://www.csc.ncsu.edu/news/1718"><img src="indexcss/readmore.png" style="float:left;padding-top:15px;" border="0"/></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                        </div>
+                </div>
+                        		<div style="background-image: url(/enews/images/features/1789-large.jpg); height:295px; width:765px;" class="panel">
+                    	<div class="panel-wrapper" id="slide2" style="padding-top:0px">
+                            <h2 class="title" style="display:none;">Fidelity Investments Speakers Series Presents Scot Wingo</h2>
+                                    <div style="text-align:right;margin-top:01px;">
+                                        <div>
+                                            <div class="imgtextborder-right"  id="thetitle1">
+                                                
+                                                    <span class="imgtitle-right"><span class="titleselect" style="text-align:left;">Fidelity Investments Speakers Series Presents Scot Wingo</span></span><br />
+                                                    <!--<span class="compsci-right">THIS IS COMPUTER SCIENCE</span>-->
+                                               
+                                            </div>
+                                            <br />
+                                            <div class="horizline-right" style="height:4px;">
+                                            </div>
+                                            <br />
+                                            <span class="imgtextcontent-right" id="thetext1" >
+                                                <p class="imgtextinnercontent">Please join us on October 27th for the second talk in our Fall 2015 Fidelity Investments “Leadership in Technology” Speakers Series.  Scot Wingo, Executive Chairman, Chairman of the Board, and Co-founder of ChannelAdvisor, will be the featured speaker.</p>
+												<a href="http://www.csc.ncsu.edu/news/1789"><img src="indexcss/readmore.png" style="float:left;padding-top:15px;" border="0"/></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                        </div>
+                </div>
+                        		<div style="background-image: url(/enews/images/features/1762-large.jpg); height:295px; width:765px;" class="panel">
+                    	<div class="panel-wrapper" id="slide3" style="padding-top:0px">
+                            <h2 class="title" style="display:none;">Vail Receives NSF Graduate Research Fellowship</h2>
+                                    <div style="text-align:right;margin-top:01px;">
+                                        <div>
+                                            <div class="imgtextborder-right"  id="thetitle2">
+                                                
+                                                    <span class="imgtitle-right"><span class="titleselect" style="text-align:left;">Vail Receives NSF Graduate Research Fellowship</span></span><br />
+                                                    <!--<span class="compsci-right">THIS IS COMPUTER SCIENCE</span>-->
+                                               
+                                            </div>
+                                            <br />
+                                            <div class="horizline-right" style="height:4px;">
+                                            </div>
+                                            <br />
+                                            <span class="imgtextcontent-right" id="thetext2" >
+                                                <p class="imgtextinnercontent">Congratulations to Alexandria Vail, an NC State student double majoring in computer science and mathematics, and double minoring in physics and cognitive science, on receiving a 2015 NSF Graduate Research Fellowship valued at more than $138,000.</p>
+												<a href="http://www.csc.ncsu.edu/news/1762"><img src="indexcss/readmore.png" style="float:left;padding-top:15px;" border="0"/></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                        </div>
+                </div>
+            
+        </div>
+
+
+        <!-- The navbar for the slider is below -->	
+        
+
+       <div id="slider-navbar" style="display:inline-block;top:0px;padding:0;width:195px;float:right;">
+        	<div class="normalnav" style="height:28px;padding-top:1px;">
+            	<a style="padding-left:2px;padding-bottom:-40px;" href="news/features.php"><img src="indexcss/morestories.png" border="0" /></a>
+            </div>
+            
+            
+            <div class="slider-id-nav-ul" id="slider-id-nav-ul" style="height:225px;">
+                        		
+            		<div class="normalnav">
+                    <table width="100%">
+                    	<tr>
+                        	<td style="width:60px;padding-left:1px;" href="#1" data-liquidslider-ref="slider-id"><img src="/enews/images/features/1718.jpg" style="width:48px;border:1px solid black;" /></td>
+                            <td style="color:white;font-size:.8em" href="#1" data-liquidslider-ref="slider-id"><span class="tab1"><a href="#1" style="background:none;" data-liquidslider-ref="slider-id">Engineering Online at NC State Ranked in the Top 10 Nationally</a></span></td>
+                        </tr>
+                    </table>
+                   	</div>
+                        		
+            		<div class="normalnav">
+                    <table width="100%">
+                    	<tr>
+                        	<td style="width:60px;padding-left:1px;" href="#2" data-liquidslider-ref="slider-id"><img src="/enews/images/features/1789.jpg" style="width:48px;border:1px solid black;" /></td>
+                            <td style="color:white;font-size:.8em" href="#2" data-liquidslider-ref="slider-id"><span class="tab2"><a href="#2" style="background:none;" data-liquidslider-ref="slider-id">Fidelity Investments Speakers Series Presents Scot Wingo</a></span></td>
+                        </tr>
+                    </table>
+                   	</div>
+                        		
+            		<div class="normalnav">
+                    <table width="100%">
+                    	<tr>
+                        	<td style="width:60px;padding-left:1px;" href="#3" data-liquidslider-ref="slider-id"><img src="/enews/images/features/1762.jpg" style="width:48px;border:1px solid black;" /></td>
+                            <td style="color:white;font-size:.8em" href="#3" data-liquidslider-ref="slider-id"><span class="tab3"><a href="#3" style="background:none;" data-liquidslider-ref="slider-id">Vail Receives NSF Graduate Research Fellowship</a></span></td>
+                        </tr>
+                    </table>
+                   	</div>
+                        <div class="normalnav2">&nbsp;</div>
+			</div>
+			
+   		</div>
+   	</div> 
+    
+    <!-- Drop Down with a transaprent background below -->
+    
+</div>
+         
+                
+                
+      <div id="left">
+        <div id="news" style="width:675px;">
+          <div style="float:left; width:630px;height:20px;">
+            <h1><a href="/news/">NEWS</a> </h1>
+          </div>
+          <div style="height:10px" > <a href="/news/rss"> <img src="images/home/RSS-Feed-icon.jpg" width="40" height="44" alt="News RSS feeds" style="margin:-10px 0px 0px 0px; float:left; border-width:0px;" /> </a>
+              <h1 style="padding-left:4px;"></h1>
+          </div>
+          <div style="clear:both;"></div>
+                    <div id="newsitem" style="
+						border-bottom:dashed; border-bottom-color:#999999;  border-width:1px 
+            			">
+            <div style="float:left; width:53px; height:63px; margin-right:10px; "> <a style="border:0px;"  href="/news/1787" > <img alt="" src="/enews/images/features/1787-thumb.jpg" width="49px"  height="59px" style="padding:2px 2px 2px 2px;border-color:#666666;  border-style:solid;border-width:1px;" /> </a> </div>
+            <div style="height:15px;  padding-left:8px; ">
+              <h2><a href="/news/1787" > Welcome New Student Ambassadors! </a></h2>
+            </div>
+            <div style=" padding-left:8px;  "><span id="newstext">
+              We are kicking off our fourth year of the Computer Science Department’s Student Ambassador Program with seventeen new talented undergraduates....            </span> </div>
+            <div style="clear:both;"></div>
+          </div>
+                    <div id="newsitem" style="
+						border-bottom:dashed; border-bottom-color:#999999;  border-width:1px 
+            			">
+            <div style="float:left; width:53px; height:63px; margin-right:10px; "> <a style="border:0px;"  href="/news/1786" > <img alt="" src="/enews/images/features/1786-thumb.jpg" width="49px"  height="59px" style="padding:2px 2px 2px 2px;border-color:#666666;  border-style:solid;border-width:1px;" /> </a> </div>
+            <div style="height:15px;  padding-left:8px; ">
+              <h2><a href="/news/1786" > ePartners Career Connection Scheduled for September 28th </a></h2>
+            </div>
+            <div style=" padding-left:8px;  "><span id="newstext">
+              This annual recruiting and networking fair is provided exclusively for the benefit of computer science students and the department’s most valued corporate partners!...            </span> </div>
+            <div style="clear:both;"></div>
+          </div>
+                    <div id="newsitem" style="
+						border-bottom:dashed; border-bottom-color:#999999;  border-width:1px 
+            			">
+            <div style="float:left; width:53px; height:63px; margin-right:10px; "> <a style="border:0px;"  href="/news/1784" > <img alt="" src="/enews/images/features/1784-thumb.jpg" width="49px"  height="59px" style="padding:2px 2px 2px 2px;border-color:#666666;  border-style:solid;border-width:1px;" /> </a> </div>
+            <div style="height:15px;  padding-left:8px; ">
+              <h2><a href="/news/1784" > Researchers Tackle Issues Surrounding Security Tools for Software Developers </a></h2>
+            </div>
+            <div style=" padding-left:8px;  "><span id="newstext">
+              Dr. Emerson Murphy-Hill and other researchers at NC State are hoping their research will give programmers the best possible security tools, and they want to help them use those tools effectively....            </span> </div>
+            <div style="clear:both;"></div>
+          </div>
+                    <div id="newsitem" style="
+						 
+            			">
+            <div style="float:left; width:53px; height:63px; margin-right:10px; "> <a style="border:0px;"  href="/news/1785" > <img alt="" src="/enews/images/features/1785-thumb.jpg" width="49px"  height="59px" style="padding:2px 2px 2px 2px;border-color:#666666;  border-style:solid;border-width:1px;" /> </a> </div>
+            <div style="height:15px;  padding-left:8px; ">
+              <h2><a href="/news/1785" > Reeves Promoted to Associate Dean for COE Graduate Programs </a></h2>
+            </div>
+            <div style=" padding-left:8px;  "><span id="newstext">
+              Congratulations to Dr. Douglas Reeves, professor in the NC State Computer Science Department and Assistant Dean of Graduate Programs in the College of Engineering, on being promoted to Associate Dean for Graduate Programs....            </span> </div>
+            <div style="clear:both;"></div>
+          </div>
+                  </div>
+        <div id="leftbottom">
+             
+          <div style="float:left; width:185px; padding-top:5px;"> <div align="center">
+              <div style="float:left; width:185px; margin: 5px 0px 0px 0px;">
+                <div id="follow">
+                                 <div style="width:155px;height:20px; padding: 5px 0px 0px 0px; "> <span style="padding-left:7px; font-family:Arial, Helvetica, sans-serif; color:#333333; font-size:12px;"> <b>Follow CSC Department</b></span>
+                  </div>
+                  <div style="padding-left:3px;"> 
+                  
+ </div>
+<a href="http://www.facebook.com/csc.ncsu"> <img src="/images/home/f_icon.gif" alt="Facebook Community" border="0" width="40px" height="40px" style="padding:3px 3px 3px 3px;"> </a> <a href="http://www.twitter.com/cscncsu"> <img src="/images/home/t_icon.gif" alt="Twitter" width="40px" height="40px" border="0" style="padding:3px 3px 3px 3px;"> </a> <a href="http://www.linkedin.com/groups?gid=1797254"> <img src="images/home/in_icon.gif" alt="LinkedIn Community" width="40px" height="40px" border="0" style="padding:3px 3px 3px 3px;"> </a> </div>
+				
+               </div><!-- <br /><div align="center"><img src="/images/top10.png" /></div>--></div>
+          </div>
+          <div id="gallery">
+            <div style="float:left; width:418px; height:20px;">
+              <h1><a href="/gallery/">GALLERIES</a> </h1>
+            </div>
+            <div style="height:10px" > <a href="http://go.ncsu.edu/csc-photos"> <img src="images/home/galleries_camera_icon.jpg" width="55" height="55" alt="Galleries" style="margin:-18px 0px 0px 0px; float:left; border-width:0px;" /> </a>
+                <h1 style="padding-left:4px;"></h1>
+            </div>
+            <br />
+            <!--<div id="gallery_img" style="margin-left:30px;">
+                    <img src="/gallery/albums/ebii/normal_001.jpg"/>
+                    </div>
+                    <div id="gallery_img" style="margin-left:30px;">
+                    	<img src="/gallery/albums/Michael%20Capps/normal_042-CAPPS_RECEPTION.jpg"  />
+                    </div>
+                    <div id="gallery_img" style="margin-left:30px;">
+                    	<img src="/gallery/albums/Welcome_BackBash2010/normal_compsci_welcome-181.jpg" />
+                    </div>
+                    -->
+            <div style="padding-left:5px; width:5px; height:80px; float:left"></div>
+            
+                          <div id="gallery_img"> <a href="https://plus.google.com/photos/113517175728692861175/albums/6148001250809183457?banner=pwa"> <img src="https://lh5.googleusercontent.com/-nBd6ql9CiGg/VVIWyJ8m9wI/AAAAAAAADGw/hw7dh10MNHw/w858-h570-no/DSC_0251%2B-%2BVersion%2B2.JPG" class="gallery_image_style" border="0" /></a></div>
+                            <div id="gallery_img"> <a href="https://picasaweb.google.com/113517175728692861175/COEOpenHouse2013"> <img src="https://lh5.googleusercontent.com/-wM86x_zZjpw/Uqcri54C1PI/AAAAAAAAAmU/LtKqYJlQqIQ/s1152/DSC_0157.JPG" class="gallery_image_style" border="0" /></a></div>
+                            <div id="gallery_img"> <a href="https://plus.google.com/photos/113517175728692861175/albums/6148004355400760369?banner=pwa"> <img src="https://lh6.googleusercontent.com/-it8IB72HY8k/VVIZc0GZ-DI/AAAAAAAADMI/dn4J7oCJPPo/w858-h571-no/compsci_goodnight-134.jpg" class="gallery_image_style" border="0" /></a></div>
+                   
+          
+          </div>
+        </div>
+      </div>
+      
+      <div id="right" style="position:relative">
+<div id="sidebarnav" style="top:0px; margin:0 0px 0 0;"><!--  -->
+<div id="rtMenured" style="margin-bottom:14px;"> <!--<a href="/employment/jobs/32">
+          <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FACULTY POSITIONS</h4>
+        </a> -->
+        <div class="rtMenuDiv" style="height:16px; font-size:12px;">
+          	<a href="/employment/" class="rtMenuAnchor" style="color:#FFF; padding-top:3px; height:17px;">FACULTY POSITIONS</a>
+        </div>
+      </div>
+           
+</div>
+        
+      
+        <div id="rtMenu" style="margin-top:30px;" > 
+        <div class="rtMenuDiv">
+          	<a href="/future-students/" class="rtMenuAnchor" style="color:#FFF">FUTURE STUDENTS</a>
+        </div>
+        <div class="rtMenuDiv">
+          	<a href="/academics/students.php" class="rtMenuAnchor" style="color:#FFF">CURRENT STUDENTS</a>
+        </div>
+        <div class="rtMenuDiv">
+          	<a href="/department/faculty_staff.php" class="rtMenuAnchor" style="color:#FFF">FACULTY & STAFF</a>
+        </div>
+        <div class="rtMenuDiv">
+          	<a href="/alumni" class="rtMenuAnchor" style="color:#FFF">ALUMNI</a>
+        </div>
+        <div class="rtMenuDiv">
+          	<a href="/corporate_relations/" class="rtMenuAnchor" style="color:#FFF">CORPORATE RELATIONS</a>
+        </div>
+		<div class="rtMenuDiv" >
+          	<a href="/portal/" class="rtMenuAnchor" style="color:#FFF">My CSC<span style=" "> <img src="/images/home/lock3.png" style="height:12px; border-width:0px; margin-top:-5px;" alt="" /></span> </a>
+        </div>
+      </div>
+        <div id="events" >
+          <div style="float:left; width:202px;height:30px;">
+            <h1><a href="/calendar/">EVENTS</a> </h1>
+          </div>
+          <div style="height:20px" > <a href="/calendar/month.php">
+            <div id="iCalWrap">
+              <div id="iCalDayWrap">
+                Sep              </div>
+              <div id="iCalNumberWrap">
+                20                                    
+              </div>
+            </div>
+            </a>
+              <h1 style="padding-left:4px;"></h1>
+          </div>
+          <div id="eventlist">
+          <table border="0" cellpadding="0" cellspacing="0" ><tr bgcolor="#DBE1E8"  ><td width="40px">Sep 21    
+         </td>
+         <td width=\"201px\";>
+		 <a href="https://www.google.com/calendar/event?eid=aHE3bzFvamUyYjJvNnBnN2VuY2lhN2ZkajAgbmNzdS5lZHVfaHBhc2w1Y210ZW5xN2JpdjBvbXZlMW52cThAZw" target="_blank">
+		
+		Two Steps Ahead - CyberSecurity Event</td></tr>
+		<tr height="3" bgcolor="#ffffff"><td></td><td></td></tr>		</a> 
+ <tr bgcolor="#DBE1E8"  ><td width="40px">Sep 22    
+         </td>
+         <td width=\"201px\";>
+		 <a href="https://www.google.com/calendar/event?eid=YmFvNG90azViMGo0NXF1dWlmOXBmZzdoYzQgbmNzdS5lZHVfaHBhc2w1Y210ZW5xN2JpdjBvbXZlMW52cThAZw" target="_blank">
+		
+		Eastman Chemical Atrium Event </td></tr>
+		<tr height="3" bgcolor="#ffffff"><td></td><td></td></tr>		</a> 
+ <tr bgcolor="#DBE1E8"  ><td width="40px">Sep 22    
+         </td>
+         <td width=\"201px\";>
+		 <a href="https://www.google.com/calendar/event?eid=cGJyZ2Jja2oycjZqMTNyMmQzN2FvMGFuMDggbmNzdS5lZHVfaHBhc2w1Y210ZW5xN2JpdjBvbXZlMW52cThAZw" target="_blank">
+		
+		NetApp Info Session</td></tr>
+		<tr height="3" bgcolor="#ffffff"><td></td><td></td></tr>		</a> 
+ <tr bgcolor="#DBE1E8"  ><td width="40px">Sep 23    
+         </td>
+         <td width=\"201px\";>
+		 <a href="https://www.google.com/calendar/event?eid=dnRzcGViYWYwMmE3cnJhdWlqYmNtOW1hbjggbmNzdS5lZHVfaHBhc2w1Y210ZW5xN2JpdjBvbXZlMW52cThAZw" target="_blank">
+		
+		Allstate Atrium Event</td></tr>
+		<tr height="3" bgcolor="#ffffff"><td></td><td></td></tr>		</a> 
+ <tr bgcolor="#DBE1E8"  ><td width="40px">Sep 24    
+         </td>
+         <td width=\"201px\";>
+		 <a href="https://www.google.com/calendar/event?eid=Zmxxbzg2OXE2YTNldHE3ZHNtMmhsYWFqY2MgbmNzdS5lZHVfaHBhc2w1Y210ZW5xN2JpdjBvbXZlMW52cThAZw" target="_blank">
+		
+		Deutsche Bank Atrium Event</td></tr>
+		<tr height="3" bgcolor="#ffffff"><td></td><td></td></tr>		</a> 
+ <tr bgcolor="#DBE1E8"  ><td width="40px">Sep 24    
+         </td>
+         <td width=\"201px\";>
+		 <a href="https://www.google.com/calendar/event?eid=MWJmdGZmYzh1bmVvaTRmMTVjZ21kdTZlMm8gbmNzdS5lZHVfaHBhc2w1Y210ZW5xN2JpdjBvbXZlMW52cThAZw" target="_blank">
+		
+		NSA Reverse Engineering Session</td></tr>
+		<tr height="3" bgcolor="#ffffff"><td></td><td></td></tr>		</a> 
+ </table>                   </div >
+        </div>
+        <div style="clear:both;"></div>
+        <div style="height:auto; width: 245px">
+          <center><a href="/future-students/"><img src="../images/home/future_button.jpg" alt="Future Students Poster" style="width:245px;" border="0" vspace="4" /></a>
+<br />
+            <a href="/corporate_relations/fidelity-investments-speaker-series.php"><img src="/images/home/fidelity.jpg" height="61" width="245" alt="Fidelity Investments Leadership in Technology Speaker Series" border="0" vspace="4" /></a>
+            
+</center>
+        </div>
+      </div>
+    </div>
+    <img src="images/home/menuBtnBgOver.jpg" class="hiddenPic"/>
+    <img src="images/home/menuBtnBgRedOver.gif" class="hiddenPic"/>
+    </div> <!-- close div tag for main-body. It needs to be in the content page not in footer -->
+<div id="clearfooter"></div>
+<!-- end of wrapper -->
+
+<!-- Beginning of Footer -->
+<div id="footer"><h2 class="hidden">Footer</h2>
+ <div id="footer-bar">.</div>
+ <div id="footer-coe"><a href="http://www.engr.ncsu.edu">COLLEGE OF ENGINEERING</a><br />
+ <a href="http://www.ncsu.edu/">NC State University</a> Copyright © 2015</div>
+ <div id="footer-address">
+   <a href="/">Department of Computer Science</a><br />
+  890 Oval Drive, Campus Box 8206- Raleigh, NC 27695-8206 <br />
+  <a href="/about.php">About this Web site</a> <a name="text" id="text"></a>
+	</div> <!-- close div tag for footer-address-->
+</div> <!-- close div tag for footer --> 
+	</div> <!-- close div tag for right-border -->
+	</div> <!-- close div tag for left-border -->
+</div> <!-- close tag for outer-wrapper-->
+<!-- End of Footer -->
+</body>
+</html>
+

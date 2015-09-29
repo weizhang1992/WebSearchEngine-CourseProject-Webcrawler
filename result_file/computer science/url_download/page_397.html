@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Quantum Fourier transform - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Quantum_Fourier_transform","wgTitle":"Quantum Fourier transform","wgCurRevisionId":677165733,"wgRevisionId":677165733,"wgArticleId":30872292,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Transforms","Quantum algorithms"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Quantum_Fourier_transform","wgRelevantArticleId":30872292,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,
+"wgMediaViewerEnabledByDefault":!0,"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":!0,"dialogs":!0,"preview":!1,"publish":!1},"wgBetaFeaturesFeatures":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":!0,"usePageDescriptions":!0},"wgGatherShouldShowTutorial":!0,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/5/58/Quantum_Fourier_transform_on_n_qubits.svg/100px-Quantum_Fourier_transform_on_n_qubits.svg.png","wgULSAcceptLanguageList":[],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q1464944","wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.WatchlistBase%2CWatchlistGreenIndicators%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.26wmf23" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Quantum_Fourier_transform" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Quantum_Fourier_transform" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.26wmf23/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Quantum_Fourier_transform skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Quantum Fourier transform</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>In <a href="/wiki/Quantum_computing" title="Quantum computing">quantum computing</a>, the <b>quantum Fourier transform</b> is a <a href="/wiki/Linear_transformation" title="Linear transformation" class="mw-redirect">linear transformation</a> on <a href="/wiki/Qubit" title="Qubit">quantum bits</a>, and is the quantum analogue of the <a href="/wiki/Discrete_Fourier_transform" title="Discrete Fourier transform">discrete Fourier transform</a>. The quantum Fourier transform is a part of many <a href="/wiki/Quantum_algorithms" title="Quantum algorithms" class="mw-redirect">quantum algorithms</a>, notably <a href="/wiki/Shor%27s_algorithm" title="Shor's algorithm">Shor's algorithm</a> for factoring and computing the <a href="/wiki/Discrete_logarithm" title="Discrete logarithm">discrete logarithm</a>, the <a href="/wiki/Quantum_phase_estimation_algorithm" title="Quantum phase estimation algorithm">quantum phase estimation algorithm</a> for estimating the <a href="/wiki/Eigenvalue" title="Eigenvalue" class="mw-redirect">eigenvalues</a> of a <a href="/wiki/Unitary_operator" title="Unitary operator">unitary operator</a>, and algorithms for the <a href="/wiki/Hidden_subgroup_problem" title="Hidden subgroup problem">hidden subgroup problem</a>.</p>
+<p>The quantum Fourier transform can be performed efficiently on a quantum computer, with a particular decomposition into a product of simpler <a href="/wiki/Unitary_matrix" title="Unitary matrix">unitary matrices</a>. Using a simple decomposition, the discrete Fourier transform on <img class="mwe-math-fallback-image-inline tex" alt="2^n" src="//upload.wikimedia.org/math/9/a/a/9aa0ec0374c89d2f7f3d9cd2e05a4bc5.png" /> amplitudes can be implemented as a <a href="/wiki/Quantum_circuit" title="Quantum circuit">quantum circuit</a> consisting of only <img class="mwe-math-fallback-image-inline tex" alt="O(n^2)" src="//upload.wikimedia.org/math/1/8/9/189317b4b935a745fcfaf95940d2b4f0.png" /> <a href="/wiki/Hadamard_gate" title="Hadamard gate" class="mw-redirect">Hadamard gates</a> and controlled <a href="/wiki/Phase_shift_gate" title="Phase shift gate" class="mw-redirect">phase shift gates</a>, where <img class="mwe-math-fallback-image-inline tex" alt="n" src="//upload.wikimedia.org/math/7/b/8/7b8b965ad4bca0e41ab51de7b31363a1.png" /> is the number of qubits.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> This can be compared with the classical discrete Fourier transform, which takes <img class="mwe-math-fallback-image-inline tex" alt="O(n2^n)" src="//upload.wikimedia.org/math/a/c/4/ac4586dd33ef0bd1793410dd81d69fe5.png" /> gates (where <img class="mwe-math-fallback-image-inline tex" alt="n" src="//upload.wikimedia.org/math/7/b/8/7b8b965ad4bca0e41ab51de7b31363a1.png" /> is the number of bits), which is exponentially more than <img class="mwe-math-fallback-image-inline tex" alt="O(n^2)" src="//upload.wikimedia.org/math/1/8/9/189317b4b935a745fcfaf95940d2b4f0.png" />. However, the quantum Fourier transform acts on a quantum state, whereas the classical Fourier transform acts on a vector, so not every task that uses the classical Fourier transform can take advantage of this exponential speedup.</p>
+<p>The best quantum Fourier transform algorithms known today require only <img class="mwe-math-fallback-image-inline tex" alt="O(n \log n)" src="//upload.wikimedia.org/math/f/4/9/f49341ab621f12e8cb93d0146ea51d34.png" /> gates to achieve an efficient approximation.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Properties"><span class="tocnumber">2</span> <span class="toctext">Properties</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Unitarity"><span class="tocnumber">2.1</span> <span class="toctext">Unitarity</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Circuit_implementation"><span class="tocnumber">3</span> <span class="toctext">Circuit implementation</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Definition">Definition</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit&amp;section=1" title="Edit section: Definition">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The quantum Fourier transform is the classical discrete Fourier transform applied to the vector of amplitudes of a quantum state. The classical (unitary) Fourier transform acts on a <a href="/wiki/Vector_(mathematics_and_physics)" title="Vector (mathematics and physics)">vector</a> in <img class="mwe-math-fallback-image-inline tex" alt="\mathbb{C}^N" src="//upload.wikimedia.org/math/3/7/7/377c784617597b44216b6d6df13fc6e0.png" />, (<i>x</i><sub>0</sub>, ..., <i>x</i><sub><i>N</i>−1</sub>) and maps it to the vector (<i>y</i><sub>0</sub>, ..., <i>y</i><sub><i>N</i>−1</sub>) according to the formula:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="y_k = \frac{1}{\sqrt{N}} \sum_{j=0}^{N-1} x_j \omega^{jk}" src="//upload.wikimedia.org/math/7/f/e/7fe8664b2cb516dac652edb64d919dc9.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="\omega^{jk} = e^{2 \pi i\frac{j\, k}{N}}" src="//upload.wikimedia.org/math/c/c/2/cc21557683f77c3986e52ef79d7389b8.png" /> is a <i>N</i><sup>th</sup> <a href="/wiki/Root_of_unity" title="Root of unity">root of unity</a>.</p>
+<p>Similarly, the quantum Fourier transform acts on a quantum state <img class="mwe-math-fallback-image-inline tex" alt="\sum_{i=0}^{N-1} x_i |i\rangle" src="//upload.wikimedia.org/math/b/c/4/bc449b65de04b19fa26f02731e14ad06.png" /> and maps it to a quantum state <img class="mwe-math-fallback-image-inline tex" alt="\sum_{i=0}^{N-1} y_i |i\rangle" src="//upload.wikimedia.org/math/6/6/9/669ffb94e2f85e60e36265fddfa82007.png" /> according to the formula:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="y_k = \frac{1}{\sqrt{N}} \sum_{j=0}^{N-1} x_j \omega^{jk}," src="//upload.wikimedia.org/math/a/6/e/a6eafb069b8610b7c707df4edf6fd8b3.png" /></dd>
+</dl>
+<p>with <img class="mwe-math-fallback-image-inline tex" alt="\omega^{jk}" src="//upload.wikimedia.org/math/d/5/e/d5e83494a993da797ec3ad93f25ecd11.png" /> defined as above.</p>
+<p>This can also be expressed as the map</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="|j\rangle \mapsto  \frac{1}{\sqrt{N}} \sum_{k=0}^{N-1} \omega^{jk} |k\rangle. " src="//upload.wikimedia.org/math/0/2/e/02e9ae47364d249bb71d650ac77d4bfe.png" /></dd>
+</dl>
+<p>Equivalently, the quantum Fourier transform can be viewed as a unitary matrix (<a href="/wiki/Quantum_gate" title="Quantum gate">quantum gate</a>, similar to a logic gate for classical computers) acting on quantum state vectors, where the unitary matrix <img class="mwe-math-fallback-image-inline tex" alt="F_N" src="//upload.wikimedia.org/math/f/2/e/f2ef78cc1f1c158670fe0200c879ec90.png" /> is given by</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+F_N = \frac{1}{\sqrt{N}} \begin{bmatrix}
+1&amp;1&amp;1&amp;1&amp;\cdots &amp;1 \\
+1&amp;\omega&amp;\omega^2&amp;\omega^3&amp;\cdots&amp;\omega^{N-1} \\
+1&amp;\omega^2&amp;\omega^4&amp;\omega^6&amp;\cdots&amp;\omega^{2(N-1)}\\ 1&amp;\omega^3&amp;\omega^6&amp;\omega^9&amp;\cdots&amp;\omega^{3(N-1)}\\
+\vdots&amp;\vdots&amp;\vdots&amp;\vdots&amp;&amp;\vdots\\
+1&amp;\omega^{N-1}&amp;\omega^{2(N-1)}&amp;\omega^{3(N-1)}&amp;\cdots&amp;\omega^{(N-1)(N-1)}
+\end{bmatrix}.
+" src="//upload.wikimedia.org/math/0/9/6/096ecdfa147fb9ed752097b2ac8e242d.png" /></dd>
+</dl>
+<p>Here <img class="mwe-math-fallback-image-inline tex" alt="\omega = e^{\frac{2 \pi i}{N}}" src="//upload.wikimedia.org/math/c/f/9/cf9e61270b6f4a38423f9188d1f2e462.png" /> is a primitive <i>N</i><sup>th</sup> <a href="/wiki/Root_of_unity" title="Root of unity">root of unity</a>. For example, in the case of <img class="mwe-math-fallback-image-inline tex" alt="N=4" src="//upload.wikimedia.org/math/d/7/3/d739e9c09b7300cf2eaf7f573c019eaa.png" /> we would find that <img class="mwe-math-fallback-image-inline tex" alt="\omega = i" src="//upload.wikimedia.org/math/5/8/9/589fd4abe9eed7c74c50b23bee10dd12.png" />, so</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+F_4 = \frac{1}{2} \begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 \\
+1 &amp; i &amp; -1 &amp; -i \\
+1 &amp; -1 &amp; 1 &amp; -1 \\
+1 &amp; -i &amp; -1 &amp; i
+\end{bmatrix}.
+" src="//upload.wikimedia.org/math/f/9/0/f90d1f3b0f14423b0b40487ce3021a73.png" /></dd>
+</dl>
+<h2><span class="mw-headline" id="Properties">Properties</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit&amp;section=2" title="Edit section: Properties">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Unitarity">Unitarity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit&amp;section=3" title="Edit section: Unitarity">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Most of the properties of the quantum Fourier transform follow from the fact that it is a <a href="/wiki/Unitary_transformation" title="Unitary transformation">unitary transformation</a>. This can be checked by performing <a href="/wiki/Matrix_multiplication" title="Matrix multiplication">matrix multiplication</a> and ensuring that the relation <img class="mwe-math-fallback-image-inline tex" alt="FF^{\dagger}=F^{\dagger}F=I" src="//upload.wikimedia.org/math/b/5/7/b578284ce207e22968805aa22a49fe9f.png" /> holds, where <img class="mwe-math-fallback-image-inline tex" alt="F^\dagger" src="//upload.wikimedia.org/math/6/2/2/622a60a29402c29b72858aae5b2cc2f7.png" /> is the <a href="/wiki/Hermitian_adjoint" title="Hermitian adjoint">Hermitian adjoint</a> of <img class="mwe-math-fallback-image-inline tex" alt="F" src="//upload.wikimedia.org/math/8/0/0/800618943025315f869e4e1f09471012.png" />. Alternately, one can check that vectors of <a href="/wiki/Norm_(mathematics)" title="Norm (mathematics)">norm</a> 1 get mapped to vectors of norm 1.</p>
+<p>From the unitary property it follows that the inverse of the quantum Fourier transform is the Hermitian adjoint of the Fourier matrix, thus <img class="mwe-math-fallback-image-inline tex" alt="F^{-1}=F^{\dagger}" src="//upload.wikimedia.org/math/6/f/8/6f87cee315ccb6d7c8a7fe253371abfe.png" />. Since there is an efficient quantum circuit implementing the quantum Fourier transform, the circuit can be run in reverse to perform the inverse quantum Fourier transform. Thus both transforms can be efficiently performed on a quantum computer.</p>
+<h2><span class="mw-headline" id="Circuit_implementation">Circuit implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit&amp;section=4" title="Edit section: Circuit implementation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:602px;"><a href="/wiki/File:Quantum_Fourier_transform_on_n_qubits.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/58/Quantum_Fourier_transform_on_n_qubits.svg/600px-Quantum_Fourier_transform_on_n_qubits.svg.png" width="600" height="213" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/58/Quantum_Fourier_transform_on_n_qubits.svg/900px-Quantum_Fourier_transform_on_n_qubits.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/58/Quantum_Fourier_transform_on_n_qubits.svg/1200px-Quantum_Fourier_transform_on_n_qubits.svg.png 2x" data-file-width="563" data-file-height="200" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Quantum_Fourier_transform_on_n_qubits.svg" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Quantum_circuit" title="Quantum circuit">Quantum circuit</a> representation of the quantum Fourier transform</div>
+</div>
+</div>
+<p>The quantum Fourier transform can be approximately implemented for any <i>N</i>; however, the implementation for the case where <i>N</i> is a power of 2 is much simpler. Suppose <i>N</i> = 2<sup><i>n</i></sup>. We have the orthonormal basis consisting of the vectors</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" |0\rangle, \ldots , |2^n - 1\rangle. " src="//upload.wikimedia.org/math/c/8/7/c87f3a293e38badbb8bf1f2d00374887.png" /></dd>
+</dl>
+<p>The basis states enumerate all the possible states of the qubits:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" | x \rangle = | x_1 x_2 \ldots x_n \rangle = | x_1 \rangle \otimes | x_2 \rangle \otimes \cdots \otimes | x_n \rangle" src="//upload.wikimedia.org/math/b/4/4/b447532c6465ed92c612cc8bbedfa865.png" /></dd>
+</dl>
+<p>where, with tensor product notation <img class="mwe-math-fallback-image-inline tex" alt="\otimes" src="//upload.wikimedia.org/math/e/9/d/e9dd9013ec300ceba41484dfc2c9a876.png" />, <img class="mwe-math-fallback-image-inline tex" alt="|x_j\rangle" src="//upload.wikimedia.org/math/4/f/5/4f51ac1084ad42f39ae355f1d6427107.png" /> indicates that qubit <img class="mwe-math-fallback-image-inline tex" alt="j" src="//upload.wikimedia.org/math/3/6/3/363b122c528f54df4a0446b6bab05515.png" /> is in state <img class="mwe-math-fallback-image-inline tex" alt="x_j" src="//upload.wikimedia.org/math/f/4/b/f4bb95e27d8505366199bb81f2b75b6f.png" />, with <img class="mwe-math-fallback-image-inline tex" alt="x_j" src="//upload.wikimedia.org/math/f/4/b/f4bb95e27d8505366199bb81f2b75b6f.png" /> either 0 or 1. By convention, the basis state index <img class="mwe-math-fallback-image-inline tex" alt="x" src="//upload.wikimedia.org/math/9/d/d/9dd4e461268c8034f5c8564e155c67a6.png" /> orders the possible states of the qubits lexicographically, i.e., by converting from binary to decimal in this way:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" x = x_1 2^{n-1} + x_2 2^{n-2} +\cdots  + x_n 2^0.\quad " src="//upload.wikimedia.org/math/0/8/6/0864bb4d008af3024e55e79f0a293358.png" /></dd>
+</dl>
+<p>It is also useful to borrow fractional binary notation:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" [0. x_1 \ldots x_m] = \sum_{k = 1}^m x_k 2^{-k}." src="//upload.wikimedia.org/math/9/c/d/9cd5c7ee8df1996a331263e2b02bc537.png" /></dd>
+</dl>
+<p>For instance, <img class="mwe-math-fallback-image-inline tex" alt="[0.x_1] = \frac{x_1}{2}" src="//upload.wikimedia.org/math/8/1/f/81f5aa000c6e06bb4c4f7d3754163847.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="[0.x_1 x_2] = \frac{x_1}{2}+\frac{x_2}{2^2}." src="//upload.wikimedia.org/math/9/2/3/92321535d9bde231974bcc49dd9a44b5.png" /></p>
+<p>With this notation, the action of the quantum Fourier transform can be expressed as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="|x_1 x_2 \ldots  x_n \rangle \mapsto \frac{1}{\sqrt{N}} \ \left(|0\rangle + e^{2 \pi i \, [0.x_n] }|1\rangle\right) \otimes \left(|0\rangle + e^{2 \pi i  \, [0.x_{n-1} x_n] }|1\rangle\right) \otimes \cdots \otimes \left(|0\rangle + e^{2 \pi i \, [0.x_1 x_2 \ldots x_n] }|1\rangle\right)," src="//upload.wikimedia.org/math/1/5/4/15453e44e07cfbe599333ba53040a2a2.png" /></dd>
+</dl>
+<p>where the output qubit 1 is in a superposition of state <img class="mwe-math-fallback-image-inline tex" alt="|0\rangle" src="//upload.wikimedia.org/math/4/9/6/4964d23384c66fc9420ae1133ef47c24.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="e^{2 \pi i \, [0.x_n] }|1\rangle" src="//upload.wikimedia.org/math/e/3/0/e30cfa739a36e5f6814be428c34e1f19.png" />, and so on for the other qubits.</p>
+<p>In other words, the discrete Fourier transform, an operation on <i>n</i>-qubits, can be factored into the tensor product of <i>n</i> single-qubit operations, suggesting it is easily represented as a <a href="/wiki/Quantum_circuit" title="Quantum circuit">quantum circuit</a>. In fact, each of those single-qubit operations can be implemented efficiently using a <a href="/wiki/Hadamard_gate" title="Hadamard gate" class="mw-redirect">Hadamard gate</a> and <a href="/wiki/Quantum_gate#Controlled_gates" title="Quantum gate">controlled</a> <a href="/wiki/Quantum_gate#Phase_shift_gates" title="Quantum gate">phase gates</a>. The first term requires one Hadamard gate, the next one requires a Hadamard gate and a controlled phase gate, and each following term requires an additional controlled phase gate. Summing up the number of gates gives <img class="mwe-math-fallback-image-inline tex" alt="1 + 2 + \cdots + n = n(n+1)/2 = O(n^2)" src="//upload.wikimedia.org/math/c/9/5/c950e4398ce9ca29a0bbcf047b2fd768.png" /> gates, which is polynomial in the number of qubits.</p>
+<h2><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Consider the quantum Fourier transform on 3 qubits. It is the following transformation:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="|j\rangle \mapsto  \frac{1}{\sqrt{2^3}} \sum_{k=0}^{2^3-1} \omega^{jk} |k\rangle, " src="//upload.wikimedia.org/math/a/b/3/ab323d524b1ca64ae250ea0d051cb060.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="\omega" src="//upload.wikimedia.org/math/4/d/1/4d1b7b74aba3cfabd624e898d86b4602.png" /> is a primitive eighth <a href="/wiki/Root_of_unity" title="Root of unity">root of unity</a> satisfying <img class="mwe-math-fallback-image-inline tex" alt="\omega^8=\left(e^{\frac{2\pi i}{8}}\right)^8=1" src="//upload.wikimedia.org/math/d/e/9/de93d7c1a0c60d57ff15d58d24b1a839.png" /> (since <img class="mwe-math-fallback-image-inline tex" alt="N = 2^3 = 8" src="//upload.wikimedia.org/math/a/9/7/a97d55fd5639fb323f7e44881c54411c.png" />).</p>
+<p>The matrix representing this transformation on 3 qubits is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+F_{2^3} = \frac{1}{\sqrt{2^3}} \begin{bmatrix} 1&amp;1&amp;1&amp;1&amp;1&amp;1&amp;1&amp;1 \\
+1&amp;\omega&amp;\omega^2&amp;\omega^3&amp;\omega^4&amp;\omega^5&amp;\omega^6&amp;\omega^7 \\
+1&amp;\omega^2&amp;\omega^4&amp;\omega^6&amp;\omega^8&amp;\omega^{10}&amp;\omega^{12}&amp;\omega^{14} \\
+1&amp;\omega^3&amp;\omega^6&amp;\omega^9&amp;\omega^{12}&amp;\omega^{15}&amp;\omega^{18}&amp;\omega^{21} \\
+1&amp;\omega^4&amp;\omega^8&amp;\omega^{12}&amp;\omega^{16}&amp;\omega^{20}&amp;\omega^{24}&amp;\omega^{28} \\
+1&amp;\omega^5&amp;\omega^{10}&amp;\omega^{15}&amp;\omega^{20}&amp;\omega^{25}&amp;\omega^{30}&amp;\omega^{35} \\
+1&amp;\omega^6&amp;\omega^{12}&amp;\omega^{18}&amp;\omega^{24}&amp;\omega^{30}&amp;\omega^{36}&amp;\omega^{42} \\
+1&amp;\omega^7&amp;\omega^{14}&amp;\omega^{21}&amp;\omega^{28}&amp;\omega^{35}&amp;\omega^{42}&amp;\omega^{49} \\
+\end{bmatrix} = \frac{1}{\sqrt{2^3}} \begin{bmatrix} 1&amp;1&amp;1&amp;1&amp;1&amp;1&amp;1&amp;1 \\
+1&amp;\omega&amp;\omega^2&amp;\omega^3&amp;\omega^4&amp;\omega^5&amp;\omega^6&amp;\omega^7 \\
+1&amp;\omega^2&amp;\omega^4&amp;\omega^6&amp;1&amp;\omega^2&amp;\omega^4&amp;\omega^6 \\
+1&amp;\omega^3&amp;\omega^6&amp;\omega&amp;\omega^4&amp;\omega^7&amp;\omega^2&amp;\omega^5 \\
+1&amp;\omega^4&amp;1&amp;\omega^4&amp;1&amp;\omega^4&amp;1&amp;\omega^4 \\
+1&amp;\omega^5&amp;\omega^2&amp;\omega^7&amp;\omega^4&amp;\omega&amp;\omega^6&amp;\omega^3 \\
+1&amp;\omega^6&amp;\omega^4&amp;\omega^2&amp;1&amp;\omega^6&amp;\omega^4&amp;\omega^2 \\
+1&amp;\omega^7&amp;\omega^6&amp;\omega^5&amp;\omega^4&amp;\omega^3&amp;\omega^2&amp;\omega \\
+\end{bmatrix}.
+" src="//upload.wikimedia.org/math/d/9/3/d93776cccf339232bf91285b55fac880.png" /></dd>
+</dl>
+<p>The 3-qubit quantum Fourier transform is the following operation:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="|x_1, x_2, x_3 \rangle \mapsto \frac{1}{\sqrt{2^3}} \ \left(|0\rangle + e^{2 \pi i \, [0.x_3] }|1\rangle\right) \otimes \left(|0\rangle + e^{2 \pi i  \, [0.x_2 x_3] }|1\rangle\right) \otimes \left(|0\rangle + e^{2 \pi i \, [0.x_1 x_2 x_3] }|1\rangle\right)." src="//upload.wikimedia.org/math/2/6/0/260889278fdba569f7120592610bf843.png" /></dd>
+</dl>
+<p>This quantum circuit implements the quantum Fourier transform on the quantum state <img class="mwe-math-fallback-image-inline tex" alt="|x_1,x_2,x_3\rangle" src="//upload.wikimedia.org/math/8/5/3/8531aa1fa178f16e50f87281cbab0bdf.png" />.</p>
+<p><a href="/wiki/File:Quantum_Fourier_transform_on_three_qubits.svg" class="image"><img alt="Quantum Fourier transform on three qubits.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/75/Quantum_Fourier_transform_on_three_qubits.svg/550px-Quantum_Fourier_transform_on_three_qubits.svg.png" width="550" height="151" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/75/Quantum_Fourier_transform_on_three_qubits.svg/825px-Quantum_Fourier_transform_on_three_qubits.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/75/Quantum_Fourier_transform_on_three_qubits.svg/1100px-Quantum_Fourier_transform_on_three_qubits.svg.png 2x" data-file-width="328" data-file-height="90" /></a></p>
+<p>The <a href="/wiki/Quantum_gate" title="Quantum gate">quantum gates</a> used in the circuit above are the <a href="/wiki/Quantum_gate#Hadamard_gate" title="Quantum gate">Hadamard gate</a> and the <a href="/wiki/Quantum_gate#Controlled_gates" title="Quantum gate">controlled</a> <a href="/wiki/Quantum_gate#Phase_shift_gates" title="Quantum gate">phase gate</a> <img class="mwe-math-fallback-image-inline tex" alt="R_\theta" src="//upload.wikimedia.org/math/c/b/b/cbb9f6ba3227c83e8667796a9f3ea90c.png" />.</p>
+<p>As calculated above, the number of gates used is <img class="mwe-math-fallback-image-inline tex" alt="n(n+1)/2" src="//upload.wikimedia.org/math/2/0/2/20213a5d9d8c020f03389a3f258f6dce.png" /> which is equal to 6, for&#160;<i>n</i>&#160;=&#160;3.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="/wiki/Michael_Nielsen" title="Michael Nielsen">Michael Nielsen</a> and Isaac Chuang (2000). <i>Quantum Computation and Quantum Information</i>. Cambridge: Cambridge University Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-521-63503-9" title="Special:BookSources/0-521-63503-9">0-521-63503-9</a>. <a href="/wiki/OCLC" title="OCLC">OCLC</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/oclc/174527496">174527496</a>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuantum+Fourier+transform&amp;rft.aulast=Michael+Nielsen+and+Isaac+Chuang&amp;rft.au=Michael+Nielsen+and+Isaac+Chuang&amp;rft.btitle=Quantum+Computation+and+Quantum+Information&amp;rft.date=2000&amp;rft.genre=book&amp;rft_id=info%3Aoclcnum%2F174527496&amp;rft.isbn=0-521-63503-9&amp;rft.place=Cambridge&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">L. Hales, S. Hallgren, An improved quantum Fourier transform algorithm and applications, Proceedings of the 41st Annual Symposium on Foundations of Computer Science, p.&#160;515, November 12–14, 2000</span></li>
+</ol>
+<ul>
+<li><a href="/wiki/K._R._Parthasarathy_(probabilist)" title="K. R. Parthasarathy (probabilist)">K. R. Parthasarathy</a>, <i>Lectures on Quantum Computation and Quantum Error Correcting Codes</i> (Indian Statistical Institute, Delhi Center, June 2001)</li>
+<li><a href="/wiki/John_Preskill" title="John Preskill">John Preskill</a>, <i>Lecture Notes for Physics 229: Quantum Information and Computation</i> (CIT, September 1998)</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://demonstrations.wolfram.com/QuantumCircuitImplementingGroversSearchAlgorithm/">Wolfram Demonstration Project: Quantum Circuit Implementing Grover's Search Algorithm</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Quantum_information" title="Template:Quantum information"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Quantum_information" title="Template talk:Quantum information"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Quantum_information&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Quantum_information_science" title="Quantum information science">Quantum information science</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">General</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_computer" title="Quantum computer" class="mw-redirect">Quantum computer</a></li>
+<li><a href="/wiki/Qubit" title="Qubit">Qubit</a></li>
+<li><a href="/wiki/Quantum_information" title="Quantum information">Quantum information</a></li>
+<li><a href="/wiki/Quantum_programming" title="Quantum programming">Quantum programming</a></li>
+<li><a href="/wiki/Timeline_of_quantum_computing" title="Timeline of quantum computing">Timeline of quantum computing</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="13" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Bloch_Sphere.svg" class="image"><img alt="Bloch Sphere.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/80px-Bloch_Sphere.svg.png" width="80" height="91" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/120px-Bloch_Sphere.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bloch_Sphere.svg/160px-Bloch_Sphere.svg.png 2x" data-file-width="163" data-file-height="185" /></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum communication</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_capacity" title="Quantum capacity">Quantum capacity</a></li>
+<li><a href="/wiki/Classical_capacity" title="Classical capacity">Classical capacity</a></li>
+<li><a href="/wiki/Entanglement-assisted_classical_capacity" title="Entanglement-assisted classical capacity">Entanglement-assisted classical capacity</a></li>
+<li><a href="/wiki/Quantum_channel" title="Quantum channel">Quantum channel</a>
+<ul>
+<li><a href="/wiki/Quantum_network" title="Quantum network">Quantum network</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_cryptography" title="Quantum cryptography">Quantum cryptography</a>
+<ul>
+<li><a href="/wiki/Quantum_key_distribution" title="Quantum key distribution">Quantum key distribution</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Quantum_energy_teleportation" title="Quantum energy teleportation">Quantum energy teleportation</a></li>
+<li><a href="/wiki/Quantum_teleportation" title="Quantum teleportation">Quantum teleportation</a></li>
+<li><a href="/wiki/Superdense_coding" title="Superdense coding">Superdense coding</a></li>
+<li><a href="/wiki/LOCC" title="LOCC">LOCC</a></li>
+<li><a href="/wiki/Entanglement_distillation" title="Entanglement distillation">Entanglement distillation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_algorithm" title="Quantum algorithm">Quantum algorithms</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Universal_quantum_simulator" title="Universal quantum simulator" class="mw-redirect">Universal quantum simulator</a></li>
+<li><a href="/wiki/Deutsch%E2%80%93Jozsa_algorithm" title="Deutsch–Jozsa algorithm">Deutsch–Jozsa algorithm</a></li>
+<li><a href="/wiki/Grover%27s_algorithm" title="Grover's algorithm">Grover's algorithm</a></li>
+<li><strong class="selflink">Quantum Fourier transform</strong></li>
+<li><a href="/wiki/Shor%27s_algorithm" title="Shor's algorithm">Shor's algorithm</a></li>
+<li><a href="/wiki/Simon%27s_problem" title="Simon's problem">Simon's problem</a></li>
+<li><a href="/wiki/Quantum_phase_estimation_algorithm" title="Quantum phase estimation algorithm">Quantum phase estimation algorithm</a></li>
+<li><a href="/wiki/Quantum_annealing" title="Quantum annealing">Quantum annealing</a></li>
+<li><a href="/wiki/Algorithmic_cooling" title="Algorithmic cooling">Algorithmic cooling</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_complexity_theory" title="Quantum complexity theory">Quantum complexity theory</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_Turing_machine" title="Quantum Turing machine">Quantum Turing machine</a></li>
+<li><a href="/wiki/BQP" title="BQP">BQP</a></li>
+<li><a href="/wiki/QMA" title="QMA">QMA</a></li>
+<li><a href="/wiki/PostBQP" title="PostBQP">PostBQP</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Quantum computing models</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_circuit" title="Quantum circuit">Quantum circuit</a>
+<ul>
+<li><a href="/wiki/Quantum_gate" title="Quantum gate">Quantum gate</a></li>
+</ul>
+</li>
+<li><a href="/wiki/One-way_quantum_computer" title="One-way quantum computer">One-way quantum computer</a>
+<ul>
+<li><a href="/wiki/Cluster_state" title="Cluster state">cluster state</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Adiabatic_quantum_computation" title="Adiabatic quantum computation">Adiabatic quantum computation</a></li>
+<li><a href="/wiki/Topological_quantum_computer" title="Topological quantum computer">Topological quantum computer</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group"><a href="/wiki/Quantum_decoherence" title="Quantum decoherence">Decoherence</a> prevention</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Quantum_error_correction" title="Quantum error correction">Quantum error correction</a></li>
+<li><a href="/wiki/Stabilizer_code" title="Stabilizer code">Stabilizer codes</a></li>
+<li><a href="/wiki/Entanglement-assisted_stabilizer_formalism" title="Entanglement-assisted stabilizer formalism">Entanglement-Assisted Quantum Error Correction</a></li>
+<li><a href="/wiki/Quantum_convolutional_code" title="Quantum convolutional code">Quantum convolutional codes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Physical implementations</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Quantum_optics" title="Quantum optics">Quantum optics</a></div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Cavity_quantum_electrodynamics" title="Cavity quantum electrodynamics">Cavity QED</a></li>
+<li><a href="/wiki/Circuit_quantum_electrodynamics" title="Circuit quantum electrodynamics">Circuit QED</a></li>
+<li><a href="/wiki/Linear_optical_quantum_computing" title="Linear optical quantum computing">Linear optical quantum computing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Ultracold_atom" title="Ultracold atom">Ultracold atoms</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Trapped_ion_quantum_computer" title="Trapped ion quantum computer">Trapped ion quantum computer</a></li>
+<li><a href="/wiki/Optical_lattice" title="Optical lattice">Optical lattice</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Spin_(physics)" title="Spin (physics)">Spin</a>-based</div>
+</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Nuclear_magnetic_resonance_quantum_computer" title="Nuclear magnetic resonance quantum computer">Nuclear magnetic resonance QC</a></li>
+<li><a href="/wiki/Kane_quantum_computer" title="Kane quantum computer">Kane QC</a></li>
+<li><a href="/wiki/Loss%E2%80%93DiVincenzo_quantum_computer" title="Loss–DiVincenzo quantum computer">Loss–DiVincenzo QC</a></li>
+<li><a href="/wiki/Nitrogen-vacancy_center" title="Nitrogen-vacancy center">Nitrogen-vacancy center</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="padding-left:0;padding-right:0;">
+<div style="padding:0em 0.75em;"><a href="/wiki/Superconducting_quantum_computing" title="Superconducting quantum computing">Superconducting quantum computing</a></div>
+</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Charge_qubit" title="Charge qubit">Charge qubit</a></li>
+<li><a href="/wiki/Flux_qubit" title="Flux qubit">Flux qubit</a></li>
+<li><a href="/wiki/Phase_qubit" title="Phase qubit">Phase qubit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1013
+Cached time: 20150910055843
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.316 seconds
+Real time usage: 3.400 seconds
+Preprocessor visited node count: 918/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 26599/2097152 bytes
+Template argument size: 646/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/500
+Lua time usage: 0.045/10.000 seconds
+Lua memory usage: 1.46 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  118.953      1 - -total
+ 53.24%   63.330      1 - Template:Cite_book
+ 45.61%   54.255      2 - Template:Navbox
+ 40.48%   48.149      1 - Template:Quantum_computing
+ 16.60%   19.752      1 - Template:Navbox_subgroup
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:30872292-0!*!0!!en!4!*!math=0 and timestamp 20150910055840 and revision id 677165733
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Quantum_Fourier_transform&amp;oldid=677165733">https://en.wikipedia.org/w/index.php?title=Quantum_Fourier_transform&amp;oldid=677165733</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Transforms" title="Category:Transforms">Transforms</a></li><li><a href="/wiki/Category:Quantum_algorithms" title="Category:Quantum algorithms">Quantum algorithms</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantum+Fourier+transform&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quantum+Fourier+transform" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Quantum_Fourier_transform"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Quantum_Fourier_transform"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Quantum_Fourier_transform" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Quantum_Fourier_transform" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Quantum_Fourier_transform" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Quantum_Fourier_transform&amp;oldid=677165733" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Quantum_Fourier_transform&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q1464944" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Quantum_Fourier_transform&amp;id=677165733" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Quantum+Fourier+transform">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Quantum+Fourier+transform&amp;oldid=677165733&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Quantum_Fourier_transform&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="//de.wikipedia.org/wiki/Quanten-Fouriertransformation" title="Quanten-Fouriertransformation – German" lang="de" hreflang="de">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Transformada_cu%C3%A1ntica_de_Fourier" title="Transformada cuántica de Fourier – Spanish" lang="es" hreflang="es">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D8%AA%D8%A8%D8%AF%DB%8C%D9%84_%D9%81%D9%88%D8%B1%DB%8C%D9%87_%DA%A9%D9%88%D8%A7%D9%86%D8%AA%D9%88%D9%85%DB%8C" title="تبدیل فوریه کوانتومی – Persian" lang="fa" hreflang="fa">فارسی</a></li><li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%94%D7%AA%D7%9E%D7%A8%D7%AA_%D7%A4%D7%95%D7%A8%D7%99%D7%99%D7%94_%D7%A7%D7%95%D7%95%D7%A0%D7%98%D7%99%D7%AA" title="התמרת פורייה קוונטית – Hebrew" lang="he" hreflang="he">עברית</a></li><li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/Kwantowa_transformata_Fouriera" title="Kwantowa transformata Fouriera – Polish" lang="pl" hreflang="pl">Polski</a></li><li class="interlanguage-link interwiki-vi"><a href="//vi.wikipedia.org/wiki/Bi%E1%BA%BFn_%C4%91%E1%BB%95i_Fourier_l%C6%B0%E1%BB%A3ng_t%E1%BB%AD" title="Biến đổi Fourier lượng tử – Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E5%82%85%E7%AB%8B%E8%91%89%E8%AE%8A%E6%8F%9B" title="量子傅立葉變換 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q1464944#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 21 August 2015, at 15:27.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Quantum_Fourier_transform&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.26wmf23/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.26wmf23/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.26wmf23/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.wikimediaBadges&amp;only=styles&amp;skin=vector" />
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.cirrusSearch.loggingSchema","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.wikimediaEvents.geoFeatures","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":71,"wgHostname":"mw1101"});
+} );</script>
+	</body>
+</html>
